@@ -13,6 +13,11 @@ body {
     color: #777;
 }
 
+.blacklink a {
+    color: #000000;
+}
+
+
 .text-primary {
     color: #fed136;
 }
