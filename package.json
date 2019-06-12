@@ -1,0 +1,49 @@
+{
+  "name": "sos-site-nuxt",
+  "version": "1.0.0",
+  "description": "Security Onion Solutions Vue Source",
+  "author": "William Wernert",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/vue-fontawesome": "^0.1.6",
+    "element-ui": "^2.4.11",
+    "node-sass": "^4.12.0",
+    "normalize-scss": "^7.0.1",
+    "nuxt": "^2.0.0",
+    "nuxt-fontawesome": "^0.4.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^0.0.1",
+    "@nuxtjs/eslint-module": "^0.0.1",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.15.1",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-standard": ">=12.0.0",
+    "eslint-plugin-import": ">=2.16.0",
+    "eslint-plugin-jest": ">=22.3.0",
+    "eslint-plugin-node": ">=8.0.1",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": ">=4.0.1",
+    "eslint-plugin-standard": ">=4.0.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "js-yaml": "^3.13.1",
+    "js-yaml-loader": "^1.2.0",
+    "json-loader": "^0.5.7",
+    "nodemon": "^1.18.9",
+    "prettier": "^1.16.4",
+    "sass-loader": "^7.1.0",
+    "yaml-loader": "^0.5.0"
+  }
+}

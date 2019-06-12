@@ -1,0 +1,24 @@
+# Set up the environment
+dist: xenial
+language: node_js
+node_js:
+  - "lts/*"
+
+# We only want to run travis on the source branch
+branches:
+  only:
+    - vue-source
+
+# Build the static files
+script:
+  - npm run generate
+
+# Deploy the project to the master branch so that GitHub Pages will pick it up
+deploy:
+  local_dir: dist
+  provider: pages
+  fqdn: securityonionsolutions.com
+  skip_cleanup: true
+  github_token: $GH_TOKEN
+  keep_history: true
+  target_branch: master

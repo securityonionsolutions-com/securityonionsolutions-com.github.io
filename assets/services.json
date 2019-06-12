@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Appliances",
+    "iconType": "server",
+    "content": "<p>We have several different models to choose from:</p>\n<ul>\n<li>Master</li>\n<li>Forward node</li>\n<li>Storage node</li>\n</ul>\n",
+    "contactBlurb": "Want to learn more about appliances?",
+    "contactEmail": "appliances@securityonionsolutions.com"
+  },
+  {
+    "title": "Professional Services",
+    "iconType": "wrench",
+    "content": "<p>Purchase prepaid hours that can be used for:</p>\n<ul>\n  <li>architecture</li>\n  <li>installation</li>\n  <li>configuration</li>\n  <li>tuning</li>\n  <li>troubleshooting</li>\n  <li>hunting</li>\n  <li>and more...</li>\n</ul>\n",
+    "contactBlurb": "Have questions about professional services?",
+    "contactEmail": "professionalservices@securityonionsolutions.com"
+  },
+  {
+    "title": "Onsite Training",
+    "iconType": "laptop",
+    "content": "<p>\n  We are the <strong>only</strong> official source for onsite Security Onion training and our instructors\n  are the only Security Onion Certified Instructors in the world!\n</p>\n<p>\n  We ofer multi-day comprehensive training classes with lots of labs and real-world case studies for reinforcement!\n  Students receive printed course materials and walk out of class with a Certificate of Completion ready to make their adversaries cry!\n</p>\n<p>\n  <a href=\"https://securityonionsolutions.com/onsitetraining\">Click here</a>\n  for pricing and registration for Security Onion live public courses\n</p>\n<p>\n  Have at least 8 students and want private training at your facility in the continental United States?\n  Please email us for pricing and availability.\n</p>\n<p>\n  We are proud to offer GSA pricing through our partner IntelliGenesis!\n  <br/>\n  Eligible organizations, please <a href=\"mailto:onsitetrainingGSA@securityonionsolutions.com\">email us here</a> for more information.\n</p>\n",
+    "contactEmail": "onsitetraining@securityonionsolutions.com"
+  },
+  {
+    "title": "Online Training",
+    "iconType": "tv",
+    "content": "<p>\n  We also offer online training via on-demand training modules. They are a cost-effective alternative to onsite training,\n  but do not include the in-depth, hands-on labs that our onsite classes do.\n</p>\n<p>The following on-demand training modules are pre-recorded and can be accessed immediately upon payment and for 60 days thereafter:</p>\n<ul>\n  <li>Security Onion 101: Introduction to Security Onion</li>\n  <li>Security Onion 201: Best Practices for Production Deployments</li>\n  <li>Security Onion 301: Best Practices for Distributed Deployments</li>\n</ul>\n<p><strong>Best value!</strong> Purchase all 3 classes in a discounted bundle!</p>\n<p><a href=\"https://onlinetraining.securityonionsolutions.com/\">Click here</a> for pricing and registration for Security Onion on-demand training</p>\n",
+    "contactBlurb": "Have questions about online training?",
+    "contactEmail": "onlinetraining@securityonionsolutions.com"
+  }
+]
