@@ -127,7 +127,8 @@
           <el-col
             v-for="(employee, index) in employees"
             :key="index"
-            style="width: auto; margin-bottom: 2em"
+            style="margin-bottom: 2em; width: auto;"
+            :span="6"
           >
             <empl-info-card :employee="employee" />
           </el-col>

@@ -1,35 +1,41 @@
 - name: Doug Burks
   role: Founder and CEO
-  image: doug.jpg
+  image: doug_burks.jpg
   linkedinLink: https://www.linkedin.com/in/dougburks
   twitterLink: https://twitter.com/dougburks
 
 - name: Phil Plantamura
   role: Chief Operating Officer
-  image: phil.jpg
+  image: phil_plantamura.jpg
   linkedinLink: https://www.linkedin.com/in/philplantamura
   twitterLink: https://twitter.com/philplantamura
 
 - name: Mike Reeves
   role: Product Manager
-  image: mike.jpg
+  image: mike_reeves.jpg
   linkedinLink: https://www.linkedin.com/in/mike-reeves-948b131/
   twitterLink: https://twitter.com/toosmooth
 
 - name: Dustin Lee
   role: Principal Engineer
-  image: dustin.jpg
+  image: dustin_lee.jpg
   linkedinLink: https://www.linkedin.com/in/dustin-lee-14367a7/
   twitterLink: https://twitter.com/_dustinlee
 
 - name: Wes Lambert
   role: Senior Engineer
-  image: wes.jpg
+  image: wes_lambert.jpg
   linkedinLink: https://www.linkedin.com/in/wlambertcissp/
   twitterLink: https://twitter.com/therealwlambert
 
 - name: William Wernert
   role: Software Developer
-  image: william.jpg
+  image: william_wernert.jpg
   linkedinLink: https://www.linkedin.com/in/rwwiv/
   twitterLink: https://twitter.com/rwwiv
+
+- name: Josh Brower
+  role: Senior Engineer
+  image: josh_brower.jpg
+  linkedinLink: https://www.linkedin.com/in/joshbrower
+  twitterLink: https://twitter.com/defensivedepth

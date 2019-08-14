@@ -37,12 +37,12 @@
 
 - year: 2017
   title: More growth
-  image: wes.jpg
+  image: wes_lambert.jpg
   text: In 2017, Security Onion Solutions hired Wes Lambert as Senior Engineer. ISO image downloads broke 500,000.
 
 - year: 2018
   title: Growth continues
-  image: mike.jpg
+  image: mike_reeves.jpg
   text: >
     Security Onion Solutions expanded again in 2018, hiring Mike Reeves as Product Manager and Dustin Lee
     as Principal Engineer. We also released our Elastic Stack integration and Security Onion 16.04.
@@ -50,7 +50,7 @@
 
 - year: 2019
   title:
-  image: william.jpg
+  image: william_wernert.jpg
   text: >
     Security Onion Solutions continues to grow in 2019. We welcomed William Wernert as a Software Developer.
     We're currently over 775,000 ISO image downloads and we continue to develop Security Onion Hybrid Hunter!
