@@ -339,7 +339,7 @@ export default {
 }
 
 .caption {
-  top: 50%;
+  top: 70%;
   left: 50%;
   text-transform: uppercase;
   text-align: center;
@@ -363,12 +363,6 @@ export default {
 @media (min-width: $--sm) {
   .service-list-card {
     width: 40%;
-  }
-
-  .caption {
-    position: absolute;
-    font-size: 1.25em;
-    transform: translate(-50%, -25%);
   }
 
   .choose-us {
@@ -397,7 +391,9 @@ export default {
   }
 
   .caption {
-    font-size: 1.5em;
+    position: absolute;
+    font-size: 1.25em;
+    transform: translate(-50%, -25%);
   }
 }
 
@@ -407,7 +403,7 @@ export default {
   }
 
   .caption {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }
 

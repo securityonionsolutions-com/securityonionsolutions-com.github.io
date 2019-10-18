@@ -3,7 +3,7 @@
     <img
       :src="heroImage"
       class="hero-image"
-      alt="Image of Security Onion Solutions employess at Security Onion Conference"
+      alt="Image of Security Onion Solutions employees at Security Onion Conference 2019"
     />
   </div>
 </template>
@@ -19,15 +19,22 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import '~element-ui/packages/theme-chalk/src/common/var';
+
 .hero-image-wrapper {
-  background: black;
   width: 100%;
-  max-width: 1438px;
+  /*background: black;*/
+  max-width: 1427px;
+  max-height: 595px;
   margin-bottom: 1.5em;
 }
+
 .hero-image {
-  max-width: 100%;
-  opacity: 0.6;
+  width: 100%;
+  @media (min-width: $--md) {
+    filter: brightness(75%);
+  }
+  /*opacity: 0.7;*/
 }
 </style>
