@@ -8,6 +8,7 @@
     <div style="padding: 14px" class="clearfix">
       <span style="color: #777;">{{ employee.role }}</span>
       <a
+        v-if="Object.keys(employee).includes('twitterLink')"
         class="el-button--text button"
         :href="employee.twitterLink"
         target="_blank"
@@ -16,9 +17,10 @@
           :icon="['fab', 'twitter']"
           style="color: black;"
           class="button"
-        ></font-awesome-icon>
+        />
       </a>
       <a
+        v-if="Object.keys(employee).includes('linkedinLink')"
         class="el-button--text button"
         :href="employee.linkedinLink"
         target="_blank"
@@ -27,7 +29,7 @@
           :icon="['fab', 'linkedin']"
           style="color: black;"
           class="button"
-        ></font-awesome-icon>
+        />
       </a>
     </div>
   </el-card>
@@ -62,5 +64,8 @@ export default {
   :active {
     color: #ffd14b !important;
   }
+}
+img {
+  max-width: 262px;
 }
 </style>
