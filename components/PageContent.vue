@@ -398,10 +398,6 @@ export default {
 }
 
 @media (min-width: $--lg) {
-  .employee-list {
-    width: 70%;
-  }
-
   .caption {
     font-size: 1.5em;
   }
@@ -412,7 +408,7 @@ export default {
     width: 30%;
   }
   .employee-list {
-    width: 60%;
+    width: 70%;
   }
 
   .timeline {
