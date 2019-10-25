@@ -213,8 +213,6 @@ export default {
     margin-bottom: 0;
   }
 }
-.new-badge {
-}
 
 .service-list-card {
   width: 100%;
@@ -377,7 +375,7 @@ export default {
   }
 
   .timeline {
-    width: 60%;
+    width: 70%;
   }
 
   .logos {
@@ -401,6 +399,9 @@ export default {
   .caption {
     font-size: 1.5em;
   }
+  .employee-list {
+    width: 80%;
+  }
 }
 
 @media (min-width: $--xl) {
@@ -410,9 +411,8 @@ export default {
   .employee-list {
     width: 70%;
   }
-
   .timeline {
-    width: 30%;
+    width: 40%;
   }
 }
 </style>
