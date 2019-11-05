@@ -150,12 +150,15 @@
 
       <div id="partners" class="section">
         <h3 class="section-header">Our Partners</h3>
-        <el-row :gutter="100" style="width: 100%;">
+        <el-row :gutter="100" style="width: 90%;" class="logo-block">
           <el-col
             v-for="(logo, index) in logos"
             :key="index"
             class="logos"
-            :sm="6"
+            :xs="24"
+            :sm="12"
+            :md="8"
+            :xl="4"
           >
             <sos-partner-logo :logo="logo"></sos-partner-logo>
           </el-col>
@@ -193,6 +196,7 @@ export default {
       logos: [
         require('../assets/partners/credence-logo.jpg'),
         require('../assets/partners/elastic-logo.png'),
+        require('../assets/partners/fireeye-logo.png'),
         require('../assets/partners/intelligenesis-logo.png'),
         require('../assets/partners/profitap-logo.png')
       ]
@@ -222,6 +226,14 @@ export default {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.logo-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
   justify-content: center;
 }
 
@@ -380,6 +392,7 @@ export default {
 
   .logos {
     min-height: 200px;
+    margin-bottom: unset;
   }
 }
 
