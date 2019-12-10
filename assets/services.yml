@@ -1,11 +1,20 @@
 - title: Appliances
   iconType: server
   content: |
-    <p>We have several different models to choose from:</p>
+    <p>
+      You're busy defending your enterprise and you don't have time to spec out hardware and install software.
+      We have listened to your feedback and are proud to offer Security Onion Solutions (SOS) hardware!
+      These specially tuned appliances allow security engineers to quickly deploy an entire Security Onion distributed
+      architecture in their environment without the worry of hardware compatibility.
+      SOS appliances easily plug into an existing architecture and can be mixed and matched for your specific deployment.
+    </p>
+    <p>
+      We have several different models to choose from:
+    </p>
     <ul>
     <li>Master</li>
-    <li>Forward node</li>
-    <li>Storage node</li>
+    <li>Forward Node</li>
+    <li>Storage Node</li>
     </ul>
     <p>For each model, we offer different sizes for various traffic and log volumes.</p>
   contactBlurb: Want to learn more about appliances?
