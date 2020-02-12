@@ -19,6 +19,25 @@
 
       <sos-divider />
 
+      <el-row style="width:80%" type="flex" justify="center">
+        <el-col
+          :span="24"
+          style="display: flex; align-items: center; flex-direction: column; text-align: center"
+        >
+          <p class="blurb">
+            We are the builders of Security Onion, a free and open source
+            platform for threat hunting, network security monitoring, and log
+            management. Security Onion includes best-of-breed open source tools
+            such as Snort, Suricata, Zeek, Wazuh, the Elastic Stack, and many
+            other security tools. Security Onion Solutions offers appliances and
+            professional services centered around the Security Onion platform,
+            and is the only provider of official Security Onion training.
+          </p>
+        </el-col>
+      </el-row>
+
+      <sos-divider />
+
       <div id="services" class="section">
         <h3 class="section-header">Our Products and Services</h3>
         <div
@@ -370,6 +389,10 @@ export default {
   display: block;
 }
 
+.blurb {
+  font-size: medium;
+}
+
 @media (min-width: $--sm) {
   .service-list-card {
     width: 40%;
@@ -414,6 +437,9 @@ export default {
   }
   .employee-list {
     width: 80%;
+  }
+  .blurb {
+    font-size: larger;
   }
 }
 
