@@ -39,18 +39,25 @@
 export default {
   name: 'EmplInfoCard',
   props: {
-    employee: Object({
-      name: '',
-      image: '',
-      role: '',
-      twitterLink: '',
-      linkedinLink: ''
-    })
+    employee: {
+      type: Object,
+      default() {
+        return {
+          name: '',
+          image: '',
+          role: '',
+          twitterLink: '',
+          linkedinLink: ''
+        }
+      }
+    }
   }
 }
 </script>
 
 <style scoped lang="scss">
+@import '~element-ui/packages/theme-chalk/src/common/var';
+
 .button {
   padding-left: 0.2em;
   float: right;
@@ -66,6 +73,11 @@ export default {
   }
 }
 img {
-  max-width: 262px;
+  max-width: 220px;
+  max-height: 220px;
+  @media (min-width: $--lg) {
+    max-width: 240px;
+    max-height: 240px;
+  }
 }
 </style>

@@ -9,15 +9,10 @@
     >
       <el-card :body-style="{ padding: '6px' }">
         <el-row>
-          <el-col :span="18" style="padding: 20px;">
+          <div style="padding: 15px;">
             <h4>{{ event.title }}</h4>
             <p>{{ event.text }}</p>
-          </el-col>
-          <el-col :span="6" style="height: auto">
-            <el-image
-              :src="require(`@/assets/about/${event.image}`)"
-            ></el-image>
-          </el-col>
+          </div>
         </el-row>
       </el-card>
     </el-timeline-item>

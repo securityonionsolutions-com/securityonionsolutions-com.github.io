@@ -2,7 +2,13 @@
   <el-header>
     <el-row type="flex" justify="space-between">
       <el-col>
-        <h2>Security Onion Solutions</h2>
+        <div style="display: flex; align-items: center">
+          <el-image
+            :src="require('../assets/sos-onion.svg')"
+            style="width: 2em; margin-right: 0.5em"
+          />
+          <h2>Security Onion Solutions</h2>
+        </div>
       </el-col>
       <el-col :span="3" :lg="20">
         <div id="main-nav">
