@@ -1,6 +1,3 @@
-import * as path from 'path'
-import HtmlCriticalPlugin from 'html-critical-webpack-plugin'
-
 export default {
   mode: 'universal',
   /*
