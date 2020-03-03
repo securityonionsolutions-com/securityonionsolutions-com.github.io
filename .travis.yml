@@ -7,7 +7,7 @@ branches:
     - vue-source
 
 install:
-  - npm install
+  - npm ci
   - npm run generate --fail-on-page-error
 
 script:

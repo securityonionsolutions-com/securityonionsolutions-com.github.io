@@ -1,37 +1,35 @@
 <template>
   <div class="header-wrapper">
-    <client-only>
-      <el-row type="flex">
-        <el-col class="hidden-md-and-down">
-          <el-carousel
-            indicator-position="outside"
-            trigger="click"
-            :interval="10000"
+    <el-row type="flex">
+      <el-col class="hidden-md-and-down">
+        <el-carousel
+          indicator-position="outside"
+          trigger="click"
+          :interval="10000"
+        >
+          <el-carousel-item
+            v-for="(item, index) in headerImgArrHoriz"
+            :key="index"
           >
-            <el-carousel-item
-              v-for="(item, index) in headerImgArrHoriz"
-              :key="index"
-            >
-              <el-image :src="item.img" :alt="item.alt" fit="cover" />
-            </el-carousel-item>
-          </el-carousel>
-        </el-col>
-        <el-col class="hidden-lg-and-up">
-          <el-carousel
-            indicator-position="outside"
-            trigger="click"
-            :interval="10000"
+            <el-image :src="item.img" :alt="item.alt" fit="cover" />
+          </el-carousel-item>
+        </el-carousel>
+      </el-col>
+      <el-col class="hidden-lg-and-up">
+        <el-carousel
+          indicator-position="outside"
+          trigger="click"
+          :interval="10000"
+        >
+          <el-carousel-item
+            v-for="(item, index) in headerImgArrSquare"
+            :key="index"
           >
-            <el-carousel-item
-              v-for="(item, index) in headerImgArrSquare"
-              :key="index"
-            >
-              <el-image :src="item.img" :alt="item.alt" fit="cover" />
-            </el-carousel-item>
-          </el-carousel>
-        </el-col>
-      </el-row>
-    </client-only>
+            <el-image :src="item.img" :alt="item.alt" fit="cover" />
+          </el-carousel-item>
+        </el-carousel>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
