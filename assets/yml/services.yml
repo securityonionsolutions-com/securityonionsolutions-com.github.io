@@ -1,4 +1,4 @@
-- title: Appliances
+- title: Hardware
   iconType: server
   content: |
     <p>
@@ -21,18 +21,15 @@
   contactEmail: appliances@securityonionsolutions.com
   isNew: true
 
-- title: Professional Services
+- title: Professional Services & Support
   iconType: wrench
   content: |
     <p>Purchase prepaid hours that can be used for:</p>
     <ul>
-      <li>architecture</li>
-      <li>installation</li>
-      <li>configuration</li>
+      <li>architecture planning</li>
+      <li>deployment and configuration</li>
       <li>tuning</li>
-      <li>troubleshooting</li>
-      <li>hunting</li>
-      <li>and more...</li>
+      <li>break+fix support</li>
     </ul>
-  contactBlurb: Have questions about professional services?
+  contactBlurb: Have questions about professional services or support?
   contactEmail: professionalservices@securityonionsolutions.com

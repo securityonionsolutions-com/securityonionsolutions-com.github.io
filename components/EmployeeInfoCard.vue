@@ -1,8 +1,10 @@
 <template>
   <el-card :body-style="{ padding: '0px' }">
-    <div slot="header">{{ employee.name }}</div>
+    <div slot="header" style="font-size: medium; font-weight: bold">
+      {{ employee.name }}
+    </div>
     <img
-      :src="require(`@/assets/team/${employee.image}`)"
+      :src="require(`@/assets/img/team/${employee.image}`)"
       :alt="`Image of ${employee.name}`"
     />
     <div style="padding: 14px" class="clearfix">
@@ -73,9 +75,9 @@ export default {
   }
 }
 img {
-  max-width: 220px;
-  max-height: 220px;
-  @media (min-width: $--lg) {
+  max-width: 200px;
+  max-height: 200px;
+  @media (min-width: $--xl) {
     max-width: 240px;
     max-height: 240px;
   }

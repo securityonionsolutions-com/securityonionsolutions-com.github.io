@@ -18,7 +18,7 @@
     In 2012, Security Onion was rebuilt from the ground up, focusing on performance and scalability.
 
 - year: 2014
-  title: Security Onion Slutions, LLC
+  title: Security Onion Solutions, LLC
   image: 2014.jpg
   text: >
     As the worldwide Security Onion community grew, Doug Burks began receiving more and more requests for training
@@ -41,7 +41,7 @@
   text: In 2017, Security Onion Solutions hired Wes Lambert as Senior Engineer. ISO image downloads broke 500,000.
 
 - year: 2018
-  title: Growth continues
+  title:
   image: mike_reeves.jpg
   text: >
     Security Onion Solutions expanded again in 2018, hiring Mike Reeves as Product Manager. We also released our Elastic
@@ -52,7 +52,11 @@
   title:
   image: william_wernert.jpg
   text: >
-    Security Onion Solutions continues to grow in 2019, adding five new team members. We're currently over
+    Security Onion Solutions continued to grow in 2019, adding five new team members. We broke
     825,000 ISO image downloads and we continue to develop Security Onion Hybrid Hunter!
 
+- year: 2020
+  title:
+  text: >
+    We currently sit at over 950,000 ISO image downloads and are excited to continue work on Security Onion Hybrid Hunter.
 

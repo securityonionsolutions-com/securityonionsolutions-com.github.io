@@ -2,24 +2,18 @@
   <el-main>
     <div class="wrapper">
       <div id="hero" class="hero">
-        <el-row style="width: 80%" type="flex" justify="center">
-          <el-col
-            :span="24"
-            style="display: flex; align-items: center; flex-direction: column"
-          >
-            <hero-image />
-            <div class="caption">
-              <h3 class="caption-text">
-                We help you peel back the layers of your enterprise
-              </h3>
-            </div>
-          </el-col>
-        </el-row>
+        <hero-image />
+      </div>
+
+      <div class="caption hidden-xl-only">
+        <h1 class="caption-text">
+          " We help you peel back the layers of your enterprise "
+        </h1>
       </div>
 
       <sos-divider />
 
-      <el-row style="width:80%" type="flex" justify="center">
+      <el-row class="width-fix" type="flex" justify="center">
         <el-col
           :span="24"
           style="display: flex; align-items: center; flex-direction: column; text-align: center"
@@ -29,63 +23,122 @@
             platform for threat hunting, network security monitoring, and log
             management. Security Onion includes best-of-breed open source tools
             such as Snort, Suricata, Zeek, Wazuh, the Elastic Stack, and many
-            other security tools. Security Onion Solutions offers appliances and
-            professional services centered around the Security Onion platform,
-            and is the only provider of official Security Onion training.
+            other security tools.
+          </p>
+          <p class="blurb">
+            Security Onion Solutions offers appliances and professional services
+            centered around the Security Onion platform, and is the only
+            provider of official Security Onion training.
           </p>
         </el-col>
       </el-row>
 
-      <why-choose-us />
-
-      <sos-divider />
-
-      <div class="section">
-        <span style="display: flex; align-items: center">
-          <icon :icon-type="services[0].iconType" :icon-size="3" />
-          <h3 class="section-header">Hardware</h3>
-        </span>
-        <div class="service-list-card" style="margin: 1em">
-          <el-card
-            style="margin: 1.5em 0; padding: 0 1em; display: flex; justify-content: center"
-          >
-            <service-info :service="services[0]" />
-          </el-card>
-        </div>
+      <div id="why-choose-us" class="width-fix" style="margin-top: 3em">
+        <why-choose-us />
       </div>
 
-      <sos-divider />
+      <sos-divider :small-divider="true" />
 
-      <div class="section">
-        <span style="display: flex; align-items: center">
-          <icon :icon-type="services[1].iconType" :icon-size="3" />
-          <h3 class="section-header">Professional Services</h3>
-        </span>
-        <div
-          style="display: flex; flex-direction: column; align-items: center; margin: 2em"
-        >
-          <service-info :service="services[1]" />
+      <el-card class="width-fix" style="margin-bottom: 1em; padding: 1.5em 0">
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <div id="training" class="section">
+            <h1 class="section-header">
+              Training
+            </h1>
+            <div style="width: 5%; margin: 0">
+              <el-divider />
+            </div>
+            <split-content-component
+              :column-size="{ left: 24, right: 24 }"
+              :hide-divider="true"
+            >
+              <template slot="left-content">
+                <div class="subsection">
+                  <div style="width: 80%; margin-bottom: 2.5em">
+                    <span style="display: flex; align-items: center">
+                      <i :class="training[1].iconType" class="sos_icon" />
+                      <h3 class="section-header">{{ training[1].title }}</h3>
+                    </span>
+                    <service-info :service="training[1]" />
+                  </div>
+                </div>
+              </template>
+              <template slot="right-content">
+                <div class="subsection">
+                  <div style="width: 80%">
+                    <span style="display: flex; align-items: center">
+                      <i :class="training[0].iconType" class="sos_icon" />
+                      <h3 class="section-header">{{ training[0].title }}</h3>
+                    </span>
+                    <service-info :service="training[0]" />
+                  </div>
+                </div>
+              </template>
+            </split-content-component>
+          </div>
+
+          <sos-divider />
+
+          <div id="hardware" class="section">
+            <div
+              style="display: flex; flex-direction: column; align-items: center; width: 80%"
+            >
+              <span
+                style="display: flex; flex-direction: column; align-items: center; margin-bottom: 0.75em; text-align: center"
+              >
+                <icon
+                  :icon-type="services[0].iconType"
+                  :icon-size="2"
+                  style="margin-bottom: 1em"
+                />
+                <h2 class="section-header">{{ services[0].title }}</h2>
+              </span>
+              <div
+                style="display: flex; flex-direction: column; align-items: center; margin-top: 2em"
+              >
+                <service-info :service="services[0]" />
+              </div>
+            </div>
+          </div>
+
+          <sos-divider />
+
+          <div id="profserv" class="section">
+            <div
+              style="display: flex; flex-direction: column; align-items: center; width: 80%"
+            >
+              <span
+                style="display: flex; flex-direction: column; align-items: center; margin-bottom: 0.75em; text-align: center"
+              >
+                <icon
+                  :icon-type="services[1].iconType"
+                  :icon-size="3"
+                  style="margin-bottom: 1em"
+                />
+                <h2 class="section-header">{{ services[1].title }}</h2>
+              </span>
+              <div
+                style="display: flex; flex-direction: column; align-items: center; margin-top: 2em"
+              >
+                <service-info :service="services[1]" />
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <sos-divider />
-
-      <div id="training" class="section">
-        <h3 class="section-header">Training</h3>
-        <div class="training-box">
-          <training-container :tabs="training" />
-        </div>
-      </div>
+      </el-card>
 
       <sos-divider />
 
       <div id="about-us" class="section">
-        <split-content-component :column-size="{ right: 12, left: 12 }">
+        <split-content-component
+          :column-size="{ left: 12, right: 12 }"
+          style="width: 100%"
+        >
           <template slot="left-content">
             <div
               style="display: flex; align-items: center; flex-direction: column"
             >
-              <h3 class="section-header">Our Team</h3>
+              <h1 class="section-header">Our Team</h1>
               <el-row
                 type="flex"
                 justify="center"
@@ -107,7 +160,7 @@
             <div
               style="display: flex; align-items: center; flex-direction: column"
             >
-              <h3 class="section-header">Our History</h3>
+              <h1 class="section-header">Our History</h1>
               <el-row type="flex" justify="center" class="timeline">
                 <el-col>
                   <company-history-timeline />
@@ -120,8 +173,10 @@
 
       <sos-divider />
 
-      <div id="partners" class="section">
-        <h3 class="section-header">Our Partners</h3>
+      <div id="partners" class="section" style="margin-bottom: 1em">
+        <h1 class="section-header" style="margin-bottom: 0.5em">
+          Our Partners
+        </h1>
         <el-row :gutter="100" style="width: 90%;" class="logo-block">
           <el-col
             v-for="(logo, index) in logos"
@@ -149,14 +204,12 @@ import SosDivider from './SosDivider'
 import SosPartnerLogo from './PartnerLogo'
 import HeroImage from './HeroImage'
 import SplitContentComponent from './SplitContentComponent'
-import TrainingContainer from './TrainingContainer'
 import WhyChooseUs from './WhyChooseUs'
 
 export default {
   name: 'PageContent',
   components: {
     WhyChooseUs,
-    TrainingContainer,
     SplitContentComponent,
     HeroImage,
     SosPartnerLogo,
@@ -169,17 +222,17 @@ export default {
   data() {
     return {
       selectedService: Object,
-      services: require('../assets/services.yml'),
-      training: require('../assets/training.yml'),
-      employees: require('../assets/team/team.yml'),
+      services: require('../assets/yml/services.yml'),
+      training: require('../assets/yml/training.yml'),
+      employees: require('../assets/yml/team.yml'),
       logos: [
-        require('../assets/partners/credence-logo.jpg'),
-        require('../assets/partners/elastic-logo.png'),
-        require('../assets/partners/fireeye-logo.png'),
-        require('../assets/partners/intelligenesis-logo.png'),
-        require('../assets/partners/profitap-logo.png')
+        require('../assets/img/partners/credence-logo.jpg'),
+        require('../assets/img/partners/elastic-logo.png'),
+        require('../assets/img/partners/fireeye-logo.png'),
+        require('../assets/img/partners/intelligenesis-logo.png'),
+        require('../assets/img/partners/profitap-logo.png')
       ],
-      onion_logo: require('../assets/sos-onion.svg'),
+      onion_logo: require('../assets/img/icons/sos-onion.svg'),
       content_side_internal_toggle: true
     }
   },
@@ -202,14 +255,36 @@ export default {
 @import '~element-ui/packages/theme-chalk/src/common/var';
 
 .el-row {
-  margin-bottom: 20px;
+  margin-bottom: 0;
   :last-child {
     margin-bottom: 0;
   }
 }
 
+.hero {
+  width: 80%;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.75em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
 .service-list-card {
-  width: 100%;
+  width: 90%;
+}
+
+.sos_icon {
+  color: #f6b11f;
+  font-size: 1.75em;
 }
 
 .logos {
@@ -255,20 +330,8 @@ export default {
   :hover,
   :focus,
   :active {
-    color: #ffd14b !important;
+    color: #f6b11f !important;
   }
-}
-
-.hero {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  height: auto;
-  width: 100%;
-  padding: 0;
-  color: #ffd14b;
-  font-size: 1em;
-  font-weight: bold;
 }
 
 .el-header {
@@ -289,8 +352,7 @@ export default {
 }
 
 .section-header {
-  color: #ffd14b;
-  font-size: 3em;
+  color: #f6b11f;
   font-weight: bold;
   justify-content: flex-end;
   margin: 0 0.5em;
@@ -300,7 +362,7 @@ export default {
   display: flex;
   flex-direction: column;
   a {
-    color: #ffd14b;
+    color: #f6b11f;
     font-size: 2em !important;
     margin-bottom: 0;
     margin-top: 0;
@@ -316,7 +378,7 @@ export default {
   text-transform: uppercase;
   text-align: center;
   .caption-text {
-    color: #ffd14b;
+    color: #f6b11f;
     font-family: Montserrat, sans-serif;
     font-size: 1em;
     font-weight: bold;
@@ -328,7 +390,7 @@ export default {
 }
 
 .blurb {
-  font-size: large;
+  font-size: larger;
   line-height: 1.5;
 }
 
@@ -344,6 +406,10 @@ export default {
   @media (min-width: $--xl) {
     width: 40%;
   }
+}
+
+.width-fix {
+  width: 100%;
 }
 
 @media (min-width: $--sm) {
@@ -363,13 +429,21 @@ export default {
     min-height: 200px;
     margin-bottom: unset;
   }
+
+  .width-fix {
+    width: 80%;
+  }
 }
 
 @media (min-width: $--md) {
   .caption {
-    position: absolute;
     font-size: 1.25em;
-    transform: translate(-50%, -25%);
+  }
+  .width-fix {
+    width: 60%;
+  }
+  .hero {
+    width: 60%;
   }
 }
 
@@ -378,19 +452,41 @@ export default {
     font-size: 1.5em;
   }
   .blurb {
-    font-size: larger;
+    width: 80%;
+    font-size: x-large;
   }
 }
 
 @media (min-width: $--xl) {
   .service-list-card {
-    width: 30%;
+    width: 40%;
   }
   .employee-list {
     width: 70%;
   }
-  /*.timeline {*/
-  /*  width: 40%;*/
-  /*}*/
+  .width-fix {
+    width: 40%;
+  }
+  .hero {
+    width: 45%;
+    margin-top: 1.5em;
+  }
+}
+.subsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  ul {
+    text-align: center;
+    list-style-position: inside;
+    padding-left: 0;
+    li {
+      font-size: large;
+      padding-top: 0.25em;
+      padding-bottom: 0.25em;
+    }
+  }
 }
 </style>

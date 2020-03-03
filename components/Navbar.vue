@@ -3,11 +3,11 @@
     <el-row type="flex" justify="space-between">
       <el-col>
         <div style="display: flex; align-items: center">
-          <el-image
-            :src="require('../assets/sos-onion.svg')"
-            style="width: 2em; margin-right: 0.5em"
-          />
+          <sos-onion-svg style="margin-right: 0.5em" />
           <h2>Security Onion Solutions</h2>
+          <p class="hidden-lg-and-down tagline">
+            " We help you peel back the layers of your enterprise "
+          </p>
         </div>
       </el-col>
       <el-col :span="3" :lg="20">
@@ -54,8 +54,10 @@
 <script>
 // import VueScrollTo from 'vue-scrollto';
 
+import SosOnionSvg from './SosOnionSvg'
 export default {
   name: 'Navbar',
+  components: { SosOnionSvg },
   data() {
     return {
       activeIndex: '1'
@@ -87,5 +89,14 @@ export default {
   display: flex;
   justify-content: flex-end;
   border-bottom: none !important;
+}
+
+.tagline {
+  margin-left: 1em;
+  margin-bottom: 0.75em;
+  color: #f6b11f;
+  font-weight: bolder;
+  text-transform: uppercase;
+  word-spacing: 0.001em;
 }
 </style>

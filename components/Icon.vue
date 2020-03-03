@@ -25,6 +25,6 @@ export default {
 
 <style scoped>
 .primary {
-  color: #ffd14b;
+  color: #f6b11f;
 }
 </style>
