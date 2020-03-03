@@ -1,3 +1,6 @@
+import * as path from 'path'
+import HtmlCriticalPlugin from 'html-critical-webpack-plugin'
+
 export default {
   mode: 'universal',
   /*
@@ -24,7 +27,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['element-ui/lib/theme-chalk/index.css'],
+  css: ['element-ui/lib/theme-chalk/index.css', 'normalize.css/normalize.css'],
   /*
    ** Plugins to load before mounting the App
    */

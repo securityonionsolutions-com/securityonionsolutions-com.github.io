@@ -16,8 +16,7 @@ export default {
     service: Object({
       content: String,
       contactBlurb: String,
-      contactEmail: String,
-      isNew: Boolean
+      contactEmail: String
     })
   }
 }
@@ -39,13 +38,16 @@ div ::v-deep ul {
   list-style-position: inside;
   li {
     font-weight: normal;
+    line-height: 1.25;
+    font-size: large;
     padding-top: 0.1em;
     padding-bottom: 0.1em;
   }
 }
 
 div ::v-deep p {
-  margin-bottom: 0;
+  font-size: large;
+  line-height: 1.5;
 }
 
 div ::v-deep a {
@@ -54,6 +56,6 @@ div ::v-deep a {
 }
 
 .text {
-  margin-top: 0;
+  margin-top: 0.1em;
 }
 </style>

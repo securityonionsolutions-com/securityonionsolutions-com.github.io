@@ -1,44 +1,5 @@
-- title: Appliances
-  iconType: server
-  content: |
-    <p>
-      You're busy defending your enterprise and you don't have time to spec out hardware and install software.
-      We have listened to your feedback and are proud to offer Security Onion Solutions (SOS) hardware!
-      These specially tuned appliances allow security engineers to quickly deploy an entire Security Onion distributed
-      architecture in their environment without the worry of hardware compatibility.
-      SOS appliances easily plug into an existing architecture and can be mixed and matched for your specific deployment.
-    </p>
-    <p>
-      We have several different models to choose from:
-    </p>
-    <ul>
-    <li>Master</li>
-    <li>Forward Node</li>
-    <li>Storage Node</li>
-    </ul>
-    <p>For each model, we offer different sizes for various traffic and log volumes.</p>
-  contactBlurb: Want to learn more about appliances?
-  contactEmail: appliances@securityonionsolutions.com
-  isNew: true
-
-- title: Professional Services
-  iconType: wrench
-  content: |
-    <p>Purchase prepaid hours that can be used for:</p>
-    <ul>
-      <li>architecture</li>
-      <li>installation</li>
-      <li>configuration</li>
-      <li>tuning</li>
-      <li>troubleshooting</li>
-      <li>hunting</li>
-      <li>and more...</li>
-    </ul>
-  contactBlurb: Have questions about professional services?
-  contactEmail: professionalservices@securityonionsolutions.com
-
-- title: Onsite Training
-  iconType: laptop
+- title: Onsite
+  iconType: el-icon-edit-outline
   content: |
     <p>
       We are the <strong>only</strong> official source for onsite Security Onion training and our instructors
@@ -59,11 +20,11 @@
     </p>
   contactBlurb: Have at least 8 students and want private training at your facility in the continental United States?
   contactEmail: onsitetraining@securityonionsolutions.com
-- title: Online Training
-  iconType: tv
+- title: Online
+  iconType: el-icon-monitor
   content: |
     <p>
-      We also offer online training via on-demand training modules. They are a cost-effective alternative to onsite training,
+      We offer online training via on-demand training modules. They are a cost-effective alternative to onsite training,
       but do not include the in-depth, hands-on labs that our onsite classes do.
     </p>
     <p>The following on-demand training modules are pre-recorded and can be accessed immediately upon payment and for 60 days thereafter:</p>

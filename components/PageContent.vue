@@ -2,24 +2,18 @@
   <el-main>
     <div class="wrapper">
       <div id="hero" class="hero">
-        <el-row style="width: 80%" type="flex" justify="center">
-          <el-col
-            :span="24"
-            style="display: flex; align-items: center; flex-direction: column"
-          >
-            <hero-image />
-            <div class="caption">
-              <h3 class="caption-text">
-                We help you peel back the layers of your enterprise
-              </h3>
-            </div>
-          </el-col>
-        </el-row>
+        <hero-image />
+      </div>
+
+      <div class="caption hidden-xl-only">
+        <h1 class="caption-text">
+          " We help you peel back the layers of your enterprise "
+        </h1>
       </div>
 
       <sos-divider />
 
-      <el-row style="width:80%" type="flex" justify="center">
+      <el-row class="width-fix" type="flex" justify="center">
         <el-col
           :span="24"
           style="display: flex; align-items: center; flex-direction: column; text-align: center"
@@ -29,146 +23,160 @@
             platform for threat hunting, network security monitoring, and log
             management. Security Onion includes best-of-breed open source tools
             such as Snort, Suricata, Zeek, Wazuh, the Elastic Stack, and many
-            other security tools. Security Onion Solutions offers appliances and
-            professional services centered around the Security Onion platform,
-            and is the only provider of official Security Onion training.
+            other security tools.
+          </p>
+          <p class="blurb">
+            Security Onion Solutions offers appliances and professional services
+            centered around the Security Onion platform, and is the only
+            provider of official Security Onion training.
           </p>
         </el-col>
       </el-row>
 
-      <sos-divider />
+      <div id="why-choose-us" class="width-fix" style="margin-top: 3em">
+        <why-choose-us />
+      </div>
 
-      <div id="services" class="section">
-        <h3 class="section-header">Our Products and Services</h3>
-        <div
-          class="subsection"
-          style="width: 100%; margin-top: 3.5em; margin-bottom: 0"
-        >
-          <el-card class="service-list-card">
-            <el-collapse accordion>
-              <el-collapse-item
-                v-for="(service, index) in services"
-                :key="index"
+      <sos-divider :small-divider="true" />
+
+      <el-card class="width-fix" style="margin-bottom: 1em; padding: 1.5em 0">
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <div id="training" class="section">
+            <h1 class="section-header">
+              Training
+            </h1>
+            <div style="width: 5%; margin: 0">
+              <el-divider />
+            </div>
+            <split-content-component
+              :column-size="{ left: 24, right: 24 }"
+              :hide-divider="true"
+            >
+              <template slot="left-content">
+                <div class="subsection">
+                  <div style="width: 80%; margin-bottom: 2.5em">
+                    <span style="display: flex; align-items: center">
+                      <i :class="training[1].iconType" class="sos_icon" />
+                      <h3 class="section-header">{{ training[1].title }}</h3>
+                    </span>
+                    <service-info :service="training[1]" />
+                  </div>
+                </div>
+              </template>
+              <template slot="right-content">
+                <div class="subsection">
+                  <div style="width: 80%">
+                    <span style="display: flex; align-items: center">
+                      <i :class="training[0].iconType" class="sos_icon" />
+                      <h3 class="section-header">{{ training[0].title }}</h3>
+                    </span>
+                    <service-info :service="training[0]" />
+                  </div>
+                </div>
+              </template>
+            </split-content-component>
+          </div>
+
+          <sos-divider />
+
+          <div id="hardware" class="section">
+            <div
+              style="display: flex; flex-direction: column; align-items: center; width: 80%"
+            >
+              <span
+                style="display: flex; flex-direction: column; align-items: center; margin-bottom: 0.75em; text-align: center"
               >
-                <template slot="title">
-                  <icon :icon-type="service.iconType" />
-                  <el-badge
-                    v-if="service.isNew"
-                    value="new"
-                    class="new-badge"
-                    >{{ service.title }}</el-badge
-                  >
-                  <div v-else>{{ service.title }}</div>
-                </template>
-                <service-info :service="service" />
-              </el-collapse-item>
-            </el-collapse>
-          </el-card>
+                <icon
+                  :icon-type="services[0].iconType"
+                  :icon-size="2"
+                  style="margin-bottom: 1em"
+                />
+                <h2 class="section-header">{{ services[0].title }}</h2>
+              </span>
+              <div
+                style="display: flex; flex-direction: column; align-items: center; margin-top: 2em"
+              >
+                <service-info :service="services[0]" />
+              </div>
+            </div>
+          </div>
+
+          <sos-divider />
+
+          <div id="profserv" class="section">
+            <div
+              style="display: flex; flex-direction: column; align-items: center; width: 80%"
+            >
+              <span
+                style="display: flex; flex-direction: column; align-items: center; margin-bottom: 0.75em; text-align: center"
+              >
+                <icon
+                  :icon-type="services[1].iconType"
+                  :icon-size="3"
+                  style="margin-bottom: 1em"
+                />
+                <h2 class="section-header">{{ services[1].title }}</h2>
+              </span>
+              <div
+                style="display: flex; flex-direction: column; align-items: center; margin-top: 2em"
+              >
+                <service-info :service="services[1]" />
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="subsection">
-          <h3 class="header" style="padding-top: 2em">Why choose us?</h3>
-          <el-row class="choose-us">
-            <el-col :span="24" :lg="20">
-              <p>
-                We created and maintain Security Onion, so we know it better
-                than anybody else
-              </p>
-              <img
-                class="hidden-sm-and-up"
-                :src="require('../assets/onion.svg')"
-                alt="onion-svg"
-                width="8em"
-              />
-              <p>
-                We're the only official authorized training provider for
-                Security Onion
-              </p>
-              <img
-                class="hidden-sm-and-up"
-                :src="require('../assets/onion.svg')"
-                alt="onion-svg"
-                width="8em"
-              />
-              <p>
-                Our instructors are the only Security Onion Certified
-                Instructors in the world
-              </p>
-              <img
-                class="hidden-sm-and-up"
-                :src="require('../assets/onion.svg')"
-                alt="onion-svg"
-                width="8em"
-              />
-              <p>
-                Our course material is the only authorized training material for
-                Security Onion
-              </p>
-              <img
-                class="hidden-sm-and-up"
-                :src="require('../assets/onion.svg')"
-                alt="onion-svg"
-                width="8em"
-              />
-              <p>
-                We've been teaching Security Onion classes and providing
-                Professional Services since 2014
-              </p>
-              <img
-                class="hidden-sm-and-up"
-                :src="require('../assets/onion.svg')"
-                alt="onion-svg"
-                width="8em"
-              />
-              <p>
-                We offer custom appliances selected from our years of experience
-                to fit many different scenarios
-              </p>
-              <img
-                class="hidden-sm-and-up"
-                :src="require('../assets/onion.svg')"
-                alt="onion-svg"
-                width="8em"
-              />
-              <p>
-                When you purchase products and services from us, you're helping
-                to fund development of Security Onion!
-              </p>
-            </el-col>
-          </el-row>
-        </div>
+      </el-card>
+
+      <sos-divider />
+
+      <div id="about-us" class="section">
+        <split-content-component
+          :column-size="{ left: 12, right: 12 }"
+          style="width: 100%"
+        >
+          <template slot="left-content">
+            <div
+              style="display: flex; align-items: center; flex-direction: column"
+            >
+              <h1 class="section-header">Our Team</h1>
+              <el-row
+                type="flex"
+                justify="center"
+                :gutter="40"
+                class="employee-list"
+              >
+                <el-col
+                  v-for="(employee, index) in employees"
+                  :key="index"
+                  style="margin-bottom: 2em; width: auto;"
+                  :span="4"
+                >
+                  <empl-info-card :employee="employee" />
+                </el-col>
+              </el-row>
+            </div>
+          </template>
+          <template slot="right-content">
+            <div
+              style="display: flex; align-items: center; flex-direction: column"
+            >
+              <h1 class="section-header">Our History</h1>
+              <el-row type="flex" justify="center" class="timeline">
+                <el-col>
+                  <company-history-timeline />
+                </el-col>
+              </el-row>
+            </div>
+          </template>
+        </split-content-component>
       </div>
 
       <sos-divider />
 
-      <div id="team" class="section">
-        <h3 class="section-header">Our Team</h3>
-        <el-row type="flex" justify="center" :gutter="40" class="employee-list">
-          <el-col
-            v-for="(employee, index) in employees"
-            :key="index"
-            style="margin-bottom: 2em; width: auto;"
-            :span="6"
-          >
-            <empl-info-card :employee="employee" />
-          </el-col>
-        </el-row>
-      </div>
-
-      <sos-divider />
-
-      <div id="history" class="section">
-        <h3 class="section-header">Our History</h3>
-        <el-row type="flex" justify="center" class="timeline">
-          <el-col>
-            <company-history-timeline />
-          </el-col>
-        </el-row>
-      </div>
-
-      <sos-divider />
-
-      <div id="partners" class="section">
-        <h3 class="section-header">Our Partners</h3>
+      <div id="partners" class="section" style="margin-bottom: 1em">
+        <h1 class="section-header" style="margin-bottom: 0.5em">
+          Our Partners
+        </h1>
         <el-row :gutter="100" style="width: 90%;" class="logo-block">
           <el-col
             v-for="(logo, index) in logos"
@@ -195,10 +203,14 @@ import CompanyHistoryTimeline from './CompanyHistoryTimeline'
 import SosDivider from './SosDivider'
 import SosPartnerLogo from './PartnerLogo'
 import HeroImage from './HeroImage'
+import SplitContentComponent from './SplitContentComponent'
+import WhyChooseUs from './WhyChooseUs'
 
 export default {
   name: 'PageContent',
   components: {
+    WhyChooseUs,
+    SplitContentComponent,
     HeroImage,
     SosPartnerLogo,
     SosDivider,
@@ -210,18 +222,30 @@ export default {
   data() {
     return {
       selectedService: Object,
-      services: require('../assets/services.yml'),
-      employees: require('../assets/team/team.yml'),
+      services: require('../assets/yml/services.yml'),
+      training: require('../assets/yml/training.yml'),
+      employees: require('../assets/yml/team.yml'),
       logos: [
-        require('../assets/partners/credence-logo.jpg'),
-        require('../assets/partners/elastic-logo.png'),
-        require('../assets/partners/fireeye-logo.png'),
-        require('../assets/partners/intelligenesis-logo.png'),
-        require('../assets/partners/profitap-logo.png')
-      ]
+        require('../assets/img/partners/credence-logo.jpg'),
+        require('../assets/img/partners/elastic-logo.png'),
+        require('../assets/img/partners/fireeye-logo.png'),
+        require('../assets/img/partners/intelligenesis-logo.png'),
+        require('../assets/img/partners/profitap-logo.png')
+      ],
+      onion_logo: require('../assets/img/icons/sos-onion.svg'),
+      content_side_internal_toggle: true
     }
   },
-  computed: {},
+  computed: {
+    service_list() {
+      this.services.forEach((key, index) => {
+        index % 2 === 0
+          ? (key.content_side_toggle = true)
+          : (key.content_side_toggle = false)
+      })
+      return this.services
+    }
+  },
   mounted() {},
   methods: {}
 }
@@ -231,14 +255,36 @@ export default {
 @import '~element-ui/packages/theme-chalk/src/common/var';
 
 .el-row {
-  margin-bottom: 20px;
+  margin-bottom: 0;
   :last-child {
     margin-bottom: 0;
   }
 }
 
+.hero {
+  width: 80%;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.75em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
 .service-list-card {
-  width: 100%;
+  width: 90%;
+}
+
+.sos_icon {
+  color: #f6b11f;
+  font-size: 1.75em;
 }
 
 .logos {
@@ -284,20 +330,8 @@ export default {
   :hover,
   :focus,
   :active {
-    color: #ffd14b !important;
+    color: #f6b11f !important;
   }
-}
-
-.hero {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  height: auto;
-  width: 100%;
-  padding: 0;
-  color: #ffd14b;
-  font-size: 1em;
-  font-weight: bold;
 }
 
 .el-header {
@@ -312,43 +346,23 @@ export default {
   align-items: center;
 }
 
-.subsection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2em;
-  width: 100%;
-  ul {
-    text-align: center;
-    list-style-position: inside;
-    padding-left: 0;
-    li {
-      font-size: large;
-      padding-top: 0.25em;
-      padding-bottom: 0.25em;
-    }
-  }
-}
-
 .fa-layer {
   display: inline-block;
   width: 100%;
 }
 
 .section-header {
-  color: #ffd14b;
-  font-size: 2.5em;
+  color: #f6b11f;
   font-weight: bold;
   justify-content: flex-end;
-  margin-bottom: 0;
+  margin: 0 0.5em;
 }
 
 .contact-links {
   display: flex;
   flex-direction: column;
   a {
-    color: #ffd14b;
+    color: #f6b11f;
     font-size: 2em !important;
     margin-bottom: 0;
     margin-top: 0;
@@ -358,22 +372,13 @@ export default {
   }
 }
 
-.header {
-  font-size: 2em;
-  font-weight: bold;
-  padding-top: 0 !important;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
-  justify-content: flex-end;
-}
-
 .caption {
   top: 70%;
   left: 50%;
   text-transform: uppercase;
   text-align: center;
   .caption-text {
-    color: #ffd14b;
+    color: #f6b11f;
     font-family: Montserrat, sans-serif;
     font-size: 1em;
     font-weight: bold;
@@ -384,25 +389,32 @@ export default {
   width: 90%;
 }
 
-.choose-us {
-  text-align: center;
-  display: block;
+.blurb {
+  font-size: larger;
+  line-height: 1.5;
 }
 
-.blurb {
-  font-size: medium;
+.training-box {
+  width: 80%;
+  padding: 2em;
+  @media (min-width: $--md) {
+    width: 60%;
+  }
+  @media (min-width: $--lg) {
+    width: 50%;
+  }
+  @media (min-width: $--xl) {
+    width: 40%;
+  }
+}
+
+.width-fix {
+  width: 100%;
 }
 
 @media (min-width: $--sm) {
   .service-list-card {
-    width: 40%;
-  }
-
-  .choose-us {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    width: 60%;
   }
 
   .service-dialog ::v-deep .el-dialog {
@@ -417,17 +429,21 @@ export default {
     min-height: 200px;
     margin-bottom: unset;
   }
+
+  .width-fix {
+    width: 80%;
+  }
 }
 
 @media (min-width: $--md) {
-  .timeline {
-    width: 40%;
-  }
-
   .caption {
-    position: absolute;
     font-size: 1.25em;
-    transform: translate(-50%, -25%);
+  }
+  .width-fix {
+    width: 60%;
+  }
+  .hero {
+    width: 60%;
   }
 }
 
@@ -435,23 +451,42 @@ export default {
   .caption {
     font-size: 1.5em;
   }
-  .employee-list {
-    width: 80%;
-  }
   .blurb {
-    font-size: larger;
+    width: 80%;
+    font-size: x-large;
   }
 }
 
 @media (min-width: $--xl) {
   .service-list-card {
-    width: 30%;
+    width: 40%;
   }
   .employee-list {
     width: 70%;
   }
-  .timeline {
+  .width-fix {
     width: 40%;
+  }
+  .hero {
+    width: 45%;
+    margin-top: 1.5em;
+  }
+}
+.subsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  ul {
+    text-align: center;
+    list-style-position: inside;
+    padding-left: 0;
+    li {
+      font-size: large;
+      padding-top: 0.25em;
+      padding-bottom: 0.25em;
+    }
   }
 }
 </style>

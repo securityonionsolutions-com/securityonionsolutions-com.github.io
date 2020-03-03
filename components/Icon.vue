@@ -1,16 +1,10 @@
 <template>
   <div>
-    <font-awesome-layers full-width>
-      <font-awesome-icon
-        icon="circle"
-        class="primary fa-stack-2x"
-      ></font-awesome-icon>
-      <font-awesome-icon
-        :icon="iconType"
-        style="color: white;"
-        class="fa-stack-1x"
-      ></font-awesome-icon>
-    </font-awesome-layers>
+    <font-awesome-icon
+      :icon="iconType"
+      class="primary"
+      :size="iconSizeString"
+    ></font-awesome-icon>
   </div>
 </template>
 
@@ -18,20 +12,19 @@
 export default {
   name: 'Icon',
   props: {
-    iconType: String('')
+    iconType: String(''),
+    iconSize: { type: Number, default: 1 }
+  },
+  computed: {
+    iconSizeString() {
+      return `${this.iconSize}x`
+    }
   }
 }
 </script>
 
 <style scoped>
-div {
-  width: 4em;
-}
-.fa-layers {
-  display: inline-block;
-  width: 100%;
-}
 .primary {
-  color: #ffd14b;
+  color: #f6b11f;
 }
 </style>

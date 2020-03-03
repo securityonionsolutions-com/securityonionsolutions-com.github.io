@@ -1,10 +1,37 @@
 <template>
-  <div class="hero-image-wrapper">
-    <img
-      :src="heroImage"
-      class="hero-image"
-      alt="Image of Security Onion Solutions employees at Security Onion Conference 2019"
-    />
+  <div class="header-wrapper">
+    <client-only>
+      <el-row type="flex">
+        <el-col class="hidden-md-and-down">
+          <el-carousel
+            indicator-position="outside"
+            trigger="click"
+            :interval="10000"
+          >
+            <el-carousel-item
+              v-for="(item, index) in headerImgArrHoriz"
+              :key="index"
+            >
+              <el-image :src="item.img" :alt="item.alt" fit="cover" />
+            </el-carousel-item>
+          </el-carousel>
+        </el-col>
+        <el-col class="hidden-lg-and-up">
+          <el-carousel
+            indicator-position="outside"
+            trigger="click"
+            :interval="10000"
+          >
+            <el-carousel-item
+              v-for="(item, index) in headerImgArrSquare"
+              :key="index"
+            >
+              <el-image :src="item.img" :alt="item.alt" fit="cover" />
+            </el-carousel-item>
+          </el-carousel>
+        </el-col>
+      </el-row>
+    </client-only>
   </div>
 </template>
 
@@ -13,7 +40,50 @@ export default {
   name: 'HeroImage',
   data() {
     return {
-      heroImage: require('../assets/header-bg.jpg')
+      headerImgArrHoriz: [
+        {
+          alt: 'Josh Brower speaking',
+          img: require('../assets/img/headers/sos-site-header-1.jpg')
+        },
+        {
+          alt: 'Doug Burks speaking',
+          img: require('../assets/img/headers/sos-site-header-2.jpg')
+        },
+        {
+          alt: 'Wes Lamber speaking',
+          img: require('../assets/img/headers/sos-site-header-3.jpg')
+        },
+        {
+          alt: 'Mike Reeves speaking',
+          img: require('../assets/img/headers/sos-site-header-4.jpg')
+        },
+        {
+          alt: 'Phil Plantamura speaking',
+          img: require('../assets/img/headers/sos-site-header-5.jpg')
+        }
+      ],
+      headerImgArrSquare: [
+        {
+          alt: 'Josh Brower speaking',
+          img: require('../assets/img/headers/sos-site-header-1-square.jpg')
+        },
+        {
+          alt: 'Doug Burks speaking',
+          img: require('../assets/img/headers/sos-site-header-2-square.jpg')
+        },
+        {
+          alt: 'Wes Lamber speaking',
+          img: require('../assets/img/headers/sos-site-header-3-square.jpg')
+        },
+        {
+          alt: 'Mike Reeves speaking',
+          img: require('../assets/img/headers/sos-site-header-4-square.jpg')
+        },
+        {
+          alt: 'Phil Plantamura speaking',
+          img: require('../assets/img/headers/sos-site-header-5-square.jpg')
+        }
+      ]
     }
   }
 }
@@ -22,19 +92,16 @@ export default {
 <style scoped lang="scss">
 @import '~element-ui/packages/theme-chalk/src/common/var';
 
-.hero-image-wrapper {
-  width: 100%;
-  /*background: black;*/
-  max-width: 1427px;
-  max-height: 595px;
-  margin-bottom: 1.5em;
-}
-
-.hero-image {
-  width: 100%;
-  @media (min-width: $--md) {
-    filter: brightness(75%);
+::v-deep .el-carousel__container {
+  height: 15em;
+  @media (min-width: $--sm) {
+    height: 22em;
   }
-  /*opacity: 0.7;*/
+  @media (min-width: $--md) {
+    height: 20em;
+  }
+  @media (min-width: $--xl) {
+    height: 25em;
+  }
 }
 </style>
