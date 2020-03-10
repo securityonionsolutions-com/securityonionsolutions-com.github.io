@@ -6,7 +6,7 @@
 - image: phil_plantamura.jpg
   linkedinLink: https://www.linkedin.com/in/philplantamura
   name: Phil Plantamura
-  role: COO
+  role: Chief Operations Officer
   twitterLink: https://twitter.com/philplantamura
 - image: mike_reeves.jpg
   linkedinLink: https://www.linkedin.com/in/mike-reeves-948b131/
@@ -21,7 +21,7 @@
 - image: william_wernert.jpg
   linkedinLink: https://www.linkedin.com/in/rwwiv/
   name: William Wernert
-  role: Developer
+  role: Software Developer
   twitterLink: https://twitter.com/rwwiv
 - image: josh_brower.jpg
   linkedinLink: https://www.linkedin.com/in/joshbrower
@@ -44,4 +44,4 @@
   role: Senior Engineer
 - image: jason_ertel.jpg
   name: Jason Ertel
-  role: Software Engineer
+  role: Director of Software Engineering

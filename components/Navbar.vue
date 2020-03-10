@@ -83,7 +83,7 @@ export default {
     };
   },
   methods: {
-    // handleSelect(key, keyPath) {},
+    handleSelect() {},
   },
 };
 </script>

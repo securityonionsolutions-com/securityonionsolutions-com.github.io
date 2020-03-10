@@ -1,14 +1,7 @@
 <template>
   <el-card :body-style="{ padding: '0px' }">
-    <div slot="header" style="font-size: medium; font-weight: bold">
-      {{ employee.name }}
-    </div>
-    <img
-      :src="require(`@/assets/img/team/${employee.image}`)"
-      :alt="`Image of ${employee.name}`"
-    >
-    <div style="padding: 14px" class="clearfix">
-      <span style="color: #777;">{{ employee.role }}</span>
+    <div slot="header" style="font-size: medium;">
+      <span>{{ employee.name }}</span>
       <a
         v-if="Object.keys(employee).includes('twitterLink')"
         class="el-button--text button"
@@ -33,6 +26,13 @@
           class="button"
         />
       </a>
+    </div>
+    <img
+      :src="require(`@/assets/img/team/${employee.image}`)"
+      :alt="`Image of ${employee.name}`"
+    >
+    <div class="title">
+      <span style="color: #777;">{{ employee.role }}</span>
     </div>
   </el-card>
 </template>
@@ -81,5 +81,9 @@ img {
     max-width: 240px;
     max-height: 240px;
   }
+}
+.title {
+  max-width: 172px;
+  padding: 14px;
 }
 </style>
