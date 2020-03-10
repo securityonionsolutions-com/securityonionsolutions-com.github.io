@@ -30,7 +30,7 @@ export default {
    */
   plugins: [
     '@/plugins/element-ui',
-    '@/plugins/vue-scrollspy',
+    // '@/plugins/vue-scrollspy',
   ],
   /*
    ** Nuxt.js modules
