@@ -1,14 +1,14 @@
 <template>
-  <img :src="logo" class="partner-logo" :alt="`${logo.name}`" />
+  <img :src="logo" class="partner-logo" :alt="`${logo.name}`">
 </template>
 
 <script>
 export default {
   name: 'SosPartnerLogo',
   props: {
-    logo: Object({})
-  }
-}
+    logo: Object({}),
+  },
+};
 </script>
 
 <style scoped lang="scss">

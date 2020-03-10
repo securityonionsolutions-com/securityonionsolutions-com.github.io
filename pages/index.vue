@@ -1,25 +1,25 @@
 <template>
   <div id="app">
     <navbar />
-    <br />
+    <br>
     <pageContent />
     <sos-footer />
-    <el-backtop target="#hero"></el-backtop>
+    <el-backtop target="#hero" />
   </div>
 </template>
 
 <script>
-import SosFooter from '~/components/SosFooter'
-import Navbar from '~/components/Navbar'
-import PageContent from '~/components/PageContent'
+import SosFooter from '../components/SosFooter.vue';
+import Navbar from '../components/Navbar.vue';
+import PageContent from '../components/PageContent.vue';
 
 export default {
   components: {
     SosFooter,
     Navbar,
-    PageContent
-  }
-}
+    PageContent,
+  },
+};
 </script>
 
 <style lang="scss">

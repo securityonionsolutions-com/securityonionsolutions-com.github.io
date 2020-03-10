@@ -34,6 +34,8 @@
 </template>
 
 <script>
+/* eslint-disable global-require */
+
 export default {
   name: 'HeroImage',
   data() {
@@ -41,50 +43,50 @@ export default {
       headerImgArrHoriz: [
         {
           alt: 'Josh Brower speaking',
-          img: require('../assets/img/headers/sos-site-header-1.jpg')
+          img: require('../assets/img/headers/sos-site-header-1.jpg'),
         },
         {
           alt: 'Doug Burks speaking',
-          img: require('../assets/img/headers/sos-site-header-2.jpg')
+          img: require('../assets/img/headers/sos-site-header-2.jpg'),
         },
         {
           alt: 'Wes Lamber speaking',
-          img: require('../assets/img/headers/sos-site-header-3.jpg')
+          img: require('../assets/img/headers/sos-site-header-3.jpg'),
         },
         {
           alt: 'Mike Reeves speaking',
-          img: require('../assets/img/headers/sos-site-header-4.jpg')
+          img: require('../assets/img/headers/sos-site-header-4.jpg'),
         },
         {
           alt: 'Phil Plantamura speaking',
-          img: require('../assets/img/headers/sos-site-header-5.jpg')
-        }
+          img: require('../assets/img/headers/sos-site-header-5.jpg'),
+        },
       ],
       headerImgArrSquare: [
         {
           alt: 'Josh Brower speaking',
-          img: require('../assets/img/headers/sos-site-header-1-square.jpg')
+          img: require('../assets/img/headers/sos-site-header-1-square.jpg'),
         },
         {
           alt: 'Doug Burks speaking',
-          img: require('../assets/img/headers/sos-site-header-2-square.jpg')
+          img: require('../assets/img/headers/sos-site-header-2-square.jpg'),
         },
         {
           alt: 'Wes Lamber speaking',
-          img: require('../assets/img/headers/sos-site-header-3-square.jpg')
+          img: require('../assets/img/headers/sos-site-header-3-square.jpg'),
         },
         {
           alt: 'Mike Reeves speaking',
-          img: require('../assets/img/headers/sos-site-header-4-square.jpg')
+          img: require('../assets/img/headers/sos-site-header-4-square.jpg'),
         },
         {
           alt: 'Phil Plantamura speaking',
-          img: require('../assets/img/headers/sos-site-header-5-square.jpg')
-        }
-      ]
-    }
-  }
-}
+          img: require('../assets/img/headers/sos-site-header-5-square.jpg'),
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style scoped lang="scss">

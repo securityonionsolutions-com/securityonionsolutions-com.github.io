@@ -10,14 +10,11 @@ module.exports = {
   extends: [
     '@nuxtjs',
     'plugin:nuxt/recommended',
-    'plugin:prettier/recommended',
-    'prettier',
-    'prettier/vue'
-  ],
-  plugins: [
-    'prettier'
+    'airbnb-base',
+    'plugin:vue/recommended'
   ],
   // add your custom rules here
   rules: {
+    'max-len': "off"
   }
 }

@@ -6,7 +6,7 @@
     <img
       :src="require(`@/assets/img/team/${employee.image}`)"
       :alt="`Image of ${employee.name}`"
-    />
+    >
     <div style="padding: 14px" class="clearfix">
       <span style="color: #777;">{{ employee.role }}</span>
       <a
@@ -49,12 +49,12 @@ export default {
           image: '',
           role: '',
           twitterLink: '',
-          linkedinLink: ''
-        }
-      }
-    }
-  }
-}
+          linkedinLink: '',
+        };
+      },
+    },
+  },
+};
 </script>
 
 <style scoped lang="scss">

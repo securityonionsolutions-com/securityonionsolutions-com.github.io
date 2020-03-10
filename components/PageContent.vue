@@ -84,7 +84,8 @@
               style="display: flex; flex-direction: column; align-items: center; width: 80%"
             >
               <span
-                style="display: flex; flex-direction: column; align-items: center; margin-bottom: 0.75em; text-align: center"
+                style="display: flex; flex-direction: column;
+                  align-items: center; margin-bottom: 0.75em; text-align: center"
               >
                 <icon
                   :icon-type="services[0].iconType"
@@ -108,7 +109,8 @@
               style="display: flex; flex-direction: column; align-items: center; width: 80%"
             >
               <span
-                style="display: flex; flex-direction: column; align-items: center; margin-bottom: 0.75em; text-align: center"
+                style="display: flex; flex-direction: column;
+                align-items: center; margin-bottom: 0.75em; text-align: center"
               >
                 <icon
                   :icon-type="services[1].iconType"
@@ -138,7 +140,9 @@
             <div
               style="display: flex; align-items: center; flex-direction: column"
             >
-              <h1 class="section-header">Our Team</h1>
+              <h1 class="section-header">
+                Our Team
+              </h1>
               <el-row
                 type="flex"
                 justify="center"
@@ -160,7 +164,9 @@
             <div
               style="display: flex; align-items: center; flex-direction: column"
             >
-              <h1 class="section-header">Our History</h1>
+              <h1 class="section-header">
+                Our History
+              </h1>
               <el-row type="flex" justify="center" class="timeline">
                 <el-col>
                   <company-history-timeline />
@@ -187,7 +193,7 @@
             :md="8"
             :xl="4"
           >
-            <sos-partner-logo :logo="logo"></sos-partner-logo>
+            <sos-partner-logo :logo="logo" />
           </el-col>
         </el-row>
       </div>
@@ -196,15 +202,30 @@
 </template>
 
 <script>
-import ServiceInfo from './ServiceInfoComponent'
-import Icon from './Icon'
-import EmplInfoCard from './EmployeeInfoCard'
-import CompanyHistoryTimeline from './CompanyHistoryTimeline'
-import SosDivider from './SosDivider'
-import SosPartnerLogo from './PartnerLogo'
-import HeroImage from './HeroImage'
-import SplitContentComponent from './SplitContentComponent'
-import WhyChooseUs from './WhyChooseUs'
+/* eslint-disable global-require */
+
+import Icon from './Icon.vue';
+import ServiceInfo from './ServiceInfoComponent.vue';
+import EmplInfoCard from './EmployeeInfoCard.vue';
+import CompanyHistoryTimeline from './CompanyHistoryTimeline.vue';
+import SosDivider from './SosDivider.vue';
+import SosPartnerLogo from './PartnerLogo.vue';
+import HeroImage from './HeroImage.vue';
+import SplitContentComponent from './SplitContentComponent.vue';
+import WhyChooseUs from './WhyChooseUs.vue';
+
+const serviceYaml = require('../assets/yml/services.yml');
+const trainingYaml = require('../assets/yml/training.yml');
+const employeeYaml = require('../assets/yml/team.yml');
+const onionLogo = require('../assets/img/icons/sos-onion.svg');
+
+const logos = [
+  require('../assets/img/partners/credence-logo.jpg'),
+  require('../assets/img/partners/elastic-logo.png'),
+  require('../assets/img/partners/fireeye-logo.png'),
+  require('../assets/img/partners/intelligenesis-logo.png'),
+  require('../assets/img/partners/profitap-logo.png'),
+];
 
 export default {
   name: 'PageContent',
@@ -217,38 +238,22 @@ export default {
     CompanyHistoryTimeline,
     EmplInfoCard,
     Icon,
-    ServiceInfo
+    ServiceInfo,
   },
   data() {
     return {
       selectedService: Object,
-      services: require('../assets/yml/services.yml'),
-      training: require('../assets/yml/training.yml'),
-      employees: require('../assets/yml/team.yml'),
-      logos: [
-        require('../assets/img/partners/credence-logo.jpg'),
-        require('../assets/img/partners/elastic-logo.png'),
-        require('../assets/img/partners/fireeye-logo.png'),
-        require('../assets/img/partners/intelligenesis-logo.png'),
-        require('../assets/img/partners/profitap-logo.png')
-      ],
-      onion_logo: require('../assets/img/icons/sos-onion.svg'),
-      content_side_internal_toggle: true
-    }
+      services: serviceYaml,
+      training: trainingYaml,
+      employees: employeeYaml,
+      logos,
+      onionLogo,
+    };
   },
-  computed: {
-    service_list() {
-      this.services.forEach((key, index) => {
-        index % 2 === 0
-          ? (key.content_side_toggle = true)
-          : (key.content_side_toggle = false)
-      })
-      return this.services
-    }
-  },
+  computed: {},
   mounted() {},
-  methods: {}
-}
+  methods: {},
+};
 </script>
 
 <style scoped lang="scss">

@@ -1,6 +1,8 @@
 <template>
   <div class="subsection">
-    <h3 class="header">Why choose us?</h3>
+    <h3 class="header">
+      Why choose us?
+    </h3>
     <el-row class="choose-us">
       <el-col :span="24">
         <p>
@@ -38,8 +40,8 @@
 
 <script>
 export default {
-  name: 'WhyChooseUs'
-}
+  name: 'WhyChooseUs',
+};
 </script>
 
 <style scoped lang="scss">

@@ -18,31 +18,49 @@
             menu-trigger="click"
             @select="handleSelect"
           >
-            <el-menu-item index="1-1" class="hidden-md-and-down"
-              ><el-link href="https://securityonion.net/" :underline="false"
-                >Security Onion</el-link
-              ></el-menu-item
+            <el-menu-item
+              index="1-1"
+              class="hidden-md-and-down"
             >
-            <el-menu-item index="1-2" class="hidden-md-and-down"
-              ><el-link
+              <el-link
+                href="https://securityonion.net/"
+                :underline="false"
+              >
+                Security Onion
+              </el-link>
+            </el-menu-item>
+            <el-menu-item
+              index="1-2"
+              class="hidden-md-and-down"
+            >
+              <el-link
                 href="https://securityonion.net/conference"
                 :underline="false"
-                >SO Conference</el-link
-              ></el-menu-item
-            >
-            <el-submenu index="2" class="hidden-lg-and-up">
-              <el-menu-item index="2-1"
-                ><el-link href="https://securityonion.net/" :underline="false"
-                  >Security Onion</el-link
-                ></el-menu-item
               >
-              <el-menu-item index="2-2"
-                ><el-link
+                SO Conference
+              </el-link>
+            </el-menu-item>
+            <el-submenu index="2" class="hidden-lg-and-up">
+              <el-menu-item
+                index="2-1"
+              >
+                <el-link
+                  href="https://securityonion.net/"
+                  :underline="false"
+                >
+                  Security Onion
+                </el-link>
+              </el-menu-item>
+              <el-menu-item
+                index="2-2"
+              >
+                <el-link
                   href="https://securityonion.net/conference"
                   :underline="false"
-                  >SO Conference</el-link
-                ></el-menu-item
-              >
+                >
+                  SO Conference
+                </el-link>
+              </el-menu-item>
             </el-submenu>
           </el-menu>
         </div>
@@ -54,19 +72,20 @@
 <script>
 // import VueScrollTo from 'vue-scrollto';
 
-import SosOnionSvg from './SosOnionSvg'
+import SosOnionSvg from './SosOnionSvg.vue';
+
 export default {
   name: 'Navbar',
   components: { SosOnionSvg },
   data() {
     return {
-      activeIndex: '1'
-    }
+      activeIndex: '1',
+    };
   },
   methods: {
-    handleSelect(key, keyPath) {}
-  }
-}
+    // handleSelect(key, keyPath) {},
+  },
+};
 </script>
 
 <style scoped lang="scss">

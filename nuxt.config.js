@@ -12,10 +12,10 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'We help you peel back the layers of your enterprise, security onion, training, professional services, appliances, ids, nsm, esm, network security monitoring, enterprise security monitoring, log management'
-      }
+          'We help you peel back the layers of your enterprise, security onion, training, professional services, appliances, ids, nsm, esm, network security monitoring, enterprise security monitoring, log management',
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   /*
    ** Customize the progress-bar color
@@ -28,7 +28,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['@/plugins/element-ui'],
+  plugins: [
+    '@/plugins/element-ui',
+    '@/plugins/vue-scrollspy',
+  ],
   /*
    ** Nuxt.js modules
    */
@@ -40,15 +43,15 @@ export default {
         imports: [
           {
             set: '@fortawesome/free-solid-svg-icons',
-            icons: ['fas']
+            icons: ['fas'],
           },
           {
             set: '@fortawesome/free-brands-svg-icons',
-            icons: ['fab']
-          }
-        ]
-      }
-    ]
+            icons: ['fab'],
+          },
+        ],
+      },
+    ],
   ],
   /*
    ** Build configuration
@@ -58,11 +61,11 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {
+    extend(config) {
       config.module.rules.push({
         test: /\.ya?ml$/,
-        use: 'js-yaml-loader'
-      })
-    }
-  }
-}
+        use: 'js-yaml-loader',
+      });
+    },
+  },
+};

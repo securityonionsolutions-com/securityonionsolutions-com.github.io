@@ -8,39 +8,41 @@
     >
       <el-col :span="12" class="footer-col">
         <div class="hidden-xs-only">
-          <p style="margin-bottom: 0;">Contact us:</p>
+          <p style="margin-bottom: 0;">
+            Contact us:
+          </p>
           <el-row style="width: 100%;" :gutter="20">
             <el-col :span="24" :md="12">
               <p>
-                <a href="mailto:onsitetraining@securityonionsolutions.com"
-                  >onsitetraining@securityonionsolutions.com</a
-                >
+                <a
+                  href="mailto:onsitetraining@securityonionsolutions.com"
+                >onsitetraining@securityonionsolutions.com</a>
               </p>
               <p>
-                <a href="mailto:appliances@securityonionsolutions.com"
-                  >appliances@securityonionsolutions.com</a
-                >
+                <a
+                  href="mailto:appliances@securityonionsolutions.com"
+                >appliances@securityonionsolutions.com</a>
               </p>
             </el-col>
             <el-col :span="24" :md="12">
               <p>
-                <a href="mailto:professionalservices@securityonionsolutions.com"
-                  >professionalservices@securityonionsolutions.com</a
-                >
+                <a
+                  href="mailto:professionalservices@securityonionsolutions.com"
+                >professionalservices@securityonionsolutions.com</a>
               </p>
               <p>
-                <a href="mailto:onlinetraining@securityonionsolutions.com"
-                  >onlinetraining@securityonionsolutions.com</a
-                >
+                <a
+                  href="mailto:onlinetraining@securityonionsolutions.com"
+                >onlinetraining@securityonionsolutions.com</a>
               </p>
             </el-col>
           </el-row>
         </div>
         <div class="hidden-sm-and-up">
           <p style="margin-bottom: 0;">
-            <a href="mailto:professionalservices@securityonionsolutions.com"
-              >Contact us!</a
-            >
+            <a
+              href="mailto:professionalservices@securityonionsolutions.com"
+            >Contact us!</a>
           </p>
         </div>
 
@@ -56,7 +58,7 @@
                 :icon="['fab', 'linkedin']"
                 style="color: black;"
                 class="button fa-2x"
-              ></font-awesome-icon>
+              />
             </a>
           </el-col>
           <el-col :span="12" style="width: auto">
@@ -69,22 +71,22 @@
                 :icon="['fab', 'twitter']"
                 style="color: black;"
                 class="button fa-2x"
-              ></font-awesome-icon>
+              />
             </a>
           </el-col>
         </el-row>
         <p style="margin-top: 3em;">
           Onion icon from
-          <a href="https://www.flaticon.com/" title="Flaticon"
-            >www.flaticon.com</a
-          >
+          <a
+            href="https://www.flaticon.com/"
+            title="Flaticon"
+          >www.flaticon.com</a>
           is licensed by
           <a
             href="http://creativecommons.org/licenses/by/3.0/"
             title="Creative Commons BY 3.0"
             target="_blank"
-            >CC 3.0 BY</a
-          >
+          >CC 3.0 BY</a>
         </p>
       </el-col>
     </el-row>
@@ -93,8 +95,8 @@
 
 <script>
 export default {
-  name: 'SosFooter'
-}
+  name: 'SosFooter',
+};
 </script>
 
 <style scoped lang="scss">

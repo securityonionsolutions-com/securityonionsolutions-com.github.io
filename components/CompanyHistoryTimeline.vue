@@ -10,7 +10,9 @@
       <el-card :body-style="{ padding: '6px' }">
         <el-row>
           <div style="padding: 15px;">
-            <h4 v-if="event.title">{{ event.title }}</h4>
+            <h4 v-if="event.title">
+              {{ event.title }}
+            </h4>
             <p>{{ event.text }}</p>
           </div>
         </el-row>
@@ -20,14 +22,16 @@
 </template>
 
 <script>
+const events = require('../assets/yml/timeline.yml');
+
 export default {
   name: 'CompanyHistoryTimeline',
   data() {
     return {
-      events: require('../assets/yml/timeline.yml')
-    }
-  }
-}
+      events,
+    };
+  },
+};
 </script>
 
 <style scoped>

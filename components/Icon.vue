@@ -4,7 +4,7 @@
       :icon="iconType"
       class="primary"
       :size="iconSizeString"
-    ></font-awesome-icon>
+    />
   </div>
 </template>
 
@@ -13,14 +13,14 @@ export default {
   name: 'Icon',
   props: {
     iconType: String(''),
-    iconSize: { type: Number, default: 1 }
+    iconSize: { type: Number, default: 1 },
   },
   computed: {
     iconSizeString() {
-      return `${this.iconSize}x`
-    }
-  }
-}
+      return `${this.iconSize}x`;
+    },
+  },
+};
 </script>
 
 <style scoped>

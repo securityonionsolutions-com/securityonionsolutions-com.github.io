@@ -32,9 +32,9 @@
 export default {
   name: 'OnionSvg',
   props: {
-    size: { type: Number, default: 2 }
-  }
-}
+    size: { type: Number, default: 2 },
+  },
+};
 </script>
 
 <style scoped>

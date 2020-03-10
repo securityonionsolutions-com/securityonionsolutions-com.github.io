@@ -19,7 +19,8 @@
 </template>
 
 <script>
-import SosDivider from './SosDivider'
+import SosDivider from './SosDivider.vue';
+
 export default {
   name: 'SplitContentComponent',
   components: { SosDivider },
@@ -29,15 +30,15 @@ export default {
       default() {
         return {
           left: 12,
-          right: 12
-        }
-      }
+          right: 12,
+        };
+      },
     },
     splitOn: { type: String, default: 'xs' },
-    hideDivider: { type: Boolean, default: false }
+    hideDivider: { type: Boolean, default: false },
   },
-  computed: {}
-}
+  computed: {},
+};
 </script>
 
 <style scoped lang="scss">

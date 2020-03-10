@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- eslint-disable-next-line vue/no-v-html -->
-    <div v-html="service.content"></div>
+    <div v-html="service.content" />
     <p>
       {{ service.contactBlurb }}
       <a :href="`mailto:${service.contactEmail}`">Email Us!</a>
@@ -16,10 +16,10 @@ export default {
     service: Object({
       content: String,
       contactBlurb: String,
-      contactEmail: String
-    })
-  }
-}
+      contactEmail: String,
+    }),
+  },
+};
 </script>
 
 <style scoped lang="scss">

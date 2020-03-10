@@ -7,19 +7,20 @@
 </template>
 
 <script>
-import OnionSvg from './OnionSvg'
+import OnionSvg from './OnionSvg.vue';
+
 export default {
   name: 'SosDivider',
   components: { OnionSvg },
   props: {
-    smallDivider: { type: Boolean, default: false }
+    smallDivider: { type: Boolean, default: false },
   },
   computed: {
     smallDividerClass() {
-      return this.smallDivider ? 'small-divider' : ''
-    }
-  }
-}
+      return this.smallDivider ? 'small-divider' : '';
+    },
+  },
+};
 </script>
 
 <style scoped lang="scss">
