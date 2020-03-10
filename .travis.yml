@@ -15,11 +15,11 @@ script:
 
 deploy:
   provider: pages
-  skip-cleanup: true
+  skip_cleanup: true
   fqdn: securityonionsolutions.com
-  github_token: $GITHUB_TOKEN
+  token: $GITHUB_TOKEN
   keep_history: true
-  local-dir: dist
+  local_dir: dist
   target_branch: master
   on:
     branch: vue-source
