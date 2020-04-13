@@ -205,13 +205,13 @@
 /* eslint-disable global-require */
 
 import Icon from './Icon.vue';
-import ServiceInfo from './ServiceInfoComponent.vue';
+import ServiceInfo from './ServiceInfo.vue';
 import EmplInfoCard from './EmployeeInfoCard.vue';
 import CompanyHistoryTimeline from './CompanyHistoryTimeline.vue';
 import SosDivider from './SosDivider.vue';
 import SosPartnerLogo from './PartnerLogo.vue';
 import HeroImage from './HeroImage.vue';
-import SplitContentComponent from './SplitContentComponent.vue';
+import SplitContentComponent from './SplitContent.vue';
 import WhyChooseUs from './WhyChooseUs.vue';
 
 const serviceYaml = require('../assets/yml/services.yml');

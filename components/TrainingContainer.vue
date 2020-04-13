@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import ServiceInfo from './ServiceInfoComponent.vue';
+import ServiceInfo from './ServiceInfo.vue';
 
 export default {
   name: 'TrainingContainer',
