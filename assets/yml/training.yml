@@ -1,4 +1,4 @@
-- title: Onsite
+- title: Instructor-led (virtual or onsite)
   iconType: el-icon-edit-outline
   content: |
     <p>
@@ -10,17 +10,17 @@
       Students receive printed course materials and walk out of class with a Certificate of Completion ready to make their adversaries cry!
     </p>
     <p>
-      <a href="https://securityonionsolutions.com/onsitetraining">Click here</a>
+      <a href="https://securityonionsolutions.com/livetraining">Click here</a>
       for pricing and registration for Security Onion live public courses
     </p>
     <p>
       We are proud to offer GSA pricing through our partner IntelliGenesis!
       <br/>
-      Eligible organizations, please <a href="mailto:onsitetrainingGSA@securityonionsolutions.com">email us here</a> for more information.
+      Eligible organizations, please <a href="mailto:livetrainingGSA@securityonionsolutions.com">email us here</a> for more information.
     </p>
-  contactBlurb: Have at least 8 students and want private training at your facility in the continental United States?
-  contactEmail: onsitetraining@securityonionsolutions.com
-- title: Online
+  contactBlurb: Have at least 8 students and want private live instructor-led training delivered virtually or, when safe to do so, onsite at your facility?
+  contactEmail: livetraining@securityonionsolutions.com
+- title: On-demand
   iconType: el-icon-monitor
   content: |
     <p>
