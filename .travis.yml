@@ -11,6 +11,8 @@ install:
   - npm run generate --fail-on-page-error
 
 script:
+  - mkdir -p dist/_nuxt/static/img
+  - cp assets/img/security_onion_solutions_rings.png dist/_nuxt/static/img/security_onion_solutions_rings.png
   - echo "Skipping tests"
 
 deploy:
