@@ -1,0 +1,9 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.vertical-line {
+  border-right: 4px solid #212121;
+  width: 0;
+  /* height: 250px; */
+}

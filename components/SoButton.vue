@@ -1,0 +1,47 @@
+<template>
+  <component :is="baseType()" :href="[link!=='' ? link : false]" :target="external">
+    <button
+      class="shadow-lg font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline block"
+      type="button"
+      :class="[alt ? 'bg-white text-black hover:bg-gray-100' : 'bg-so-blue text-white hover:bg-blue-700']"
+    >
+      <div class="mx-6">
+        <slot>
+          Button Text
+        </slot>
+      </div>
+    </button>
+  </component>
+</template>
+
+<script>
+export default {
+  props: {
+    alt: {
+      type: Boolean,
+      default: false
+    },
+    link: {
+      type: String,
+      default: ''
+    }
+  },
+  computed: {
+    external () {
+      if (this.link.startsWith('http') || this.link.startsWith('https')) {
+        return '_blank'
+      }
+      return false
+    }
+  },
+  methods: {
+    baseType () {
+      if (this.link !== '') {
+        return 'a'
+      } else {
+        return 'div'
+      }
+    }
+  }
+}
+</script>

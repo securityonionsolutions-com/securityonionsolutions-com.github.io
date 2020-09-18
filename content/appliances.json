@@ -1,0 +1,100 @@
+{
+  "appliances": [
+    {
+      "name": "SOS1XXX",
+      "type": "Forward Node",
+      "performance": {
+        "val1": 25,
+        "val2": 50
+      },
+      "important_specs": {
+        "Spec 1": "Spec Value",
+        "Spec 2": "Spec Value"
+      },
+      "other_specs": {
+        "Spec 3": "Spec Value",
+        "Spec 4": "Spec Value"
+      }
+    },
+    {
+      "name": "SOS2XXX",
+      "type": "Forward Node",
+      "performance": {
+        "val1": 100,
+        "val2": 50
+      },
+      "important_specs": {
+        "Spec 1": "Spec Value",
+        "Spec 2": "Spec Value"
+      },
+      "other_specs": {
+        "Spec 3": "Spec Value",
+        "Spec 4": "Spec Value"
+      }
+    },
+    {
+      "name": "SOS3XXX",
+      "type": "Forward Node",
+      "performance": {
+        "val1": 75,
+        "val2": 50
+      },
+      "important_specs": {
+        "Spec 1": "Spec Value",
+        "Spec 2": "Spec Value"
+      },
+      "other_specs": {
+        "Spec 3": "Spec Value",
+        "Spec 4": "Spec Value"
+      }
+    },
+    {
+      "name": "SOS1YYY",
+      "type": "Manager Node",
+      "performance": {
+        "val1": 25,
+        "val2": 50
+      },
+      "important_specs": {
+        "Spec 1": "Spec Value",
+        "Spec 2": "Spec Value"
+      },
+      "other_specs": {
+        "Spec 3": "Spec Value",
+        "Spec 4": "Spec Value"
+      }
+    },
+    {
+      "name": "SOS1ZZZ",
+      "type": "Search Node",
+      "performance": {
+        "val1": 50,
+        "val2": 25
+      },
+      "important_specs": {
+        "Spec 1": "Spec Value",
+        "Spec 2": "Spec Value"
+      },
+      "other_specs": {
+        "Spec 3": "Spec Value",
+        "Spec 4": "Spec Value"
+      }
+    },
+    {
+      "name": "SOS2ZZZ",
+      "type": "Search Node",
+      "performance": {
+        "val1": 50,
+        "val2": 100
+      },
+      "important_specs": {
+        "Spec 1": "Spec Value",
+        "Spec 2": "Spec Value"
+      },
+      "other_specs": {
+        "Spec 3": "Spec Value",
+        "Spec 4": "Spec Value"
+      }
+    }
+  ]
+}

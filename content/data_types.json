@@ -1,0 +1,46 @@
+{
+  "types": [
+    {
+      "name": "Alert",
+      "icon": "exclamation-triangle",
+      "desc": "Judgment made by a product about an event",
+      "tools": "HIDS from Wazuh and NIDS from Suricata"
+    },
+    {
+      "name": "Session",
+      "icon": "exchange-alt",
+      "desc": "Detail about conversations between hosts",
+      "tools": "Zeek, Suricata"
+    },
+    {
+      "name": "Full Content",
+      "icon": "camera-retro",
+      "desc": "All packets on the network",
+      "tools": "SOC PCAP via Stenographer"
+    },
+    {
+      "name": "Extracted Content",
+      "icon": "puzzle-piece",
+      "desc": "Rebuilt elements of a session and extracted metedata",
+      "tools": "Zeek"
+    },
+    {
+      "name": "Transaction",
+      "icon": "ethernet",
+      "desc": "Generated logs based on network traffic (http, ftp, dns, ssl, etc)",
+      "tools": "Zeek, Suricata"
+    },
+    {
+      "name": "Asset",
+      "icon": "desktop",
+      "desc": "Metadata about hosts on the network",
+      "tools": "Zeek"
+    },
+    {
+      "name": "Agent",
+      "icon": ["far", "window-maximize"],
+      "desc": "Information gathered from agent software",
+      "tools": "Beats, Wazuh, syslog, osquery, and more"
+    }
+  ]
+}
