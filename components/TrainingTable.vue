@@ -19,7 +19,7 @@
             <div class="h-auto flex items-center justify-end">
               <div class="border-l border-gray-400 text-sm xs:text-xs text-so-blue xs:text-base px-4 py-2 flex items-center">
                 <div class="mr-2 font-semibold">Register</div>
-                <fa :icon="['fas', 'sign-in-alt']" />
+                <fa :icon="['fas', 'external-link-alt']" />
               </div>
             </div>
           </div>
