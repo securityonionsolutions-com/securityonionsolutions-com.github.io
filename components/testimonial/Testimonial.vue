@@ -1,10 +1,10 @@
 <template>
   <div class="flex flex-col items-center">
     <div
-      class="shadow-lg border font-bold p-6 xl:py-4 xl:px-4 rounded-xl mx-4 sm:w-3/5 relative"
+      class="shadow-sm border font-bold p-4 xs:p-6 xl:py-4 xl:px-4 rounded-xl m-1 relative mx-2 lg:mx-12"
       :class="[alt ? 'bg-white text-black' : 'bg-so-blue text-white']"
     >
-      <div class="mx-4">
+      <div class="mx-4 text-sm xs:text-base">
         <slot name="text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis, mi vitae varius iaculis, justo nisi rutrum sapien, suscipit feugiat turpis nisl a nisl.
         </slot>

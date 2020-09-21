@@ -1,0 +1,18 @@
+{
+    "events": [
+        {
+            "name": "Security Onion 2.x Fundamentals for Analysts & Admins - Virtual Oct 2020 AM",
+            "start": "2020-10-12T08:00:00-04:00",
+            "end": "2020-10-12T12:00:00-04:00",
+            "location": "Virtual",
+            "register_link": "https://www.eventbrite.com/e/security-onion-2x-fundamentals-for-analysts-admins-virtual-oct-2020-am-registration-119250685009"
+        },
+        {
+            "name": "Security Onion 2.x Fundamentals for Analysts & Admins - Virtual Oct 2020 PM",
+            "start": "2020-10-12T13:00:00-04:00",
+            "end": "2020-10-12T17:00:00-04:00",
+            "location": "Virtual",
+            "register_link": "https://www.eventbrite.com/e/security-onion-2x-fundamentals-for-analysts-admins-virtual-oct-2020-pm-registration-119632629415"
+        }
+    ]
+}

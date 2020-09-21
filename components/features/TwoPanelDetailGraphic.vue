@@ -8,7 +8,7 @@
         <slot name="graphic-left">
           <graphic class="graphic md:w-1/2 mr-12" />
         </slot>
-        <div class="flex flex-col justify-center items-start p-10 mb-0 sm:mb-16 md:mb-0">
+        <div class="flex flex-col justify-center items-start px-2 xs:px-10 py-10 mb-0 sm:mb-16 md:mb-0">
           <detail-para align="left" class="sm:px-12 mb-3">
             <template #header>
               <slot name="header-left" />

@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-row flex-wrap justify-center sm:justify-end items-center">
-    <div class="flex flex-col items-center xs:items-end order-2 sm:order-1 mt-6 sm:mt-0">
-      <detail-para class="mx-4 xs:mx-12 mb-10">
+  <div class="flex flex-col lg:flex-row justify-center sm:justify-end items-center">
+    <div class="flex flex-col items-center xs:items-start order-2 lg:order-1 mt-6 sm:mt-0 w-full lg:w-3/5">
+      <detail-para class="xs:mr-6 mb-10">
         <template #header>
           <slot name="header" />
         </template>
@@ -9,11 +9,11 @@
           <slot name="body" />
         </template>
       </detail-para>
-      <so-button class="mx-10 xs:ml-24 xs:mr-10 block" :alt="alt" @click.native="$emit('button-click')">
+      <so-button class="mx-10 xs:mx-0 block" :alt="alt" @click.native="$emit('button-click')">
         <slot name="button-text" />
       </so-button>
     </div>
-    <div class="order-1 sm:order-2">
+    <div class="order-1 lg:order-2 w-full lg:w-2/5 my-6 lg:my-0">
       <slot name="graphic">
         <graphic />
       </slot>

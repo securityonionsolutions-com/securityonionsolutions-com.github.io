@@ -9,12 +9,10 @@ module.exports = {
   },
   extends: [
     '@nuxtjs',
-    'plugin:nuxt/recommended',
-    'airbnb-base',
-    'plugin:vue/recommended'
+    'plugin:nuxt/recommended'
+  ],
+  plugins: [
   ],
   // add your custom rules here
-  rules: {
-    'max-len': "off"
-  }
+  rules: {}
 }

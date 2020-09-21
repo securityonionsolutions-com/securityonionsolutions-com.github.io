@@ -7,7 +7,7 @@
       <button
         v-for="(feat, index) in featureArr"
         :key="index"
-        class="flex justify-center items-center my-1 focus:outline-none w-2/3 xs:w-full"
+        class="flex justify-center items-center my-1 focus:outline-none w-4/5 xs:w-full"
         :class="[ activeFeat===index ? 'bg-gray-200 shadow-lg rounded-lg' : '']"
         @click="setActiveFeat(index)"
         @focus="setActiveFeat(index)"

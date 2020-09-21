@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center w-screen navbar">
+  <div class="flex justify-center w-full navbar">
     <nav class="mx-auto flex-grow flex items-center justify-between flex-wrap bg-black pb-2 pt-4 z-50 container">
       <div class="flex items-end flex-shrink-0 text-white xs:mr-6 h-full -mb-2">
         <router-link to="/" class="focus:outline-none active:outline-none grow rounded-lg h-full">
@@ -61,7 +61,7 @@
           </nuxt-link>
         </div>
       </div>
-      <div class="cursor-default hidden lg:flex flex-col mr-2">
+      <div class="cursor-default hidden lg:flex flex-col mr-2 uppercase">
         <div class="flex flex-row items-center justify-end mb-1 mt-4 lg:mt-0 text-white">
           <a
             class="block rounded-lg mr-3 lg:inline-block text-lg focus:outline-none cursor-pointer hover:text-so-blue"
@@ -101,25 +101,25 @@
         <div class="flex flex-row mt-4 lg:mt-0">
           <nuxt-link
             to="/software"
-            class="block lg:inline-block text-gray-400 hover:text-blue-500 mr-4 text-xl focus:outline-none focus:text-blue-500"
+            class="block lg:inline-block text-gray-400 hover:text-blue-500 mr-3 text-xl focus:outline-none focus:text-blue-500"
           >
             Software
           </nuxt-link>
           <nuxt-link
             to="/hardware"
-            class="block rounded-lg lg:inline-block text-gray-400 hover:text-blue-500 mr-4 text-xl focus:outline-none focus:text-blue-500"
+            class="block rounded-lg lg:inline-block text-gray-400 hover:text-blue-500 mr-3 text-xl focus:outline-none focus:text-blue-500"
           >
             Hardware
           </nuxt-link>
           <nuxt-link
             to="/training"
-            class="block lg:inline-block text-gray-400 hover:text-blue-500 mr-4 text-xl focus:outline-none focus:text-blue-500"
+            class="block lg:inline-block text-gray-400 hover:text-blue-500 mr-3 text-xl focus:outline-none focus:text-blue-500"
           >
             Training
           </nuxt-link>
           <nuxt-link
             to="/support"
-            class="block lg:inline-block text-gray-400 hover:text-blue-500 mr-4 text-xl focus:outline-none focus:text-blue-500"
+            class="block lg:inline-block text-gray-400 hover:text-blue-500 mr-3 text-xl focus:outline-none focus:text-blue-500"
           >
             Support
           </nuxt-link>

@@ -15,10 +15,10 @@
       </template>
     </SubHero>
     <client-only>
-      <TestimonialList :list="testimonialList" class="mb-2" />
+      <TestimonialList :list="testimonialList" />
     </client-only>
     <noscript inline-template>
-      <Testimonial class="mb-2">
+      <Testimonial>
       <template #text :show-name="false">
       {{ testimonialList[1] }}
       </template>
@@ -85,39 +85,30 @@
           <template #body>
             We are proud to offer GSA pricing through our partner IntelliGenesis!
             Eligible organizations, please
-            <span class="hover:text-gray-900 cursor-pointer underline" @click="$nuxt.$emit('show-contact-modal')">click here</span>
+            <span class="hover:text-gray-900 cursor-pointer underline" @click="$nuxt.$emit('show-contact-modal')">contact us</span>
             for more information.
           </template>
         </DetailPara>
       </div>
     </ContentSection>
     <ContentSection id="free-training" :bottom-margin="false">
-      <section-header class="mb-16">
+      <section-header class="mb-2">
         Security Onion 101
       </section-header>
-      <div class="flex justify-center mx-24 mb-12">
-        <graphic class="graphic w-full md:w-1/2" />
+      <div class="text-center text-base xs:text-lg mb-16">
+        Our Intro to Security Onion course is now free to watch, check it out
+      </div>
+      <div class="flex justify-center">
+        <GraphicPlaceholder class="video-placeholder">
+          Coming Soon
+        </GraphicPlaceholder>
       </div>
     </ContentSection>
-    <div v-if="scheduleList.length !== 0">
-      <ContentSection id="public-training" class="-mx-12">
-        <!-- <training-table class="mx-12 lg:mx-48 xl:mx-64" :schedule-list="scheduleList" /> -->
-        <!-- <div style="width:195px; text-align:center;">
-          <iframe
-            src="https://www.eventbrite.com/calendar-widget?eid=119250685009"
-            frameborder="0"
-            height="425"
-            width="195"
-            marginheight="0"
-            marginwidth="0"
-            scrolling="no"
-            allowtransparency="true"
-          /><div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:195px; text-align:center;">
-            <a class="powered-by-eb" style="color: #ADB0B6; text-decoration: none;" target="_blank" href="http://www.eventbrite.com/">Powered by Eventbrite</a>
-          </div>
-        </div> -->
-      </ContentSection>
-      <div class="bg-so-blue text-white xs:-mx-12 py-12">
+    <ContentSection id="public-training" class="xs:-mx-12" :bottom-margin="false">
+      <div class="flex justify-center">
+        <training-table v-if="scheduleList.length !== 0" class="mx-2 xl:w-1/2 xs:mx-12 lg:mx-48 xl:mx-64" :schedule-list="scheduleList" />
+      </div>
+      <div class="bg-so-blue text-white py-12">
         <ActionCallout class="xs:px-24" :alt="true" @button-click="$nuxt.$emit('show-contact-modal')">
           <template #info>
             For more information about official training
@@ -127,14 +118,13 @@
           </template>
         </ActionCallout>
       </div>
-    </div>
+    </ContentSection>
   </div>
 </template>
 
 <script>
 import TwoPanelDetailGraphic from '~/components/features/TwoPanelDetailGraphic'
 import SectionHeader from '~/components/SectionHeader'
-import Graphic from '~/components/GraphicPlaceholder'
 import ActionCallout from '~/components/action_callouts/ActionCallout'
 
 export default {
@@ -142,36 +132,23 @@ export default {
   components: {
     TwoPanelDetailGraphic,
     SectionHeader,
-    Graphic,
     ActionCallout
   },
   data: () => ({
     scheduleList: [],
     links: [{ name: 'Premium', id: 'premium-training' }, { name: 'Free', id: 'free-training' }, { name: 'Public', id: 'public-training' }],
     testimonialList: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis, mi vitae varius iaculis, justo nisi rutrum sapien, suscipit feugiat turpis nisl a nisl.',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis, mi vitae varius iaculis, justo nisi rutrum sapien, suscipit feugiat turpis nisl a nisl.',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis, mi vitae varius iaculis, justo nisi rutrum sapien, suscipit feugiat turpis nisl a nisl.',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis, mi vitae varius iaculis, justo nisi rutrum sapien, suscipit feugiat turpis nisl a nisl.',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis, mi vitae varius iaculis, justo nisi rutrum sapien, suscipit feugiat turpis nisl a nisl.'
+      'I needed this class. This is the best instruction of SO and dedicated time to it that I have ever had.',
+      'One can tell they\'re not just instructors. They know the subject at an engineering level.',
+      // 'It probably looks like I just ran through this quickly and selected "Excellent" for everything but I truly believe this was superb training! The instructors really knew what they were talking about and were not afraid to expand on anything or go off the slides. I\'ve really been impressed by how this training event went. Outstanding job',
+      'You guys are impressive. It\'s very very rare that I get to be in a class with practitioners that are as awesome and knowledgeable as Security Onion Solutions. Thanks so much.',
+      // 'Virtual hands on really helped reduce the burden on the students to have hardware. The labs were absolutely necessary and going through the case studies to "find evil" was the best. We first tried to do it and then the instructor showing us what we missed was most beneficial.',
+      'They kept me engaged with my ADD -- not an easy task!'
     ]
   }),
   async beforeMount () {
-    this.scheduleList = await this.fetchScheduleList()
-  },
-  methods: {
-    fetchScheduleList () {
-      return [
-        {
-          date: 'October XX-XX+1, 2020',
-          location: 'Augusta, GA'
-        },
-        {
-          date: 'October XX-XX+1, 2020',
-          location: 'Augusta, GA'
-        }
-      ]
-    }
+    const scheduleImport = await this.$content('training_schedule').fetch()
+    this.scheduleList = scheduleImport.events
   },
   head () {
     return {
@@ -185,5 +162,9 @@ export default {
 .graphic {
   height: 25rem;
   min-width: 25rem;
+}
+.video-placeholder {
+  width: 48rem;
+  height: 27rem;
 }
 </style>

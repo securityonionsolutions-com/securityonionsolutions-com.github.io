@@ -1,10 +1,9 @@
 <template>
   <div class="xs:px-12">
     <PageNav page-name="Security Onion" :links="links" />
-    <sub-hero id="download-before" class="mb-8">
+    <SubHero id="download-before" class="mb-6 xs:-mx-12">
       <template #graphic>
-        <img src="~assets/img/graphics/undraw_moonlight_5ksn.svg" class="mt-10 w-3/5">
-        <hr class="mb-8 w-4/5 border-gray-500" style="color: black">
+        <img src="~assets/img/screenshots/hunt-slash-skinny.png" class="mb-2 xs:mb-4">
       </template>
       <template #header>
         Peel back the layers of your network
@@ -12,7 +11,7 @@
       <template #body>
         Security Onion is a free and open source Linux distribution for threat hunting, enterprise security monitoring, and log management.
       </template>
-    </sub-hero>
+    </SubHero>
     <div class="flex justify-center">
       <ActionCallout class="lg:w-2/5 mb-20 mt-4" link="https://github.com/Security-Onion-Solutions/securityonion/blob/master/VERIFY_ISO.md">
         <template #info>
@@ -30,30 +29,27 @@
         </template>
       </ActionCallout>
     </div>
-    <div class="xs:px-16 lg:px-24 xs:-mx-12 bg-so-blue text-white">
+    <div class="xs:px-6 lg:px-10 xl:px-24 xs:-mx-12 bg-so-blue text-white">
       <two-panel-detail class="my-20 mx-10">
         <template #section-heading>
           About Security Onion
         </template>
-        <template #header-left>
-          What it is
-        </template>
         <template #body-left>
-          { Security Onion is a free and open source Linux distribution for threat hunting, enterprise security monitoring, and log management. } The easy-to-use Setup wizard allows you to build an army of distributed sensors for your enterprise in minutes!
-        </template>
-        <template #header-right>
-          How it does it
+          Security Onion is a free and open source Linux distribution for threat hunting, enterprise security monitoring, and log management. The easy-to-use Setup wizard allows you to build an army of distributed sensors for your enterprise in minutes!
         </template>
         <template #body-right>
-          It includes Elasticsearch, Logstash, Kibana, Snort, Suricata, Zeek (formerly known as Bro), Wazuh, Sguil, Squert, CyberChef, NetworkMiner, and many other security tools. <br> { Include another sentence here + rework the previous sentence. }
+          Security Onion includes Elasticsearch, Logstash, Kibana, Suricata, Zeek (formerly known as Bro), Wazuh, Stenographer, TheHive, Cortex, CyberChef, NetworkMiner, and many other security tools.
         </template>
       </two-panel-detail>
-      <feature-left class="mt-20 mb-16 xs:mx-12 w-ful">
+      <feature-left class="mt-20 mb-16 xs:px-12 w-full">
         <template #graphic>
-          <CircleGraphic
+          <div class="rounded-sm overflow-hidden shadow-xl">
+            <img src="~assets/img/screenshots/sensor_list.png" style="width: 30rem; height: auto;">
+          </div>
+          <!-- <CircleGraphic
             file-name="undraw_data_extraction_ih3n.svg"
             :size="20"
-          />
+          /> -->
         </template>
         <template #header>
           Scalable and flexible <br> to fit YOUR environment
@@ -62,12 +58,15 @@
           From a single network appliance to a grid of 1000, Security Onion scales to fit your specific needs.
         </template>
       </feature-left>
-      <feature-right class="mt-10 mb-24 xs:mx-12 w-ful">
+      <feature-right class="mt-10 mb-24 xs:px-12 w-full">
         <template #graphic>
-          <CircleGraphic
+          <div class="rounded-sm overflow-hidden shadow-xl">
+            <img src="~assets/img/screenshots/github_sos.png" style="width: 30rem; height: auto;">
+          </div>
+          <!-- <CircleGraphic
             file-name="undraw_investment_xv9d.svg"
             :size="20"
-          />
+          /> -->
         </template>
         <template #header>
           BY the community, <br> FOR the community
@@ -77,7 +76,7 @@
         </template>
       </feature-right>
     </div>
-    <feature-selector class="mt-16 lg:mt-32 lg:mx-8" :feature-arr="featureArr" />
+    <feature-selector class="mt-16 lg:mt-32 lg:-mx-6" :feature-arr="featureArr" />
     <ContentSection id="data_types">
       <div class="bg-so-blue text-white xs:-mx-12 px-2 xs:px-32 pt-12 pb-10">
         <SectionHeader class="mt-6 xs:mb-8">
@@ -108,17 +107,12 @@
         </div>
       </div>
     </ContentSection>
-    <action-callout-graphic class="mb-32" @button-click="$nuxt.$emit('show-contact-modal')">
+    <action-callout-graphic class="mb-32 mt-12" @button-click="$nuxt.$emit('show-contact-modal')">
       <template #callout>
-        <div class="text-2xl xs:text-4xl flex justify-center">
+        <div class="text-2xl xs:text-4xl flex justify-center mb-4">
           <div class="mx-2 xs:mx-0 xs:w-4/6">
             Want us to take care of the hardware and setup so you can focus on threat hunting?
           </div>
-        </div>
-      </template>
-      <template #graphic>
-        <div class="mt-6 mb-0 lg:-mb-8">
-          <img style="height: 25rem" src="~assets/img/graphics/undraw_detailed_analysis_xn7y.svg">
         </div>
       </template>
       <template #button-text>
@@ -134,28 +128,28 @@
           Use Cases
         </template>
         <template #header-top-left>
-          Describe a feature
+          NIDs
         </template>
         <template #body-top-left>
-          Give some more info about the feature. This can contain more detail and context with a more technical direction. Make sure to be concise with your wording and avoid overly complex sentence structure.
+          Collect network events from Zeek, Suricata, and other tools for complete coverage of your network. Cast a wide net to catch the bad guys quickly and easily.
         </template>
         <template #header-top-right>
-          Describe a feature
+          HIDs
         </template>
         <template #body-top-right>
-          Give some more info about the feature. This can contain more detail and context with a more technical direction. Make sure to be concise with your wording and avoid overly complex sentence structure.
+          Security Onion supports several host-based event collection agents including Wazuh, Winlogbeat, and Sysmon. Just point them to your installation and it's off to the races.
         </template>
         <template #header-bottom-left>
-          Describe a feature
+          Static Analysis (PCAP Import)
         </template>
         <template #body-bottom-left>
-          Give some more info about the feature. This can contain more detail and context with a more technical direction. Make sure to be concise with your wording and avoid overly complex sentence structure.
+          Use Security Onion to import PCAP files for quick static analysis and case studies. Spin up a virtual machine quickly and get started in just a few minutes.
         </template>
         <template #header-bottom-right>
-          Describe a feature
+          SOC Workstation
         </template>
         <template #body-bottom-right>
-          Give some more info about the feature. This can contain more detail and context with a more technical direction. Make sure to be concise with your wording and avoid overly complex sentence structure.
+          A workstation install option is also available for SOC analysts to use local Linux tools to perform analysis of network and host events. No need to install extra tools, we bundle all the apps you might need.
         </template>
       </four-panel-detail>
       <!-- <client-only>
@@ -197,7 +191,7 @@
       </ActionCallout>
     </div>
     <div id="docs" class="pt-12 px-20 xs:-mx-12 bg-so-blue text-white">
-      <ActionCallout class="mb-20 mt-4 xl:mx-48" :alt="true" link="https://docs.securityonion.net/en/2.1/">
+      <ActionCallout class="mb-20 mt-4 xl:mx-48" :alt="true" link="https://docs.securityonion.net/">
         <template #info>
           For Security Onion documentation
         </template>
@@ -234,18 +228,18 @@ export default {
     featureArr: [
       {
         image: 'screenshots/hunt.png',
-        header: 'Something about Hunt',
-        body: 'Details about how you use Hunt to do stuff.'
+        header: 'Hunt All The Things',
+        body: 'Our new hunting tool is purpose built to let you investigate quickly and easily.'
       },
       {
         image: 'screenshots/pcap.png',
-        header: 'Something about PCAP',
-        body: 'Details about how to use PCAP to do stuff. Another sentence to show varying body lengths.'
+        header: 'Full PCAP analysis',
+        body: 'Pull packet captures from network events and analyze them within SOC, no need for an external tool.'
       },
       {
         image: 'screenshots/kibana.png',
-        header: 'Something about Kibana',
-        body: 'Info about Kibana or a third tool and how to use it.'
+        header: 'Kibana visualizations',
+        body: 'See the big picture with our custom Kibana dashboards built to give you the most important information at a glance.'
       }
     ],
     soVersion: '2.2.0-rc3'

@@ -79,12 +79,12 @@ export default {
         premium: true
       },
       {
-        feature: 'Private',
+        feature: 'Private support',
         free: false,
         premium: true
       },
       {
-        feature: 'Priority',
+        feature: 'Priority response',
         free: false,
         premium: true
       },

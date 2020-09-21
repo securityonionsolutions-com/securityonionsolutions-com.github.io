@@ -33,7 +33,6 @@ export default {
   },
   data: () => ({
     settings: {
-      centerMode: true,
       mouseDrag: false,
       touchDrag: false,
       wheelControl: false,

@@ -1,64 +1,60 @@
 <template>
-  <div>
-    <div class="text-3xl mb-4 ml-4">
-      Public Training Schedule
+  <div class="mb-12">
+    <div class="text-3xl mb-6 ml-2">
+      Public Training Events
     </div>
-    <div class="shadow overflow-hidden rounded-lg border border-gray-400">
-      <table class="min-w-full bg-white">
-        <thead>
-          <tr class="text-2xl my-4">
-            <th class="py-4 w-2/5">
-              Date
-            </th>
-            <th class="py-4 w-1/5">
-              Location
-            </th>
-            <th class="py-4 w-2/5" />
-          </tr>
-        </thead>
-        <tbody>
-          <tr
-            v-for="(item, index) in scheduleList"
-            :key="index"
-          >
-            <td
-              class="text-center pt-3 w-2/5"
-              :class="[ index===scheduleList.length-1 ? 'pb-6' : 'pb-3' ]"
-            >
-              {{ item.date }}
-            </td>
-            <td
-              class="text-center pt-3 w-1/5"
-              :class="[ index==scheduleList.length-1 ? 'pb-6' : 'pb-3' ]"
-            >
-              {{ item.location }}
-            </td>
-            <td
-              class="pt-3 w-2/5"
-              :class="[ index==scheduleList.length-1 ? 'pb-6' : 'pb-3' ]"
-            >
-              <so-button class="float-right mr-2 md:mr-8">
-                Action item
-              </so-button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <ul>
+      <li v-for="(item, index) in scheduleList" :key="index" class="mb-6 hover:shadow-lg">
+        <a :href="item.register_link" target="_blank">
+          <div class="border border-gray-400 rounded-sm">
+            <div class="h-auto px-4 pt-2 pb-4 border-b border-gray-400">
+              <div class="mb-1">
+                {{ new Date(item.start).toLocaleString('en-US', dateTimeOptions) }} - {{ new Date(item.end).toLocaleString('en-US', dateTimeOptions) }}
+              </div>
+              <div>
+                <span class="font-semibold text-lg">{{ item.name }}</span> - {{ item.location }}
+              </div>
+            </div>
+            <!-- <hr class="bg-gray-400"> -->
+            <div class="h-auto flex items-center justify-end">
+              <div class="border-l border-gray-400 text-sm xs:text-xs text-so-blue xs:text-base px-4 py-2 flex items-center">
+                <div class="mr-2 font-semibold">Register</div>
+                <fa :icon="['fas', 'sign-in-alt']" />
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
-import SoButton from '~/components/SoButton'
 
 export default {
   components: {
-    SoButton
   },
   props: {
     scheduleList: {
       type: Array,
       default: () => { return [] }
+    }
+  },
+  data: () => ({
+    dateTimeOptions: {
+      day: 'numeric',
+      year: 'numeric',
+      month: 'short',
+      hour: 'numeric',
+      minute: 'numeric'
+    }
+  }),
+  methods: {
+    startDate (index) {
+      const dateString = this.scheduleList[index]
+      const date = Date.parse(dateString)
+
+      return date.toLocaleString('en-US', this.dateTimeOptions)
     }
   }
 }

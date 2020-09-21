@@ -1,12 +1,9 @@
 <template>
   <div class="xs:px-12">
     <PageNav page-name="SOC Augusta" :links="links" />
-    <SubHero>
+    <SubHero id="upcoming" class="xs:-mx-12">
       <template #graphic>
-        <div class="mt-32 mb-4 w-1/2">
-          <img src="~assets/img/graphics/undraw_our_solution_htvp.svg">
-        </div>
-        NEED IMAGE INSTEAD
+        <img class="mb-2 xs:mb-4 mt-4 xs:mt-6" src="~assets/img/conference.jpg">
       </template>
       <template #header>
         Security Onion Conference
@@ -17,23 +14,26 @@
         </div>
       </template>
     </SubHero>
-    <ContentSection id="upcoming" :bottom-margin="false">
-      <div class="flex flex-col items-center">
-        <div class="mb-4 text-center">
-          <div class="text-5xl font-semibold">
-            {{ upcoming.year }}
-          </div>
-          <div class="text-lg">
-            {{ upcoming.date }}
-          </div>
+    <div class="flex flex-col items-center mt-4">
+      <SectionHeader class="mb-2">
+        <div class="text-2xl xs:text-4xl md:text-5xl">
+          Don't miss out, get your tickets now!
         </div>
-        <SoButton link="http://eventbrite.com" class="mb-8">
-          <div class="text-lg xs:text-2xl">
-            Sign Up Now
-          </div>
-        </SoButton>
+      </SectionHeader>
+      <SoButton link="http://eventbrite.com" class="mb-8">
+        <div class="text-md xs:text-xl">
+          Sign Up Here
+        </div>
+      </SoButton>
+      <div class="mb-4 text-center">
+        <div class="text-5xl font-semibold">
+          {{ upcoming.year }}
+        </div>
+        <div class="text-lg">
+          {{ upcoming.date }}
+        </div>
       </div>
-    </ContentSection>
+    </div>
     <div class="xs:-mx-12 mt-16 py-16 px-2 xs:px-12 bg-so-blue text-white">
       <DetailPara>
         <template #header>
@@ -106,7 +106,7 @@
             </div>
           </div>
         </div>
-        <!-- <Divider v-if="i!==conferences.length-1" /> -->
+        <Divider v-if="i!==conferences.length-1" />
       </div>
     </ContentSection>
   </div>
@@ -139,11 +139,11 @@ export default {
     this.conferences = conferenceArr.past
     this.upcoming = conferenceArr.upcoming
 
-    const reqCtx = require.context('@/assets/img/conferences/', true, /\.jpg/)
+    // const reqCtx = require.context('@/assets/img/conferences/', true, /\.jpg/)
 
-    for (let year = 2016; year <= 2019; year++) {
-      this.importAll(reqCtx, year)
-    }
+    // for (let year = 2016; year <= 2019; year++) {
+    //   this.importAll(reqCtx, year)
+    // }
   },
   methods: {
     importAll (r, year) {

@@ -2,7 +2,7 @@
   <div
     class="flex justify-center items-center m-auto size"
     :style="sizeVar"
-    :class="[padding ? 'p-4 bg-white rounded-full ' : 'mx-5 xs:p-0']"
+    :class="[padding ? 'p-4 bg-white rounded-full' : 'xs:p-0']"
   >
     <img :src="importImage()">
   </div>

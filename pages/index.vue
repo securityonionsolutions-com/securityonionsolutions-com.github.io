@@ -1,7 +1,18 @@
 <template>
   <div class="xs:px-12">
     <PageNav page-name="Home" :links="links" />
-    <HeroLeft link="/hardware/SOS1YYY" class="mb-20 xs:-mx-4">
+    <SubHero class="mb-16 xs:-mx-12">
+      <template #graphic>
+        <img src="~assets/img/screenshots/hunt-slash-skinny.png" class="mb-2 xs:mb-4">
+      </template>
+      <template #header>
+        Peel back the layers of your enterprise
+      </template>
+      <template #body>
+        We are the builders of Security Onion Security Onion, a free and open source Linux distribution for threat hunting, enterprise security monitoring, and log management.
+      </template>
+    </SubHero>
+    <!-- <HeroLeft link="/hardware/SOS1YYY" class="mb-20 xs:-mx-4">
       <template #graphic>
         <div class="mt-10">
           <img src="~assets/img/hardware/enterprise-server-poweredge-r7415-above-row-pdp.jpg">
@@ -13,7 +24,7 @@
       <template #button-text>
         Specs
       </template>
-    </HeroLeft>
+    </HeroLeft> -->
     <div class="text-white bg-so-blue xs:-mx-12 px-4 xs:px-16 py-20">
       <two-panel-detail class="mb-8">
         <template #section-heading>
@@ -23,7 +34,7 @@
           Our Software
         </template>
         <template #body-left>
-          We are the builders of Security Onion, a free and open source platform for threat hunting, network security monitoring, and log management. Security Onion includes best-of-breed open source tools such as Snort, Suricata, Zeek, Wazuh, the Elastic Stack, among many others.
+          We are the builders of Security Onion, a free and open source platform for threat hunting, network security monitoring, and log management. Security Onion includes best-of-breed open source tools such as Suricata, Zeek, Wazuh, the Elastic Stack, among many others.
         </template>
         <template #header-right>
           Our Services
@@ -37,23 +48,26 @@
       <section-header class="mb-12 lg:mb-20">
         Our History
       </section-header>
-      <div class="flex flex-col lg:flex-row flex-wrap content-center mx-12">
-        <div class="flex justify-center content-center w-1/2 lg:w-2/3 pr-8 xl:pl-4">
-          <img class="object-contain my-auto overflow-hidden" :class="[currentEventGraphic!=0 ? 'border-8 border-black shadow-xl' : '']" :src="eventGraphic()">
+      <div class="flex flex-col lg:flex-row flex-wrap justify-center content-center mx-6 xs:mx-12">
+        <div class="flex justify-center content-center md:w-1/2 lg:w-2/3 lg:pr-8 xl:pl-4 pb-12 lg:pb-0">
+          <img class="object-contain my-auto overflow-hidden rounded-md" :class="[currentEventGraphic!=0 ? 'shadow-xl' : '']" :src="eventGraphic()">
         </div>
-        <div class="w-1/2 lg:w-1/3">
+        <div class="md:w-1/2 lg:w-1/3">
           <Timeline @timeline-click="setEventGraphic($event)" />
         </div>
       </div>
     </ContentSection>
-    <ContentSection>
-      <div class="bg-so-blue text-white xs:-mx-12 xs:px-12 pb-20 mb-24">
-        <feature-right class="my-24">
+    <ContentSection :bottom-margin="false">
+      <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32 pb-20 mb-24">
+        <feature-right class="mt-24 xs:mb-12" :text-margin="true">
           <template #graphic>
-            <CircleGraphic
-              file-name="undraw_investment_xv9d.svg"
-              :size="25"
-            />
+            <div class="rounded-full shadow-lg overflow-hidden">
+              <CircleGraphic
+                :padding="false"
+                file-name="mike-speaking.jpg"
+                :size="20"
+              />
+            </div>
           </template>
           <template #header>
             <div class="text-left">
@@ -61,7 +75,7 @@
             </div>
           </template>
           <template #body>
-            <ul class="list-disc text-left pl-2">
+            <ul class="list-disc text-left pl-2 lg:pl-6 text-base">
               <li>
                 We created and maintain Security Onion, so we know it better than anybody else.
               </li>
@@ -71,20 +85,21 @@
             </ul>
           </template>
         </feature-right>
-        <feature-left-action class="mt-24" :alt="true" @button-click="$router.push('/oss')">
+        <feature-left-action class="my-12" :alt="true" @button-click="$router.push('/training')">
           <template #header>
-            <div class="text-center xs:text-right">
-              { Training Info }
+            <div class="text-center xs:text-left">
+              Training
             </div>
           </template>
           <template #graphic>
             <CircleGraphic
-              file-name="undraw_professor_8lrt.svg"
-              :size="25"
+              file-name="training-stack.png"
+              :padding="false"
+              :size="20"
             />
           </template>
           <template #body>
-            <ul class="text-center xs:text-right">
+            <ul class="text-center xs:text-left">
               <li>
                 We're the only official authorized training provider for Security Onion.
               </li>
@@ -100,26 +115,27 @@
             </ul>
           </template>
           <template #button-text>
-            { GoTo Training }
+            More Info
           </template>
         </feature-left-action>
       </div>
-      <action-callout-graphic @button-click="$nuxt.$emit('show-contact-modal')">
+      <action-callout-graphic class="my-12" @button-click="$nuxt.$emit('show-contact-modal')">
         <template #callout>
-          <div class="text-4xl flex justify-center">
-            <div class="xs:w-4/6">
+          <div class="text-2xl xs:text-4xl flex justify-center mb-4">
+            <div class="mx-2 xs:mx-0 xs:w-4/6">
               Want us to take care of the hardware and setup so you can focus on threat hunting?
             </div>
           </div>
         </template>
-        <template #graphic>
+        <!-- INCLUDE BULLET LIST OF THINGS WE DO -->
+        <!-- <template #graphic>
           <div class="mt-6 mb-0 lg:-mb-8">
             <img style="height: 30rem" src="~assets/img/graphics/undraw_detailed_analysis_xn7y.svg">
           </div>
-        </template>
+        </template> -->
         <template #button-text>
           <div class="text-lg m-1">
-            Find Out How
+            Contact Us
           </div>
         </template>
       </action-callout-graphic>
@@ -185,7 +201,7 @@ export default {
     links: [{ name: 'History', id: 'timeline' }, { name: 'Members', id: 'members' }, { name: 'Partners', id: 'partners' }],
     eventText: 'Default Graphic',
     teamArr: [],
-    eventGraphics: ['undraw_conceptual_idea_xw7k.svg', 'sos-site-header-2-square.jpg', ''],
+    eventGraphics: ['undraw_conceptual_idea_xw7k.svg', 'sos-site-header-2-square.jpg', '', '', 'security_onion_solutions_rings.png', '', '', 'new-team.jpg', '1mil+_downloads.png'],
     currentEventGraphic: 1,
     logos
   }),
@@ -202,11 +218,18 @@ export default {
       this.currentEventGraphic = index + 1
     },
     eventGraphic () {
+      console.log(this.eventGraphics.length)
+      console.log(this.currentEventGraphic)
+
       if (this.eventGraphics.length < this.currentEventGraphic) {
         this.currentEventGraphic = 0
       }
 
-      const fileName = this.eventGraphics[this.currentEventGraphic]
+      let fileName = this.eventGraphics[this.currentEventGraphic]
+      if (fileName === '' || fileName === undefined) {
+        this.currentEventGraphic = 0
+        fileName = this.eventGraphics[this.currentEventGraphic]
+      }
       return require(`../assets/img/graphics/${fileName}`)
     }
   },

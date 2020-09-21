@@ -26,33 +26,33 @@
     </div>
     <div class="bg-so-blue text-white xs:-mx-12 py-8 mb-8">
       <ContentSection :bottom-margin="false">
-        <div class="mx-2 sm:mx-24">
-          <feature-left class="mb-12">
+        <div class="mx-2 xs:mx-12 md:mx-32">
+          <feature-left class="mb-24 xs:mb-4">
             <template #graphic>
               <CircleGraphic
                 file-name="undraw_server_status_5pbv.svg"
-                :size="25"
+                :size="20"
               />
             </template>
             <template #header>
-              Describe a feature
+              Custom Hardware for Security Onion
             </template>
             <template #body>
-              Give some more context about the feature. Avoid complex sentences and keep it 1-2 sentences long.
+              We know Security Onion's hardware needs, and our appliances are the perfect match for the OS.
             </template>
           </feature-left>
           <feature-right class="mb-32">
             <template #graphic>
               <CircleGraphic
                 file-name="undraw_dev_focus_b9xo.svg"
-                :size="25"
+                :size="20"
               />
             </template>
             <template #header>
-              Describe a feature
+              Hardware Is Hard
             </template>
             <template #body>
-              Give some more context about the feature. Avoid complex sentences and keep it 1-2 sentences long.
+              Let us make it easy. That way your SOC can focus on their job instead of worrying about the server.
             </template>
           </feature-right>
         </div>

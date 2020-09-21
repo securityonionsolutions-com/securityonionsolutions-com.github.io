@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col lg:flex-row justify-start items-center">
-    <detail-para class="px-2 xs:px-12 order-2 lg:order-1">
+  <div class="flex flex-col lg:flex-row lg:justify-start items-center">
+    <detail-para class="order-2 lg:order-1" :class="[textMargin ? 'lg:mr-12' : 'xs:pr-4']">
       <template #header>
         <div class="text-3xl xs:text-4xl">
           <slot name="header" />
@@ -13,21 +13,20 @@
       </template>
     </detail-para>
     <div class="order-1 lg:order-2 mb-4 lg:mb-0">
-      <slot name="graphic">
-        <graphic class="graphic xs:px-12" />
-      </slot>
+      <slot name="graphic" />
     </div>
   </div>
 </template>
 
 <script>
-import Graphic from '~/components/GraphicPlaceholder'
 import DetailPara from '~/components/features/DetailPara'
 
 export default {
   components: {
-    Graphic,
     DetailPara
+  },
+  props: {
+    textMargin: { type: Boolean, default: true }
   }
 }
 </script>

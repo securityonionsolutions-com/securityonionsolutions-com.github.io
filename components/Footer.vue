@@ -1,16 +1,16 @@
 <template>
-  <footer class="w-screen flex flex-col items-center justify-center flex-wrap bg-gray-900 pb-8">
+  <footer class="w-full flex flex-col items-center justify-center flex-wrap bg-gray-900 pb-8">
     <div class="flex flex-col">
-      <img src="~assets/img/graphics/undraw_camping_noc8.svg" class="h-12 xs:h-48 mt-8 -mb-2">
-      <div class="text-center content-center justify-center mt-4 lg:mt-6">
+      <!-- <img src="~assets/img/graphics/undraw_camping_noc8.svg" class="h-12 xs:h-48 mt-8 -mb-2"> -->
+      <div class="text-center content-center justify-center mt-8 lg:mt-6">
         <div class="block mt-6 mb-1 lg:inline-block lg:mt-4 text-l text-white">
           <p>
             &copy; Security Onion Solutions, LLC
           </p>
         </div>
-        <div class="hidden xs:flex flex-row justify-center mb-1 mt-4 lg:mt-0">
+        <div class="flex flex-row justify-center mb-1 mt-4 lg:mt-0">
           <a
-            class="block rounded-lg mr-4 lg:inline-block text-5xl focus:outline-none cursor-pointer"
+            class="block rounded-lg mr-2 xs:mr-4 lg:inline-block text-5xl focus:outline-none cursor-pointer"
             href="https://twitter.com/securityonion"
             target="_blank"
           >
@@ -20,7 +20,7 @@
             </fa-layers>
           </a>
           <a
-            class="block rounded-lg mr-4 lg:inline-block text-5xl focus:outline-none cursor-pointer"
+            class="block rounded-lg mr-2 xs:mr-4 lg:inline-block text-5xl focus:outline-none cursor-pointer"
             href="https://www.reddit.com/r/securityonion"
             target="_blank"
           >
@@ -30,7 +30,7 @@
             </fa-layers>
           </a>
           <a
-            class="block rounded-lg mr-4 lg:inline-block text-5xl focus:outline-none cursor-pointer"
+            class="block rounded-lg mr-2 xs:mr-4 lg:inline-block text-5xl focus:outline-none cursor-pointer"
             href="https://github.com/Security-Onion-Solutions/securityonion/discussions"
             target="_blank"
           >
@@ -40,7 +40,7 @@
             </fa-layers>
           </a>
           <a
-            class="block rounded-lg mr-4 lg:inline-block text-5xl focus:outline-none cursor-pointer"
+            class="block rounded-lg mr-2 xs:mr-4 lg:inline-block text-5xl focus:outline-none cursor-pointer"
             href="https://www.linkedin.com/company/security-onion-solutions-llc"
             target="_blank"
           >
