@@ -38,7 +38,7 @@
               Custom Hardware for Security Onion
             </template>
             <template #body>
-              We know Security Onion's hardware needs, and our appliances are the perfect match for the OS.
+              We know Security Onion's hardware needs, and our appliances are the perfect match for the platform.
             </template>
           </feature-left>
           <feature-right class="mb-32">

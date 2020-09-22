@@ -9,7 +9,7 @@
         Peel back the layers of your enterprise
       </template>
       <template #body>
-        We are the builders of Security Onion Security Onion, a free and open source Linux distribution for threat hunting, enterprise security monitoring, and log management.
+        We are the builders of Security Onion, a free and open source Linux distribution for threat hunting, enterprise security monitoring, and log management.
       </template>
     </SubHero>
     <!-- <HeroLeft link="/hardware/SOS1YYY" class="mb-20 xs:-mx-4">
@@ -40,7 +40,7 @@
           Our Services
         </template>
         <template #body-right>
-          Security Onion Solutions offers appliances and professional services centered around the Security Onion platform, and is the only provider of official Security Onion training.
+          Security Onion Solutions offers appliances and professional services centered around the platform, and is the only provider of official Security Onion training.
         </template>
       </two-panel-detail>
     </div>
@@ -49,8 +49,11 @@
         Our History
       </section-header>
       <div class="flex flex-col lg:flex-row flex-wrap justify-center content-center mx-6 xs:mx-12">
-        <div class="flex justify-center content-center md:w-1/2 lg:w-2/3 lg:pr-8 xl:pl-4 pb-12 lg:pb-0">
-          <img class="object-contain my-auto overflow-hidden rounded-md" :class="[currentEventGraphic!=0 ? 'shadow-xl' : '']" :src="eventGraphic()">
+        <div class="flex flex-col justify-center items-center md:w-1/2 lg:w-2/3 lg:pr-8 xl:pl-4 pb-12 lg:pb-0">
+          <img class="object-contain mb-8 overflow-hidden rounded-md w-5/6" :class="[currentEvent!=0 ? 'shadow-xl' : '']" :src="eventObj().img">
+          <div class="text-xl text-center w-4/5">
+            {{ eventObj().text }}
+          </div>
         </div>
         <div class="md:w-1/2 lg:w-1/3">
           <Timeline @timeline-click="setEventGraphic($event)" />
@@ -201,8 +204,36 @@ export default {
     links: [{ name: 'History', id: 'timeline' }, { name: 'Members', id: 'members' }, { name: 'Partners', id: 'partners' }],
     eventText: 'Default Graphic',
     teamArr: [],
-    eventGraphics: ['undraw_conceptual_idea_xw7k.svg', 'sos-site-header-2-square.jpg', '', '', 'security_onion_solutions_rings.png', '', '', 'new-team.jpg', '1mil+_downloads.png'],
-    currentEventGraphic: 1,
+    eventList: [
+      {
+        text: '',
+        img: 'undraw_conceptual_idea_xw7k.svg'
+      },
+      {
+        text: 'In 2008, Doug Burks started working on Security Onion, a Linux distribution for intrusion detection, network security monitoring, and log management.',
+        img: 'sos-site-header-2-square.jpg'
+      },
+      {},
+      {},
+      {
+        text: 'As the worldwide Security Onion community grew, Doug Burks began receiving more and more requests for training and professional services. In 2014, Doug started Security Onion Solutions LLC to help Security Onion users peel back the layers of their networks.',
+        img: 'security_onion_solutions_rings.png'
+      },
+      {},
+      {
+        text: 'In 2018 celebrated 10 years of Security Onion by announcing custom hardware appliances!',
+        img: 'old-server-mockup.jpg'
+      },
+      {
+        text: 'Security Onion Solutions continued to grow in 2019, adding five new team members.',
+        img: 'new-team.jpg'
+      },
+      {
+        text: 'We currently sit at over 1 million ISO image downloads!',
+        img: '1mil+_downloads.png'
+      }
+    ],
+    currentEvent: 1,
     logos
   }),
   async beforeMount () {
@@ -213,24 +244,28 @@ export default {
   },
   methods: {
     setEventGraphic (index) {
-      // The 0th graphic is a placeholder if not enough graphics are present in the array
-      // so make sure we never set this var to 0
-      this.currentEventGraphic = index + 1
+      // The 0th object is a placeholder if not enough items are present in the array
+      // so make sure we never set this var to 0 unles we mean to.
+      this.currentEvent = index + 1
+      if (window.innerWidth < 1024) {
+        this.$scrollTo('#timeline')
+      }
     },
-    eventGraphic () {
-      console.log(this.eventGraphics.length)
-      console.log(this.currentEventGraphic)
-
-      if (this.eventGraphics.length < this.currentEventGraphic) {
-        this.currentEventGraphic = 0
+    eventObj () {
+      if (this.eventList.length < this.currentEvent) {
+        this.currentEvent = 0
       }
 
-      let fileName = this.eventGraphics[this.currentEventGraphic]
+      let fileName = this.eventList[this.currentEvent].img
       if (fileName === '' || fileName === undefined) {
-        this.currentEventGraphic = 0
-        fileName = this.eventGraphics[this.currentEventGraphic]
+        this.currentEvent = 0
+        fileName = this.eventList[this.currentEvent].img
       }
-      return require(`../assets/img/graphics/${fileName}`)
+      console.log(this.eventList[this.currentEvent].text)
+      return {
+        text: this.eventList[this.currentEvent].text,
+        img: require(`../assets/img/graphics/${fileName}`)
+      }
     }
   },
   head () {

@@ -14,6 +14,9 @@
         We are the <span class="italic font-bold">only</span> official source for live (virtual or onsite) Security Onion training and our instructors are the only Security Onion Certified Instructors in the world!
       </template>
     </SubHero>
+    <div class="text-center font-semibold text-xl xs:text-3xl mb-4 mx-4 xs:mx-0">
+      See what some of our recent students have had to say:
+    </div>
     <client-only>
       <TestimonialList :list="testimonialList" />
     </client-only>

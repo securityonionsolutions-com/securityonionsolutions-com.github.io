@@ -38,7 +38,7 @@ export default {
       wheelControl: false,
       keysControl: false,
       autoPlay: true,
-      playSpeed: 5000,
+      playSpeed: 8000,
       transition: 800,
       trimWhiteSpace: true,
       itemsToShow: 1
