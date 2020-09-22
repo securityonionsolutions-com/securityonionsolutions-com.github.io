@@ -72,7 +72,7 @@
           BY the community, <br> FOR the community
         </template>
         <template #body>
-          Security Onion and the tools we integrate are all open source, written by menbers of the cyber security community.
+          Security Onion and the tools we integrate are all open source, written by members of the cyber security community.
         </template>
       </feature-right>
     </div>
@@ -128,13 +128,13 @@
           Use Cases
         </template>
         <template #header-top-left>
-          NIDs
+          NIDS
         </template>
         <template #body-top-left>
           Collect network events from Zeek, Suricata, and other tools for complete coverage of your network. Cast a wide net to catch the bad guys quickly and easily.
         </template>
         <template #header-top-right>
-          HIDs
+          HIDS
         </template>
         <template #body-top-right>
           Security Onion supports several host-based event collection agents including Wazuh, Winlogbeat, and Sysmon. Just point them to your installation and it's off to the races.

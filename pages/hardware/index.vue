@@ -4,7 +4,7 @@
     <sub-hero class="mb-8">
       <template #graphic>
         <div class="mt-10">
-          <img src="~assets/img/hardware/enterprise-server-poweredge-r7415-above-row-pdp.jpg">
+          <!-- <img src="~assets/img/hardware/enterprise-server-poweredge-r7415-above-row-pdp.jpg"> -->
         </div>
       </template>
       <template #header>

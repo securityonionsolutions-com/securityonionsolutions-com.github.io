@@ -239,8 +239,6 @@ export default {
   async beforeMount () {
     const teamRes = await this.$content('team').fetch()
     this.teamArr = teamRes.team
-
-    this.setEventGraphic(0)
   },
   methods: {
     setEventGraphic (index) {
@@ -261,7 +259,7 @@ export default {
         this.currentEvent = 0
         fileName = this.eventList[this.currentEvent].img
       }
-      console.log(this.eventList[this.currentEvent].text)
+
       return {
         text: this.eventList[this.currentEvent].text,
         img: require(`../assets/img/graphics/${fileName}`)

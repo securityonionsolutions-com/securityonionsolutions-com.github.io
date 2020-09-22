@@ -21,9 +21,6 @@ export default {
       { hid: 'description', name: 'description', content: 'Security Onion Solutions, LLC' }
     ]
   },
-  // router: {
-  //   middleware: 'favicon'
-  // },
   /*
   ** Global CSS
   */
@@ -35,7 +32,8 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    { src: '@/plugins/scrollto.js', mode: 'client' }
+    { src: '@/plugins/scrollto.js', mode: 'client' },
+    { src: '@/plugins/gtag.js', mode: 'client' }
   ],
   /*
   ** Auto import components
