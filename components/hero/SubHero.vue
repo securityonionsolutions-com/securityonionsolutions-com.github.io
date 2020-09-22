@@ -3,7 +3,7 @@
     <slot name="graphic">
       <graphic class="graphic my-12" />
     </slot>
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col items-center w-full">
       <header class="text-3xl xs:text-5xl font-bold mb-2">
         <slot name="header" />
       </header>

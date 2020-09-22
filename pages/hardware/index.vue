@@ -1,17 +1,17 @@
 <template>
   <div class="xs:px-12">
     <PageNav page-name="Appliances" :links="links" />
-    <sub-hero class="mb-8">
+    <sub-hero class="mb-8 w-full">
       <template #graphic>
         <div class="mt-10">
           <!-- <img src="~assets/img/hardware/enterprise-server-poweredge-r7415-above-row-pdp.jpg"> -->
         </div>
       </template>
       <template #header>
-        Check out our new SOS10000
+        The New SOS10000
       </template>
       <template #body>
-        Epyc based, capable of 10Gb (without full PCAP)
+        Epyc based, capable of 10Gbps (Alerts and Metadata only)
       </template>
     </sub-hero>
     <div class="flex justify-center mb-8">
