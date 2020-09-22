@@ -139,7 +139,7 @@
             Looking for community support?
           </template>
           <template #info-detail>
-            For links to Discord, Reddit, Twitter, etc.
+            For links to GitHub Discussions, Reddit, Twitter, etc.
           </template>
           <template #button-text>
             Click Here

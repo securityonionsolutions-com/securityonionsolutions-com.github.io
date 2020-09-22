@@ -1,9 +1,9 @@
 <template>
   <div class="flex justify-center w-full navbar">
     <nav class="mx-auto flex-grow flex items-center justify-between flex-wrap bg-black pb-2 pt-4 z-50 container">
-      <div class="flex items-end flex-shrink-0 text-white xs:mr-6 h-full -mb-2">
-        <router-link to="/" class="focus:outline-none active:outline-none grow rounded-lg h-full">
-          <img class="h-full" src="~assets/img/svg/sos-white.svg">
+      <div class="flex items-end flex-shrink-0 text-white xs:mr-6 h-full -ml-1 lg:-ml-2 lg:-mb-3">
+        <router-link to="/" class="flex items-end focus:outline-none active:outline-none h-full">
+          <img class="nav-icon" src="~assets/img/svg/sos-white.svg">
         </router-link>
       </div>
       <div class="block lg:hidden relative">
@@ -169,4 +169,14 @@ export default {
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.025); }
 .grow:active { transform: scale(.995); }
+
+.nav-icon {
+  height: auto;
+  width: 6rem;
+}
+@media (min-width: 1024px) {
+  .nav-icon {
+    width: 8rem;
+  }
+}
 </style>
