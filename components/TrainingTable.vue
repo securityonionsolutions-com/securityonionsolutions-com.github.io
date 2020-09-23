@@ -46,17 +46,10 @@ export default {
       year: 'numeric',
       month: 'short',
       hour: 'numeric',
-      minute: 'numeric'
+      minute: 'numeric',
+      timeZoneName: 'short'
     }
-  }),
-  methods: {
-    startDate (index) {
-      const dateString = this.scheduleList[index]
-      const date = Date.parse(dateString)
-
-      return date.toLocaleString('en-US', this.dateTimeOptions)
-    }
-  }
+  })
 }
 </script>
 

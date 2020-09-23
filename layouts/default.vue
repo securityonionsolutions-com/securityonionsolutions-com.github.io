@@ -81,7 +81,7 @@ export default {
           rel: 'alternate icon',
           class: 'so-favicon',
           type: 'image/png',
-          href: `/favicon/onion${this.colorSchemeString}.png`
+          href: `/favicon/onion${this.colorSchemeString}.jpg`
         },
         {
           rel: 'icon',

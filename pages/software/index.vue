@@ -3,10 +3,10 @@
     <PageNav page-name="Security Onion" :links="links" />
     <SubHero id="download-before" class="mb-6 xs:-mx-12">
       <template #graphic>
-        <img src="~assets/img/screenshots/hunt-slash-skinny.png" class="mb-2 xs:mb-4">
+        <img src="~assets/img/screenshots/hunt-slash-skinny.jpg" class="mb-2 xs:mb-4">
       </template>
       <template #header>
-        Peel back the layers of your network
+        Peel Back The Layers of Your Network
       </template>
       <template #body>
         Security Onion is a free and open source Linux distribution for threat hunting, enterprise security monitoring, and log management.
@@ -44,7 +44,7 @@
       <feature-left class="mt-20 mb-16 xs:px-12 w-full">
         <template #graphic>
           <div class="rounded-sm overflow-hidden shadow-xl">
-            <img src="~assets/img/screenshots/sensor_list.png" style="width: 30rem; height: auto;">
+            <img src="~assets/img/screenshots/sensor_list.jpg" style="width: 30rem; height: auto;">
           </div>
           <!-- <CircleGraphic
             file-name="undraw_data_extraction_ih3n.svg"
@@ -61,7 +61,7 @@
       <feature-right class="mt-10 mb-24 xs:px-12 w-full">
         <template #graphic>
           <div class="rounded-sm overflow-hidden shadow-xl">
-            <img src="~assets/img/screenshots/github_sos.png" style="width: 30rem; height: auto;">
+            <img src="~assets/img/screenshots/github_sos.jpg" style="width: 30rem; height: auto;">
           </div>
           <!-- <CircleGraphic
             file-name="undraw_investment_xv9d.svg"
@@ -227,17 +227,17 @@ export default {
     typeArray: [],
     featureArr: [
       {
-        image: 'screenshots/hunt.png',
+        image: 'screenshots/hunt.jpg',
         header: 'Hunt All The Things',
         body: 'Our new hunting tool is purpose built to let you investigate quickly and easily.'
       },
       {
-        image: 'screenshots/pcap.png',
+        image: 'screenshots/pcap.jpg',
         header: 'Full PCAP analysis',
         body: 'Pull packet captures from network events and analyze them within SOC, no need for an external tool.'
       },
       {
-        image: 'screenshots/kibana.png',
+        image: 'screenshots/kibana.jpg',
         header: 'Kibana visualizations',
         body: 'See the big picture with our custom Kibana dashboards built to give you the most important information at a glance.'
       }

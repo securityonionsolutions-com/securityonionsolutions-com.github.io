@@ -3,10 +3,10 @@
     <PageNav page-name="Home" :links="links" />
     <SubHero class="mb-16 xs:-mx-12">
       <template #graphic>
-        <img src="~assets/img/screenshots/hunt-slash-skinny.png" class="mb-2 xs:mb-4">
+        <img src="~assets/img/screenshots/hunt-slash-skinny.jpg" class="mb-2 xs:mb-4">
       </template>
       <template #header>
-        Peel back the layers of your enterprise
+        Peel Back The Layers of Your Enterprise
       </template>
       <template #body>
         We are the builders of Security Onion, a free and open source Linux distribution for threat hunting, enterprise security monitoring, and log management.
@@ -183,10 +183,10 @@ import FeatureLeftAction from '~/components/features/FeatureLeftAction'
 
 const logos = [
   require('../assets/img/partners/credence-logo.jpg'),
-  require('../assets/img/partners/elastic-logo.png'),
-  require('../assets/img/partners/fireeye-logo.png'),
-  require('../assets/img/partners/intelligenesis-logo.png'),
-  require('../assets/img/partners/profitap-logo.png')
+  require('../assets/img/partners/elastic-logo.jpg'),
+  require('../assets/img/partners/fireeye-logo.jpg'),
+  require('../assets/img/partners/intelligenesis-logo.jpg'),
+  require('../assets/img/partners/profitap-logo.jpg')
 ]
 
 export default {
@@ -217,7 +217,7 @@ export default {
       {},
       {
         text: 'As the worldwide Security Onion community grew, Doug Burks began receiving more and more requests for training and professional services. In 2014, Doug started Security Onion Solutions LLC to help Security Onion users peel back the layers of their networks.',
-        img: 'security_onion_solutions_rings.png'
+        img: 'security_onion_solutions_rings.jpg'
       },
       {},
       {
@@ -230,7 +230,7 @@ export default {
       },
       {
         text: 'We currently sit at over 1 million ISO image downloads!',
-        img: '1mil+_downloads.png'
+        img: '1mil+_downloads.jpg'
       }
     ],
     currentEvent: 1,

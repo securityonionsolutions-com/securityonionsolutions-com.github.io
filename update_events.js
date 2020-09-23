@@ -1,5 +1,6 @@
 const fs = require('fs')
 const axios = require('axios')
+const { DateTime } = require('luxon')
 
 const token = process.env.EVENTBRITE_API_TOKEN
 
@@ -28,11 +29,14 @@ const morgrifyEvents = async () => {
   const eventRes = await getEvents()
   const eventArr = []
   for (const event of eventRes.data.events) {
+    const startTimeString = DateTime.fromISO(event.start.local, { zone: event.start.timezone })
+    const endTimeString = DateTime.fromISO(event.end.local, { zone: event.end.timezone })
+
     if (event.online_event) {
       eventArr.push({
         name: event.name.text,
-        start: event.start.local,
-        end: event.end.local,
+        start: startTimeString,
+        end: endTimeString,
         location: 'Virtual',
         register_link: event.url
       })
