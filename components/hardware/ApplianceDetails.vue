@@ -1,12 +1,9 @@
 <template>
-  <div class="bg-so-blue text-white py-4">
-    <div class="text-6xl text-center my-8">
-      {{ appliance.name }}
-    </div>
+  <div>
     <div class="flex justify-center">
-      <div class="mb-2 xs:mb-12 rounded-sm overflow-hidden shadow-xl bg-white text-black mx-3 xs:mx-0 xs:w-2/3 pb-6">
+      <div class="mb-2 xs:mb-12 rounded-sm overflow-hidden shadow-xl bg-white text-black mx-3 xs:mx-0 pb-6">
         <div class="flex justify-center">
-          <div class="graphic mb-6">
+          <div class="graphic mb-1">
             <GraphicPlaceholder class="h-full" :shadow="false">
               <div class="text-2xl">
                 Picture Coming Soon
@@ -14,27 +11,28 @@
             </GraphicPlaceholder>
           </div>
         </div>
-        <div class="text-3xl text-center mb-2">
-          Detailed Specs
+        <div class="text-4xl text-center font-semibold my-4">
+          {{ appliance.name }}
         </div>
-        <div class="text-base text-center">
-          <div v-for="specName in Object.keys(appliance.important_specs)" :key="specName" class="py-1">
-            <span class="font-bold">{{ specName }}</span> &bullet; {{ appliance.important_specs[specName] }}
-          </div>
-          <div v-for="specName in Object.keys(appliance.other_specs)" :key="specName" class="py-1">
-            <span class="font-bold">{{ specName }}</span> &bullet; {{ appliance.other_specs[specName] }}
+        <div class="text-center border-b border-gray-400 pb-6">
+          <div v-for="specName in Object.keys(appliance.specs)" :key="specName" class="py-1">
+            <span class="font-bold">{{ specName }}</span> &bullet; {{ appliance.specs[specName] }}
           </div>
         </div>
+        <ActionCallout class="mt-6" @button-click="$nuxt.$emit('show-contact-modal')">
+          <template #info>
+            <div class="text-3xl">
+              For purchasing info
+            </div>
+          </template>
+          <template #button-text>
+            <div class="text-base">
+              Contact Us
+            </div>
+          </template>
+        </ActionCallout>
       </div>
     </div>
-    <ActionCallout class="my-12 lg:px-32" :alt="true" @button-click="$nuxt.$emit('show-contact-modal')">
-      <template #info>
-        For purchasing info
-      </template>
-      <template #button-text>
-        Action item
-      </template>
-    </ActionCallout>
   </div>
 </template>
 

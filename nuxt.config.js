@@ -56,6 +56,7 @@ export default {
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
     'vue-scrollto/nuxt',
+    ['@nuxtjs/axios', { headers: { 'Access-Control-Allow-Origin': '*' } }],
     ['nuxt-fontawesome', {
       component: 'fa',
       imports: [

@@ -6,18 +6,18 @@
           Picture Coming Soon
         </div>
       </GraphicPlaceholder>
-      <div class="text-xl my-2">
+      <div class="text-xl my-2 font-semibold">
         {{ appliance.name }}
       </div>
-      <div class="flex w-full xl:w-3/5 flex-col items-center py-1">
+      <div class="flex w-5/6 xl:w-4/5 flex-col py-1 px-1">
         <!-- <div v-for="(specName, k) in Object.keys(appliance.important_specs)" :key="k" class="py-1">
           <span class="font-bold">{{ specName }}</span> &bullet; {{ appliance.important_specs[specName] }}
         </div> -->
-        <div v-for="(key, k) in Object.keys(appliance.performance)" :key="k" class="flex flex-row justify-center items-center py-2">
-          <div class="text-base">
+        <div v-for="(key, k) in Object.keys(appliance.performance)" :key="k" class="flex flex-col justify-between items-center py-2 w-full">
+          <div class="text-base text-gray-800">
             {{ key }}
           </div>
-          <div class="relative w-32 pl-3">
+          <div class="relative w-40 pl-3">
             <div class="overflow-hidden h-4 text-xs flex rounded-sm bg-gray-300">
               <div
                 :style="`width: ${appliance.performance[key]}%`"

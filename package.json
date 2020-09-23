@@ -6,6 +6,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
+    "update_events": "node update_events.js",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "npm run lint:js"
@@ -17,6 +18,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/vue-fontawesome": "^0.1.10",
     "@nuxt/content": "^1.5.0",
+    "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/google-gtag": "^1.0.4",
     "hooper": "^0.3.4",
     "nuxt": "^2.14.0",

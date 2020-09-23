@@ -3,53 +3,109 @@
     <div class="mx-8 text-right text-lg xs:text-4xl">
       Contact Us
     </div>
-    <form class="px-8 xs:pt-6 pb-8 mb-4">
-      <div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-          Name
-        </label>
-        <input id="username" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-sm xs:text-base" type="text" placeholder="Required">
+    <form id="contact_form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="px-8 xs:pt-6 pb-8 mb-4">
+      <input type="hidden" name="oid" value="00D1U000000DI9i">
+      <input type="hidden" name="retURL" value="https://securityonionsolutions.com">
+      <label for="first_name" class="block text-gray-800 text-sm font-bold mb-2">First Name<span class="text-red-500"> *</span></label>
+      <input
+        id="first_name"
+        v-model="first_name"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline text-sm xs:text-base mb-4"
+        maxlength="40"
+        name="first_name"
+        size="20"
+        type="text"
+      >
+      <label for="last_name" class="block text-gray-800 text-sm font-bold mb-2">Last Name<span class="text-red-500"> *</span></label>
+      <input
+        id="last_name"
+        v-model="last_name"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline text-sm xs:text-base mb-4"
+        maxlength="80"
+        name="last_name"
+        size="20"
+        type="text"
+      >
+      <label for="email" class="block text-gray-800 text-sm font-bold mb-2">Email<span class="text-red-500"> *</span></label>
+      <input
+        id="email"
+        v-model="email"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline text-sm xs:text-base mb-4"
+        maxlength="80"
+        name="email"
+        size="20"
+        type="text"
+      >
+      <label for="company" class="block text-gray-800 text-sm font-bold mb-2">Company<span class="text-red-500"> *</span></label>
+      <input
+        id="company"
+        v-model="company"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline text-sm xs:text-base mb-4"
+        maxlength="40"
+        name="company"
+        size="20"
+        type="text"
+      >
+      <label for="description" class="block text-gray-800 text-sm font-bold mb-2">Description</label>
+      <textarea
+        v-model="description"
+        name="description"
+        placeholder="..."
+        rows="5"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline text-sm xs:text-base mb-2"
+      />
+      <div class="block text-red-500 text-sm font-bold mb-4">
+        * Required
       </div>
-      <div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-          Email
-        </label>
-        <input id="username" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-sm xs:text-base" type="text" placeholder="Required">
-      </div>
-      <div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-          Company
-        </label>
-        <input id="username" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-sm xs:text-base" type="text" placeholder="Required">
-      </div>
-      <div class="mb-4">
-        <div class="block text-gray-700 text-sm font-bold mb-2">
-          Message
-        </div>
-        <textarea
-          id="username"
-          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-sm xs:text-base"
-          type="text"
-          placeholder="..."
-          rows="5"
-        />
-      </div>
-      <div class="flex items-center justify-start">
-        <button
-          class="bg-so-blue shadow-lg border hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
-          type="button"
-          @click="$emit('close')"
-        >
-          Send Message
-        </button>
-      </div>
+      <!-- <label for="lead_source" class="hidden">Lead Source</label> -->
+      <select id="lead_source" v-model="lead_source" class="hidden" name="lead_source">
+        <option value="Website">
+          Website
+        </option>
+      </select>
+      <button
+        class="bg-so-blue shadow-lg border hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline mb-4 -ml-1"
+        type="submit"
+      >
+        Send Message
+      </button>
     </form>
   </div>
 </template>
 
 <script>
 export default {
+  data () {
+    return {
+      oid: '00D1U000000DI9i',
+      lead_source: 'Website',
+      first_name: '',
+      last_name: '',
+      email: '',
+      company: '',
+      description: ''
+    }
+  },
+  methods: {
+    async handleSubmit () {
+      const form = document.getElementById('contact_form')
+      const data = new FormData(form)
 
+      const config = {
+        method: 'post',
+        url: 'https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8',
+        data
+      }
+
+      await this.$axios(config)
+        .then((res) => {
+          setTimeout(() => { this.$emit('close') }, 100)
+        })
+        .catch((error) => {
+          console.log(error)
+        })
+    }
+  }
 }
 </script>
 

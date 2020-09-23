@@ -3,7 +3,7 @@
     <transition name="modal">
       <FloatingModal v-if="showModal" :index="1" @close="showModal = false">
         <div class="form-wrapper">
-          <ContactForm />
+          <ContactForm @close="showModal = false" />
         </div>
       </FloatingModal>
     </transition>
@@ -89,6 +89,12 @@ export default {
           type: 'image/svg+xml',
           href: `/favicon/onion${this.colorSchemeString}.svg`
         }
+      ],
+      meta: [
+        {
+          'http-equiv': 'Content-type',
+          content: 'text/html; charset=UTF-8'
+        }
       ]
     }
   }
@@ -154,6 +160,6 @@ html {
   opacity: 0;
 }
 .appliance-wrapper {
-  width: 60rem;
+  width: 40rem;
 }
 </style>

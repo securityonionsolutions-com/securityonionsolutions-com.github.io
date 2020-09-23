@@ -11,7 +11,7 @@
         The New SOS10000
       </template>
       <template #body>
-        Epyc based, capable of 10Gbps (Alerts and Metadata only)
+        Now using the AMD Epyc architecture, capable of 10Gbps (Alerts and Metadata only)
       </template>
     </sub-hero>
     <div class="flex justify-center mb-8">
@@ -58,7 +58,7 @@
         </div>
       </ContentSection>
     </div>
-    <ApplianceGrid class="md:mb-24 px-3 xs:px-0" />
+    <ApplianceGrid class="md:mb-24 px-3 xs:px-0 md:mx-24" />
     <div class="bg-so-blue text-white xs:-mx-12 py-10">
       <div class="flex justify-center">
         <ActionCallout class="lg:px-32" :alt="true" @button-click="$nuxt.$emit('show-modal')">

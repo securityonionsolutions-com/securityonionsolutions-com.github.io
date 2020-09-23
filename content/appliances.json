@@ -1,65 +1,71 @@
 {
   "appliances": [
     {
-      "name": "SOS1XXX",
+      "name": "SOS 500",
       "type": "Forward Node",
       "performance": {
-        "val1": 25,
-        "val2": 50
+        "Speed": 25,
+        "Retention": 25
       },
-      "important_specs": {
+      "specs": {
         "Spec 1": "Spec Value",
-        "Spec 2": "Spec Value"
-      },
-      "other_specs": {
+        "Spec 2": "Spec Value",
         "Spec 3": "Spec Value",
         "Spec 4": "Spec Value"
       }
     },
     {
-      "name": "SOS2XXX",
+      "name": "SOS 1000(F)",
       "type": "Forward Node",
       "performance": {
-        "val1": 100,
-        "val2": 50
+        "Speed": 50,
+        "Retention": 50
       },
-      "important_specs": {
+      "specs": {
         "Spec 1": "Spec Value",
-        "Spec 2": "Spec Value"
-      },
-      "other_specs": {
+        "Spec 2": "Spec Value",
         "Spec 3": "Spec Value",
         "Spec 4": "Spec Value"
       }
     },
     {
-      "name": "SOS3XXX",
+      "name": "SOS 4000",
       "type": "Forward Node",
       "performance": {
-        "val1": 75,
-        "val2": 50
+        "Speed": 75,
+        "Retention": 50
       },
-      "important_specs": {
+      "specs": {
         "Spec 1": "Spec Value",
-        "Spec 2": "Spec Value"
-      },
-      "other_specs": {
+        "Spec 2": "Spec Value",
         "Spec 3": "Spec Value",
         "Spec 4": "Spec Value"
       }
     },
     {
-      "name": "SOS1YYY",
+      "name": "SOS 10000",
+      "type": "Forward Node",
+      "performance": {
+        "Speed": 100,
+        "Retention": 100
+      },
+      "specs": {
+        "Spec 1": "Spec Value",
+        "Spec 2": "Spec Value",
+        "Spec 3": "Spec Value",
+        "Spec 4": "Spec Value"
+      }
+    },
+    {
+      "name": "SOS 10000",
       "type": "Manager Node",
       "performance": {
-        "val1": 25,
-        "val2": 50
+        "val1": 100,
+        "val2": 25
       },
-      "important_specs": {
+      "specs": {
         "Spec 1": "Spec Value",
-        "Spec 2": "Spec Value"
-      },
-      "other_specs": {
+        "Spec 2": "Spec Value",
         "Spec 3": "Spec Value",
         "Spec 4": "Spec Value"
       }
@@ -71,11 +77,9 @@
         "val1": 50,
         "val2": 25
       },
-      "important_specs": {
+      "specs": {
         "Spec 1": "Spec Value",
-        "Spec 2": "Spec Value"
-      },
-      "other_specs": {
+        "Spec 2": "Spec Value",
         "Spec 3": "Spec Value",
         "Spec 4": "Spec Value"
       }
@@ -87,11 +91,9 @@
         "val1": 50,
         "val2": 100
       },
-      "important_specs": {
+      "specs": {
         "Spec 1": "Spec Value",
-        "Spec 2": "Spec Value"
-      },
-      "other_specs": {
+        "Spec 2": "Spec Value",
         "Spec 3": "Spec Value",
         "Spec 4": "Spec Value"
       }
