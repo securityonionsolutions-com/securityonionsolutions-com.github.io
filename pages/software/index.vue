@@ -6,7 +6,7 @@
         <img src="~assets/img/screenshots/hunt-slash-skinny.jpg" class="mb-2 xs:mb-4">
       </template>
       <template #header>
-        Peel Back The Layers of Your Network
+        Peel Back The Layers of Your Enterprise
       </template>
       <template #body>
         Security Onion is a free and open source Linux distribution for threat hunting, enterprise security monitoring, and log management.
@@ -137,7 +137,7 @@
           HIDS
         </template>
         <template #body-top-right>
-          Security Onion supports several host-based event collection agents including Wazuh, Winlogbeat, and Sysmon. Just point them to your installation and it's off to the races.
+          Security Onion supports several host-based event collection agents including Wazuh, Beats, and osquery. Just point them to your installation and it's off to the races.
         </template>
         <template #header-bottom-left>
           Static Analysis (PCAP Import)
@@ -224,7 +224,7 @@ export default {
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis, mi vitae varius iaculis, justo nisi rutrum sapien, suscipit feugiat turpis nisl a nisl.'
     ],
     links: [{ name: 'Download', id: 'download-before' }, { name: 'Data Types', id: 'data_types' }, { name: 'Use Cases', id: 'use_cases' }, { name: 'Docs', id: 'docs' }],
-    typeArray: [],
+    typeArray: require('@/content/data_types.json').types,
     featureArr: [
       {
         image: 'screenshots/hunt.jpg',
@@ -244,14 +244,6 @@ export default {
     ],
     soVersion: '2.2.0-rc3'
   }),
-  async beforeMount () {
-    const dataTypes = await this.$content('data_types').fetch()
-    this.typeArray = dataTypes.types
-
-    await this.typeArray.sort((type1, type2) => {
-      return type1.name.localeCompare(type2.name)
-    })
-  },
   head () {
     return {
       title: 'Security Onion'

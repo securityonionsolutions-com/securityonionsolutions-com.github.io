@@ -138,7 +138,7 @@ export default {
     ActionCallout
   },
   data: () => ({
-    scheduleList: [],
+    scheduleList: require('@/content/training_schedule.json').events,
     links: [{ name: 'Premium', id: 'premium-training' }, { name: 'Free', id: 'free-training' }, { name: 'Public', id: 'public-training' }],
     testimonialList: [
       'I needed this class. This is the best instruction of SO and dedicated time to it that I have ever had.',
@@ -149,10 +149,6 @@ export default {
       'They kept me engaged with my ADD -- not an easy task!'
     ]
   }),
-  async beforeMount () {
-    const scheduleImport = await this.$content('training_schedule').fetch()
-    this.scheduleList = scheduleImport.events
-  },
   head () {
     return {
       title: 'Security Onion Solutions - Training'

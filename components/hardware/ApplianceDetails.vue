@@ -16,7 +16,8 @@
         </div>
         <div class="text-center border-b border-gray-400 pb-6">
           <div v-for="specName in Object.keys(appliance.specs)" :key="specName" class="py-1">
-            <span class="font-bold">{{ specName }}</span> &bullet; {{ appliance.specs[specName] }}
+            <span class="font-bold">{{ specName }}</span>
+            <pre class="font-sans">{{ appliance.specs[specName] }}</pre>
           </div>
         </div>
         <ActionCallout class="mt-6" @button-click="$nuxt.$emit('show-contact-modal')">

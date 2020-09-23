@@ -1,102 +1,117 @@
 {
-  "appliances": [
-    {
-      "name": "SOS 500",
-      "type": "Forward Node",
-      "performance": {
-        "Speed": 25,
-        "Retention": 25
+  "appliances": {
+    "forward_nodes": [
+      {
+        "name": "SOS SFF",
+        "performance": {
+          "Speed": 10,
+          "Retention": 10
+        },
+        "specs": {
+          "Throughput": "100Mbps",
+          "Available Storage": "1TB",
+          "Form Factor": "Standalone SFF"
+        }
       },
-      "specs": {
-        "Spec 1": "Spec Value",
-        "Spec 2": "Spec Value",
-        "Spec 3": "Spec Value",
-        "Spec 4": "Spec Value"
-      }
-    },
-    {
-      "name": "SOS 1000(F)",
-      "type": "Forward Node",
-      "performance": {
-        "Speed": 50,
-        "Retention": 50
+      {
+        "name": "SOS 500",
+        "performance": {
+          "Speed": 25,
+          "Retention": 25
+        },
+        "specs": {
+          "Throughput": "500Mbps",
+          "Available Storage": "8TB",
+          "Management Ports": "2 x 1GbE RJ45",
+          "Monitoring Ports": "2x10/25GbE SFP28, 4x1GbE RJ45",
+          "Form Factor": "1U"
+        }
       },
-      "specs": {
-        "Spec 1": "Spec Value",
-        "Spec 2": "Spec Value",
-        "Spec 3": "Spec Value",
-        "Spec 4": "Spec Value"
-      }
-    },
-    {
-      "name": "SOS 4000",
-      "type": "Forward Node",
-      "performance": {
-        "Speed": 75,
-        "Retention": 50
+      {
+        "name": "SOS 1000(F)",
+        "performance": {
+          "Speed": 50,
+          "Retention": 50
+        },
+        "specs": {
+          "Throughput": "1Gbps",
+          "Available Storage": "24TB RAID 5",
+          "Management Ports": "2 x 1GbE RJ45",
+          "Monitoring Ports": "F: 2x1/10GbE SFP+, 2x10/25GbE SFP28\nnon-F: 2x10/25GbE SFP28, 4x1GbE RJ45",
+          "Form Factor": "1U"
+        }
       },
-      "specs": {
-        "Spec 1": "Spec Value",
-        "Spec 2": "Spec Value",
-        "Spec 3": "Spec Value",
-        "Spec 4": "Spec Value"
-      }
-    },
-    {
-      "name": "SOS 10000",
-      "type": "Forward Node",
-      "performance": {
-        "Speed": 100,
-        "Retention": 100
+      {
+        "name": "SOS 4000",
+        "performance": {
+          "Speed": 75,
+          "Retention": 50
+        },
+        "specs": {
+          "Throughput": "4Gbps",
+          "Available Storage": "120TB RAID 6",
+          "Management Ports": "2 x 1GbE RJ45",
+          "Monitoring Ports": "4x10GbE SFP+, 2x10/25GbE SFP28, 4x1GbE RJ45",
+          "Form Factor": "2U"
+        }
       },
-      "specs": {
-        "Spec 1": "Spec Value",
-        "Spec 2": "Spec Value",
-        "Spec 3": "Spec Value",
-        "Spec 4": "Spec Value"
+      {
+        "name": "SOS 10000",
+        "performance": {
+          "Speed": 100,
+          "Retention": 25
+        },
+        "specs": {
+          "Throughput": "10Gbps",
+          "Available Storage": "7TB RAID 1",
+          "Management Ports": "2 x 1GbE RJ45",
+          "Monitoring Ports": "2x1/10GbE SFP+, 2x10/25GbE SFP28",
+          "Form Factor": "1U"
+        }
       }
-    },
-    {
-      "name": "SOS 10000",
-      "type": "Manager Node",
-      "performance": {
-        "val1": 100,
-        "val2": 25
+    ],
+    "manager_nodes": [
+      {
+        "name": "SOS MN",
+        "performance": {
+          "Performance": 100,
+          "Retention": 50
+        },
+        "specs": {
+          "Throughput": "Spec Value",
+          "Available Storage": "Spec Value",
+          "Management Ports": "2x10/25GbE SFP28, 4x1GbE RJ45, 2 x 1GbE RJ45",
+          "Form Factor": "1U"
+        }
+      }
+    ],
+    "search_nodes": [
+      {
+        "name": "SOS SN7200",
+        "performance": {
+          "Performance": 50,
+          "Retention": 100
+        },
+        "specs": {
+          "Throughput": "Spec Value",
+          "Available Storage": "Spec Value",
+          "Management Ports": "4x10GbE SFP+, 2x10/25GbE SFP28,\n4x1GbE RJ45, 2 x 1GbE RJ45",
+          "Form Factor": "2U"
+        }
       },
-      "specs": {
-        "Spec 1": "Spec Value",
-        "Spec 2": "Spec Value",
-        "Spec 3": "Spec Value",
-        "Spec 4": "Spec Value"
+      {
+        "name": "SOS SNNV",
+        "performance": {
+          "Performance": 100,
+          "Retention": 75
+        },
+        "specs": {
+          "Throughput": "Spec Value",
+          "Available Storage": "Spec Value",
+          "Management Ports": "2x1/10GbE SFP+, 2x10/25GbE SFP28, 2 x 1GbE RJ45",
+          "Form Factor": "1U"
+        }
       }
-    },
-    {
-      "name": "SOS1ZZZ",
-      "type": "Search Node",
-      "performance": {
-        "val1": 50,
-        "val2": 25
-      },
-      "specs": {
-        "Spec 1": "Spec Value",
-        "Spec 2": "Spec Value",
-        "Spec 3": "Spec Value",
-        "Spec 4": "Spec Value"
-      }
-    },
-    {
-      "name": "SOS2ZZZ",
-      "type": "Search Node",
-      "performance": {
-        "val1": 50,
-        "val2": 100
-      },
-      "specs": {
-        "Spec 1": "Spec Value",
-        "Spec 2": "Spec Value",
-        "Spec 3": "Spec Value",
-        "Spec 4": "Spec Value"
-      }
-    }
-  ]
+    ]
+  }
 }

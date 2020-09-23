@@ -18,7 +18,7 @@
         <div
           v-for="(appliance, j) in applianceCat.boxes"
           :key="j"
-          class="w-full md:w-1/2 flex flex-col items-center xs:px-2 md:px-4 lg:px-8 py-2 md:py-4 lg:py-8 cursor-pointer"
+          class="w-full md:w-1/2 flex flex-col xs:px-2 md:px-4 lg:px-8 py-2 md:py-4 lg:py-8 cursor-pointer"
           @click="handleClick(appliance)"
         >
           <ApplianceCard :appliance="appliance" />
@@ -30,30 +30,14 @@
 
 <script>
 export default {
-  data: () => ({
-    applianceCatArray: [
-      { name: 'Forward Nodes', boxes: [] },
-      { name: 'Manager and Search Nodes', boxes: [] }
-    ]
-  }),
-  async beforeMount () {
-    const applianceObj = await this.$content('appliances').fetch()
-    for (let index = 0; index < 6; index++) {
-      const appliance = applianceObj.appliances[index]
-
-      switch (appliance.type.toLowerCase()) {
-        case 'forward node':
-          this.applianceCatArray[0].boxes.push(appliance)
-          break
-        case 'manager node':
-          this.applianceCatArray[1].boxes.push(appliance)
-          break
-        case 'search node':
-          this.applianceCatArray[1].boxes.push(appliance)
-          break
-        default:
-          break
-      }
+  computed: {
+    applianceCatArray () {
+      const mArr = require('@/content/appliances.json').appliances.manager_nodes
+      const sArr = require('@/content/appliances.json').appliances.search_nodes
+      return [
+        { name: 'Forward Nodes', boxes: require('@/content/appliances.json').appliances.forward_nodes },
+        { name: 'Manager and Search Nodes', boxes: mArr.concat(sArr) }
+      ]
     }
   },
   methods: {

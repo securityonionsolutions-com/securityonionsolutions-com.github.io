@@ -183,10 +183,10 @@ import FeatureLeftAction from '~/components/features/FeatureLeftAction'
 
 const logos = [
   require('../assets/img/partners/credence-logo.jpg'),
-  require('../assets/img/partners/elastic-logo.jpg'),
-  require('../assets/img/partners/fireeye-logo.jpg'),
-  require('../assets/img/partners/intelligenesis-logo.jpg'),
-  require('../assets/img/partners/profitap-logo.jpg')
+  require('../assets/img/partners/elastic-logo.png'),
+  require('../assets/img/partners/fireeye-logo.png'),
+  require('../assets/img/partners/intelligenesis-logo.png'),
+  require('../assets/img/partners/profitap-logo.png')
 ]
 
 export default {
@@ -203,7 +203,7 @@ export default {
   data: () => ({
     links: [{ name: 'History', id: 'timeline' }, { name: 'Members', id: 'members' }, { name: 'Partners', id: 'partners' }],
     eventText: 'Default Graphic',
-    teamArr: [],
+    teamArr: require('@/content/team.json').team,
     eventList: [
       {
         text: '',
@@ -221,7 +221,7 @@ export default {
       },
       {},
       {
-        text: 'In 2018 celebrated 10 years of Security Onion by announcing custom hardware appliances!',
+        text: 'In 2018 we celebrated 10 years of Security Onion by announcing custom hardware appliances!',
         img: 'old-server-mockup.jpg'
       },
       {
@@ -236,10 +236,6 @@ export default {
     currentEvent: 1,
     logos
   }),
-  async beforeMount () {
-    const teamRes = await this.$content('team').fetch()
-    this.teamArr = teamRes.team
-  },
   methods: {
     setEventGraphic (index) {
       // The 0th object is a placeholder if not enough items are present in the array

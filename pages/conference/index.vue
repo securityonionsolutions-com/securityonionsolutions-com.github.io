@@ -116,8 +116,8 @@
 export default {
   data: () => ({
     links: [{ name: 'Upcoming', id: 'upcoming' }, { name: 'Past', id: 'past' }],
-    conferences: [{}],
-    upcoming: {},
+    conferences: require('@/content/conferences.json').past,
+    upcoming: require('@/content/conferences.json').upcoming,
     pictures: {},
     hooperSettings: {
       itemsToShow: 1,
@@ -134,17 +134,6 @@ export default {
       height: '24rem'
     }
   }),
-  async beforeMount () {
-    const conferenceArr = await this.$content('conferences').fetch()
-    this.conferences = conferenceArr.past
-    this.upcoming = conferenceArr.upcoming
-
-    // const reqCtx = require.context('@/assets/img/conferences/', true, /\.jpg/)
-
-    // for (let year = 2016; year <= 2019; year++) {
-    //   this.importAll(reqCtx, year)
-    // }
-  },
   methods: {
     importAll (r, year) {
       this.pictures[year] = []
