@@ -5,7 +5,7 @@
     </div>
     <form id="contact_form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="px-8 xs:pt-6 pb-8 mb-4">
       <input type="hidden" name="oid" value="00D1U000000DI9i">
-      <input type="hidden" name="retURL" value="https://securityonionsolutions.com">
+      <input v-model="retUrl" type="hidden" name="retURL" value="">
       <label for="first_name" class="block text-gray-800 text-sm font-bold mb-2">First Name<span class="text-red-500"> *</span></label>
       <input
         id="first_name"
@@ -84,6 +84,11 @@ export default {
       email: '',
       company: '',
       description: ''
+    }
+  },
+  computed: {
+    retUrl () {
+      return window.location.href
     }
   },
   methods: {
