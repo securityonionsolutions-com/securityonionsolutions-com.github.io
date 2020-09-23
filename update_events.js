@@ -1,7 +1,7 @@
 const fs = require('fs')
 const axios = require('axios')
 
-const token = 'JO6QTDBHELQ7JPDIFTQT'
+const token = process.env.EVENTBRITE_API_TOKEN
 
 const getEvents = async () => {
   const config = {
