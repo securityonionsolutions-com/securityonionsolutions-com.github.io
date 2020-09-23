@@ -13,9 +13,6 @@
         </div>
       </template>
     </DetailPara>
-    <!-- <section-header>
-      Premium Support
-    </section-header> -->
     <div class="my-6 mx-0 xs:mx-12 lg:mx-24">
       <feature-left>
         <template #header>
@@ -94,57 +91,18 @@
           Benefits of Purchasing Support
         </SectionHeader>
         <FreeVsPremiumTable />
-
-        <!-- <div class="pr-16 w-2/3">
-        </div>
-        <VerticalFeature class="w-1/3">
-          <template #title>
-            Why ProfServ is better
-          </template>
-          <template #body>
-            Give some more info about this. This can contain more detail and context with a more technical direction. Make sure to be concise with your wording and avoid overly complex sentence structure.
-          </template>
-        </VerticalFeature> -->
       </div>
-      <!-- <two-panel-detail class="mt-16">
-        <template #section-heading>
-          Section Heading
-        </template>
-        <template #header-left>
-          Describe a feature
-        </template>
-        <template #body-left>
-          Give some more info about the feature. This can contain more detail and context with a more technical direction. Make sure to be concise with your wording and avoid overly complex sentence structure.
-        </template>
-        <template #header-right>
-          Describe a feature
-        </template>
-        <template #body-right>
-          Give some more info about the feature. This can contain more detail and context with a more technical direction. Make sure to be concise with your wording and avoid overly complex sentence structure.
-        </template>
-      </two-panel-detail> -->
     </ContentSection>
     <ContentSection id="community-support" :bottom-margin="false">
       <div class="xs:-mx-12 px-4 xs:px-12 py-10 bg-so-blue text-white">
-        <!-- <ActionCallout class="lg:px-32" :alt="true" @button-click="$nuxt.$emit('show-contact-modal')">
-          <template #info>
-            Ready to purchase support?
-          </template>
-          <template #button-text>
-            Contact Us
-          </template>
-        </ActionCallout> -->
-        <ActionCalloutDetail class="lg:px-32 mt-6" :alt="true" @button-click="$nuxt.$emit('show-contact-modal')">
+        <ActionCallout class="lg:px-32" :alt="true" link="https://docs.securityonion.net/community-support.html" @button-click="$nuxt.$emit('show-contact-modal')">
           <template #info>
             Looking for community support?
-          </template>
-          <template #info-detail>
-            For links to GitHub Discussions, Reddit, Twitter, etc.
           </template>
           <template #button-text>
             Click Here
           </template>
-        </ActionCalloutDetail>
+        </ActionCallout>
       </div>
     </ContentSection>
   </div>
