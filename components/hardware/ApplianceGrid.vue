@@ -2,7 +2,7 @@
   <div>
     <div
       v-for="(applianceCat, i) in applianceCatArray"
-      :id="[i===0 ? 'forward-nodes' : 'manager-search-nodes']"
+      id="models"
       :key="i"
     >
       <div class="h-24" />

@@ -25,7 +25,7 @@
       </ActionCallout>
     </div>
     <div class="bg-so-blue text-white xs:-mx-12 py-8 mb-8">
-      <ContentSection :bottom-margin="false">
+      <ContentSection id="overview" :bottom-margin="false">
         <div class="mx-2 xs:mx-12 md:mx-32">
           <feature-left class="mb-24 xs:mb-4">
             <template #graphic>
@@ -89,7 +89,7 @@ export default {
     FeatureLeft
   },
   data: () => ({
-    links: [{ name: 'Forward Nodes', id: 'forward-nodes' }, { name: 'Manager Nodes', id: 'manager-search-nodes' }, { name: 'Search Nodes', id: 'manager-search-nodes' }]
+    links: [{ name: 'Overview', id: 'overview' }, { name: 'Models', id: 'models' }]
   }),
   head () {
     return {

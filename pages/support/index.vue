@@ -122,7 +122,7 @@ export default {
   },
   data: () => ({
     showModal: false,
-    links: [{ name: 'Premium', id: 'premium-support' }, { name: 'Premium vs Community', id: 'premium-vs-community' }, { name: 'Community', id: 'community-support' }]
+    links: [{ name: 'Premium', id: 'premium-support' }, { name: 'Community', id: 'community-support' }]
   }),
   head () {
     return {

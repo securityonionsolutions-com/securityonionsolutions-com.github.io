@@ -25,24 +25,26 @@
         Specs
       </template>
     </HeroLeft> -->
-    <div class="text-white bg-so-blue xs:-mx-12 px-4 xs:px-16 py-20">
-      <two-panel-detail class="mb-8">
-        <template #section-heading>
-          About Us
-        </template>
-        <template #header-left>
-          Our Software
-        </template>
-        <template #body-left>
-          We are the builders of Security Onion, a free and open source platform for threat hunting, network security monitoring, and log management. Security Onion includes best-of-breed open source tools such as Suricata, Zeek, Wazuh, the Elastic Stack, among many others.
-        </template>
-        <template #header-right>
-          Our Services
-        </template>
-        <template #body-right>
-          Security Onion Solutions offers appliances and professional services centered around the platform, and is the only provider of official Security Onion training.
-        </template>
-      </two-panel-detail>
+    <div class="text-white bg-so-blue xs:-mx-12 px-4 xs:px-16">
+      <ContentSection id="about">
+        <two-panel-detail class="mb-8">
+          <template #section-heading>
+            About Us
+          </template>
+          <template #header-left>
+            Our Software
+          </template>
+          <template #body-left>
+            We are the builders of Security Onion, a free and open source platform for threat hunting, network security monitoring, and log management. Security Onion includes best-of-breed open source tools such as Suricata, Zeek, Wazuh, the Elastic Stack, among many others.
+          </template>
+          <template #header-right>
+            Our Services
+          </template>
+          <template #body-right>
+            Security Onion Solutions offers appliances and professional services centered around the platform, and is the only provider of official Security Onion training.
+          </template>
+        </two-panel-detail>
+      </ContentSection>
     </div>
     <ContentSection id="timeline">
       <section-header class="mb-12 lg:mb-20">
@@ -201,7 +203,7 @@ export default {
     FeatureLeftAction
   },
   data: () => ({
-    links: [{ name: 'History', id: 'timeline' }, { name: 'Members', id: 'members' }, { name: 'Partners', id: 'partners' }],
+    links: [{ name: 'About', id: 'about' }, { name: 'History', id: 'timeline' }, { name: 'Team', id: 'members' }],
     eventText: 'Default Graphic',
     teamArr: require('@/content/team.json').team,
     eventList: [
