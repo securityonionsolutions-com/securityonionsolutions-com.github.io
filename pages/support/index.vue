@@ -95,7 +95,7 @@
     </ContentSection>
     <ContentSection id="community-support" :bottom-margin="false">
       <div class="xs:-mx-12 px-4 xs:px-12 py-10 bg-so-blue text-white">
-        <ActionCallout class="lg:px-32" :alt="true" link="https://docs.securityonion.net/community-support.html" @button-click="$nuxt.$emit('show-contact-modal')">
+        <ActionCallout class="lg:px-32" :alt="true" link="https://docs.securityonion.net/community-support.html">
           <template #info>
             Looking for community support?
           </template>
