@@ -29,7 +29,7 @@
     </noscript>
     <ContentSection id="premium-training" :bottom-margin="false">
       <div class="bg-so-blue text-white xs:-mx-12 px-4 sm:px-16">
-        <TwoPanelDetailGraphic :alt="true" link1="https://onlinetraining.securityonionsolutions.com/" @button2-click="$nuxt.$emit('show-contact-modal', { text: 'I am interested in scheduling instructor led Security Onion training.', source: 'schedule_instructor_training' })">
+        <TwoPanelDetailGraphic :alt="true" link1="https://onlinetraining.securityonionsolutions.com/" @button2-click="$nuxt.$emit('show-contact-modal', { text: 'I am interested in scheduling instructor led Security Onion training.', source: 'instructor_training' })">
           <template #section-heading>
             Premium Classes
           </template>
