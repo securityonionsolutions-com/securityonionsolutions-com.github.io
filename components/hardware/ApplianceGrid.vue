@@ -19,7 +19,7 @@
           v-for="(appliance, j) in applianceCat.boxes"
           :key="j"
           class="w-4/5 xs:px-2 md:px-4 lg:px-8 py-2 md:py-2 lg:py-4 cursor-pointer"
-          @click="handleClick(appliance)"
+          @click="handleClick(appliance, applianceCat)"
         >
           <ApplianceCard :appliance="appliance" />
         </div>
@@ -41,9 +41,9 @@ export default {
     }
   },
   methods: {
-    handleClick (appliance) {
+    handleClick (appliance, applianceCat) {
       if (window.innerWidth < 480) {
-        this.$router.push(`/hardware/${appliance.name}`)
+        this.$router.push(`/hardware/${applianceCat.name.toLowerCase().replace(' ', '_')}/${appliance.name.replace(' ', '_')}`)
       } else {
         this.$nuxt.$emit('show-hw-modal', appliance)
       }

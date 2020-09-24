@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center w-full navbar">
-    <nav class="mx-auto flex-grow flex items-center justify-between flex-wrap bg-black pb-2 pt-4 z-50 container">
+    <nav class="mx-auto flex-grow flex items-center justify-between flex-wrap bg-black py-2 lg:pb-2 lg:pt-4 z-50 container">
       <div class="flex items-end flex-shrink-0 text-white xs:mr-6 h-full -ml-1 lg:-ml-2 lg:-mb-3">
         <router-link to="/" class="flex items-end focus:outline-none active:outline-none h-full">
           <img class="nav-icon" src="~assets/img/svg/sos-white.svg">
