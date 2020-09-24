@@ -101,24 +101,6 @@ export default {
         event_category: 'engagement',
         event_label: window.location.pathname
       })
-    },
-    async handleSubmit () {
-      const form = document.getElementById('contact_form')
-      const data = new FormData(form)
-
-      const config = {
-        method: 'post',
-        url: 'https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8',
-        data
-      }
-
-      await this.$axios(config)
-        .then((res) => {
-          setTimeout(() => { this.$emit('close') }, 100)
-        })
-        .catch((error) => {
-          console.log(error)
-        })
     }
   }
 }
