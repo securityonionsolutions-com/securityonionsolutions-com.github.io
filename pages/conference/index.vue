@@ -20,7 +20,7 @@
           Don't miss out, get your tickets now!
         </div>
       </SectionHeader>
-      <SoButton link="http://eventbrite.com" class="mb-8">
+      <SoButton link="http://eventbrite.com" class="mb-8" @click="recordRegisterClick()">
         <div class="text-md xs:text-xl">
           Sign Up Here
         </div>
@@ -145,6 +145,12 @@ export default {
     },
     updateImageSize (event) {
       this.imageSize.width = `${event.slideWidth}px`
+    },
+    recordRegisterClick () {
+      this.$gtag('event', 'register_click', {
+        event_category: 'engagement',
+        event_label: `SO Conference ${this.upcoming.year}`
+      })
     }
   }
 }

@@ -28,8 +28,8 @@
       </Testimonial>
     </noscript>
     <ContentSection id="premium-training" :bottom-margin="false">
-      <div class="bg-so-blue text-white xs:-mx-12 px-4 sm:px-24">
-        <TwoPanelDetailGraphic :alt="true">
+      <div class="bg-so-blue text-white xs:-mx-12 px-4 sm:px-16">
+        <TwoPanelDetailGraphic :alt="true" link1="https://onlinetraining.securityonionsolutions.com/" @button2-click="$nuxt.$emit('show-contact-modal', { text: 'I am interested in scheduling instructor led Security Onion training.', source: 'schedule_instructor_training' })">
           <template #section-heading>
             Premium Classes
           </template>
@@ -41,18 +41,44 @@
             They are a cost-effective alternative to onsite training, but do not include the in-depth, hands-on labs that our onsite classes do.
           </template>
           <template #body-bottom-left>
-            <div>
-              The following on-demand training modules are pre-recorded and can be accessed immediately upon payment and for 60 days thereafter:
+            <div class="flex flex-col items-start">
+              <div class="bg-black text-lg text-white font-semibold py-1 px-3 rounded-md my-2">
+                Security Onion 2
+              </div>
+              The following classes are all new for Security Onion 2!
+            </div>
+            <ul class="list-disc ml-6 mb-6">
+              <li class="my-2">
+                Security Onion 2 Essentials <span class="bg-white text-sm text-green-600 font-semibold py-1 px-2 rounded-full">FREE</span>
+              </li>
+              <li class="my-2">
+                Security Onion 2 in Production <span class="bg-white text-sm text-red-500 font-semibold py-1 px-2 rounded-full whitespace-no-wrap">Coming Soon</span>
+              </li>
+              <li class="my-2">
+                Developing Your Detection Pipeline With Security Onion 2 <span class="bg-white text-sm text-red-500 font-semibold py-1 px-2 rounded-full whitespace-no-wrap">Coming Soon</span>
+              </li>
+            </ul>
+            <div class="flex flex-col items-start">
+              <div class="bg-black text-lg text-white font-semibold py-1 px-3 rounded-md mb-2">
+                Security Onion 16.04 (legacy)
+              </div>
+              The following legacy training classes are pre-recorded and can be accessed immediately upon payment and for 60 days thereafter:
             </div>
             <div class="h-2" />
             <ul class="list-disc ml-6">
-              <li>Security Onion 101: Introduction to Security Onion <span class="italic font-bold">Now Free!</span></li>
-              <li>Security Onion 201: Best Practices for Production Deployments</li>
-              <li>Security Onion 301: Best Practices for Distributed Deployments</li>
+              <li class="my-1">
+                Security Onion 101: Introduction to Security Onion
+              </li>
+              <li class="my-1">
+                Security Onion 201: Best Practices for Production Deployments
+              </li>
+              <li class="my-1">
+                Security Onion 301: Best Practices for Distributed Deployments
+              </li>
             </ul>
             <div class="h-2" />
             <div>
-              <strong>Best value!</strong> Purchase all 3 classes in a discounted bundle!
+              <strong>Best value!</strong> Purchase all three classes in a discounted bundle and get 30 days additional access!
             </div>
           </template>
           <template #graphic-left>
@@ -88,7 +114,7 @@
           <template #body>
             We are proud to offer GSA pricing through our partner IntelliGenesis!
             Eligible organizations, please
-            <span class="hover:text-gray-900 cursor-pointer underline" @click="$nuxt.$emit('show-contact-modal')">contact us</span>
+            <span class="hover:text-gray-900 cursor-pointer underline" @click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about GSA pricing.', source: 'GSA_pricing_info' })">contact us</span>
             for more information.
           </template>
         </DetailPara>
@@ -96,10 +122,10 @@
     </ContentSection>
     <ContentSection id="free-training" :bottom-margin="false">
       <section-header class="mb-2">
-        Security Onion 101
+        Security Onion 2.x Essentials
       </section-header>
       <div class="text-center text-base xs:text-lg mb-16">
-        Our Intro to Security Onion course is now free to watch, check it out
+        Take the <span class="italic font-bold">free</span> Security Onion 2.x Essentials training
       </div>
       <div class="flex justify-center">
         <GraphicPlaceholder class="video-placeholder">
@@ -112,7 +138,7 @@
         <training-table v-if="scheduleList.length !== 0" class="mx-2 xl:w-1/2 xs:mx-12 lg:mx-48 xl:mx-64" :schedule-list="scheduleList" />
       </div>
       <div class="bg-so-blue text-white py-12">
-        <ActionCallout class="xs:px-24" :alt="true" @button-click="$nuxt.$emit('show-contact-modal')">
+        <ActionCallout class="xs:px-24" :alt="true" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about official Security Onion training.', source: 'training_info' })">
           <template #info>
             For more information about official training
           </template>

@@ -51,7 +51,7 @@
           </a>
           <div
             class="block rounded-lg lg:inline-block text-5xl focus:outline-none cursor-pointer"
-            @click="$nuxt.$emit('show-contact-modal')"
+            @click="$nuxt.$emit('show-contact-modal', {text: '', source: 'footer_icon'})"
           >
             <fa-layers>
               <fa icon="circle" class="text-white" />

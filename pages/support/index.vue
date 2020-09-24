@@ -77,7 +77,7 @@
         />
       </template>
     </feature-right>
-    <ActionCallout class="lg:px-32 mb-12" @button-click="$nuxt.$emit('show-contact-modal')">
+    <ActionCallout class="lg:px-32 mb-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about purchasing support.', source: 'support_purchasing_info' })">
       <template #info>
         Ready to purchase support?
       </template>

@@ -42,6 +42,11 @@ export default {
   },
   methods: {
     handleClick (appliance, applianceCat) {
+      this.$gtag('event', 'hw_info', {
+        event_category: 'ecommerce',
+        event_label: appliance.name,
+        value: appliance.name
+      })
       if (window.innerWidth < 480) {
         this.$router.push(`/hardware/${applianceCat.name.toLowerCase().replace(' ', '_')}/${appliance.name.replace(' ', '_')}`)
       } else {

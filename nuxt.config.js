@@ -32,8 +32,7 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    { src: '@/plugins/scrollto.js', mode: 'client' },
-    { src: '@/plugins/gtag.js', mode: 'client' }
+    { src: '@/plugins/scrollto.js', mode: 'client' }
   ],
   /*
   ** Auto import components
@@ -47,7 +46,17 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    ['@nuxtjs/google-gtag', {
+      id: 'UA-177202545-1',
+      config: {
+        anonymize_ip: true,
+        linker: {
+          domains: ['securityonionsolutions.com']
+        }
+      },
+      debug: process.env.NODE_ENV === 'development'
+    }]
   ],
   /*
   ** Nuxt.js modules
@@ -56,7 +65,7 @@ export default {
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
     'vue-scrollto/nuxt',
-    ['@nuxtjs/axios', { headers: { 'Access-Control-Allow-Origin': '*' } }],
+    '@nuxtjs/axios',
     ['nuxt-fontawesome', {
       component: 'fa',
       imports: [

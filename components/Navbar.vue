@@ -93,7 +93,7 @@
           </a>
           <div
             class="block rounded-lg lg:inline-block text-lg focus:outline-none cursor-pointer hover:text-so-blue"
-            @click="$nuxt.$emit('show-contact-modal')"
+            @click="$nuxt.$emit('show-contact-modal', { text: '', source: 'header_icon' })"
           >
             <fa icon="envelope" />
           </div>

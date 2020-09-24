@@ -66,6 +66,7 @@
       <button
         class="bg-so-blue shadow-lg border hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline mb-4 -ml-1"
         type="submit"
+        @click="recordSubmit()"
       >
         Send Message
       </button>
@@ -75,6 +76,9 @@
 
 <script>
 export default {
+  props: {
+    text: { type: String, default: '' }
+  },
   data () {
     return {
       oid: '00D1U000000DI9i',
@@ -83,7 +87,7 @@ export default {
       last_name: '',
       email: '',
       company: '',
-      description: ''
+      description: this.text
     }
   },
   computed: {
@@ -92,6 +96,12 @@ export default {
     }
   },
   methods: {
+    recordSubmit () {
+      this.$gtag('event', 'contact_form_submit', {
+        event_category: 'engagement',
+        event_label: window.location.pathname
+      })
+    },
     async handleSubmit () {
       const form = document.getElementById('contact_form')
       const data = new FormData(form)

@@ -3,7 +3,7 @@
     <transition name="modal">
       <FloatingModal v-if="showModal" :index="1" @close="showModal = false">
         <div class="form-wrapper">
-          <ContactForm @close="showModal = false" />
+          <ContactForm :text="contactText" @close="showModal = false" />
         </div>
       </FloatingModal>
     </transition>
@@ -32,6 +32,7 @@
 export default {
   data: () => ({
     showModal: false,
+    contactText: '',
     showHwModal: false,
     modalAppliance: {},
     version: '1.0.0',
@@ -41,7 +42,14 @@ export default {
   //   $route: (val) => { this.setFavicon() }
   // },
   beforeMount () {
-    this.$nuxt.$on('show-contact-modal', () => { this.showModal = true })
+    this.$nuxt.$on('show-contact-modal', (event) => {
+      this.contactText = event.text
+      this.showModal = true
+      this.$gtag('event', 'contact_modal', {
+        event_category: 'engagement',
+        event_label: `${window.location.pathname}, ${event.source}`
+      })
+    })
     this.$nuxt.$on('show-hw-modal', (appliance) => {
       this.showHwModal = true
       this.modalAppliance = appliance
@@ -63,9 +71,6 @@ export default {
     }
   },
   methods: {
-    logButtonClick () {
-      alert('Button clicked')
-    },
     setFavicon () {
       window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? this.colorSchemeString = '-dark' : this.colorSchemeString = ''
     }

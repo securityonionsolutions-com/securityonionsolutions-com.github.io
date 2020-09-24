@@ -5,7 +5,7 @@
     </div>
     <ul>
       <li v-for="(item, index) in scheduleList" :key="index" class="mb-6 hover:shadow-lg">
-        <a :href="item.register_link" target="_blank">
+        <a :href="item.register_link" target="_blank" @click="recordRegisterClick(item)">
           <div class="border border-gray-400 rounded-sm">
             <div class="h-auto px-4 pt-2 pb-4 border-b border-gray-400">
               <div class="mb-1">
@@ -49,7 +49,15 @@ export default {
       minute: 'numeric',
       timeZoneName: 'short'
     }
-  })
+  }),
+  methods: {
+    recordRegisterClick (soEvent) {
+      this.$gtag('event', 'register_click', {
+        event_category: 'engagement',
+        event_label: soEvent.name
+      })
+    }
+  }
 }
 </script>
 

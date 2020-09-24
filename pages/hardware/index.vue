@@ -61,7 +61,7 @@
     <ApplianceGrid class="md:mb-24 px-3 xs:px-0 xs:-mx-12 xl:mx-24" />
     <div class="bg-so-blue text-white xs:-mx-12 py-10">
       <div class="flex justify-center">
-        <ActionCallout class="lg:px-32" :alt="true" @button-click="$nuxt.$emit('show-modal')">
+        <ActionCallout class="lg:px-32" :alt="true" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Security Onion appliances.', source: 'hw_purchasing_info' })">
           <template #info>
             For purchasing information
           </template>

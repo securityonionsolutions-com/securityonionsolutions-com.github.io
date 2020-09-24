@@ -122,7 +122,7 @@
           </template>
         </feature-left-action>
       </div>
-      <action-callout-graphic class="my-12" @button-click="$nuxt.$emit('show-contact-modal')">
+      <action-callout-graphic class="my-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Security Onion Solutions\' offerings.', source: 'main_general_contact_us' })">
         <template #callout>
           <div class="text-2xl xs:text-4xl flex justify-center mb-4">
             <div class="mx-2 xs:mx-0 xs:w-4/6">
