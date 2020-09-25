@@ -1,3 +1,5 @@
+const sitekey = process.env.NODE_ENV === 'development' ? '6LcfdNAZAAAAAK7JI_iWN86_sBkE0mtu4gtLj5Wz' : '6LeRbtAZAAAAAAUXLyY1xJHUdssTwSp8MloDVZ2Y'
+
 export default {
   /*
   ** Nuxt target
@@ -15,6 +17,9 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Security Onion Solutions, LLC' }
     ]
+  },
+  env: {
+    sitekey
   },
   /*
   ** Global CSS
@@ -72,7 +77,13 @@ export default {
           icons: ['fab']
         }
       ]
-    }]
+    }],
+    [
+      '@nuxtjs/recaptcha', {
+        siteKey: sitekey,
+        version: 2
+      }
+    ]
   ],
   /*
   ** Content module configuration

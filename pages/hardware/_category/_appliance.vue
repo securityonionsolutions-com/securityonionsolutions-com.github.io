@@ -14,7 +14,6 @@
 export default {
   scrollToTop: true,
   async asyncData ({ params }) {
-    console.log(params)
     const appliance = await params.appliance.replace('_', ' ')
     const applianceCat = await params.category
     return {
