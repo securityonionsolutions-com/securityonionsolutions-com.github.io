@@ -91,7 +91,8 @@
 <script>
 export default {
   props: {
-    text: { type: String, default: '' }
+    text: { type: String, default: '' },
+    source: { type: String, default: '' }
   },
   data () {
     return {
@@ -115,7 +116,7 @@ export default {
     recordSubmit () {
       this.$gtag('event', 'contact_form_submit', {
         event_category: 'engagement',
-        event_label: window.location.pathname
+        event_label: `${window.location.pathname}, ${this.source}`
       })
     },
     enableButton () {

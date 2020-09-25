@@ -3,7 +3,7 @@
     <transition name="modal">
       <FloatingModal v-if="showModal" :index="1" @close="showModal = false">
         <div class="form-wrapper">
-          <ContactForm :text="contactText" @close="showModal = false" />
+          <ContactForm :text="contactText" :source="eventSource" @close="showModal = false" />
         </div>
       </FloatingModal>
     </transition>
@@ -33,6 +33,7 @@ export default {
   data: () => ({
     showModal: false,
     contactText: '',
+    eventSource: '',
     showHwModal: false,
     modalAppliance: {},
     version: '1.0.0',
@@ -44,6 +45,7 @@ export default {
   beforeMount () {
     this.$nuxt.$on('show-contact-modal', (event) => {
       this.contactText = event.text
+      this.eventSource = event.source
       this.showModal = true
       this.$gtag('event', 'contact_modal', {
         event_category: 'engagement',
