@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white rounded-lg pt-4 form-wrapper">
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer />
+    <script src="https://www.google.com/recaptcha/api.js" async defer />
     <script>
       function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response == undefined || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);
     </script>
