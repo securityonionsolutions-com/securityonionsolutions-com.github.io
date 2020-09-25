@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+/* eslint-disable no-console */
 const fs = require('fs')
 const axios = require('axios')
 const { DateTime } = require('luxon')
