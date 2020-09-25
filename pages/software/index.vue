@@ -216,13 +216,6 @@ export default {
     FeatureSelector
   },
   data: () => ({
-    testimonialList: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis, mi vitae varius iaculis, justo nisi rutrum sapien, suscipit feugiat turpis nisl a nisl.',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis, mi vitae varius iaculis, justo nisi rutrum sapien, suscipit feugiat turpis nisl a nisl.',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis, mi vitae varius iaculis, justo nisi rutrum sapien, suscipit feugiat turpis nisl a nisl.',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis, mi vitae varius iaculis, justo nisi rutrum sapien, suscipit feugiat turpis nisl a nisl.',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis, mi vitae varius iaculis, justo nisi rutrum sapien, suscipit feugiat turpis nisl a nisl.'
-    ],
     links: [{ name: 'Download', id: 'download-before' }, { name: 'Data Types', id: 'data_types' }, { name: 'Use Cases', id: 'use_cases' }, { name: 'Docs', id: 'docs' }],
     typeArray: require('@/content/data_types.json').types,
     featureArr: [
@@ -242,7 +235,7 @@ export default {
         body: 'See the big picture with our custom Kibana dashboards built to give you the most important information at a glance.'
       }
     ],
-    soVersion: '2.2.0-rc3'
+    soVersion: require('@/content/version.json').version
   }),
   head () {
     return {

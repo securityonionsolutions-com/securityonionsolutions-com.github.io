@@ -5,15 +5,8 @@
       :class="[alt ? 'bg-white text-black' : 'bg-so-blue text-white']"
     >
       <div class="mx-4 text-sm xs:text-base">
-        <slot name="text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis, mi vitae varius iaculis, justo nisi rutrum sapien, suscipit feugiat turpis nisl a nisl.
-        </slot>
+        <slot name="text" />
       </div>
-      <!-- <div v-if="showName" class="absolute name text-black">
-        <slot name="name">
-          Firstname Lastname
-        </slot>
-      </div> -->
     </div>
   </div>
 </template>
@@ -34,7 +27,4 @@ export default {
   right: -2%;
   bottom: -40%;
 }
-/* .rounded-xl {
-  border-radius: 2rem;
-} */
 </style>

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const fs = require('fs')
 const axios = require('axios')
 const { DateTime } = require('luxon')
@@ -12,7 +13,6 @@ const getEvents = async () => {
       Authorization: `Bearer ${token}`
     }
   }
-
   return await axios(config).catch((error) => { console.log(error) })
 }
 
@@ -21,6 +21,14 @@ const getLocation = async (venueId) => {
     method: 'get',
     url: `https://www.eventbriteapi.com/v3/venues/${venueId}`,
     headers: { Authorization: `Bearer ${token}` }
+  }
+  return await axios(config).catch((error) => { console.log(error) })
+}
+
+const getSoVersion = async () => {
+  const config = {
+    method: 'get',
+    url: 'https://raw.githubusercontent.com/Security-Onion-Solutions/securityonion/master/VERSION'
   }
   return await axios(config).catch((error) => { console.log(error) })
 }
@@ -68,14 +76,36 @@ const morgrifyEvents = async () => {
   return eventArr
 }
 
-const main = async () => {
-  const jsonData = {
-    events: []
-  }
-  jsonData.events = await morgrifyEvents()
-  console.log(`Writing ${jsonData.events.length} events to file...`)
-  fs.writeFileSync('./content/training_schedule.json', JSON.stringify(jsonData, null, 2))
+const writeJsonToFile = (filename, jsonData) => {
+  fs.writeFileSync(`./content/${filename}`, JSON.stringify(jsonData, null, 2))
+}
+
+const writeSoVersion = async () => {
+  const versionRes = await getSoVersion()
+  const filename = 'version.json'
+
+  const jsonData = { version: versionRes.data.replace('\n', '') }
+
+  console.log(`Writing SO version to ${filename}...`)
+  writeJsonToFile(filename, jsonData)
   console.log('Done\n')
 }
 
-main().catch(error => console.log(error))
+const updateEvents = async () => {
+  const jsonData = {
+    events: []
+  }
+  const filename = 'training_schedule.json'
+  jsonData.events = await morgrifyEvents()
+
+  console.log(`Writing ${jsonData.events.length} events to ${filename}...`)
+  writeJsonToFile(filename, jsonData)
+  console.log('Done\n')
+}
+
+const main = () => {
+  writeSoVersion().catch((error) => { console.log(error) })
+  updateEvents().catch(error => console.log(error))
+}
+
+main()
