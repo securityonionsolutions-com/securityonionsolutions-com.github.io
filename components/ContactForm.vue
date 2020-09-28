@@ -1,13 +1,13 @@
 <template>
-  <div class="bg-white rounded-lg pt-4 form-wrapper">
+  <div class="bg-white rounded-lg pt-2 form-wrapper">
     <script src="https://www.google.com/recaptcha/api.js" async defer />
     <script>
       function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response == undefined || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);
     </script>
-    <div class="mx-8 text-right text-lg xs:text-4xl">
+    <div class="mx-8 text-right text-lg xs:text-3xl">
       Contact Us
     </div>
-    <form id="contact_form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="px-8 xs:pt-6 pb-8 mb-4">
+    <form id="contact_form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="px-8 xs:pt-2 pb-5 mb-4">
       <input type="hidden" name="captcha_settings" value="{&quot;keyname&quot;:&quot;reCAPTCHA&quot;,&quot;fallback&quot;:&quot;true&quot;,&quot;orgId&quot;:&quot;00D1U000000DI9i&quot;,&quot;ts&quot;:&quot;&quot;}">
       <input type="hidden" name="oid" value="00D1U000000DI9i">
       <input v-model="retUrl" type="hidden" name="retURL" value="">
@@ -15,7 +15,7 @@
       <input
         id="first_name"
         v-model="first_name"
-        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline text-sm xs:text-base mb-4"
+        class="shadow appearance-none border rounded w-full py-2 px-3 font-sans leading-tight focus:outline-none focus:shadow-outline text-sm xs:text-base mb-2"
         maxlength="40"
         name="first_name"
         size="20"
@@ -25,7 +25,7 @@
       <input
         id="last_name"
         v-model="last_name"
-        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline text-sm xs:text-base mb-4"
+        class="shadow appearance-none border rounded w-full py-2 px-3 font-sans leading-tight focus:outline-none focus:shadow-outline text-sm xs:text-base mb-2"
         maxlength="80"
         name="last_name"
         size="20"
@@ -35,7 +35,7 @@
       <input
         id="email"
         v-model="email"
-        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline text-sm xs:text-base mb-4"
+        class="shadow appearance-none border rounded w-full py-2 px-3 font-sans leading-tight focus:outline-none focus:shadow-outline text-sm xs:text-base mb-2"
         maxlength="80"
         name="email"
         size="20"
@@ -45,7 +45,7 @@
       <input
         id="company"
         v-model="company"
-        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline text-sm xs:text-base mb-4"
+        class="shadow appearance-none border rounded w-full py-2 px-3 font-sans leading-tight focus:outline-none focus:shadow-outline text-sm xs:text-base mb-2"
         maxlength="40"
         name="company"
         size="20"
@@ -57,7 +57,7 @@
         name="description"
         placeholder="..."
         rows="5"
-        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline text-sm xs:text-base mb-2"
+        class="shadow appearance-none border rounded w-full py-2 px-3 font-sans leading-tight focus:outline-none focus:shadow-outline text-sm xs:text-base"
       />
       <div class="block text-red-500 text-sm font-bold mb-4">
         * Required
@@ -109,7 +109,7 @@ export default {
   },
   computed: {
     retUrl () {
-      return window.location.href
+      return `${window.location.origin}/thank_you`
     }
   },
   methods: {
@@ -136,7 +136,7 @@ export default {
   }
 }
 .submit-button {
-  @apply shadow-lg border font-bold py-2 px-4 rounded-full mb-4 -ml-1
+  @apply shadow-lg border font-bold py-2 px-4 rounded-full -ml-1
 }
 .enabled {
   @apply bg-so-blue text-white
