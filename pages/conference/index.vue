@@ -20,7 +20,7 @@
           Don't miss out, get your tickets now!
         </div>
       </SectionHeader>
-      <SoButton link="http://eventbrite.com" class="mb-8" @click="recordRegisterClick()">
+      <SoButton link="https://securityonionconference2020.eventbrite.com" class="mb-8" @click="recordRegisterClick()">
         <div class="text-md xs:text-xl">
           Sign Up Here
         </div>
