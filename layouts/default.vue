@@ -16,7 +16,7 @@
       </FloatingModal>
     </transition>
 
-    <div class="flex flex-col leading-normal tracking-normal min-h-screen topo-bg">
+    <div class="flex flex-col leading-normal tracking-normal min-h-screen bg-fixed topo-bg">
       <Navbar class="fixed z-50" />
       <div class="fixed nav-bleed w-full bg-black z-0" />
       <Nuxt class="flex-grow content container mx-auto flex flex-col bg-white shadow-xl z-10" />
@@ -113,8 +113,10 @@ html {
   background-color: black;
 }
 .topo-bg {
-  background-color: #e3f2fd;
-  background-image: url('~assets/img/svg/topography.svg');
+  background-color: #061b2d;
+  background-image: url('~assets/img/graphics/lines.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .content {
   margin-top: 85px;
@@ -142,7 +144,7 @@ html {
 .footer-bleed {
   bottom: 0%;
   right: 0%;
-  height: 425px;
+  height: 250px;
 }
 /* .footer-bleed:before {
   background: inherit;

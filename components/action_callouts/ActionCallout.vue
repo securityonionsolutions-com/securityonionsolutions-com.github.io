@@ -4,7 +4,7 @@
       <slot name="info" />
     </div>
     <div class="block">
-      <so-button class="w-full" :alt="alt" :link="link" @click.native="$emit('button-click')">
+      <so-button class="whitespace-no-wrap w-full" :alt="alt" :link="link" @click.native="$emit('button-click')">
         <slot name="button-text" />
       </so-button>
     </div>

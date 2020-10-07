@@ -61,7 +61,7 @@
           </nuxt-link>
         </div>
       </div>
-      <div class="cursor-default hidden lg:flex flex-col mr-2 uppercase">
+      <div class="cursor-default hidden lg:flex flex-col mr-2">
         <div class="flex flex-row items-center justify-end mb-1 mt-4 lg:mt-0 text-white">
           <a
             class="block rounded-lg mr-3 lg:inline-block text-lg focus:outline-none cursor-pointer hover:text-so-blue"
@@ -101,37 +101,34 @@
         <div class="flex flex-row mt-4 lg:mt-0">
           <nuxt-link
             to="/software"
-            class="block lg:inline-block text-gray-400 hover:text-blue-500 mr-3 text-xl focus:outline-none focus:text-blue-500"
+            class="block lg:inline-block text-gray-400 hover:text-blue-500 mr-5 text-lg font-thin focus:outline-none focus:text-blue-500"
           >
             Software
           </nuxt-link>
           <nuxt-link
             to="/hardware"
-            class="block rounded-lg lg:inline-block text-gray-400 hover:text-blue-500 mr-3 text-xl focus:outline-none focus:text-blue-500"
+            class="block lg:inline-block text-gray-400 hover:text-blue-500 mr-5 text-lg font-thin focus:outline-none focus:text-blue-500"
           >
             Hardware
           </nuxt-link>
           <nuxt-link
             to="/training"
-            class="block lg:inline-block text-gray-400 hover:text-blue-500 mr-3 text-xl focus:outline-none focus:text-blue-500"
+            class="block lg:inline-block text-gray-400 hover:text-blue-500 mr-5 text-lg font-thin focus:outline-none focus:text-blue-500"
           >
             Training
           </nuxt-link>
           <nuxt-link
             to="/support"
-            class="block lg:inline-block text-gray-400 hover:text-blue-500 mr-3 text-xl focus:outline-none focus:text-blue-500"
+            class="block lg:inline-block text-gray-400 hover:text-blue-500 mr-5 text-lg font-thin focus:outline-none focus:text-blue-500"
           >
             Support
           </nuxt-link>
           <nuxt-link
             to="/conference"
-            class="block lg:inline-block text-gray-400 hover:text-blue-500 text-xl focus:outline-none focus:text-blue-500"
+            class="block lg:inline-block text-gray-400 hover:text-blue-500 text-lg font-thin focus:outline-none focus:text-blue-500"
           >
             Conference
           </nuxt-link>
-          <!-- <div class="block mt-4 lg:inline-block lg:mt-0 text-white mr-4 text-xl">
-            &bull;
-          </div> -->
         </div>
       </div>
     </nav>

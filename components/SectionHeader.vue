@@ -1,5 +1,5 @@
 <template>
-  <div class="text-4xl xs:text-6xl font-semibold" :class="alignment()">
+  <div class="text-3xl xs:text-4xl font-semibold" :class="alignment()">
     <slot />
   </div>
 </template>
