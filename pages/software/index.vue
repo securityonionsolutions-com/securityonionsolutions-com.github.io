@@ -1,103 +1,167 @@
 <template>
   <div class="xs:px-12">
     <PageNav page-name="Security Onion" :links="links" />
-    <SubHero id="download-before" class="mb-6 xs:-mx-12">
-      <template #graphic>
-        <img src="~assets/img/screenshots/hunt-slash-skinny.jpg" class="mb-2 xs:mb-4">
-      </template>
+    <SubHero id="download-before" class="hero">
       <template #header>
-        Peel Back The Layers of Your Enterprise
+        Security Onion 2
       </template>
       <template #body>
-        Security Onion is a free and open source Linux distribution for threat hunting, enterprise security monitoring, and log management.
+        <div class="flex justify-center">
+          <div class="text-2xl">
+            Latest version:
+            <span class="font-light">{{ soVersion }}</span>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <ActionCallout class="mt-1 xl:mt-4" link="https://github.com/Security-Onion-Solutions/securityonion/blob/master/VERIFY_ISO.md">
+            <template #button-text>
+              Download Now
+            </template>
+          </ActionCallout>
+        </div>
+        <div class="flex justify-center">
+          <ActionCallout class="xl:mt-4" link="https://docs.securityonion.net/">
+            <template #button-text>
+              Documentation
+            </template>
+          </ActionCallout>
+        </div>
       </template>
     </SubHero>
-    <div class="flex justify-center">
-      <ActionCallout class="lg:w-2/5 mb-20 mt-4" link="https://github.com/Security-Onion-Solutions/securityonion/blob/master/VERIFY_ISO.md">
-        <template #info>
-          <div class="flex items-center">
-            <div class="text-2xl mr-2">
-              Latest version:
+    <ContentSection id="overview" :alt="true">
+      <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
+        <feature-right class="xs:mb-12" :text-margin="true">
+          <template #header>
+            <div class="text-center xs:text-left">
+              Overview
             </div>
-            <div class="text-3xl">
-              {{ soVersion }}
+          </template>
+          <template #graphic>
+            <div class="shadow-xl rounded-md overflow-hidden">
+              <CircleGraphic
+                :padding="false"
+                file-name="install.jpg"
+                :size="20"
+              />
             </div>
-          </div>
-        </template>
-        <template #button-text>
-          Download
-        </template>
-      </ActionCallout>
-    </div>
-    <div class="xs:px-6 lg:px-10 xl:px-24 xs:-mx-12 bg-so-blue text-white">
-      <two-panel-detail class="my-20 mx-10">
-        <template #section-heading>
-          About Security Onion
-        </template>
-        <template #body-left>
-          Security Onion is a free and open source Linux distribution for threat hunting, enterprise security monitoring, and log management. The easy-to-use Setup wizard allows you to build an army of distributed sensors for your enterprise in minutes!
-        </template>
-        <template #body-right>
-          Security Onion includes Elasticsearch, Logstash, Kibana, Suricata, Zeek (formerly known as Bro), Wazuh, Stenographer, TheHive, Cortex, CyberChef, NetworkMiner, and many other security tools.
-        </template>
-      </two-panel-detail>
-      <feature-left class="mt-20 mb-16 xs:px-12 w-full">
-        <template #graphic>
-          <div class="rounded-sm overflow-hidden shadow-xl">
-            <img src="~assets/img/screenshots/sensor_list.jpg" style="width: 30rem; height: auto;">
-          </div>
-          <!-- <CircleGraphic
-            file-name="undraw_data_extraction_ih3n.svg"
-            :size="20"
-          /> -->
-        </template>
-        <template #header>
-          Scalable and flexible <br> to fit YOUR environment
-        </template>
-        <template #body>
-          From a single network appliance to a grid of 1000, Security Onion scales to fit your specific needs.
-        </template>
-      </feature-left>
-      <feature-right class="mt-10 mb-24 xs:px-12 w-full">
-        <template #graphic>
-          <div class="rounded-sm overflow-hidden shadow-xl">
-            <img src="~assets/img/screenshots/github_sos.jpg" style="width: 30rem; height: auto;">
-          </div>
-          <!-- <CircleGraphic
-            file-name="undraw_investment_xv9d.svg"
-            :size="20"
-          /> -->
-        </template>
-        <template #header>
-          BY the community, <br> FOR the community
-        </template>
-        <template #body>
-          Security Onion and the tools we integrate are all open source, written by members of the cyber security community.
-        </template>
-      </feature-right>
-    </div>
-    <feature-selector class="mt-16 lg:mt-32 lg:-mx-6" :feature-arr="featureArr" />
+          </template>
+          <template #body>
+            <div class="text-center xs:text-left">
+              Security Onion is a free and open source Linux distribution for threat hunting, enterprise security monitoring, and log management. The easy-to-use Setup wizard allows you to build an army of distributed sensors for your enterprise in minutes!
+            </div>
+            <div class="text-center xs:text-left mt-4">
+              Security Onion includes Elasticsearch, Logstash, Kibana, Suricata, Zeek (formerly known as Bro), Wazuh, Stenographer, TheHive, Cortex, CyberChef, NetworkMiner, and many other security tools.
+            </div>
+          </template>
+        </feature-right>
+        <feature-left class="my-12">
+          <template #header>
+            <div class="text-center xs:text-left">
+              Highly Scalable
+            </div>
+          </template>
+          <template #graphic>
+            <CircleGraphic
+              class="shadow-xl rounded-md overflow-hidden"
+              file-name="sensor_list.jpg"
+              :padding="false"
+              :size="20"
+            />
+          </template>
+          <template #body>
+            <div class="text-left">
+              From a single network appliance, to a grid of a thousand nodes, Security Onion scales to fit your specific needs.
+            </div>
+          </template>
+        </feature-left>
+        <feature-right class="xs:mb-12" :text-margin="true">
+          <template #header>
+            <div class="text-center xs:text-left">
+              Open Source Community
+            </div>
+          </template>
+          <template #graphic>
+            <div class="shadow-xl rounded-md overflow-hidden">
+              <CircleGraphic
+                :padding="false"
+                file-name="github_sos.jpg"
+                :size="20"
+              />
+            </div>
+          </template>
+          <template #body>
+            <div class="text-center xs:text-left">
+              Security Onion and the tools we integrate are all open source, written by members of the cyber security community.
+            </div>
+          </template>
+        </feature-right>
+      </div>
+    </ContentSection>
+    <ContentSection id="use-cases">
+      <div id="use_cases" class="xs:-mx-12">
+        <four-panel-detail class="mx-3 xs:mx-24">
+          <template #section-heading>
+            Use Cases
+          </template>
+          <template #header-top-left>
+            NIDS
+          </template>
+          <template #body-top-left>
+            Collect network events from Zeek, Suricata, and other tools for complete coverage of your network. Cast a wide net to catch the bad guys quickly and easily.
+          </template>
+          <template #header-top-right>
+            HIDS
+          </template>
+          <template #body-top-right>
+            Security Onion supports several host-based event collection agents including Wazuh, Beats, and osquery. Just point them to your installation and it's off to the races.
+          </template>
+          <template #header-bottom-left>
+            Static Analysis (PCAP Import)
+          </template>
+          <template #body-bottom-left>
+            Use Security Onion to import PCAP files for quick static analysis and case studies. Spin up a virtual machine quickly and get started in just a few minutes.
+          </template>
+          <template #header-bottom-right>
+            SOC Workstation
+          </template>
+          <template #body-bottom-right>
+            A workstation install option is also available for SOC analysts to use local Linux tools to perform analysis of network and host events. No need to install extra tools, we bundle all the apps you might need.
+          </template>
+        </four-panel-detail>
+      </div>
+    </ContentSection>
+    <ContentSection id="features" :alt="true">
+      <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
+        <section-header class="mb-6">
+          Included Features
+        </section-header>
+        <div class="flex flex-col lg:flex-row lg:flex-wrap justify-center content-center md:-mx-2 mt-4">
+          <feature-selector :feature-arr="featureArr" />
+        </div>
+      </div>
+    </ContentSection>
     <ContentSection id="data_types">
-      <div class="bg-so-blue text-white xs:-mx-12 px-2 xs:px-32 pt-12 pb-10">
+      <div class="xs:-mx-12 px-4">
         <SectionHeader class="mt-6 xs:mb-8">
-          Data Types
+          Data Collection
         </SectionHeader>
-        <div class="flex flex-row flex-wrap justify-center xs:mb-8">
-          <div v-for="(type, i) in typeArray" :key="i" class="w-full xs:w-1/2 md:w-1/4">
-            <VerticalFeature class="my-6 xs:my-10">
+        <div class="flex flex-row flex-wrap justify-center mt-4">
+          <div v-for="(type, i) in typeArray" :key="i" class="w-full md:w-1/3 xl:w-1/4 bg-gray-200 rounded-md m-2 p-2 h-64">
+            <VerticalFeature>
               <template #graphic>
-                <fa :icon="type.icon" class="text-white mb-2" mask="circle" transform="shrink-8" size="4x" />
+                <fa :icon="type.icon" class="mb-2" mask="circle" transform="shrink-8" size="4x" />
               </template>
               <template #title>
-                {{ type.name }}
+                <div class="text-2xl">
+                  {{ type.name }}
+                </div>
               </template>
               <template #body>
-                <div class="flex flex-col items-center text-center">
-                  <div class="mb-2">
+                <div class="flex flex-col items-center text-center text-lg pt-2">
+                  <div class="mb-2 h-20">
                     {{ type.desc }}
                   </div>
-                  <hr class="border-white w-1/4 mb-2">
-                  <div>
+                  <div class="text-gray-600 font-light text-sm">
                     {{ type.tools }}
                   </div>
                 </div>
@@ -107,148 +171,50 @@
         </div>
       </div>
     </ContentSection>
-    <action-callout-graphic class="mb-32 mt-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Security Onion Solutions\' offerings.', source: 'software_general_contact_us' })">
-      <template #callout>
-        <div class="text-2xl xs:text-4xl flex justify-center mb-4">
-          <div class="mx-2 xs:mx-0 xs:w-4/6">
-            Want us to take care of the hardware and setup so you can focus on threat hunting?
-          </div>
-        </div>
-      </template>
-      <template #button-text>
-        <div class="text-sm xs:text-lg m-1">
-          Find Out How
-        </div>
-      </template>
-    </action-callout-graphic>
-    <div id="use_cases" class="bg-so-blue xs:-mx-12">
-      <div class="h-24" />
-      <four-panel-detail class="mb-32 text-white mx-3 xs:mx-24">
-        <template #section-heading>
-          Use Cases
-        </template>
-        <template #header-top-left>
-          NIDS
-        </template>
-        <template #body-top-left>
-          Collect network events from Zeek, Suricata, and other tools for complete coverage of your network. Cast a wide net to catch the bad guys quickly and easily.
-        </template>
-        <template #header-top-right>
-          HIDS
-        </template>
-        <template #body-top-right>
-          Security Onion supports several host-based event collection agents including Wazuh, Beats, and osquery. Just point them to your installation and it's off to the races.
-        </template>
-        <template #header-bottom-left>
-          Static Analysis (PCAP Import)
-        </template>
-        <template #body-bottom-left>
-          Use Security Onion to import PCAP files for quick static analysis and case studies. Spin up a virtual machine quickly and get started in just a few minutes.
-        </template>
-        <template #header-bottom-right>
-          SOC Workstation
-        </template>
-        <template #body-bottom-right>
-          A workstation install option is also available for SOC analysts to use local Linux tools to perform analysis of network and host events. No need to install extra tools, we bundle all the apps you might need.
-        </template>
-      </four-panel-detail>
-      <!-- <client-only>
-        <TestimonialList :alt="true" :list="testimonialList" class="mt-24 mb-20" />
-      </client-only>
-      <noscript inline-template>
-        <Testimonial :alt="true" class="mt-24 mb-20">
-        <template #text :show-name="false">
-        {{ testimonialList[1] }}
-        </template>
-        </Testimonial>
-      </noscript> -->
-    </div>
-    <action-callout-graphic class="mt-24" link="https://github.com/Security-Onion-Solutions/securityonion/blob/master/VERIFY_ISO.md" :button="false">
-      <template #callout>
-        Ready to get started?
-      </template>
-      <template #graphic>
-        <div class="xs:mt-2 xs:mb-10">
-          <img style="height: 20rem" src="~assets/img/graphics/undraw_Business_analytics_64el.svg">
-        </div>
-      </template>
-    </action-callout-graphic>
-    <div class="flex justify-center">
-      <ActionCallout class="lg:w-2/5 mb-20" link="https://github.com/Security-Onion-Solutions/securityonion/blob/master/VERIFY_ISO.md">
-        <template #info>
-          <div class="flex items-center">
-            <div class="text-2xl mr-2">
-              Latest version:
+    <ContentSection id="hardwarehelp" :alt="true">
+      <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
+        <action-callout :alt="true" class="my-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Security Onion Solutions\' offerings.', source: 'software_general_contact_us' })">
+          <template #info>
+            <div class="text-2xl flex justify-center">
+              <div>
+                Let Security Onion Solutions take care of the hardware and setup, so you can focus on threat hunting.
+              </div>
             </div>
-            <div class="text-3xl">
-              {{ soVersion }}
+          </template>
+          <template #button-text>
+            <div class="text-lg my-1">
+              Find Out How
             </div>
-          </div>
-        </template>
-        <template #button-text>
-          Download
-        </template>
-      </ActionCallout>
-    </div>
-    <div id="docs" class="pt-12 px-20 xs:-mx-12 bg-so-blue text-white">
-      <ActionCallout class="mb-20 mt-4 xl:mx-48" :alt="true" link="https://docs.securityonion.net/">
-        <template #info>
-          For Security Onion documentation
-        </template>
-        <template #button-text>
-          Click Here
-        </template>
-      </ActionCallout>
-    </div>
+          </template>
+        </action-callout>
+      </div>
+    </ContentSection>
   </div>
 </template>
 
 <script>
 import FourPanelDetail from '~/components/features/FourPanelDetail'
-import ActionCalloutGraphic from '~/components/action_callouts/ActionCalloutGraphic'
+import ActionCallout from '~/components/action_callouts/ActionCallout'
 import FeatureSelector from '~/components/features/FeatureSelector'
 
 export default {
   scrollToTop: true,
   components: {
     FourPanelDetail,
-    ActionCalloutGraphic,
+    ActionCallout,
     FeatureSelector
   },
   data: () => ({
-    links: [{ name: 'Download', id: 'download-before' }, { name: 'Data Types', id: 'data_types' }, { name: 'Use Cases', id: 'use_cases' }, { name: 'Docs', id: 'docs' }],
+    links: [{ name: 'Overview', id: 'overview' }, { name: 'Use Cases', id: 'use-cases' }, { name: 'Features', id: 'features' }],
     typeArray: require('@/content/data_types.json').types,
-    featureArr: [
-      {
-        image: 'screenshots/alerts.jpg',
-        header: 'Native Alert Queue',
-        body: 'Use our NEW Alerts interface to review and manage alerts generated by Security Onion.'
-      },
-      {
-        image: 'screenshots/hunt.jpg',
-        header: 'Hunt All The Things',
-        body: 'Our Hunt interface is purpose built to let you investigate events quickly and easily.'
-      },
-      {
-        image: 'screenshots/pcap.jpg',
-        header: 'Full PCAP Analysis',
-        body: 'Pull packet captures from network events and analyze them within SOC, no need for an external tool.'
-      }
-    ],
+    featureArr: require('@/content/features.json').features,
     soVersion: require('@/content/version.json').version
-  }),
-  head () {
-    return {
-      title: 'Security Onion'
-    }
-  }
+  })
 }
 </script>
 
 <style scoped>
-.graphic {
-  height: 20rem;
-  min-width: 20rem;
-  width: 20rem;
+.hero {
+  background: right bottom no-repeat url(~assets/img/graphics/peelback-half.jpg);
 }
 </style>

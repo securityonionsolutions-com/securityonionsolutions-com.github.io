@@ -1,7 +1,7 @@
 <template>
   <div class="xs:px-12">
     <PageNav page-name="Home" :links="links" />
-    <SubHero class="hero xs:-mx-12">
+    <SubHero class="hero text-center">
       <template #header>
         Security Onion 2 is now Generally Available!
       </template>
@@ -16,7 +16,7 @@
         </div>
       </template>
     </SubHero>
-    <ContentSection id="portfolio" alt="true">
+    <ContentSection id="portfolio" :alt="true">
       <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
         <feature-left class="my-12">
           <template #header>
@@ -27,7 +27,7 @@
           <template #graphic>
             <CircleGraphic
               class="shadow-xl rounded-md overflow-hidden"
-              file-name="soc.jpg"
+              file-name="copper.jpg"
               :padding="false"
               :size="20"
             />
@@ -46,8 +46,8 @@
           </template>
           <template #graphic>
             <CircleGraphic
-              class="shadow-xl rounded-full overflow-hidden"
-              file-name="copper.jpg"
+              class="shadow-xl rounded-md overflow-hidden"
+              file-name="soc.jpg"
               :padding="false"
               :size="20"
             />
@@ -58,16 +58,16 @@
             </div>
           </template>
         </feature-right>
-        <action-callout alt="true" class="my-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Security Onion Solutions\' offerings.', source: 'main_general_contact_us' })">
+        <action-callout :alt="true" class="my-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Security Onion Solutions\' offerings.', source: 'main_general_contact_us' })">
           <template #info>
             <div class="text-2xl flex justify-center">
-              <div class="mx-2 xs:mx-0 xs:w-4/6">
+              <div>
                 Interested in discussing how our products and services can help your organization?
               </div>
             </div>
           </template>
           <template #button-text>
-            <div class="text-lg m-1">
+            <div class="text-lg my-1">
               Contact Us
             </div>
           </template>
@@ -84,7 +84,7 @@
         </div>
       </div>
     </ContentSection>
-    <ContentSection id="about" alt="true">
+    <ContentSection id="about" :alt="true">
       <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
         <section-header class="mb-6">
           About Us
@@ -123,13 +123,13 @@
               {{ eventObj().text }}
             </div>
           </div>
-          <div class="md:w-1/2 lg:w-1/3">
+          <div class="md:w-1/2 lg:w-1/3 pr-12">
             <Timeline @timeline-click="setEventGraphic($event)" />
           </div>
         </div>
       </div>
     </ContentSection>
-    <ContentSection id="members" alt="true">
+    <ContentSection id="members" :alt="true">
       <div class="bg-so-blue text-white xs:-mx-12">
         <section-header class="sm:mx-40 mb-8">
           Our Team
@@ -167,7 +167,6 @@ const logos = [
 ]
 
 export default {
-  scrollToTop: true,
   components: {
     Timeline,
     TeamCard,
@@ -180,35 +179,7 @@ export default {
     links: [{ name: 'Portfolio', id: 'portfolio' }, { name: 'Partners', id: 'partners' }, { name: 'About', id: 'about' }, { name: 'History', id: 'timeline' }, { name: 'Team', id: 'members' }],
     eventText: 'Default Graphic',
     teamArr: require('@/content/team.json').team,
-    eventList: [
-      {
-        text: '',
-        img: 'undraw_conceptual_idea_xw7k.svg'
-      },
-      {
-        text: 'In 2008, Doug Burks started working on Security Onion, a Linux distribution for intrusion detection, network security monitoring, and log management.',
-        img: 'sos-site-header-2-square.jpg'
-      },
-      {},
-      {},
-      {
-        text: 'As the worldwide Security Onion community grew, Doug Burks began receiving more and more requests for training and professional services. In 2014, Doug started Security Onion Solutions LLC to help Security Onion users peel back the layers of their networks.',
-        img: 'security_onion_solutions_rings.jpg'
-      },
-      {},
-      {
-        text: 'In 2018 we celebrated 10 years of Security Onion by announcing custom hardware appliances!',
-        img: 'old-server-mockup.jpg'
-      },
-      {
-        text: 'Security Onion Solutions continued to grow in 2019, adding five new team members.',
-        img: 'new-team.jpg'
-      },
-      {
-        text: 'We currently sit at over 1 million ISO image downloads!',
-        img: '1mil+_downloads.jpg'
-      }
-    ],
+    eventList: require('@/content/history.json').events,
     currentEvent: 1,
     logos
   }),
@@ -237,33 +208,12 @@ export default {
         img: require(`../assets/img/graphics/${fileName}`)
       }
     }
-  },
-  head () {
-    return {
-      title: 'Security Onion Solutions - Home'
-    }
   }
 }
 </script>
 
 <style scoped>
-.overlay-circle {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-}
-.graphic {
-  height: 30rem;
-  min-width: 30rem;
-  width: 30rem;
-}
 .hero {
   background: right no-repeat url(../assets/img/graphics/graph.jpg);
 }
-/* [id]:before {
-  content: "";
-  display: block;
-  height: 88px;
-  margin-top: -88px;
-} */
 </style>

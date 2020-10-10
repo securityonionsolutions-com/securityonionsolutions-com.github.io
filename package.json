@@ -33,6 +33,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^7.9.0",
     "eslint-plugin-nuxt": "^1.0.0",
-    "luxon": "^1.25.0"
+    "luxon": "^1.25.0",
+    "tailwindcss": "^1.7.0"
   }
 }

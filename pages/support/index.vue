@@ -1,43 +1,28 @@
 <template>
   <div class="xs:px-12">
-    <PageNav page-name="Professional Services &amp; Support" :links="links" />
-    <DetailPara class="mx-2 xs:mx-0 mt-12">
+    <PageNav page-name="Support &amp; Professional Services" :links="links" />
+    <SubHero class="hero text-center">
       <template #header>
-        <div class="text-2xl xs:text-6xl">
-          Premium Support
-        </div>
+        Premium Support
       </template>
       <template #body>
-        <div class="text-lg xs:text-2xl">
-          From the company behind Security Onion
+        Security Onion Solutions is the only official support provider.
+        We've been helping catch the bad guys since 2014!
+        <div class="flex justify-center">
+          <ActionCallout class="mt-1 xl:mt-4" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about purchasing support.', source: 'support_purchasing_info' })">
+            <template #button-text>
+              Purchase Support
+            </template>
+          </ActionCallout>
         </div>
       </template>
-    </DetailPara>
-    <div class="my-6 mx-0 xs:mx-12 lg:mx-24">
-      <feature-left>
-        <template #header>
-          The only <span class="italic font-bold">official</span> support provider
-        </template>
-        <template #body>
-          Helping you catch the bad guys since 2014
-        </template>
-        <template #graphic>
-          <CircleGraphic
-            file-name="undraw_active_options_8je6.svg"
-            :size="20"
-            :padding="false"
-          />
-        </template>
-      </feature-left>
-    </div>
-    <div class="xs:-mx-12 px-4 xs:px-24 bg-so-blue text-white">
-      <ContentSection id="premium-support">
+    </SubHero>
+    <ContentSection id="premium-support" :alt="true">
+      <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
+        <SectionHeader class="mb-6">
+          Support and Professional Services
+        </SectionHeader>
         <four-panel-detail class="">
-          <template #section-heading>
-            <div class="text-3xl xs:text-6xl">
-              Services
-            </div>
-          </template>
           <template #header-top-left>
             Enterprise Deployments
           </template>
@@ -57,34 +42,14 @@
             Have a problem? Let us bring our years of collective experience to the issue.
           </template>
           <template #header-bottom-right>
-            Etc.
+            Other
           </template>
           <template #body-bottom-right>
             Need something else with Security Onion? We might be able to help. Contact us for more information.
           </template>
         </four-panel-detail>
-      </ContentSection>
-    </div>
-    <feature-right class="mb-16 md:mb-0 mt-12 xs:mt-12 mx-0 xs:mx-12 lg:mx-18">
-      <template #header>
-        Protect your investment in Security Onion
-      </template>
-      <template #graphic>
-        <CircleGraphic
-          file-name="undraw_progress_data_4ebj.svg"
-          :size="18"
-          :padding="false"
-        />
-      </template>
-    </feature-right>
-    <ActionCallout class="lg:px-32 mb-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about purchasing support.', source: 'support_purchasing_info' })">
-      <template #info>
-        Ready to purchase support?
-      </template>
-      <template #button-text>
-        Contact Us
-      </template>
-    </ActionCallout>
+      </div>
+    </ContentSection>
     <ContentSection id="premium-vs-community" :bottom-margin="false">
       <div class="flex flex-col items-center justify-center mx-1 xs:-mx-10 sm:mx-0">
         <SectionHeader class="mb-8">
@@ -93,16 +58,40 @@
         <FreeVsPremiumTable />
       </div>
     </ContentSection>
-    <ContentSection id="community-support" :bottom-margin="false">
-      <div class="xs:-mx-12 px-4 xs:px-12 py-10 bg-so-blue text-white">
-        <ActionCallout class="lg:px-32" :alt="true" link="https://docs.securityonion.net/community-support.html">
+    <ContentSection id="community-support" :alt="true">
+      <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
+        <feature-right class="xs:mb-12" :text-margin="true">
+          <template #header>
+            <div class="text-center xs:text-left">
+              Community Support
+            </div>
+          </template>
+          <template #graphic>
+            <fa icon="comment" size="10x" />
+          </template>
+          <template #body>
+            <div class="text-center xs:text-left">
+              The Security Onion user base is large, and often times others have run into similar problems or have asked questions that might help you with your own Security Onion installation or troubleshooting.
+            </div>
+            <div class="text-center xs:text-left mt-4">
+              Browse the Security Onion official discussion forums to find support on common issues. Ask for help from other community members, or return the favor by offering your own solutions to other users' discussions.
+            </div>
+          </template>
+        </feature-right>
+        <action-callout :alt="true" class="my-12" link="https://securityonion.net/discuss">
           <template #info>
-            Looking for community support?
+            <div class="text-2xl flex justify-center">
+              <div>
+                Not ready for premium support? Take a look at the Security Onion community support content and discussions.
+              </div>
+            </div>
           </template>
           <template #button-text>
-            Click Here
+            <div class="text-lg my-1">
+              Community Support
+            </div>
           </template>
-        </ActionCallout>
+        </action-callout>
       </div>
     </ContentSection>
   </div>
@@ -110,28 +99,21 @@
 
 <script>
 import FourPanelDetail from '~/components/features/FourPanelDetail'
-import FeatureRight from '~/components/features/FeatureRight'
-import FeatureLeft from '~/components/features/FeatureLeft'
 
 export default {
   scrollToTop: true,
   components: {
-    FourPanelDetail,
-    FeatureRight,
-    FeatureLeft
+    FourPanelDetail
   },
   data: () => ({
     showModal: false,
     links: [{ name: 'Premium', id: 'premium-support' }, { name: 'Community', id: 'community-support' }]
-  }),
-  head () {
-    return {
-      title: 'Security Onion Solutions - Support'
-    }
-  }
+  })
 }
 </script>
 
 <style scoped>
-
+.hero {
+  background: right bottom no-repeat url(~assets/img/graphics/world.jpg);
+}
 </style>

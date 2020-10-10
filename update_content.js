@@ -37,41 +37,30 @@ const morgrifyEvents = async () => {
   const eventRes = await getEvents()
   const eventArr = []
   for (const event of eventRes.data.events) {
+    if (event.name.text.toLowerCase().indexOf("conference") != -1) continue;
+
     const startTimeString = DateTime.fromISO(event.start.local, { zone: event.start.timezone })
     const endTimeString = DateTime.fromISO(event.end.local, { zone: event.end.timezone })
 
+    var location = 'Unknown';
     if (event.online_event) {
-      eventArr.push({
-        name: event.name.text,
-        start: startTimeString,
-        end: endTimeString,
-        location: 'Virtual',
-        register_link: event.url
-      })
+      location = 'Virtual';
     } else if (event.venue_id !== null) {
       const locationRes = await getLocation(event.venue_id)
-      let location
       if (locationRes.data.address.localized_area_display !== null) {
         location = locationRes.data.address.localized_area_display
       } else {
         location = locationRes.data.address.localized_address_display
       }
-      eventArr.push({
-        name: event.name.text,
-        start: event.start.local,
-        end: event.end.local,
-        location,
-        register_link: event.url
-      })
-    } else {
-      eventArr.push({
-        name: event.name.text,
-        start: event.start.local,
-        end: event.end.local,
-        location: 'Unknown',
-        register_link: event.url
-      })
     }
+    eventArr.push({
+      name: event.name.text,
+      summary: event.summary,
+      start: event.start.local,
+      end: event.end.local,
+      location,
+      register_link: event.url
+    })
   }
   return eventArr
 }

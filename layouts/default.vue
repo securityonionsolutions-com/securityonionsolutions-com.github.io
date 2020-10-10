@@ -124,44 +124,11 @@ html {
 .nav-bleed {
   height: 150px;
 }
-/* .nav-bleed:after {
-  background: inherit;
-  content: '';
-  display: block;
-  height: 50%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  z-index: 1;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  display: inline-block;
-  display: inline-block;
-  top: 100%;
-  transform: skewY(-1.75deg);
-  transform-origin: 0 100%;
-} */
 .footer-bleed {
   bottom: 0%;
   right: 0%;
   height: 250px;
 }
-/* .footer-bleed:before {
-  background: inherit;
-  content: '';
-  display: block;
-  height: 50%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  z-index: 1;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  display: inline-block;
-  top: -5%;
-  transform: skewY(-1.75deg);
-  transform-origin: 0 100%;
-} */
 .modal-enter-active, .modal-leave-active {
   transition: opacity .15s ease;
 }

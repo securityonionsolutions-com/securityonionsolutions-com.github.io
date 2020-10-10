@@ -4,7 +4,7 @@
       <thead>
         <tr>
           <th class="w-1/2" />
-          <th class="px-2 py-8 lg:p-4 w-1/4 text-lg lg:text-2xl bg-so-blue text-white th-l truncate">
+          <th class="px-2 py-8 lg:p-4 w-1/4 text-lg lg:text-2xl th-l truncate">
             <div class="flex justify-center content-center">
               <div class="hidden xs:block">
                 Community
@@ -14,7 +14,7 @@
               </div>
             </div>
           </th>
-          <th class="px-2 py-8 lg:p-4 w-1/4 text-lg lg:text-2xl bg-so-blue text-white th-r truncate">
+          <th class="px-2 py-8 lg:p-4 w-1/4 text-lg lg:text-2xl th-r truncate">
             <div class="flex justify-center content-center">
               <div class="hidden xs:block">
                 Premium
@@ -27,9 +27,9 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(item, index) in featureList" :key="index" class="text-center">
+        <tr v-for="(item, index) in featureList" :key="index" class="text-left" :class="[index % 2 == 0 ? 'bg-gray-200' : '']">
           <td
-            class="p-1 lg:p-4 bg-gray-100 table-item-title text-md lg:text-xl"
+            class="p-1 lg:p-4 table-item-title text-md lg:text-xl"
             :class="[
               index==0 ? 'table-item-title-top' : '',
               index==featureList.length-1 ? 'table-item-title-bottom' : ''
@@ -43,12 +43,10 @@
               index==0 ? 'table-item-top' : '',
               index==featureList.length-1 ? 'table-item-bottom' : ''
             ]"
-            class="py-2 lg:py-4 font-bold table-item text-lg lg:text-2xl"
+            class="py-2 lg:py-4 font-bold table-item text-lg lg:text-2xl justify-center text-center"
           >
-            <fa v-if="item.free" icon="check" />
-            <div v-else>
-              -
-            </div>
+            <fa v-if="item.free" icon="check-circle" />
+            <fa v-if="!item.free" icon="times-circle" />
           </td>
           <td
             :class="[
@@ -56,12 +54,10 @@
               index==0 ? 'table-item-top' : '',
               index==featureList.length-1 ? 'table-item-bottom' : ''
             ]"
-            class="py-2 lg:py-4 font-bold table-item table-item-r text-lg lg:text-2xl"
+            class="py-2 lg:py-4 font-bold table-item table-item-r text-lg lg:text-2xl justify-center text-center"
           >
-            <fa v-if="item.premium" icon="check" />
-            <div v-else>
-              -
-            </div>
+            <fa v-if="item.premium" icon="check-circle" />
+            <fa v-if="!item.premium" icon="times-circle" />
           </td>
         </tr>
       </tbody>
@@ -72,91 +68,15 @@
 <script>
 export default {
   data: () => ({
-    featureList: [
-      {
-        feature: 'Basic Q&A',
-        free: true,
-        premium: true
-      },
-      {
-        feature: 'Private support',
-        free: false,
-        premium: true
-      },
-      {
-        feature: 'Priority response',
-        free: false,
-        premium: true
-      },
-      {
-        feature: 'Architecture planning',
-        free: false,
-        premium: true
-      },
-      {
-        feature: 'Remote assistance',
-        free: false,
-        premium: true
-      },
-      {
-        feature: 'Advanced configuration support',
-        free: false,
-        premium: true
-      },
-      {
-        feature: 'Support development of Security Onion',
-        free: false,
-        premium: true
-      }
-    ]
-  }),
-  beforeMount () {
-    // this.featureList.push(
-    //   { feature: 'Feature 1', free: true, premium: true }
-    // )
-    // for (let index = 1; index < 4; index++) {
-    //   this.featureList.push({ feature: `Feature ${index + 1}`, free: false, premium: true })
-    // }
-  }
+    featureList: require('@/content/support_comparison.json').features
+  })
 }
 </script>
 
 <style>
 table {
   border-collapse: separate;
-   border-spacing: 0;
-}
-.th-l {
-  border-top: 2px solid black;
-  border-left: 2px solid black;
-}
-.th-r {
-  border-top: 2px solid black;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
-}
-.table-item-title {
-  border-left: 2px solid black;
-  border-bottom: 0.5px solid black;
-}
-.table-item-title-top {
-  border-top: 2px solid black;
-}
-.table-item-title-bottom {
-  border-bottom: 2px solid black;
-}
-.table-item {
-  border-bottom: 0.5px solid black;
-  border-left: 2px solid black;
-}
-.table-item-top {
-  border-top: 2px solid black;
-}
-.table-item-bottom {
-  border-bottom: 2px solid black;
-}
-.table-item-r {
-  border-right: 2px solid black;
+  border-spacing: 0;
 }
 .vert-header {
   writing-mode: vertical-lr;

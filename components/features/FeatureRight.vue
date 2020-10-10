@@ -5,7 +5,7 @@
     </div>
     <detail-para :class="[textMargin ? 'lg:ml-12' : 'xs:pl-4']">
       <template #header>
-        <div class="text-3xl xs:text-4xl font-semibold">
+        <div class="text-3xl">
           <slot name="header" />
         </div>
       </template>

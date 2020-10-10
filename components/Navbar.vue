@@ -72,14 +72,7 @@
           </a>
           <a
             class="block rounded-lg mr-3 lg:inline-block text-lg focus:outline-none cursor-pointer hover:text-so-blue"
-            href="https://www.reddit.com/r/securityonion"
-            target="_blank"
-          >
-            <fa :icon="['fab', 'reddit']" />
-          </a>
-          <a
-            class="block rounded-lg mr-3 lg:inline-block text-lg focus:outline-none cursor-pointer hover:text-so-blue"
-            href="https://github.com/Security-Onion-Solutions/securityonion/discussions"
+            href="https://securityonion.net/discuss"
             target="_blank"
           >
             <fa :icon="['fab', 'github']" />
@@ -101,31 +94,31 @@
         <div class="flex flex-row mt-4 lg:mt-0">
           <nuxt-link
             to="/software"
-            class="block lg:inline-block text-gray-400 hover:text-blue-500 mr-5 text-lg font-thin focus:outline-none focus:text-blue-500"
+            class="block lg:inline-block text-gray-400 hover:text-blue-500 mr-5 text-lg font-light focus:outline-none focus:text-blue-500"
           >
             Software
           </nuxt-link>
           <nuxt-link
             to="/hardware"
-            class="block lg:inline-block text-gray-400 hover:text-blue-500 mr-5 text-lg font-thin focus:outline-none focus:text-blue-500"
+            class="block lg:inline-block text-gray-400 hover:text-blue-500 mr-5 text-lg font-light focus:outline-none focus:text-blue-500"
           >
             Hardware
           </nuxt-link>
           <nuxt-link
             to="/training"
-            class="block lg:inline-block text-gray-400 hover:text-blue-500 mr-5 text-lg font-thin focus:outline-none focus:text-blue-500"
+            class="block lg:inline-block text-gray-400 hover:text-blue-500 mr-5 text-lg font-light focus:outline-none focus:text-blue-500"
           >
             Training
           </nuxt-link>
           <nuxt-link
             to="/support"
-            class="block lg:inline-block text-gray-400 hover:text-blue-500 mr-5 text-lg font-thin focus:outline-none focus:text-blue-500"
+            class="block lg:inline-block text-gray-400 hover:text-blue-500 mr-5 text-lg font-light focus:outline-none focus:text-blue-500"
           >
             Support
           </nuxt-link>
           <nuxt-link
             to="/conference"
-            class="block lg:inline-block text-gray-400 hover:text-blue-500 text-lg font-thin focus:outline-none focus:text-blue-500"
+            class="block lg:inline-block text-gray-400 hover:text-blue-500 text-lg font-light focus:outline-none focus:text-blue-500"
           >
             Conference
           </nuxt-link>

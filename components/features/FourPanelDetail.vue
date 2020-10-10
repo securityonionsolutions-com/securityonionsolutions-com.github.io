@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header class="text-5xl mb-6 font-semibold">
+    <header class="text-3xl xl:text-4xl mb-6 font-semibold text-center">
       <slot name="section-heading" />
     </header>
     <div class="flex flex-wrap">

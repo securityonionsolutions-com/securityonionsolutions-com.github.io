@@ -7,13 +7,13 @@
         "window-maximize"
       ],
       "desc": "Information gathered from agent software",
-      "tools": "Beats, Wazuh, osquery, and more"
+      "tools": "Beats, Wazuh, osquery"
     },
     {
       "name": "Alert",
-      "icon": "exclamation-triangle",
+      "icon": "bell",
       "desc": "Judgment made by a product about an event",
-      "tools": "HIDS from Wazuh and NIDS from Suricata"
+      "tools": "Suricata, Wazuh"
     },
     {
       "name": "Asset",
@@ -29,9 +29,9 @@
     },
     {
       "name": "Full Content",
-      "icon": "camera-retro",
+      "icon": "stream",
       "desc": "All packets on the network",
-      "tools": "SOC PCAP via Stenographer"
+      "tools": "Stenographer"
     },
     {
       "name": "Session",
@@ -42,7 +42,7 @@
     {
       "name": "Transaction",
       "icon": "ethernet",
-      "desc": "Generated logs based on network traffic (http, ftp, dns, ssl, etc)",
+      "desc": "Generated logs based on network traffic protocols",
       "tools": "Zeek, Suricata"
     }
   ]

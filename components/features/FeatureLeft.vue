@@ -2,7 +2,7 @@
   <div class="flex flex-col lg:flex-row lg:justify-start items-center">
     <detail-para class="order-2 lg:order-1" :class="[textMargin ? 'lg:mr-12' : 'xs:pr-4']">
       <template #header>
-        <div class="text-3xl xs:text-4xl">
+        <div class="text-3xl">
           <slot name="header" />
         </div>
       </template>

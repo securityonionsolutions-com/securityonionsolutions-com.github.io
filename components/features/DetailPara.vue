@@ -2,10 +2,10 @@
   <div
     :class="alignment()"
   >
-    <header v-if="showHeader" class="text-lg xs:text-2xl font-bold mb-2">
+    <header v-if="showHeader" class="text-xl xs:text-2xl font-bold mb-2">
       <slot name="header" />
     </header>
-    <div class="text-sm xs:text-base">
+    <div class="text-sm xs:text-lg">
       <slot name="body" />
     </div>
   </div>
