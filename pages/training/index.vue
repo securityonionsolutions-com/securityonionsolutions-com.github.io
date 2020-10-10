@@ -24,10 +24,10 @@
         </section-header>
         <div class="text-center text-base xs:text-lg mb-16">
           <p>
-          Get started today by taking the <span class="italic">free</span> <span class="font-semibold">Security Onion 2 Essentials</span> training.
+            Get started today by taking the <span class="italic">free</span> <span class="font-semibold">Security Onion 2 Essentials</span> training.
           </p>
           <p>
-          This course is a prerequisite to the premium on-demand courses.
+            This course is a prerequisite to the premium on-demand courses.
           </p>
         </div>
         <div class="flex justify-center">
@@ -200,9 +200,9 @@
         </client-only>
         <noscript inline-template>
           <Testimonial>
-            <template #text :show-name="false">
-            {{ testimonialList[1] }}
-            </template>
+          <template #text :show-name="false">
+          {{ testimonialList[1] }}
+          </template>
           </Testimonial>
         </noscript>
       </div>

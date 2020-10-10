@@ -31,12 +31,6 @@
       <ContentSection id="overview" :bottom-margin="false">
         <div class="mx-2 xs:mx-12 md:mx-32">
           <feature-left class="mb-24 xs:mb-4">
-            <template #graphic>
-              <CircleGraphic
-                file-name="undraw_server_status_5pbv.svg"
-                :size="20"
-              />
-            </template>
             <template #header>
               Custom Hardware for Security Onion
             </template>
@@ -45,12 +39,6 @@
             </template>
           </feature-left>
           <feature-right class="mb-32">
-            <template #graphic>
-              <CircleGraphic
-                file-name="undraw_dev_focus_b9xo.svg"
-                :size="20"
-              />
-            </template>
             <template #header>
               Hardware Is Hard
             </template>
