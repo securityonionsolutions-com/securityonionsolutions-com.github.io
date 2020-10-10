@@ -43,9 +43,9 @@
         <section-header class="mb-6">
           Premium On-Demand
         </section-header>
-        <div class="text-left text-2xl">
+        <div class="text-left text-xl">
           We offer online training via on-demand training modules.
-          They are a cost-effective alternative to onsite training, but do not include the in-depth, hands-on labs that our onsite classes offer.
+          They are a cost-effective alternative to instructor led training, but do not include the in-depth, hands-on labs that our instructor led classes offer.
         </div>
         <div class="text-left text-xl mt-6">
           We are currently providing training for both Security Onion 2, and Security Onion 16.04.
