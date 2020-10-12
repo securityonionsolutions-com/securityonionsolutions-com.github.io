@@ -9,7 +9,7 @@
             </div>
           </th>
         </tr>
-        <tr class="bg-so-blue text-white">
+        <tr class="bg-so-blue text-white text-left">
           <th class="w-1/2" />
           <th class="p-2 w-1/4 text-lg lg:text-xl th-l truncate">
             <div class="hidden xs:block">

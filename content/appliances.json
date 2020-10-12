@@ -87,8 +87,7 @@
             "Retention": 50
           },
           "specs": {
-            "Throughput": "TBD",
-            "Available Storage": "TBD",
+            "Available Storage": "15TB",
             "Management Ports": "2x10/25GbE SFP28, 4x1GbE RJ45, 2 x 1GbE RJ45",
             "Form Factor": "1U"
           }
@@ -105,8 +104,7 @@
             "Retention": 100
           },
           "specs": {
-            "Throughput": "TBD",
-            "Available Storage": "TBD",
+            "Available Storage": "72TB",
             "Management Ports": "4x10GbE SFP+, 2x10/25GbE SFP28,\n4x1GbE RJ45, 2 x 1GbE RJ45",
             "Form Factor": "2U"
           }
@@ -118,8 +116,7 @@
             "Retention": 75
           },
           "specs": {
-            "Throughput": "TBD",
-            "Available Storage": "TBD",
+            "Available Storage": "30TB",
             "Management Ports": "2x1/10GbE SFP+, 2x10/25GbE SFP28, 2 x 1GbE RJ45",
             "Form Factor": "1U"
           }

@@ -52,20 +52,6 @@
             </div>
           </template>
         </feature-right>
-        <action-callout :alt="true" class="my-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'I\'m interested in presenting at the next Security Onion conference.', source: 'conference_interest' })">
-          <template #info>
-            <div class="text-2xl flex justify-center">
-              <div>
-                Are you interested in presenting at the next Security Onion Conference?
-              </div>
-            </div>
-          </template>
-          <template #button-text>
-            <div class="text-lg my-1">
-              Contact Us
-            </div>
-          </template>
-        </action-callout>
       </div>
     </ContentSection>
 
