@@ -19,7 +19,7 @@
               Throughput
             </div>
           </th>
-          <th class="px-2 w-1/4 text-lg lg:text-xl th-r truncate">
+          <th class="p-2 w-1/4 text-lg lg:text-xl th-r truncate">
             <div class="hidden xs:block">
               Storage
             </div>
@@ -27,7 +27,7 @@
               Storage
             </div>
           </th>
-          <th class="px-2 w-1/4 text-lg lg:text-xl th-r truncate">
+          <th class="p-2 w-1/4 text-lg lg:text-xl th-r truncate">
             <div class="hidden xs:block">
               Form Factor
             </div>
