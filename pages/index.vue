@@ -27,7 +27,7 @@
           <template #graphic>
             <CircleGraphic
               class="shadow-xl rounded-md overflow-hidden"
-              file-name="copper.jpg"
+              file-name="soc.jpg"
               :padding="false"
               :size="20"
             />
@@ -47,7 +47,7 @@
           <template #graphic>
             <CircleGraphic
               class="shadow-xl rounded-md overflow-hidden"
-              file-name="soc.jpg"
+              file-name="course.jpg"
               :padding="false"
               :size="20"
             />

@@ -12,7 +12,8 @@
           "specs": {
             "Throughput": "100Mbps",
             "Available Storage": "1TB",
-            "Form Factor": "Standalone"
+            "Form Factor": "SFF",
+            "Notes": "Standalone, small form factor (SFF)"
           }
         },
         {

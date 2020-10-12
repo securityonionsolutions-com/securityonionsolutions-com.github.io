@@ -116,6 +116,6 @@ export default {
 
 <style scoped>
 .hero-hardware {
-  background: right bottom no-repeat url(~assets/img/graphics/hardware.jpg);
+  background: right bottom no-repeat url(~assets/img/graphics/squares.jpg);
 }
 </style>

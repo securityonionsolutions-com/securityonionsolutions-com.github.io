@@ -1,7 +1,7 @@
 <template>
   <div class="xs:px-12">
     <PageNav page-name="Training" :links="links" />
-    <SubHero class="hero text-center">
+    <SubHero class="hero-training text-center">
       <template #header>
         Official Training
       </template>
@@ -247,7 +247,7 @@ export default {
   width: 48rem;
   height: 27rem;
 }
-.hero {
-  background: right bottom no-repeat url(~assets/img/graphics/blocks.jpg);
+.hero-training {
+  background: right bottom no-repeat url(~assets/img/graphics/dots.jpg);
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="xs:px-12">
     <PageNav page-name="Support &amp; Professional Services" :links="links" />
-    <SubHero class="hero text-center">
+    <SubHero class="hero-support text-center">
       <template #header>
         Premium Support
       </template>
@@ -113,7 +113,7 @@ export default {
 </script>
 
 <style scoped>
-.hero {
+.hero-support {
   background: right bottom no-repeat url(~assets/img/graphics/world.jpg);
 }
 </style>

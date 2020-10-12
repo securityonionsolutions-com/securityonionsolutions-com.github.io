@@ -1,7 +1,7 @@
 <template>
   <div class="xs:px-12">
     <PageNav page-name="Conference" :links="links" />
-    <SubHero class="hero text-center">
+    <SubHero class="hero-conference text-center">
       <template #header>
         Security Onion Conference {{ upcoming.year }}
       </template>
@@ -217,7 +217,7 @@ export default {
   width: 100%;
   height: 100%;
 }
-.hero {
+.hero-conference {
   background: right bottom no-repeat url(~assets/img/graphics/conference.jpg);
 }
 </style>

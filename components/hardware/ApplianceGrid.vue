@@ -39,11 +39,12 @@
       </thead>
       <tbody>
         <tr
-            v-for="(item, index) in role.appliances"
-            :key="index"
-            class="text-left cursor-pointer"
-            :class="[index % 2 != 0 ? 'bg-gray-200' : 'bg-white']"
-            @click="handleClick(item, role)">
+          v-for="(item, index) in role.appliances"
+          :key="index"
+          class="text-left cursor-pointer"
+          :class="[index % 2 != 0 ? 'bg-gray-200' : 'bg-white']"
+          @click="handleClick(item, role)"
+        >
           <td class="pl-2 py-2 lg:py-4 table-item-title text-xl lg:text-2xl whitespace-no-wrap truncate">
             {{ item['name'] }}
             <fa icon="info" mask="circle" transform="shrink-6" class="mx-2" />

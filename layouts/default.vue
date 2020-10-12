@@ -16,7 +16,7 @@
       </FloatingModal>
     </transition>
 
-    <div class="flex flex-col leading-normal tracking-normal min-h-screen bg-fixed topo-bg">
+    <div class="flex flex-col leading-normal tracking-normal min-h-screen bg-gradient-to-r from-blue-800 via-white to-blue-800">
       <Navbar class="fixed z-50" />
       <div class="fixed nav-bleed w-full bg-black z-0" />
       <Nuxt class="flex-grow content container mx-auto flex flex-col bg-white shadow-xl z-10" />
@@ -111,12 +111,6 @@ export default {
 <style>
 html {
   background-color: black;
-}
-.topo-bg {
-  background-color: #061b2d;
-  background-image: url('~assets/img/graphics/lines.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .content {
   margin-top: 85px;
