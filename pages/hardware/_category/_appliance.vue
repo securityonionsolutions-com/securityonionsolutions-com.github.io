@@ -15,21 +15,22 @@ export default {
   scrollToTop: true,
   async asyncData ({ params }) {
     const appliance = await params.appliance.replace('_', ' ')
-    const applianceCat = await params.category
+    const role = await params.category.replace('_', ' ')
     return {
       applianceName: appliance,
-      applianceCat
+      role
     }
   },
   computed: {
     appliance () {
-      const applianceArr = require('@/content/appliances.json').appliances[this.applianceCat]
+      const roles = require('@/content/appliances.json').roles
+      const applianceArr = roles.find(role => role.name.toLowerCase() === this.role).appliances
       return applianceArr.find(appliance => appliance.name === this.applianceName)
     }
   },
   head () {
     return {
-      title: `Security Onion Solutions - ${this.applianceName}`
+      title: 'Security Onion Solutions'
     }
   }
 }

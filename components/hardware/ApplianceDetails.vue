@@ -23,7 +23,7 @@
         <ActionCallout class="mt-6" @button-click="$nuxt.$emit('show-contact-modal', {text: `Please contact me with more information about the ${appliance.name}`, source: `${appliance.name.toLowerCase().replace(' ', '_')}_purchasing_info`})">
           <template #info>
             <div class="text-3xl">
-              For purchasing info
+              Ready to purchase, or need more information?
             </div>
           </template>
           <template #button-text>

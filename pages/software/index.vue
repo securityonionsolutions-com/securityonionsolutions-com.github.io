@@ -1,7 +1,7 @@
 <template>
   <div class="xs:px-12">
     <PageNav page-name="Security Onion" :links="links" />
-    <SubHero id="download-before" class="hero">
+    <SubHero id="download-before" class="hero-software">
       <template #header>
         Security Onion 2
       </template>
@@ -214,7 +214,7 @@ export default {
 </script>
 
 <style scoped>
-.hero {
+.hero-software {
   background: right bottom no-repeat url(~assets/img/graphics/peelback-half.jpg);
 }
 </style>
