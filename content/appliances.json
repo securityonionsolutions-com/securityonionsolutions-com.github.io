@@ -121,7 +121,7 @@
           "specs": {
             "Available Storage": "30TB",
             "Management Ports": "2x1/10GbE SFP+, 2x10/25GbE SFP28, 2 x 1GbE RJ45",
-            "Form Factor": "1U"
+            "Form Factor": "1U",
             "Notes": "Non-Volatile Memory storage"
           }
         }
