@@ -2,6 +2,7 @@
   "roles": [
     {
       "name": "Forward Nodes",
+      "sensor": true,
       "appliances": [
         {
           "name": "SOS SFF",
@@ -79,6 +80,7 @@
     },
     {
       "name": "Manager Nodes",
+      "sensor": false,
       "appliances": [
         {
           "name": "SOS MN",
@@ -96,6 +98,7 @@
     },
     {
       "name": "Search Nodes",
+      "sensor": false,
       "appliances": [
         {
           "name": "SOS SN7200",
@@ -119,6 +122,7 @@
             "Available Storage": "30TB",
             "Management Ports": "2x1/10GbE SFP+, 2x10/25GbE SFP28, 2 x 1GbE RJ45",
             "Form Factor": "1U"
+            "Notes": "Non-Volatile Memory storage"
           }
         }
       ]

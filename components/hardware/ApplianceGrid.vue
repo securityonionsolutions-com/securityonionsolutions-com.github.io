@@ -12,10 +12,10 @@
         <tr class="bg-so-blue text-white text-left">
           <th class="w-1/2" />
           <th class="p-2 w-1/4 text-lg lg:text-xl th-l truncate">
-            <div class="hidden xs:block">
+            <div v-if="role.sensor" class="hidden xs:block">
               Throughput
             </div>
-            <div class="block xs:hidden vert-header">
+            <div v-if="role.sensor" class="block xs:hidden vert-header">
               Throughput
             </div>
           </th>
