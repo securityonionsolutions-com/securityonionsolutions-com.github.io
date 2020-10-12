@@ -39,7 +39,7 @@
           </template>
           <template #body>
             <div class="text-center xs:text-left">
-              We know Security Onion's hardware needs, and our appliances are the perfect match for the platform. Leave the hardware esearch, testing, and support to us, so you can focus on what's important for your organization.
+              We know Security Onion's hardware needs, and our appliances are the perfect match for the platform. Leave the hardware research, testing, and support to us, so you can focus on what's important for your organization.
             </div>
           </template>
         </feature-right>
