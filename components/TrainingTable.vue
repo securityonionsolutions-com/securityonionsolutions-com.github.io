@@ -3,7 +3,7 @@
     <ul>
       <li v-for="(item, index) in scheduleList" :key="index" class="mb-6 hover:shadow-lg">
         <a :href="item.register_link" target="_blank" @click="recordRegisterClick(item)">
-          <div class="bg-gray-300 bg-opacity-50 rounded-md overflow-hidden">
+          <div class="bg-gray-200 bg-opacity-50 border rounded-md overflow-hidden">
             <div class="flex h-auto p-2 bg-gray-400 bg-opacity-25">
               <span class="font-semibold text-xl">{{ item.name }}</span>
             </div>

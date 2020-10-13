@@ -1,15 +1,15 @@
 <template>
   <div class="w-full lg:w-4/5">
-    <table v-for="(role, roleIndex) in roles" :key="roleIndex">
+    <table v-for="(role, roleIndex) in roles" :key="roleIndex" class="rounded-md border bg-gray-400 mb-12">
       <thead>
         <tr class="text-left">
-          <th colspan="5" :class="[ roleIndex > 0 ? 'pt-12' : '']" class="pb-0 pl-0 pr-0">
-            <div class="bg-so-blue rounded-t-md text-white font-bold text-3xl p-4">
+          <th colspan="5" class="pb-0 pl-0 pr-0">
+            <div class="bg-gray-300 font-bold text-3xl p-4">
               {{ role.name }}
             </div>
           </th>
         </tr>
-        <tr class="bg-so-blue text-white text-left">
+        <tr class="bg-gray-300 text-left">
           <th class="w-1/2" />
           <th class="p-2 w-1/4 text-lg lg:text-xl th-l truncate">
             <div v-if="role.sensor" class="hidden xs:block">
@@ -49,18 +49,21 @@
             {{ item['name'] }}
             <fa icon="info" mask="circle" transform="shrink-6" class="mx-2" />
           </td>
-          <td class="pl-2 py-2 lg:py-4 table-item text-lg lg:text-xl truncate">
-            {{ item.specs['Throughput'] }}
-          </td>
-          <td class="pl-2 py-2 lg:py-4 table-item text-lg lg:text-xl truncate">
-            {{ item.specs['Available Storage'] }}
-          </td>
-          <td class="pl-2 py-2 lg:py-4 table-item text-lg lg:text-xl truncate">
-            {{ item.specs['Form Factor'] }}
-          </td>
+          <td class="pl-2 py-2 lg:py-4 table-item text-lg lg:text-xl truncate" v-text="item.specs['Throughput']" />
+          <td class="pl-2 py-2 lg:py-4 table-item text-lg lg:text-xl truncate" v-text="item.specs['Available Storage']" />
+          <td class="pl-2 py-2 lg:py-4 table-item text-lg lg:text-xl truncate" v-text="item.specs['Form Factor']" />
         </tr>
       </tbody>
     </table>
+    <div>
+      * Hard disk sizes are approximate.
+    </div>
+    <div>
+      † Actual performance depends on network traffic. Forward node estimates assume a Manager Node is used.
+    </div>
+    <div>
+      ‡ Throughput rating is achieved without PCAP.
+    </div>
   </div>
 </template>
 

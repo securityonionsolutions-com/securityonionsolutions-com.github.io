@@ -1,38 +1,40 @@
 <template>
-  <div>
-    <div class="flex justify-center">
-      <div class="mb-2 xs:mb-12 rounded-sm overflow-hidden shadow-xl bg-white text-black mx-3 xs:mx-0 pb-6">
-        <div class="flex justify-center">
-          <div class="graphic mb-1">
-            <GraphicPlaceholder class="h-full" :shadow="false">
-              <div class="text-2xl">
-                Picture Coming Soon
-              </div>
-            </GraphicPlaceholder>
-          </div>
-        </div>
-        <div class="text-4xl text-center font-semibold my-4">
+  <div class="rounded-md overflow-hidden shadow-xl bg-white text-black">
+    <div class="flex flex-col justify-center">
+      <div>
+        <div class="bg-so-blue text-white text-4xl text-center font-semibold w-full p-4">
           {{ appliance.name }}
         </div>
         <div class="text-center border-b border-gray-400 pb-6">
           <div v-for="specName in Object.keys(appliance.specs)" :key="specName" class="py-1">
-            <span class="font-bold">{{ specName }}</span>
-            <pre class="font-sans">{{ appliance.specs[specName] }}</pre>
+            <span class="font-bold" v-text="specName" />
+            <pre class="font-sans" v-text="appliance.specs[specName]" />
           </div>
         </div>
-        <ActionCallout class="mt-6" @button-click="$nuxt.$emit('show-contact-modal', {text: `Please contact me with more information about the ${appliance.name}`, source: `${appliance.name.toLowerCase().replace(' ', '_')}_purchasing_info`})">
-          <template #info>
-            <div class="text-3xl">
-              Ready to purchase, or need more information?
-            </div>
-          </template>
-          <template #button-text>
-            <div class="text-base">
-              Contact Us
-            </div>
-          </template>
-        </ActionCallout>
+        <div class="p-4">
+          <div>
+            * Hard disk sizes are approximate.
+          </div>
+          <div>
+            † Actual performance depends on network traffic. Forward node estimates assume a Manager Node is used.
+          </div>
+          <div>
+            ‡ Throughput rating is achieved without PCAP.
+          </div>
+        </div>
       </div>
+      <ActionCallout class="m-6" @button-click="$nuxt.$emit('show-contact-modal', {text: `Please contact me with more information about the ${appliance.name}`, source: `${appliance.name.toLowerCase().replace(' ', '_')}_purchasing_info`})">
+        <template #info>
+          <div class="text-3xl">
+            Ready to purchase, or need more information?
+          </div>
+        </template>
+        <template #button-text>
+          <div class="text-base">
+            Contact Us
+          </div>
+        </template>
+      </ActionCallout>
     </div>
   </div>
 </template>

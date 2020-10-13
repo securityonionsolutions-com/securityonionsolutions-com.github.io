@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div tabindex="0" @keydown.esc="showHwModal = false; showModal = false;">
     <transition name="modal">
       <FloatingModal v-if="showModal" :index="1" @close="showModal = false">
         <div class="form-wrapper">
@@ -10,9 +10,7 @@
 
     <transition name="modal">
       <FloatingModal v-if="showHwModal" :index="0" @close="showHwModal = false">
-        <div class="appliance-wrapper">
-          <ApplianceDetails :appliance="modalAppliance" />
-        </div>
+        <ApplianceDetails :appliance="modalAppliance" />
       </FloatingModal>
     </transition>
 
@@ -128,8 +126,5 @@ html {
 }
 .modal-enter, .modal-leave-to {
   opacity: 0;
-}
-.appliance-wrapper {
-  width: 40rem;
 }
 </style>

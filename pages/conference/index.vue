@@ -6,7 +6,6 @@
         Security Onion Conference {{ upcoming.year }}
       </template>
       <template #body>
-        Don't miss out, registration is limited!
         <div class="flex justify-center">
           <div class="text-2xl">
             <span class="font-light whitespace-nowrap">
@@ -16,12 +15,8 @@
             </span>
           </div>
         </div>
-        <div class="flex justify-center">
-          <ActionCallout class="mt-1 xl:mt-4" link="https://securityonionconference2020.eventbrite.com">
-            <template #button-text>
-              Register Now
-            </template>
-          </ActionCallout>
+        <div class="pt-3">
+          Registration is now closed. If you didn't make it this year, check back soon for recordings, pictures, and more!
         </div>
       </template>
     </SubHero>

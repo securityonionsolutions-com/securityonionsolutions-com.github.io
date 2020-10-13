@@ -12,7 +12,7 @@
 					      {
 					        "image": "screenshots/pcap.jpg",
 					        "header": "Full PCAP Analysis",
-					        "body": "Pull packet captures from network events and analyze them within SOC, no need for an external tool."
+					        "body": "Pull packet captures from network events and analyze them within SOC or your favorite external tool."
 					      }
 					    ]
 }

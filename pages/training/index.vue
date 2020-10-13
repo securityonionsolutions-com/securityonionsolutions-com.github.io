@@ -226,8 +226,7 @@ export default {
       'One can tell they\'re not just instructors. They know the subject at an engineering level.',
       'I\'ve really been impressed by how this training event went. Outstanding job',
       'It\'s very very rare that I get to be in a class with practitioners that are as awesome and knowledgeable as Security Onion Solutions.',
-      'The labs were absolutely necessary and going through the case studies to "find evil" was the best.',
-      'They kept me engaged with my ADD -- not an easy task!'
+      'The labs were absolutely necessary and going through the case studies to "find evil" was the best.'
     ]
   }),
   head () {

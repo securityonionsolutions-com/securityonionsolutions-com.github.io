@@ -5,27 +5,14 @@
       "sensor": true,
       "appliances": [
         {
-          "name": "SOS SFF",
-          "performance": {
-            "Speed": 10,
-            "Retention": 10
-          },
-          "specs": {
-            "Throughput": "100Mbps",
-            "Available Storage": "1TB",
-            "Form Factor": "SFF",
-            "Notes": "Standalone, small form factor (SFF)"
-          }
-        },
-        {
           "name": "SOS 500",
           "performance": {
             "Speed": 25,
             "Retention": 25
           },
           "specs": {
-            "Throughput": "500Mbps",
-            "Available Storage": "8TB",
+            "Throughput": "500 Mbps †",
+            "Available Storage": "8 TB *",
             "Management Ports": "2 x 1GbE RJ45",
             "Monitoring Ports": "2x10/25GbE SFP28, 4x1GbE RJ45",
             "Form Factor": "1U"
@@ -38,8 +25,8 @@
             "Retention": 50
           },
           "specs": {
-            "Throughput": "1Gbps",
-            "Available Storage": "24TB",
+            "Throughput": "1 Gbps †",
+            "Available Storage": "24 TB *",
             "Storage Type": "RAID 5",
             "Management Ports": "2 x 1GbE RJ45",
             "Monitoring Ports": "F: 2x1/10GbE SFP+, 2x10/25GbE SFP28\nnon-F: 2x10/25GbE SFP28, 4x1GbE RJ45",
@@ -53,8 +40,8 @@
             "Retention": 50
           },
           "specs": {
-            "Throughput": "4Gbps",
-            "Available Storage": "120TB",
+            "Throughput": "4 Gbps †",
+            "Available Storage": "120 TB *",
             "Storage Type": "RAID 6",
             "Management Ports": "2 x 1GbE RJ45",
             "Monitoring Ports": "4x10GbE SFP+, 2x10/25GbE SFP28, 4x1GbE RJ45",
@@ -68,8 +55,8 @@
             "Retention": 25
           },
           "specs": {
-            "Throughput": "10Gbps",
-            "Available Storage": "7TB",
+            "Throughput": "10 Gbps † ‡",
+            "Available Storage": "7 TB *",
             "Storage Type": "RAID 1",
             "Management Ports": "2 x 1GbE RJ45",
             "Monitoring Ports": "2x1/10GbE SFP+, 2x10/25GbE SFP28",
@@ -89,7 +76,7 @@
             "Retention": 50
           },
           "specs": {
-            "Available Storage": "15TB",
+            "Available Storage": "15 TB *",
             "Management Ports": "2x10/25GbE SFP28, 4x1GbE RJ45, 2 x 1GbE RJ45",
             "Form Factor": "1U"
           }
@@ -107,7 +94,7 @@
             "Retention": 100
           },
           "specs": {
-            "Available Storage": "72TB",
+            "Available Storage": "72 TB *",
             "Management Ports": "4x10GbE SFP+, 2x10/25GbE SFP28,\n4x1GbE RJ45, 2 x 1GbE RJ45",
             "Form Factor": "2U"
           }
@@ -119,7 +106,7 @@
             "Retention": 75
           },
           "specs": {
-            "Available Storage": "30TB",
+            "Available Storage": "30 TB *",
             "Management Ports": "2x1/10GbE SFP+, 2x10/25GbE SFP28, 2 x 1GbE RJ45",
             "Form Factor": "1U",
             "Notes": "Non-Volatile Memory storage"
