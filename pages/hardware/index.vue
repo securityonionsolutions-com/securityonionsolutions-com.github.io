@@ -8,7 +8,7 @@
       <template #body>
         <div class="flex justify-center text-center">
           <div class="text-2xl">
-            Now using the AMD Epyc architecture, capable of 10Gbps (Alerts and Metadata only.)
+            Now using the AMD Epyc architecture,<br />capable of 10 Gbps ‡
           </div>
         </div>
         <div class="flex justify-center">
