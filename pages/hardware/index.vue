@@ -8,7 +8,9 @@
       <template #body>
         <div class="flex justify-center text-center">
           <div class="text-2xl">
-            Now using the AMD Epyc architecture,<br />capable of 10 Gbps ‡
+            Now using the AMD Epyc architecture,
+            <br>
+            capable of 10 Gbps ‡
           </div>
         </div>
         <div class="flex justify-center">
@@ -29,10 +31,9 @@
             </div>
           </template>
           <template #graphic>
-            <div class="shadow-xl rounded-md overflow-hidden">
+            <div>
               <CircleGraphic
-                :padding="false"
-                file-name="copper.jpg"
+                file-name="appliance.jpg"
                 :size="20"
               />
             </div>
@@ -63,7 +64,7 @@
     <ContentSection id="comparison">
       <div class="flex flex-col items-center justify-center mx-1 xs:-mx-10 sm:mx-0">
         <SectionHeader class="mb-8">
-          Appliance Comparison
+          Appliances
         </SectionHeader>
         <ApplianceGrid />
       </div>
@@ -116,6 +117,6 @@ export default {
 
 <style scoped>
 .hero-hardware {
-  background: right bottom no-repeat url(~assets/img/graphics/squares.jpg);
+  background: right bottom no-repeat url(~assets/img/graphics/hardware.jpg);
 }
 </style>

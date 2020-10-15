@@ -39,6 +39,10 @@
             "Speed": 75,
             "Retention": 50
           },
+          "img_front_thumb": "SOS4000-front_thumb.jpg",
+          "img_front": "SOS4000-front.jpg",
+          "img_back_thumb": "SOS4000-back_thumb.jpg",
+          "img_back": "SOS4000-back.jpg",
           "specs": {
             "Throughput": "4 Gbps †",
             "Available Storage": "120 TB *",

@@ -1,10 +1,10 @@
 <template>
   <div class="w-full lg:w-4/5">
-    <table v-for="(role, roleIndex) in roles" :key="roleIndex" class="rounded-md border bg-gray-400 mb-12">
+    <table v-for="(role, roleIndex) in roles" :key="roleIndex" class="w-full rounded-md border bg-gray-400 mb-12">
       <thead>
         <tr class="text-left">
           <th colspan="5" class="pb-0 pl-0 pr-0">
-            <div class="bg-gray-300 font-bold text-3xl p-4">
+            <div class="bg-gray-300 text-3xl font-bold p-4">
               {{ role.name }}
             </div>
           </th>
@@ -27,11 +27,8 @@
               Storage
             </div>
           </th>
-          <th class="p-2 w-1/4 text-lg lg:text-xl th-r truncate">
-            <div class="hidden xs:block">
-              Form Factor
-            </div>
-            <div class="block xs:hidden vert-header">
+          <th class="hidden md:table-cell p-2 w-1/4 text-lg lg:text-xl th-r truncate">
+            <div>
               Form Factor
             </div>
           </th>
@@ -51,7 +48,7 @@
           </td>
           <td class="pl-2 py-2 lg:py-4 table-item text-lg lg:text-xl truncate" v-text="item.specs['Throughput']" />
           <td class="pl-2 py-2 lg:py-4 table-item text-lg lg:text-xl truncate" v-text="item.specs['Available Storage']" />
-          <td class="pl-2 py-2 lg:py-4 table-item text-lg lg:text-xl truncate" v-text="item.specs['Form Factor']" />
+          <td class="hidden md:table-cell pl-2 py-2 lg:py-4 table-item text-lg lg:text-xl truncate" v-text="item.specs['Form Factor']" />
         </tr>
       </tbody>
     </table>
