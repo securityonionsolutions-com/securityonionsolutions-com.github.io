@@ -1,14 +1,14 @@
 <template>
   <div class="bg-white rounded-lg pt-2 form-wrapper">
-    <script src="https://www.google.com/recaptcha/api.js" async defer />
+    <script src="https://www.google.com/recaptcha/api.js" />
     <script>
-      function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response == undefined || response.value.trim() == "") {var settings = document.getElementsByName("captcha_settings"); if (!settings || !settings.length) return; var elems = JSON.parse(settings[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);
+      function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);
     </script>
     <div class="mx-8 text-right text-lg xs:text-3xl">
       Contact Us
     </div>
     <form id="contact_form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="px-8 xs:pt-2 pb-5 mb-4">
-      <input type="hidden" name="captcha_settings" value="{&quot;keyname&quot;:&quot;reCAPTCHA&quot;,&quot;fallback&quot;:&quot;true&quot;,&quot;orgId&quot;:&quot;00D1U000000DI9i&quot;,&quot;ts&quot;:&quot;&quot;}">
+      <input type="hidden" name="captcha_settings" value='{"keyname":"reCAPTCHA","fallback":"true","orgId":"00D1U000000DI9i","ts":""}'>
       <input type="hidden" name="oid" value="00D1U000000DI9i">
       <input v-model="retUrl" type="hidden" name="retURL" value="">
       <label for="first_name" class="block text-gray-800 text-sm font-bold mb-2">First Name<span class="text-red-500"> *</span></label>
