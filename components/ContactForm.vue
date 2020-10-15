@@ -1,9 +1,5 @@
 <template>
-  <div class="bg-white rounded-lg pt-2 form-wrapper">
-    <script src="https://www.google.com/recaptcha/api.js" />
-    <script>
-      function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);
-    </script>
+  <div id="contact_form" class="bg-white rounded-lg pt-2 form-wrapper">
     <div class="mx-8 text-right text-lg xs:text-3xl">
       Contact Us
     </div>
@@ -104,13 +100,20 @@ export default {
       company: '',
       description: this.text,
       buttonEnabled: false,
-      sitekey: process.env.sitekey
+      sitekey: process.env.sitekey,
+      t: ''
     }
   },
   computed: {
     retUrl () {
       return `${window.location.origin}/thank_you`
     }
+  },
+  mounted () {
+    this.t = setInterval(this.timestamp, 500)
+  },
+  beforeDestroy () {
+    clearInterval(this.t)
   },
   methods: {
     recordSubmit () {
@@ -121,6 +124,14 @@ export default {
     },
     enableButton () {
       this.buttonEnabled = true
+    },
+    timestamp () {
+      const response = document.getElementById('g-recaptcha-response')
+      if (response == null || (response !== undefined && response.value.trim() === '')) {
+        const elems = JSON.parse(document.getElementsByName('captcha_settings')[0].value)
+        elems.ts = JSON.stringify(new Date().getTime())
+        document.getElementsByName('captcha_settings')[0].value = JSON.stringify(elems)
+      }
     }
   }
 }
