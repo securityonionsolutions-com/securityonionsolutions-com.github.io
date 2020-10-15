@@ -186,6 +186,9 @@
         </section-header>
         <div class="flex justify-center">
           <training-table v-if="scheduleList.length !== 0" class="mx-2 xs:mx-12 lg:mx-24 xl:mx-32 w-full" :schedule-list="scheduleList" />
+          <div v-if="scheduleList.length == 0" class="text-xl">
+            No classes are currently scheduled.
+          </div>
         </div>
       </div>
     </ContentSection>
