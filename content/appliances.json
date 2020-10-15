@@ -16,6 +16,10 @@
             "Management Ports": "2 x 1GbE RJ45",
             "Monitoring Ports": "2x10/25GbE SFP28, 4x1GbE RJ45",
             "Form Factor": "1U"
+          },
+          "caveats": {
+            "storageApproximated": true,
+            "performanceDependsOnTraffic": true
           }
         },
         {
@@ -31,6 +35,10 @@
             "Management Ports": "2 x 1GbE RJ45",
             "Monitoring Ports": "F: 2x1/10GbE SFP+, 2x10/25GbE SFP28\nnon-F: 2x10/25GbE SFP28, 4x1GbE RJ45",
             "Form Factor": "1U"
+          },
+          "caveats": {
+            "storageApproximated": true,
+            "performanceDependsOnTraffic": true
           }
         },
         {
@@ -50,6 +58,10 @@
             "Management Ports": "2 x 1GbE RJ45",
             "Monitoring Ports": "4x10GbE SFP+, 2x10/25GbE SFP28, 4x1GbE RJ45",
             "Form Factor": "2U"
+          },
+          "caveats": {
+            "storageApproximated": true,
+            "performanceDependsOnTraffic": true
           }
         },
         {
@@ -65,6 +77,11 @@
             "Management Ports": "2 x 1GbE RJ45",
             "Monitoring Ports": "2x1/10GbE SFP+, 2x10/25GbE SFP28",
             "Form Factor": "1U"
+          },
+          "caveats": {
+            "storageApproximated": true,
+            "performanceDependsOnTraffic": true,
+            "withoutPcap": true
           }
         }
       ]
@@ -83,6 +100,9 @@
             "Available Storage": "15 TB *",
             "Management Ports": "2x10/25GbE SFP28, 4x1GbE RJ45, 2 x 1GbE RJ45",
             "Form Factor": "1U"
+          },
+          "caveats": {
+            "storageApproximated": true
           }
         }
       ]
@@ -97,10 +117,17 @@
             "Performance": 50,
             "Retention": 100
           },
+          "img_front_thumb": "SOSSN7200-front_thumb.jpg",
+          "img_front": "SOSSN7200-front.jpg",
+          "img_back_thumb": "SOSSN7200-back_thumb.jpg",
+          "img_back": "SOSSN7200-back.jpg",          
           "specs": {
             "Available Storage": "72 TB *",
             "Management Ports": "4x10GbE SFP+, 2x10/25GbE SFP28,\n4x1GbE RJ45, 2 x 1GbE RJ45",
             "Form Factor": "2U"
+          },
+          "caveats": {
+            "storageApproximated": true
           }
         },
         {
@@ -114,6 +141,9 @@
             "Management Ports": "2x1/10GbE SFP+, 2x10/25GbE SFP28, 2 x 1GbE RJ45",
             "Form Factor": "1U",
             "Notes": "Non-Volatile Memory storage"
+          },
+          "caveats": {
+            "storageApproximated": true
           }
         }
       ]

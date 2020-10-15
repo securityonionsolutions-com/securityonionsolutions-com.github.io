@@ -21,20 +21,20 @@
             </div>
           </div>
           <div class="pt-12">
-            <div v-for="specName in Object.keys(appliance.specs)" :key="specName" class="py-2">
+            <div v-for="specName in Object.keys(appliance.specs)" :key="specName" class="p-2">
               <span class="font-bold" v-text="specName" />
               <pre class="font-sans" v-text="appliance.specs[specName]" />
             </div>
           </div>
         </div>
         <div class="p-4">
-          <div>
-            * Hard disk sizes are approximate.
+          <div v-if="appliance.caveats.storageApproximated">
+            * Storage sizes are approximate.
           </div>
-          <div>
+          <div v-if="appliance.caveats.performanceDependsOnTraffic">
             † Actual performance depends on network traffic. Forward node estimates assume a Manager Node is used.
           </div>
-          <div>
+          <div v-if="appliance.caveats.withoutPcap">
             ‡ Throughput rating is achieved without PCAP.
           </div>
         </div>

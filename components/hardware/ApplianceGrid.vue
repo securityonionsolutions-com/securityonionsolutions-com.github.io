@@ -53,7 +53,7 @@
       </tbody>
     </table>
     <div>
-      * Hard disk sizes are approximate.
+      * Storage sizes are approximate.
     </div>
     <div>
       † Actual performance depends on network traffic. Forward node estimates assume a Manager Node is used.
