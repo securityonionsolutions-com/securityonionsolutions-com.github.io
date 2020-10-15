@@ -14,7 +14,7 @@
       </FloatingModal>
     </transition>
 
-    <div class="flex flex-col leading-normal tracking-normal min-h-screen bg-gradient-to-r from-blue-800 via-white to-blue-800">
+    <div class="flex flex-col leading-normal tracking-normal min-h-screen bg-gradient-to-r from-so-blue-dark via-so-blue to-so-blue-dark">
       <Navbar class="fixed z-50" />
       <div class="fixed nav-bleed w-full bg-black z-0" />
       <Nuxt class="flex-grow content container mx-auto flex flex-col bg-white shadow-xl z-10" />
