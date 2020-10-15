@@ -24,16 +24,17 @@
         </section-header>
         <div class="text-center text-base xs:text-lg mb-16">
           <p>
-            Get started today by taking the <span class="italic">free</span> <span class="font-semibold">Security Onion 2 Essentials</span> training.
+            Get started by taking the <span class="italic">free</span> <span class="font-semibold">Security Onion 2 Essentials</span> training.
           </p>
           <p>
             This course is a prerequisite to the premium on-demand courses.
           </p>
         </div>
         <div class="flex justify-center">
-          <GraphicPlaceholder class="video-placeholder">
-            Coming Soon
-          </GraphicPlaceholder>
+          <fa icon="video" size="10x" />
+        </div>
+        <div class="text-center text-xl">
+          Coming soon! This course is expected to be available in the second half of October, 2020.
         </div>
       </div>
     </ContentSection>
@@ -48,7 +49,7 @@
           They are a cost-effective alternative to instructor led training, but do not include the in-depth, hands-on labs that our instructor led classes offer.
         </div>
         <div class="text-left text-xl mt-6">
-          We are currently providing training for both Security Onion 2, and Security Onion 16.04.
+          We currently provide training for both the new Security Onion 2, and existing Security Onion 16.04.
         </div>
         <feature-left class="my-6">
           <template #header>
@@ -68,7 +69,7 @@
               Courses include:
               <ul class="list-disc ml-6 mb-6">
                 <li class="my-2">
-                  Security Onion 2 Essentials <span class="bg-gray-200 text-sm text-green-600 font-semibold py-1 px-2 rounded-md">FREE</span>
+                  Security Onion 2 Essentials <span class="bg-gray-200 text-sm text-red-500 font-semibold py-1 px-2 rounded-md">Coming Soon</span>
                 </li>
                 <li class="my-2">
                   Security Onion 2 in Production <span class="bg-gray-200  text-sm text-red-500 font-semibold py-1 px-2 rounded-md whitespace-no-wrap">Coming Soon</span>
