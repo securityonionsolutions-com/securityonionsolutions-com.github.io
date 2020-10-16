@@ -1,0 +1,49 @@
+{
+  "types": [
+    {
+      "name": "Agent",
+      "icon": [
+        "far",
+        "window-maximize"
+      ],
+      "desc": "Information gathered from agent software",
+      "tools": "Beats, Wazuh, osquery"
+    },
+    {
+      "name": "Alert",
+      "icon": "bell",
+      "desc": "Judgment made by a product about an event",
+      "tools": "Suricata, Wazuh"
+    },
+    {
+      "name": "Asset",
+      "icon": "desktop",
+      "desc": "Metadata about hosts on the network",
+      "tools": "Zeek"
+    },
+    {
+      "name": "Extracted Content",
+      "icon": "puzzle-piece",
+      "desc": "Rebuilt elements of a session and extracted metadata",
+      "tools": "Zeek"
+    },
+    {
+      "name": "Full Content",
+      "icon": "stream",
+      "desc": "All packets on the network",
+      "tools": "Stenographer"
+    },
+    {
+      "name": "Session",
+      "icon": "exchange-alt",
+      "desc": "Detail about conversations between hosts",
+      "tools": "Zeek, Suricata"
+    },
+    {
+      "name": "Transaction",
+      "icon": "ethernet",
+      "desc": "Generated logs based on network traffic protocols",
+      "tools": "Zeek, Suricata"
+    }
+  ]
+}

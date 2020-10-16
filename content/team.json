@@ -1,0 +1,78 @@
+{
+  "team": [
+    {
+      "name": "Doug Burks",
+      "role": "Founder and CEO",
+      "image": "doug_burks.jpg",
+      "linkedin": "https://www.linkedin.com/in/dougburks",
+      "twitter": "https://twitter.com/dougburks"
+    },
+    {
+      "name": "Phil Plantamura",
+      "role": "Chief Operating Officer",
+      "image": "phil_plantamura.jpg",
+      "linkedin": "https://www.linkedin.com/in/philplantamura",
+      "twitter": "https://twitter.com/philplantamura"
+    },
+    {
+      "name": "Mike Reeves",
+      "role": "Product Manager",
+      "image": "mike_reeves.jpg",
+      "linkedin": "https://www.linkedin.com/in/mike-reeves-948b131/",
+      "twitter": "https://twitter.com/toosmooth"
+    },
+    {
+      "name": "Wes Lambert",
+      "role": "Director of Support and Professional Services",
+      "image": "wes_lambert.jpg",
+      "linkedin": "https://www.linkedin.com/in/wlambertcissp/",
+      "twitter": "https://twitter.com/therealwlambert"
+    },
+    {
+      "name": "William Wernert",
+      "role": "Software Developer",
+      "image": "william_wernert.jpg",
+      "linkedin": "https://www.linkedin.com/in/rwwiv/",
+      "twitter": "https://twitter.com/rwwiv"
+    },
+    {
+      "name": "Josh Brower",
+      "role": "Senior Engineer",
+      "image": "josh_brower.jpg",
+      "linkedin": "https://www.linkedin.com/in/joshbrower",
+      "twitter": "https://twitter.com/defensivedepth"
+    },
+    {
+      "name": "Josh Patterson",
+      "role": "Senior Engineer",
+      "image": "josh_patterson.jpg",
+      "twitter": "https://twitter.com/m0duspwnens"
+    },
+    {
+      "name": "Karen Henegar Long",
+      "role": "Sales Assistant",
+      "image": "karen_henegar_long.jpg"
+    },
+    {
+      "name": "Bryant Treacle",
+      "role": "Senior Engineer",
+      "image": "bryant_treacle.jpg",
+      "linkedin": "https://www.linkedin.com/in/bryant-treacle-40ab88113/"
+    },
+    {
+      "name": "John Bernal",
+      "role": "Senior Engineer",
+      "image": "john_bernal.jpg"
+    },
+    {
+      "name": "Jason Ertel",
+      "role": "Director of Software Engineering",
+      "image": "jason_ertel.jpg"
+    },
+    {
+      "name": "Chris Morgret",
+      "role": "Support Engineer",
+      "image": "chris_morgret.jpg"
+    }
+  ]
+}

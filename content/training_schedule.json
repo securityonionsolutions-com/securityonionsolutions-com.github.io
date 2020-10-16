@@ -1,0 +1,20 @@
+{
+  "events": [
+    {
+      "name": "Security Onion 2 Fundamentals for Analysts & Admins - Virtual Oct 2020 AM",
+      "summary": "Take an in-depth tour of Security 2 (formerly Hybrid Hunter) in this pilot course delivered virtually over four half-days, October 12-15.",
+      "start": "2020-10-12T08:00:00",
+      "end": "2020-10-15T12:00:00",
+      "location": "Virtual",
+      "register_link": "https://www.eventbrite.com/e/security-onion-2-fundamentals-for-analysts-admins-virtual-oct-2020-am-registration-119250685009"
+    },
+    {
+      "name": "Security Onion 2 Fundamentals for Analysts & Admins - Virtual Oct 2020 PM",
+      "summary": "Take an in-depth tour of Security 2 (formerly Hybrid Hunter) in this pilot course delivered virtually over four half-days, October 12-15.",
+      "start": "2020-10-12T13:00:00",
+      "end": "2020-10-15T17:00:00",
+      "location": "Virtual",
+      "register_link": "https://www.eventbrite.com/e/security-onion-2-fundamentals-for-analysts-admins-virtual-oct-2020-pm-registration-119632629415"
+    }
+  ]
+}

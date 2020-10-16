@@ -1,0 +1,356 @@
+{
+  "upcoming": {
+    "year": 2020,
+    "date": "Oct 16, 2020",
+    "location": "Online"
+  },
+  "past": [
+    {
+      "year": 2019,
+      "date": "Oct 18, 2019",
+      "location": "Augusta, GA",
+      "pictures": "https://blog.securityonion.net/2019/10/pictures-from-security-onion-conference.html",
+      "playlist": "https://www.youtube.com/playlist?list=PLljFlTO9rB16UHGHbo4dTR5qzvJObEBoa",
+      "events": [
+        {
+          "speakers": ["Wes Lambert"],
+          "pres_name": "Augmenting the Onion: Facilitating Enhanced Detection and Response with Open Source Tools",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=XcFZV5J8juo&list=PLljFlTO9rB16UHGHbo4dTR5qzvJObEBoa&index=2"
+          }
+        },
+        {
+          "speakers": ["Chris Sanders", "Stef Rand"],
+          "pres_name": "Creativity, Intelligence, and Security Analyst Thinking Modes",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=tZxr3cHElCw&list=PLljFlTO9rB16UHGHbo4dTR5qzvJObEBoa&index=3"
+          }
+        },
+        {
+          "speakers": ["Josh Brower"],
+          "pres_name": "Constructing Your Playbook within Security Onion",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=qBXg3IUJPjY&list=PLljFlTO9rB16UHGHbo4dTR5qzvJObEBoa&index=4"
+          }
+        },
+        {
+          "speakers": ["Wylie Bayes"],
+          "pres_name": "Building a Detection Lab with SecurityOnion",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=JOvWCQ-PHHY&list=PLljFlTO9rB16UHGHbo4dTR5qzvJObEBoa&index=5"
+          }
+        },
+        {
+          "speakers": ["Bryant Treacle"],
+          "pres_name": "Finding traffic anomalies using SSL certificates",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=-WD9BWlENwc&list=PLljFlTO9rB16UHGHbo4dTR5qzvJObEBoa&index=6"
+          }
+        },
+        {
+          "speakers": ["Benjamin Klimkowski", "Sean Eyre"],
+          "pres_name": "Peeling Back the Layers: Using Security Onion to See Adversary Activity through All Phases of the Kill Chain",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=9ghFZf61FW4&list=PLljFlTO9rB16UHGHbo4dTR5qzvJObEBoa&index=7"
+          }
+        },
+        {
+          "speakers": ["Doug Burks"],
+          "pres_name": "State of the Onion",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=1B5bgH71hYc&list=PLljFlTO9rB16UHGHbo4dTR5qzvJObEBoa&index=8"
+          }
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "date": "Oct 22, 2018",
+      "location": "Augusta, GA",
+      "pictures": "https://blog.securityonion.net/2018/10/pictures-from-security-onion-conference.html",
+      "playlist": "https://www.youtube.com/playlist?list=PLljFlTO9rB16NPfCWXTCOrYCrN2FZNDsh",
+      "events": [
+        {
+          "speakers": ["Mark Jeanmougin"],
+          "pres_name": "Save Time with Modern Filtering Techniques",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=gOcBaY0e5AA&index=2&list=PLljFlTO9rB16NPfCWXTCOrYCrN2FZNDsh"
+          }
+        },
+        {
+          "speakers": ["Don Murdoch"],
+          "pres_name": "Blue, Red, Purple, White: Which team are you on?",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=LeeQ5OeGhG4&list=PLljFlTO9rB16NPfCWXTCOrYCrN2FZNDsh&index=3"
+          }
+        },
+        {
+          "speakers": ["Todd Gay"],
+          "pres_name": "Welcome to Georgia Cyber Center",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=P-zTOnVygBw&index=4&list=PLljFlTO9rB16NPfCWXTCOrYCrN2FZNDsh"
+          }
+        },
+        {
+          "speakers": ["Brad Duncan"],
+          "pres_name": "Pcaps Ahoy!",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=12PCO8_6-x4&index=5&list=PLljFlTO9rB16NPfCWXTCOrYCrN2FZNDsh"
+          }
+        },
+        {
+          "speakers": ["Josh Brower"],
+          "pres_name": "Integrating Osquery into Security Onion",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=I-SXeKf0UYQ&index=6&list=PLljFlTO9rB16NPfCWXTCOrYCrN2FZNDsh"
+          }
+        },
+        {
+          "speakers": ["Mark Baggett"],
+          "pres_name": "Getting the Most out of Freq and Domain_Stats",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=dfrh1FaFUic&list=PLljFlTO9rB16NPfCWXTCOrYCrN2FZNDsh&index=7"
+          }
+        },
+        {
+          "speakers": ["David Bianco"],
+          "pres_name": "Introduction to Data Analysis",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=A6hBoeSNJJw&index=8&list=PLljFlTO9rB16NPfCWXTCOrYCrN2FZNDsh"
+          }
+        },
+        {
+          "speakers": ["Doug Burks", "Mike Reeves"],
+          "pres_name": "State of the Onion",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=1B5bgH71hYc&list=PLljFlTO9rB16UHGHbo4dTR5qzvJObEBoa&index=8"
+          }
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "date": "Sep 18, 2017",
+      "location": "Augusta, GA",
+      "pictures": "https://blog.securityonion.net/2017/09/pictures-from-security-onion-conference.html",
+      "playlist": "https://www.youtube.com/playlist?list=PLljFlTO9rB15jhnSfR6shBEskTgGbta2k",
+      "events": [
+        {
+          "speakers": ["Matt Domko"],
+          "pres_name": "Arming Small Security Programs: Network Baseline Generation and Alerts with Bropy",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=LzFNOuaYc0g&index=2&list=PLljFlTO9rB15jhnSfR6shBEskTgGbta2k"
+          }
+        },
+        {
+          "speakers": ["Don Murdoch"],
+          "pres_name": "Building your Sec Ops Use Case",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=4ESQ0GfPHYY&index=3&list=PLljFlTO9rB15jhnSfR6shBEskTgGbta2k"
+          }
+        },
+        {
+          "speakers": ["Joel Ester"],
+          "pres_name": "Snort: History and Vision",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=3gS7MKO-cFE&index=4&list=PLljFlTO9rB15jhnSfR6shBEskTgGbta2k"
+          }
+        },
+        {
+          "speakers": ["Rob Gresham"],
+          "pres_name": "Orchestrating into SO-OODA",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=w3WRuTW865Q&list=PLljFlTO9rB15jhnSfR6shBEskTgGbta2k&index=5"
+          }
+        },
+        {
+          "speakers": ["Chris Sanders"],
+          "pres_name": "Pivoting Effectively to Catch More Bad Guys",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=_QVhMPGtIeU&index=6&list=PLljFlTO9rB15jhnSfR6shBEskTgGbta2k"
+          }
+        },
+        {
+          "speakers": ["Doug Burks"],
+          "pres_name": "State of the Onion",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=N1jmk7L4jj0&index=7&list=PLljFlTO9rB15jhnSfR6shBEskTgGbta2k"
+          }
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "date": "Sep 13, 2016",
+      "location": "Augusta, GA",
+      "pictures": "https://blog.securityonion.net/2016/09/pictures-from-security-onion-conference.html",
+      "playlist": "https://www.youtube.com/playlist?list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe",
+      "events": [
+        {
+          "speakers": ["Eric Conrad"],
+          "pres_name": "C2 Phone Home: Leveraging Security Onion to Identify C&C Channels",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=ViR405l-ggg&index=1&list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe",
+            "book-open": "http://www.ericconrad.com/2016/09/c2-phone-home-leveraging-securityonion.html"
+          }
+        },
+        {
+          "speakers": ["Robert M. Lee"],
+          "pres_name": "ICS/SCADA Network Security Monitoring in Difficult Scenarios",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=R67qce_KrY8&index=2&list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe"
+          }
+        },
+        {
+          "speakers": ["Josh Brower"],
+          "pres_name": "Uncovering Persistence With Autoruns & Security Onion",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=LT45m30Ev4s&list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe&index=3",
+            "book-open": "http://www.Slideshare.net/DefensiveDepth/security-onion-conference-2016"
+          }
+        },
+        {
+          "speakers": ["Chris Sanders"],
+          "pres_name": "The Investigation Labyrinth",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=nW9g2K69qOA&list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe&index=4",
+            "book-open": "http://www.Slideshare.net/chrissanders88/soc2016-the-investigation-labyrinth?cardname=player&autoplay_disabled=true&earned=true&lang=en&card_height=130"
+          }
+        },
+        {
+          "speakers": ["Martin Holste"],
+          "pres_name": "ELSA 2.0",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=U8gwKp8enYQ&list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe&index=5",
+            "book-open": "https://drive.google.com/file/d/0By1KXg1ivlIeaDNBd2VBT0NUMFU/view"
+          }
+        },
+        {
+          "speakers": ["Chris McCubbin"],
+          "pres_name": "Practical Cyborgism: Machine Learning for Bro Logs",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=ZV5Ckf9wLrc&list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe&index=6"
+          }
+        },
+        {
+          "speakers": ["Brad Duncan"],
+          "pres_name": "My Use of Security Onion as a researcher",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=eFaPVym_n1A&list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe&index=7"
+          }
+        },
+        {
+          "speakers": ["Nathan Crews", "Tanner Payne"],
+          "pres_name": "Simplifying Home Security with CHIVE",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=zBDAjNnRiQI&list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe&index=8"
+          }
+        },
+        {
+          "speakers": ["Doug Burks"],
+          "pres_name": "State of the Onion",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=AXk-Te_lMmg&list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe&index=9"
+          }
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "date": "Sep 11, 2015",
+      "location": "Augusta, GA",
+      "events": [
+        {
+          "speakers": ["Todd Heberlein"],
+          "pres_name": "Looking Back Over a Quarter Century of Network Monitoring",
+          "links": {
+            "blog": "http://www.toddheberlein.com/blog/2015/9/11/security-onion-conference-presentation"
+          }
+        },
+        {
+          "speakers": ["Seth Hall"],
+          "pres_name": "Detect it Once",
+          "links": {
+            "book-open": "https://drive.google.com/file/d/0BzQ65xrcMwNEYU4yQnV0QmYzX2s/view?usp=sharing"
+          }
+        },
+        {
+          "speakers": ["Martin Holste"],
+          "pres_name": "Security Event Data in the OODA Loop Model",
+          "links": {
+            "book-open": "https://prezi.com/qzar9ip-zlvt/security-event-data-in-the-ooda-loop-model/"
+          }
+        },
+        {
+          "speakers": ["Chris Sistrunk"],
+          "pres_name": "Industrially Hardened Security Onion Sensor",
+          "links": {
+            "book-open": "http://www.Slideshare.net/chrissistrunk/def-con-23-nsm-101-for-ics"
+          }
+        },
+        {
+          "speakers": ["Josh Brower"],
+          "pres_name": "Using Sysmon to Enrich Security Onion's Host-Level Capabilities",
+          "links": {
+            "blog": "http://defensivedepth.com/2015/09/11/socaugusta-deck-sysmon-security-onion-integration/"
+          }
+        },
+        {
+          "speakers": ["Chris Montgomery"],
+          "pres_name": "Threat Intel Powered IDS"
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "date": "Sep 12, 2014",
+      "location": "Augusta, GA",
+      "events": [
+        {
+          "speakers": ["Richard Bejtlich"],
+          "pres_name": "Keynote Speech"
+        },
+        {
+          "speakers": ["Dustin Webber"],
+          "pres_name": "Why I Built Snorby and the Future of Security Interfaces"
+        },
+        {
+          "speakers": ["Paul Halliday"],
+          "pres_name": "SQUERT - An Open Source Web Interface for NSM Data"
+        },
+        {
+          "speakers": ["Martin Holste"],
+          "pres_name": "ELSA"
+        },
+        {
+          "speakers": ["Mike Reeves"],
+          "pres_name": "Scaling Security Onion to the Enterprise"
+        },
+        {
+          "speakers": ["Josh Brower"],
+          "pres_name": "The Security Onion Cloud Client"
+        },
+        {
+          "speakers": ["Chris Sanders", "Jason Smith"],
+          "pres_name": "Using Flow Data Effectively"
+        },
+        {
+          "speakers": ["Ben Knowles"],
+          "pres_name": "Learn Analysis and Forensics for Free** with Security Onion"
+        },
+        {
+          "speakers": ["Tim Krabec"],
+          "pres_name": "Custodiet MSSP Framework"
+        },
+        {
+          "speakers": ["Scott Runnels"],
+          "pres_name": "Contributing to Security Onion"
+        },
+        {
+          "speakers": ["Doug Burks"],
+          "pres_name": "State of the Onion, Q&A, Closing Remarks"
+        }
+      ]
+    }
+  ]
+}

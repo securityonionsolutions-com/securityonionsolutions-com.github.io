@@ -1,0 +1,30 @@
+{ "events": [
+              {
+                "text": "",
+                "img": "undraw_conceptual_idea_xw7k.svg"
+              },
+              {
+                "text": "In 2008, Doug Burks started working on Security Onion, a Linux distribution for intrusion detection, network security monitoring, and log management.",
+                "img": "sos-site-header-2-square.jpg"
+              },
+              {},
+              {},
+              {
+                "text": "As the worldwide Security Onion community grew, Doug Burks began receiving more and more requests for training and professional services. In 2014, Doug started Security Onion Solutions LLC to help Security Onion users peel back the layers of their networks.",
+                "img": "security_onion_solutions_rings.jpg"
+              },
+              {},
+              {
+                "text": "In 2018 we celebrated 10 years of Security Onion by announcing custom hardware appliances!",
+                "img": "old-server-mockup.jpg"
+              },
+              {
+                "text": "Security Onion Solutions continued to grow in 2019, adding five new team members.",
+                "img": "new-team.jpg"
+              },
+              {
+                "text": "We currently sit at over 1 million ISO image downloads!",
+                "img": "1mil+_downloads.jpg"
+              }
+            ]
+}

@@ -1,0 +1,38 @@
+{ "features": [
+                          {
+                            "feature": "Basic Q&A",
+                            "free": true,
+                            "premium": true
+                          },
+                          {
+                            "feature": "Private support",
+                            "free": false,
+                            "premium": true
+                          },
+                          {
+                            "feature": "Priority response",
+                            "free": false,
+                            "premium": true
+                          },
+                          {
+                            "feature": "Architecture planning",
+                            "free": false,
+                            "premium": true
+                          },
+                          {
+                            "feature": "Remote assistance",
+                            "free": false,
+                            "premium": true
+                          },
+                          {
+                            "feature": "Advanced configuration support",
+                            "free": false,
+                            "premium": true
+                          },
+                          {
+                            "feature": "Support development of Security Onion",
+                            "free": false,
+                            "premium": true
+                          }
+                        ]
+}                        
