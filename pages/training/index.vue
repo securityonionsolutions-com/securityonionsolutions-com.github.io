@@ -60,7 +60,7 @@
           <template #graphic>
             <CircleGraphic
               class="shadow-xl"
-              file-name="ondemand.jpg"
+              file-name="training1.jpg"
               :size="20"
             />
           </template>
@@ -99,7 +99,7 @@
           <template #graphic>
             <CircleGraphic
               class="shadow-xl"
-              file-name="ondemand2.jpg"
+              file-name="training2.jpg"
               :padding="false"
               :size="20"
             />
