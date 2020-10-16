@@ -143,7 +143,7 @@
     <ContentSection id="data_types">
       <div class="xs:-mx-12 px-4">
         <SectionHeader class="mt-6 xs:mb-8">
-          Data Collection
+          Data Types
         </SectionHeader>
         <div class="flex flex-row flex-wrap justify-center mt-4">
           <div v-for="(type, i) in typeArray" :key="i" class="w-full md:w-1/3 xl:w-1/4 bg-gray-200 rounded-md m-2 p-2 h-64">
