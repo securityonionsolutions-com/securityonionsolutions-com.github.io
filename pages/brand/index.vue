@@ -6,7 +6,9 @@
         Brand Guidelines
       </template>
       <template #body>
-        Trademarks, Logos, and Usage Restrictions
+        <div class="text-center">
+          Word Marks, Logos, and Usage Restrictions
+        </div>
       </template>
     </SubHero>
     <ContentSection id="overview" :alt="true">
@@ -16,16 +18,16 @@
             Overview
           </template>
           <template #header-left>
-            Trademarks
+            Word Marks
           </template>
           <template #body-left>
-            Both "Security Onion" and "Security Onion Solutions" are registered trademarks (&reg; &trade;) of Security Onion Solutions, LLC. Usage of these trademarks is prohibited without written authorization from an officer of Security Onion Solutions, LLC.
+            Both "Security Onion" and "Security Onion Solutions" are registered &reg; trademarks and service marks, respectively, of Security Onion Solutions, LLC. Usage of these word marks is prohibited without written authorization from an officer of Security Onion Solutions, LLC.
           </template>
           <template #header-right>
             Logos
           </template>
           <template #body-right>
-            Logos may only be used when written consent is provided by an officer of Security Onion Solutions, LLC. Usage must adhere to the guidelines posted on this page.
+            The Security Onion and Security Onion Solutions Logos are trademarks of Security Onion Solutions, LLC and may only be used when written consent is provided by an officer of Security Onion Solutions, LLC. Usage must adhere to the guidelines posted on this page.
           </template>
         </two-panel-detail>
       </div>
