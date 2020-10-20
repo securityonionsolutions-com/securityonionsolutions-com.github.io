@@ -7,16 +7,16 @@
       </template>
       <template #body>
         <div class="flex justify-center">
-          <div class="text-2xl  flex xs:block flex-col items-center">
+          <div class="text-2xl flex xs:block flex-col items-center">
             <div class="font-light text-2xl flex xs:block flex-col items-center">
               {{ upcoming.date }}
-              <fa icon="slash" class="mx-2" transform="shrink-5" />
+              <fa icon="circle" transform="shrink-12" />
               {{ upcoming.location }}
             </div>
           </div>
         </div>
         <div class="pt-3">
-          Security Onion Conference 2020 is now complete. Check below for recordings, pictures, and more from past conferences!
+          Security Onion Conference 2020 has concluded. Check below for recordings, pictures, and more from past conferences!
         </div>
       </template>
     </SubHero>
@@ -68,9 +68,9 @@
             <div class="text-5xl font-semibold">
               Security Onion Conference {{ conference.year }}
             </div>
-            <div class="text-2xl flex xs:block flex-col items-center">
+            <div class="text-2xl flex xs:block flex-col items-center text-center">
               {{ conference.date }}
-              <fa icon="slash" class="mx-2" transform="shrink-5" />
+              <fa icon="circle" transform="shrink-12" />
               {{ conference.location }}
             </div>
             <div class="mt-5">
