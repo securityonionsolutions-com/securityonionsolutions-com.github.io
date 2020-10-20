@@ -6,6 +6,22 @@
   },
   "past": [
     {
+      "year": 2020,
+      "date": "Oct 16, 2020",
+      "location": "Online",
+      "playlist": "https://www.youtube.com/watch?v=SAubxi13K-Q",
+      "events": [
+        {
+          "speakers": ["Mike Reeves", "Doug Burks"],
+          "pres_name": "Information and Announcements about Security Onion"
+        },
+        {
+          "speakers": ["Doug Burks"],
+          "pres_name": "Security Onion 2 Demo"
+        }
+      ]
+    },
+    {
       "year": 2019,
       "date": "Oct 18, 2019",
       "location": "Augusta, GA",

@@ -7,16 +7,16 @@
       </template>
       <template #body>
         <div class="flex justify-center">
-          <div class="text-2xl">
-            <span class="font-light whitespace-nowrap">
+          <div class="text-2xl flex xs:block flex-col items-center">
+            <div class="font-light text-2xl flex xs:block flex-col items-center">
               {{ upcoming.date }}
-              <fa icon="caret-right" class="mx-2" transform="shrink-5" />
+              <fa icon="circle" transform="shrink-12" />
               {{ upcoming.location }}
-            </span>
+            </div>
           </div>
         </div>
         <div class="pt-3">
-          Registration is now closed. If you didn't make it this year, check back soon for recordings, pictures, and more!
+          Security Onion Conference 2020 has concluded. Check below for recordings, pictures, and more from past conferences!
         </div>
       </template>
     </SubHero>
@@ -68,14 +68,14 @@
             <div class="text-5xl font-semibold">
               Security Onion Conference {{ conference.year }}
             </div>
-            <div class="text-2xl">
+            <div class="text-2xl flex xs:block flex-col items-center text-center">
               {{ conference.date }}
-              <fa icon="caret-right" class="mx-2" transform="shrink-5" />
+              <fa icon="circle" transform="shrink-12" />
               {{ conference.location }}
             </div>
-            <div>
+            <div class="mt-5">
               <a v-if="conference.pictures" :href="conference.pictures" target="_blank" class="mx-4">
-                <fa icon="camera" />
+                <fa icon="camera" transform="grow-12" />
               </a>
             </div>
           </div>
@@ -83,7 +83,7 @@
             <div v-if="conference.playlist" class="mb-10 w-full lg:w-2/3 video-container shadow-xl rounded-md overflow-hidden">
               <iframe
                 id="existing-iframe-example"
-                :src="conference.playlist.replace('playlist?list=', 'embed/videoseries?list=')"
+                :src="conference.playlist.replace('playlist?list=', 'embed/videoseries?list=').replace('watch?v=', 'embed/')"
                 frameborder="0"
                 allowfullscreen
               />
@@ -103,7 +103,7 @@
                     <span v-if="event.speakers.length>1 && index !== event.speakers.length - 1">&amp;</span>
                   </div>
                 </div>
-                <div v-if="event.links" class="ml-4">
+                <div v-if="event.links" class="mt-1">
                   <a v-for="(val, key) in event.links" :key="key" target="_blank" :href="val">
                     <fa :icon="key" class="mx-2" />
                   </a>

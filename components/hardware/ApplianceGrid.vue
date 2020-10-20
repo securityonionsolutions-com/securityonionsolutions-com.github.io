@@ -9,25 +9,25 @@
             </div>
           </th>
         </tr>
-        <tr class="bg-gray-300 text-left">
+        <tr class="bg-gray-300 text-center">
           <th class="w-1/2" />
-          <th class="p-2 w-1/4 text-lg lg:text-xl th-l truncate">
+          <th class="py-2 px-4 w-1/4 text-lg lg:text-xl th-r truncate">
             <div v-if="role.sensor" class="hidden xs:block">
               Throughput
             </div>
-            <div v-if="role.sensor" class="block xs:hidden vert-header">
+            <div v-if="role.sensor" class="block xs:hidden vert-header mx-auto">
               Throughput
             </div>
           </th>
-          <th class="p-2 w-1/4 text-lg lg:text-xl th-r truncate">
+          <th class="py-2 px-4 w-1/4 text-lg lg:text-xl th-r truncate" :class="[role.name==='Forward Nodes' ? 'hidden xs:table-cell' : 'table-cell']">
             <div class="hidden xs:block">
               Storage
             </div>
-            <div class="block xs:hidden vert-header">
+            <div class="block xs:hidden vert-header mx-auto">
               Storage
             </div>
           </th>
-          <th class="hidden md:table-cell p-2 w-1/4 text-lg lg:text-xl th-r truncate">
+          <th class="hidden md:table-cell py-2 px-4 w-1/4 text-lg lg:text-xl th-r truncate">
             <div>
               Form Factor
             </div>
@@ -38,17 +38,19 @@
         <tr
           v-for="(item, index) in role.appliances"
           :key="index"
-          class="text-left cursor-pointer"
+          class="text-center cursor-pointer"
           :class="[index % 2 != 0 ? 'bg-gray-200' : 'bg-white']"
           @click="handleClick(item, role)"
         >
-          <td class="pl-2 py-2 lg:py-4 table-item-title text-xl lg:text-2xl whitespace-no-wrap truncate">
-            {{ item['name'] }}
-            <fa icon="info" mask="circle" transform="shrink-6" class="mx-2" />
+          <td class="text-left pl-6 py-2 lg:py-4 table-item-title text-xl lg:text-2xl whitespace-no-wrap truncate">
+            <div class="flex flex-row items-center">
+              {{ item['name'] }}
+              <fa icon="info" mask="circle" transform="shrink-6" class="mx-2 text-base" />
+            </div>
           </td>
-          <td class="pl-2 py-2 lg:py-4 table-item text-lg lg:text-xl truncate" v-text="item.specs['Throughput']" />
-          <td class="pl-2 py-2 lg:py-4 table-item text-lg lg:text-xl truncate" v-text="item.specs['Available Storage']" />
-          <td class="hidden md:table-cell pl-2 py-2 lg:py-4 table-item text-lg lg:text-xl truncate" v-text="item.specs['Form Factor']" />
+          <td class="py-2 lg:py-4 table-item text-lg lg:text-xl truncate" v-text="item.specs['Throughput']" />
+          <td class="py-2 lg:py-4 table-item text-lg lg:text-xl truncate" :class="[role.name==='Forward Nodes' ? 'hidden xs:table-cell' : 'table-cell']" v-text="item.specs['Available Storage']" />
+          <td class="hidden md:table-cell py-2 lg:py-4 table-item text-lg lg:text-xl truncate" v-text="item.specs['Form Factor']" />
         </tr>
       </tbody>
     </table>
