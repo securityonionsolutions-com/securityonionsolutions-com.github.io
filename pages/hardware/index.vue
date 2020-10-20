@@ -14,7 +14,7 @@
           </div>
         </div>
         <div class="flex justify-center">
-          <ActionCallout class="mt-4" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Security Onion appliances.', source: 'hw_purchase' })">
+          <ActionCallout class="mt-4" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about the SOS 10000.', source: 'hw_purchase' })">
             <template #button-text>
               Purchase
             </template>

@@ -5,7 +5,7 @@
         <div class="bg-so-blue text-white text-4xl text-center font-semibold w-full p-4">
           {{ appliance.name }}
         </div>
-        <div class="flex flex-col md:flex-row justify-center text-center border-b border-gray-400 pb-6">
+        <div class="flex flex-col md:flex-row justify-center items-center text-center border-b border-gray-400 pb-6">
           <div v-if="appliance.img_front_thumb" class="justify-items-center">
             <img class="w-full" :src="pic(appliance.img_front_thumb)">
             <div class="-mt-10">
@@ -20,7 +20,10 @@
               </a>
             </div>
           </div>
-          <div class="pt-12">
+          <div
+            class="md:px-4"
+            :class="[appliance.img_front_thumb == undefined && appliance.img_back_thumb == undefined ? 'pt-12' : 'pt-12 md:pt-0']"
+          >
             <div v-for="specName in Object.keys(appliance.specs)" :key="specName" class="p-2">
               <span class="font-bold" v-text="specName" />
               <pre class="font-sans" v-text="appliance.specs[specName]" />
