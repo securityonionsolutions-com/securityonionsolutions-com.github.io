@@ -59,7 +59,7 @@
         </div>
         <div class="flex flex-col justify-center w-full">
           <div class="w-1/2 mx-auto mt-12">
-            <hr />
+            <hr>
             <div class="text-2xl mt-8">
               Security Onion Logo
             </div>
@@ -74,7 +74,7 @@
           </div>
 
           <div class="w-1/2 mx-auto mt-12">
-            <hr />
+            <hr>
             <div class="text-2xl mt-8">
               Security Onion Solutions Logo (Abbreviated)
             </div>
@@ -89,7 +89,7 @@
           </div>
 
           <div class="w-1/2 mx-auto mt-12">
-            <hr />
+            <hr>
             <div class="text-2xl mt-8">
               Security Onion Solutions Logo (Extended)
             </div>
