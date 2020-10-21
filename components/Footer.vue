@@ -1,12 +1,12 @@
 <template>
   <footer class="w-full flex flex-col items-center justify-center flex-wrap pb-8">
-    <div class="flex flex-col xs:flex-row w-full items-center justify-center text-center mt-4 text-gray-400 text-lg">
+    <div class="flex flex-row flex-wrap w-full items-center justify-center text-center mt-4 text-gray-400 text-lg">
       <a href="/">Home</a>
-      <span class="text-gray-700 mx-2 hidden xs:block">|</span>
+      <span class="text-gray-700 mx-2">|</span>
       <a href="https://github.com/Security-Onion-Solutions/securityonion/blob/master/VERIFY_ISO.md">Download</a>
-      <span class="text-gray-700 mx-2 hidden xs:block">|</span>
+      <span class="text-gray-700 mx-2">|</span>
       <a href="https://docs.securityonion.net/">Documentation</a>
-      <span class="text-gray-700 mx-2 hidden xs:block">|</span>
+      <span class="text-gray-700 mx-2">|</span>
       <a href="https://blog.securityonion.net/">Blog</a>
       <span class="text-gray-700 mx-2">|</span>
       <a href="/terms">Terms</a>
