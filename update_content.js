@@ -1,7 +1,6 @@
 /* eslint-disable no-console */
 const fs = require('fs')
 const axios = require('axios')
-const { DateTime } = require('luxon')
 
 const token = process.env.EVENTBRITE_API_TOKEN
 
@@ -37,14 +36,11 @@ const morgrifyEvents = async () => {
   const eventRes = await getEvents()
   const eventArr = []
   for (const event of eventRes.data.events) {
-    if (event.name.text.toLowerCase().indexOf("conference") != -1) continue;
+    if (event.name.text.toLowerCase().includes('conference')) { continue }
 
-    const startTimeString = DateTime.fromISO(event.start.local, { zone: event.start.timezone })
-    const endTimeString = DateTime.fromISO(event.end.local, { zone: event.end.timezone })
-
-    var location = 'Unknown';
+    let location = 'Unknown'
     if (event.online_event) {
-      location = 'Virtual';
+      location = 'Virtual'
     } else if (event.venue_id !== null) {
       const locationRes = await getLocation(event.venue_id)
       if (locationRes.data.address.localized_area_display !== null) {
