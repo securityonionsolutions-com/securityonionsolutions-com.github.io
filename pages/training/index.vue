@@ -30,11 +30,12 @@
             This course is a prerequisite to the premium on-demand courses.
           </p>
         </div>
-        <div class="flex justify-center">
-          <fa icon="video" size="10x" />
-        </div>
-        <div class="text-center text-xl">
-          Coming soon! This course is expected to be available in the second half of October, 2020.
+        <div class="flex justify-center video-container">
+          <iframe
+            src="https://www.youtube.com/embed/videoseries?list=PLljFlTO9rB155aYBjHw2InKkSMLuhWpxH"
+            frameborder="0"
+            allowfullscreen
+          />
         </div>
       </div>
     </ContentSection>
@@ -68,9 +69,6 @@
             <div class="text-left">
               Courses include:
               <ul class="list-disc ml-6 mb-6">
-                <li class="my-2">
-                  Security Onion 2 Essentials <span class="bg-gray-200 text-sm text-red-500 font-semibold py-1 px-2 rounded-md">Coming Soon</span>
-                </li>
                 <li class="my-2">
                   Security Onion 2 in Production <span class="bg-gray-200  text-sm text-red-500 font-semibold py-1 px-2 rounded-md whitespace-no-wrap">Coming Soon</span>
                 </li>
@@ -246,9 +244,23 @@ export default {
   height: 25rem;
   min-width: 25rem;
 }
-.video-placeholder {
-  width: 48rem;
-  height: 27rem;
+.video-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.video-container::after {
+  padding-top: 56.25%;
+  display: block;
+  content: '';
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .hero-training {
   background: right bottom no-repeat url(~assets/img/graphics/dots.jpg);

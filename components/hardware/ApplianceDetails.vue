@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded-md overflow-hidden shadow-xl bg-white text-black">
+  <div class="overflow-hidden shadow-xl bg-white text-black">
     <div class="flex flex-col justify-center">
       <div>
         <div class="bg-so-blue text-white text-4xl text-center font-semibold w-full p-4">
@@ -8,13 +8,13 @@
         <div class="flex flex-col md:flex-row justify-center items-center text-center border-b border-gray-400 pb-6">
           <div v-if="appliance.img_front_thumb" class="justify-items-center">
             <img class="w-full" :src="pic(appliance.img_front_thumb)">
-            <div class="-mt-10">
+            <div class="-mt-5 xs:-mt-10">
               <a :href="pic(appliance.img_front)" target="_blank">
                 <fa icon="search" /> Zoom In
               </a>
             </div>
             <img class="w-full" :src="pic(appliance.img_back_thumb)">
-            <div class="-mt-10">
+            <div class="-mt-5 xs:-mt-10">
               <a :href="pic(appliance.img_back)" target="_blank">
                 <fa icon="search" /> Zoom In
               </a>

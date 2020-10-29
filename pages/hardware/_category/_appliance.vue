@@ -1,7 +1,7 @@
 <template>
   <div class="xs:px-12">
-    <div class="xs:-mx-12 mb-2">
-      <nuxt-link to="/hardware" class="text-md xs:text-xl font-light w-full px-4 py-1 flex items-center nav-style bg-gray-100">
+    <div class="xs:-mx-12">
+      <nuxt-link to="/hardware" class="text-md xs:text-xl font-light w-full px-3 py-1 flex items-center nav-style bg-gray-100">
         &lt; Back to all appliances
       </nuxt-link>
     </div>

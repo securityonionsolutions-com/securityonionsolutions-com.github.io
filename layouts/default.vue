@@ -10,7 +10,9 @@
 
     <transition name="modal">
       <FloatingModal v-if="showHwModal" :index="0" @close="showHwModal = false">
-        <ApplianceDetails :appliance="modalAppliance" />
+        <div class="rounded-md overflow-hidden">
+          <ApplianceDetails :appliance="modalAppliance" />
+        </div>
       </FloatingModal>
     </transition>
 
