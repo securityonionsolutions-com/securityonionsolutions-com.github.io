@@ -78,10 +78,10 @@
             "Speed": 75,
             "Retention": 50
           },
-          "img_front_thumb": "SOS4000-front_thumb.jpg",
-          "img_front": "SOS4000-front.jpg",
-          "img_back_thumb": "SOS4000-back_thumb.jpg",
-          "img_back": "SOS4000-back.jpg",
+          "img_front_thumb": "SOS2U-front-thumb.jpg",
+          "img_front": "SOS2U-front.jpg",
+          "img_back_thumb": "SOS2U-back-thumb.jpg",
+          "img_back": "SOS2U-back.jpg",
           "specs": {
             "Throughput": "4 Gbps †",
             "Available Storage": "120 TB *",
@@ -156,10 +156,10 @@
             "Performance": 50,
             "Retention": 100
           },
-          "img_front_thumb": "SOSSN7200-front_thumb.jpg",
-          "img_front": "SOSSN7200-front.jpg",
-          "img_back_thumb": "SOSSN7200-back_thumb.jpg",
-          "img_back": "SOSSN7200-back.jpg",          
+          "img_front_thumb": "SOS2U-front-thumb.jpg",
+          "img_front": "SOS2U-front.jpg",
+          "img_back_thumb": "SOS2U-back-thumb.jpg",
+          "img_back": "SOS2U-back.jpg",          
           "specs": {
             "Available Storage": "72 TB *",
             "Management Ports": "4x10GbE SFP+, 2x10/25GbE SFP28,\n4x1GbE RJ45, 2 x 1GbE RJ45",
