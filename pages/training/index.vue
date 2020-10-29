@@ -70,9 +70,6 @@
               Courses include:
               <ul class="list-disc ml-6 mb-6">
                 <li class="my-2">
-                  Security Onion 2 Essentials <span class="bg-gray-200 text-sm text-red-500 font-semibold py-1 px-2 rounded-md">Coming Soon</span>
-                </li>
-                <li class="my-2">
                   Security Onion 2 in Production <span class="bg-gray-200  text-sm text-red-500 font-semibold py-1 px-2 rounded-md whitespace-no-wrap">Coming Soon</span>
                 </li>
                 <li class="my-2">
