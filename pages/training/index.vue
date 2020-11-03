@@ -61,6 +61,7 @@
           <template #graphic>
             <CircleGraphic
               class="shadow-xl"
+              :padding="false"
               file-name="training1.jpg"
               :size="20"
             />
@@ -145,8 +146,9 @@
         <feature-right class="xs:mb-12" :text-margin="true">
           <template #graphic>
             <CircleGraphic
-              file-name="workbook.jpg"
+              file-name="live.jpg"
               :size="20"
+              :padding="false"
             />
           </template>
           <template #body>
@@ -263,6 +265,6 @@ export default {
   height: 100%;
 }
 .hero-training {
-  background: right bottom no-repeat url(~assets/img/graphics/dots.jpg);
+  background: right bottom no-repeat url(~assets/img/graphics/training.jpg);
 }
 </style>
