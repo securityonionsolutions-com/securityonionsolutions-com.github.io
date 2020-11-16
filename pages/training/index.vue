@@ -71,7 +71,12 @@
               Courses include:
               <ul class="list-disc ml-6 mb-6">
                 <li class="my-2">
-                  Security Onion 2 in Production <span class="bg-gray-200  text-sm text-red-500 font-semibold py-1 px-2 rounded-md whitespace-no-wrap">Coming Soon</span>
+                  Security Onion 2 in Production <span class="bg-gray-200  text-sm text-blue-500 font-semibold py-1 px-2 rounded-md whitespace-no-wrap">
+                    <a href="https://onlinetraining.securityonionsolutions.com/p/security-onion-in-production/">
+                      Enroll
+                      <fa icon="external-link-alt" />
+                    </a>
+                  </span>
                 </li>
                 <li class="my-2">
                   Developing Your Detection Pipeline With Security Onion 2 <span class="bg-gray-200 text-sm text-red-500 font-semibold py-1 px-2 rounded-md whitespace-no-wrap">Coming Soon</span>
