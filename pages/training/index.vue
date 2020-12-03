@@ -79,7 +79,7 @@
                   </span>
                 </li>
                 <li class="my-2">
-                  Developing Your Detection Pipeline With Security Onion 2 <span class="bg-gray-200 text-sm text-red-500 font-semibold py-1 px-2 rounded-md whitespace-no-wrap">Coming Soon</span>
+                  Developing Your Detection Playbook With Security Onion 2 <span class="bg-gray-200 text-sm text-red-500 font-semibold py-1 px-2 rounded-md whitespace-no-wrap">Coming Soon</span>
                 </li>
               </ul>
             </div>
