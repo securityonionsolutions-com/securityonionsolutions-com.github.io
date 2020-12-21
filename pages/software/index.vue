@@ -63,7 +63,7 @@
           <template #graphic>
             <CircleGraphic
               class="shadow-xl rounded-md overflow-hidden"
-              file-name="sensor_list.jpg"
+              file-name="grid_list.jpg"
               :padding="false"
               :size="20"
             />
