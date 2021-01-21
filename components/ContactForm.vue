@@ -47,7 +47,7 @@
         size="20"
         type="text"
       >
-      <label for="description" class="block text-gray-800 text-sm font-bold mb-2">Description</label>
+      <label for="description" class="block text-gray-800 text-sm font-bold mb-2">Description<span class="text-red-500"> *</span></label>
       <textarea
         v-model="description"
         name="description"
@@ -55,16 +55,15 @@
         rows="5"
         class="shadow appearance-none border rounded w-full py-2 px-3 font-sans leading-tight focus:outline-none focus:shadow-outline text-sm xs:text-base"
       />
-      <div class="block text-red-500 text-sm font-bold mb-4">
+      <div class="block text-red-500 text-sm font-bold mb-4 mt-1">
         * Required
       </div>
-      <!-- <div class="g-recaptcha mb-4" data-sitekey="6LeRbtAZAAAAAAUXLyY1xJHUdssTwSp8MloDVZ2Y" data-callback="enableButton" /> -->
       <recaptcha
         ref="recaptcha"
         class="mb-4"
-        @success="buttonEnabled = true"
-        @error="buttonEnabled = false"
-        @expired="buttonEnabled = false"
+        @success="captchaPassed = true"
+        @error="captchaPassed = false"
+        @expired="captchaPassed = false"
       />
       <select id="lead_source" v-model="lead_source" class="hidden" name="lead_source">
         <option value="Website">
@@ -99,7 +98,7 @@ export default {
       email: '',
       company: '',
       description: this.text,
-      buttonEnabled: false,
+      captchaPassed: false,
       sitekey: process.env.sitekey,
       t: ''
     }
@@ -107,6 +106,14 @@ export default {
   computed: {
     retUrl () {
       return `${window.location.origin}/thank_you`
+    },
+    buttonEnabled () {
+      return this.captchaPassed &&
+        this.first_name !== '' &&
+        this.last_name !== '' &&
+        this.company !== '' &&
+        this.email !== '' &&
+        this.description !== ''
     }
   },
   mounted () {
@@ -121,9 +128,6 @@ export default {
         event_category: 'engagement',
         event_label: `${window.location.pathname}, ${this.source}`
       })
-    },
-    enableButton () {
-      this.buttonEnabled = true
     },
     timestamp () {
       const response = document.getElementById('g-recaptcha-response')
