@@ -78,11 +78,7 @@ export default {
         event_label: appliance.name,
         value: appliance.name
       })
-      if (window.innerWidth < 480) {
-        this.$router.push(`/hardware/${role.name.toLowerCase().replace(' ', '_')}/${appliance.name.replace(' ', '_')}`)
-      } else {
-        this.$nuxt.$emit('show-hw-modal', appliance)
-      }
+      this.$router.push(`/hardware/${role.name.toLowerCase().replace(' ', '_')}/${appliance.name.replace(' ', '_')}`)
     }
   }
 }

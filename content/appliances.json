@@ -10,15 +10,15 @@
             "Speed": 25,
             "Retention": 25
           },
-          "img_front_thumb": "SOS1U-front-thumb.jpg",
-          "img_front": "SOS1U-front.jpg",
-          "img_back_thumb": "SOS1U-ethernet-back-thumb.jpg",
-          "img_back": "SOS1U-ethernet-back.jpg",
+          "img_front_thumb": "sos1u-front-thumb.jpg",
+          "img_front": "sos1u-front.jpg",
+          "img_back_thumb": "sos1u-ethernet-back-thumb.jpg",
+          "img_back": "sos1u-ethernet-back.jpg",
           "specs": {
             "Throughput": "500 Mbps †",
             "Available Storage": "8 TB *",
             "Management Ports": "2 x 1GbE RJ45",
-            "Monitoring Ports": "2x10/25GbE SFP28, 4x1GbE RJ45",
+            "Monitoring Ports": "2x10/25GbE sfp28, 4x1GbE RJ45",
             "Form Factor": "1U"
           },
           "caveats": {
@@ -32,16 +32,16 @@
             "Speed": 50,
             "Retention": 50
           },
-          "img_front_thumb": "SOS1U-front-thumb.jpg",
-          "img_front": "SOS1U-front.jpg",
-          "img_back_thumb": "SOS1U-ethernet-back-thumb.jpg",
-          "img_back": "SOS1U-ethernet-back.jpg",
+          "img_front_thumb": "sos1u-front-thumb.jpg",
+          "img_front": "sos1u-front.jpg",
+          "img_back_thumb": "sos1u-ethernet-back-thumb.jpg",
+          "img_back": "sos1u-ethernet-back.jpg",
           "specs": {
             "Throughput": "1 Gbps †",
             "Available Storage": "24 TB *",
             "Storage Type": "RAID 5",
             "Management Ports": "2 x 1GbE RJ45",
-            "Monitoring Ports": "2x10/25GbE SFP28, 4x1GbE RJ45",
+            "Monitoring Ports": "2x10/25GbE sfp28, 4x1GbE RJ45",
             "Form Factor": "1U"
           },
           "caveats": {
@@ -55,16 +55,16 @@
             "Speed": 50,
             "Retention": 50
           },
-          "img_front_thumb": "SOS1U-front-thumb.jpg",
-          "img_front": "SOS1U-front.jpg",
-          "img_back_thumb": "SOS1U-SFP-back-thumb.jpg",
-          "img_back": "SOS1U-SFP-back.jpg",
+          "img_front_thumb": "sos1u-front-thumb.jpg",
+          "img_front": "sos1u-front.jpg",
+          "img_back_thumb": "sos1u-sfp-back-thumb.jpg",
+          "img_back": "sos1u-sfp-back.jpg",
           "specs": {
             "Throughput": "1 Gbps †",
             "Available Storage": "24 TB *",
             "Storage Type": "RAID 5",
             "Management Ports": "2 x 1GbE RJ45",
-            "Monitoring Ports": "2x1/10GbE SFP+, 2x10/25GbE SFP28",
+            "Monitoring Ports": "2x1/10GbE sfp+, 2x10/25GbE sfp28",
             "Form Factor": "1U"
           },
           "caveats": {
@@ -78,16 +78,16 @@
             "Speed": 75,
             "Retention": 50
           },
-          "img_front_thumb": "SOS2U-front-thumb.jpg",
-          "img_front": "SOS2U-front.jpg",
-          "img_back_thumb": "SOS2U-back-thumb.jpg",
-          "img_back": "SOS2U-back.jpg",
+          "img_front_thumb": "sos2u-front-thumb.jpg",
+          "img_front": "sos2u-front.jpg",
+          "img_back_thumb": "sos2u-back-thumb.jpg",
+          "img_back": "sos2u-back.jpg",
           "specs": {
             "Throughput": "4 Gbps †",
             "Available Storage": "120 TB *",
             "Storage Type": "RAID 6",
             "Management Ports": "2 x 1GbE RJ45",
-            "Monitoring Ports": "4x10GbE SFP+, 2x10/25GbE SFP28, 4x1GbE RJ45",
+            "Monitoring Ports": "4x10GbE sfp+, 2x10/25GbE sfp28, 4x1GbE RJ45",
             "Form Factor": "2U"
           },
           "caveats": {
@@ -101,16 +101,16 @@
             "Speed": 100,
             "Retention": 25
           },
-          "img_front_thumb": "SOS1U-front-thumb.jpg",
-          "img_front": "SOS1U-front.jpg",
-          "img_back_thumb": "SOS1U-SFP-back-thumb.jpg",
-          "img_back": "SOS1U-SFP-back.jpg",
+          "img_front_thumb": "sos1u-front-thumb.jpg",
+          "img_front": "sos1u-front.jpg",
+          "img_back_thumb": "sos1u-sfp-back-thumb.jpg",
+          "img_back": "sos1u-sfp-back.jpg",
           "specs": {
             "Throughput": "10 Gbps † ‡",
             "Available Storage": "7 TB *",
             "Storage Type": "RAID 1",
             "Management Ports": "2 x 1GbE RJ45",
-            "Monitoring Ports": "2x1/10GbE SFP+, 2x10/25GbE SFP28",
+            "Monitoring Ports": "2x1/10GbE sfp+, 2x10/25GbE sfp28",
             "Form Factor": "1U"
           },
           "caveats": {
@@ -131,13 +131,13 @@
             "Performance": 100,
             "Retention": 50
           },
-          "img_front_thumb": "SOS1U-front-thumb.jpg",
-          "img_front": "SOS1U-front.jpg",
-          "img_back_thumb": "SOS1U-ethernet-back-thumb.jpg",
-          "img_back": "SOS1U-ethernet-back.jpg",
+          "img_front_thumb": "sos1u-front-thumb.jpg",
+          "img_front": "sos1u-front.jpg",
+          "img_back_thumb": "sos1u-ethernet-back-thumb.jpg",
+          "img_back": "sos1u-ethernet-back.jpg",
           "specs": {
             "Available Storage": "15 TB *",
-            "Management Ports": "2x10/25GbE SFP28, 4x1GbE RJ45, 2 x 1GbE RJ45",
+            "Management Ports": "2x10/25GbE sfp28, 4x1GbE RJ45, 2 x 1GbE RJ45",
             "Form Factor": "1U"
           },
           "caveats": {
@@ -156,13 +156,13 @@
             "Performance": 50,
             "Retention": 100
           },
-          "img_front_thumb": "SOS2U-front-thumb.jpg",
-          "img_front": "SOS2U-front.jpg",
-          "img_back_thumb": "SOS2U-back-thumb.jpg",
-          "img_back": "SOS2U-back.jpg",          
+          "img_front_thumb": "sos2u-front-thumb.jpg",
+          "img_front": "sos2u-front.jpg",
+          "img_back_thumb": "sos2u-back-thumb.jpg",
+          "img_back": "sos2u-back.jpg",          
           "specs": {
             "Available Storage": "72 TB *",
-            "Management Ports": "4x10GbE SFP+, 2x10/25GbE SFP28,\n4x1GbE RJ45, 2 x 1GbE RJ45",
+            "Management Ports": "4x10GbE sfp+, 2x10/25GbE sfp28,\n4x1GbE RJ45, 2 x 1GbE RJ45",
             "Form Factor": "2U"
           },
           "caveats": {
@@ -175,13 +175,13 @@
             "Performance": 100,
             "Retention": 75
           },
-          "img_front_thumb": "SOS1U-front-thumb.jpg",
-          "img_front": "SOS1U-front.jpg",
-          "img_back_thumb": "SOS1U-SFP-back-thumb.jpg",
-          "img_back": "SOS1U-SFP-back.jpg",
+          "img_front_thumb": "sos1u-front-thumb.jpg",
+          "img_front": "sos1u-front.jpg",
+          "img_back_thumb": "sos1u-sfp-back-thumb.jpg",
+          "img_back": "sos1u-sfp-back.jpg",
           "specs": {
             "Available Storage": "30 TB *",
-            "Management Ports": "2x1/10GbE SFP+, 2x10/25GbE SFP28, 2 x 1GbE RJ45",
+            "Management Ports": "2x1/10GbE sfp+, 2x10/25GbE sfp28, 2 x 1GbE RJ45",
             "Form Factor": "1U",
             "Notes": "Non-Volatile Memory storage"
           },
