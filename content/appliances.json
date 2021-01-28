@@ -10,10 +10,10 @@
             "Speed": 25,
             "Retention": 25
           },
-          "img_front_thumb": "sos1u-front-thumb.jpg",
-          "img_front": "sos1u-front.jpg",
-          "img_back_thumb": "sos1u-ethernet-back-thumb.jpg",
-          "img_back": "sos1u-ethernet-back.jpg",
+          "img_front_thumb": "sos-1u-front-thumb.jpg",
+          "img_front": "sos-1u-front.jpg",
+          "img_back_thumb": "sos-1u-ethernet-back-thumb.jpg",
+          "img_back": "sos-1u-ethernet-back.jpg",
           "specs": {
             "Throughput": "500 Mbps †",
             "Available Storage": "8 TB *",
@@ -32,10 +32,10 @@
             "Speed": 50,
             "Retention": 50
           },
-          "img_front_thumb": "sos1u-front-thumb.jpg",
-          "img_front": "sos1u-front.jpg",
-          "img_back_thumb": "sos1u-ethernet-back-thumb.jpg",
-          "img_back": "sos1u-ethernet-back.jpg",
+          "img_front_thumb": "sos-1u-front-thumb.jpg",
+          "img_front": "sos-1u-front.jpg",
+          "img_back_thumb": "sos-1u-ethernet-back-thumb.jpg",
+          "img_back": "sos-1u-ethernet-back.jpg",
           "specs": {
             "Throughput": "1 Gbps †",
             "Available Storage": "24 TB *",
@@ -55,10 +55,10 @@
             "Speed": 50,
             "Retention": 50
           },
-          "img_front_thumb": "sos1u-front-thumb.jpg",
-          "img_front": "sos1u-front.jpg",
-          "img_back_thumb": "sos1u-sfp-back-thumb.jpg",
-          "img_back": "sos1u-sfp-back.jpg",
+          "img_front_thumb": "sos-1u-front-thumb.jpg",
+          "img_front": "sos-1u-front.jpg",
+          "img_back_thumb": "sos-1u-sfp-back-thumb.jpg",
+          "img_back": "sos-1u-sfp-back.jpg",
           "specs": {
             "Throughput": "1 Gbps †",
             "Available Storage": "24 TB *",
@@ -78,10 +78,10 @@
             "Speed": 75,
             "Retention": 50
           },
-          "img_front_thumb": "sos2u-front-thumb.jpg",
-          "img_front": "sos2u-front.jpg",
-          "img_back_thumb": "sos2u-back-thumb.jpg",
-          "img_back": "sos2u-back.jpg",
+          "img_front_thumb": "sos-2u-front-thumb.jpg",
+          "img_front": "sos-2u-front.jpg",
+          "img_back_thumb": "sos-2u-back-thumb.jpg",
+          "img_back": "sos-2u-back.jpg",
           "specs": {
             "Throughput": "4 Gbps †",
             "Available Storage": "120 TB *",
@@ -101,10 +101,10 @@
             "Speed": 100,
             "Retention": 25
           },
-          "img_front_thumb": "sos1u-front-thumb.jpg",
-          "img_front": "sos1u-front.jpg",
-          "img_back_thumb": "sos1u-sfp-back-thumb.jpg",
-          "img_back": "sos1u-sfp-back.jpg",
+          "img_front_thumb": "sos-1u-front-thumb.jpg",
+          "img_front": "sos-1u-front.jpg",
+          "img_back_thumb": "sos-1u-sfp-back-thumb.jpg",
+          "img_back": "sos-1u-sfp-back.jpg",
           "specs": {
             "Throughput": "10 Gbps † ‡",
             "Available Storage": "7 TB *",
@@ -131,10 +131,10 @@
             "Performance": 100,
             "Retention": 50
           },
-          "img_front_thumb": "sos1u-front-thumb.jpg",
-          "img_front": "sos1u-front.jpg",
-          "img_back_thumb": "sos1u-ethernet-back-thumb.jpg",
-          "img_back": "sos1u-ethernet-back.jpg",
+          "img_front_thumb": "sos-1u-front-thumb.jpg",
+          "img_front": "sos-1u-front.jpg",
+          "img_back_thumb": "sos-1u-ethernet-back-thumb.jpg",
+          "img_back": "sos-1u-ethernet-back.jpg",
           "specs": {
             "Available Storage": "15 TB *",
             "Management Ports": "2x10/25GbE sfp28, 4x1GbE RJ45, 2 x 1GbE RJ45",
@@ -156,10 +156,10 @@
             "Performance": 50,
             "Retention": 100
           },
-          "img_front_thumb": "sos2u-front-thumb.jpg",
-          "img_front": "sos2u-front.jpg",
-          "img_back_thumb": "sos2u-back-thumb.jpg",
-          "img_back": "sos2u-back.jpg",          
+          "img_front_thumb": "sos-2u-front-thumb.jpg",
+          "img_front": "sos-2u-front.jpg",
+          "img_back_thumb": "sos-2u-back-thumb.jpg",
+          "img_back": "sos-2u-back.jpg",          
           "specs": {
             "Available Storage": "72 TB *",
             "Management Ports": "4x10GbE sfp+, 2x10/25GbE sfp28,\n4x1GbE RJ45, 2 x 1GbE RJ45",
@@ -175,10 +175,10 @@
             "Performance": 100,
             "Retention": 75
           },
-          "img_front_thumb": "sos1u-front-thumb.jpg",
-          "img_front": "sos1u-front.jpg",
-          "img_back_thumb": "sos1u-sfp-back-thumb.jpg",
-          "img_back": "sos1u-sfp-back.jpg",
+          "img_front_thumb": "sos-1u-front-thumb.jpg",
+          "img_front": "sos-1u-front.jpg",
+          "img_back_thumb": "sos-1u-sfp-back-thumb.jpg",
+          "img_back": "sos-1u-sfp-back.jpg",
           "specs": {
             "Available Storage": "30 TB *",
             "Management Ports": "2x1/10GbE sfp+, 2x10/25GbE sfp28, 2 x 1GbE RJ45",

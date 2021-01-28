@@ -81,13 +81,13 @@ export default {
       let filenameFormat
       let numPics
       let reverse = false
-      if (this.appliance.img_back.includes('sos1u')) {
-        imagePath = this.appliance.img_back.includes('ethernet') ? '/img/appliances/sos1u-ethernet' : '/img/appliances/sos1u-sfp'
-        filenameFormat = this.appliance.img_back.includes('ethernet') ? 'sos1u-ethernet-360-{index}.jpg' : 'sos1u-sfp-360-{index}.jpg'
+      if (this.appliance.img_back.includes('sos-1u')) {
+        imagePath = this.appliance.img_back.includes('ethernet') ? '/img/appliances/sos-1u-ethernet' : '/img/appliances/sos-1u-sfp'
+        filenameFormat = this.appliance.img_back.includes('ethernet') ? 'sos-1u-ethernet-360-{index}.jpg' : 'sos-1u-sfp-360-{index}.jpg'
         numPics = this.appliance.img_back.includes('ethernet') ? 36 : 37
       } else {
-        imagePath = '/img/appliances/sos2u'
-        filenameFormat = 'sos2u-360-{index}.jpg'
+        imagePath = '/img/appliances/sos-2u'
+        filenameFormat = 'sos-2u-360-{index}.jpg'
         numPics = 42
         reverse = true
       }
