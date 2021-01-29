@@ -20,8 +20,9 @@
     "@nuxtjs/google-gtag": "^1.0.4",
     "@nuxtjs/recaptcha": "^0.6.2",
     "hooper": "^0.3.4",
-    "nuxt": "^2.14.6",
+    "nuxt": "2.14.12",
     "nuxt-fontawesome": "^0.4.0",
+    "vue-360": "^0.1.4",
     "vue-scrollto": "^2.18.2"
   },
   "devDependencies": {

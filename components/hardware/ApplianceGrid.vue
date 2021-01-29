@@ -61,7 +61,7 @@
       † Actual performance depends on network traffic. Forward node estimates assume a Manager Node is used.
     </div>
     <div>
-      ‡ Throughput rating is achieved without PCAP.
+      ‡ Throughput rating for the SOS 10000 is achieved without PCAP.
     </div>
   </div>
 </template>
@@ -78,11 +78,7 @@ export default {
         event_label: appliance.name,
         value: appliance.name
       })
-      if (window.innerWidth < 480) {
-        this.$router.push(`/hardware/${role.name.toLowerCase().replace(' ', '_')}/${appliance.name.replace(' ', '_')}`)
-      } else {
-        this.$nuxt.$emit('show-hw-modal', appliance)
-      }
+      this.$router.push(`/hardware/${role.name.toLowerCase().replace(' ', '_')}/${appliance.name.replace(' ', '_')}`)
     }
   }
 }

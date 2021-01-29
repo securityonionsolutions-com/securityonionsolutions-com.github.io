@@ -4,6 +4,7 @@
       Contact Us
     </div>
     <form id="contact_form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="px-8 xs:pt-2 pb-5 mb-4">
+      <!-- eslint-disable-next-line vue/html-quotes -->
       <input type="hidden" name="captcha_settings" value='{"keyname":"reCAPTCHA","fallback":"true","orgId":"00D1U000000DI9i","ts":""}'>
       <input type="hidden" name="oid" value="00D1U000000DI9i">
       <input v-model="retUrl" type="hidden" name="retURL" value="">

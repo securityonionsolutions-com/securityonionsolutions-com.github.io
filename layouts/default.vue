@@ -8,14 +8,6 @@
       </FloatingModal>
     </transition>
 
-    <transition name="modal">
-      <FloatingModal v-if="showHwModal" :index="0" @close="showHwModal = false">
-        <div class="rounded-md overflow-hidden">
-          <ApplianceDetails :appliance="modalAppliance" />
-        </div>
-      </FloatingModal>
-    </transition>
-
     <div class="flex flex-col leading-normal tracking-normal min-h-screen bg-gradient-to-r from-so-blue-dark via-so-blue to-so-blue-dark">
       <Navbar class="fixed z-50" />
       <div class="fixed nav-bleed w-full bg-black z-0" />
@@ -35,7 +27,6 @@ export default {
     contactText: '',
     eventSource: '',
     showHwModal: false,
-    modalAppliance: {},
     version: '1.0.0',
     colorSchemeString: ''
   }),
@@ -51,10 +42,6 @@ export default {
         event_category: 'engagement',
         event_label: `${window.location.pathname}, ${event.source}`
       })
-    })
-    this.$nuxt.$on('show-hw-modal', (appliance) => {
-      this.showHwModal = true
-      this.modalAppliance = appliance
     })
   },
   mounted () {

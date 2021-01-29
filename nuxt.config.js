@@ -16,6 +16,9 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Security Onion Solutions, LLC' }
+    ],
+    link: [
+      { href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css', rel: 'stylesheet', type: 'text/css' }
     ]
   },
   env: {
@@ -29,7 +32,8 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    { src: '@/plugins/scrollto.js', mode: 'client' }
+    { src: '@/plugins/scrollto.js', mode: 'client' },
+    { src: '@/plugins/vue-360.js', mode: 'client' }
   ],
   /*
   ** Auto import components
