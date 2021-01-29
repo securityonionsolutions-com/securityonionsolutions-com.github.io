@@ -1,18 +1,29 @@
 /*!
-  * vue-router v3.4.4
-  * (c) 2020 Evan You
+  * vue-router v3.5.1
+  * (c) 2021 Evan You
   * @license MIT
   */
 
 /*!
-  * vue-scrollto v2.18.2
+  * vue-scrollto v2.20.0
   * (c) 2019 Randjelovic Igor
   * @license MIT
   */
 
 /*!
+ * Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+
+/*!
  * Vue.js v2.6.12
  * (c) 2014-2020 Evan You
+ * Released under the MIT License.
+ */
+
+/*!
+ * vue-360 v0.1.4
+ * (c) Rajeev R. Gade <rajeevgade@gmail.com>
  * Released under the MIT License.
  */
 
@@ -27,6 +38,12 @@
  * (c) 2018-present egoist <0x142857@gmail.com>
  * Released under the MIT License.
  */
+
+/*! Hammer.JS - v2.0.7 - 2016-04-22
+ * http://hammerjs.github.io/
+ *
+ * Copyright (c) 2016 Jorik Tangelder;
+ * Licensed under the MIT license */
 
 /**
   * Hopper 0.3.4
