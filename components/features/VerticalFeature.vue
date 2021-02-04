@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center text-center">
     <div
-      :class="[alt ? 'rounded bg-white text-black shadow-lg p-4' : '']"
+      :class="[alternate ? 'rounded bg-white text-black shadow-lg p-4' : '']"
       class="flex flex-col items-center"
     >
       <div class="text-2xl font-semibold mb-1">
@@ -25,7 +25,7 @@ export default {
     Graphic
   },
   props: {
-    alt: {
+    alternate: {
       type: Boolean,
       default: false
     }

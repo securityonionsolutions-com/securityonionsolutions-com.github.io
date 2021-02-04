@@ -11,7 +11,7 @@
         </div>
       </template>
     </SubHero>
-    <ContentSection id="overview" :alt="true">
+    <ContentSection id="overview" :alternate="true">
       <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
         <two-panel-detail class="mx-3 xs:mx-24">
           <template #section-heading>
@@ -50,7 +50,7 @@
               The logo must be sized such that it is not diminished relative to other logos appearing on the same media.
             </li>
             <li>
-              Colors of the logos must not be altered.
+              Colors of the logos must not be alternateered.
             </li>
             <li>
               Logos may only be presented on all white (#FFFFF) or all black backgrounds (#000000) unless a specific exception is granted via written consent.
@@ -105,9 +105,9 @@
         </div>
       </div>
     </ContentSection>
-    <ContentSection id="contact" :alt="true">
+    <ContentSection id="contact" :alternate="true">
       <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
-        <action-callout :alt="true" class="my-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about branding authorization.', source: 'branding_contact_us' })">
+        <action-callout :alternate="true" class="my-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about branding authorization.', source: 'branding_contact_us' })">
           <template #info>
             <div class="text-2xl flex justify-center">
               <div>

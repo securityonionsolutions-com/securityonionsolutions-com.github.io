@@ -2,7 +2,7 @@
   <div>
     <hooper tabindex="-1" class="focus:outline-none" :settings="settings">
       <slide v-for="(testimonial, index) in list" :key="index">
-        <Testimonial :alt="alt">
+        <Testimonial :alternate="alternate">
           <template #text>
             {{ testimonial }}
           </template>
@@ -26,7 +26,7 @@ export default {
       type: Array,
       default: () => { return [] }
     },
-    alt: {
+    alternate: {
       type: Boolean,
       default: false
     }

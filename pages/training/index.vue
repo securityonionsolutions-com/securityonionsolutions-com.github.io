@@ -17,7 +17,7 @@
       </template>
     </SubHero>
 
-    <ContentSection id="free-training" :alt="true">
+    <ContentSection id="free-training" :alternate="true">
       <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
         <section-header class="mb-6">
           Free On-Demand
@@ -47,7 +47,7 @@
         </section-header>
         <div class="text-left text-xl">
           We offer online training via on-demand training modules.
-          They are a cost-effective alternative to instructor led training, but do not include the in-depth, hands-on labs that our instructor led classes offer.
+          They are a cost-effective alternateernative to instructor led training, but do not include the in-depth, hands-on labs that our instructor led classes offer.
         </div>
         <div class="text-left text-xl mt-6">
           We currently provide training for both the new Security Onion 2, and existing Security Onion 16.04.
@@ -74,7 +74,7 @@
                   Security Onion 2 in Production <span class="bg-gray-200  text-sm text-blue-500 font-semibold py-1 px-2 rounded-md whitespace-no-wrap">
                     <a href="https://onlinetraining.securityonionsolutions.com/p/security-onion-in-production/">
                       Enroll
-                      <fa icon="external-link-alt" />
+                      <fa icon="external-link-alternate" />
                     </a>
                   </span>
                 </li>
@@ -82,7 +82,7 @@
                   Developing Your Detection Playbook With Security Onion 2 <span class="bg-gray-200 text-sm text-blue-500 font-semibold py-1 px-2 rounded-md whitespace-no-wrap">
                     <a href="https://onlinetraining.securityonionsolutions.com/p/developing-your-detection-playbook-with-security-onion-2/">
                       Enroll
-                      <fa icon="external-link-alt" />
+                      <fa icon="external-link-alternate" />
                     </a>
                   </span>
                 </li>
@@ -148,7 +148,7 @@
       </div>
     </ContentSection>
 
-    <ContentSection id="instructor-training" :alt="true">
+    <ContentSection id="instructor-training" :alternate="true">
       <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
         <section-header class="mb-6">
           Instructor Led Training
@@ -166,7 +166,7 @@
               We offer multi-day comprehensive training classes with hands-on labs and real-world case studies for reinforcement!
               Students receive printed course materials and a Certificate of Completion ready to make their adversaries cry!
             </div>
-            <action-callout :alt="true" class="my-6" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about private training classes.', source: 'training_private_contact_us' })">
+            <action-callout :alternate="true" class="my-6" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about private training classes.', source: 'training_private_contact_us' })">
               <template #info>
                 <div class="text-xl">
                   Have at least 8 students and want private instructor-led training?
@@ -204,7 +204,7 @@
       </div>
     </ContentSection>
 
-    <ContentSection id="testimonials" :alt="true">
+    <ContentSection id="testimonials" :alternate="true">
       <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
         <SectionHeader class="mb-6">
           Student Feedback

@@ -9,7 +9,7 @@
           <slot name="body" />
         </template>
       </detail-para>
-      <so-button class="mx-10 xs:mx-0 block" :alt="alt" @click.native="$emit('button-click')">
+      <so-button class="mx-10 xs:mx-0 block" :alternate="alternate" @click.native="$emit('button-click')">
         <slot name="button-text" />
       </so-button>
     </div>
@@ -33,7 +33,7 @@ export default {
     SoButton
   },
   props: {
-    alt: { type: Boolean, default: false }
+    alternate: { type: Boolean, default: false }
   }
 }
 </script>

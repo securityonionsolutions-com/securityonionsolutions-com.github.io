@@ -4,7 +4,7 @@
       <slot name="info" />
     </div>
     <div class="block">
-      <so-button class="whitespace-no-wrap w-full" :alt="alt" :link="link" @click.native="$emit('button-click')">
+      <so-button class="whitespace-no-wrap w-full" :alternate="alternate" :link="link" @click.native="$emit('button-click')">
         <slot name="button-text" />
       </so-button>
     </div>
@@ -19,7 +19,7 @@ export default {
     SoButton
   },
   props: {
-    alt: {
+    alternate: {
       type: Boolean,
       default: false
     },
