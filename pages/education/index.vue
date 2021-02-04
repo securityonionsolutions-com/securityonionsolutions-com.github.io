@@ -113,6 +113,7 @@
                   We have excellent documentation available <a href="https://docs.securityonion.net/" class="text-so-blue cursor-pointer hover:underline">here</a>,
                   with its own FAQ <a href="https://docs.securityonion.net/en/2.3/faq.html" class="text-so-blue cursor-pointer hover:underline">here</a>.
                   <!-- eslint-disable-next-line vue/singleline-html-element-content-newline -->
+
                   For more information about support options, <nuxt-link to="/support" class="text-so-blue cursor-pointer hover:underline">click here</nuxt-link>.
                 </div>
               </div>
