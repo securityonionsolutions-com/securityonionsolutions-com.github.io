@@ -37,6 +37,7 @@ const morgrifyEvents = async () => {
   const eventArr = []
   for (const event of eventRes.data.events) {
     if (event.name.text.toLowerCase().includes('conference')) { continue }
+    if (event.status === 'started') { continue }
 
     let location = 'Unknown'
     if (event.online_event) {
