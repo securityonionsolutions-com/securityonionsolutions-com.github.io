@@ -11,7 +11,7 @@
       <span class="text-gray-700 mx-2">|</span>
       <a href="/terms">Education</a>
       <span class="text-gray-700 mx-2">|</span>
-      <a href="/terms">Terms</a>
+      <a href="/education">Terms</a>
     </div>
     <div class="flex flex-row">
       <div class="text-center content-center justify-center">
