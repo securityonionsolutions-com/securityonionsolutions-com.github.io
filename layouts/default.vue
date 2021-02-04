@@ -100,7 +100,7 @@ html {
   background-color: black;
 }
 .content {
-  margin-top: 85px;
+  margin-top: 70px;
 }
 .nav-bleed {
   height: 150px;
@@ -115,5 +115,11 @@ html {
 }
 .modal-enter, .modal-leave-to {
   opacity: 0;
+}
+
+@media (min-width: 1024px) {
+  .content {
+    margin-top: 85px;
+  }
 }
 </style>
