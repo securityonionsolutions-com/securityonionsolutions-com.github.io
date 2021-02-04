@@ -9,9 +9,9 @@
       <span class="text-gray-700 mx-2">|</span>
       <a href="https://blog.securityonion.net/">Blog</a>
       <span class="text-gray-700 mx-2">|</span>
-      <a href="/terms">Education</a>
+      <a href="/education">Education</a>
       <span class="text-gray-700 mx-2">|</span>
-      <a href="/education">Terms</a>
+      <a href="/terms">Terms</a>
     </div>
     <div class="flex flex-row">
       <div class="text-center content-center justify-center">
