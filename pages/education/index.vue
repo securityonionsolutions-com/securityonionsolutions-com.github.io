@@ -22,13 +22,13 @@
         </SectionHeader>
         <div class="text-lg text-center w-2/3">
           <p class="mb-4">
-            Join the ranks of universities and educational institutions around the world
+            Join the ranks of universities and institutions for higher education around the world
             that use Security Onion to educate the next generation of cybersecurity professionals.
           </p>
           <p>
-            Our OSS license is perfectly suited for the classrom, no need to purchase or apply for special educational licenses
-            for educators or students. The version of Security Onion you use to teach is the same one that students will use
-            once they graduate.
+            The Security Onion free and open license is perfectly suited for classroom use.
+            No need to purchase or apply for special educational licenses for educators or students.
+            The version of Security Onion used in the classroom is the same one used to defend enterprise networks around the world!
           </p>
         </div>
       </div>
@@ -41,6 +41,43 @@
           </div>
         </SectionHeader>
         <div class="flex flex-col items-center">
+          <DetailPara class="md:w-2/3 lg:w-1/2 mb-6">
+            <template #header>
+              <div class="flex flex-row space-x-2">
+                <div>Q:</div>
+                <div class="text-left">
+                  How do I get someone to talk to my class about Security Onion?
+                </div>
+              </div>
+            </template>
+            <template #body>
+              <div class="flex flex-row space-x-2 ml-2">
+                <div>A:</div>
+                <div class="text-left">
+                  <span class="link text-so-blue hover:underline cursor-pointer" @click="handleContactClick">Contact us</span> for more details.
+                </div>
+              </div>
+            </template>
+          </DetailPara>
+          <DetailPara class="md:w-2/3 lg:w-1/2 mb-6">
+            <template #header>
+              <div class="flex flex-row space-x-2">
+                <div>Q:</div>
+                <div class="text-left">
+                  How do I learn to use Security Onion?
+                </div>
+              </div>
+            </template>
+            <template #body>
+              <div class="flex flex-row space-x-2 ml-2">
+                <div>A:</div>
+                <div class="text-left">
+                  <!-- eslint-disable-next-line vue/singleline-html-element-content-newline -->
+                  We offer both free and paid training, <nuxt-link to="/training" class="text-so-blue">click here</nuxt-link> for more information.
+                </div>
+              </div>
+            </template>
+          </DetailPara>
           <DetailPara class="md:w-2/3 lg:w-1/2 mb-6">
             <template #header>
               <div class="flex flex-row space-x-2">
@@ -60,12 +97,12 @@
               </div>
             </template>
           </DetailPara>
-          <DetailPara class="md:w-2/3 lg:w-1/2">
+          <DetailPara class="md:w-2/3 lg:w-1/2 mb-6">
             <template #header>
               <div class="flex flex-row space-x-2">
                 <div>Q:</div>
                 <div class="text-left">
-                  Can I use Security Onion's documentation as part of my course?
+                  I'm having trouble with Security Onion. How do I get help?
                 </div>
               </div>
             </template>
@@ -73,8 +110,30 @@
               <div class="flex flex-row space-x-2 ml-2">
                 <div>A:</div>
                 <div class="text-left">
-                  You are free to reference our documentation while teaching your course, but please check the documentation's license for further details.
-                  Notably, you may not copy our documentation verbatim to use as the course content. Please treat it as reference material only.
+                  We have excellent documentation available <a href="https://docs.securityonion.net/" class="text-so-blue cursor-pointer hover:underline">here</a>,
+                  with its own FAQ <a href="https://docs.securityonion.net/en/2.3/faq.html" class="text-so-blue cursor-pointer hover:underline">here</a>.
+                  <!-- eslint-disable-next-line vue/singleline-html-element-content-newline -->
+                  For more information about support options, <nuxt-link to="/support" class="text-so-blue cursor-pointer hover:underline">click here</nuxt-link>.
+                </div>
+              </div>
+            </template>
+          </DetailPara>
+          <DetailPara class="md:w-2/3 lg:w-1/2">
+            <template #header>
+              <div class="flex flex-row space-x-2">
+                <div>Q:</div>
+                <div class="text-left">
+                  May I use Security Onion's documentation as part of my course?
+                </div>
+              </div>
+            </template>
+            <template #body>
+              <div class="flex flex-row space-x-2 ml-2">
+                <div>A:</div>
+                <div class="text-left">
+                  You are free to reference our documentation while teaching your course, but please check the
+                  <a href="https://docs.securityonion.net/en/2.3/about.html?highlight=license#license" class="text-so-blue cursor-pointer hover:underline">documentation's license</a>
+                  for further details.
                 </div>
               </div>
             </template>
@@ -83,7 +142,7 @@
             <div class="flex flex-row space-x-2 ml-2">
               <div>*</div>
               <div class="text-left">
-                Discounts are available to students and faculty of accredited institutions, subject to discretion.
+                Discounts are available to students and faculty of accredited institutions, subject to limitations.
               </div>
             </div>
           </div>
@@ -92,7 +151,7 @@
     </ContentSection>
     <ContentSection id="education_info" :alternate="true">
       <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
-        <action-callout :alternate="true" class="-mt-4" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about using Security Onion in my classroom.', source: 'education_contact_us' })">
+        <action-callout :alternate="true" class="-mt-4" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about using Security Onion in my classroom.', source: 'education_general_contact_us' })">
           <template #info>
             <div class="text-2xl flex justify-center">
               <div>
@@ -113,6 +172,12 @@
 
 <script>
 export default {
+  methods: {
+    handleContactClick (e) {
+      e.preventDefault()
+      this.$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Security Onion Solutions speaking to my classroom.', source: 'education_speaking_contact_us' })
+    }
+  }
 }
 </script>
 
