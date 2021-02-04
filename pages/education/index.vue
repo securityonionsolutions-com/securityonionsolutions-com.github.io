@@ -1,4 +1,5 @@
 <template>
+  <!-- eslint-disable vue/singleline-html-element-content-newline -->
   <div class="xs:px-12">
     <SubHero id="download-before" class="hero">
       <template #header>
@@ -72,7 +73,6 @@
               <div class="flex flex-row space-x-2 ml-2">
                 <div>A:</div>
                 <div class="text-left">
-                  <!-- eslint-disable-next-line vue/singleline-html-element-content-newline -->
                   We offer both free and paid training, <nuxt-link to="/training" class="text-so-blue">click here</nuxt-link> for more information.
                 </div>
               </div>
@@ -112,8 +112,6 @@
                 <div class="text-left">
                   We have excellent documentation available <a href="https://docs.securityonion.net/" class="text-so-blue cursor-pointer hover:underline">here</a>,
                   with its own FAQ <a href="https://docs.securityonion.net/en/2.3/faq.html" class="text-so-blue cursor-pointer hover:underline">here</a>.
-                  <!-- eslint-disable-next-line vue/singleline-html-element-content-newline -->
-
                   For more information about support options, <nuxt-link to="/support" class="text-so-blue cursor-pointer hover:underline">click here</nuxt-link>.
                 </div>
               </div>
