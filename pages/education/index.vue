@@ -24,7 +24,7 @@
         <div class="text-lg text-center w-2/3">
           <p class="mb-4">
             Join the ranks of universities and institutions for higher education around the world
-            that use Security Onion to educate the next generation of cybersecurity professionals.
+            that use Security Onion to educate the next generation of cybersecurity professionals!
           </p>
           <p>
             The Security Onion free and open license is perfectly suited for classroom use.
@@ -47,7 +47,7 @@
               <div class="flex flex-row space-x-2">
                 <div>Q:</div>
                 <div class="text-left">
-                  How do I get someone to talk to my class about Security Onion?
+                  What resources are available to help me learn about Security Onion?
                 </div>
               </div>
             </template>
@@ -55,25 +55,9 @@
               <div class="flex flex-row space-x-2 ml-2">
                 <div>A:</div>
                 <div class="text-left">
-                  <span class="link text-so-blue hover:underline cursor-pointer" @click="handleContactClick">Contact us</span> for more details.
-                </div>
-              </div>
-            </template>
-          </DetailPara>
-          <DetailPara class="md:w-2/3 lg:w-1/2 mb-6">
-            <template #header>
-              <div class="flex flex-row space-x-2">
-                <div>Q:</div>
-                <div class="text-left">
-                  How do I learn to use Security Onion?
-                </div>
-              </div>
-            </template>
-            <template #body>
-              <div class="flex flex-row space-x-2 ml-2">
-                <div>A:</div>
-                <div class="text-left">
-                  We offer both free and paid training, <nuxt-link to="/training" class="text-so-blue">click here</nuxt-link> for more information.
+                  YouTube: <a href="https://securityonion.net/youtube" class="text-so-blue cursor-pointer hover:underline">securityonion.net/youtube</a>
+                  <br>
+                  Official Training: <nuxt-link to="/training" class="text-so-blue cursor-pointer hover:underline">securityonionsolutions.com/training</nuxt-link>
                 </div>
               </div>
             </template>
@@ -92,7 +76,7 @@
                 <div>A:</div>
                 <div class="text-left">
                   Our Essentials course is <span class="font-bold">FREE</span>! For those looking to further their understanding of the Security Onion platform
-                  we do offer academic discounts<span class="font-bold">*</span> on our online training.
+                  we do offer academic discounts<span class="font-bold">*</span> on our on-demand training.
                 </div>
               </div>
             </template>
@@ -117,7 +101,7 @@
               </div>
             </template>
           </DetailPara>
-          <DetailPara class="md:w-2/3 lg:w-1/2">
+          <DetailPara class="md:w-2/3 lg:w-1/2 mb-6">
             <template #header>
               <div class="flex flex-row space-x-2">
                 <div>Q:</div>
@@ -133,6 +117,24 @@
                   You are free to reference our documentation while teaching your course, but please check the
                   <a href="https://docs.securityonion.net/en/2.3/about.html?highlight=license#license" class="text-so-blue cursor-pointer hover:underline">documentation's license</a>
                   for further details.
+                </div>
+              </div>
+            </template>
+          </DetailPara>
+          <DetailPara class="md:w-2/3 lg:w-1/2">
+            <template #header>
+              <div class="flex flex-row space-x-2">
+                <div>Q:</div>
+                <div class="text-left">
+                  How do I get someone to talk to my class about Security Onion?
+                </div>
+              </div>
+            </template>
+            <template #body>
+              <div class="flex flex-row space-x-2 ml-2">
+                <div>A:</div>
+                <div class="text-left">
+                  <span class="link text-so-blue hover:underline cursor-pointer" @click="handleContactClick">Contact us</span> for more details.
                 </div>
               </div>
             </template>
