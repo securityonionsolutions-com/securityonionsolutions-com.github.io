@@ -76,7 +76,7 @@
                 <div>A:</div>
                 <div class="text-left">
                   Our Essentials course is <span class="font-bold">FREE</span>! For those looking to further their understanding of the Security Onion platform
-                  we do offer academic discounts<span class="font-bold">*</span> on our on-demand training.
+                  we do offer academic discounts<span class="font-bold">*</span> on our on-demand training. <span class="link text-so-blue hover:underline cursor-pointer" @click="handleContactClick('discount', $event)">Contact us</span> for more information.
                 </div>
               </div>
             </template>
@@ -115,8 +115,26 @@
                 <div>A:</div>
                 <div class="text-left">
                   You are free to reference our documentation while teaching your course, but please check the
-                  <a href="https://docs.securityonion.net/en/2.3/about.html?highlight=license#license" class="text-so-blue cursor-pointer hover:underline">documentation's license</a>
+                  <a href="https://docs.securityonion.net/en/2.3/about.html#license" class="text-so-blue cursor-pointer hover:underline">documentation's license</a>
                   for further details.
+                </div>
+              </div>
+            </template>
+          </DetailPara>
+          <DetailPara class="md:w-2/3 lg:w-1/2 mb-6">
+            <template #header>
+              <div class="flex flex-row space-x-2">
+                <div>Q:</div>
+                <div class="text-left">
+                  May I use Security Onion Solutions' paid course material as part of my course?
+                </div>
+              </div>
+            </template>
+            <template #body>
+              <div class="flex flex-row space-x-2 ml-2">
+                <div>A:</div>
+                <div class="text-left">
+                  Security Onion Solutions' paid course material is copyrighted and should not be re-used in any way without express written permission.
                 </div>
               </div>
             </template>
@@ -134,7 +152,7 @@
               <div class="flex flex-row space-x-2 ml-2">
                 <div>A:</div>
                 <div class="text-left">
-                  <span class="link text-so-blue hover:underline cursor-pointer" @click="handleContactClick">Contact us</span> for more details.
+                  <span class="link text-so-blue hover:underline cursor-pointer" @click="handleContactClick('talk', $event)">Contact us</span> for more details.
                 </div>
               </div>
             </template>
@@ -174,9 +192,13 @@
 <script>
 export default {
   methods: {
-    handleContactClick (e) {
-      e.preventDefault()
-      this.$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Security Onion Solutions speaking to my classroom.', source: 'education_speaking_contact_us' })
+    handleContactClick (messageType, event) {
+      if (event) { event.preventDefault() }
+      if (messageType === 'discount') {
+        this.$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about academic discounts on official Security Onion training.', source: 'education_discount_contact_us' })
+      } else if (messageType === 'talk') {
+        this.$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Security Onion Solutions speaking to my classroom.', source: 'education_speaking_contact_us' })
+      }
     }
   }
 }
