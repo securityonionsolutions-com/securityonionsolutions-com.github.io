@@ -74,7 +74,7 @@
                   Security Onion 2 in Production <span class="bg-gray-200  text-sm text-blue-500 font-semibold py-1 px-2 rounded-md whitespace-no-wrap">
                     <a href="https://onlinetraining.securityonionsolutions.com/p/security-onion-in-production/">
                       Enroll
-                      <fa icon="external-link-alternate" />
+                      <fa icon="external-link-alt" />
                     </a>
                   </span>
                 </li>
@@ -82,7 +82,7 @@
                   Developing Your Detection Playbook With Security Onion 2 <span class="bg-gray-200 text-sm text-blue-500 font-semibold py-1 px-2 rounded-md whitespace-no-wrap">
                     <a href="https://onlinetraining.securityonionsolutions.com/p/developing-your-detection-playbook-with-security-onion-2/">
                       Enroll
-                      <fa icon="external-link-alternate" />
+                      <fa icon="external-link-alt" />
                     </a>
                   </span>
                 </li>
