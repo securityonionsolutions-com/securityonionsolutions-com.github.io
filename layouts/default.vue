@@ -72,7 +72,7 @@ export default {
           href: '/favicon/onion.svg'
         },
         {
-          rel: 'alternate icon',
+          rel: 'alt icon',
           class: 'so-favicon',
           type: 'image/png',
           href: `/favicon/onion${this.colorSchemeString}.png`
