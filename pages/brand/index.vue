@@ -50,7 +50,7 @@
               The logo must be sized such that it is not diminished relative to other logos appearing on the same media.
             </li>
             <li>
-              Colors of the logos must not be alternated.
+              Colors of the logos must not be altered.
             </li>
             <li>
               Logos may only be presented on all white (#FFFFF) or all black backgrounds (#000000) unless a specific exception is granted via written consent.
