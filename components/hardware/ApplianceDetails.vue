@@ -38,7 +38,7 @@
           >
             <div v-for="specName in Object.keys(appliance.specs)" :key="specName" class="p-2">
               <span class="font-bold" v-text="specName" />
-              <pre class="font-sans" v-text="appliance.specs[specName]" />
+              <pre class="font-sans" v-text="specSplit(appliance.specs[specName])" />
             </div>
           </div>
         </div>
@@ -102,6 +102,9 @@ export default {
   methods: {
     pic (filename) {
       return require(`../../assets/img/appliances/${filename}`)
+    },
+    specSplit (str) {
+      return str.replace(/, /g, '\n')
     }
   }
 }
