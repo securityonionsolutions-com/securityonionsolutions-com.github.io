@@ -17,7 +17,7 @@
           "specs": {
             "Throughput": "500 Mbps †",
             "Available Storage": "8 TB *",
-            "Interfaces": "2 x 1GbE RJ45, 2 x 10/25GbE sfp28, 4 x 1GbE RJ45",
+            "Interfaces": "6 x 1GbE RJ45, 2 x 10/25GbE sfp28",
             "Form Factor": "1U"
           },
           "caveats": {
@@ -39,7 +39,7 @@
             "Throughput": "1 Gbps †",
             "Available Storage": "24 TB *",
             "Storage Type": "RAID 5",
-            "Interfaces": "2 x 1GbE RJ45, 2 x 10/25GbE sfp28, 4 x 1GbE RJ45",
+            "Interfaces": "6 x 1GbE RJ45, 2 x 10/25GbE sfp28",
             "Form Factor": "1U"
           },
           "caveats": {
@@ -83,7 +83,7 @@
             "Throughput": "4 Gbps †",
             "Available Storage": "120 TB *",
             "Storage Type": "RAID 6",
-            "Interfaces": "2 x 1GbE RJ45, 4 x 10GbE sfp+, 2 x 10/25GbE sfp28, 4 x 1GbE RJ45",
+            "Interfaces": "6 x 1GbE RJ45, 4 x 10GbE sfp+, 2 x 10/25GbE sfp28",
             "Form Factor": "2U"
           },
           "caveats": {
@@ -132,7 +132,7 @@
           "img_back": "sos-1u-ethernet-back.jpg",
           "specs": {
             "Available Storage": "15 TB *",
-            "Interfaces": "2 x 10/25GbE sfp28, 4 x 1GbE RJ45, 2 x 1GbE RJ45",
+            "Interfaces": "6 x 1GbE RJ45, 2 x 10/25GbE sfp28",
             "Form Factor": "1U"
           },
           "caveats": {
@@ -157,7 +157,7 @@
           "img_back": "sos-2u-back.jpg",          
           "specs": {
             "Available Storage": "72 TB *",
-            "Interfaces": "4 x 10GbE sfp+, 2 x 10/25GbE sfp28,\n4x1GbE RJ45, 2 x 1GbE RJ45",
+            "Interfaces": "6 x 1GbE RJ45, 4 x 10GbE sfp+, 2 x 10/25GbE sfp28",
             "Form Factor": "2U"
           },
           "caveats": {
@@ -176,7 +176,7 @@
           "img_back": "sos-1u-sfp-back.jpg",
           "specs": {
             "Available Storage": "30 TB *",
-            "Interfaces": "2 x 1/10GbE sfp+, 2 x 10/25GbE sfp28, 2 x 1GbE RJ45",
+            "Interfaces": " 2 x 1GbE RJ45, 2 x 1/10GbE sfp+, 2 x 10/25GbE sfp28",
             "Form Factor": "1U",
             "Notes": "Non-Volatile Memory storage"
           },
