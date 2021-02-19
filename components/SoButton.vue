@@ -3,7 +3,7 @@
     <button
       class="shadow-lg font-bold py-2 px-2 xs:px-4 rounded-full focus:outline-none focus:shadow-outline block"
       type="button"
-      :class="[alt ? 'bg-white text-black hover:bg-gray-100' : 'bg-so-blue text-white hover:bg-blue-700']"
+      :class="[alternate ? 'bg-white text-black hover:bg-gray-100' : 'bg-so-blue text-white hover:bg-blue-700']"
     >
       <div class="mx-6">
         <slot>
@@ -17,7 +17,7 @@
 <script>
 export default {
   props: {
-    alt: {
+    alternate: {
       type: Boolean,
       default: false
     },

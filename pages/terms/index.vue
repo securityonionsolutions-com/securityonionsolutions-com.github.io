@@ -11,7 +11,7 @@
         </div>
       </template>
     </SubHero>
-    <ContentSection id="overview" :alt="true">
+    <ContentSection id="overview" :alternate="true">
       <div class="bg-so-blue text-xl text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
         <div class="text-3xl mt-8 mb-3">
           License

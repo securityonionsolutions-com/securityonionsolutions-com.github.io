@@ -22,7 +22,7 @@
               <slot name="body-bottom-left" />
             </template>
           </detail-para>
-          <so-button class="sm:mx-6 h-12" :alt="alt" :link="link1" @click.native="$emit('button1-click')">
+          <so-button class="sm:mx-6 h-12" :alternate="alternate" :link="link1" @click.native="$emit('button1-click')">
             <slot name="left-button-text" />
           </so-button>
         </div>
@@ -42,7 +42,7 @@
               <slot name="body-bottom-right" />
             </template>
           </detail-para>
-          <so-button class="sm:mx-6 h-12" :alt="alt" :link="link2" @click.native="$emit('button2-click')">
+          <so-button class="sm:mx-6 h-12" :alternate="alternate" :link="link2" @click.native="$emit('button2-click')">
             <slot name="right-button-text" />
           </so-button>
         </div>
@@ -68,7 +68,7 @@ export default {
     SoButton
   },
   props: {
-    alt: {
+    alternate: {
       type: Boolean,
       default: false
     },

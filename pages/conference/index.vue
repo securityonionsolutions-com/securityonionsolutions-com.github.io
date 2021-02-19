@@ -21,7 +21,7 @@
       </template>
     </SubHero>
 
-    <ContentSection id="about" :alt="true">
+    <ContentSection id="about" :alternate="true">
       <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
         <feature-right class="xs:mb-12" :text-margin="true">
           <template #header>
@@ -162,20 +162,20 @@ export default {
 
 <style lang="postcss">
 @media (min-width: 480px) {
-  .alt {
+  .alternate {
     @apply -mx-12;
   }
 }
 
 @media (min-width: 768px) {
-  .alt {
+  .alternate {
     @apply px-32
   }
   .white {
     @apply px-16
   }
 }
-.alt {
+.alternate {
   @apply bg-so-blue text-white px-12;
 }
 

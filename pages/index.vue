@@ -16,7 +16,7 @@
         </div>
       </template>
     </SubHero>
-    <ContentSection id="portfolio" :alt="true">
+    <ContentSection id="portfolio" :alternate="true">
       <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
         <feature-left class="my-12">
           <template #header>
@@ -58,7 +58,7 @@
             </div>
           </template>
         </feature-right>
-        <action-callout :alt="true" class="my-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Security Onion Solutions\' offerings.', source: 'main_general_contact_us' })">
+        <action-callout :alternate="true" class="my-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Security Onion Solutions\' offerings.', source: 'main_general_contact_us' })">
           <template #info>
             <div class="text-2xl flex justify-center">
               <div>
@@ -84,7 +84,7 @@
         </div>
       </div>
     </ContentSection>
-    <ContentSection id="about" :alt="true">
+    <ContentSection id="about" :alternate="true">
       <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
         <section-header class="mb-6">
           About Us
@@ -129,7 +129,7 @@
         </div>
       </div>
     </ContentSection>
-    <ContentSection id="members" :alt="true">
+    <ContentSection id="members" :alternate="true">
       <div class="bg-so-blue text-white xs:-mx-12">
         <section-header class="sm:mx-40 mb-8">
           Our Team

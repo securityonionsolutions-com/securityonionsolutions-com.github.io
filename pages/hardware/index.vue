@@ -22,7 +22,7 @@
         </div>
       </template>
     </SubHero>
-    <ContentSection id="overview" :alt="true">
+    <ContentSection id="overview" :alternate="true">
       <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
         <feature-right class="xs:mb-12" :text-margin="true">
           <template #header>
@@ -69,9 +69,9 @@
         <ApplianceGrid />
       </div>
     </ContentSection>
-    <ContentSection id="hardwarehelp" :alt="true">
+    <ContentSection id="hardwarehelp" :alternate="true">
       <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
-        <action-callout :alt="true" class="my-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Security Onion appliances.', source: 'hw_purchasing_info' })">
+        <action-callout :alternate="true" class="my-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Security Onion appliances.', source: 'hw_purchasing_info' })">
           <template #info>
             <div class="text-2xl flex justify-center">
               <div>

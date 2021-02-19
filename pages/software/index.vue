@@ -28,7 +28,7 @@
         </div>
       </template>
     </SubHero>
-    <ContentSection id="overview" :alt="true">
+    <ContentSection id="overview" :alternate="true">
       <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
         <feature-right class="xs:mb-12" :text-margin="true">
           <template #header>
@@ -130,7 +130,7 @@
         </four-panel-detail>
       </div>
     </ContentSection>
-    <ContentSection id="features" :alt="true">
+    <ContentSection id="features" :alternate="true">
       <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
         <section-header class="mb-6">
           Included Features
@@ -171,9 +171,9 @@
         </div>
       </div>
     </ContentSection>
-    <ContentSection id="hardwarehelp" :alt="true">
+    <ContentSection id="hardwarehelp" :alternate="true">
       <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
-        <action-callout :alt="true" class="my-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Security Onion Solutions\' offerings.', source: 'software_general_contact_us' })">
+        <action-callout :alternate="true" class="my-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Security Onion Solutions\' offerings.', source: 'software_general_contact_us' })">
           <template #info>
             <div class="text-2xl flex justify-center">
               <div>

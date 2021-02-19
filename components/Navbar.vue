@@ -151,7 +151,7 @@ export default {
 
 <style scoped>
 .navbar {
-  height: 85px;
+  height: 70px;
 }
 .nuxt-link-active:not(.dropdown) {
   color: white;
@@ -165,6 +165,9 @@ export default {
   width: 6rem;
 }
 @media (min-width: 1024px) {
+  .navbar {
+    height: 85px;
+  }
   .nav-icon {
     width: 8rem;
   }

@@ -17,7 +17,7 @@
         </div>
       </template>
     </SubHero>
-    <ContentSection id="premium-support" :alt="true">
+    <ContentSection id="premium-support" :alternate="true">
       <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
         <SectionHeader class="mb-6">
           Support and Professional Services
@@ -58,7 +58,7 @@
         <FreeVsPremiumTable />
       </div>
     </ContentSection>
-    <ContentSection id="community-support" :alt="true">
+    <ContentSection id="community-support" :alternate="true">
       <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
         <feature-right class="xs:mb-12" :text-margin="true">
           <template #header>
@@ -78,7 +78,7 @@
             </div>
           </template>
         </feature-right>
-        <action-callout :alt="true" class="my-12" link="https://securityonion.net/discuss">
+        <action-callout :alternate="true" class="my-12" link="https://securityonion.net/discuss">
           <template #info>
             <div class="text-2xl flex justify-center">
               <div>
