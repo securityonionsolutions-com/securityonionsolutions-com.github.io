@@ -20,7 +20,16 @@
           </ActionCallout>
         </div>
         <div class="flex justify-center">
-          <ActionCallout class="xl:mt-4" link="https://docs.securityonion.net/">
+          <ActionCallout class="mt-1 xl:mt-2" link="https://securityonion.net/aws/?ref=_ptnr_web_sos">
+            <template #button-text>
+              Use in Amazon
+              <img
+                src="~assets/img/svg/AWSMP_NewLogo_RGB_REV.svg">
+            </template>
+          </ActionCallout>
+        </div>
+        <div class="flex justify-center">
+          <ActionCallout class="xl:mt-2" link="https://docs.securityonion.net/">
             <template #button-text>
               Documentation
             </template>
