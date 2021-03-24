@@ -24,7 +24,8 @@
             <template #button-text>
               Use in Amazon
               <img
-                src="~assets/img/svg/AWSMP_NewLogo_RGB_REV.svg">
+                src="~assets/img/svg/AWSMP_NewLogo_RGB_REV.svg"
+              >
             </template>
           </ActionCallout>
         </div>
