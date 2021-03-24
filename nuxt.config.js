@@ -40,13 +40,7 @@ export default {
   ** See https://nuxtjs.org/api/configuration-components
   */
   components: [
-    '~/components',
-    '~/components/action_callouts',
-    '~/components/features',
-    '~/components/hardware',
-    '~/components/hero',
-    '~/components/testimonial',
-    '~/components/timeline'
+    { path: '~/components', pathPrefix: false }
   ],
   /*
   ** Nuxt.js dev-modules
