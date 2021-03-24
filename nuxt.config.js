@@ -39,7 +39,15 @@ export default {
   ** Auto import components
   ** See https://nuxtjs.org/api/configuration-components
   */
-  components: true,
+  components: [
+    '~/components',
+    '~/components/action_callouts',
+    '~/components/features',
+    '~/components/hardware',
+    '~/components/hero',
+    '~/components/testimonial',
+    '~/components/timeline'
+  ],
   /*
   ** Nuxt.js dev-modules
   */
