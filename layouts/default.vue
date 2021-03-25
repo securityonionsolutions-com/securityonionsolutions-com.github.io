@@ -1,11 +1,11 @@
 <template>
   <div tabindex="0" @keydown.esc="showHwModal = false; showModal = false;">
     <transition name="modal">
-      <FloatingModal v-if="showModal" :index="1" @close="showModal = false">
+      <LazyFloatingModal v-if="showModal" :index="1" @close="showModal = false">
         <div class="form-wrapper">
-          <ContactForm :text="contactText" :source="eventSource" @close="showModal = false" />
+          <LazyContactForm :text="contactText" :source="eventSource" @close="showModal = false" />
         </div>
-      </FloatingModal>
+      </LazyFloatingModal>
     </transition>
 
     <div class="flex flex-col leading-normal tracking-normal min-h-screen bg-gradient-to-r from-so-blue-dark via-so-blue to-so-blue-dark">
@@ -37,7 +37,18 @@ export default {
     this.$nuxt.$on('show-contact-modal', (event) => {
       this.contactText = event.text
       this.eventSource = event.source
-      this.showModal = true
+      if (window.innerWidth >= 640 || window.innerHeight >= 800) {
+        this.showModal = true
+      } else {
+        this.$router.push({
+          name: 'contact_us',
+          query: {
+            event_source: this.eventSource,
+            text: Buffer.from(this.contactText).toString('base64')
+          }
+        })
+      }
+      console.log('After push')
       this.$gtag('event', 'contact_modal', {
         event_category: 'engagement',
         event_label: `${window.location.pathname}, ${event.source}`
