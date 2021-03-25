@@ -162,6 +162,7 @@ const logos = [
   require('../assets/img/partners/credence-logo.jpg'),
   require('../assets/img/partners/elastic-logo.png'),
   require('../assets/img/partners/fireeye-logo.png'),
+  require('../assets/img/partners/gigamon-logo.png'),
   require('../assets/img/partners/intelligenesis-logo.png'),
   require('../assets/img/partners/profitap-logo.png')
 ]
