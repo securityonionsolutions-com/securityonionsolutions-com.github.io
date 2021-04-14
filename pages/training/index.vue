@@ -32,8 +32,9 @@
         </div>
         <div class="flex justify-center video-container">
           <iframe
-            src="https://www.youtube.com/embed/videoseries?list=PLljFlTO9rB155aYBjHw2InKkSMLuhWpxH"
+            src="https://www.youtube.com/embed/watch?v=5fxVaVO8-L8&list=PLljFlTO9rB155aYBjHw2InKkSMLuhWpxH"
             frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           />
         </div>
