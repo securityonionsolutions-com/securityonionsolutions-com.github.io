@@ -82,7 +82,11 @@
           <div class="flex flex-col items-center content-center">
             <div v-if="conference.playlist" class="mb-10 w-full lg:w-2/3 video-container shadow-xl rounded-md overflow-hidden">
               <iframe
-                :src="conference.playlist.replace('playlist?list=', 'embed/videoseries?list=').replace('watch?v=', 'embed/')"
+                :src="
+                  conference.playlist
+                    .replace('playlist?list=', 'embed/videoseries?list=')
+                    .replace('.com/watch?v=', '.com/embed/')
+                "
                 frameborder="0"
                 allowfullscreen
               />

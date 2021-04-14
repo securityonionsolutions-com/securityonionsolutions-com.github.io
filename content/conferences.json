@@ -26,7 +26,7 @@
       "date": "Oct 18, 2019",
       "location": "Augusta, GA",
       "pictures": "https://blog.securityonion.net/2019/10/pictures-from-security-onion-conference.html",
-      "playlist": "https://www.youtube.com/playlist?list=PLljFlTO9rB16UHGHbo4dTR5qzvJObEBoa",
+      "playlist": "https://www.youtube.com/embed/watch?v=a1Bvv2GQh6o&list=PLljFlTO9rB16UHGHbo4dTR5qzvJObEBoa",
       "events": [
         {
           "speakers": ["Wes Lambert"],
@@ -84,7 +84,7 @@
       "date": "Oct 22, 2018",
       "location": "Augusta, GA",
       "pictures": "https://blog.securityonion.net/2018/10/pictures-from-security-onion-conference.html",
-      "playlist": "https://www.youtube.com/playlist?list=PLljFlTO9rB16NPfCWXTCOrYCrN2FZNDsh",
+      "playlist": "https://www.youtube.com/embed/watch?v=gOcBaY0e5AA&list=PLljFlTO9rB16NPfCWXTCOrYCrN2FZNDsh",
       "events": [
         {
           "speakers": ["Mark Jeanmougin"],
@@ -149,7 +149,7 @@
       "date": "Sep 18, 2017",
       "location": "Augusta, GA",
       "pictures": "https://blog.securityonion.net/2017/09/pictures-from-security-onion-conference.html",
-      "playlist": "https://www.youtube.com/playlist?list=PLljFlTO9rB15jhnSfR6shBEskTgGbta2k",
+      "playlist": "https://www.youtube.com/embed/watch?v=LzFNOuaYc0g&list=PLljFlTO9rB15jhnSfR6shBEskTgGbta2k",
       "events": [
         {
           "speakers": ["Matt Domko"],
@@ -200,7 +200,7 @@
       "date": "Sep 13, 2016",
       "location": "Augusta, GA",
       "pictures": "https://blog.securityonion.net/2016/09/pictures-from-security-onion-conference.html",
-      "playlist": "https://www.youtube.com/playlist?list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe",
+      "playlist": "https://www.youtube.com/embed/watch?v=ViR405l-ggg&list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe",
       "events": [
         {
           "speakers": ["Eric Conrad"],
