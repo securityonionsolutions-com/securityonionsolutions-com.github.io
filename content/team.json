@@ -83,6 +83,12 @@
       "name": "Pete Di Giorgio",
       "role": "Federal Account Executive",
       "image": "pete_di_giorgio.jpg"
+    },
+    {
+      "name": "Mike Bailey",
+      "role": "Senior Engineer",
+      "image": "mike_bailey.jpg",
+      "linkedin": "https://www.linkedin.com/in/michaeljbailey3/"
     }
   ]
 }

@@ -50,10 +50,7 @@
           We offer online training via on-demand training modules.
           They are a cost-effective alternative to instructor led training, but do not include the in-depth, hands-on labs that our instructor led classes offer.
         </div>
-        <div class="text-left text-xl mt-6">
-          We currently provide training for both the new Security Onion 2, and existing Security Onion 16.04.
-        </div>
-        <feature-left class="my-6">
+        <feature-left class="my-12">
           <template #header>
             <div class="text-center xs:text-left">
               Security Onion 2
@@ -100,40 +97,6 @@
             </div>
           </template>
         </feature-left>
-        <feature-right class="my-6">
-          <template #header>
-            <div class="text-center xs:text-left">
-              Security Onion 16.04 (legacy)
-            </div>
-          </template>
-          <template #graphic>
-            <CircleGraphic
-              class="shadow-xl"
-              file-name="training2.jpg"
-              :padding="false"
-              :size="20"
-            />
-          </template>
-          <template #body>
-            <div class="text-left">
-              Courses include:
-              <ul class="list-disc ml-6">
-                <li class="my-1">
-                  Security Onion 101: Introduction to Security Onion
-                </li>
-                <li class="my-1">
-                  Security Onion 201: Best Practices for Production Deployments
-                </li>
-                <li class="my-1">
-                  Security Onion 301: Best Practices for Distributed Deployments
-                </li>
-              </ul>
-            </div>
-            <div class="text-left mt-4">
-              <strong>Best value!</strong> Purchase all three classes in a discounted bundle and get 30 days additional access!
-            </div>
-          </template>
-        </feature-right>
         <action-callout class="my-12" link="https://onlinetraining.securityonionsolutions.com/">
           <template #info>
             <div>
