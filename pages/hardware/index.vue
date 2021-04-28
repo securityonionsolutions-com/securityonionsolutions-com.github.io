@@ -47,6 +47,28 @@
         <feature-left class="my-12">
           <template #header>
             <div class="text-center xs:text-left">
+              Integration with Security Onion
+            </div>
+          </template>
+          <template #graphic>
+            <div>
+              <CircleGraphic
+                class="shadow-xl rounded-md overflow-hidden"
+                :padding="false"
+                :size="20"
+                file-name="grid.jpg"
+              />
+            </div>
+          </template>
+          <template #body>
+            <div class="text-left">
+              Security Onion's SOC interface provides appliance-specific information directly in the user-interface. Use this information to monitor the appliance's health in realtime. Also view the appliance front and rear panels, useful for walking through connectivity discussions with personnel in the data center. Only official Security Onion Solutions appliances are supported with this integration.
+            </div>
+          </template>
+        </feature-left>
+        <feature-right class="xs:mb-12" :text-margin="true">
+          <template #header>
+            <div class="text-center xs:text-left">
               Support Security Onion
             </div>
           </template>
@@ -54,11 +76,11 @@
             <fa icon="hands-helping" size="10x" />
           </template>
           <template #body>
-            <div class="text-left">
+            <div class="text-center xs:text-left">
               Not only will you have confidence that your Security Onion deployment is running on the best-suited hardware, you will also be supporting future development and maintenance of the Security Onion project!
             </div>
           </template>
-        </feature-left>
+        </feature-right>
       </div>
     </ContentSection>
     <ContentSection id="comparison">
