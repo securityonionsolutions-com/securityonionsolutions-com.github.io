@@ -2,12 +2,10 @@
   <div tabindex="0" @keydown.esc="handleModalClose()">
     <transition name="modal">
       <LazyFloatingModal v-if="showModal" :index="1" @close="handleModalClose()">
-        <div v-if="showContactForm" class="form-wrapper">
+        <div v-if="modalType == 'form'" class="form-wrapper">
           <LazyContactForm :text="contactText" :source="eventSource" @close="handleModalClose()" />
         </div>
-        <div v-else-if="showImageZoom">
-          <ImageZoom :name="imageName" :image-type="imageType" />
-        </div>
+        <ImageZoom v-else-if="modalType == 'image'" :name="imageName" :image-type="imageType" />
       </LazyFloatingModal>
     </transition>
 
@@ -27,6 +25,7 @@
 export default {
   data: () => ({
     showModal: false,
+    modalType: '',
     showContactForm: false,
     showImageZoom: false,
     imageName: '',
@@ -45,7 +44,8 @@ export default {
       this.contactText = event.text
       this.eventSource = event.source
       if (window.innerWidth >= 640 || window.innerHeight >= 800) {
-        this.showModal = this.showContactForm = true
+        this.showModal = true
+        this.modalType = 'form'
       } else {
         this.$router.push({
           name: 'contact_us',
@@ -65,7 +65,9 @@ export default {
       this.imageName = event.imageName
       this.imageType = event.imageType
       if (window.innerWidth >= 640 || window.innerHeight >= 800) {
-        this.showModal = this.showImageZoom = true
+        this.showModal = true
+        this.modalType = 'image'
+        console.log(this.modalType)
       } else {
         let fileName
         let folder

@@ -41,7 +41,7 @@ export default {
 
 <style scoped lang="postcss">
 .size {
-  height:15rem;
+  height: 15rem;
   width: 15rem;
   min-width: 15rem
 }

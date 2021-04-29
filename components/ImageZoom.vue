@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded bg-white p-4">
+  <div class="rounded bg-white p-4" :style="sizeVar">
     <img :src="importImage()">
   </div>
 </template>
@@ -9,6 +9,19 @@ export default {
   props: {
     name: { type: String, default: '', required: true },
     imageType: { type: String, default: 'thumbnail', required: true }
+  },
+  data: () => ({
+    wide: true
+  }),
+  computed: {
+    sizeVar () {
+      return { '--size': `${this.wide ? 70 : 40}em` }
+    }
+  },
+  mounted () {
+    const img = new Image()
+    img.src = this.importImage()
+    if (img.width / img.height <= 1) { this.wide = false }
   },
   methods: {
     importImage () {
@@ -35,6 +48,12 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+img {
+  width: var(--size);
+  display: block;
+}
+div {
+  display: inline-block;
+}
 </style>

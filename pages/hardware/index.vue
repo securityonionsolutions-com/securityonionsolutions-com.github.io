@@ -35,7 +35,6 @@
               <Graphic
                 file-name="appliance.jpg"
                 :size="20"
-                :clickable="true"
               />
             </div>
           </template>

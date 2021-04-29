@@ -52,6 +52,7 @@
                 :padding="false"
                 file-name="install.jpg"
                 :size="20"
+                :clickable="true"
               />
             </div>
           </template>
@@ -76,6 +77,7 @@
               file-name="grid_list.jpg"
               :padding="false"
               :size="20"
+              :clickable="true"
             />
           </template>
           <template #body>
@@ -96,6 +98,7 @@
                 :padding="false"
                 file-name="github_sos.jpg"
                 :size="20"
+                :clickable="true"
               />
             </div>
           </template>
