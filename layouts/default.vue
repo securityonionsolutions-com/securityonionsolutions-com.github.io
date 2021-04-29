@@ -55,7 +55,6 @@ export default {
           }
         })
       }
-      console.log('After push')
       this.$gtag('event', 'contact_modal', {
         event_category: 'engagement',
         event_label: `${window.location.pathname}, ${event.source}`

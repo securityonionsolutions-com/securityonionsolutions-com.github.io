@@ -67,7 +67,6 @@ export default {
     },
     handleImageClick (index) {
       const fileName = this.featureArr[index].image.replace('screenshots/', '')
-      console.log(fileName)
       this.$nuxt.$emit('show-image-zoom', { imageName: fileName, imageType: 'screenshot' })
     }
   }
