@@ -15,7 +15,11 @@ export default {
   }),
   computed: {
     sizeVar () {
-      return { '--size': `${this.wide ? 70 : 40}em` }
+      if (window.innerHeight >= 800) {
+        return { '--size': `${this.wide ? 65 : 40}rem` }
+      } else {
+        return { '--size': `${this.wide ? 55 : 35}rem` }
+      }
     }
   },
   mounted () {
