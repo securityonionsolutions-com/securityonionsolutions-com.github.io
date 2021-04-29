@@ -67,7 +67,6 @@ export default {
       if (window.innerWidth >= 640 || window.innerHeight >= 800) {
         this.showModal = true
         this.modalType = 'image'
-        console.log(this.modalType)
       } else {
         let fileName
         let folder
