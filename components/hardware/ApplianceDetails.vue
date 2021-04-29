@@ -17,19 +17,19 @@
             </div>
           </div>
         </client-only>
-        <div class="flex flex-col md:flex-row justify-center items-center text-center border-b border-gray-400 pb-6 xs:mx-12">
+        <div class="flex flex-col md:flex-row justify-center items-center text-center border-b border-gray-400 pb-6 xs:mx-12 mt-4">
           <div v-if="appliance.img_front_thumb" class="justify-items-center">
-            <img class="w-full" :src="pic(appliance.img_front_thumb)">
-            <div class="-mt-5 xs:-mt-10">
-              <a :href="pic(appliance.img_front)" target="_blank">
-                <fa icon="search" /> Zoom In
-              </a>
+            <div
+              class="w-full transform hover:scale-105 transition duration-200 ease-in-out cursor-pointer"
+              @click="handleImageClick('front')"
+            >
+              <img :src="pic(appliance.img_front_thumb)">
             </div>
-            <img class="w-full" :src="pic(appliance.img_back_thumb)">
-            <div class="-mt-5 xs:-mt-10">
-              <a :href="pic(appliance.img_back)" target="_blank">
-                <fa icon="search" /> Zoom In
-              </a>
+            <div
+              class="w-full transform hover:scale-105 transition duration-200 ease-in-out cursor-pointer"
+              @click="handleImageClick('back')"
+            >
+              <img :src="pic(appliance.img_back_thumb)">
             </div>
           </div>
           <div
@@ -105,6 +105,15 @@ export default {
     },
     specSplit (str) {
       return str.replace(/, /g, '\n')
+    },
+    handleImageClick (side) {
+      let fileName
+      if (side === 'front') {
+        fileName = this.appliance.img_front_thumb
+      } else {
+        fileName = this.appliance.img_back_thumb
+      }
+      this.$nuxt.$emit('show-image-zoom', { imageType: 'appliance', imageName: fileName })
     }
   }
 }

@@ -57,7 +57,7 @@
             </div>
           </template>
           <template #graphic>
-            <CircleGraphic
+            <Graphic
               class="shadow-xl"
               :padding="false"
               file-name="training1.jpg"
@@ -119,7 +119,7 @@
         </section-header>
         <feature-right class="xs:mb-12" :text-margin="true">
           <template #graphic>
-            <CircleGraphic
+            <Graphic
               file-name="live.jpg"
               :size="20"
               :padding="false"

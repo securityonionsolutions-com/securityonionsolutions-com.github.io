@@ -1,6 +1,6 @@
 <template>
   <div :style="indexVars" class="modal-mask flex justify-center items-center">
-    <div class="flex opacity-100 modal-wrapper">
+    <div class="flex justify-center opacity-100 modal-wrapper w-3/4">
       <slot />
       <div class="flex justify-start text-2xl -ml-2 -mt-4">
         <fa-layers class="cursor-pointer" @click="$emit('close')">

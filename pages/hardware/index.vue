@@ -32,9 +32,10 @@
           </template>
           <template #graphic>
             <div>
-              <CircleGraphic
+              <Graphic
                 file-name="appliance.jpg"
                 :size="20"
+                :clickable="true"
               />
             </div>
           </template>
@@ -52,11 +53,12 @@
           </template>
           <template #graphic>
             <div>
-              <CircleGraphic
+              <Graphic
                 class="shadow-xl rounded-md overflow-hidden"
                 :padding="false"
                 :size="20"
-                file-name="grid.jpg"
+                file-name="grid-thumb.jpg"
+                :clickable="true"
               />
             </div>
           </template>

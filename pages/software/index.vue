@@ -48,7 +48,7 @@
           </template>
           <template #graphic>
             <div class="shadow-xl rounded-md overflow-hidden">
-              <CircleGraphic
+              <Graphic
                 :padding="false"
                 file-name="install.jpg"
                 :size="20"
@@ -71,7 +71,7 @@
             </div>
           </template>
           <template #graphic>
-            <CircleGraphic
+            <Graphic
               class="shadow-xl rounded-md overflow-hidden"
               file-name="grid_list.jpg"
               :padding="false"
@@ -92,7 +92,7 @@
           </template>
           <template #graphic>
             <div class="shadow-xl rounded-md overflow-hidden">
-              <CircleGraphic
+              <Graphic
                 :padding="false"
                 file-name="github_sos.jpg"
                 :size="20"

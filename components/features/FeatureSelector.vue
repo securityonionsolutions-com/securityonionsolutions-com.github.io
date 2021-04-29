@@ -1,6 +1,22 @@
 <template>
   <div class="flex flex-col lg:flex-row items-center justify-center">
-    <div class="w-full lg:w-3/5 rounded-md overflow-hidden m-8 shadow-xl px-2 xs:px-0">
+    <div
+      class="w-full
+        lg:w-3/5
+        rounded-md
+        overflow-hidden
+        m-8
+        shadow-xl
+        px-2
+        xs:px-0
+        transform
+        hover:scale-105
+        transition
+        duration-200
+        ease-in-out
+        cursor-pointer"
+      @click="handleImageClick(activeFeat)"
+    >
       <img :src="screenshot(activeFeat)">
     </div>
     <div class="flex flex-col items-center lg:w-1/3 lg:mx-4">
@@ -48,6 +64,11 @@ export default {
     screenshot (index) {
       const fileName = this.featureArr[index].image
       return require(`../../assets/img/${fileName}`)
+    },
+    handleImageClick (index) {
+      const fileName = this.featureArr[index].image.replace('screenshots/', '')
+      console.log(fileName)
+      this.$nuxt.$emit('show-image-zoom', { imageName: fileName, imageType: 'screenshot' })
     }
   }
 }
