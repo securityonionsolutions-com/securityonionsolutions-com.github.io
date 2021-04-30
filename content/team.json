@@ -89,6 +89,13 @@
       "role": "Senior Engineer",
       "image": "mike_bailey.jpg",
       "linkedin": "https://www.linkedin.com/in/michaeljbailey3/"
+    },
+    {
+      "name": "Matt Gracie",
+      "role": "Senior Engineer",
+      "image": "matt_gracie.jpg",
+      "linkedin": "https://www.linkedin.com/in/matthew-gracie/",
+      "twitter": "https://twitter.com/InfosecGoon"
     }
   ]
 }

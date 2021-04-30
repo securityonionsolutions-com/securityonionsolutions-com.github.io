@@ -1,10 +1,11 @@
 <template>
-  <div tabindex="0" @keydown.esc="showHwModal = false; showModal = false;">
+  <div tabindex="0" @keydown.esc="handleModalClose()">
     <transition name="modal">
-      <LazyFloatingModal v-if="showModal" :index="1" @close="showModal = false">
-        <div class="form-wrapper">
-          <LazyContactForm :text="contactText" :source="eventSource" @close="showModal = false" />
+      <LazyFloatingModal v-if="showModal" :index="1" @close="handleModalClose()">
+        <div v-if="modalType == 'form'" class="form-wrapper">
+          <LazyContactForm :text="contactText" :source="eventSource" @close="handleModalClose()" />
         </div>
+        <ImageZoom v-else-if="modalType == 'image'" :name="imageName" :image-type="imageType" />
       </LazyFloatingModal>
     </transition>
 
@@ -24,6 +25,11 @@
 export default {
   data: () => ({
     showModal: false,
+    modalType: '',
+    showContactForm: false,
+    showImageZoom: false,
+    imageName: '',
+    imageType: '',
     contactText: '',
     eventSource: '',
     showHwModal: false,
@@ -39,6 +45,7 @@ export default {
       this.eventSource = event.source
       if (window.innerWidth >= 640 || window.innerHeight >= 800) {
         this.showModal = true
+        this.modalType = 'form'
       } else {
         this.$router.push({
           name: 'contact_us',
@@ -48,11 +55,38 @@ export default {
           }
         })
       }
-      console.log('After push')
       this.$gtag('event', 'contact_modal', {
         event_category: 'engagement',
         event_label: `${window.location.pathname}, ${event.source}`
       })
+    })
+
+    this.$nuxt.$on('show-image-zoom', (event) => {
+      this.imageName = event.imageName
+      this.imageType = event.imageType
+      if (window.innerWidth >= 640 || window.innerHeight >= 800) {
+        this.showModal = true
+        this.modalType = 'image'
+      } else {
+        let fileName
+        let folder
+
+        if (event.imageType === 'appliance') {
+          fileName = event.imageName.replace('-thumb', '')
+          folder = 'appliances'
+        } else if (this.imageType === 'fullsize') {
+          fileName = event.imageName.replace('-thumb', '')
+          folder = 'graphics'
+        } else if (this.imageType === 'screenshot') {
+          fileName = event.imageName
+          folder = 'screenshots'
+        } else {
+          fileName = event.imageName
+          folder = 'graphics'
+        }
+
+        window.location.href = require(`../assets/img/${folder}/${fileName}`)
+      }
     })
   },
   mounted () {
@@ -73,6 +107,12 @@ export default {
   methods: {
     setFavicon () {
       window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? this.colorSchemeString = '-dark' : this.colorSchemeString = ''
+    },
+    handleModalClose () {
+      this.showModal = this.showContactForm = this.showImageZoom = false
+    },
+    pic () {
+
     }
   },
   head () {

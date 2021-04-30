@@ -2,7 +2,11 @@
   <div
     class="flex justify-center items-center m-auto size"
     :style="sizeVar"
-    :class="[padding ? 'bg-white rounded-full overflow-hidden' : 'xs:p-0']"
+    :class="[
+      padding ? 'bg-white rounded-full overflow-hidden' : 'xs:p-0',
+      clickable ? 'transform hover:scale-105 transition duration-200 ease-in-out cursor-pointer' : ''
+    ]"
+    @click="handleClick()"
   >
     <img :src="importImage()">
   </div>
@@ -13,7 +17,8 @@ export default {
   props: {
     size: { type: Number, default: 20 },
     padding: { type: Boolean, default: true },
-    fileName: { type: String, default: '', required: true }
+    fileName: { type: String, default: '', required: true },
+    clickable: { type: Boolean, default: false }
   },
   computed: {
     sizeVar () {
@@ -23,6 +28,12 @@ export default {
   methods: {
     importImage () {
       return require(`../assets/img/graphics/${this.fileName}`)
+    },
+    handleClick () {
+      if (this.clickable) {
+        const type = this.fileName.includes('-thumb') ? 'fullsize' : 'thumbnail'
+        this.$nuxt.$emit('show-image-zoom', { imageName: this.fileName, imageType: type })
+      }
     }
   }
 }
@@ -30,7 +41,7 @@ export default {
 
 <style scoped lang="postcss">
 .size {
-  height:15rem;
+  height: 15rem;
   width: 15rem;
   min-width: 15rem
 }

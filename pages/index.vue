@@ -25,7 +25,7 @@
             </div>
           </template>
           <template #graphic>
-            <CircleGraphic
+            <Graphic
               class="shadow-xl rounded-md overflow-hidden"
               file-name="soc.jpg"
               :padding="false"
@@ -45,7 +45,7 @@
             </div>
           </template>
           <template #graphic>
-            <CircleGraphic
+            <Graphic
               class="shadow-xl rounded-md overflow-hidden"
               file-name="course.jpg"
               :padding="false"
@@ -92,7 +92,7 @@
         <feature-right class="xs:mb-12" :text-margin="true">
           <template #graphic>
             <div class="rounded-full shadow-lg overflow-hidden">
-              <CircleGraphic
+              <Graphic
                 :padding="false"
                 file-name="mike-speaking.jpg"
                 :size="20"

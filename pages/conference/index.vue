@@ -31,7 +31,7 @@
           </template>
           <template #graphic>
             <div class="shadow-xl rounded-full overflow-hidden">
-              <CircleGraphic
+              <Graphic
                 :padding="false"
                 file-name="instructor.jpg"
                 :size="20"
