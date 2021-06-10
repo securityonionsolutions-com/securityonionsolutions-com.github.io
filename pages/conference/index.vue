@@ -15,12 +15,11 @@
             </div>
           </div>
         </div>
-        <div class="pt-3">
-          Security Onion Conference 2020 has concluded. Check below for recordings, pictures, and more from past conferences!
+        <div class="py-4 text-md mb-1">
+          Mark your calendar! This year's Security Onion Conference is currently scheduled to be held in person! Registration will open August 2, <br> full schedule below.
         </div>
       </template>
     </SubHero>
-
     <ContentSection id="about" :alternate="true">
       <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
         <feature-right class="xs:mb-12" :text-margin="true">
@@ -50,9 +49,29 @@
       </div>
     </ContentSection>
 
+    <ContentSection id="schedule">
+      <div class="xs:-mx-12 px-6 xs:px-12 lg:px-32">
+        <SectionHeader class="mb-8">
+          <div>
+            2021 Conference Schedule
+          </div>
+        </SectionHeader>
+        <div class="flex flex-col content-center justify-center text-center">
+          <div v-for="(value, key, index) in upcoming.schedule" :key="index" :class="{ 'mb-5': index != upcoming.schedule.length }">
+            <div class="font-bold text-lg xs:text-2xl mb-1">
+              {{ key }}
+            </div>
+            <div class="text-base xs:text-lg">
+              {{ value }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </ContentSection>
+
     <ContentSection id="past">
-      <SectionHeader class="mb-10">
-        <div class="text-lg xs:text-5xl">
+      <SectionHeader class="mb-10 -mt-16">
+        <div class="text-3xl xs:text-5xl">
           Past Conferences
         </div>
       </SectionHeader>

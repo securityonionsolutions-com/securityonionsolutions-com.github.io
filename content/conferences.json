@@ -1,8 +1,17 @@
 {
   "upcoming": {
-    "year": 2020,
-    "date": "Oct 16, 2020",
-    "location": "Online"
+    "year": 2021,
+    "date": "Oct 1, 2021",
+    "location": "Augusta, GA",
+    "schedule": {
+      "June 9": "CFP opens",
+      "July 15": "CFP closes",
+      "July 28": "Speakers selected and notified",
+      "August 2": "Registration Opens",
+      "September 27 - September 30": "Security Onion 4-day training in Augusta",
+      "October 1": "Security Onion Conference",
+      "October 2": "BSidesAugusta"
+    }
   },
   "past": [
     {
