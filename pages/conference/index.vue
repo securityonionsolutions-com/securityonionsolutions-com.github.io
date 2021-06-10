@@ -16,7 +16,7 @@
           </div>
         </div>
         <div class="py-4 text-md mb-1">
-          Mark your calendar! This year's Security Onion Conference is currently scheduled to be held in person! Registration will open August 2, <br> full schedule below.
+          Mark your calendar! This year's Security Onion Conference is currently scheduled to be held in person! Registration will open August 2, <br> full schedule and CFP below.
         </div>
       </template>
     </SubHero>
@@ -51,26 +51,62 @@
 
     <ContentSection id="schedule">
       <div class="xs:-mx-12 px-6 xs:px-12 lg:px-32">
-        <SectionHeader class="mb-8">
-          <div>
-            2021 Conference Schedule
-          </div>
+        <SectionHeader class="mb-10 lg:mb-20">
+          2021 Security Onion Conference
         </SectionHeader>
-        <div class="flex flex-col content-center justify-center text-center">
-          <div v-for="(value, key, index) in upcoming.schedule" :key="index" :class="{ 'mb-5': index != upcoming.schedule.length }">
-            <div class="font-bold text-lg xs:text-2xl mb-1">
-              {{ key }}
+        <div class="flex flex-col lg:flex-row content-center justify-center lg:space-x-32">
+          <div class="px-12 lg:px-0 lg:w-1/2 flex flex-col items-center mb-20 lg:mb-0">
+            <div class="font-bold text-2xl xs:text-3xl mb-10">
+              CFP
             </div>
-            <div class="text-base xs:text-lg">
-              {{ value }}
+            <div class="text-lg xs:text-xl mb-10">
+              Want to speak at Security Onion Conference? We want to hear from you!
+              <br><br>
+              How are you...
+              <br>
+              <div style="margin-left: 2em">
+                ...using Security Onion to find evil?
+                <br>
+                ...handling lots of traffic using Security Onion?
+                <br>
+                ...consuming host telemetry with Security Onion?
+                <br>
+                ...integrating Security Onion with other technologies?
+                <br>
+                ...automating common tasks with your own scripts?
+                <br>
+                ...using Security Onion in a unique way?
+              </div>
+              <br>
+              Each talk should be 30 minutes with an additional 10 minutes for questions.
+            </div>
+            <so-button
+              :link="'https://securityonion.net/cfp'"
+            >
+              Submit your talk here!
+            </so-button>
+          </div>
+          <div class="flex flex-col content-center justify-center text-center">
+            <div class="font-bold text-2xl xs:text-3xl mb-10">
+              Schedule
+            </div>
+            <div v-for="(value, key, index) in upcoming.schedule" :key="index" :class="{ 'mb-5': index != upcoming.schedule.length }">
+              <div class="font-bold text-lg xs:text-xl mb-1">
+                {{ key }}
+              </div>
+              <div class="text-base xs:text-md">
+                {{ value }}
+              </div>
             </div>
           </div>
         </div>
       </div>
     </ContentSection>
 
+    <ContentSection id="cfp" :alternate="true" />
+
     <ContentSection id="past">
-      <SectionHeader class="mb-10 -mt-16">
+      <SectionHeader class="mb-10">
         <div class="text-3xl xs:text-5xl">
           Past Conferences
         </div>
@@ -140,7 +176,9 @@
 </template>
 
 <script>
+import SoButton from '~/components/SoButton.vue'
 export default {
+  components: { SoButton },
   data: () => ({
     links: [{ name: 'About', id: 'about' }, { name: 'Past Conferences', id: 'past' }],
     conferences: require('@/content/conferences.json').past,
@@ -222,5 +260,9 @@ export default {
 }
 .hero-conference {
   background: right bottom no-repeat url(~assets/img/graphics/conference.jpg);
+}
+
+#cfp div div {
+  line-height: 2em;
 }
 </style>

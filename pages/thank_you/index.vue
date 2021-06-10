@@ -5,7 +5,7 @@
         &lt; Back to home
       </nuxt-link>
     </div>
-    <div class="flex flex-col justify-center align-center flex-grow xs:h-auto height-xs">
+    <div class="flex flex-col justify-center items-center flex-grow xs:h-auto height-xs">
       <img src="@/assets/img/icons/so-onion.svg" class="h-20 mb-4">
       <DetailPara :align-center="true">
         <template #header>
@@ -14,7 +14,7 @@
           </div>
         </template>
         <template #body>
-          <div class="flex flex-col align-center">
+          <div class="flex flex-col items-center">
             <div class="text-sm xs:text-lg">
               We'll get back to you shortly.
             </div>
