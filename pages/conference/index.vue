@@ -15,8 +15,10 @@
             </div>
           </div>
         </div>
-        <div class="py-4 text-md mb-1">
-          Mark your calendar! This year's Security Onion Conference is currently scheduled to be held in person! Registration will open August 2, <br> full schedule and CFP below.
+        <div class="py-4 -px-4 text-base">
+          Mark your calendar! This year's Security Onion Conference is currently scheduled to be held in person! Registration will open August 2 <br> at Noon Eastern Time. CFP is open now!
+          <br><br>
+          Find the CFP submission link and current schedule below.
         </div>
       </template>
     </SubHero>
@@ -180,7 +182,7 @@ import SoButton from '~/components/SoButton.vue'
 export default {
   components: { SoButton },
   data: () => ({
-    links: [{ name: 'About', id: 'about' }, { name: 'Past Conferences', id: 'past' }],
+    links: [{ name: 'Upcoming Schedule', id: 'schedule' }, { name: 'About', id: 'about' }, { name: 'Past Conferences', id: 'past' }],
     conferences: require('@/content/conferences.json').past,
     upcoming: require('@/content/conferences.json').upcoming,
     pictures: {},
