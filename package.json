@@ -21,9 +21,9 @@
     "@nuxtjs/recaptcha": "^0.6.2",
     "hooper": "^0.3.4",
     "is-svg": "^4.2.2",
-    "nuxt": "^2.15.4",
-    "nuxt-fontawesome": "^0.4.0",
     "vue-360": "^0.1.6",
+    "nuxt": "^2.15.6",
+    "nuxt-fontawesome": "^0.4.0",
     "vue-scrollto": "^2.18.2"
   },
   "devDependencies": {
