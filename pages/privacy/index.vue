@@ -28,7 +28,7 @@
         <p class="mt-4">
         Both the non-personally identifiable and personally identifiable information are together referred to as 'collected information' in the remainder of this privacy policy.
         <div class="text-3xl mt-8 mb-3">
-        How We Use This Collected Information
+        Usage
         </div>
         We may use the collected information to improve our products and websites and to help us provide a better user experience. This information, when combined with the information of our other users, in the aggregate, will allow us to analyze product and service usage patterns.
         <p class="mt-4">
