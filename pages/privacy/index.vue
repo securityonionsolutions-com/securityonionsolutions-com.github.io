@@ -46,7 +46,7 @@
         <div class="text-3xl mt-8 mb-3">
         Cookies
         </div>
-        Our products or services may use "cookies" to store collected information onto your computer. This collected information may contain both non-personally identifiable information and personally identifiable information. For example, this information could include your email address, preferences, and other information that our software needs to provide an improved user experience.
+        Our products or services may use "cookies" to store collected information onto your computer. This collected information may contain both non-personally identifiable information and personally identifiable information. For example, this information could include your email address, preferences, and other information that our products and services need to provide an improved user experience.
         <p class="mt-4">
         Popular web browsers, such as Chrome, Edge, Safar, and Firefox provide a method for removing cookies from your computer.
         <div class="text-3xl mt-8 mb-3">
