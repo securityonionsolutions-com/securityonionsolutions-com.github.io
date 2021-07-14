@@ -62,7 +62,7 @@
         <div class="text-3xl mt-8 mb-3">
         Contact Us
         </div>
-        If you have any questions about this policy, the practices of this site, or your dealings with this website, please <a href="javascript:$nuxt.$emit('show-contact-modal', {text: '', source: 'footer_icon'})">contact us</a>.
+        If you have any questions about this policy, the practices of this site, or your dealings with this website, please <a style="text-decoration: underline" href="javascript:$nuxt.$emit('show-contact-modal', {text: '', source: 'footer_icon'})">contact us</a>.
       </div>
     </ContentSection>
   </div>
