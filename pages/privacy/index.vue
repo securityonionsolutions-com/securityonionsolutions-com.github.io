@@ -30,7 +30,7 @@
         <div class="text-3xl mt-8 mb-3">
         Usage
         </div>
-        We may use the collected information to improve our products and websites and to help us provide a better user experience. This information, when combined with the information of our other users, in the aggregate, will allow us to analyze product and service usage patterns.
+        We use the collected information to improve our products and websites and to help us provide a better user experience. This information, when combined with the information of our other users, in the aggregate, will allow us to analyze product and service usage patterns.
         <p class="mt-4">
         We may use the collected information to contact you. This could occur for many reasons, such as when we respond to your product or website inquiry. This could also occur when we need to notify you about product changes, system outages, or security-related events that we believe may be of interest to you.
         <div class="text-3xl mt-8 mb-3">
@@ -40,23 +40,29 @@
         <p class="mt-4">
         We may transfer this collected information if one or more of our business units is acquired by, sold to, or merged with another company. However, that company must also protect this collected information in a manner that is consistent with this Privacy Policy.
         <p class="mt-4">
-        We will not transfer or disclose your personally-identifiable to other companies for their marketing or other business ventures, except as when noted otherwise in this Privacy Policy.
+        We will not transfer or disclose your personally identifiable information to other companies for their marketing or other business ventures, except as when noted otherwise in this Privacy Policy.
         <p class="mt-4">
-        While we will take appropriate measures at preventing unwanted disclosure of this collected information, we cannot assure you that this collected information will never be disclosed in such a way that this Privacy Policy is violated.
+        We take appropriate measures at preventing unwanted disclosure of this collected information.
         <div class="text-3xl mt-8 mb-3">
         Cookies
         </div>
-        Our products or services may use "cookies" to store collected information onto your computer. This collected information may contain both non-personally identifiable information and personally identifiable information. For example, this information could include your email address, preferences, and other information that our products and services need to provide an improved user experience.
+        Our products and services use "cookies" to store collected information onto your computer. This collected information may contain both non-personally identifiable information and personally identifiable information. For example, this information could include your email address, preferences, and other information that our products and services need to provide an improved user experience.
         <p class="mt-4">
-        Popular web browsers, such as Chrome, Edge, Safari, and Firefox provide a method for removing cookies from your computer.
+        You can configure your browser to accept all cookies, reject all cookies, or notify you when a cookie is set. This site provides instructions for adjusting cookie preferences for common browsers:
+        <a href="https://www.aboutcookies.org/">How to control cookies</a>
+        If your browser is not listed on the site above, check your browser's "Help" menu to learn how to change your cookie preferences.
         <div class="text-3xl mt-8 mb-3">
         Third-Party Sites
         </div>
-        Our products or services may contain links to third-party services. For example, third-party links may show up in your web browser and appear to be part of our website, however, they are not ours and the content provided by those links do not originate from our servers. These third-party services may collect information about you, may store cookies on your computer, or may use other methods to collect and/or store information about you. These third-party services are not covered by our Privacy Policy.
+        Our products or services contain links to third-party services. For example, third-party links can show up in your web browser and appear to be part of our website, however, they are not ours and the content provided by those links do not originate from our servers. When you transition to third-party websites, this privacy policy no longer applies.
         <div class="text-3xl mt-8 mb-3">
         Changes to this Privacy Policy
         </div>
-        We reserve the right to modify this Privacy Policy at any time.
+        We may update our privacy policy from time to time. We will post the updated version in this section of the website.
+        <div class="text-3xl mt-8 mb-3">
+        Contact Us
+        </div>
+        If you have any questions about this policy, the practices of this site, or your dealings with this website, please <a href="javascript:$nuxt.$emit('show-contact-modal', {text: '', source: 'footer_icon'})">contact us</a>.
       </div>
     </ContentSection>
   </div>
