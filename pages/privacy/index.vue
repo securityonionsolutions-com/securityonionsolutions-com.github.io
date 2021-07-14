@@ -49,7 +49,9 @@
         Our products and services use "cookies" to store collected information onto your computer. This collected information may contain both non-personally identifiable information and personally identifiable information. For example, this information could include your email address, preferences, and other information that our products and services need to provide an improved user experience.
         <p class="mt-4">
         You can configure your browser to accept all cookies, reject all cookies, or notify you when a cookie is set. This site provides instructions for adjusting cookie preferences for common browsers:
+        <p class="mt-4">
         <a href="https://www.aboutcookies.org/">How to control cookies</a>
+        <p class="mt-4">
         If your browser is not listed on the site above, check your browser's "Help" menu to learn how to change your cookie preferences.
         <div class="text-3xl mt-8 mb-3">
         Third-Party Sites
@@ -62,7 +64,7 @@
         <div class="text-3xl mt-8 mb-3">
         Contact Us
         </div>
-        If you have any questions about this policy, the practices of this site, or your dealings with this website, please <a style="text-decoration: underline" href="javascript:$nuxt.$emit('show-contact-modal', {text: '', source: 'footer_icon'})">contact us</a>.
+        If you have any questions about this policy, the practices of this site, or your dealings with this website, please <a href="javascript:$nuxt.$emit('show-contact-modal', {text: '', source: 'footer_icon'})">contact us</a>.
       </div>
     </ContentSection>
   </div>
@@ -82,5 +84,8 @@ export default {
 <style scoped>
 .hero-software {
   background: right bottom no-repeat url(~assets/img/graphics/terms.jpg);
+}
+a {
+  text-decoration: underline;
 }
 </style>
