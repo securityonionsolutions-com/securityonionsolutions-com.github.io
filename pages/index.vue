@@ -101,7 +101,7 @@
           </template>
           <template #body>
             <div class="text-center xs:text-left">
-              Security Onion Solutions, LLC is the creator and maintainer of Security Onion, a free and open source platform for threat hunting, network security monitoring, and log management. Security Onion includes best-of-breed open source tools such as Suricata, Zeek, Wazuh, the Elastic Stack, among many others.
+              Security Onion Solutions, LLC is the creator and maintainer of Security Onion, a free and open platform for threat hunting, network security monitoring, and log management. Security Onion includes best-of-breed free and open tools including Suricata, Zeek, Wazuh, the Elastic Stack and many others.
             </div>
             <div class="text-center xs:text-left mt-4">
               We created and maintain Security Onion, so we know it better than anybody else.

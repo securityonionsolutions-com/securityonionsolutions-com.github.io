@@ -58,7 +58,7 @@
           </template>
           <template #body>
             <div class="text-center xs:text-left">
-              Security Onion is a free and open source Linux distribution for threat hunting, enterprise security monitoring, and log management. The easy-to-use Setup wizard allows you to build an army of distributed sensors for your enterprise in minutes!
+              Security Onion is a free and open Linux distribution for threat hunting, enterprise security monitoring, and log management. The easy-to-use Setup wizard allows you to build an army of distributed sensors for your enterprise in minutes!
             </div>
             <div class="text-center xs:text-left mt-4">
               Security Onion includes Elasticsearch, Logstash, Kibana, Suricata, Zeek (formerly known as Bro), Wazuh, Stenographer, TheHive, Cortex, CyberChef, NetworkMiner, and many other security tools.
@@ -89,7 +89,7 @@
         <feature-right class="xs:mb-12" :text-margin="true">
           <template #header>
             <div class="text-center xs:text-left">
-              Open Source Community
+              Open Community
             </div>
           </template>
           <template #graphic>
@@ -104,7 +104,7 @@
           </template>
           <template #body>
             <div class="text-center xs:text-left">
-              Security Onion and the tools we integrate are all open source, written by members of the cyber security community.
+              Security Onion and the tools we integrate are all free and open, written by members of the cyber security community.
             </div>
           </template>
         </feature-right>

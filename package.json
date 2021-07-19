@@ -21,9 +21,9 @@
     "@nuxtjs/recaptcha": "^0.6.2",
     "hooper": "^0.3.4",
     "is-svg": "^4.2.2",
-    "vue-360": "^0.1.6",
-    "nuxt": "^2.15.6",
+    "nuxt": "^2.15.7",
     "nuxt-fontawesome": "^0.4.0",
+    "vue-360": "^0.1.6",
     "vue-scrollto": "^2.18.2"
   },
   "devDependencies": {
@@ -33,9 +33,9 @@
     "@nuxtjs/tailwindcss": "^2.1.0",
     "axios": "^0.21.1",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.25.0",
+    "eslint": "^7.31.0",
     "eslint-plugin-nuxt": "^1.0.0",
-    "luxon": "^1.26.0",
+    "luxon": "^1.28.0",
     "tailwindcss": "^1.7.0"
   }
 }
