@@ -1,5 +1,5 @@
 /*!
-  * vue-router v3.5.1
+  * vue-router v3.5.2
   * (c) 2021 Evan You
   * @license MIT
   */
@@ -9,6 +9,13 @@
  * (c) 2014-2021 Evan You
  * Released under the MIT License.
  */
+
+
+/**
+  * Hopper 0.3.4
+  * (c) 2019
+    * @license MIT
+    */
 
 
 /*!
@@ -54,10 +61,3 @@
  * Licensed under the MIT license */
 
 /*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
-
-
-/**
-  * Hopper 0.3.4
-  * (c) 2019
-    * @license MIT
-    */
