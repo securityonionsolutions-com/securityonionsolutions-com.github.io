@@ -6,35 +6,27 @@
         Security Onion 2
       </template>
       <template #body>
-        <div class="flex justify-center">
-          <div class="text-2xl">
-            Latest version:
-            <span class="font-light">{{ soVersion }}</span>
+        <div class="flex flex-col flex-grow items-center">
+          <div class="flex flex-col items-center">
+            <div class="text-2xl">
+              Latest version:
+              <span class="font-light">{{ soVersion }}</span>
+            </div>
           </div>
-        </div>
-        <div class="flex justify-center">
-          <ActionCallout class="mt-1 xl:mt-4" link="https://github.com/Security-Onion-Solutions/securityonion/blob/master/VERIFY_ISO.md">
-            <template #button-text>
-              Download Now
-            </template>
-          </ActionCallout>
-        </div>
-        <div class="flex justify-center">
-          <ActionCallout class="mt-1 xl:mt-2" link="https://securityonion.net/aws/?ref=_ptnr_web_sos">
-            <template #button-text>
-              Use in Amazon
-              <img
-                src="~assets/img/svg/AWSMP_NewLogo_RGB_REV.svg"
-              >
-            </template>
-          </ActionCallout>
-        </div>
-        <div class="flex justify-center">
-          <ActionCallout class="xl:mt-2" link="https://docs.securityonion.net/">
-            <template #button-text>
-              Documentation
-            </template>
-          </ActionCallout>
+          <so-button class="mt-1 xl:mt-4" link="https://github.com/Security-Onion-Solutions/securityonion/blob/master/VERIFY_ISO.md">
+            Download Now
+          </so-button>
+          <div class="flex flex-col items-center lg:flex-row space-y-1 lg:space-x-3 lg:space-y-0 mt-1 xl:mt-2">
+            <so-button link="https://securityonion.net/aws/?ref=_ptnr_web_sos">
+              Use in AWS
+            </so-button>
+            <so-button link="https://securityonion.net/azure/?ref=_ptnr_web_sos">
+              Use in Azure
+            </so-button>
+          </div>
+          <so-button class="mt-1 xl:mt-2" link="https://docs.securityonion.net/">
+            Documentation
+          </so-button>
         </div>
       </template>
     </SubHero>
