@@ -98,10 +98,7 @@
               </div>
               <ul class="list-disc list-inside pl-1 -mr-1">
                 <li>
-                  Incident Response
-                </li>
-                <li>
-                  Government/Military Applications
+                  Government, Military, or Commercial Applications
                 </li>
                 <li>
                   Tactical Edge Enterprise Security Monitoring
