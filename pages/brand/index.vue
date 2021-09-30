@@ -12,7 +12,7 @@
       </template>
     </SubHero>
     <ContentSection id="overview" :alternate="true">
-      <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
+      <div class="px-6 xs:px-12 lg:px-32">
         <two-panel-detail class="mx-3 xs:mx-24">
           <template #section-heading>
             Overview
@@ -106,7 +106,7 @@
       </div>
     </ContentSection>
     <ContentSection id="contact" :alternate="true">
-      <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
+      <div class="px-6 xs:px-12 lg:px-32">
         <action-callout :alternate="true" class="my-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about branding authorization.', source: 'branding_contact_us' })">
           <template #info>
             <div class="text-2xl flex justify-center">

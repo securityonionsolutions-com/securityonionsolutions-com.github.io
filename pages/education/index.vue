@@ -17,7 +17,7 @@
       </template>
     </SubHero>
     <ContentSection id="overview" :alternate="true">
-      <div class="flex flex-col items-center bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32 pb-4">
+      <div class="flex flex-col items-center px-6 xs:px-12 lg:px-32 pb-4">
         <SectionHeader class="mb-6">
           Using Security Onion in the Classroom
         </SectionHeader>
@@ -169,7 +169,7 @@
       </div>
     </ContentSection>
     <ContentSection id="education_info" :alternate="true">
-      <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
+      <div class="px-6 xs:px-12 lg:px-32">
         <action-callout :alternate="true" class="-mt-4" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about using Security Onion in my classroom.', source: 'education_general_contact_us' })">
           <template #info>
             <div class="text-2xl flex justify-center">

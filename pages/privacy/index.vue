@@ -12,7 +12,7 @@
       </template>
     </SubHero>
     <ContentSection id="overview" :alternate="true">
-      <div class="bg-so-blue text-xl text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
+      <div class="text-xl px-6 xs:px-12 lg:px-32">
         <div class="text-3xl mt-8 mb-3">
           Overview
         </div>
@@ -93,7 +93,7 @@ export default {
 
 <style scoped>
 .hero-software {
-  background: right bottom no-repeat url(~assets/img/graphics/terms.jpg);
+  background: right bottom no-repeat url(~assets/img/graphics/chevrons.jpg);
 }
 a {
   text-decoration: underline;

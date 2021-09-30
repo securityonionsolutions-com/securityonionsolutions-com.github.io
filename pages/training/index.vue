@@ -18,7 +18,7 @@
     </SubHero>
 
     <ContentSection id="free-training" :alternate="true">
-      <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
+      <div class="px-6 xs:px-12 lg:px-32">
         <section-header class="mb-6">
           Free On-Demand
         </section-header>
@@ -99,7 +99,7 @@
         </feature-left>
         <action-callout class="my-12" link="https://onlinetraining.securityonionsolutions.com/">
           <template #info>
-            <div>
+            <div class="text-center md:text-left">
               Ready to check out the course details?
             </div>
           </template>
@@ -113,7 +113,7 @@
     </ContentSection>
 
     <ContentSection id="instructor-training" :alternate="true">
-      <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
+      <div class="px-6 xs:px-12 lg:px-32">
         <section-header class="mb-6">
           Instructor Led Training
         </section-header>
@@ -169,7 +169,7 @@
     </ContentSection>
 
     <ContentSection id="testimonials" :alternate="true">
-      <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
+      <div class="px-6 xs:px-12 lg:px-32">
         <SectionHeader class="mb-6">
           Student Feedback
         </SectionHeader>

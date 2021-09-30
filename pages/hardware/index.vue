@@ -23,7 +23,7 @@
       </template>
     </SubHero>
     <ContentSection id="overview" :alternate="true">
-      <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
+      <div class="px-6 xs:px-12 lg:px-32">
         <feature-right class="xs:mb-12" :text-margin="true">
           <template #header>
             <div class="text-center xs:text-left">
@@ -93,10 +93,10 @@
       </div>
     </ContentSection>
     <ContentSection id="hardwarehelp" :alternate="true">
-      <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
+      <div class="px-6 xs:px-12 lg:px-32">
         <action-callout :alternate="true" class="my-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Security Onion appliances.', source: 'hw_purchasing_info' })">
           <template #info>
-            <div class="text-2xl flex justify-center">
+            <div class="text-3xl flex justify-center text-center md:text-left">
               <div>
                 Ready to purchase, or need more information?
               </div>

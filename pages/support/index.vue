@@ -18,7 +18,7 @@
       </template>
     </SubHero>
     <ContentSection id="premium-support" :alternate="true">
-      <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
+      <div class="px-6 xs:px-12 lg:px-32">
         <SectionHeader class="mb-6">
           Support and Professional Services
         </SectionHeader>
@@ -59,7 +59,7 @@
       </div>
     </ContentSection>
     <ContentSection id="community-support" :alternate="true">
-      <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
+      <div class="px-6 xs:px-12 lg:px-32">
         <feature-right class="xs:mb-12" :text-margin="true">
           <template #header>
             <div class="text-center xs:text-left">
@@ -78,9 +78,9 @@
             </div>
           </template>
         </feature-right>
-        <action-callout :alternate="true" class="my-12" link="https://securityonion.net/discuss">
+        <action-callout :alternate="true" class="mt-16 mb-12 md:my-12" link="https://securityonion.net/discuss">
           <template #info>
-            <div class="text-2xl flex justify-center">
+            <div class="text-2xl flex justify-center text-center md:text-left">
               <div>
                 Not ready for premium support? Take a look at the Security Onion community support content and discussions.
               </div>
