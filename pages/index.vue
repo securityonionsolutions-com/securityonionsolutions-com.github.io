@@ -17,7 +17,7 @@
       </template>
     </SubHero>
     <ContentSection id="portfolio" :alternate="true">
-      <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
+      <div class="px-6 xs:px-12 lg:px-32">
         <feature-left class="my-12">
           <template #header>
             <div class="text-center xs:text-left">
@@ -85,7 +85,7 @@
       </div>
     </ContentSection>
     <ContentSection id="about" :alternate="true">
-      <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
+      <div class="px-6 xs:px-12 lg:px-32">
         <section-header class="mb-6">
           About Us
         </section-header>
@@ -130,7 +130,7 @@
       </div>
     </ContentSection>
     <ContentSection id="members" :alternate="true">
-      <div class="bg-so-blue text-white xs:-mx-12">
+      <div>
         <section-header class="sm:mx-40 mb-8">
           Our Team
         </section-header>

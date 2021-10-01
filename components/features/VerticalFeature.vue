@@ -1,16 +1,16 @@
 <template>
-  <div class="flex flex-col items-center text-center">
+  <div class="h-full text-center">
     <div
       :class="[alternate ? 'rounded bg-white text-black shadow-lg p-4' : '']"
-      class="flex flex-col items-center"
+      class="flex flex-col h-full items-center content-between"
     >
-      <div class="text-2xl font-semibold mb-1">
+      <div class="text-2xl font-semibold mb-3">
         <slot name="title" />
       </div>
       <slot name="graphic">
-        <graphic class="w-full h-48 mb-8" />
+        <graphic class="w-full h-48" />
       </slot>
-      <div class="text-m w-5/6">
+      <div class="flex items-center text-m w-5/6 flex-grow">
         <slot name="body" />
       </div>
     </div>

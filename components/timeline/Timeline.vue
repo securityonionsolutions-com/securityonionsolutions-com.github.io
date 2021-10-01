@@ -48,7 +48,7 @@ export default {
       { year: '2016', event: 'Company expansion', important: false },
       { year: '2018', event: 'Custom hardware', important: true },
       { year: '2019', event: 'Five new members', important: true },
-      { year: '2020', event: 'Over 1 million downloads!' }
+      { year: '2021', event: 'Over 2 million downloads!' }
     ],
     focusedEventIndex: 0
   }),

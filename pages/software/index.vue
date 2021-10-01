@@ -6,40 +6,32 @@
         Security Onion 2
       </template>
       <template #body>
-        <div class="flex justify-center">
-          <div class="text-2xl">
-            Latest version:
-            <span class="font-light">{{ soVersion }}</span>
+        <div class="flex flex-col flex-grow items-center">
+          <div class="flex flex-col items-center">
+            <div class="text-2xl">
+              Latest version:
+              <span class="font-light">{{ soVersion }}</span>
+            </div>
           </div>
-        </div>
-        <div class="flex justify-center">
-          <ActionCallout class="mt-1 xl:mt-4" link="https://github.com/Security-Onion-Solutions/securityonion/blob/master/VERIFY_ISO.md">
-            <template #button-text>
-              Download Now
-            </template>
-          </ActionCallout>
-        </div>
-        <div class="flex justify-center">
-          <ActionCallout class="mt-1 xl:mt-2" link="https://securityonion.net/aws/?ref=_ptnr_web_sos">
-            <template #button-text>
-              Use in Amazon
-              <img
-                src="~assets/img/svg/AWSMP_NewLogo_RGB_REV.svg"
-              >
-            </template>
-          </ActionCallout>
-        </div>
-        <div class="flex justify-center">
-          <ActionCallout class="xl:mt-2" link="https://docs.securityonion.net/">
-            <template #button-text>
-              Documentation
-            </template>
-          </ActionCallout>
+          <so-button class="mt-1 xl:mt-4" link="https://github.com/Security-Onion-Solutions/securityonion/blob/master/VERIFY_ISO.md">
+            Download Now
+          </so-button>
+          <div class="flex flex-col items-center lg:flex-row space-y-1 lg:space-x-3 lg:space-y-0 mt-1 xl:mt-2">
+            <so-button link="https://securityonion.net/aws/?ref=_ptnr_web_sos">
+              Use in AWS
+            </so-button>
+            <so-button link="https://securityonion.net/azure/?ref=_ptnr_web_sos">
+              Use in Azure
+            </so-button>
+          </div>
+          <so-button class="mt-1 xl:mt-2" link="https://docs.securityonion.net/">
+            Documentation
+          </so-button>
         </div>
       </template>
     </SubHero>
     <ContentSection id="overview" :alternate="true">
-      <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
+      <div class="px-6 xs:px-12 lg:px-32">
         <feature-right class="xs:mb-12" :text-margin="true">
           <template #header>
             <div class="text-center xs:text-left">
@@ -144,7 +136,7 @@
       </div>
     </ContentSection>
     <ContentSection id="features" :alternate="true">
-      <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
+      <div class="px-6 xs:px-12 lg:px-32">
         <section-header class="mb-6">
           Included Features
         </section-header>
@@ -159,7 +151,7 @@
           Data Types
         </SectionHeader>
         <div class="flex flex-row flex-wrap justify-center mt-4">
-          <div v-for="(type, i) in typeArray" :key="i" class="w-full md:w-1/3 xl:w-1/4 bg-gray-200 rounded-md m-2 p-2 h-64">
+          <div v-for="(type, i) in typeArray" :key="i" class="w-full md:w-1/3 xl:w-1/4 bg-gray-200 rounded-md m-3 p-2 h-64">
             <VerticalFeature>
               <template #graphic>
                 <fa :icon="type.icon" class="mb-2" mask="circle" transform="shrink-8" size="4x" />
@@ -170,9 +162,11 @@
                 </div>
               </template>
               <template #body>
-                <div class="flex flex-col items-center text-center text-lg pt-2">
-                  <div class="mb-2 h-20">
-                    {{ type.desc }}
+                <div class="flex flex-col items-center text-center text-lg pt-2 w-full">
+                  <div class="mb-2 h-20 flex items-center">
+                    <div>
+                      {{ type.desc }}
+                    </div>
                   </div>
                   <div class="text-gray-600 font-light text-sm">
                     {{ type.tools }}
@@ -185,10 +179,10 @@
       </div>
     </ContentSection>
     <ContentSection id="hardwarehelp" :alternate="true">
-      <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
+      <div class="px-6 xs:px-12 lg:px-32">
         <action-callout :alternate="true" class="my-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Security Onion Solutions\' offerings.', source: 'software_general_contact_us' })">
           <template #info>
-            <div class="text-2xl flex justify-center">
+            <div class="text-2xl flex justify-center text-center md:text-left">
               <div>
                 Let Security Onion Solutions take care of the hardware and setup, so you can focus on threat hunting.
               </div>

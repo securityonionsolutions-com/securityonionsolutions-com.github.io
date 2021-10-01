@@ -23,7 +23,7 @@
       </template>
     </SubHero>
     <ContentSection id="about" :alternate="true">
-      <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
+      <div class="px-6 xs:px-12 lg:px-32">
         <feature-right class="xs:mb-12" :text-margin="true">
           <template #header>
             <div class="text-center xs:text-left">

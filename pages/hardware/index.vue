@@ -23,7 +23,7 @@
       </template>
     </SubHero>
     <ContentSection id="overview" :alternate="true">
-      <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
+      <div class="px-6 xs:px-12 lg:px-32">
         <feature-right class="xs:mb-12" :text-margin="true">
           <template #header>
             <div class="text-center xs:text-left">
@@ -67,7 +67,7 @@
             </div>
           </template>
         </feature-left>
-        <feature-right class="xs:mb-12" :text-margin="true">
+        <feature-right class="xs:mb-20" :text-margin="true">
           <template #header>
             <div class="text-center xs:text-left">
               Support Security Onion
@@ -82,6 +82,46 @@
             </div>
           </template>
         </feature-right>
+        <feature-left-action
+          :alternate="true"
+          @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Response-Ready appliances.', source: 'hw_r2_purchasing_info' })"
+        >
+          <template #header>
+            <div class="text-3xl mb-6 text-left">
+              Response-Ready Appliances
+            </div>
+          </template>
+          <template #body>
+            <div class="flex flex-col text-left">
+              <div>
+                Contact us for information about our new Response-Ready appliances:
+              </div>
+              <ul class="list-disc list-inside pl-1 -mr-1">
+                <li>
+                  Government, Military, or Commercial Applications
+                </li>
+                <li>
+                  Tactical Edge Enterprise Security Monitoring
+                </li>
+                <li>
+                  Deployable, Small Form Factor, and ATA-Compliant
+                </li>
+              </ul>
+            </div>
+          </template>
+          <template #graphic>
+            <div class="lg:-ml-4">
+              <Graphic
+                class="shadow-xl rounded-xl overflow-hidden"
+                :size="20"
+                file-name="so-onion-camo.jpg"
+              />
+            </div>
+          </template>
+          <template #button-text>
+            Get More Info
+          </template>
+        </feature-left-action>
       </div>
     </ContentSection>
     <ContentSection id="comparison">
@@ -93,10 +133,10 @@
       </div>
     </ContentSection>
     <ContentSection id="hardwarehelp" :alternate="true">
-      <div class="bg-so-blue text-white xs:-mx-12 px-6 xs:px-12 lg:px-32">
+      <div class="px-6 xs:px-12 lg:px-32">
         <action-callout :alternate="true" class="my-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Security Onion appliances.', source: 'hw_purchasing_info' })">
           <template #info>
-            <div class="text-2xl flex justify-center">
+            <div class="text-3xl flex justify-center text-center md:text-left">
               <div>
                 Ready to purchase, or need more information?
               </div>
@@ -117,7 +157,8 @@
 import SubHero from '~/components/hero/SubHero'
 import ActionCallout from '~/components/action_callouts/ActionCallout'
 import FeatureRight from '~/components/features/FeatureRight'
-import FeatureLeft from '~/components/features/FeatureLeft'
+import FeatureLeft from '~/components/features/FeatureLeft.vue'
+import FeatureLeftAction from '~/components/features/FeatureLeftAction.vue'
 
 export default {
   scrollToTop: true,
@@ -125,7 +166,8 @@ export default {
     SubHero,
     ActionCallout,
     FeatureRight,
-    FeatureLeft
+    FeatureLeft,
+    FeatureLeftAction
   },
   data: () => ({
     links: [{ name: 'Overview', id: 'overview' }, { name: 'Comparison', id: 'comparison' }]
