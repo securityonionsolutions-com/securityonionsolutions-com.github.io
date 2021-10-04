@@ -16,9 +16,7 @@
           </div>
         </div>
         <div class="py-4 -px-4 text-base">
-          Mark your calendar! This year's Security Onion Conference <br> is currently scheduled to be held in person!
-          <br><br>
-          <span class="font-bold">Registration is NOW OPEN <a href="https://socaugusta2021.eventbrite.com/" class="text-so-blue cursor-pointer hover:underline">here</a></span>
+          <span class="font-bold">The conference has concluded, but stay tuned for videos, presentations, and more!</span>
         </div>
       </template>
     </SubHero>
