@@ -15,8 +15,13 @@
             </div>
           </div>
         </div>
-        <div class="py-4 -px-4 text-base font-bold">
-          Security Onion Conference has concluded,<br> make sure to check below for recordings of the talks!
+        <div class="py-4 -px-4 text-base">
+          <div class="mb-1">
+            Security Onion Conference has concluded.
+          </div>
+          <div class="font-bold">
+            Check out the conference video recordings below!
+          </div>
         </div>
       </template>
     </SubHero>
