@@ -1,19 +1,67 @@
 {
   "upcoming": {
     "year": 2021,
-    "date": "Oct 1, 2021",
-    "location": "Augusta, GA",
-    "schedule": {
-      "June 9": "CFP opens",
-      "July 15": "CFP closes",
-      "July 28": "Speakers selected and notified",
-      "August 2": "Registration Opens",
-      "September 27 - September 30": "Security Onion 4-day training in Augusta",
-      "October 1": "Security Onion Conference",
-      "October 2": "BSidesAugusta"
-    }
+    "date": "October 1, 2021",
+    "location": "Augusta, GA"
   },
   "past": [
+    {
+      "year": 2021,
+      "date": "Oct 1, 2021",
+      "location":"Augusta, GA",
+      "playlist": "https://www.youtube.com/embed/videoseries?list=PLljFlTO9rB17mESq7Z9OeFKvVh39vJW34",
+      "events": [
+        {
+          "speakers": ["Doug Burks"],
+          "pres_name": "Welome and Opening Remarks",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=gbE_S6ADA2k&list=PLljFlTO9rB17mESq7Z9OeFKvVh39vJW34&index=1"
+          }
+        },
+        {
+          "speakers": ["Wes Lambert"],
+          "pres_name": "SOARing with Security Onion",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=zf9jw9x0IUo&list=PLljFlTO9rB17mESq7Z9OeFKvVh39vJW34&index=2"
+          }
+        },
+        {
+          "speakers": ["Josh Stroschien"],
+          "pres_name": "Hunting Malware with Suricata Metadata",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=f7AzqS9fYBw&list=PLljFlTO9rB17mESq7Z9OeFKvVh39vJW34&index=3"
+          }
+        },
+        {
+          "speakers": ["Josh Brower", "Chris Sanders"],
+          "pres_name": "Layers of Deception: Intrusion Detection Honeypots with Security Onion",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=NzUhfARVfJk&list=PLljFlTO9rB17mESq7Z9OeFKvVh39vJW34&index=4"
+          }
+        },
+        {
+          "speakers": ["Josh Brower", "Doug Burks", "Jason Ertel", "Wes Lambert", "Josh Patterson", "Mike Reeves"],
+          "pres_name": "Developers Panel",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=pu_SsoB6xco&list=PLljFlTO9rB17mESq7Z9OeFKvVh39vJW34&index=5"
+          }
+        },
+        {
+          "speakers": ["Peter Di Giorgio"],
+          "pres_name": "Detection Engineering: Defending Networks with Purpose",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=XuM6G2MkPBc&list=PLljFlTO9rB17mESq7Z9OeFKvVh39vJW34&index=6"
+          }
+        },
+        {
+          "speakers": ["Doug Burks"],
+          "pres_name": "State of the Onion",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=xzrB54DoIi0&list=PLljFlTO9rB17mESq7Z9OeFKvVh39vJW34&index=7"
+          }
+        }
+      ]
+    },
     {
       "year": 2020,
       "date": "Oct 16, 2020",

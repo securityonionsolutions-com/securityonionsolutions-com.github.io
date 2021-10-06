@@ -16,7 +16,12 @@
           </div>
         </div>
         <div class="py-4 -px-4 text-base">
-          <span class="font-bold">The conference has concluded, but stay tuned for videos, presentations, and more!</span>
+          <div class="mb-1">
+            Security Onion Conference has concluded.
+          </div>
+          <div class="font-bold">
+            Check out the conference video recordings below!
+          </div>
         </div>
       </template>
     </SubHero>
@@ -49,27 +54,29 @@
       </div>
     </ContentSection>
 
-    <ContentSection id="schedule">
-      <div class="xs:-mx-12 px-6 xs:px-12 lg:px-32">
-        <SectionHeader class="mb-6 lg:mb-10">
-          2021 Security Onion Conference Schedule
-        </SectionHeader>
-        <div class="flex flex-col lg:flex-row content-center justify-center lg:space-x-32">
-          <div class="flex flex-col content-center justify-center text-center">
-            <div v-for="(value, key, index) in upcoming.schedule" :key="index" :class="{ 'mb-5': index != upcoming.schedule.length }">
-              <div class="font-bold text-xl xs:text-2xl mb-1">
-                {{ key }}
-              </div>
-              <div class="text-md xs:text-lg">
-                {{ value }}
+    <div v-if="upcoming.schedule != null">
+      <ContentSection id="schedule">
+        <div class="xs:-mx-12 px-6 xs:px-12 lg:px-32">
+          <SectionHeader class="mb-6 lg:mb-10">
+            {{ upcoming.date }} Security Onion Conference Schedule
+          </SectionHeader>
+          <div class="flex flex-col lg:flex-row content-center justify-center lg:space-x-32">
+            <div class="flex flex-col content-center justify-center text-center">
+              <div v-for="(value, key, index) in upcoming.schedule" :key="index" :class="{ 'mb-5': index != upcoming.schedule.length }">
+                <div class="font-bold text-xl xs:text-2xl mb-1">
+                  {{ key }}
+                </div>
+                <div class="text-md xs:text-lg">
+                  {{ value }}
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </ContentSection>
+      </ContentSection>
 
-    <ContentSection :alternate="true" />
+      <ContentSection :alternate="true" />
+    </div>
 
     <ContentSection id="past">
       <SectionHeader class="mb-10">
@@ -123,8 +130,8 @@
                 </div>
                 <div class="flex flex-row justify-center">
                   <div v-for="(speaker, index) in event.speakers" :key="index" class="mr-1 font-light">
-                    {{ speaker }}
-                    <span v-if="event.speakers.length>1 && index !== event.speakers.length - 1">&amp;</span>
+                    {{ speaker }}<span v-if="event.speakers.length > 1 && index < event.speakers.length - 2">,</span>
+                    <span v-if="event.speakers.length > 1 && index === event.speakers.length - 2">&amp;</span>
                   </div>
                 </div>
                 <div v-if="event.links" class="mt-1">
