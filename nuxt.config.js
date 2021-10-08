@@ -100,7 +100,11 @@ export default {
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
   */
-  build: {},
+  build: {
+    extend (config, { loaders: { vue } }) {
+      vue.transformAssetUrls.a = ['href']
+    }
+  },
   server: {
     port: 3000,
     host: '0.0.0.0'

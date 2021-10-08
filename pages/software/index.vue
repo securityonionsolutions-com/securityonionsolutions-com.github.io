@@ -179,7 +179,7 @@
       </div>
     </ContentSection>
     <ContentSection id="hardwarehelp" :alternate="true">
-      <div class="px-6 xs:px-12 lg:px-32">
+      <div class="px-6 xs:px-12 lg:px-32 -my-8">
         <action-callout :alternate="true" class="my-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Security Onion Solutions\' offerings.', source: 'software_general_contact_us' })">
           <template #info>
             <div class="text-2xl flex justify-center text-center md:text-left">
@@ -213,9 +213,9 @@ export default {
   },
   data: () => ({
     links: [{ name: 'Overview', id: 'overview' }, { name: 'Use Cases', id: 'use-cases' }, { name: 'Features', id: 'features' }],
-    typeArray: require('@/content/data_types.json').types,
-    featureArr: require('@/content/features.json').features,
-    soVersion: require('@/content/version.json').version
+    typeArray: require('~/content/data_types.json').types,
+    featureArr: require('~/content/features.json').features,
+    soVersion: require('~/content/version.json').version
   })
 }
 </script>

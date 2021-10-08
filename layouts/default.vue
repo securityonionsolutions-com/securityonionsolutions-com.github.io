@@ -6,6 +6,7 @@
           <LazyContactForm :text="contactText" :source="eventSource" @close="handleModalClose()" />
         </div>
         <ImageZoom v-else-if="modalType == 'image'" :name="imageName" :image-type="imageType" />
+        <CertDomainDetails v-else-if="modalType == 'domainDetails'" :detail-text="domainDetailText" :domain-name="domainName" :test-percent="domainTestPercent" />
       </LazyFloatingModal>
     </transition>
 
@@ -31,6 +32,9 @@ export default {
     imageName: '',
     imageType: '',
     contactText: '',
+    domainDetailText: '',
+    domainName: '',
+    domainTestPercent: '',
     eventSource: '',
     showHwModal: false,
     version: '1.0.0',
@@ -44,8 +48,8 @@ export default {
       this.contactText = event.text
       this.eventSource = event.source
       if (window.innerWidth >= 640 || window.innerHeight >= 800) {
-        this.showModal = true
         this.modalType = 'form'
+        this.showModal = true
       } else {
         this.$router.push({
           name: 'contact_us',
@@ -65,8 +69,8 @@ export default {
       this.imageName = event.imageName
       this.imageType = event.imageType
       if (window.innerWidth >= 640 || window.innerHeight >= 800) {
-        this.showModal = true
         this.modalType = 'image'
+        this.showModal = true
       } else {
         let fileName
         let folder
@@ -86,6 +90,16 @@ export default {
         }
 
         window.location.href = require(`../assets/img/${folder}/${fileName}`)
+      }
+    })
+
+    this.$nuxt.$on('show-domain-details', (event) => {
+      this.domainDetailText = event.domainDetailText
+      this.domainName = event.domainName
+      this.domainTestPercent = event.domainTestPercent
+      if (window.innerWidth >= 350 || window.innerHeight >= 650) {
+        this.modalType = 'domainDetails'
+        this.showModal = true
       }
     })
   },
@@ -147,8 +161,9 @@ export default {
 </script>
 
 <style>
-html {
+body, html {
   background-color: black;
+  font-family: "Inter", Roboto, Ubuntu, "Helvetica Neue", Oxygen, Cantarell, sans-serif !important;
 }
 .content {
   margin-top: 70px;

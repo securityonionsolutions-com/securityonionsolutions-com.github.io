@@ -1,7 +1,7 @@
 <template>
   <!-- eslint-disable vue/singleline-html-element-content-newline -->
   <div class="xs:px-12">
-    <SubHero id="download-before" class="hero">
+    <SubHero id="education" class="hero">
       <template #header>
         <div>
           Security Onion
@@ -17,7 +17,7 @@
       </template>
     </SubHero>
     <ContentSection id="overview" :alternate="true">
-      <div class="flex flex-col items-center px-6 xs:px-12 lg:px-32 pb-4">
+      <div class="flex flex-col items-center  px-6 xs:px-12 lg:px-32 pb-4">
         <SectionHeader class="mb-6">
           Using Security Onion in the Classroom
         </SectionHeader>
@@ -158,8 +158,8 @@
             </template>
           </DetailPara>
           <div class="md:w-1/2 lg:w-1/3 mt-16">
-            <div class="flex flex-row space-x-2 ml-2">
-              <div>*</div>
+            <div class="flex flex-row space-x-1 ml-2">
+              <div class="font-bold">*</div>
               <div class="text-left">
                 Discounts are available to students and faculty of accredited institutions, subject to limitations.
               </div>
@@ -169,7 +169,7 @@
       </div>
     </ContentSection>
     <ContentSection id="education_info" :alternate="true">
-      <div class="px-6 xs:px-12 lg:px-32">
+      <div class=" px-6 xs:px-12 lg:px-32">
         <action-callout :alternate="true" class="-mt-4" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about using Security Onion in my classroom.', source: 'education_general_contact_us' })">
           <template #info>
             <div class="text-2xl flex justify-center">

@@ -23,7 +23,7 @@ export default {
   },
   computed: {
     appliance () {
-      const roles = require('@/content/appliances.json').roles
+      const roles = require('~/content/appliances.json').roles
       const applianceArr = roles.find(role => role.name.toLowerCase() === this.role).appliances
       return applianceArr.find(appliance => appliance.name === this.applianceName)
     }

@@ -60,25 +60,27 @@
     </ContentSection>
     <ContentSection id="community-support" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32">
-        <feature-right class="xs:mb-12" :text-margin="true">
-          <template #header>
-            <div class="text-center xs:text-left">
-              Community Support
-            </div>
-          </template>
-          <template #graphic>
-            <fa icon="comment" size="10x" />
-          </template>
-          <template #body>
-            <div class="text-center xs:text-left">
-              The Security Onion user base is large, and often times others have run into similar problems or have asked questions that might help you with your own Security Onion installation or troubleshooting.
-            </div>
-            <div class="text-center xs:text-left mt-4">
-              Browse the Security Onion official discussion forums to find support on common issues. Ask for help from other community members, or return the favor by offering your own solutions to other users' discussions.
-            </div>
-          </template>
-        </feature-right>
-        <action-callout :alternate="true" class="mt-16 mb-12 md:my-12" link="https://securityonion.net/discuss">
+        <div class="xs:pb-6">
+          <feature-right :text-margin="true">
+            <template #header>
+              <div class="text-center xs:text-left">
+                Community Support
+              </div>
+            </template>
+            <template #graphic>
+              <fa icon="comment" size="10x" />
+            </template>
+            <template #body>
+              <div class="text-center xs:text-left">
+                The Security Onion user base is large, and often times others have run into similar problems or have asked questions that might help you with your own Security Onion installation or troubleshooting.
+              </div>
+              <div class="text-center xs:text-left mt-4">
+                Browse the Security Onion official discussion forums to find support on common issues. Ask for help from other community members, or return the favor by offering your own solutions to other users' discussions.
+              </div>
+            </template>
+          </feature-right>
+        </div>
+        <action-callout :alternate="true" class="mt-16 mb-12 md:mt-24 md:mb-2" link="https://securityonion.net/discuss">
           <template #info>
             <div class="text-2xl flex justify-center text-center md:text-left">
               <div>

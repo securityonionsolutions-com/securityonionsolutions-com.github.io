@@ -8,11 +8,9 @@
       <template #body>
         Peel back the layers of your enterprise with our newest and most powerful release yet.
         <div class="flex justify-center">
-          <ActionCallout class="mt-4" link="/software">
-            <template #button-text>
-              Learn More
-            </template>
-          </ActionCallout>
+          <SoButton class="mt-4" link="/software">
+            Learn More
+          </SoButton>
         </div>
       </template>
     </SubHero>
@@ -159,12 +157,12 @@ import FeatureRight from '~/components/features/FeatureRight'
 import FeatureLeft from '~/components/features/FeatureLeft'
 
 const logos = [
-  require('../assets/img/partners/credence-logo.jpg'),
-  require('../assets/img/partners/elastic-logo.png'),
-  require('../assets/img/partners/fireeye-logo.png'),
-  require('../assets/img/partners/gigamon-logo.png'),
-  require('../assets/img/partners/intelligenesis-logo.png'),
-  require('../assets/img/partners/profitap-logo.png')
+  require('~/assets/img/partners/credence-logo.jpg'),
+  require('~/assets/img/partners/elastic-logo.png'),
+  require('~/assets/img/partners/fireeye-logo.png'),
+  require('~/assets/img/partners/gigamon-logo.png'),
+  require('~/assets/img/partners/intelligenesis-logo.png'),
+  require('~/assets/img/partners/profitap-logo.png')
 ]
 
 export default {
@@ -179,8 +177,8 @@ export default {
   data: () => ({
     links: [{ name: 'Portfolio', id: 'portfolio' }, { name: 'Partners', id: 'partners' }, { name: 'About', id: 'about' }, { name: 'History', id: 'timeline' }, { name: 'Team', id: 'members' }],
     eventText: 'Default Graphic',
-    teamArr: require('@/content/team.json').team,
-    eventList: require('@/content/history.json').events,
+    teamArr: require('~/content/team.json').team,
+    eventList: require('~/content/history.json').events,
     currentEvent: 1,
     logos
   }),
@@ -206,7 +204,7 @@ export default {
 
       return {
         text: this.eventList[this.currentEvent].text,
-        img: require(`../assets/img/graphics/${fileName}`)
+        img: require(`~/assets/img/graphics/${fileName}`)
       }
     }
   }

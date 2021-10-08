@@ -1,6 +1,6 @@
 <template>
   <div class="xs:px-12">
-    <PageNav page-name="Training" :links="links" />
+    <PageNav page-name="Training and Certification" :links="links" />
     <SubHero class="hero-training text-center">
       <template #header>
         Official Training
@@ -169,7 +169,7 @@
     </ContentSection>
 
     <ContentSection id="testimonials" :alternate="true">
-      <div class="px-6 xs:px-12 lg:px-32">
+      <div class="px-6 xs:px-12 lg:px-32 -mt-10 -mb-4">
         <SectionHeader class="mb-6">
           Student Feedback
         </SectionHeader>
@@ -197,8 +197,9 @@ export default {
     SectionHeader
   },
   data: () => ({
-    scheduleList: require('@/content/training_schedule.json').events,
-    links: [{ name: 'Free', id: 'free-training' }, { name: 'Premium', id: 'premium-on-demand' }, { name: 'Instructor Led', id: 'instructor-training' }],
+    scheduleList: require('~/content/training_schedule.json').events,
+    domainArr: require('~/content/cert_domains.json').domains,
+    links: [{ name: 'Free', id: 'free-training' }, { name: 'Premium', id: 'premium-on-demand' }, { name: 'Instructor Led', id: 'instructor-training' }, { name: 'Certification', id: 'certification' }],
     testimonialList: [
       'I needed this class. This is the best instruction of SO and dedicated time to it that I have ever had.',
       'One can tell they\'re not just instructors. They know the subject at an engineering level.',
@@ -240,5 +241,11 @@ export default {
 }
 .hero-training {
   background: right bottom no-repeat url(~assets/img/graphics/training.jpg);
+}
+.hero-cert {
+  background: right bottom no-repeat url(~assets/img/graphics/squares.jpg);
+}
+#domain-list {
+  -webkit-tap-highlight-color: transparent;
 }
 </style>

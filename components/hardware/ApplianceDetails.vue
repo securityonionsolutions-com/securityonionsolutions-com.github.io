@@ -23,13 +23,13 @@
               class="w-full transform hover:scale-105 transition duration-200 ease-in-out cursor-pointer"
               @click="handleImageClick('front')"
             >
-              <img :src="pic(appliance.img_front_thumb)">
+              <img :src="require(`~/assets/img/appliances/${appliance.img_front_thumb}`)">
             </div>
             <div
               class="w-full transform hover:scale-105 transition duration-200 ease-in-out cursor-pointer"
               @click="handleImageClick('back')"
             >
-              <img :src="pic(appliance.img_back_thumb)">
+              <img :src="require(`~/assets/img/appliances/${appliance.img_back_thumb}`)">
             </div>
           </div>
           <div
@@ -100,9 +100,6 @@ export default {
     }
   },
   methods: {
-    pic (filename) {
-      return require(`../../assets/img/appliances/${filename}`)
-    },
     specSplit (str) {
       return str.replace(/, /g, '\n')
     },

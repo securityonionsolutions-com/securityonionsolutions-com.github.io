@@ -46,7 +46,7 @@ export default {
         folder = 'graphics'
       }
 
-      return require(`../assets/img/${folder}/${fileName}`)
+      return require(`~/assets/img/${folder}/${fileName}`)
     }
   }
 }

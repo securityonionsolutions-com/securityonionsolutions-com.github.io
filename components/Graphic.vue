@@ -8,7 +8,7 @@
     ]"
     @click="handleClick()"
   >
-    <img :src="importImage()">
+    <img :src="require(`~/assets/img/graphics/${fileName}`)">
   </div>
 </template>
 
@@ -26,9 +26,6 @@ export default {
     }
   },
   methods: {
-    importImage () {
-      return require(`../assets/img/graphics/${this.fileName}`)
-    },
     handleClick () {
       if (this.clickable) {
         const type = this.fileName.includes('-thumb') ? 'fullsize' : 'thumbnail'
