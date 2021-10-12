@@ -48,6 +48,12 @@
             Training
           </nuxt-link>
           <nuxt-link
+            to="/certification"
+            class="dropdown block px-4 p-2 hover:bg-so-blue hover:text-white focus:outline-none focus:bg-so-blue focus:text-white"
+          >
+            Certification
+          </nuxt-link>
+          <nuxt-link
             to="/support"
             class="dropdown block px-4 p-2 hover:bg-so-blue hover:text-white focus:outline-none focus:bg-so-blue focus:text-white"
           >
@@ -109,6 +115,12 @@
             class="block lg:inline-block text-gray-400 hover:text-blue-500 mr-5 text-lg font-light focus:outline-none focus:text-blue-500"
           >
             Training
+          </nuxt-link>
+          <nuxt-link
+            to="/certification"
+            class="block lg:inline-block text-gray-400 hover:text-blue-500 mr-5 text-lg font-light focus:outline-none focus:text-blue-500"
+          >
+            Certification
           </nuxt-link>
           <nuxt-link
             to="/support"

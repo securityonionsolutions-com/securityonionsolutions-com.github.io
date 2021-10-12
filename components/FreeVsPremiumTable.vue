@@ -68,7 +68,7 @@
 <script>
 export default {
   data: () => ({
-    featureList: require('@/content/support_comparison.json').features
+    featureList: require('~/content/support_comparison.json').features
   })
 }
 </script>

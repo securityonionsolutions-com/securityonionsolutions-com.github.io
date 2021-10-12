@@ -63,7 +63,7 @@ export default {
     },
     screenshot (index) {
       const fileName = this.featureArr[index].image
-      return require(`../../assets/img/${fileName}`)
+      return require(`~/assets/img/${fileName}`)
     },
     handleImageClick (index) {
       const fileName = this.featureArr[index].image.replace('screenshots/', '')

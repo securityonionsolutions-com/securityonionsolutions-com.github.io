@@ -133,7 +133,7 @@
       </div>
     </ContentSection>
     <ContentSection id="hardwarehelp" :alternate="true">
-      <div class="px-6 xs:px-12 lg:px-32">
+      <div class="px-6 xs:px-12 lg:px-32 -my-8">
         <action-callout :alternate="true" class="my-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Security Onion appliances.', source: 'hw_purchasing_info' })">
           <template #info>
             <div class="text-3xl flex justify-center text-center md:text-left">

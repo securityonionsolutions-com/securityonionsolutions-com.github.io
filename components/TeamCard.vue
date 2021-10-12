@@ -2,7 +2,7 @@
   <div class="card">
     <div class="flex flex-col items-left">
       <div class="img pt-3 px-3">
-        <img :src="importImage()">
+        <img :src="require(`~/assets/img/team/${image}`)">
       </div>
       <div class="flex flex-row justify-between gap-0 ml-4 mr-3">
         <div class="text-xl font-bold">
@@ -51,11 +51,6 @@ export default {
   computed: {
     showSocialLinks () {
       return this.linkedin !== '' || this.twitter !== ''
-    }
-  },
-  methods: {
-    importImage () {
-      return require(`../assets/img/team/${this.image}`)
     }
   }
 }

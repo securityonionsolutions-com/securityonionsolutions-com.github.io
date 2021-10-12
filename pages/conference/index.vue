@@ -154,8 +154,8 @@ export default {
   components: { SoButton },
   data: () => ({
     links: [{ name: 'Upcoming Schedule', id: 'schedule' }, { name: 'About', id: 'about' }, { name: 'Past Conferences', id: 'past' }],
-    conferences: require('@/content/conferences.json').past,
-    upcoming: require('@/content/conferences.json').upcoming,
+    conferences: require('~/content/conferences.json').past,
+    upcoming: require('~/content/conferences.json').upcoming,
     pictures: {},
     hooperSettings: {
       itemsToShow: 1,
