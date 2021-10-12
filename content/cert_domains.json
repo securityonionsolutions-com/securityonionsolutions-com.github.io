@@ -11,7 +11,7 @@
             "name": "Grid Management",
             "icon": "server",
             "desc": "Procedures required in administering and maintaining a Security Onion 2 grid.",
-            "details": "Topics for this section include but are not limited to: user management, firewall management, understanding the key components of Saltstack, executing tasks using Salt commands, SaLt State (SLS) files, yaml formatting, docker, log pipelines, alert management, and managing and configuring the different applications contained in the various Security Onion nodes.",
+            "details": "Topics for this section include but are not limited to: user management, firewall management, understanding the key components of Saltstack, executing tasks using Salt commands, Salt State (SLS) files, yaml formatting, docker, log pipelines, alert management, and managing and configuring the different applications contained in the various Security Onion nodes.",
             "percent": 20
         },
         {
