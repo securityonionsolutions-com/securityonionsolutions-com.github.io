@@ -122,7 +122,7 @@
               </ul>
             </div>
             <div class="bg-red-300 text-red-700 border border-red-700 rounded rounded-md px-6 py-2">
-              Reference material having the appearance of exam questions and answers are <span class="font-bold">strictly prohibited</span>.
+              Reference materials having the appearance of exam questions and answers are <span class="font-bold">strictly prohibited</span>.
             </div>
           </div>
         </div>
