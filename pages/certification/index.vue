@@ -111,7 +111,7 @@
               The following are all authorized material for the exam:
               <ul class="list-disc list-inside ml-2 mb-6">
                 <li>
-                  Security Onion Documentation Paperback book (Available online <a class="text-so-blue hover:underline cursor-pointer" href="#">here</a>)
+                  Security Onion Documentation Paperback book (Available online <a class="text-so-blue hover:underline cursor-pointer" href="https://securityonion.net/book">here</a>)
                 </li>
                 <li>
                   Course material for any Security Onion Solutions instructor-led training
