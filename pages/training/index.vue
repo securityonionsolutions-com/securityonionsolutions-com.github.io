@@ -1,6 +1,6 @@
 <template>
   <div class="xs:px-12">
-    <PageNav page-name="Training and Certification" :links="links" />
+    <PageNav page-name="Training" :links="links" />
     <SubHero class="hero-training text-center">
       <template #header>
         Official Training
@@ -199,7 +199,7 @@ export default {
   data: () => ({
     scheduleList: require('~/content/training_schedule.json').events,
     domainArr: require('~/content/cert_domains.json').domains,
-    links: [{ name: 'Free', id: 'free-training' }, { name: 'Premium', id: 'premium-on-demand' }, { name: 'Instructor Led', id: 'instructor-training' }, { name: 'Certification', id: 'certification' }],
+    links: [{ name: 'Free', id: 'free-training' }, { name: 'Premium', id: 'premium-on-demand' }, { name: 'Instructor Led', id: 'instructor-training' }],
     testimonialList: [
       'I needed this class. This is the best instruction of SO and dedicated time to it that I have ever had.',
       'One can tell they\'re not just instructors. They know the subject at an engineering level.',
