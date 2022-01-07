@@ -77,7 +77,8 @@
     {
       "name": "Chris Morgret",
       "role": "Manager of Support and Professional Services",
-      "image": "chris_morgret.jpg"
+      "image": "chris_morgret.jpg",
+      "linkedin": "http://www.linkedin.com/in/chris-morgret-75b0891"
     },
     {
       "name": "Pete Di Giorgio",
@@ -90,6 +91,16 @@
       "image": "matt_gracie.jpg",
       "linkedin": "https://www.linkedin.com/in/matthew-gracie/",
       "twitter": "https://twitter.com/InfosecGoon"
+    },
+    {
+      "name": "Andre Dessert",
+      "role": "Support Engineer",
+      "image": "andre_dessert.jpg"
+    },
+    {
+      "name": "Nate Olsen",
+      "role": "Account Manager",
+      "image": "nate_olsen.jpg"
     }
   ]
 }
