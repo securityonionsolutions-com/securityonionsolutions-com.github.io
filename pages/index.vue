@@ -132,8 +132,8 @@
         <section-header class="sm:mx-40 mb-8">
           Our Team
         </section-header>
-        <div class="flex flex-row flex-wrap justify-center content-center mb-4">
-          <div v-for="(member, index) in teamArr" :key="index" class="px-1 py-3">
+        <div class="flex flex-row flex-wrap justify-center content-center mb-4 md:mx-24">
+          <div v-for="(member, index) in teamArr" :key="index" class="px-4 py-4">
             <team-card
               :name="member.name"
               :role="member.role"
