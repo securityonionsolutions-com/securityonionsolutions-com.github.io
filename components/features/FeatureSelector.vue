@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col lg:flex-row items-center justify-center">
+  <div class="flex flex-col items-center justify-center">
     <div
       class="w-full
-        lg:w-3/5
+        lg:w-4/5
         rounded-md
         overflow-hidden
         m-8
@@ -19,11 +19,11 @@
     >
       <img :src="screenshot(activeFeat)">
     </div>
-    <div class="flex flex-col items-center lg:w-1/3 lg:mx-4">
+    <div class="flex flex-col lg:flex-row items-center lg:mx-4 mt-3">
       <button
         v-for="(feat, index) in featureArr"
         :key="index"
-        class="flex justify-center items-center my-1 focus:outline-none w-4/5 xs:w-full"
+        class="flex justify-center items-center my-1 focus:outline-none w-4/5 xs:w-full h-full"
         :class="[ activeFeat===index ? 'bg-gray-200 bg-opacity-25 shadow-lg rounded-lg' : '']"
         @click="setActiveFeat(index)"
         @focus="setActiveFeat(index)"
