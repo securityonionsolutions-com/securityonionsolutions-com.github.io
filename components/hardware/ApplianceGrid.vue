@@ -40,8 +40,8 @@
           class="bg-white cursor-pointer"
           @click="handleClick(item)"
         >
-          <td v-if="item['category'] == 'Response Ready'" class="hidden md:table-cell border-t border-blue-400 text-white bg-blue-400 pl-1 pr-0 ml-1 truncate vert-header" v-text="item['category']" />
-          <td v-if="item['category'] != 'Response Ready'" class="hidden md:table-cell border-t border-blue-400 text-white bg-white pl-1 pr-0 ml-1 truncate vert-header" />
+          <td v-if="item['category'] == 'Response Ready'" class="hidden md:table-cell border-t border-blue-400 text-white bg-blue-400 pl-1 pr-1 pt-2 truncate vert-header" v-text="item['category']" />
+          <td v-if="item['category'] != 'Response Ready'" class="hidden md:table-cell border-t border-blue-400 text-white bg-white pl-1 pr-1 pt-2 truncate vert-header" />
           <td class="hidden md:table-cell border-t border-blue-400 truncate w-1/4">
             <img :src="thumbnail(item)">
           </td>
