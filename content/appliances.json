@@ -198,7 +198,7 @@
     "tagline": "High performance Manager node",
     "roles": [
       "Manager node in a distributed architecture",
-      "Manager Search in a small distributed architecture"
+      "Manager Search node in a small distributed architecture"
     ],
     "sensor": false,
     "performance": {
