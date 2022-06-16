@@ -2,12 +2,9 @@
   {
     "name": "500",
     "category": "Enterprise",
-    "tagline": "",
+    "tagline": "Designed for performance and value",
     "roles": [
-      "Standalone",
-      "Forward"
-    ],
-    "uses": [
+      "Forward node in a branch office"
     ],
     "sensor": true,
     "performance": {
@@ -27,8 +24,10 @@
     "specs": {
       "Standalone Throughput †": "100 Mpbs",
       "Forward Throughput †": "500 Mbps",
-      "Available Storage *": "8 TB",
-      "Storage Type": "",
+      "Data Storage *": "8 TB",
+      "Data Storage RAID": "Single Disk",
+      "OS Storage *": "256 GB",
+      "OS Storage RAID": "RAID 1",
       "Interfaces": "6 x 1GbE RJ45, 2 x 10/25GbE SFP28",
       "Form Factor": "1U"
     },
@@ -40,12 +39,10 @@
   {
     "name": "1000",
     "category": "Enterprise",
+    "tagline": "Designed for performance and value",
     "roles": [
-      "Standalone",
-      "Forward"
-    ],
-    "uses": [
-      "Medium Office"
+      "Standalone node in a small organization",
+      "Forward node in a medium office"
     ],
     "sensor": true,
     "performance": {
@@ -65,8 +62,10 @@
     "specs": {
       "Standalone Throughput †": "500 Mpbs",
       "Forward Throughput †": "1 Gbps",
-      "Available Storage *": "24 TB",
-      "Storage Type": "RAID 5",
+      "Data Storage *": "24 TB",
+      "Data Storage RAID": "RAID 5",
+      "OS Storage *": "256 GB",
+      "OS Storage RAID": "RAID 1",
       "Interfaces": "6 x 1GbE RJ45, 2 x 10/25GbE SFP28",
       "Form Factor": "1U"
     },
@@ -78,13 +77,10 @@
   {
     "name": "1000F",
     "category": "Enterprise",
+    "tagline": "Designed for performance and value on fiber infrastructure",
     "roles": [
-      "Standalone",
-      "Forward"
-    ],
-    "uses": [
-      "Medium Office",
-      "Large Office"
+      "Standalone node in a small organization w/ fiber",
+      "Forward node in a medium office w/ fiber"
     ],
     "sensor": true,
     "performance": {
@@ -104,8 +100,10 @@
     "specs": {
       "Standalone Throughput †": "500 Mpbs",
       "Forward Throughput †": "1 Gbps",
-      "Available Storage *": "24 TB",
-      "Storage Type": "RAID 5",
+      "Data Storage *": "24 TB",
+      "Data Storage RAID": "RAID 5",
+      "OS Storage *": "256 GB",
+      "OS Storage RAID": "RAID 1",
       "Interfaces": "2 x 1GbE RJ45, 2 x 1/10GbE SFP+, 2 x 10/25GbE SFP28",
       "Form Factor": "1U"
     },
@@ -117,8 +115,10 @@
   {
     "name": "4000",
     "category": "Enterprise",
+    "tagline": "Designed for high throughput observation with full packet capture",
     "roles": [
-      "Forward"
+      "Forward node in a data center",
+      "Standalone node in a medium to large office"
     ],
     "uses": [
       "Large Office"
@@ -141,8 +141,10 @@
     "specs": {
       "Standalone Throughput †": "N/A",
       "Forward Throughput †": "4 Gbps",
-      "Available Storage *": "120 TB",
-      "Storage Type": "RAID 6",
+      "Data Storage *": "120 TB",
+      "Data Storage RAID": "RAID 6",
+      "OS Storage *": "256 GB",
+      "OS Storage RAID": "RAID 1",
       "Interfaces": "6 x 1GbE RJ45, 4 x 10GbE SFP+, 2 x 10/25GbE SFP28",
       "Form Factor": "2U"
     },
@@ -154,12 +156,10 @@
   {
     "name": "10000",
     "category": "Enterprise",
+    "tagline": "Designed for extreme performance with alerts and packet metadata",
     "roles": [
-      "Standalone",
-      "Forward"
-    ],
-    "uses": [
-      "Very Large Office"
+      "Forward node in a large data center",
+      "(alerts and metadata)"
     ],
     "sensor": true,
     "performance": {
@@ -179,8 +179,10 @@
     "specs": {
       "Standalone Throughput †": "5 Gbps",
       "Forward Throughput †": "10 Gbps ‡",
-      "Available Storage *": "7 TB",
-      "Storage Type": "RAID 10",
+      "Data Storage *": "7 TB",
+      "Data Storage RAID": "RAID 10",
+      "OS Storage *": "256 GB",
+      "OS Storage RAID": "RAID 1",
       "Interfaces": "2 x 1GbE RJ45, 2 x 1/10GbE SFP+, 2 x 10/25GbE SFP28",
       "Form Factor": "1U"
     },
@@ -193,12 +195,10 @@
   {
     "name": "MN",
     "category": "Enterprise",
+    "tagline": "High performance Manager node",
     "roles": [
-      "Standalone",
-      "Manager"
-    ],
-    "uses": [
-      "All"
+      "Manager node in a distributed architecture",
+      "Manager Search in a small distributed architecture"
     ],
     "sensor": false,
     "performance": {
@@ -218,8 +218,10 @@
     "specs": {
       "Standalone Throughput †": "500 Mpbs",
       "Forward Throughput †": "N/A",
-      "Available Storage *": "15 TB",
-      "Storage Type": "RAID 1",
+      "Data Storage *": "15 TB",
+      "Data Storage RAID": "RAID 1",
+      "OS Storage *": "256 GB",
+      "OS Storage RAID": "RAID 1",
       "Interfaces": "6 x 1GbE RJ45, 2 x 10/25GbE SFP28",
       "Form Factor": "1U"
     },
@@ -230,13 +232,12 @@
   {
     "name": "SN7200",
     "category": "Enterprise",
+    "tagline": "High volume, resilient storage with fast search performance",
     "roles": [
-      "Standalone",
-      "Search"
-    ],
-    "uses": [
-      "Small Grids",
-      "Medium Grids"
+      "Search node in a distributed architecture",
+      "Manager Search node in a medium distributed architecture",
+      "Warm Search node in a large distributed architecture",
+      "Standalone node in a medium to large office"
     ],
     "sensor": false,
     "performance": {
@@ -256,8 +257,10 @@
     "specs": {
       "Standalone Throughput †": "3 Gbps",
       "Forward Throughput †": "N/A",
-      "Available Storage *": "72 TB",
-      "Storage Type": "RAID 10",
+      "Data Storage *": "72 TB",
+      "Data Storage RAID": "RAID 10",
+      "OS Storage *": "256 GB",
+      "OS Storage RAID": "RAID 1",
       "Interfaces": "6 x 1GbE RJ45, 4 x 10GbE SFP+, 2 x 10/25GbE SFP28",
       "Form Factor": "2U"
     },
@@ -268,12 +271,12 @@
   {
     "name": "SNNV",
     "category": "Enterprise",
+    "tagline": "High volume, resilient storage with rapid search performance",
     "roles": [
-      "Standalone",
-      "Search"
-    ],
-    "uses": [
-      "Large Grids"
+      "Search node in a distributed architecture",
+      "Manager Search node in a medium distributed architecture",
+      "Hot Search node in a large distributed architecture",
+      "Standalone node in a medium to large office or data center"
     ],
     "performance": {
       "Performance": 100,
@@ -292,9 +295,11 @@
     "specs": {
       "Standalone Throughput †": "5 Gbps",
       "Forward Throughput †": "N/A",
-      "Available Storage *": "30 TB",
+      "Data Storage *": "30 TB",
+      "Data Storage RAID": "RAID 10",
+      "OS Storage *": "256 GB",
+      "OS Storage RAID": "RAID 1",
       "Interfaces": " 2 x 1GbE RJ45, 2 x 1/10GbE SFP+, 2 x 10/25GbE SFP28",
-      "Storage Type": "RAID 10",
       "Form Factor": "1U",
       "Notes": "Non-Volatile Memory storage"
     },
@@ -305,12 +310,11 @@
   {
     "name": "GoFast",
     "category": "Response Ready",
+    "tagline": "High performance packed into an ATA compliant form factor",
     "roles": [
-      "Standalone",
-      "Forward"
-    ],
-    "uses": [
-      "Field Deployment"
+      "Rapidly deployable incident response",
+      "High mobility for commercial transportation",
+      "(all node types supported)"
     ],
     "sensor": true,
     "performance": {
@@ -330,8 +334,10 @@
     "specs": {
       "Standalone Throughput †": "5 Gbps",
       "Forward Throughput †": "10 Gbps",
-      "Available Storage *": "120 TB",
-      "Storage Type": "RAID 0 or 10",
+      "Data Storage *": "120 TB",
+      "Data Storage RAID": "RAID 0 or 10",
+      "OS Storage *": "2 x 480 GB SSD",
+      "OS Storage RAID": "RAID 1",
       "Interfaces": "6 x 1GbE RJ45, 2 x 10/25GbE SFP28",
       "Form Factor": "ATA"
     },
@@ -343,12 +349,11 @@
   {
     "name": "GoBig",
     "category": "Response Ready",
+    "tagline": "High performance and storage in an ATA compliant form factor",
     "roles": [
-      "Standalone",
-      "Forward"
-    ],
-    "uses": [
-      "Large Field Deployment"
+      "Rapidly deployable incident response",
+      "High mobility for commercial transportation",
+      "(all node types supported)"
     ],
     "sensor": true,
     "performance": {
@@ -367,9 +372,11 @@
     },
     "specs": {
       "Standalone Throughput †": "5 Gbps",
-      "Forward Throughput †": "10 Gbps",
-      "Available Storage *": "165 TB",
-      "Storage Type": "RAID 10",
+      "Forward Throughput †": "10 Gbps ‡",
+      "Data Storage *": "165 TB",
+      "Data Storage RAID": "RAID 10",
+      "OS Storage *": "2 x 480 GB SSD",
+      "OS Storage RAID": "RAID 1",
       "Interfaces": "6 x 1GbE RJ45, 4 x 10/25GbE SFP28",
       "Form Factor": "ATA"
     },

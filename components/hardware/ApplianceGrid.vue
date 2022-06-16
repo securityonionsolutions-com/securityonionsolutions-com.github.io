@@ -19,10 +19,6 @@
             <div>&nbsp;</div>
             <div>Use Case(s)</div>
           </th>
-          <th class="hidden md:table-cell px-2 truncate">
-            <div>&nbsp;</div>
-            <div>Role(s)</div>
-          </th>
           <th class="text-right px-2 truncate">
             <div>Forward</div>
             <div>Throughput †</div>
@@ -44,8 +40,8 @@
           class="bg-white cursor-pointer"
           @click="handleClick(item)"
         >
-          <td v-if="item['category'] == 'Response Ready'" class="hidden md:table-cell border-t border-blue-400 text-white bg-blue-400 pl-1 pr-0 truncate vert-header" v-text="item['category']" />
-          <td v-if="item['category'] != 'Response Ready'" class="hidden md:table-cell border-t border-blue-400 text-white bg-white pl-1 pr-0 truncate vert-header" />
+          <td v-if="item['category'] == 'Response Ready'" class="hidden md:table-cell border-t border-blue-400 text-white bg-blue-400 pl-1 pr-0 ml-1 truncate vert-header" v-text="item['category']" />
+          <td v-if="item['category'] != 'Response Ready'" class="hidden md:table-cell border-t border-blue-400 text-white bg-white pl-1 pr-0 ml-1 truncate vert-header" />
           <td class="hidden md:table-cell border-t border-blue-400 truncate w-1/4">
             <img :src="thumbnail(item)">
           </td>
@@ -56,13 +52,10 @@
             </div>
           </td>
           <td class="hidden xl:table-cell border-t border-blue-400 px-2 truncate">
-            <div v-for="(use, useIdx) in item.uses" :key="useIdx" v-text="use" />
-          </td>
-          <td class="hidden md:table-cell border-t border-blue-400 px-2 truncate">
             <div v-for="(role, roleIdx) in item.roles" :key="roleIdx" v-text="role" />
           </td>
           <td class="text-right border-t border-blue-400 px-2 truncate" v-text="item.specs['Forward Throughput †']" />
-          <td class="text-right border-t border-blue-400 px-2 truncate" v-text="item.specs['Available Storage *']" />
+          <td class="text-right border-t border-blue-400 px-2 truncate" v-text="item.specs['Data Storage *']" />
           <td class="hidden sm:table-cell text-right border-t border-blue-400 px-2 truncate" v-text="item.specs['Form Factor']" />
         </tr>
       </tbody>

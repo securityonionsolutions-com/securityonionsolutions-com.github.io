@@ -3,9 +3,9 @@
     <div class="flex flex-col flex-grow justify-between">
       <div>
         <div class="bg-so-blue text-white text-4xl text-center font-semibold w-full">
-          {{ appliance.name }}
+          SOS {{ appliance.name }}
         </div>
-        <div class="bg-so-blue text-white text-2xl text-center w-full">
+        <div class="hidden md:block bg-so-blue text-white text-2xl text-center w-full">
           {{ appliance.tagline }}
         </div>
         <client-only>
@@ -40,12 +40,8 @@
             :class="[appliance.img_front_thumb == undefined && appliance.img_back_thumb == undefined ? 'pt-12' : 'pt-12 md:pt-0']"
           >
             <div class="p-2">
-              <span class="font-bold" v-text="'Role(s)'" />
-              <pre class="font-sans" v-text="appliance.roles.join('\n')" />
-            </div>
-            <div class="p-2">
               <span class="font-bold" v-text="'Use Case(s)'" />
-              <pre class="font-sans" v-text="appliance.uses.join('\n')" />
+              <pre class="font-sans" v-text="appliance.roles.join('\n')" />
             </div>
             <div v-for="specName in Object.keys(appliance.specs)" :key="specName" class="p-2">
               <span class="font-bold" v-text="specName" />
