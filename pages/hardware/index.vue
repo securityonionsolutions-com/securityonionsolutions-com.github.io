@@ -3,18 +3,18 @@
     <PageNav page-name="Appliances" :links="links" />
     <SubHero id="download-before" class="hero-hardware">
       <template #header>
-        The new SOS 10000!
+        Have a need for speed?
       </template>
       <template #body>
         <div class="flex justify-center text-center">
           <div class="text-2xl">
-            Now using the AMD Epyc architecture,
+            Check out the <a href="/hardware/search_nodes/SOS_SNNV">SOS SNNV</a>!
             <br>
-            capable of 10 Gbps ‡
+            SOS SNNV uses extremely fast Non-volatile Memory (NVMe) for data storage.
           </div>
         </div>
         <div class="flex justify-center">
-          <ActionCallout class="mt-4" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about the SOS 10000.', source: 'hw_purchase' })">
+          <ActionCallout class="mt-4" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about the SOS SNNV.', source: 'hw_purchase' })">
             <template #button-text>
               Purchase
             </template>
@@ -94,7 +94,7 @@
           <template #body>
             <div class="flex flex-col text-left">
               <div>
-                Contact us for information about our new Response-Ready appliances:
+                Now offering our new Response-Ready appliances:
               </div>
               <ul class="list-disc list-inside pl-1 -mr-1">
                 <li>
@@ -126,9 +126,6 @@
     </ContentSection>
     <ContentSection id="comparison">
       <div class="flex flex-col items-center justify-center mx-1 xs:-mx-10 sm:mx-0">
-        <SectionHeader class="mb-8">
-          Appliances
-        </SectionHeader>
         <ApplianceGrid />
       </div>
     </ContentSection>

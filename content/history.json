@@ -19,12 +19,17 @@
                 "img": "old-server-mockup.jpg"
               },
               {
-                "text": "Security Onion Solutions continued to grow in 2019, adding five new team members.",
+                "text": "Security Onion Solutions continued to grow in 2019, adding several new team members.",
                 "img": "new-team.jpg"
               },
               {
-                "text": "We currently sit at over 2 million ISO image downloads!",
-                "img": "2mil+_downloads.jpg"
+                "text": "2020 marked the year that Security Onion 2 was introduced, with a complete overhaul of the product, and a brand new native web interface.",
+                "img": "alerts.jpg"
+              },
+              {},
+              {
+                "text": "Significant Security Onion Console (SOC) features introduced: Cases, Dashboards, Analyzers, and more!",
+                "img": "dashboards.jpg"
               }
             ]
 }

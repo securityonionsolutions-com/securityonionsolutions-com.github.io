@@ -70,7 +70,7 @@
               <ul class="list-disc ml-6 mb-6">
                 <li class="my-2">
                   Security Onion 2 in Production <span class="bg-gray-200  text-sm text-blue-500 font-semibold py-1 px-2 rounded-md whitespace-no-wrap">
-                    <a href="https://onlinetraining.securityonionsolutions.com/p/security-onion-in-production/">
+                    <a target="enroll" href="https://onlinetraining.securityonionsolutions.com/p/security-onion-in-production/">
                       Enroll
                       <fa icon="external-link-alt" />
                     </a>
@@ -78,7 +78,7 @@
                 </li>
                 <li class="my-2">
                   Developing Your Detection Playbook With Security Onion 2 <span class="bg-gray-200 text-sm text-blue-500 font-semibold py-1 px-2 rounded-md whitespace-no-wrap">
-                    <a href="https://onlinetraining.securityonionsolutions.com/p/developing-your-detection-playbook-with-security-onion-2/">
+                    <a target="enroll" href="https://onlinetraining.securityonionsolutions.com/p/developing-your-detection-playbook-with-security-onion-2/">
                       Enroll
                       <fa icon="external-link-alt" />
                     </a>
@@ -86,13 +86,21 @@
                 </li>
                 <li class="my-2">
                   Practical Analysis with Security Onion 2 <span class="bg-gray-200  text-sm text-blue-500 font-semibold py-1 px-2 rounded-md whitespace-no-wrap">
-                    <a href="https://onlinetraining.securityonionsolutions.com/p/practical-analysis-with-security-onion/">
+                    <a target="enroll" href="https://onlinetraining.securityonionsolutions.com/p/practical-analysis-with-security-onion/">
                       Enroll
                       <fa icon="external-link-alt" />
                     </a>
                   </span>
                 </li>
               </ul>
+              <p />
+              Save over 15% by enrolling in the three course bundle
+              <span class="bg-gray-200  text-sm text-blue-500 font-semibold py-1 px-2 rounded-md whitespace-no-wrap">
+                <a target="enroll" href="https://onlinetraining.securityonionsolutions.com/p/security-onion-2-three-course-bundle/">
+                  Enroll
+                  <fa icon="external-link-alt" />
+                </a>
+              </span>
             </div>
             <div class="align-center hidden">
               <action-callout class="my-12" link="https://onlinetraining.securityonionsolutions.com/">
@@ -156,7 +164,7 @@
           <template #body>
             We are proud to offer GSA pricing through our partner IntelliGenesis!
             Eligible organizations, please
-            <span class="hover:text-gray-900 cursor-pointer underline" @click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about GSA pricing.', source: 'GSA_pricing_info' })">contact us</span>
+            <span class="hover:text-gray-900 cursor-pointer underline" @click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about GSA pricing on live training classes.', source: 'GSA_pricing_info' })">contact us</span>
             for more information.
           </template>
         </DetailPara>

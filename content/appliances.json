@@ -1,190 +1,381 @@
-{
-  "roles": [
-    {
-      "name": "Forward Nodes",
-      "sensor": true,
-      "appliances": [
-        {
-          "name": "SOS 500",
-          "performance": {
-            "Speed": 25,
-            "Retention": 25
-          },
-          "img_front_thumb": "sos-1u-front-thumb.jpg",
-          "img_front": "sos-1u-front.jpg",
-          "img_back_thumb": "sos-1u-ethernet-back-thumb.jpg",
-          "img_back": "sos-1u-ethernet-back.jpg",
-          "specs": {
-            "Throughput": "500 Mbps †",
-            "Available Storage": "8 TB *",
-            "Interfaces": "6 x 1GbE RJ45, 2 x 10/25GbE SFP28",
-            "Form Factor": "1U"
-          },
-          "caveats": {
-            "storageApproximated": true,
-            "performanceDependsOnTraffic": true
-          }
-        },
-        {
-          "name": "SOS 1000",
-          "performance": {
-            "Speed": 50,
-            "Retention": 50
-          },
-          "img_front_thumb": "sos-1u-front-thumb.jpg",
-          "img_front": "sos-1u-front.jpg",
-          "img_back_thumb": "sos-1u-ethernet-back-thumb.jpg",
-          "img_back": "sos-1u-ethernet-back.jpg",
-          "specs": {
-            "Throughput": "1 Gbps †",
-            "Available Storage": "24 TB *",
-            "Storage Type": "RAID 5",
-            "Interfaces": "6 x 1GbE RJ45, 2 x 10/25GbE SFP28",
-            "Form Factor": "1U"
-          },
-          "caveats": {
-            "storageApproximated": true,
-            "performanceDependsOnTraffic": true
-          }
-        },
-        {
-          "name": "SOS 1000F",
-          "performance": {
-            "Speed": 50,
-            "Retention": 50
-          },
-          "img_front_thumb": "sos-1u-front-thumb.jpg",
-          "img_front": "sos-1u-front.jpg",
-          "img_back_thumb": "sos-1u-sfp-back-thumb.jpg",
-          "img_back": "sos-1u-sfp-back.jpg",
-          "specs": {
-            "Throughput": "1 Gbps †",
-            "Available Storage": "24 TB *",
-            "Storage Type": "RAID 5",
-            "Interfaces": "2 x 1GbE RJ45, 2 x 1/10GbE SFP+, 2 x 10/25GbE SFP28",
-            "Form Factor": "1U"
-          },
-          "caveats": {
-            "storageApproximated": true,
-            "performanceDependsOnTraffic": true
-          }
-        },
-        {
-          "name": "SOS 4000",
-          "performance": {
-            "Speed": 75,
-            "Retention": 50
-          },
-          "img_front_thumb": "sos-2u-front-thumb.jpg",
-          "img_front": "sos-2u-front.jpg",
-          "img_back_thumb": "sos-2u-back-thumb.jpg",
-          "img_back": "sos-2u-back.jpg",
-          "specs": {
-            "Throughput": "4 Gbps †",
-            "Available Storage": "120 TB *",
-            "Storage Type": "RAID 6",
-            "Interfaces": "6 x 1GbE RJ45, 4 x 10GbE SFP+, 2 x 10/25GbE SFP28",
-            "Form Factor": "2U"
-          },
-          "caveats": {
-            "storageApproximated": true,
-            "performanceDependsOnTraffic": true
-          }
-        },
-        {
-          "name": "SOS 10000",
-          "performance": {
-            "Speed": 100,
-            "Retention": 25
-          },
-          "img_front_thumb": "sos-1u-front-thumb.jpg",
-          "img_front": "sos-1u-front.jpg",
-          "img_back_thumb": "sos-1u-sfp-back-thumb.jpg",
-          "img_back": "sos-1u-sfp-back.jpg",
-          "specs": {
-            "Throughput": "10 Gbps † ‡",
-            "Available Storage": "7 TB *",
-            "Storage Type": "RAID 1",
-            "Interfaces": "2 x 1GbE RJ45, 2 x 1/10GbE SFP+, 2 x 10/25GbE SFP28",
-            "Form Factor": "1U"
-          },
-          "caveats": {
-            "storageApproximated": true,
-            "performanceDependsOnTraffic": true,
-            "withoutPcap": true
-          }
-        }
-      ]
+[
+  {
+    "name": "500",
+    "category": "Enterprise",
+    "tagline": "",
+    "roles": [
+      "Standalone",
+      "Forward"
+    ],
+    "uses": [
+    ],
+    "sensor": true,
+    "performance": {
+      "Speed": 25,
+      "Retention": 25
     },
-    {
-      "name": "Manager Nodes",
-      "sensor": false,
-      "appliances": [
-        {
-          "name": "SOS MN",
-          "performance": {
-            "Performance": 100,
-            "Retention": 50
-          },
-          "img_front_thumb": "sos-1u-front-thumb.jpg",
-          "img_front": "sos-1u-front.jpg",
-          "img_back_thumb": "sos-1u-ethernet-back-thumb.jpg",
-          "img_back": "sos-1u-ethernet-back.jpg",
-          "specs": {
-            "Available Storage": "15 TB *",
-            "Interfaces": "6 x 1GbE RJ45, 2 x 10/25GbE SFP28",
-            "Form Factor": "1U"
-          },
-          "caveats": {
-            "storageApproximated": true
-          }
-        }
-      ]
+    "img_front_thumb": "sos-1u-front-thumb.jpg",
+    "img_front": "sos-1u-front.jpg",
+    "img_back_thumb": "sos-1u-ethernet-back-thumb.jpg",
+    "img_back": "sos-1u-ethernet-back.jpg",
+    "threesixty": {
+      "imagePath": "/img/appliances/sos-1u-ethernet",
+      "filenameFormat": "sos-1u-ethernet-360-{index}.jpg",
+      "count": 36,
+      "reverse": false
     },
-    {
-      "name": "Search Nodes",
-      "sensor": false,
-      "appliances": [
-        {
-          "name": "SOS SN7200",
-          "performance": {
-            "Performance": 50,
-            "Retention": 100
-          },
-          "img_front_thumb": "sos-2u-front-thumb.jpg",
-          "img_front": "sos-2u-front.jpg",
-          "img_back_thumb": "sos-2u-back-thumb.jpg",
-          "img_back": "sos-2u-back.jpg",          
-          "specs": {
-            "Available Storage": "72 TB *",
-            "Interfaces": "6 x 1GbE RJ45, 4 x 10GbE SFP+, 2 x 10/25GbE SFP28",
-            "Form Factor": "2U"
-          },
-          "caveats": {
-            "storageApproximated": true
-          }
-        },
-        {
-          "name": "SOS SNNV",
-          "performance": {
-            "Performance": 100,
-            "Retention": 75
-          },
-          "img_front_thumb": "sos-1u-front-thumb.jpg",
-          "img_front": "sos-1u-front.jpg",
-          "img_back_thumb": "sos-1u-sfp-back-thumb.jpg",
-          "img_back": "sos-1u-sfp-back.jpg",
-          "specs": {
-            "Available Storage": "30 TB *",
-            "Interfaces": " 2 x 1GbE RJ45, 2 x 1/10GbE SFP+, 2 x 10/25GbE SFP28",
-            "Form Factor": "1U",
-            "Notes": "Non-Volatile Memory storage"
-          },
-          "caveats": {
-            "storageApproximated": true
-          }
-        }
-      ]
+    "specs": {
+      "Standalone Throughput †": "100 Mpbs",
+      "Forward Throughput †": "500 Mbps",
+      "Available Storage *": "8 TB",
+      "Storage Type": "",
+      "Interfaces": "6 x 1GbE RJ45, 2 x 10/25GbE SFP28",
+      "Form Factor": "1U"
+    },
+    "caveats": {
+      "storageApproximated": true,
+      "performanceDependsOnTraffic": true
     }
-  ]
-}
+  },
+  {
+    "name": "1000",
+    "category": "Enterprise",
+    "roles": [
+      "Standalone",
+      "Forward"
+    ],
+    "uses": [
+      "Medium Office"
+    ],
+    "sensor": true,
+    "performance": {
+      "Speed": 50,
+      "Retention": 50
+    },
+    "img_front_thumb": "sos-1u-front-thumb.jpg",
+    "img_front": "sos-1u-front.jpg",
+    "img_back_thumb": "sos-1u-ethernet-back-thumb.jpg",
+    "img_back": "sos-1u-ethernet-back.jpg",
+    "threesixty": {
+      "imagePath": "/img/appliances/sos-1u-ethernet",
+      "filenameFormat": "sos-1u-ethernet-360-{index}.jpg",
+      "count": 36,
+      "reverse": false
+    },
+    "specs": {
+      "Standalone Throughput †": "500 Mpbs",
+      "Forward Throughput †": "1 Gbps",
+      "Available Storage *": "24 TB",
+      "Storage Type": "RAID 5",
+      "Interfaces": "6 x 1GbE RJ45, 2 x 10/25GbE SFP28",
+      "Form Factor": "1U"
+    },
+    "caveats": {
+      "storageApproximated": true,
+      "performanceDependsOnTraffic": true
+    }
+  },
+  {
+    "name": "1000F",
+    "category": "Enterprise",
+    "roles": [
+      "Standalone",
+      "Forward"
+    ],
+    "uses": [
+      "Medium Office",
+      "Large Office"
+    ],
+    "sensor": true,
+    "performance": {
+      "Speed": 50,
+      "Retention": 50
+    },
+    "img_front_thumb": "sos-1u-front-thumb.jpg",
+    "img_front": "sos-1u-front.jpg",
+    "img_back_thumb": "sos-1u-sfp-back-thumb.jpg",
+    "img_back": "sos-1u-sfp-back.jpg",
+    "threesixty": {
+      "imagePath": "/img/appliances/sos-1u-sfp",
+      "filenameFormat": "sos-1u-sfp-360-{index}.jpg",
+      "count": 38,
+      "reverse": false
+    },
+    "specs": {
+      "Standalone Throughput †": "500 Mpbs",
+      "Forward Throughput †": "1 Gbps",
+      "Available Storage *": "24 TB",
+      "Storage Type": "RAID 5",
+      "Interfaces": "2 x 1GbE RJ45, 2 x 1/10GbE SFP+, 2 x 10/25GbE SFP28",
+      "Form Factor": "1U"
+    },
+    "caveats": {
+      "storageApproximated": true,
+      "performanceDependsOnTraffic": true
+    }
+  },
+  {
+    "name": "4000",
+    "category": "Enterprise",
+    "roles": [
+      "Forward"
+    ],
+    "uses": [
+      "Large Office"
+    ],
+    "sensor": true,
+    "performance": {
+      "Speed": 75,
+      "Retention": 50
+    },
+    "img_front_thumb": "sos-2u-front-thumb.jpg",
+    "img_front": "sos-2u-front.jpg",
+    "img_back_thumb": "sos-2u-back-thumb.jpg",
+    "img_back": "sos-2u-back.jpg",
+    "threesixty": {
+      "imagePath": "/img/appliances/sos-2u",
+      "filenameFormat": "sos-2u-360-{index}.jpg",
+      "count": 42,
+      "reverse": true
+    },
+    "specs": {
+      "Standalone Throughput †": "N/A",
+      "Forward Throughput †": "4 Gbps",
+      "Available Storage *": "120 TB",
+      "Storage Type": "RAID 6",
+      "Interfaces": "6 x 1GbE RJ45, 4 x 10GbE SFP+, 2 x 10/25GbE SFP28",
+      "Form Factor": "2U"
+    },
+    "caveats": {
+      "storageApproximated": true,
+      "performanceDependsOnTraffic": true
+    }
+  },
+  {
+    "name": "10000",
+    "category": "Enterprise",
+    "roles": [
+      "Standalone",
+      "Forward"
+    ],
+    "uses": [
+      "Very Large Office"
+    ],
+    "sensor": true,
+    "performance": {
+      "Speed": 100,
+      "Retention": 25
+    },
+    "img_front_thumb": "sos-1u-front-thumb.jpg",
+    "img_front": "sos-1u-front.jpg",
+    "img_back_thumb": "sos-1u-sfp-back-thumb.jpg",
+    "img_back": "sos-1u-sfp-back.jpg",
+    "threesixty": {
+      "imagePath": "/img/appliances/sos-1u-sfp",
+      "filenameFormat": "sos-1u-sfp-360-{index}.jpg",
+      "count": 38,
+      "reverse": false
+    },
+    "specs": {
+      "Standalone Throughput †": "5 Gbps",
+      "Forward Throughput †": "10 Gbps ‡",
+      "Available Storage *": "7 TB",
+      "Storage Type": "RAID 10",
+      "Interfaces": "2 x 1GbE RJ45, 2 x 1/10GbE SFP+, 2 x 10/25GbE SFP28",
+      "Form Factor": "1U"
+    },
+    "caveats": {
+      "storageApproximated": true,
+      "performanceDependsOnTraffic": true,
+      "withoutPcap": true
+    }
+  },
+  {
+    "name": "MN",
+    "category": "Enterprise",
+    "roles": [
+      "Standalone",
+      "Manager"
+    ],
+    "uses": [
+      "All"
+    ],
+    "sensor": false,
+    "performance": {
+      "Performance": 100,
+      "Retention": 50
+    },
+    "img_front_thumb": "sos-1u-front-thumb.jpg",
+    "img_front": "sos-1u-front.jpg",
+    "img_back_thumb": "sos-1u-ethernet-back-thumb.jpg",
+    "img_back": "sos-1u-ethernet-back.jpg",
+    "threesixty": {
+      "imagePath": "/img/appliances/sos-1u-ethernet",
+      "filenameFormat": "sos-1u-ethernet-360-{index}.jpg",
+      "count": 36,
+      "reverse": false
+    },
+    "specs": {
+      "Standalone Throughput †": "500 Mpbs",
+      "Forward Throughput †": "N/A",
+      "Available Storage *": "15 TB",
+      "Storage Type": "RAID 1",
+      "Interfaces": "6 x 1GbE RJ45, 2 x 10/25GbE SFP28",
+      "Form Factor": "1U"
+    },
+    "caveats": {
+      "storageApproximated": true
+    }
+  },
+  {
+    "name": "SN7200",
+    "category": "Enterprise",
+    "roles": [
+      "Standalone",
+      "Search"
+    ],
+    "uses": [
+      "Small Grids",
+      "Medium Grids"
+    ],
+    "sensor": false,
+    "performance": {
+      "Performance": 50,
+      "Retention": 100
+    },
+    "img_front_thumb": "sos-2u-front-thumb.jpg",
+    "img_front": "sos-2u-front.jpg",
+    "img_back_thumb": "sos-2u-back-thumb.jpg",
+    "img_back": "sos-2u-back.jpg",
+    "threesixty": {
+      "imagePath": "/img/appliances/sos-2u",
+      "filenameFormat": "sos-2u-360-{index}.jpg",
+      "count": 42,
+      "reverse": true
+    },
+    "specs": {
+      "Standalone Throughput †": "3 Gbps",
+      "Forward Throughput †": "N/A",
+      "Available Storage *": "72 TB",
+      "Storage Type": "RAID 10",
+      "Interfaces": "6 x 1GbE RJ45, 4 x 10GbE SFP+, 2 x 10/25GbE SFP28",
+      "Form Factor": "2U"
+    },
+    "caveats": {
+      "storageApproximated": true
+    }
+  },
+  {
+    "name": "SNNV",
+    "category": "Enterprise",
+    "roles": [
+      "Standalone",
+      "Search"
+    ],
+    "uses": [
+      "Large Grids"
+    ],
+    "performance": {
+      "Performance": 100,
+      "Retention": 75
+    },
+    "img_front_thumb": "sos-1u-front-thumb.jpg",
+    "img_front": "sos-1u-front.jpg",
+    "img_back_thumb": "sos-1u-sfp-back-thumb.jpg",
+    "img_back": "sos-1u-sfp-back.jpg",
+    "threesixty": {
+      "imagePath": "/img/appliances/sos-1u-sfp",
+      "filenameFormat": "sos-1u-sfp-360-{index}.jpg",
+      "count": 38,
+      "reverse": false
+    },
+    "specs": {
+      "Standalone Throughput †": "5 Gbps",
+      "Forward Throughput †": "N/A",
+      "Available Storage *": "30 TB",
+      "Interfaces": " 2 x 1GbE RJ45, 2 x 1/10GbE SFP+, 2 x 10/25GbE SFP28",
+      "Storage Type": "RAID 10",
+      "Form Factor": "1U",
+      "Notes": "Non-Volatile Memory storage"
+    },
+    "caveats": {
+      "storageApproximated": true
+    }
+  },
+  {
+    "name": "GoFast",
+    "category": "Response Ready",
+    "roles": [
+      "Standalone",
+      "Forward"
+    ],
+    "uses": [
+      "Field Deployment"
+    ],
+    "sensor": true,
+    "performance": {
+      "Speed": 25,
+      "Retention": 25
+    },
+    "img_front_thumb": "sos-gf-front-thumb.jpg",
+    "img_front": "sos-gf-front.jpg",
+    "img_back_thumb": "sos-gf-back-thumb.jpg",
+    "img_back": "sos-gf-back.jpg",
+    "threesixty": {
+      "imagePath": "/img/appliances/gofast",
+      "filenameFormat": "sos-gf-360-{index}.jpg",
+      "count": 32,
+      "reverse": true
+    },
+    "specs": {
+      "Standalone Throughput †": "5 Gbps",
+      "Forward Throughput †": "10 Gbps",
+      "Available Storage *": "120 TB",
+      "Storage Type": "RAID 0 or 10",
+      "Interfaces": "6 x 1GbE RJ45, 2 x 10/25GbE SFP28",
+      "Form Factor": "ATA"
+    },
+    "caveats": {
+      "storageApproximated": true,
+      "performanceDependsOnTraffic": true
+    }
+  },
+  {
+    "name": "GoBig",
+    "category": "Response Ready",
+    "roles": [
+      "Standalone",
+      "Forward"
+    ],
+    "uses": [
+      "Large Field Deployment"
+    ],
+    "sensor": true,
+    "performance": {
+      "Speed": 50,
+      "Retention": 50
+    },
+    "img_front_thumb": "sos-gb-front-thumb.jpg",
+    "img_front": "sos-gb-front.jpg",
+    "img_back_thumb": "sos-gb-back-thumb.jpg",
+    "img_back": "sos-gb-back.jpg",
+    "threesixty": {
+      "imagePath": "/img/appliances/gobig",
+      "filenameFormat": "sos-gb-360-{index}.jpg",
+      "count": 39,
+      "reverse": true
+    },
+    "specs": {
+      "Standalone Throughput †": "5 Gbps",
+      "Forward Throughput †": "10 Gbps",
+      "Available Storage *": "165 TB",
+      "Storage Type": "RAID 10",
+      "Interfaces": "6 x 1GbE RJ45, 4 x 10/25GbE SFP28",
+      "Form Factor": "ATA"
+    },
+    "caveats": {
+      "storageApproximated": true,
+      "performanceDependsOnTraffic": true
+    }
+  }
+]

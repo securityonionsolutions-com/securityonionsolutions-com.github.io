@@ -1,5 +1,21 @@
 <template>
   <div class="flex flex-col items-center justify-center">
+    <div class="flex flex-col lg:flex-row items-center lg:mx-4 mt-3">
+      <button
+        v-for="(feat, index) in featureArr"
+        :key="index"
+        class="flex justify-center items-center my-1 focus:outline-none w-4/5 xs:w-full h-full"
+        :class="[ activeFeat===index ? 'bg-gray-200 bg-opacity-25 shadow-lg rounded-lg' : '']"
+        @click="setActiveFeat(index)"
+        @focus="setActiveFeat(index)"
+      >
+        <detail-para class="px-6 w-full mt-4 mb-4">
+          <template #header>
+            {{ feat.header }}
+          </template>
+        </detail-para>
+      </button>
+    </div>
     <div
       class="w-full
         lg:w-4/5
@@ -19,25 +35,7 @@
     >
       <img :src="screenshot(activeFeat)">
     </div>
-    <div class="flex flex-col lg:flex-row items-center lg:mx-4 mt-3">
-      <button
-        v-for="(feat, index) in featureArr"
-        :key="index"
-        class="flex justify-center items-center my-1 focus:outline-none w-4/5 xs:w-full h-full"
-        :class="[ activeFeat===index ? 'bg-gray-200 bg-opacity-25 shadow-lg rounded-lg' : '']"
-        @click="setActiveFeat(index)"
-        @focus="setActiveFeat(index)"
-      >
-        <detail-para class="px-6 w-full mt-4 mb-6">
-          <template #header>
-            {{ feat.header }}
-          </template>
-          <template #body>
-            {{ feat.body }}
-          </template>
-        </detail-para>
-      </button>
-    </div>
+    <div v-text="description(activeFeat)" />
   </div>
 </template>
 
@@ -64,6 +62,10 @@ export default {
     screenshot (index) {
       const fileName = this.featureArr[index].image
       return require(`~/assets/img/${fileName}`)
+    },
+    description (index) {
+      const text = this.featureArr[index].body
+      return text
     },
     handleImageClick (index) {
       const fileName = this.featureArr[index].image.replace('screenshots/', '')
