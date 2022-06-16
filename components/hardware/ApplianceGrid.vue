@@ -19,15 +19,15 @@
             <div>&nbsp;</div>
             <div>Use Case(s)</div>
           </th>
-          <th class="text-right px-2 truncate">
+          <th class="text-center px-2 truncate">
             <div>Forward</div>
             <div>Throughput †</div>
           </th>
-          <th class="text-right px-2 truncate">
+          <th class="text-center px-2 truncate">
             <div>Max</div>
             <div>Storage *</div>
           </th>
-          <th class="hidden sm:table-cell text-right px-2 truncate">
+          <th class="hidden sm:table-cell text-center px-2 truncate">
             <div>Form</div>
             <div>Factor</div>
           </th>
