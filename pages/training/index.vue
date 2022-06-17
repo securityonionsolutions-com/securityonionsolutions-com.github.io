@@ -160,6 +160,23 @@
             </action-callout>
           </template>
         </feature-right>
+        <feature-left class="xs:mb-12" :text-margin="true">
+          <template #body>
+            <div class="text-center xs:text-left">
+              <div class="my-2">
+                Why choose Security Onion Solutions for your Security Onion training?
+              </div>
+              <ul class="list-disc list-inside pl-1 -mr-1">
+                <li>We created and maintain Security Onion, so we know it better than anybody else.</li>
+                <li>We are the only official authorized training provider for Security Onion.</li>
+                <li>Our instructors are the only Security Onion Certified Instructors in the world.</li>
+                <li>Our course material is the only authorized training material for Security Onion.</li>
+                <li>We've been teaching Security Onion classes and providing Professional Services since 2014.</li>
+                <li>Security Onion has over 2 million downloads! When you purchase products and services from us, you are helping to fund development of the platform.</li>
+              </ul>
+            </div>
+          </template>
+        </feature-left>
         <DetailPara class="mb-16 mt-10">
           <template #body>
             We are proud to offer GSA pricing through our partner IntelliGenesis!

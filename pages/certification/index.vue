@@ -80,7 +80,7 @@
               <so-button link="/files/socp-v1-exam-blueprint.pdf">
                 Exam details
               </so-button>
-              <so-button link="https://www.isoqualitytesting.com/">
+              <so-button link="https://www.prometric.com/sos">
                 Schedule exam
               </so-button>
               <div class="text-sm -mt-4 mb-3 hover:underline">

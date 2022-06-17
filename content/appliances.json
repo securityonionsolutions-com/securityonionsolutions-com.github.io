@@ -22,11 +22,13 @@
       "reverse": false
     },
     "specs": {
-      "Standalone Throughput †": "100 Mpbs",
+      "Standalone Throughput †": "N/A",
       "Forward Throughput †": "500 Mbps",
       "Data Storage *": "8 TB",
+      "Data Storage Class": "7K RPM",
       "Data Storage RAID": "Single Disk",
-      "OS Storage *": "256 GB",
+      "OS Storage *": "2 x 240 GB",
+      "OS Storage Class": "M.2",
       "OS Storage RAID": "RAID 1",
       "Interfaces": "6 x 1GbE RJ45, 2 x 10/25GbE SFP28",
       "Form Factor": "1U"
@@ -60,11 +62,13 @@
       "reverse": false
     },
     "specs": {
-      "Standalone Throughput †": "500 Mpbs",
+      "Standalone Throughput †": "500 Mbps",
       "Forward Throughput †": "1 Gbps",
       "Data Storage *": "24 TB",
+      "Data Storage Class": "7K RPM",
       "Data Storage RAID": "RAID 5",
-      "OS Storage *": "256 GB",
+      "OS Storage *": "2 x 240 GB",
+      "OS Storage Class": "M.2",
       "OS Storage RAID": "RAID 1",
       "Interfaces": "6 x 1GbE RJ45, 2 x 10/25GbE SFP28",
       "Form Factor": "1U"
@@ -98,11 +102,13 @@
       "reverse": false
     },
     "specs": {
-      "Standalone Throughput †": "500 Mpbs",
+      "Standalone Throughput †": "500 Mbps",
       "Forward Throughput †": "1 Gbps",
       "Data Storage *": "24 TB",
+      "Data Storage Class": "7K RPM",
       "Data Storage RAID": "RAID 5",
-      "OS Storage *": "256 GB",
+      "OS Storage *": "2 x 240 GB",
+      "OS Storage Class": "M.2",
       "OS Storage RAID": "RAID 1",
       "Interfaces": "2 x 1GbE RJ45, 2 x 1/10GbE SFP+, 2 x 10/25GbE SFP28",
       "Form Factor": "1U"
@@ -142,8 +148,10 @@
       "Standalone Throughput †": "N/A",
       "Forward Throughput †": "4 Gbps",
       "Data Storage *": "120 TB",
+      "Data Storage Class": "7K RPM",
       "Data Storage RAID": "RAID 6",
-      "OS Storage *": "256 GB",
+      "OS Storage *": "2 x 240 GB",
+      "OS Storage Class": "M.2",
       "OS Storage RAID": "RAID 1",
       "Interfaces": "6 x 1GbE RJ45, 4 x 10GbE SFP+, 2 x 10/25GbE SFP28",
       "Form Factor": "2U"
@@ -177,11 +185,13 @@
       "reverse": false
     },
     "specs": {
-      "Standalone Throughput †": "5 Gbps",
+      "Standalone Throughput †": "N/A",
       "Forward Throughput †": "10 Gbps ‡",
       "Data Storage *": "7 TB",
+      "Data Storage Class": "SSD",
       "Data Storage RAID": "RAID 10",
-      "OS Storage *": "256 GB",
+      "OS Storage *": "2 x 240 GB",
+      "OS Storage Class": "M.2",
       "OS Storage RAID": "RAID 1",
       "Interfaces": "2 x 1GbE RJ45, 2 x 1/10GbE SFP+, 2 x 10/25GbE SFP28",
       "Form Factor": "1U"
@@ -216,11 +226,13 @@
       "reverse": false
     },
     "specs": {
-      "Standalone Throughput †": "500 Mpbs",
+      "Standalone Throughput †": "N/A",
       "Forward Throughput †": "N/A",
       "Data Storage *": "15 TB",
+      "Data Storage Class": "NVMe",
       "Data Storage RAID": "RAID 1",
-      "OS Storage *": "256 GB",
+      "OS Storage *": "2 x 240 GB",
+      "OS Storage Class": "M.2",
       "OS Storage RAID": "RAID 1",
       "Interfaces": "6 x 1GbE RJ45, 2 x 10/25GbE SFP28",
       "Form Factor": "1U"
@@ -258,8 +270,10 @@
       "Standalone Throughput †": "3 Gbps",
       "Forward Throughput †": "N/A",
       "Data Storage *": "72 TB",
+      "Data Storage Class": "7K RPM",
       "Data Storage RAID": "RAID 10",
-      "OS Storage *": "256 GB",
+      "OS Storage *": "2 x 240 GB",
+      "OS Storage Class": "M.2",
       "OS Storage RAID": "RAID 1",
       "Interfaces": "6 x 1GbE RJ45, 4 x 10GbE SFP+, 2 x 10/25GbE SFP28",
       "Form Factor": "2U"
@@ -296,12 +310,13 @@
       "Standalone Throughput †": "5 Gbps",
       "Forward Throughput †": "N/A",
       "Data Storage *": "30 TB",
+      "Data Storage Class": "NVMe",
       "Data Storage RAID": "RAID 10",
-      "OS Storage *": "256 GB",
+      "OS Storage *": "2 x 240 GB",
+      "OS Storage Class": "M.2",
       "OS Storage RAID": "RAID 1",
       "Interfaces": " 2 x 1GbE RJ45, 2 x 1/10GbE SFP+, 2 x 10/25GbE SFP28",
-      "Form Factor": "1U",
-      "Notes": "Non-Volatile Memory storage"
+      "Form Factor": "1U"
     },
     "caveats": {
       "storageApproximated": true
@@ -335,8 +350,10 @@
       "Standalone Throughput †": "5 Gbps",
       "Forward Throughput †": "10 Gbps",
       "Data Storage *": "120 TB",
+      "Data Storage Class": "NVMe",
       "Data Storage RAID": "RAID 0 or 10",
-      "OS Storage *": "2 x 480 GB SSD",
+      "OS Storage *": "2 x 480 GB",
+      "OS Storage Class": "SSD",
       "OS Storage RAID": "RAID 1",
       "Interfaces": "6 x 1GbE RJ45, 2 x 10/25GbE SFP28",
       "Form Factor": "ATA"
@@ -374,8 +391,10 @@
       "Standalone Throughput †": "5 Gbps",
       "Forward Throughput †": "10 Gbps ‡",
       "Data Storage *": "165 TB",
+      "Data Storage Class": "SSD",
       "Data Storage RAID": "RAID 10",
-      "OS Storage *": "2 x 480 GB SSD",
+      "OS Storage *": "2 x 480 GB",
+      "OS Storage Class": "SSD",
       "OS Storage RAID": "RAID 1",
       "Interfaces": "6 x 1GbE RJ45, 4 x 10/25GbE SFP28",
       "Form Factor": "ATA"

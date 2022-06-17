@@ -51,10 +51,10 @@
         </div>
         <Footnotes />
       </div>
-      <ActionCallout class="m-6 xs:pb-6" @button-click="$nuxt.$emit('show-contact-modal', {text: `Please contact me with more information about the ${appliance.name}`, source: `${appliance.name.toLowerCase().replace(' ', '_')}_purchasing_info`})">
+      <ActionCallout class="m-6 xs:pb-6" @button-click="$nuxt.$emit('show-contact-modal', {text: `Please contact me with more information about the SOS ${appliance.name}.`, source: `${appliance.name.toLowerCase().replace(' ', '_')}_purchasing_info`})">
         <template #info>
           <div class="text-3xl">
-            Ready to purchase, or need more information?
+            Ready to purchase or need more information?
           </div>
         </template>
         <template #button-text>
