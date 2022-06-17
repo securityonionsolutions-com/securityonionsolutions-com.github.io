@@ -28,7 +28,7 @@
       "Data Storage Class": "7K RPM",
       "Data Storage RAID": "Single Disk",
       "OS Storage *": "2 x 240 GB",
-      "OS Storage Class": "M.2",
+      "OS Storage Class": "SSD",
       "OS Storage RAID": "RAID 1",
       "Interfaces": "6 x 1GbE RJ45, 2 x 10/25GbE SFP28",
       "Form Factor": "1U"
@@ -68,7 +68,7 @@
       "Data Storage Class": "7K RPM",
       "Data Storage RAID": "RAID 5",
       "OS Storage *": "2 x 240 GB",
-      "OS Storage Class": "M.2",
+      "OS Storage Class": "SSD",
       "OS Storage RAID": "RAID 1",
       "Interfaces": "6 x 1GbE RJ45, 2 x 10/25GbE SFP28",
       "Form Factor": "1U"
@@ -108,7 +108,7 @@
       "Data Storage Class": "7K RPM",
       "Data Storage RAID": "RAID 5",
       "OS Storage *": "2 x 240 GB",
-      "OS Storage Class": "M.2",
+      "OS Storage Class": "SSD",
       "OS Storage RAID": "RAID 1",
       "Interfaces": "2 x 1GbE RJ45, 2 x 1/10GbE SFP+, 2 x 10/25GbE SFP28",
       "Form Factor": "1U"
@@ -151,7 +151,7 @@
       "Data Storage Class": "7K RPM",
       "Data Storage RAID": "RAID 6",
       "OS Storage *": "2 x 240 GB",
-      "OS Storage Class": "M.2",
+      "OS Storage Class": "SSD",
       "OS Storage RAID": "RAID 1",
       "Interfaces": "6 x 1GbE RJ45, 4 x 10GbE SFP+, 2 x 10/25GbE SFP28",
       "Form Factor": "2U"
@@ -191,7 +191,7 @@
       "Data Storage Class": "SSD",
       "Data Storage RAID": "RAID 10",
       "OS Storage *": "2 x 240 GB",
-      "OS Storage Class": "M.2",
+      "OS Storage Class": "SSD",
       "OS Storage RAID": "RAID 1",
       "Interfaces": "2 x 1GbE RJ45, 2 x 1/10GbE SFP+, 2 x 10/25GbE SFP28",
       "Form Factor": "1U"
@@ -232,7 +232,7 @@
       "Data Storage Class": "NVMe",
       "Data Storage RAID": "RAID 1",
       "OS Storage *": "2 x 240 GB",
-      "OS Storage Class": "M.2",
+      "OS Storage Class": "SSD",
       "OS Storage RAID": "RAID 1",
       "Interfaces": "6 x 1GbE RJ45, 2 x 10/25GbE SFP28",
       "Form Factor": "1U"
@@ -273,7 +273,7 @@
       "Data Storage Class": "7K RPM",
       "Data Storage RAID": "RAID 10",
       "OS Storage *": "2 x 240 GB",
-      "OS Storage Class": "M.2",
+      "OS Storage Class": "SSD",
       "OS Storage RAID": "RAID 1",
       "Interfaces": "6 x 1GbE RJ45, 4 x 10GbE SFP+, 2 x 10/25GbE SFP28",
       "Form Factor": "2U"
@@ -313,7 +313,7 @@
       "Data Storage Class": "NVMe",
       "Data Storage RAID": "RAID 10",
       "OS Storage *": "2 x 240 GB",
-      "OS Storage Class": "M.2",
+      "OS Storage Class": "SSD",
       "OS Storage RAID": "RAID 1",
       "Interfaces": " 2 x 1GbE RJ45, 2 x 1/10GbE SFP+, 2 x 10/25GbE SFP28",
       "Form Factor": "1U"
