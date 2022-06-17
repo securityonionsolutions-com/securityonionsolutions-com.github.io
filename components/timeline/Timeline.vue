@@ -47,8 +47,10 @@ export default {
       { year: '2014', event: 'Security Onion Solutions, LLC', important: true },
       { year: '2016', event: 'Company expansion', important: false },
       { year: '2018', event: 'Custom hardware', important: true },
-      { year: '2019', event: 'Five new members', important: true },
-      { year: '2021', event: 'Over 2 million downloads!' }
+      { year: '2019', event: 'Team continues to grow!', important: true },
+      { year: '2020', event: 'Security Onion 2', important: true },
+      { year: '2021', event: 'Over 2 million downloads!', important: false },
+      { year: '2022', event: 'Significant software features introduced' }
     ],
     focusedEventIndex: 0
   }),

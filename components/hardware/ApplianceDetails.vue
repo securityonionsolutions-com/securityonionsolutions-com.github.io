@@ -2,8 +2,11 @@
   <div class="overflow-hidden bg-white text-black flex flex-col flex-grow">
     <div class="flex flex-col flex-grow justify-between">
       <div>
-        <div class="bg-so-blue text-white text-4xl text-center font-semibold w-full p-4">
-          {{ appliance.name }}
+        <div class="bg-so-blue text-white text-4xl text-center font-semibold w-full">
+          SOS {{ appliance.name }}
+        </div>
+        <div class="hidden md:block bg-so-blue text-white text-2xl text-center w-full">
+          {{ appliance.tagline }}
         </div>
         <client-only>
           <div class="flex justify-center">
@@ -36,28 +39,22 @@
             class="md:px-4"
             :class="[appliance.img_front_thumb == undefined && appliance.img_back_thumb == undefined ? 'pt-12' : 'pt-12 md:pt-0']"
           >
+            <div class="p-2">
+              <span class="font-bold" v-text="'Use Case(s)'" />
+              <pre class="font-sans" v-text="appliance.roles.join('\n')" />
+            </div>
             <div v-for="specName in Object.keys(appliance.specs)" :key="specName" class="p-2">
               <span class="font-bold" v-text="specName" />
               <pre class="font-sans" v-text="specSplit(appliance.specs[specName])" />
             </div>
           </div>
         </div>
-        <div class="p-4 xs:mx-12 xl:mx-48">
-          <div v-if="appliance.caveats.storageApproximated">
-            * Storage sizes are approximate.
-          </div>
-          <div v-if="appliance.caveats.performanceDependsOnTraffic">
-            † Actual performance depends on network traffic. Forward node estimates assume a Manager Node is used.
-          </div>
-          <div v-if="appliance.caveats.withoutPcap">
-            ‡ Throughput rating is achieved without PCAP.
-          </div>
-        </div>
+        <Footnotes />
       </div>
-      <ActionCallout class="m-6 xs:pb-6" @button-click="$nuxt.$emit('show-contact-modal', {text: `Please contact me with more information about the ${appliance.name}`, source: `${appliance.name.toLowerCase().replace(' ', '_')}_purchasing_info`})">
+      <ActionCallout class="m-6 xs:pb-6" @button-click="$nuxt.$emit('show-contact-modal', {text: `Please contact me with more information about the SOS ${appliance.name}.`, source: `${appliance.name.toLowerCase().replace(' ', '_')}_purchasing_info`})">
         <template #info>
           <div class="text-3xl">
-            Ready to purchase, or need more information?
+            Ready to purchase or need more information?
           </div>
         </template>
         <template #button-text>
@@ -77,20 +74,10 @@ export default {
   },
   computed: {
     threesixtyDetails () {
-      let imagePath
-      let filenameFormat
-      let numPics
-      let reverse = false
-      if (this.appliance.img_back.includes('sos-1u')) {
-        imagePath = this.appliance.img_back.includes('ethernet') ? '/img/appliances/sos-1u-ethernet' : '/img/appliances/sos-1u-sfp'
-        filenameFormat = this.appliance.img_back.includes('ethernet') ? 'sos-1u-ethernet-360-{index}.jpg' : 'sos-1u-sfp-360-{index}.jpg'
-        numPics = this.appliance.img_back.includes('ethernet') ? 36 : 37
-      } else {
-        imagePath = '/img/appliances/sos-2u'
-        filenameFormat = 'sos-2u-360-{index}.jpg'
-        numPics = 42
-        reverse = true
-      }
+      const imagePath = this.appliance.threesixty.imagePath
+      const filenameFormat = this.appliance.threesixty.filenameFormat
+      const numPics = this.appliance.threesixty.count
+      const reverse = this.appliance.threesixty.reverse
       return {
         imagePath,
         filenameFormat,

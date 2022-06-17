@@ -15,17 +15,14 @@ export default {
   scrollToTop: true,
   async asyncData ({ params }) {
     const appliance = await params.appliance.replace('_', ' ')
-    const role = await params.category.replace('_', ' ')
     return {
-      applianceName: appliance,
-      role
+      applianceName: appliance
     }
   },
   computed: {
     appliance () {
-      const roles = require('~/content/appliances.json').roles
-      const applianceArr = roles.find(role => role.name.toLowerCase() === this.role).appliances
-      return applianceArr.find(appliance => appliance.name === this.applianceName)
+      const appliances = require('~/content/appliances.json')
+      return appliances.find(appliance => appliance.name === this.applianceName)
     }
   },
   head () {

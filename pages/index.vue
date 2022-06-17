@@ -3,7 +3,7 @@
     <PageNav page-name="Home" :links="links" />
     <SubHero class="hero text-center">
       <template #header>
-        Introducing<br>Security Onion 2!
+        Try Security Onion for free!
       </template>
       <template #body>
         Peel back the layers of your enterprise with our newest and most powerful release yet.
