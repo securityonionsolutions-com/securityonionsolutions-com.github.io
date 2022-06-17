@@ -135,7 +135,7 @@
           <template #info>
             <div class="text-3xl flex justify-center text-center md:text-left">
               <div>
-                Ready to purchase, or need more information?
+                Ready to purchase or need more information?
               </div>
             </div>
           </template>
