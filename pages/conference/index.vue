@@ -16,13 +16,7 @@
           </div>
         </div>
         <div class="py-4 -px-4 text-base">
-          Interested in presenting at the Security Onion Conference?
-        </div>
-        <div class="bg-gray-200 text-sm text-blue-500 font-semibold py-1 px-2 rounded-md whitespace-no-wrap">
-          <a href="https://securityonion.net/cfp" target="cfp">
-            Security Onion Conference 2022 CFP
-            <fa icon="external-link-alt" />
-          </a>
+          Save the date! We look forward to seeing everyone there!
         </div>
       </template>
     </SubHero>
