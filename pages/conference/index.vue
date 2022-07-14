@@ -6,7 +6,7 @@
         Security Onion Conference {{ upcoming.year }}
       </template>
       <template #body>
-        <div class="flex justify-center">
+        <div class="flex flex-col flex-grow items-center">
           <div class="text-2xl flex xs:block flex-col items-center">
             <div class="font-light text-2xl flex xs:block flex-col items-center">
               {{ upcoming.date }}
@@ -14,9 +14,12 @@
               {{ upcoming.location }}
             </div>
           </div>
-        </div>
-        <div class="py-4 -px-4 text-base">
-          Save the date! We look forward to seeing everyone there!
+          <div class="py-4 -px-4 text-base">
+            {{ upcoming.caption }}
+          </div>
+          <so-button v-if="upcoming.link" class="mt-1 xl:mt-4" :link="upcoming.link">
+            Register Now
+          </so-button>
         </div>
       </template>
     </SubHero>
