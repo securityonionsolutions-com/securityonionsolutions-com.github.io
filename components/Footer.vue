@@ -12,7 +12,7 @@
       <span class="text-gray-700 mx-2">|</span>
       <nuxt-link to="/education">Education</nuxt-link>
       <span class="text-gray-700 mx-2">|</span>
-      <nuxt-link to="/license">License</nuxt-link>
+      <nuxt-link to="/terms">Terms</nuxt-link>
       <span class="text-gray-700 mx-2">|</span>
       <nuxt-link to="/privacy">Privacy</nuxt-link>
     </div>

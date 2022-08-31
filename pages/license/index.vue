@@ -7,7 +7,7 @@
       </template>
       <template #body>
         <div class="text-center">
-          Security Onion is licensed under the terms of the Elastic License 2.0 (ELv2)
+          Security Onion 2.4 is licensed under the terms of the Elastic License 2.0 (ELv2)
         </div>
       </template>
     </SubHero>

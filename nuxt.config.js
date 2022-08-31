@@ -113,8 +113,8 @@ export default {
   router: {
     extendRoutes(routes, resolve) {
       routes.push({
-        name: 'terms',
-        path: '/terms',
+        name: 'terms.pending',
+        path: '/terms.pending',
         redirect: { name: 'license' }
       })
     }
