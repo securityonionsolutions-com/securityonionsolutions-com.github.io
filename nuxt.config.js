@@ -108,5 +108,15 @@ export default {
   server: {
     port: 3000,
     host: '0.0.0.0'
+  },
+
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.push({
+        name: 'terms',
+        path: '/terms',
+        component: resolve(__dirname, 'pages/license/index.vue')
+      })
+    }
   }
 }
