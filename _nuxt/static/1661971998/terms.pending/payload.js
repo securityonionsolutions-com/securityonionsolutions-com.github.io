@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/terms.pending", {data:[{}],fetch:{},mutations:void 0});
