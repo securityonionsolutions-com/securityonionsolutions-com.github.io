@@ -7,7 +7,7 @@
       </template>
       <template #body>
         <div class="text-center">
-          Updated on 10/21/2020
+          Updated on 08/31/2022
         </div>
       </template>
     </SubHero>
