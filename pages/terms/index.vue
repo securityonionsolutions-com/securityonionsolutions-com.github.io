@@ -16,7 +16,7 @@
         <div class="text-3xl mt-8 mb-3">
           License
         </div>
-        This product is licensed under the GNU General Public License version 2.0 (GPLv2)
+        Security Onion 2.3 is licensed under the GNU General Public License version 2.0 (GPLv2)
 
         <div class="text-3xl mt-8 mb-3">
           Disclaimer of Warranty
