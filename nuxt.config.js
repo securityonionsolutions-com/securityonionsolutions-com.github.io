@@ -115,7 +115,7 @@ export default {
       routes.push({
         name: 'terms',
         path: '/terms',
-        component: resolve(__dirname, 'pages/license/index.vue')
+        redirect: { name: 'license' }
       })
     }
   }
