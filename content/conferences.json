@@ -3,8 +3,9 @@
     "year": 2022,
     "date": "September 30, 2022",
     "location": "Augusta, GA",
-    "caption": "Register today! We look forward to seeing you there!",
-    "link": "https://socaugusta2022.eventbrite.com/"
+    "caption": "Conference presentations and videos will be available soon!",
+    "caption.disabled": "Register today! We look forward to seeing you there!",
+    "link.disabled": "https://socaugusta2022.eventbrite.com/"
   },
   "past": [
     {
