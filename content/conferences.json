@@ -3,11 +3,62 @@
     "year": 2022,
     "date": "September 30, 2022",
     "location": "Augusta, GA",
-    "caption": "Conference presentations and videos will be available soon!",
+    "caption": "This conference has concluded, however presentations and pictures are available below.",
     "caption.disabled": "Register today! We look forward to seeing you there!",
     "link.disabled": "https://socaugusta2022.eventbrite.com/"
   },
   "past": [
+    {
+      "year": 2022,
+      "date": "September 30, 2022",
+      "location":"Augusta, GA",
+      "pictures": "https://blog.securityonion.net/2022/10/pictures-from-security-onion-conference.html",
+      "playlist": "https://www.youtube.com/embed/videoseries?list=PLljFlTO9rB17xc2vygXqC1zMz9U9rD8O8",
+      "events": [
+        {
+          "speakers": ["Wes Lambert"],
+          "pres_name": "Watching the Watchers: Layering Detection and Deception to Defend Visibility",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=XW9X8D3ILdE&list=PLljFlTO9rB17xc2vygXqC1zMz9U9rD8O8&index=1"
+          }
+        },
+        {
+          "speakers": ["Robert Wilson", "Alex Galloway", "Jonathan Martin"],
+          "pres_name": "SOAR, SOC, and Scholars - How UofSC Develops its Security Operations Processes, Staff, and Students",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=Jf0SoYaKEtA&list=PLljFlTO9rB17xc2vygXqC1zMz9U9rD8O8&index=2"
+          }
+        },
+        {
+          "speakers": ["Josh Brower"],
+          "pres_name": "Increasing your Situational Awareness with SOC Dashboards",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=DvE-zhHioiU&list=PLljFlTO9rB17xc2vygXqC1zMz9U9rD8O8&index=3"
+          }
+        },
+        {
+          "speakers": ["Chris Sistrunk"],
+          "pres_name": "Tuning ICS Security Alerts: An Alarm Management Approach",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=D7rCNBXClp4&list=PLljFlTO9rB17xc2vygXqC1zMz9U9rD8O8&index=4"
+          }
+        },
+        {
+          "speakers": ["Bryant Treacle", "Brandon Larson"],
+          "pres_name": "Detecting Suspicious Activity on Linux Endpoints Using Security Onion",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=byqHEo_PcuM&list=PLljFlTO9rB17xc2vygXqC1zMz9U9rD8O8&index=5"
+          }
+        },
+        {
+          "speakers": ["Doug Burks"],
+          "pres_name": "State of the Onion",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=3w4P6TGPMJk&list=PLljFlTO9rB17xc2vygXqC1zMz9U9rD8O8&index=6"
+          }
+        }
+      ]
+    },
     {
       "year": 2021,
       "date": "Oct 1, 2021",
