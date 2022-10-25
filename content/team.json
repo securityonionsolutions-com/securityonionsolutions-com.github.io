@@ -60,7 +60,8 @@
     {
       "name": "John Bernal",
       "role": "Senior Engineer",
-      "image": "john_bernal.jpg"
+      "image": "john_bernal.jpg",
+      "linkedin": "https://www.linkedin.com/in/j-bernal/"
     },
     {
       "name": "Jason Ertel",
