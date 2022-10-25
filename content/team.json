@@ -65,7 +65,8 @@
     {
       "name": "Jason Ertel",
       "role": "Vice President of Software Engineering",
-      "image": "jason_ertel.jpg"
+      "image": "jason_ertel.jpg",
+      "twitter": "https://twitter.com/jasonertel"
     },
     {
       "name": "Chris Morgret",
@@ -94,6 +95,21 @@
       "name": "Nate Olsen",
       "role": "Account Manager",
       "image": "nate_olsen.jpg"
+    },
+    {
+      "name": "Ethan Burrow",
+      "role": "Associate Support Engineer",
+      "image": "ethan_burrow.jpg"
+    },
+    {
+      "name": "Robbie Marshall",
+      "role": "Senior Engineer",
+      "image": "robbie_marshall.jpg"
+    },
+    {
+      "name": "Tom Gilson",
+      "role": "Senior Engineer",
+      "image": "tom_gilson.jpg"
     }
   ]
 }
