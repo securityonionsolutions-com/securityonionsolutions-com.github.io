@@ -109,7 +109,8 @@
     {
       "name": "Tom Gilson",
       "role": "Senior Engineer",
-      "image": "tom_gilson.jpg"
+      "image": "tom_gilson.jpg",
+      "linkedin": "https://www.linkedin.com/in/thomas-gilson/"
     }
   ]
 }
