@@ -41,15 +41,15 @@
       "twitter": "https://twitter.com/defensivedepth"
     },
     {
+      "name": "Karen Henegar Long",
+      "role": "Sales Assistant",
+      "image": "karen_henegar_long.jpg"
+    },
+    {
       "name": "Josh Patterson",
       "role": "Senior Engineer",
       "image": "josh_patterson.jpg",
       "twitter": "https://twitter.com/m0duspwnens"
-    },
-    {
-      "name": "Karen Henegar Long",
-      "role": "Sales Assistant",
-      "image": "karen_henegar_long.jpg"
     },
     {
       "name": "Bryant Treacle",
@@ -60,12 +60,14 @@
     {
       "name": "John Bernal",
       "role": "Senior Engineer",
-      "image": "john_bernal.jpg"
+      "image": "john_bernal.jpg",
+      "linkedin": "https://www.linkedin.com/in/j-bernal/"
     },
     {
       "name": "Jason Ertel",
       "role": "Vice President of Software Engineering",
-      "image": "jason_ertel.jpg"
+      "image": "jason_ertel.jpg",
+      "twitter": "https://twitter.com/jasonertel"
     },
     {
       "name": "Chris Morgret",
@@ -94,6 +96,23 @@
       "name": "Nate Olsen",
       "role": "Account Manager",
       "image": "nate_olsen.jpg"
+    },
+    {
+      "name": "Ethan Burrow",
+      "role": "Associate Support Engineer",
+      "image": "ethan_burrow.jpg",
+      "linkedin": "https://www.linkedin.com/in/james-burrow-b0a004232"
+    },
+    {
+      "name": "Robbie Marshall",
+      "role": "Senior Engineer",
+      "image": "robbie_marshall.jpg"
+    },
+    {
+      "name": "Tom Gilson",
+      "role": "Senior Engineer",
+      "image": "tom_gilson.jpg",
+      "linkedin": "https://www.linkedin.com/in/thomas-gilson/"
     }
   ]
 }
