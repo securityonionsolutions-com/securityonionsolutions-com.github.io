@@ -20,6 +20,7 @@
       <div class="text-center content-center justify-center">
         <div class="flex flex-row justify-center mt-2">
           <a
+            rel="me"
             class="block rounded-lg mr-2 lg:inline-block text-4xl focus:outline-none cursor-pointer"
             href="https://twitter.com/securityonion"
             target="_blank"
@@ -27,6 +28,17 @@
             <fa-layers>
               <fa icon="circle" class="text-white" />
               <fa class="p-2" style="color: #1DA1F2" :icon="['fab', 'twitter']" />
+            </fa-layers>
+          </a>
+          <a
+            rel="me"
+            class="block rounded-lg mr-2 lg:inline-block text-4xl focus:outline-none cursor-pointer"
+            href="https://infosec.exchange/@securityonion"
+            target="_blank"
+          >
+            <fa-layers>
+              <fa icon="circle" class="text-white" />
+              <fa class="p-2" style="color: #563ACC" :icon="['fab', 'mastodon']" />
             </fa-layers>
           </a>
           <a
@@ -40,6 +52,7 @@
             </fa-layers>
           </a>
           <a
+            rel="me"
             class="block rounded-lg mr-2 lg:inline-block text-4xl focus:outline-none cursor-pointer"
             href="https://www.linkedin.com/company/security-onion-solutions-llc"
             target="_blank"
