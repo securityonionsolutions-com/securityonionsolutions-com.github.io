@@ -45,8 +45,8 @@
             ]"
             class="py-2 lg:py-4 font-bold table-item text-lg lg:text-2xl justify-center text-center"
           >
-            <fa v-if="item.free" icon="check-circle" />
-            <fa v-if="!item.free" icon="times-circle" />
+            <icon v-if="item.free" name="fa-solid:check-circle" />
+            <icon v-if="!item.free" name="fa-solid:times-circle" />
           </td>
           <td
             :class="[
@@ -56,8 +56,8 @@
             ]"
             class="py-2 lg:py-4 font-bold table-item table-item-r text-lg lg:text-2xl justify-center text-center"
           >
-            <fa v-if="item.premium" icon="check-circle" />
-            <fa v-if="!item.premium" icon="times-circle" />
+            <icon v-if="item.premium" name="fa-solid:check-circle" />
+            <icon v-if="!item.premium" name="fa-solid:times-circle" />
           </td>
         </tr>
       </tbody>
@@ -66,9 +66,11 @@
 </template>
 
 <script>
+import features from '~/content/support_comparison.json'
+
 export default {
   data: () => ({
-    featureList: require('~/content/support_comparison.json').features
+    featureList: features.features
   })
 }
 </script>

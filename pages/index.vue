@@ -56,7 +56,7 @@
             </div>
           </template>
         </feature-right>
-        <action-callout :alternate="true" class="my-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Security Onion Solutions\' offerings.', source: 'main_general_contact_us' })">
+        <action-callout :alternate="true" class="my-12" @button-click="sos.showContactModal({ text: 'Please contact me with more information about Security Onion Solutions\' offerings.', source: 'main_general_contact_us' })">
           <template #info>
             <div class="text-2xl flex justify-center">
               <div>
@@ -149,6 +149,9 @@
 </template>
 
 <script>
+import { sos } from '~/lib/sos.js'
+
+import SubHero from '~/components/hero/SubHero'
 import Timeline from '~/components/timeline/Timeline'
 import TeamCard from '~/components/TeamCard'
 import SectionHeader from '~/components/SectionHeader'
@@ -156,17 +159,28 @@ import ActionCallout from '~/components/action_callouts/ActionCallout'
 import FeatureRight from '~/components/features/FeatureRight'
 import FeatureLeft from '~/components/features/FeatureLeft'
 
+import credence_logo from '~/assets/img/partners/credence-logo.jpg'
+import elastic_logo from '~/assets/img/partners/elastic-logo.png'
+import fireeye_logo from '~/assets/img/partners/fireeye-logo.png'
+import gigamon_logo from '~/assets/img/partners/gigamon-logo.png'
+import intelligenesis_logo from '~/assets/img/partners/intelligenesis-logo.png'
+import profitap_logo from '~/assets/img/partners/profitap-logo.png'
+
+import team from '~/content/team.json'
+import history from '~/content/history.json'
+
 const logos = [
-  require('~/assets/img/partners/credence-logo.jpg'),
-  require('~/assets/img/partners/elastic-logo.png'),
-  require('~/assets/img/partners/fireeye-logo.png'),
-  require('~/assets/img/partners/gigamon-logo.png'),
-  require('~/assets/img/partners/intelligenesis-logo.png'),
-  require('~/assets/img/partners/profitap-logo.png')
+  credence_logo,
+  elastic_logo,
+  fireeye_logo,
+  gigamon_logo,
+  intelligenesis_logo,
+  profitap_logo
 ]
 
 export default {
   components: {
+    SubHero,
     Timeline,
     TeamCard,
     SectionHeader,
@@ -175,10 +189,11 @@ export default {
     FeatureLeft
   },
   data: () => ({
+    sos,
     links: [{ name: 'Portfolio', id: 'portfolio' }, { name: 'Partners', id: 'partners' }, { name: 'About', id: 'about' }, { name: 'History', id: 'timeline' }, { name: 'Team', id: 'members' }],
     eventText: 'Default Graphic',
-    teamArr: require('~/content/team.json').team,
-    eventList: require('~/content/history.json').events,
+    teamArr: team.team,
+    eventList: history.events,
     currentEvent: 1,
     logos
   }),
@@ -204,7 +219,7 @@ export default {
 
       return {
         text: this.eventList[this.currentEvent].text,
-        img: require(`~/assets/img/graphics/${fileName}`)
+        img: `/img/graphics/${fileName}`
       }
     }
   }
@@ -213,6 +228,6 @@ export default {
 
 <style scoped>
 .hero {
-  background: right no-repeat url(../assets/img/graphics/graph.jpg);
+  background: right no-repeat url('/img/graphics/graph.jpg');
 }
 </style>

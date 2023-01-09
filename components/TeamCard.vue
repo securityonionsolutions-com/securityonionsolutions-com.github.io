@@ -2,7 +2,7 @@
   <div class="card">
     <div class="flex flex-col items-left">
       <div class="img pt-3 px-3">
-        <img :src="require(`~/assets/img/team/${image}`)">
+        <img :src="`/img/team/${image}`">
       </div>
       <div class="flex flex-row justify-between gap-0 ml-4 mr-3">
         <div class="text-xl font-bold">
@@ -10,10 +10,10 @@
         </div>
         <div class="flex flex-row justify-left items-center">
           <a v-if="twitter !== ''" :href="twitter" target="_blank" class="hover:text-so-blue">
-            <fa :icon="['fab', 'twitter']" :class="[linkedin !== '' ? 'mr-3' : '']" size="lg" />
+            <Icon name="fa6-brands:twitter" :class="[linkedin !== '' ? 'mr-3' : '']" />
           </a>
           <a v-if="linkedin !== ''" :href="linkedin" target="_blank" class="hover:text-so-blue">
-            <fa :icon="['fab', 'linkedin']" size="lg" />
+            <Icon name="fa6-brands:linkedin" />
           </a>
         </div>
       </div>

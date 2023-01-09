@@ -9,7 +9,7 @@
         Security Onion Solutions is the only official support provider.
         We've been helping catch the bad guys since 2014!
         <div class="flex justify-center">
-          <ActionCallout class="mt-1 xl:mt-4" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about purchasing support.', source: 'support_purchasing_info' })">
+          <ActionCallout class="mt-1 xl:mt-4" @button-click="sos.showContactModal({ text: 'Please contact me with more information about purchasing support.', source: 'support_purchasing_info' })">
             <template #button-text>
               Purchase Support
             </template>
@@ -68,7 +68,7 @@
               </div>
             </template>
             <template #graphic>
-              <fa icon="comment" size="10x" />
+              <icon name="fa-solid:comment" size="10em" />
             </template>
             <template #body>
               <div class="text-center xs:text-left">
@@ -100,14 +100,21 @@
 </template>
 
 <script>
+import { sos } from '~/lib/sos.js'
+
+import FeatureRight from '~/components/features/FeatureRight'
 import FourPanelDetail from '~/components/features/FourPanelDetail'
+import SubHero from '~/components/hero/SubHero'
 
 export default {
   scrollToTop: true,
   components: {
-    FourPanelDetail
+    FeatureRight,
+    FourPanelDetail,
+    SubHero,
   },
   data: () => ({
+    sos,
     showModal: false,
     links: [{ name: 'Premium', id: 'premium-support' }, { name: 'Community', id: 'community-support' }]
   })
@@ -116,6 +123,6 @@ export default {
 
 <style scoped>
 .hero-support {
-  background: right bottom no-repeat url(~assets/img/graphics/world.jpg);
+  background: right bottom no-repeat url('/img/graphics/world.jpg');
 }
 </style>

@@ -11,11 +11,10 @@
         <client-only>
           <div class="flex justify-center">
             <div class="xs:mx-12 xl:mx-24 pb-6 border-b border-gray-400">
-              <vue-three-sixty
-                :amount="threesixtyDetails.numPics"
-                :image-path="threesixtyDetails.imagePath"
-                :file-name="threesixtyDetails.filenameFormat"
-                :spin-reverse="threesixtyDetails.reverse"
+              <SpinViewer id="spinner" ref="spinner"
+                :imageUrl="threesixtyDetails.imagePath"
+                :rowCount="threesixtyDetails.numPics"
+                scale="1"
               />
             </div>
           </div>
@@ -26,13 +25,13 @@
               class="w-full transform hover:scale-105 transition duration-200 ease-in-out cursor-pointer"
               @click="handleImageClick('front')"
             >
-              <img :src="require(`~/assets/img/appliances/${appliance.img_front_thumb}`)">
+              <img :src="`/img/appliances/${appliance.img_front_thumb}`">
             </div>
             <div
               class="w-full transform hover:scale-105 transition duration-200 ease-in-out cursor-pointer"
               @click="handleImageClick('back')"
             >
-              <img :src="require(`~/assets/img/appliances/${appliance.img_back_thumb}`)">
+              <img :src="`/img/appliances/${appliance.img_back_thumb}`">
             </div>
           </div>
           <div
@@ -51,7 +50,7 @@
         </div>
         <Footnotes />
       </div>
-      <ActionCallout class="m-6 xs:pb-6" @button-click="$nuxt.$emit('show-contact-modal', {text: `Please contact me with more information about the SOS ${appliance.name}.`, source: `${appliance.name.toLowerCase().replace(' ', '_')}_purchasing_info`})">
+      <ActionCallout class="m-6 xs:pb-6" @button-click="sos.showContactModal({text: `Please contact me with more information about the SOS ${appliance.name}.`, source: `${appliance.name.toLowerCase().replace(' ', '_')}_purchasing_info`})">
         <template #info>
           <div class="text-3xl">
             Ready to purchase or need more information?
@@ -68,23 +67,36 @@
 </template>
 
 <script>
+import { sos } from '~/lib/sos.js'
+
+import Footnotes from '~/components/hardware/Footnotes'
+
 export default {
+  components: {
+    Footnotes,
+  },
+  data: () => ({
+    sos,
+  }),
   props: {
     appliance: { type: Object, default: () => {} }
   },
   computed: {
     threesixtyDetails () {
       const imagePath = this.appliance.threesixty.imagePath
-      const filenameFormat = this.appliance.threesixty.filenameFormat
       const numPics = this.appliance.threesixty.count
-      const reverse = this.appliance.threesixty.reverse
       return {
         imagePath,
-        filenameFormat,
         numPics,
-        reverse
       }
     }
+  },
+  mounted() {
+    setTimeout(() => {
+      if (this.$refs.spinner) {
+        this.$refs.spinner.spinBy(360, { duration: 4000 });
+      }
+    }, 1000);
   },
   methods: {
     specSplit (str) {
@@ -97,7 +109,7 @@ export default {
       } else {
         fileName = this.appliance.img_back_thumb
       }
-      this.$nuxt.$emit('show-image-zoom', { imageType: 'appliance', imageName: fileName })
+      sos.showImageZoom({ imageType: 'appliance', imageName: fileName })
     }
   }
 }
@@ -114,5 +126,10 @@ export default {
     width: 60rem;
     height: 30rem;
   }
+}
+
+#spinner {
+  width: 1200px !important;
+  height: 400px !important;
 }
 </style>

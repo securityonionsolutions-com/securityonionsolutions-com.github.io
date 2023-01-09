@@ -10,7 +10,7 @@
           <div class="text-2xl flex xs:block flex-col items-center">
             <div class="font-light text-2xl flex xs:block flex-col items-center">
               {{ upcoming.date }}
-              <fa icon="circle" transform="shrink-12" />
+              <icon name="fa6-solid:circle" size="0.3em" />
               {{ upcoming.location }}
             </div>
           </div>
@@ -96,12 +96,12 @@
             </div>
             <div class="text-2xl flex xs:block flex-col items-center text-center">
               {{ conference.date }}
-              <fa icon="circle" transform="shrink-12" />
+              <icon name="fa6-solid:circle" size="0.3em" />
               {{ conference.location }}
             </div>
             <div class="mt-5">
               <a v-if="conference.pictures" :href="conference.pictures" target="_blank" class="mx-4">
-                <fa icon="camera" transform="grow-12" />
+                <icon name="fa-solid:camera" size="2em" />
               </a>
             </div>
           </div>
@@ -127,14 +127,14 @@
                   {{ event.pres_name }}
                 </div>
                 <div class="flex flex-row justify-center">
-                  <div v-for="(speaker, index) in event.speakers" :key="index" class="mr-1 font-light">
+                  <div v-for="(speaker, index) in event.speakers" :key="index" class="font-light">
                     {{ speaker }}<span v-if="event.speakers.length > 1 && index < event.speakers.length - 2">,</span>
-                    <span v-if="event.speakers.length > 1 && index === event.speakers.length - 2">&amp;</span>
+                    <span v-if="event.speakers.length > 1 && index === event.speakers.length - 2" class="mx-1">&amp;</span>
                   </div>
                 </div>
                 <div v-if="event.links" class="mt-1">
                   <a v-for="(val, key) in event.links" :key="key" target="_blank" :href="val">
-                    <fa :icon="key" class="mx-2" />
+                    <icon :name="'fa6-solid:' + key" class="mx-2" />
                   </a>
                 </div>
               </div>
@@ -147,13 +147,22 @@
 </template>
 
 <script>
+import FeatureRight from '~/components/features/FeatureRight'
 import SoButton from '~/components/SoButton.vue'
+import SubHero from '~/components/hero/SubHero'
+
+import conferences from '~/content/conferences.json'
+
 export default {
-  components: { SoButton },
+  components: { 
+    FeatureRight,
+    SoButton,
+    SubHero,
+  },
   data: () => ({
     links: [{ name: 'Upcoming Schedule', id: 'schedule' }, { name: 'About', id: 'about' }, { name: 'Past Conferences', id: 'past' }],
-    conferences: require('~/content/conferences.json').past,
-    upcoming: require('~/content/conferences.json').upcoming,
+    conferences: conferences.past,
+    upcoming: conferences.upcoming,
     pictures: {},
     hooperSettings: {
       itemsToShow: 1,
@@ -230,7 +239,7 @@ export default {
   height: 100%;
 }
 .hero-conference {
-  background: right bottom no-repeat url(~assets/img/graphics/conference.jpg);
+  background: right bottom no-repeat url('/img/graphics/conference.jpg');
 }
 
 #cfp div div {

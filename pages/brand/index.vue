@@ -107,7 +107,7 @@
     </ContentSection>
     <ContentSection id="contact" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32">
-        <action-callout :alternate="true" class="my-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about branding authorization.', source: 'branding_contact_us' })">
+        <action-callout :alternate="true" class="my-12" @button-click="sos.showContactModal({ text: 'Please contact me with more information about branding authorization.', source: 'branding_contact_us' })">
           <template #info>
             <div class="text-2xl flex justify-center">
               <div>
@@ -127,14 +127,19 @@
 </template>
 
 <script>
+import { sos } from '~/lib/sos.js'
+
+import SubHero from '~/components/hero/SubHero'
 import TwoPanelDetail from '~/components/features/TwoPanelDetail'
 
 export default {
   scrollToTop: true,
   components: {
+    SubHero,
     TwoPanelDetail
   },
   data: () => ({
+    sos,
     links: [{ name: 'Overview', id: 'overview' }, { name: 'Guidelines', id: 'guidelines' }]
   })
 }
@@ -142,6 +147,6 @@ export default {
 
 <style scoped>
 .hero-software {
-  background: right bottom no-repeat url(~assets/img/graphics/squares.jpg);
+  background: right bottom no-repeat url('/img/graphics/squares.jpg');
 }
 </style>

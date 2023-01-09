@@ -9,7 +9,7 @@
       </div>
       <div class="flex flex-row -mx-2 content-center font-light pb-1 text-xs xs:text-base">
         <div v-for="(link, index) in links" :key="link.name" class="flex flex-row">
-          <a v-scroll-to="`#${link.id}`" href="#" class="px-2 hover:text-gray-700">
+          <a :href="`#${link.id}`" class="px-2 hover:text-gray-700">
             {{ link.name }}
           </a>
           <div v-if="index!==links.length-1" class="xs:px-1">

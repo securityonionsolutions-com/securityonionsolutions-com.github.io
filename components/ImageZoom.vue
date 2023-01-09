@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded bg-white p-4" :style="sizeVar">
+  <div class="rounded bg-white p-8" :style="sizeVar">
     <img :src="importImage()">
   </div>
 </template>
@@ -46,7 +46,7 @@ export default {
         folder = 'graphics'
       }
 
-      return require(`~/assets/img/${folder}/${fileName}`)
+      return `/img/${folder}/${fileName}`;
     }
   }
 }

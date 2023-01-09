@@ -1,10 +1,10 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @font-face {
   font-family: 'Inter';
-  src: url('~assets/fonts/Inter.ttf') format('truetype');
+  src: url('/fonts/Inter.ttf') format('truetype');
   font-weight: 125 900;
   font-stretch: 75% 125%;
   font-style: oblique 0deg 20deg;
@@ -14,4 +14,14 @@
   border-right: 4px solid #212121;
   width: 0;
   /* height: 250px; */
+}
+
+@layer utilities {
+  .shadow-outline { 
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); 
+  }
+}
+
+header {
+  line-height: 1.5em !important;
 }

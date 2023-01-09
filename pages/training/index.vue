@@ -72,7 +72,7 @@
                   Security Onion 2 in Production <span class="bg-gray-200  text-sm text-blue-500 font-semibold py-1 px-2 rounded-md whitespace-no-wrap">
                     <a target="enroll" href="https://onlinetraining.securityonionsolutions.com/p/security-onion-in-production/">
                       Enroll
-                      <fa icon="external-link-alt" />
+                      <icon name="fa-solid:external-link-alt" />
                     </a>
                   </span>
                 </li>
@@ -80,7 +80,7 @@
                   Developing Your Detection Playbook With Security Onion 2 <span class="bg-gray-200 text-sm text-blue-500 font-semibold py-1 px-2 rounded-md whitespace-no-wrap">
                     <a target="enroll" href="https://onlinetraining.securityonionsolutions.com/p/developing-your-detection-playbook-with-security-onion-2/">
                       Enroll
-                      <fa icon="external-link-alt" />
+                      <icon name="fa-solid:external-link-alt" />
                     </a>
                   </span>
                 </li>
@@ -88,7 +88,7 @@
                   Practical Analysis with Security Onion 2 <span class="bg-gray-200  text-sm text-blue-500 font-semibold py-1 px-2 rounded-md whitespace-no-wrap">
                     <a target="enroll" href="https://onlinetraining.securityonionsolutions.com/p/practical-analysis-with-security-onion/">
                       Enroll
-                      <fa icon="external-link-alt" />
+                      <icon name="fa-solid:external-link-alt" />
                     </a>
                   </span>
                 </li>
@@ -98,18 +98,9 @@
               <span class="bg-gray-200  text-sm text-blue-500 font-semibold py-1 px-2 rounded-md whitespace-no-wrap">
                 <a target="enroll" href="https://onlinetraining.securityonionsolutions.com/p/security-onion-2-three-course-bundle/">
                   Enroll
-                  <fa icon="external-link-alt" />
+                  <icon name="fa-solid:external-link-alt" />
                 </a>
               </span>
-            </div>
-            <div class="align-center hidden">
-              <action-callout class="my-12" link="https://onlinetraining.securityonionsolutions.com/">
-                <template #button-text>
-                  <div class="text-lg my-1">
-                    Get Started
-                  </div>
-                </template>
-              </action-callout>
             </div>
           </template>
         </feature-left>
@@ -146,7 +137,7 @@
               We offer multi-day comprehensive training classes with hands-on labs and real-world case studies for reinforcement!
               Students receive printed course materials and a Certificate of Completion ready to make their adversaries cry!
             </div>
-            <action-callout :alternate="true" class="my-6" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about private training classes.', source: 'training_private_contact_us' })">
+            <action-callout :alternate="true" class="my-6" @button-click="sos.showContactModal({ text: 'Please contact me with more information about private training classes.', source: 'training_private_contact_us' })">
               <template #info>
                 <div class="text-xl">
                   Have at least 8 students and want private instructor-led training?
@@ -181,7 +172,7 @@
           <template #body>
             We are proud to offer GSA pricing through our partner IntelliGenesis!
             Eligible organizations, please
-            <span class="hover:text-gray-900 cursor-pointer underline" @click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about GSA pricing on live training classes.', source: 'GSA_pricing_info' })">contact us</span>
+            <span class="hover:text-gray-900 cursor-pointer underline" @click="sos.showContactModal({ text: 'Please contact me with more information about GSA pricing on live training classes.', source: 'GSA_pricing_info' })">contact us</span>
             for more information.
           </template>
         </DetailPara>
@@ -201,45 +192,35 @@
       </div>
     </ContentSection>
 
-    <ContentSection id="testimonials" :alternate="true">
-      <div class="px-6 xs:px-12 lg:px-32 -mt-10 -mb-4">
-        <SectionHeader class="mb-6">
-          Student Feedback
-        </SectionHeader>
-        <client-only>
-          <TestimonialList :list="testimonialList" />
-        </client-only>
-        <noscript inline-template>
-          <Testimonial>
-          <template #text :show-name="false">
-          {{ testimonialList[1] }}
-          </template>
-          </Testimonial>
-        </noscript>
-      </div>
-    </ContentSection>
   </div>
 </template>
 
 <script>
+import { sos } from '~/lib/sos.js'
+
+import DetailPara from '~/components/features/DetailPara'
+import FeatureLeft from '~/components/features/FeatureLeft'
+import FeatureRight from '~/components/features/FeatureRight'
 import SectionHeader from '~/components/SectionHeader'
+import SubHero from '~/components/hero/SubHero'
+
+import events from '~/content/training_schedule.json'
+import domains from '~/content/cert_domains.json'
 
 export default {
   scrollToTop: true,
   components: {
-    SectionHeader
+    DetailPara,
+    FeatureRight,
+    FeatureLeft,
+    SectionHeader,
+    SubHero
   },
   data: () => ({
-    scheduleList: require('~/content/training_schedule.json').events,
-    domainArr: require('~/content/cert_domains.json').domains,
+    sos,
+    scheduleList: events.events,
+    domainArr: domains.domains,
     links: [{ name: 'Free', id: 'free-training' }, { name: 'Premium', id: 'premium-on-demand' }, { name: 'Instructor Led', id: 'instructor-training' }],
-    testimonialList: [
-      'I needed this class. This is the best instruction of SO and dedicated time to it that I have ever had.',
-      'One can tell they\'re not just instructors. They know the subject at an engineering level.',
-      'I\'ve really been impressed by how this training event went. Outstanding job',
-      'It\'s very very rare that I get to be in a class with practitioners that are as awesome and knowledgeable as Security Onion Solutions.',
-      'The labs were absolutely necessary and going through the case studies to "find evil" was the best.'
-    ]
   }),
   head () {
     return {
@@ -273,10 +254,10 @@ export default {
   height: 100%;
 }
 .hero-training {
-  background: right bottom no-repeat url(~assets/img/graphics/training.jpg);
+  background: right bottom no-repeat url('/img/graphics/training.jpg');
 }
 .hero-cert {
-  background: right bottom no-repeat url(~assets/img/graphics/squares.jpg);
+  background: right bottom no-repeat url('/img/graphics/squares.jpg');
 }
 #domain-list {
   -webkit-tap-highlight-color: transparent;

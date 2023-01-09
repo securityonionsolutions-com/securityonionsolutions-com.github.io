@@ -1,12 +1,9 @@
 <template>
   <div :style="indexVars" class="modal-mask flex justify-center items-center">
-    <div class="flex justify-center opacity-100 modal-wrapper mx-6">
+    <div class="flex justify-center opacity-100 modal-wrapper ma-4">
       <slot />
-      <div class="flex justify-start text-2xl -ml-2 -mt-4" @click="$emit('close')">
-        <fa-layers class="cursor-pointer">
-          <fa icon="circle" class="text-white" />
-          <fa :icon="['far', 'times-circle']" class="text-black" />
-        </fa-layers>
+      <div class="flex justify-start text-2xl -ml-8 mt-2" @click="$emit('close')">
+        <Icon name="fa-solid:times-circle" class="text-black" />
       </div>
     </div>
     <div class="bg-black opacity-75 absolute top-0 left-0 h-full w-full modal-bg" @click="$emit('close')" />

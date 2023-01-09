@@ -21,7 +21,7 @@
             <div class="h-auto flex items-center justify-end bg-gray-400 bg-opacity-25 border-top border-dotted border-gray-800">
               <div class="text-sm xs:text-xs text-so-blue xs:text-base px-4 py-2 flex items-center">
                 <div class="mr-2 font-semibold">Register</div>
-                <fa :icon="['fas', 'external-link-alt']" />
+                <icon name="fa-solid:external-link-alt" />
               </div>
             </div>
           </div>

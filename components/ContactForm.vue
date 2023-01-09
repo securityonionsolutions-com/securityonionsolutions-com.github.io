@@ -14,7 +14,7 @@
       <div class="block w-full">
         <input type="hidden" name="captcha_settings" :value="JSON.stringify(captchaSettings)">
         <input type="hidden" name="oid" value="00D1U000000DI9i">
-        <input v-model="retUrl" type="hidden" name="retURL" value="">
+        <input v-model="retUrl" type="hidden" name="retURL">
         <div class="flex flex-row">
           <div class="w-1/2 block mr-3">
             <label for="first_name" class="block text-gray-800 text-sm font-bold mb-2">First Name<span class="text-red-500"> *</span></label>
@@ -73,10 +73,10 @@
       <div class="block text-red-500 text-sm font-bold mb-4 mt-1 ml-auto">
         * Required
       </div>
-      <recaptcha
-        ref="recaptcha"
+      <VueRecaptcha
+        :sitekey="sitekey"
         class="mb-4"
-        @success="captchaPassed = true"
+        @verify="captchaPassed = true"
         @error="captchaPassed = false"
         @expired="captchaPassed = false"
       />
@@ -87,8 +87,8 @@
       </select>
       <button
         id="form_submit"
-        class="submit-button"
-        :class="[buttonEnabled ? 'enabled' : 'disabled']"
+        :class="[buttonEnabled() ? 'enabled' : 'disabled']"
+        :disabled="!buttonEnabled()"
         type="submit"
         @click="recordSubmit()"
       >
@@ -99,6 +99,7 @@
 </template>
 
 <script>
+const config = useRuntimeConfig();
 export default {
   props: {
     text: { type: String, default: '' },
@@ -114,23 +115,18 @@ export default {
       company: '',
       description: this.text,
       captchaPassed: false,
-      sitekey: process.env.sitekey,
+      sitekey: config.sitekey,
       t: '',
       captchaSettings: ''
     }
   },
   computed: {
     retUrl () {
-      return `${window.location.origin}/thank_you`
+      if (typeof window == 'undefined') {
+        return "";
+      }
+      return window.location.origin + '/thank_you';
     },
-    buttonEnabled () {
-      return this.captchaPassed &&
-        this.first_name !== '' &&
-        this.last_name !== '' &&
-        this.company !== '' &&
-        this.email !== '' &&
-        this.description !== ''
-    }
   },
   beforeMount () {
     this.captchaSettings = { keyname: 'reCAPTCHA', fallback: 'true', orgId: '00D1U000000DI9i', ts: '' }
@@ -142,10 +138,19 @@ export default {
     clearInterval(this.t)
   },
   methods: {
+    buttonEnabled () {
+      var result = this.captchaPassed &&
+        this.first_name !== '' &&
+        this.last_name !== '' &&
+        this.company !== '' &&
+        this.email !== '' &&
+        this.description !== ''
+      return result;
+    },
     recordSubmit () {
       this.$gtag('event', 'contact_form_submit', {
         event_category: 'engagement',
-        event_label: `${window.location.pathname}, ${this.source}`
+        event_label: window.location.pathname + ', ' + this.source,
       })
     },
     timestamp () {
@@ -172,7 +177,7 @@ export default {
     width: 35rem;
   }
 }
-.submit-button {
+#form_submit {
   @apply shadow-lg border font-bold mt-1 py-2 px-4 rounded-full -ml-1
 }
 .enabled {

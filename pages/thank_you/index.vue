@@ -6,7 +6,7 @@
       </nuxt-link>
     </div>
     <div class="flex flex-col justify-center items-center flex-grow xs:h-auto height-xs">
-      <img src="@/assets/img/icons/so-onion.svg" class="h-20 mb-4">
+      <img src="/img/icons/so-onion.svg" class="h-20 mb-4">
       <DetailPara :align-center="true">
         <template #header>
           <div class="text-lg xs:text-3xl">
@@ -29,8 +29,12 @@
 </template>
 
 <script>
-export default {
+import DetailPara from '~/components/features/DetailPara'
 
+export default {
+  components: {
+    DetailPara,
+  }
 }
 </script>
 

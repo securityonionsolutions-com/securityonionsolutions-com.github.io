@@ -8,12 +8,17 @@
     ]"
     @click="handleClick()"
   >
-    <img :src="require(`~/assets/img/graphics/${fileName}`)">
+    <img :src="`/img/graphics/${fileName}`">
   </div>
 </template>
 
 <script>
+import { sos } from '~/lib/sos.js'
+
 export default {
+  data: () => ({
+    sos,
+  }),
   props: {
     size: { type: Number, default: 20 },
     padding: { type: Boolean, default: true },
@@ -29,7 +34,7 @@ export default {
     handleClick () {
       if (this.clickable) {
         const type = this.fileName.includes('-thumb') ? 'fullsize' : 'thumbnail'
-        this.$nuxt.$emit('show-image-zoom', { imageName: this.fileName, imageType: type })
+        sos.showImageZoom({ imageName: this.fileName, imageType: type });
       }
     }
   }
