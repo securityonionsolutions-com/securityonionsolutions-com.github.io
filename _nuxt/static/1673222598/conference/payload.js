@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/conference", {data:[{}],fetch:{},mutations:void 0});
