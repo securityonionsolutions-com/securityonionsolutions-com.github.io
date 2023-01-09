@@ -38,7 +38,7 @@
     "eslint": "^7.32.0",
     "eslint-plugin-nuxt": "^1.0.0",
     "nth-check": ">=2.0.1",
-    "luxon": "^1.28.0",
+    "luxon": "^2.5.2",
     "set-value": ">=4.0.1",
     "tailwindcss": "^1.7.0"
   }
