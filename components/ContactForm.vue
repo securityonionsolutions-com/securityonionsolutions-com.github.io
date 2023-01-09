@@ -76,7 +76,7 @@
       <VueRecaptcha
         :sitekey="sitekey"
         class="mb-4"
-        @success="captchaPassed = true"
+        @verify="captchaPassed = true"
         @error="captchaPassed = false"
         @expired="captchaPassed = false"
       />
