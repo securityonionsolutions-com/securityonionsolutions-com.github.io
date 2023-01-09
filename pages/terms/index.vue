@@ -33,9 +33,12 @@
 </template>
 
 <script>
+import SubHero from '~/components/hero/SubHero'
+
 export default {
   scrollToTop: true,
   components: {
+    SubHero,
   },
   data: () => ({
     links: []
@@ -45,6 +48,6 @@ export default {
 
 <style scoped>
 .hero-software {
-  background: right bottom no-repeat url(~assets/img/graphics/chevrons.jpg);
+  background: right bottom no-repeat url('/img/graphics/chevrons.jpg');
 }
 </style>

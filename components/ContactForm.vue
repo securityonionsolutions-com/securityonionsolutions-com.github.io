@@ -14,7 +14,7 @@
       <div class="block w-full">
         <input type="hidden" name="captcha_settings" :value="JSON.stringify(captchaSettings)">
         <input type="hidden" name="oid" value="00D1U000000DI9i">
-        <input v-model="retUrl" type="hidden" name="retURL" value="">
+        <input v-model="retUrl" type="hidden" name="retURL">
         <div class="flex flex-row">
           <div class="w-1/2 block mr-3">
             <label for="first_name" class="block text-gray-800 text-sm font-bold mb-2">First Name<span class="text-red-500"> *</span></label>
@@ -73,8 +73,8 @@
       <div class="block text-red-500 text-sm font-bold mb-4 mt-1 ml-auto">
         * Required
       </div>
-      <recaptcha
-        ref="recaptcha"
+      <VueRecaptcha
+        :sitekey="sitekey"
         class="mb-4"
         @success="captchaPassed = true"
         @error="captchaPassed = false"
@@ -99,6 +99,7 @@
 </template>
 
 <script>
+const config = useRuntimeConfig();
 export default {
   props: {
     text: { type: String, default: '' },
@@ -114,14 +115,17 @@ export default {
       company: '',
       description: this.text,
       captchaPassed: false,
-      sitekey: process.env.sitekey,
+      sitekey: config.sitekey,
       t: '',
       captchaSettings: ''
     }
   },
   computed: {
     retUrl () {
-      return `${window.location.origin}/thank_you`
+      if (typeof window == 'undefined') {
+        return "";
+      }
+      return window.location.origin + '/thank_you';
     },
     buttonEnabled () {
       return this.captchaPassed &&
@@ -145,7 +149,7 @@ export default {
     recordSubmit () {
       this.$gtag('event', 'contact_form_submit', {
         event_category: 'engagement',
-        event_label: `${window.location.pathname}, ${this.source}`
+        event_label: window.location.pathname + ', ' + this.source,
       })
     },
     timestamp () {

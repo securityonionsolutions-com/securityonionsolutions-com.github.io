@@ -74,18 +74,24 @@
         <div class="text-3xl mt-8 mb-3">
           Contact Us
         </div>
-        If you have any questions about this policy, the practices of this site, or your dealings with this website, please <a href="javascript:$nuxt.$emit('show-contact-modal', {text: '', source: 'footer_icon'})">contact us</a>.
+        If you have any questions about this policy, the practices of this site, or your dealings with this website, please <a style="cursor: pointer" @click="sos.showContactModal({text: 'I have a question about the privacy policy.', source: 'footer_icon'})">contact us</a>.
       </div>
     </ContentSection>
   </div>
 </template>
 
 <script>
+import { sos } from '~/lib/sos.js'
+
+import SubHero from '~/components/hero/SubHero'
+
 export default {
   scrollToTop: true,
   components: {
+    SubHero,
   },
   data: () => ({
+    sos,
     links: []
   })
 }
@@ -93,7 +99,7 @@ export default {
 
 <style scoped>
 .hero-software {
-  background: right bottom no-repeat url(~assets/img/graphics/chevrons.jpg);
+  background: right bottom no-repeat url('/img/graphics/chevrons.jpg');
 }
 a {
   text-decoration: underline;

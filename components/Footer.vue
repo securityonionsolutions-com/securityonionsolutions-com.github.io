@@ -25,10 +25,7 @@
             href="https://twitter.com/securityonion"
             target="_blank"
           >
-            <fa-layers>
-              <fa icon="circle" class="text-white" />
-              <fa class="p-2" style="color: #1DA1F2" :icon="['fab', 'twitter']" />
-            </fa-layers>
+            <Icon name="fa6-brands:twitter" class="p-2 text-white" />
           </a>
           <a
             rel="me"
@@ -36,20 +33,14 @@
             href="https://infosec.exchange/@securityonion"
             target="_blank"
           >
-            <fa-layers>
-              <fa icon="circle" class="text-white" />
-              <fa class="p-2" style="color: #563ACC" :icon="['fab', 'mastodon']" />
-            </fa-layers>
+            <Icon name="fa6-brands:mastodon" class="p-2 text-white" />
           </a>
           <a
             class="block rounded-lg mr-2 lg:inline-block text-4xl focus:outline-none cursor-pointer"
             href="https://securityonion.net/discuss"
             target="_blank"
           >
-            <fa-layers>
-              <fa icon="circle" class="text-white" />
-              <fa class="p-2" style="color: black" :icon="['fab', 'github']" />
-            </fa-layers>
+            <Icon name="fa6-brands:github" class="p-2 text-white" />
           </a>
           <a
             rel="me"
@@ -57,19 +48,13 @@
             href="https://www.linkedin.com/company/security-onion-solutions-llc"
             target="_blank"
           >
-            <fa-layers>
-              <fa icon="circle" class="text-white" />
-              <fa class="p-2" style="color: #0A66C2" :icon="['fab', 'linkedin-in']" />
-            </fa-layers>
+            <Icon name="fa6-brands:linkedin" class="p-2 text-white" />
           </a>
           <div
             class="block rounded-lg lg:inline-block text-4xl focus:outline-none cursor-pointer"
-            @click="$nuxt.$emit('show-contact-modal', {text: '', source: 'footer_icon'})"
+            @click="sos.showContactModal({text: '', source: 'footer_icon'})"
           >
-            <fa-layers>
-              <fa icon="circle" class="text-white" />
-              <fa icon="envelope" class="p-2 text-red-700" />
-            </fa-layers>
+            <Icon name="fa6-regular:envelope" class="p-2 text-white" />
           </div>
         </div>
         <div class="block mt-2 lg:inline-block text-l text-white">
@@ -81,3 +66,13 @@
     </div>
   </footer>
 </template>
+
+<script>
+import { sos } from '~/lib/sos.js'
+
+export default {
+  data: () => ({
+    sos,
+  })
+}
+</script>

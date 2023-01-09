@@ -40,6 +40,7 @@
 </template>
 
 <script>
+import { sos } from '~/lib/sos.js'
 import DetailPara from '~/components/features/DetailPara'
 
 export default {
@@ -53,6 +54,7 @@ export default {
     }
   },
   data: () => ({
+    sos,
     activeFeat: 0
   }),
   methods: {
@@ -61,7 +63,7 @@ export default {
     },
     screenshot (index) {
       const fileName = this.featureArr[index].image
-      return require(`~/assets/img/${fileName}`)
+      return `/img/${fileName}`
     },
     description (index) {
       const text = this.featureArr[index].body
@@ -69,7 +71,7 @@ export default {
     },
     handleImageClick (index) {
       const fileName = this.featureArr[index].image.replace('screenshots/', '')
-      this.$nuxt.$emit('show-image-zoom', { imageName: fileName, imageType: 'screenshot' })
+      sos.showImageZoom({ imageName: fileName, imageType: 'screenshot' })
     }
   }
 }

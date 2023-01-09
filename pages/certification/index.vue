@@ -30,13 +30,13 @@
           This exam tests your knowledge in the following six domains:
         </div>
         <div class="flex flex-row flex-wrap justify-center mt-4">
-          <div v-for="(domain, i) in domainArr" :key="i" class="w-full md:w-1/3 bg-gray-200 rounded-md m-2 md:px-4 px-2 py-4 h-72 transition duration-75 ease-linear transform xs:hover:scale-105 focus: cursor-pointer" @click="$nuxt.$emit('show-domain-details', { domainDetailText: domain.details, domainName: domain.name, domainTestPercent: domain.percent })">
+          <div v-for="(domain, i) in domainArr" :key="i" class="w-full md:w-1/3 bg-gray-200 rounded-md m-2 md:px-4 px-2 py-4 h-72 transition duration-75 ease-linear transform xs:hover:scale-105 focus: cursor-pointer" @click="sos.showDomainDetails({ domainDetailText: domain.details, domainName: domain.name, domainTestPercent: domain.percent })">
             <div class="-mt-3 mr-2 absolute right-0 font-bold text-xs text-gray-700">
-              <fa icon="info" mask="circle" transform="shrink-6" />
+              <icon name="fa6-solid:circle-info" />
             </div>
             <vertical-feature class="mt-1">
               <template #graphic>
-                <fa :icon="domain.icon" class="mb-3" mask="circle" transform="shrink-8" size="4x" />
+                <icon :name="'fa-solid:' + domain.icon" class="mb-3" size="4em" />
               </template>
               <template #title>
                 <div class="-mx-1">
@@ -89,7 +89,7 @@
                     <div>
                       Registration Guide
                     </div>
-                    <div class="ml-1 text-xs"><fa icon="external-link-alt" /></div>
+                    <div class="ml-1 text-xs"><icon name="fa-solid:external-link-alt" /></div>
                   </div>
                 </a>
               </div>
@@ -121,7 +121,7 @@
                 </li>
               </ul>
             </div>
-            <div class="bg-red-300 text-red-700 border border-red-700 rounded rounded-md px-6 py-2">
+            <div class="bg-red-100 text-red-700 border border-red-700 rounded rounded-md px-6 py-2">
               Reference materials having the appearance of exam questions and answers are <span class="font-bold">strictly prohibited</span>.
             </div>
           </div>
@@ -130,7 +130,7 @@
     </content-section>
     <content-section id="certificationhelp" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-48 -my-8">
-        <action-callout :alternate="true" class="my-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about the Security Onion Certified Professional certification.', source: 'hw_purchasing_info' })">
+        <action-callout :alternate="true" class="my-12" @button-click="sos.showContactModal({ text: 'Please contact me with more information about the Security Onion Certified Professional certification.', source: 'hw_purchasing_info' })">
           <template #info>
             <div class="text-3xl flex justify-center text-center md:text-left">
               <div>
@@ -150,14 +150,26 @@
 </template>
 
 <script>
+import { sos } from '~/lib/sos.js'
+
 import ContentSection from '~/components/ContentSection.vue'
 import VerticalFeature from '~/components/features/VerticalFeature.vue'
 import SoButton from '~/components/SoButton.vue'
+import SubHero from '~/components/hero/SubHero'
+
+import domains from '~/content/cert_domains.json'
+
 export default {
   scrollToTop: true,
-  components: { ContentSection, VerticalFeature, SoButton },
+  components: { 
+    ContentSection, 
+    VerticalFeature, 
+    SoButton,
+    SubHero,
+  },
   data: () => ({
-    domainArr: require('~/content/cert_domains.json').domains
+    sos,
+    domainArr: domains.domains
   }),
   beforeMount () {
 
@@ -172,7 +184,7 @@ export default {
 
 <style scoped>
 .hero {
-  background: right bottom no-repeat url(~assets/img/graphics/squares.jpg);
+  background: right bottom no-repeat url('/img/graphics/squares.jpg');
 }
 #domain-list {
   -webkit-tap-highlight-color: transparent;

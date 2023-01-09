@@ -4,7 +4,7 @@
       Appliance Comparison
     </SectionHeader>
 
-    <table class="mx-auto table-auto rounded-md border-separate border border-spacing-2 border-blue-400 bg-blue mb-12">
+    <table class="mx-auto table-auto rounded-md border-separate border border-blue-400 bg-blue mb-12">
       <thead>
         <tr class="bg-blue-400 text-left text-white">
           <th class="hidden md:table-cell px-2 truncate" style="min-width: 1.3em">
@@ -48,7 +48,7 @@
           <td class="text-right border-t border-blue-400 px-2 truncate">
             <div class="flex flex-row">
               {{ item['name'] }}
-              <fa icon="info" mask="circle" transform="shrink-6" class="mx-2 mt-1 text-base" />
+              <icon name="fa6-solid:circle-info" class="mx-2 mt-1 text-base" />
             </div>
           </td>
           <td class="hidden xl:table-cell border-t border-blue-400 px-2 truncate">
@@ -65,20 +65,21 @@
 </template>
 
 <script>
+import Footnotes from '~/components/hardware/Footnotes'
+import appliances from '~/content/appliances.json'
+
 export default {
+  components: {
+    Footnotes,
+  },
   data: () => ({
-    appliances: require('@/content/appliances.json')
+    appliances: appliances
   }),
   methods: {
     thumbnail (appliance) {
-      return require(`~/assets/img/appliances/${appliance.img_front_thumb}`)
+      return `/img/appliances/${appliance.img_front_thumb}`;
     },
     handleClick (appliance) {
-      this.$gtag('event', 'hw_info', {
-        event_category: 'ecommerce',
-        event_label: appliance.name,
-        value: appliance.name
-      })
       this.$router.push(`/hardware/${appliance.name.replace(' ', '_')}`)
     }
   }

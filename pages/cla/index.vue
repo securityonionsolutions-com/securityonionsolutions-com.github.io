@@ -12,7 +12,7 @@
       </template>
     </SubHero>
     <ContentSection id="overview" :alternate="true">
-      <div class="text-xl px-6 xs:px-12 lg:px-32" style="white-space: pre-wrap">
+      <pre class="text-xl px-6 xs:px-12 lg:px-32 whitespace-pre-wrap">
         In order to clarify the intellectual property license granted with Contributions from any person or entity, Security Onion Solutions LLC ("SOS") must have a Contributor License Agreement ("CLA") on file that has been signed by each Contributor, indicating agreement to the license terms below. This license is for your protection as a Contributor as well as the protection of SOS; it does not change your rights to use your own Contributions for any other purpose.
 
         You accept and agree to the following terms and conditions for Your present and future Contributions submitted to SOS. Except for the license granted herein to SOS and recipients of software distributed by SOS, You reserve all right, title, and interest in and to Your Contributions.
@@ -36,15 +36,18 @@
         7. Should You wish to submit work that is not Your original creation, You may submit it to SOS separately from any Contribution, identifying the complete details of its source and of any license or other restriction (including, but not limited to, related patents, trademarks, and license agreements) of which you are personally aware, and conspicuously marking the work as "Submitted on behalf of a third-party: [named here]".
 
         8. You agree to notify SOS of any facts or circumstances of which you become aware that would make these representations inaccurate in any respect.
-      </div>
+      </pre>
     </ContentSection>
   </div>
 </template>
 
 <script>
+import SubHero from '~/components/hero/SubHero'
+
 export default {
   scrollToTop: true,
   components: {
+    SubHero,
   },
   data: () => ({
     links: []
@@ -54,6 +57,9 @@ export default {
 
 <style scoped>
 .hero-software {
-  background: right bottom no-repeat url(~assets/img/graphics/chevrons.jpg);
+  background: right bottom no-repeat url('/img/graphics/chevrons.jpg');
+}
+pre {
+  font-family: "Inter", Roboto, Ubuntu, "Helvetica Neue", Oxygen, Cantarell, sans-serif !important;
 }
 </style>

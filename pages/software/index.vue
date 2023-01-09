@@ -154,7 +154,7 @@
           <div v-for="(type, i) in typeArray" :key="i" class="w-full md:w-1/3 xl:w-1/4 bg-gray-200 rounded-md m-3 p-2 h-64">
             <VerticalFeature>
               <template #graphic>
-                <fa :icon="type.icon" class="mb-2" mask="circle" transform="shrink-8" size="4x" />
+                <Icon :name="type.icon" class="mb-2" size="4em" />
               </template>
               <template #title>
                 <div class="text-2xl">
@@ -180,7 +180,7 @@
     </ContentSection>
     <ContentSection id="hardwarehelp" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32 -my-8">
-        <action-callout :alternate="true" class="my-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Security Onion Solutions\' offerings.', source: 'software_general_contact_us' })">
+        <action-callout :alternate="true" class="my-12" @button-click="sos.showContactModal({ text: 'Please contact me with more information about Security Onion Solutions\' offerings.', source: 'software_general_contact_us' })">
           <template #info>
             <div class="text-2xl flex justify-center text-center md:text-left">
               <div>
@@ -200,28 +200,45 @@
 </template>
 
 <script>
+import { sos } from '~/lib/sos.js'
+
+import SubHero from '~/components/hero/SubHero'
+import SectionHeader from '~/components/SectionHeader'
 import FourPanelDetail from '~/components/features/FourPanelDetail'
 import ActionCallout from '~/components/action_callouts/ActionCallout'
 import FeatureSelector from '~/components/features/FeatureSelector'
+import FeatureLeft from '~/components/features/FeatureLeft'
+import FeatureRight from '~/components/features/FeatureRight'
+import VerticalFeature from '~/components/features/VerticalFeature'
+
+import types from '~/content/data_types.json';
+import features from '~/content/features.json';
+import version from '~/content/version.json';
 
 export default {
   scrollToTop: true,
   components: {
+    SubHero,
+    SectionHeader,
     FourPanelDetail,
     ActionCallout,
-    FeatureSelector
+    FeatureSelector,
+    FeatureLeft,
+    FeatureRight,
+    VerticalFeature,
   },
   data: () => ({
+    sos,
     links: [{ name: 'Overview', id: 'overview' }, { name: 'Use Cases', id: 'use-cases' }, { name: 'Features', id: 'features' }],
-    typeArray: require('~/content/data_types.json').types,
-    featureArr: require('~/content/features.json').features,
-    soVersion: require('~/content/version.json').version
-  })
+    typeArray: types.types,
+    featureArr: features.features,
+    soVersion: version.version
+  }),
 }
 </script>
 
 <style scoped>
 .hero-software {
-  background: right bottom no-repeat url(~assets/img/graphics/peelback-half.jpg);
+  background: right bottom no-repeat url('/img/graphics/peelback-half.jpg');
 }
 </style>

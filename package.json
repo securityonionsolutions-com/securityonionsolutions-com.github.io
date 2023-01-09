@@ -1,45 +1,23 @@
 {
-  "name": "sos-new-new",
-  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
-    "update_content": "node update_content.js",
+    "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint": "npm run lint:js"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@fortawesome/free-regular-svg-icons": "^5.15.4",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@fortawesome/vue-fontawesome": "^0.1.10",
-    "@nuxtjs/google-gtag": "^1.0.4",
-    "@nuxtjs/recaptcha": "^0.6.2",
-    "hooper": "^0.3.4",
-    "is-svg": "^4.2.2",
-    "nth-check": ">=2.0.1",
-    "nuxt": "^2.15.8",
-    "nuxt-fontawesome": "^0.4.0",
-    "set-value": ">=4.0.1",
-    "vue-360": "^0.1.6",
-    "vue-scrollto": "^2.18.2"
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxtjs/color-mode": "^1.1.1",
-    "@nuxtjs/eslint-config": "^3.1.0",
-    "@nuxtjs/eslint-module": "^2.0.0",
-    "@nuxtjs/tailwindcss": "^2.1.0",
-    "axios": "^0.21.4",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.32.0",
-    "eslint-plugin-nuxt": "^1.0.0",
-    "nth-check": ">=2.0.1",
-    "luxon": "^1.28.0",
-    "set-value": ">=4.0.1",
-    "tailwindcss": "^1.7.0"
+    "@nuxtjs/tailwindcss": "^6.2.0",
+    "axios": "^1.2.2",
+    "nuxt": "3.0.0",
+    "nuxt-icon": "^0.1.8",
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "@egjs/vue3-view360": "^3.0.4",
+    "@nuxtjs/recaptcha": "^1.1.1",
+    "vue-gtag": "^2.0.1",
+    "vue-recaptcha": "^2.0.3"
   }
 }

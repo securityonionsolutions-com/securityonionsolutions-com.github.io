@@ -14,7 +14,7 @@
           </div>
         </div>
         <div class="flex justify-center">
-          <ActionCallout class="mt-4" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about the SOS SNNV.', source: 'hw_purchase' })">
+          <ActionCallout class="mt-4" @button-click="sos.showContactModal({ text: 'Please contact me with more information about the SOS SNNV.', source: 'hw_purchase' })">
             <template #button-text>
               Purchase
             </template>
@@ -74,7 +74,7 @@
             </div>
           </template>
           <template #graphic>
-            <fa icon="hands-helping" size="10x" />
+            <icon name="fa-solid:hands-helping" size="10em" />
           </template>
           <template #body>
             <div class="text-center xs:text-left">
@@ -84,7 +84,7 @@
         </feature-right>
         <feature-left-action
           :alternate="true"
-          @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Response-Ready appliances.', source: 'hw_r2_purchasing_info' })"
+          @button-click="sos.showContactModal({ text: 'Please contact me with more information about Response-Ready appliances.', source: 'hw_r2_purchasing_info' })"
         >
           <template #header>
             <div class="text-3xl mb-6 text-left">
@@ -131,7 +131,7 @@
     </ContentSection>
     <ContentSection id="hardwarehelp" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32 -my-8">
-        <action-callout :alternate="true" class="my-12" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Security Onion appliances.', source: 'hw_purchasing_info' })">
+        <action-callout :alternate="true" class="my-12" @button-click="sos.showContactModal({ text: 'Please contact me with more information about Security Onion appliances.', source: 'hw_purchasing_info' })">
           <template #info>
             <div class="text-3xl flex justify-center text-center md:text-left">
               <div>
@@ -151,6 +151,9 @@
 </template>
 
 <script>
+import { sos } from '~/lib/sos.js'
+
+import ApplianceGrid from '~/components/hardware/ApplianceGrid'
 import SubHero from '~/components/hero/SubHero'
 import ActionCallout from '~/components/action_callouts/ActionCallout'
 import FeatureRight from '~/components/features/FeatureRight'
@@ -160,6 +163,7 @@ import FeatureLeftAction from '~/components/features/FeatureLeftAction.vue'
 export default {
   scrollToTop: true,
   components: {
+    ApplianceGrid,
     SubHero,
     ActionCallout,
     FeatureRight,
@@ -167,6 +171,7 @@ export default {
     FeatureLeftAction
   },
   data: () => ({
+    sos,
     links: [{ name: 'Overview', id: 'overview' }, { name: 'Comparison', id: 'comparison' }]
   }),
   head () {
@@ -179,6 +184,6 @@ export default {
 
 <style scoped>
 .hero-hardware {
-  background: right bottom no-repeat url(~assets/img/graphics/hardware.jpg);
+  background: right bottom no-repeat url('/img/graphics/hardware.jpg');
 }
 </style>

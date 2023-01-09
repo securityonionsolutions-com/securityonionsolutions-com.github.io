@@ -170,7 +170,7 @@
     </ContentSection>
     <ContentSection id="education_info" :alternate="true">
       <div class=" px-6 xs:px-12 lg:px-32">
-        <action-callout :alternate="true" class="-mt-4" @button-click="$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about using Security Onion in my classroom.', source: 'education_general_contact_us' })">
+        <action-callout :alternate="true" class="-mt-4" @button-click="sos.showContactModal({ text: 'Please contact me with more information about using Security Onion in my classroom.', source: 'education_general_contact_us' })">
           <template #info>
             <div class="text-2xl flex justify-center">
               <div>
@@ -190,14 +190,26 @@
 </template>
 
 <script>
+import { sos } from '~/lib/sos.js'
+
+import DetailPara from '~/components/features/DetailPara'
+import SubHero from '~/components/hero/SubHero'
+
 export default {
+  data: () => ({
+    sos,
+  }),
+  components: {
+    DetailPara,
+    SubHero,
+  },
   methods: {
     handleContactClick (messageType, event) {
       if (event) { event.preventDefault() }
       if (messageType === 'discount') {
-        this.$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about academic discounts on official Security Onion training.', source: 'education_discount_contact_us' })
+        sos.showContactModal({ text: 'Please contact me with more information about academic discounts on official Security Onion training.', source: 'education_discount_contact_us' })
       } else if (messageType === 'talk') {
-        this.$nuxt.$emit('show-contact-modal', { text: 'Please contact me with more information about Security Onion Solutions speaking to my classroom.', source: 'education_speaking_contact_us' })
+        sos.showContactModal({ text: 'Please contact me with more information about Security Onion Solutions speaking to my classroom.', source: 'education_speaking_contact_us' })
       }
     }
   }
@@ -206,6 +218,6 @@ export default {
 
 <style scoped>
 .hero {
-  background: right bottom no-repeat url(~assets/img/graphics/squares.jpg);
+  background: right bottom no-repeat url('/img/graphics/squares.jpg');
 }
 </style>

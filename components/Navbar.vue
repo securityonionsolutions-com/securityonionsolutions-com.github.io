@@ -74,27 +74,27 @@
             href="https://twitter.com/securityonion"
             target="_blank"
           >
-            <fa :icon="['fab', 'twitter']" />
+            <Icon name="fa6-brands:twitter" />
           </a>
           <a
             class="block rounded-lg mr-3 lg:inline-block text-lg focus:outline-none cursor-pointer hover:text-so-blue"
             href="https://securityonion.net/discuss"
             target="_blank"
           >
-            <fa :icon="['fab', 'github']" />
+            <Icon name="fa6-brands:github" />
           </a>
           <a
             class="block rounded-lg mr-3 lg:inline-block text-lg focus:outline-none cursor-pointer hover:text-so-blue"
             href="https://www.linkedin.com/company/security-onion-solutions-llc"
             target="_blank"
           >
-            <fa :icon="['fab', 'linkedin-in']" />
+            <Icon name="fa6-brands:linkedin" />
           </a>
           <div
             class="block rounded-lg lg:inline-block text-lg focus:outline-none cursor-pointer hover:text-so-blue"
-            @click="$nuxt.$emit('show-contact-modal', { text: '', source: 'header_icon' })"
+            @click="sos.showContactModal({ text: '', source: 'header_icon' })"
           >
-            <fa icon="envelope" />
+            <Icon name="fa6-regular:envelope" />
           </div>
         </div>
         <div class="flex flex-row mt-4 lg:mt-0">
@@ -141,8 +141,11 @@
 </template>
 
 <script>
+import { sos } from '~/lib/sos.js'
+
 export default {
   data: () => ({
+    sos,
     dropdownOpen: false
   }),
   mounted () {
@@ -151,7 +154,7 @@ export default {
     }
 
     document.addEventListener('keydown', handleEscape)
-
+return;
     this.$once('hook:beforeDestroy', () => {
       document.removeEventListener('keydown', handleEscape)
     })
