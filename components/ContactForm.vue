@@ -87,8 +87,8 @@
       </select>
       <button
         id="form_submit"
-        class="submit-button"
-        :class="[buttonEnabled ? 'enabled' : 'disabled']"
+        :class="[buttonEnabled() ? 'enabled' : 'disabled']"
+        :disabled="!buttonEnabled()"
         type="submit"
         @click="recordSubmit()"
       >
@@ -127,14 +127,6 @@ export default {
       }
       return window.location.origin + '/thank_you';
     },
-    buttonEnabled () {
-      return this.captchaPassed &&
-        this.first_name !== '' &&
-        this.last_name !== '' &&
-        this.company !== '' &&
-        this.email !== '' &&
-        this.description !== ''
-    }
   },
   beforeMount () {
     this.captchaSettings = { keyname: 'reCAPTCHA', fallback: 'true', orgId: '00D1U000000DI9i', ts: '' }
@@ -146,6 +138,15 @@ export default {
     clearInterval(this.t)
   },
   methods: {
+    buttonEnabled () {
+      var result = this.captchaPassed &&
+        this.first_name !== '' &&
+        this.last_name !== '' &&
+        this.company !== '' &&
+        this.email !== '' &&
+        this.description !== ''
+      return result;
+    },
     recordSubmit () {
       this.$gtag('event', 'contact_form_submit', {
         event_category: 'engagement',
@@ -176,7 +177,7 @@ export default {
     width: 35rem;
   }
 }
-.submit-button {
+#form_submit {
   @apply shadow-lg border font-bold mt-1 py-2 px-4 rounded-full -ml-1
 }
 .enabled {
