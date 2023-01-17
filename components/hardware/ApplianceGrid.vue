@@ -20,7 +20,7 @@
             <div>Use Case(s)</div>
           </th>
           <th class="text-center px-2 truncate">
-            <div>Forward</div>
+            <div>Forward Node</div>
             <div>Throughput †</div>
           </th>
           <th class="text-center px-2 truncate">
@@ -54,7 +54,7 @@
           <td class="hidden xl:table-cell border-t border-blue-400 px-2 truncate">
             <div v-for="(role, roleIdx) in item.roles" :key="roleIdx" v-text="role" />
           </td>
-          <td class="text-right border-t border-blue-400 px-2 truncate" v-text="item.specs['Forward Throughput †']" />
+          <td class="text-right border-t border-blue-400 px-2 truncate" v-text="item.specs['Forward Node Throughput †']" />
           <td class="text-right border-t border-blue-400 px-2 truncate" v-text="item.specs['Data Storage *']" />
           <td class="hidden sm:table-cell text-right border-t border-blue-400 px-2 truncate" v-text="item.specs['Form Factor']" />
         </tr>
