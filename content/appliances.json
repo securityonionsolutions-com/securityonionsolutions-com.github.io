@@ -21,7 +21,7 @@
     },
     "specs": {
       "Standalone Throughput †": "N/A",
-      "Forward Throughput †": "500 Mbps",
+      "Forward Node Throughput †": "500 Mbps",
       "Data Storage *": "8 TB",
       "Data Storage Class": "7K RPM",
       "Data Storage RAID": "Single Disk",
@@ -59,7 +59,7 @@
     },
     "specs": {
       "Standalone Throughput †": "500 Mbps",
-      "Forward Throughput †": "1 Gbps",
+      "Forward Node Throughput †": "1 Gbps",
       "Data Storage *": "24 TB",
       "Data Storage Class": "7K RPM",
       "Data Storage RAID": "RAID 5",
@@ -97,7 +97,7 @@
     },
     "specs": {
       "Standalone Throughput †": "500 Mbps",
-      "Forward Throughput †": "1 Gbps",
+      "Forward Node Throughput †": "1 Gbps",
       "Data Storage *": "24 TB",
       "Data Storage Class": "7K RPM",
       "Data Storage RAID": "RAID 5",
@@ -138,7 +138,7 @@
     },
     "specs": {
       "Standalone Throughput †": "N/A",
-      "Forward Throughput †": "4 Gbps",
+      "Forward Node Throughput †": "4 Gbps",
       "Data Storage *": "120 TB",
       "Data Storage Class": "7K RPM",
       "Data Storage RAID": "RAID 6",
@@ -176,7 +176,7 @@
     },
     "specs": {
       "Standalone Throughput †": "N/A",
-      "Forward Throughput †": "10 Gbps ‡",
+      "Forward Node Throughput †": "10 Gbps ‡",
       "Data Storage *": "7 TB",
       "Data Storage Class": "SSD",
       "Data Storage RAID": "RAID 10",
@@ -215,7 +215,7 @@
     },
     "specs": {
       "Standalone Throughput †": "N/A",
-      "Forward Throughput †": "N/A",
+      "Forward Node Throughput †": "N/A",
       "Data Storage *": "15 TB",
       "Data Storage Class": "NVMe",
       "Data Storage RAID": "RAID 1",
@@ -254,7 +254,7 @@
     },
     "specs": {
       "Standalone Throughput †": "3 Gbps",
-      "Forward Throughput †": "N/A",
+      "Forward Node Throughput †": "N/A",
       "Data Storage *": "72 TB",
       "Data Storage Class": "7K RPM",
       "Data Storage RAID": "RAID 10",
@@ -292,7 +292,7 @@
     },
     "specs": {
       "Standalone Throughput †": "5 Gbps",
-      "Forward Throughput †": "N/A",
+      "Forward Node Throughput †": "N/A",
       "Data Storage *": "30 TB",
       "Data Storage Class": "NVMe",
       "Data Storage RAID": "RAID 10",
@@ -330,14 +330,14 @@
     },
     "specs": {
       "Standalone Throughput †": "5 Gbps",
-      "Forward Throughput †": "10 Gbps",
-      "Data Storage *": "120 TB",
+      "Forward Node Throughput †": "10 Gbps",
+      "Data Storage *": "Up to 120 TB",
       "Data Storage Class": "NVMe",
       "Data Storage RAID": "RAID 0 or 10",
       "OS Storage *": "480 GB",
       "OS Storage Class": "SSD",
       "OS Storage RAID": "RAID 1",
-      "Interfaces": "6 x 1GbE RJ45, 2 x 10/25GbE SFP28",
+      "Interfaces": "6 x 1GbE RJ45, 2-4 x 10/25GbE SFP28\nQSFP28 also available",
       "Form Factor": "ATA"
     },
     "caveats": {
@@ -369,7 +369,7 @@
     },
     "specs": {
       "Standalone Throughput †": "5 Gbps",
-      "Forward Throughput †": "10 Gbps ‡",
+      "Forward Node Throughput †": "10 Gbps ‡",
       "Data Storage *": "165 TB",
       "Data Storage Class": "SSD",
       "Data Storage RAID": "RAID 10",
