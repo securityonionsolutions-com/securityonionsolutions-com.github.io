@@ -14,7 +14,7 @@ export default {
       return this.$route.query.event_source
     },
     contactText () {
-      return Buffer.from(String(this.$route.query.text), 'base64').toString()
+      return String(window.atob(this.$route.query.text))
     }
   }
 }
