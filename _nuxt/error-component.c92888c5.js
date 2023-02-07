@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as o,a as c}from"./entry.6e2d997b.js";const r={},n=c("meta",{"http-equiv":"refresh",content:"0;/"},null,-1),s=[n];function a(_,l){return t(),o("head",null,s)}const f=e(r,[["render",a]]);export{f as default};
