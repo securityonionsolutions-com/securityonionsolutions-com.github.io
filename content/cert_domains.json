@@ -18,7 +18,7 @@
             "name": "Grid Monitoring",
             "icon": "chart-bar",
             "desc": "Knowledge on how to identify potential issues in a Security Onion 2 grid.",
-            "details": "Topics for this section include but are not limited to: navigating the Grid and Grafana interfaces, the purpose and functionality of tools such as Telegraph and Influxdb, building notification channels, and configuring alerts in Grafana.",
+            "details": "Topics for this section include but are not limited to: navigating the Grid and related interfaces, the purpose and functionality of tools such as Telegraf and InfluxDB, building notification channels, and configuring alerts.",
             "percent": 10
         },
         {
