@@ -10,8 +10,8 @@
         </div>
         <client-only>
           <div class="flex justify-center">
-            <div class="xs:mx-12 xl:mx-24 pb-6 border-b border-gray-400">
-              <SpinViewer id="spinner" ref="spinner"
+            <div v-for="(spinner, idx) in spinners" class="pb-6">
+              <SpinViewer id="spinner" ref="spinner" v-if="idx == this.spinnerIdx"
                 :imageUrl="threesixtyDetails.imagePath"
                 :rowCount="threesixtyDetails.numPics"
                 scale="1"
@@ -19,7 +19,14 @@
             </div>
           </div>
         </client-only>
-        <div class="flex flex-col md:flex-row justify-center items-center text-center border-b border-gray-400 pb-6 xs:mx-12 mt-4">
+        <div v-if="spinners.length > 1" class="flex flex-col w-full justify-center text-center cursor-pointer">
+          <span v-for="(spinner, idx) in spinners" @click="showSpinner(idx)">
+            <Icon name="fa-solid:camera" class="text-black" />
+            &nbsp;
+            {{ spinner.name }}
+          </span>
+        </div>
+        <div class="flex flex-col md:flex-row justify-center items-center text-center border-b border-t border-gray-400 pb-6 xs:mx-12 mt-4">
           <div v-if="appliance.img_front_thumb" class="justify-items-center">
             <div
               class="w-full transform hover:scale-105 transition duration-200 ease-in-out cursor-pointer"
@@ -77,26 +84,26 @@ export default {
   },
   data: () => ({
     sos,
+    spinnerIdx: 0,
   }),
   props: {
     appliance: { type: Object, default: () => {} }
   },
   computed: {
     threesixtyDetails () {
-      const imagePath = this.appliance.threesixty.imagePath
-      const numPics = this.appliance.threesixty.count
+      const imagePath = this.appliance.threesixty[this.spinnerIdx].imagePath
+      const numPics = this.appliance.threesixty[this.spinnerIdx].count
       return {
         imagePath,
         numPics,
       }
-    }
+    },
+    spinners() {
+      return this.appliance.threesixty;
+    },
   },
   mounted() {
-    setTimeout(() => {
-      if (this.$refs.spinner) {
-        this.$refs.spinner.spinBy(360, { duration: 4000 });
-      }
-    }, 1000);
+    this.spin();
   },
   methods: {
     specSplit (str) {
@@ -110,7 +117,18 @@ export default {
         fileName = this.appliance.img_back_thumb
       }
       sos.showImageZoom({ imageType: 'appliance', imageName: fileName })
-    }
+    },
+    spin() {
+      setTimeout(() => {
+        if (this.$refs.spinner) {
+          this.$refs.spinner[0].spinBy(360, { duration: 4000 });
+        }
+      }, 1000);
+    },
+    showSpinner(idx) {
+      this.spinnerIdx = idx;
+      this.spin();
+    },
   }
 }
 </script>

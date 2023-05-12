@@ -15,10 +15,10 @@
     "img_front": "sos-1u-front.jpg",
     "img_back_thumb": "sos-1u-ethernet-back-thumb.jpg",
     "img_back": "sos-1u-ethernet-back.jpg",
-    "threesixty": {
+    "threesixty": [{
       "imagePath": "/img/appliances/sos-1u-ethernet-strip.jpg",
       "count": 36
-    },
+    }],
     "specs": {
       "Standalone Throughput †": "N/A",
       "Forward Node Throughput †": "500 Mbps",
@@ -53,10 +53,10 @@
     "img_front": "sos-1u-front.jpg",
     "img_back_thumb": "sos-1u-ethernet-back-thumb.jpg",
     "img_back": "sos-1u-ethernet-back.jpg",
-    "threesixty": {
+    "threesixty": [{
       "imagePath": "/img/appliances/sos-1u-ethernet-strip.jpg",
       "count": 36
-    },
+    }],
     "specs": {
       "Standalone Throughput †": "500 Mbps",
       "Forward Node Throughput †": "1 Gbps",
@@ -91,10 +91,10 @@
     "img_front": "sos-1u-front.jpg",
     "img_back_thumb": "sos-1u-sfp-back-thumb.jpg",
     "img_back": "sos-1u-sfp-back.jpg",
-    "threesixty": {
+    "threesixty": [{
       "imagePath": "/img/appliances/sos-1u-sfp-strip.jpg",
       "count": 38
-    },
+    }],
     "specs": {
       "Standalone Throughput †": "500 Mbps",
       "Forward Node Throughput †": "1 Gbps",
@@ -132,10 +132,10 @@
     "img_front": "sos-2u-front.jpg",
     "img_back_thumb": "sos-2u-back-thumb.jpg",
     "img_back": "sos-2u-back.jpg",
-    "threesixty": {
+    "threesixty": [{
       "imagePath": "/img/appliances/sos-2u-strip.jpg",
       "count": 42
-    },
+    }],
     "specs": {
       "Standalone Throughput †": "N/A",
       "Forward Node Throughput †": "4 Gbps",
@@ -170,10 +170,10 @@
     "img_front": "sos-1u-front.jpg",
     "img_back_thumb": "sos-1u-sfp-back-thumb.jpg",
     "img_back": "sos-1u-sfp-back.jpg",
-    "threesixty": {
+    "threesixty": [{
       "imagePath": "/img/appliances/sos-1u-sfp-strip.jpg",
       "count": 38
-    },
+    }],
     "specs": {
       "Standalone Throughput †": "N/A",
       "Forward Node Throughput †": "10 Gbps ‡",
@@ -209,10 +209,10 @@
     "img_front": "sos-1u-front.jpg",
     "img_back_thumb": "sos-1u-ethernet-back-thumb.jpg",
     "img_back": "sos-1u-ethernet-back.jpg",
-    "threesixty": {
+    "threesixty": [{
       "imagePath": "/img/appliances/sos-1u-ethernet-strip.jpg",
       "count": 36
-    },
+    }],
     "specs": {
       "Standalone Throughput †": "N/A",
       "Forward Node Throughput †": "N/A",
@@ -248,10 +248,10 @@
     "img_front": "sos-2u-front.jpg",
     "img_back_thumb": "sos-2u-back-thumb.jpg",
     "img_back": "sos-2u-back.jpg",
-    "threesixty": {
+    "threesixty": [{
       "imagePath": "/img/appliances/sos-2u-strip.jpg",
       "count": 42
-    },
+    }],
     "specs": {
       "Standalone Throughput †": "3 Gbps",
       "Forward Node Throughput †": "N/A",
@@ -286,10 +286,10 @@
     "img_front": "sos-1u-front.jpg",
     "img_back_thumb": "sos-1u-sfp-back-thumb.jpg",
     "img_back": "sos-1u-sfp-back.jpg",
-    "threesixty": {
+    "threesixty": [{
       "imagePath": "/img/appliances/sos-1u-sfp-strip.jpg",
       "count": 38
-    },
+    }],
     "specs": {
       "Standalone Throughput †": "5 Gbps",
       "Forward Node Throughput †": "N/A",
@@ -324,10 +324,19 @@
     "img_front": "sos-gf-front.jpg",
     "img_back_thumb": "sos-gf-back-thumb.jpg",
     "img_back": "sos-gf-back.jpg",
-    "threesixty": {
+    "threesixty": [{
+      "name": "View without case",
       "imagePath": "/img/appliances/sos-gofast-strip.jpg",
-      "count": 32
-    },
+      "count": 16
+    },{
+      "name": "View with case handle up",
+      "imagePath": "/img/appliances/sos-gofast-strip-handleup.jpg",
+      "count": 8
+    },{
+      "name": "View with case handle down",
+      "imagePath": "/img/appliances/sos-gofast-strip-handledown.jpg",
+      "count": 8
+    }],
     "specs": {
       "Standalone Throughput †": "5 Gbps",
       "Forward Node Throughput †": "10 Gbps",
@@ -363,10 +372,23 @@
     "img_front": "sos-gb-front.jpg",
     "img_back_thumb": "sos-gb-back-thumb.jpg",
     "img_back": "sos-gb-back.jpg",
-    "threesixty": {
+    "threesixty": [{
+      "name": "View Without Case",
       "imagePath": "/img/appliances/sos-gobig-strip.jpg",
-      "count": 39
-    },
+      "count": 16
+    },{
+      "name": "View With Case",
+      "imagePath": "/img/appliances/sos-gobig-strip-incase.jpg",
+      "count": 7
+    },{
+      "name": "View Case Handle Up",
+      "imagePath": "/img/appliances/sos-gobig-strip-handleup.jpg",
+      "count": 8
+    },{
+      "name": "View Case Handle Down",
+      "imagePath": "/img/appliances/sos-gobig-strip-handledown.jpg",
+      "count": 8
+    }],
     "specs": {
       "Standalone Throughput †": "5 Gbps",
       "Forward Node Throughput †": "10 Gbps ‡",
