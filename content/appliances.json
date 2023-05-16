@@ -117,8 +117,7 @@
     "category": "Enterprise",
     "tagline": "Designed for high throughput observation with full packet capture",
     "roles": [
-      "Forward node in a data center",
-      "Standalone node in a medium to large office"
+      "Forward node in a data center"
     ],
     "uses": [
       "Large Office"
