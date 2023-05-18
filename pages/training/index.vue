@@ -179,6 +179,7 @@
       </div>
     </ContentSection>
     <ContentSection id="public-training">
+      <a name="public"/>
       <div class="xs:-mx-12 px-6 xs:px-12 lg:px-32">
         <section-header class="mb-6">
           Upcoming Instructor Led Training Events
