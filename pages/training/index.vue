@@ -179,7 +179,6 @@
       </div>
     </ContentSection>
     <ContentSection id="public-training">
-      <a name="public"/>
       <div class="xs:-mx-12 px-6 xs:px-12 lg:px-32">
         <section-header class="mb-6">
           Upcoming Instructor Led Training Events
@@ -221,7 +220,7 @@ export default {
     sos,
     scheduleList: events.events,
     domainArr: domains.domains,
-    links: [{ name: 'Free', id: 'free-training' }, { name: 'Premium', id: 'premium-on-demand' }, { name: 'Instructor Led', id: 'instructor-training' }],
+    links: [{ name: 'Free', id: 'free-training' }, { name: 'Premium', id: 'premium-on-demand' }, { name: 'Instructor Led', id: 'instructor-training' }, { name: 'Public Courses', id: 'public-training' }],
   }),
   head () {
     return {
