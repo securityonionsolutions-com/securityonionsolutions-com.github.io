@@ -5,7 +5,22 @@
     "location": "Augusta, GA",
     "caption": "Save the date for our next annual conference in 2023!",
     "caption.disabled": "Register today! We look forward to seeing you there!",
-    "link.disabled": "https://socaugusta2022.eventbrite.com/"
+    "link": "https://socaugusta2023.eventbrite.com/",
+    "schedule": {
+      "8:00 AM": "Doors open; Chick-fil-A breakfast",
+      "9:00": "Opening Remarks",
+      "9:15": "Dave Kennedy - Keynote",
+      "10:10": "Wes Lambert and Josh Kamdjou - Phish Fights and Not So Long Nights with Security Onion and Sublime Platform",
+      "10:55": "Morning Break",
+      "11:15": "Scott Hall - They're digging in the wrong place: diagnosing and dealing with one-sided traffic",
+      "12:00 PM": "Southern BBQ Lunch",
+      "1:00": "Pete Di Giorgio - Enrich Your Data and Your Life",
+      "1:55": "Josh Brower - Defensive Intel with Security Onion",
+      "2:40": "Afternoon Break",
+      "3:00": "Tricky Tray Raffle",
+      "3:10": "David Bianco - Achieving PEAK Performance: Introducing the PEAK Threat Hunting Framework",
+      "4:05": "Doug Burks - State of the Onion"
+    }
   },
   "past": [
     {
