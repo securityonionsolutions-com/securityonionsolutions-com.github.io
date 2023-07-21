@@ -56,7 +56,9 @@
       <ContentSection id="schedule">
         <div class="xs:-mx-12 px-6 xs:px-12 lg:px-32">
           <SectionHeader class="mb-6 lg:mb-10">
-            {{ upcoming.date }} Security Onion Conference Schedule
+            Security Onion Conference Schedule
+            <br/>
+            {{ upcoming.date }}
           </SectionHeader>
           <div class="flex flex-col lg:flex-row content-center justify-center lg:space-x-32">
             <div class="flex flex-col content-center justify-center text-center">
@@ -147,14 +149,14 @@
 </template>
 
 <script>
-import FeatureRight from '~/components/features/FeatureRight'
 import SoButton from '~/components/SoButton.vue'
+import FeatureRight from '~/components/features/FeatureRight'
 import SubHero from '~/components/hero/SubHero'
 
 import conferences from '~/content/conferences.json'
 
 export default {
-  components: { 
+  components: {
     FeatureRight,
     SoButton,
     SubHero,
