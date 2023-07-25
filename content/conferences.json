@@ -23,9 +23,9 @@
         "time": "9:15 AM",
         "presenters": [
           {
-            "name": "Dave Kennedy",
-            "image": "",
-            "bio": "Dave Kennedy's detailed biography can be found at the <a class='decoration-solid underline' href='https://www.trustedsec.com/team/dave-kennedy/'>TrustedSec</a> website."
+            "name": "David Kennedy",
+            "image": "/img/speakers/david_kennedy.jpg",
+            "bio": "David Kennedy is a cybersecurity authority whose mission is to drive the industry forward and make the world a more secure place. In addition to creating two large-scale cybersecurity firms, David has testified before Congress on issues of national security and has appeared as a subject matter expert on hundreds of national news and TV shows. A detailed biography can be found at the <a class='decoration-solid underline' href='https://www.trustedsec.com/team/dave-kennedy/'>TrustedSec</a> website."
           }
         ],
         "topic": "Keynote",
@@ -41,12 +41,12 @@
           },
           {
             "name": "Josh Kamdjou",
-            "image": "",
+            "image": "/img/speakers/josh_kamdjou.png",
             "bio": "Josh Kamdjou has been doing offensive security-related things for the past 12 years. He's spent most of his professional career breaking into networks via spear-phishing and other methods, and building software for both the public (Department of Defense) and private sectors. Josh is the Founder and CEO of Sublime Security, and in his private life enjoys weight lifting, Martial Arts, soccer, and spending time with his niece and nephew."
           }
         ],
         "topic": "Phish Fights and Not So Long Nights with Security Onion and Sublime Platform",
-        "description": "In this presentation, we will explore the integration of Security Onion and Sublime Platform, an innovative open email security platform designed to prevent email attacks such as BEC, malware, and credential phishing. Sublime Platform's unique domain-specific language (DSL) enables detection-as-code, allowing for highly customizable email security detection.<p class='my-2'/>Throughout the presentation, we will cover how we can effectively triage Sublime email alerts within Security Onion, streamlining incident response and reducing the time needed to identify and remediate threats. We will also cover how we can pivot to Sublime for in-depth investigation and analysis of suspicious emails, extracting valuable context and indicators to inform security decisions.<p class='my-2'/>Last, we will discus how we can enrich and correlate Sublime alerts with the various data sources in Security Onion, such as Zeek HTTP/DNS/TLS records, Suricata alerts, and full PCAP to answer questions with network metadata such as: Did the user click on the link? Has anyone ever visited this domain or link before? And more. By combining Security Onion's robust capabilities with Sublime Platform's innovative approach to email security, participants will better understand how to create a comprehensive defense against email-based attacks."
+        "description": "In this presentation, we will explore the integration of Security Onion and Sublime Platform, an innovative open email security platform designed to prevent email attacks such as BEC, malware, and credential phishing. Sublime Platform's unique domain-specific language (DSL) enables detection-as-code, allowing for highly customizable email security detection.<p class='my-2'/>Throughout the presentation, we will cover how we can effectively triage Sublime email alerts within Security Onion, streamlining incident response and reducing the time needed to identify and remediate threats. We will also cover how we can pivot to Sublime for in-depth investigation and analysis of suspicious emails, extracting valuable context and indicators to inform security decisions.<p class='my-2'/>Last, we will discuss how we can enrich and correlate Sublime alerts with the various data sources in Security Onion, such as Zeek HTTP/DNS/TLS records, Suricata alerts, and full PCAP to answer questions with network metadata such as: Did the user click on the link? Has anyone ever visited this domain or link before? And more. By combining Security Onion's robust capabilities with Sublime Platform's innovative approach to email security, participants will better understand how to create a comprehensive defense against email-based attacks."
       },
       {
         "time": "10:55 AM",
@@ -59,7 +59,7 @@
         "presenters": [
           {
             "name": "Scott Hall",
-            "image": "",
+            "image": "/img/speakers/scott_hall.png",
             "bio": "Scott Hall is a long-time user and fan of Security Onion, and lives in Louisville, Kentucky. For the past 10 years, Scott has been responsible for helping design, deploy, manage, sell and support lightweight network sensors for some of the world's most high profile public and private networks. When not helping customers find evil, Scott enjoys smoking meats, listening to loud music and playing with his grandkids."
           }
         ],
@@ -115,7 +115,7 @@
         "presenters": [
           {
             "name": "David Bianco",
-            "image": "",
+            "image": "/img/speakers/david_bianco.png",
             "bio": "David Bianco is a Staff Security Strategist on Splunk’s SURGe research team. He is also a SANS Certified Instructor, where he teaches network forensics. David has more than 20 years of experience in the information security field, primarily in incident detection and response, threat hunting, and Cyber Threat Intelligence (CTI). He is the creator of both the Pyramid of Pain and the Threat Hunting Maturity Model, both widely cited defensive security models. Really, he just wants to make security better for everyone, and he has a special interest in helping people get started in their cybersecurity careers. You can follow David on Twitter as @DavidJBianco or on Mastodon as @DavidJBianco@infosec.exchange."
           }
         ],

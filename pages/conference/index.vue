@@ -90,11 +90,13 @@
                   </div>
                 </td>
                 <td class="text-left border-t border-blue-400 p-2">
-                  <div v-text="entry.topic" class="font-medium cursor-pointer" @click="toggleDetails(entry)"
-/>
+                  <div v-text="entry.topic" class="font-medium cursor-pointer" @click="toggleDetails(entry)"/>
                   <div v-if="entry.expanded" class="mt-2 text-sm font-normal">
                     <div v-html="entry.description"/>
                     <hr class="my-6 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
+                    <div class="font-medium text-md">
+                      Speaker Bio(s)
+                    </div>
                     <div v-for="presenter in entry.presenters" class="mt-2 mb-4" v-html="presenter.bio"/>
                   </div>
                 </td>
