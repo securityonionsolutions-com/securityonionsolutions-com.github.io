@@ -3,12 +3,12 @@
     <PageNav page-name="Home" :links="links" />
     <SubHero class="hero text-center">
       <template #header>
-        Try Security Onion for free!
+        10th Annual Security Onion Conference
       </template>
       <template #body>
-        Peel back the layers of your enterprise with our newest and most powerful release yet.
+        This year's conference will be here soon. Get your tickets now and reserve your spot to engage with a stellar line-up of speakers!
         <div class="flex justify-center">
-          <SoButton class="mt-4" link="/software">
+          <SoButton class="mt-4" link="/conference">
             Learn More
           </SoButton>
         </div>
