@@ -56,22 +56,51 @@
       <ContentSection id="schedule">
         <div class="xs:-mx-12 px-6 xs:px-12 lg:px-32">
           <SectionHeader class="mb-6 lg:mb-10">
-            Security Onion Conference Schedule
-            <br/>
-            {{ upcoming.date }}
-          </SectionHeader>
-          <div class="flex flex-col lg:flex-row content-center justify-center lg:space-x-32">
-            <div class="flex flex-col content-center justify-center text-center">
-              <div v-for="(value, key, index) in upcoming.schedule" :key="index" :class="{ 'mb-5': index != upcoming.schedule.length }">
-                <div class="font-bold text-xl xs:text-2xl mb-1">
-                  {{ key }}
-                </div>
-                <div class="text-md xs:text-lg">
-                  {{ value }}
-                </div>
-              </div>
+            <div>
+              Security Onion Conference Schedule
             </div>
-          </div>
+            <div class="text-2xl xl:text-3xl font-medium">
+              {{ upcoming.date }}
+            </div>
+          </SectionHeader>
+
+          <table class="mx-auto table-auto rounded-md border-separate border border-blue-400 bg-blue mb-12 w-full">
+            <thead>
+              <tr class="bg-blue-400 text-white">
+                <th class="text-right p-3 truncate w-24">
+                  <div>Time</div>
+                </th>
+                <th class="text-left p-3 truncate w-48">
+                  <div>Presenter(s)</div>
+                </th>
+                <th class="text-left p-3 truncate">
+                  <div>Topic</div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="entry in upcoming.schedule" class="bg-white align-top hover:bg-sky-100">
+                <td class="text-right border-t border-blue-400 p-2 truncate w-24" v-text="entry.time" />
+                <td class="text-left border-t border-blue-400 p-2 truncate w-48">
+                  <div v-for="presenter in entry.presenters">
+                    <div v-text="presenter.name" class="font-medium cursor-pointer" @click="toggleDetails(entry)"/>
+                    <div v-if="entry.expanded" class="mt-1 mb-6">
+                      <img :src="presenter.image" class=""/>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-left border-t border-blue-400 p-2">
+                  <div v-text="entry.topic" class="font-medium cursor-pointer" @click="toggleDetails(entry)"
+/>
+                  <div v-if="entry.expanded" class="mt-2 text-sm font-normal">
+                    <div v-html="entry.description"/>
+                    <hr class="my-6 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
+                    <div v-for="presenter in entry.presenters" class="mt-2 mb-4" v-html="presenter.bio"/>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </ContentSection>
 
@@ -198,7 +227,10 @@ export default {
         event_category: 'engagement',
         event_label: `SO Conference ${this.upcoming.year}`
       })
-    }
+    },
+    toggleDetails(entry) {
+      entry.expanded = !entry.expanded && (entry.description || entry.presenters.length) ? true : false
+    },
   }
 }
 </script>

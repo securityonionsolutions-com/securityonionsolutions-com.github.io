@@ -6,21 +6,135 @@
     "caption": "Save the date for our next annual conference in 2023!",
     "caption.disabled": "Register today! We look forward to seeing you there!",
     "link": "https://socaugusta2023.eventbrite.com/",
-    "schedule": {
-      "8:00 AM": "Doors open; Chick-fil-A breakfast",
-      "9:00": "Opening Remarks",
-      "9:15": "Dave Kennedy - Keynote",
-      "10:10": "Wes Lambert and Josh Kamdjou - Phish Fights and Not So Long Nights with Security Onion and Sublime Platform",
-      "10:55": "Morning Break",
-      "11:15": "Scott Hall - They're digging in the wrong place: diagnosing and dealing with one-sided traffic",
-      "12:00 PM": "Southern BBQ Lunch",
-      "1:00": "Pete Di Giorgio - Enrich Your Data and Your Life",
-      "1:55": "Josh Brower - Defensive Intel with Security Onion",
-      "2:40": "Afternoon Break",
-      "3:00": "Tricky Tray Raffle",
-      "3:10": "David Bianco - Achieving PEAK Performance: Introducing the PEAK Threat Hunting Framework",
-      "4:05": "Doug Burks - State of the Onion"
-    }
+    "schedule": [
+      {
+        "time": "8:00 AM",
+        "presenters": [],
+        "topic": "Doors open; Chick-fil-A breakfast",
+        "description": ""
+      },
+      {
+        "time": "9:00 AM",
+        "presenters": [],
+        "topic": "Opening Remarks",
+        "description": ""
+      },
+      {
+        "time": "9:15 AM",
+        "presenters": [
+          {
+            "name": "Dave Kennedy",
+            "image": "",
+            "bio": "Dave Kennedy's detailed biography can be found at the <a class='decoration-solid underline' href='https://www.trustedsec.com/team/dave-kennedy/'>TrustedSec</a> website."
+          }
+        ],
+        "topic": "Keynote",
+        "description": ""
+      },
+      {
+        "time": "10:10 AM",
+        "presenters": [
+          {
+            "name": "Wes Lambert",
+            "image": "/img/team/wes_lambert.jpg",
+            "bio": "Wes Lambert is the Principal Engineer at Security Onion Solutions, where he helps companies to implement enterprise security monitoring solutions and better understand their computer networks. He is a huge fan of open source software projects, and loves to solve problems and enhance organizational security using free and easily deployable tools. While not at the computer, Wes enjoys Indian food, playing soccer, and spending time with his family."
+          },
+          {
+            "name": "Josh Kamdjou",
+            "image": "",
+            "bio": "Josh Kamdjou has been doing offensive security-related things for the past 12 years. He's spent most of his professional career breaking into networks via spear-phishing and other methods, and building software for both the public (Department of Defense) and private sectors. Josh is the Founder and CEO of Sublime Security, and in his private life enjoys weight lifting, Martial Arts, soccer, and spending time with his niece and nephew."
+          }
+        ],
+        "topic": "Phish Fights and Not So Long Nights with Security Onion and Sublime Platform",
+        "description": "In this presentation, we will explore the integration of Security Onion and Sublime Platform, an innovative open email security platform designed to prevent email attacks such as BEC, malware, and credential phishing. Sublime Platform's unique domain-specific language (DSL) enables detection-as-code, allowing for highly customizable email security detection.<p class='my-2'/>Throughout the presentation, we will cover how we can effectively triage Sublime email alerts within Security Onion, streamlining incident response and reducing the time needed to identify and remediate threats. We will also cover how we can pivot to Sublime for in-depth investigation and analysis of suspicious emails, extracting valuable context and indicators to inform security decisions.<p class='my-2'/>Last, we will discus how we can enrich and correlate Sublime alerts with the various data sources in Security Onion, such as Zeek HTTP/DNS/TLS records, Suricata alerts, and full PCAP to answer questions with network metadata such as: Did the user click on the link? Has anyone ever visited this domain or link before? And more. By combining Security Onion's robust capabilities with Sublime Platform's innovative approach to email security, participants will better understand how to create a comprehensive defense against email-based attacks."
+      },
+      {
+        "time": "10:55 AM",
+        "presenters": [],
+        "topic": "Morning Break",
+        "description": ""
+      },
+      {
+        "time": "11:15 AM",
+        "presenters": [
+          {
+            "name": "Scott Hall",
+            "image": "",
+            "bio": "Scott Hall is a long-time user and fan of Security Onion, and lives in Louisville, Kentucky. For the past 10 years, Scott has been responsible for helping design, deploy, manage, sell and support lightweight network sensors for some of the world's most high profile public and private networks. When not helping customers find evil, Scott enjoys smoking meats, listening to loud music and playing with his grandkids."
+          }
+        ],
+        "topic": "They're digging in the wrong place: Diagnosing and dealing with one-sided traffic",
+        "description": "Sometimes you think you've got the complete picture, when in reality, you're only seeing part of the whole. This talk covers things learned over 10 years of helping security teams collect and analyze network traffic. We'll look at how to tell whether you're seeing proper two-sided traffic, and the ways that improperly configured collection impacts hunting and detection efforts."
+      },
+      {
+        "time": "12:00 PM",
+        "presenters": [],
+        "topic": "Southern BBQ Lunch",
+        "bio": "",
+        "images": [],
+        "description": ""
+      },
+      {
+        "time": "1:00 PM",
+        "presenters": [
+          {
+            "name": "Pete Di Giorgio",
+            "image": "/img/team/pete_di_giorgio.jpg",
+            "bio": "Peter Di Giorgio is a retired Army Cyber Officer and the Vice President, Federal for Security Onion Solutions, LLC.  In addition to his extensive experience as military leader, Pete holds eight cybersecurity focused industry certifications and a graduate degree in information security engineering.  Pete is passionate about organizational leadership, operational approaches to security in cyberspace, and building cybersecurity platforms that give defenders the advantage."
+          }
+        ],
+        "topic": "Enrich Your Data and Your Life",
+        "description": "Data enrichment can bring context and meaning to your cybersecurity life.  Let's explore enrichment opportunities in Security Onion 2.4.  We will look at a variety of methods to enrich events from cyber threat intelligence feeds and organizationally relevant information."
+      },
+      {
+        "time": "1:55 PM",
+        "presenters": [
+          {
+            "name": "Josh Brower",
+            "image": "/img/team/josh_brower.jpg",
+            "bio": "Josh Brower has been crashing computers since his teens, and now feels fortunate to be doing it professionally. He has spent the last 15 years focusing on Information Security, particularly network and endpoint detection. He also enjoys teaching around InfoSec issues, especially to non-technical learners - helping them to understand how their actions in the digital world have real-world consequences, as well as how to proactively reduce the risk."
+          }
+        ],
+        "topic": "Defensive Intel with Security Onion",
+        "description": "Understanding the changes happening in your environment is critical to proactively reducing risk. In this session, we will cover a new proof of concept node in Security Onion that provides capabilities to track key areas:<p class='my-2'/>This includes monitoring changes (diffs) to:<ul><li>⦾ Organizational subdomains (subdomain enumeration)</li><li>⦾ Organizational TLS Certificate Registrations (Cert Transparency)</li><li>⦾ Organizational Public IP space</li><li>⦾ Public Internet for organizational keywords (Shodan)</li><li>⦾ Public cloud resources (buckets)</li></ul>"
+      },
+      {
+        "time": "2:40 PM",
+        "presenters": [],
+        "topic": "Afternoon Break",
+        "description": ""
+      },
+      {
+        "time": "3:00 PM",
+        "presenters": [],
+        "topic": "Tricky Tray Raffle",
+        "description": ""
+      },
+      {
+        "time": "3:10 PM",
+        "presenters": [
+          {
+            "name": "David Bianco",
+            "image": "",
+            "bio": "David Bianco is a Staff Security Strategist on Splunk’s SURGe research team. He is also a SANS Certified Instructor, where he teaches network forensics. David has more than 20 years of experience in the information security field, primarily in incident detection and response, threat hunting, and Cyber Threat Intelligence (CTI). He is the creator of both the Pyramid of Pain and the Threat Hunting Maturity Model, both widely cited defensive security models. Really, he just wants to make security better for everyone, and he has a special interest in helping people get started in their cybersecurity careers. You can follow David on Twitter as @DavidJBianco or on Mastodon as @DavidJBianco@infosec.exchange."
+          }
+        ],
+        "topic": "Achieving PEAK Performance: Introducing the PEAK Threat Hunting Framework",
+        "description": "PEAK is an updated threat hunting framework I co-authored with Dr. Ryan Fetterman as part of my work here at SURGe (Splunk). Rest assured, though, this is NOT a vendor or marketing presentation. I'm allergic to those, as I know the review committee probably is also. We purposely designed PEAK to be independent of any vendor or product so that it would be useful to the largest number of people. Except for my speaker introduction, there's barely even any mention of Splunk.<p class='my-2'/>As you might know, I helped create the original threat hunting framework in 2015 while working at Sqrrl. Other frameworks exist (e.g., TaHiTI, published in 2017) but we have learned a lot about how to do threat hunting since those came out. PEAK builds up on those and incorporates additional experience from the last several years."
+      },
+      {
+        "time": "4:05 PM",
+        "presenters": [
+          {
+            "name": "Doug Burks",
+            "image": "/img/team/doug_burks.jpg",
+            "bio": "Doug Burks started Security Onion in 2008 to provide a comprehensive platform to help folks peel back the layers of their enterprise and make their adversaries cry.  Today, Security Onion has over 2,000,000 downloads and is being used by organizations around the world for threat hunting, enterprise security monitoring, and log management.  In 2014, Doug started Security Onion Solutions LLC to help those organizations by providing training, professional services, and hardware appliances.  Doug is a CEO, public speaker, teacher, former president of the Greater Augusta ISSA, and co-founder of BSides Augusta, but what he really likes the most is catching bad guys."
+          }
+        ],
+        "topic": "State of the Onion",
+        "description": "Travel with me back to 2008 to learn more about the humble beginnings of the Security Onion platform. We'll then fast forward to 2014 to learn about the humble beginnings of Security Onion Solutions as a company and our first ever Security Onion Conference. We'll then go back to the future to discuss where we are today and where we're going."
+      }
+    ]
   },
   "past": [
     {
