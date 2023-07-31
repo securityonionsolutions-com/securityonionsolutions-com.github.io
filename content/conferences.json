@@ -120,7 +120,7 @@
           }
         ],
         "topic": "Achieving PEAK Performance: Introducing the PEAK Threat Hunting Framework",
-        "description": "PEAK is an updated threat hunting framework I co-authored with Dr. Ryan Fetterman as part of my work here at SURGe (Splunk). Rest assured, though, this is NOT a vendor or marketing presentation. I'm allergic to those, as I know the review committee probably is also. We purposely designed PEAK to be independent of any vendor or product so that it would be useful to the largest number of people. Except for my speaker introduction, there's barely even any mention of Splunk.<p class='my-2'/>As you might know, I helped create the original threat hunting framework in 2015 while working at Sqrrl. Other frameworks exist (e.g., TaHiTI, published in 2017) but we have learned a lot about how to do threat hunting since those came out. PEAK builds up on those and incorporates additional experience from the last several years."
+        "description": "Are you ready to push your threat hunting program to a new level? Join us as we introduce PEAK, the new platform-agnostic hunting framework from Splunk's SURGe research team. Unlike existing frameworks, PEAK enables not only hypothesis-based hunting but also other types, such as exploratory data analysis, baseline comparison, and machine learning hunt techniques. Find out how this innovative framework can help you stay ahead of the curve and uncover even the most elusive threats."
       },
       {
         "time": "4:05 PM",
