@@ -9,15 +9,15 @@
     "update_content": "node update_content.js"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^6.2.0",
-    "axios": "^1.2.2",
-    "nuxt": "3.4.3",
-    "nuxt-icon": "^0.1.8",
-    "tailwindcss": "^3.2.4"
+    "@nuxtjs/tailwindcss": "^6.8.0",
+    "axios": "^1.4.0",
+    "nuxt": "3.6.5",
+    "nuxt-icon": "^0.5.0",
+    "tailwindcss": "^3.3.3"
   },
   "dependencies": {
     "@egjs/vue3-view360": "^3.0.4",
-    "@nuxtjs/recaptcha": "^1.1.1",
+    "@nuxtjs/recaptcha": "^1.1.2",
     "vue-gtag": "^2.0.1",
     "vue-recaptcha": "^2.0.3"
   }
