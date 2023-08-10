@@ -1,5 +1,5 @@
 <template>
-  <component :is="baseType()" :href="link!=='' ? link : false" :target="external" @click="$emit('click')">
+  <component :is="baseType()" :href="link" :target="external" @click="$emit('click')">
     <button
       class="shadow-lg font-bold py-2 px-2 xs:px-4 rounded-full focus:outline-none block"
       type="button"

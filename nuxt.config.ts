@@ -12,15 +12,14 @@ export default defineNuxtConfig({
   modules: [
 		'nuxt-icon',
 		'@nuxtjs/tailwindcss'
-
   ],
   router: {
     extendRoutes(routes, resolve) {
       routes.push({
-        name: 'terms.pending',
-        path: '/terms.pending',
+        name: 'terms',
+        path: '/terms',
         redirect: { name: 'license' }
       })
     }
-  }  
+  },
 })

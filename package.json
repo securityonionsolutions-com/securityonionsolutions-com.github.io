@@ -17,8 +17,6 @@
   },
   "dependencies": {
     "@egjs/vue3-view360": "^3.0.4",
-    "@nuxtjs/recaptcha": "^1.1.2",
-    "vue-gtag": "^2.0.1",
-    "vue-recaptcha": "^2.0.3"
+    "vue-gtag": "^2.0.1"
   }
 }

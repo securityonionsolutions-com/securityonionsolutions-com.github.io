@@ -8,7 +8,7 @@
       <template #body>
         <div class="flex justify-center text-center">
           <div class="text-2xl">
-            Check out the <a href="/hardware/search_nodes/SOS_SNNV">SOS SNNV</a>!
+            Check out the <a href="/hardware/SNNV">SOS SNNV</a>!
             <br>
             SOS SNNV uses extremely fast Non-volatile Memory (NVMe) for data storage.
           </div>
