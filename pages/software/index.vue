@@ -50,10 +50,13 @@
           </template>
           <template #body>
             <div class="text-center xs:text-left">
-              Security Onion is a free and open Linux distribution for threat hunting, enterprise security monitoring, and log management. The easy-to-use Setup wizard allows you to build an army of distributed sensors for your enterprise in minutes!
+              Security Onion is a free and open platform built by defenders for defenders. It includes network visibility, host visibility, intrusion detection honeypots, log management, and case management.
             </div>
             <div class="text-center xs:text-left mt-4">
-              Security Onion includes a native web interface with built-in tools analysts use to respond to alerts, hunt for evil, catalog evidence into cases, monitor grid performance, and much more. Additionally, third-party tools, such as Elasticsearch, Logstash, Kibana, Suricata, Zeek (formerly known as Bro), Wazuh, Stenographer, CyberChef, NetworkMiner, and many more are included.
+              For network visibility, we offer signature based detection via Suricata, rich protocol metadata and file extraction using your choice of either Zeek or Suricata, full packet capture via Stenographer, and file analysis via Strelka. For host visibility, we offer the Elastic Agent which provides data collection, live queries via osquery, and centralized management using Elastic Fleet. Intrusion detection honeypots based on OpenCanary can be added to your deployment for even more enterprise visibility. All of these logs flow into the Elastic stack and we've built our own user interfaces for alerting, hunting, dashboards, case management, and grid management. 
+            </div>
+            <div class="text-center xs:text-left mt-4">
+              Security Onion has been downloaded over 2 million times and is being used by security teams around the world to monitor and defend their enterprises. Our easy-to-use Setup wizard allows you to build a distributed grid for your enterprise in minutes!
             </div>
           </template>
         </feature-right>
@@ -118,7 +121,7 @@
             HIDS
           </template>
           <template #body-top-right>
-            Security Onion supports several host-based event collection agents including Wazuh, Beats, and osquery. Just point them to your installation and it's off to the races.
+            Security Onion supports Elastic Agent for event collection on your organization's system. Simply install the agent package available in the SOC Downloads page!
           </template>
           <template #header-bottom-left>
             Static Analysis (PCAP and EVTX Import)
@@ -127,7 +130,7 @@
             Use Security Onion to import full packet capture files for quick static analysis and case studies. Spin up a virtual machine quickly and get started in just a few minutes. Includes support for Windows Event logs.
           </template>
           <template #header-bottom-right>
-            SOC Workstation
+            Security Onion Desktop
           </template>
           <template #body-bottom-right>
             A workstation install option is also available for SOC analysts to use local Linux tools to perform analysis of network and host events. No need to install extra tools, we bundle all the apps you might need.
