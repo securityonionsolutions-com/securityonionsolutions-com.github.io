@@ -81,9 +81,8 @@
       <div class="g-recaptcha" :data-sitekey="sitekey" data-callback="recordSubmit"></div>
       <button
         id="form_submit"
-        :class="[buttonEnabled() ? 'g-recaptcha enabled' : 'g-recaptcha disabled']"
-        :disabled="!buttonEnabled()"
-      >
+        :class="[buttonEnabled() ? 'enabled' : 'disabled']"
+        :disabled="!buttonEnabled()">
         Send Message
       </button>
     </form>
@@ -142,13 +141,11 @@ export default {
       return result;
     },    
     recordSubmit () {
-      const response = grecaptcha.getResponse();
-      alert(response);
-      //this.$gtag('event', 'contact_form_submit', {
-        //event_category: 'engagement',
-        //event_label: window.location.pathname + ', ' + this.source,
-      //});
-      //document.getElementById("contact_form").submit();
+      this.$gtag('event', 'contact_form_submit', {
+        event_category: 'engagement',
+        event_label: window.location.pathname + ', ' + this.source,
+      });
+      document.getElementById("contact_form").submit();
     },
     timestamp () {
       const response = document.getElementById('g-recaptcha-response')
