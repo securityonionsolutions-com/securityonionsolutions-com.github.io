@@ -78,6 +78,13 @@
           </a>
           <a
             class="block rounded-lg mr-3 lg:inline-block text-lg focus:outline-none cursor-pointer hover:text-so-blue"
+            href="https://infosec.exchange/@securityonion"
+            target="_blank"
+          >
+            <Icon name="fa6-brands:mastodon" />
+          </a>
+          <a
+            class="block rounded-lg mr-3 lg:inline-block text-lg focus:outline-none cursor-pointer hover:text-so-blue"
             href="https://securityonion.net/discuss"
             target="_blank"
           >
@@ -89,6 +96,13 @@
             target="_blank"
           >
             <Icon name="fa6-brands:linkedin" />
+          </a>
+          <a
+            class="block rounded-lg mr-3 lg:inline-block text-lg focus:outline-none cursor-pointer hover:text-so-blue"
+            href="https://securityonion.net/youtube"
+            target="_blank"
+          >
+            <Icon name="fa6-brands:youtube" />
           </a>
           <div
             class="block rounded-lg lg:inline-block text-lg focus:outline-none cursor-pointer hover:text-so-blue"

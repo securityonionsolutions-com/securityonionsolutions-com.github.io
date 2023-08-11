@@ -52,6 +52,13 @@
           >
             <Icon name="fa6-brands:linkedin" class="p-2 text-white" />
           </a>
+          <a
+            class="block rounded-lg mr-2 lg:inline-block text-4xl focus:outline-none cursor-pointer"
+            href="https://securityonion.net/youtube"
+            target="_blank"
+          >
+            <Icon name="fa6-brands:youtube" class="p-2 text-white" />
+          </a>
           <div
             class="block rounded-lg lg:inline-block text-4xl focus:outline-none cursor-pointer"
             @click="sos.showContactModal({text: '', source: 'footer_icon'})"

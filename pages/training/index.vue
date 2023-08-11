@@ -53,7 +53,7 @@
         <feature-left class="my-12">
           <template #header>
             <div class="text-center xs:text-left">
-              Security Onion 2
+              Security Onion 2.3 (2.4 is coming soon!)
             </div>
           </template>
           <template #graphic>

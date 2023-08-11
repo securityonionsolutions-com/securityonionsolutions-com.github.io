@@ -94,7 +94,7 @@
           <template #body>
             <div class="flex flex-col text-left">
               <div>
-                Now offering our new Response-Ready appliances:
+                Our Response-Ready appliance provide rapidly deployable options for:
               </div>
               <ul class="list-disc list-inside pl-1 -mr-1">
                 <li>

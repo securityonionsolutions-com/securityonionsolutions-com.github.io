@@ -127,13 +127,13 @@
             Static Analysis (PCAP and EVTX Import)
           </template>
           <template #body-bottom-left>
-            Use Security Onion to import full packet capture files for quick static analysis and case studies. Spin up a virtual machine quickly and get started in just a few minutes. Includes support for Windows Event logs.
+            Use Security Onion to import full packet capture files and Windows Event log files for quick static analysis and case studies. Spin up a virtual machine quickly and get started in just a few minutes!
           </template>
           <template #header-bottom-right>
             Security Onion Desktop
           </template>
           <template #body-bottom-right>
-            A Linux desktop install option is also available for SOC analysts to use local Linux tools to perform analysis of network and host events. No need to install extra tools, we bundle all the apps you might need.
+            A Linux desktop install option is also available for SOC analysts to use local Linux tools to perform analysis of network and host events. No need to install extra tools; we bundle all the apps you might need.
           </template>
         </four-panel-detail>
       </div>

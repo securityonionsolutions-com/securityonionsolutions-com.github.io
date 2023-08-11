@@ -12,12 +12,12 @@
 	{
 		"image": "pcap.jpg",
 		"header": "PCAP",
-		"body": "Pull packet captures from network events and analyze them within SOC or your favorite external tool."
+		"body": "Pull packet captures from network events and analyze them within SOC, CyberChef, or your favorite external tool."
 	},
 	{
 		"image": "cases.jpg",
 		"header": "Cases",
-		"body": "Our native Cases interface gives you an incident response platform that tightly integrates with Hunt and Alerts."
+		"body": "Our built-in Cases interface gives you an incident response platform that tightly integrates with Hunt and Alerts."
 	},
 	{
 		"image": "dashboards.jpg",
