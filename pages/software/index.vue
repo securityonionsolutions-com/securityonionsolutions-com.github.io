@@ -133,7 +133,7 @@
             Security Onion Desktop
           </template>
           <template #body-bottom-right>
-            A workstation install option is also available for SOC analysts to use local Linux tools to perform analysis of network and host events. No need to install extra tools, we bundle all the apps you might need.
+            A Linux desktop install option is also available for SOC analysts to use local Linux tools to perform analysis of network and host events. No need to install extra tools, we bundle all the apps you might need.
           </template>
         </four-panel-detail>
       </div>
