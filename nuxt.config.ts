@@ -13,13 +13,7 @@ export default defineNuxtConfig({
 		'nuxt-icon',
 		'@nuxtjs/tailwindcss'
   ],
-  router: {
-    extendRoutes(routes, resolve) {
-      routes.push({
-        name: 'terms',
-        path: '/terms',
-        redirect: { name: 'license' }
-      })
-    }
-  },
+  routeRules: {
+    '/terms': { redirect: '/license' },
+  }
 })
