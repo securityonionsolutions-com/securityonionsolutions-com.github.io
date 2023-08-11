@@ -9,8 +9,5 @@ export default defineNuxtConfig({
   modules: [
 		'nuxt-icon',
 		'@nuxtjs/tailwindcss'
-  ],
-  routeRules: {
-    '/terms': { redirect: '/license' },
-  }
+  ]
 })
