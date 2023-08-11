@@ -1,7 +1,7 @@
 { "events": [
               {
                 "text": "",
-                "img": "undraw_conceptual_idea_xw7k.svg"
+                "img": ""
               },
               {
                 "text": "In 2008, Doug Burks started working on Security Onion, a Linux distribution for intrusion detection, network security monitoring, and log management.",
@@ -30,6 +30,10 @@
               {
                 "text": "Significant Security Onion Console (SOC) features introduced: Cases, Dashboards, Analyzers, and more!",
                 "img": "dashboards.jpg"
+              },
+              {
+                "text": "New base operating system, simplified setup process, new user administration interface, new configuration interface, and many more new features. Also consolidation of third-party dependencies and additional security enhancements.",
+                "img": "config.jpg"
               }
             ]
 }

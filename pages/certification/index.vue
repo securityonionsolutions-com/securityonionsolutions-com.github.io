@@ -134,7 +134,7 @@
           <template #info>
             <div class="text-3xl flex justify-center text-center md:text-left">
               <div>
-                Have more questions about the SOCP?
+                Have questions about the SOCP?
               </div>
             </div>
           </template>
@@ -152,6 +152,7 @@
 <script>
 import { sos } from '~/lib/sos.js'
 
+import ActionCallout from '~/components/action_callouts/ActionCallout'  
 import ContentSection from '~/components/ContentSection.vue'
 import VerticalFeature from '~/components/features/VerticalFeature.vue'
 import SoButton from '~/components/SoButton.vue'
@@ -161,7 +162,8 @@ import domains from '~/content/cert_domains.json'
 
 export default {
   scrollToTop: true,
-  components: { 
+  components: {
+    ActionCallout,
     ContentSection, 
     VerticalFeature, 
     SoButton,

@@ -112,16 +112,16 @@
             Use Cases
           </template>
           <template #header-top-left>
-            NIDS
+            Network Visibility
           </template>
           <template #body-top-left>
             Collect network events from Zeek, Suricata, and other tools for complete coverage of your network. Cast a wide net to catch the bad guys quickly and easily.
           </template>
           <template #header-top-right>
-            HIDS
+            Host Visibility
           </template>
           <template #body-top-right>
-            Security Onion supports Elastic Agent for event collection on your organization's system. Simply install the agent package available in the SOC Downloads page!
+            Security Onion supports Elastic Agent for event collection on your organization's endpoints. Simply install the agent package available in the SOC Downloads page!
           </template>
           <template #header-bottom-left>
             Static Analysis (PCAP and EVTX Import)

@@ -198,6 +198,7 @@
 <script>
 import { sos } from '~/lib/sos.js'
 
+import ActionCallout from '~/components/action_callouts/ActionCallout'  
 import DetailPara from '~/components/features/DetailPara'
 import FeatureLeft from '~/components/features/FeatureLeft'
 import FeatureRight from '~/components/features/FeatureRight'
@@ -210,6 +211,7 @@ import domains from '~/content/cert_domains.json'
 export default {
   scrollToTop: true,
   components: {
+    ActionCallout,
     DetailPara,
     FeatureRight,
     FeatureLeft,

@@ -192,6 +192,7 @@
 <script>
 import { sos } from '~/lib/sos.js'
 
+import ActionCallout from '~/components/action_callouts/ActionCallout'  
 import DetailPara from '~/components/features/DetailPara'
 import SubHero from '~/components/hero/SubHero'
 
@@ -200,6 +201,7 @@ export default {
     sos,
   }),
   components: {
+    ActionCallout,
     DetailPara,
     SubHero,
   },
