@@ -13,7 +13,7 @@
               <span class="font-light">{{ soVersion }}</span>
             </div>
           </div>
-          <so-button class="mt-1 xl:mt-4" link="https://github.com/Security-Onion-Solutions/securityonion/blob/master/VERIFY_ISO.md">
+          <so-button class="mt-1 xl:mt-4" link="https://github.com/Security-Onion-Solutions/securityonion/blob/2.4/main/DOWNLOAD_AND_VERIFY_ISO.md">
             Download Now
           </so-button>
           <div class="flex flex-col items-center lg:flex-row space-y-1 lg:space-x-3 lg:space-y-0 mt-1 xl:mt-2">
