@@ -12,9 +12,11 @@
       <span class="text-gray-700 mx-2">|</span>
       <nuxt-link to="/education">Education</nuxt-link>
       <span class="text-gray-700 mx-2">|</span>
-      <nuxt-link to="/terms">Terms</nuxt-link>
+      <nuxt-link to="/license">License</nuxt-link>
       <span class="text-gray-700 mx-2">|</span>
       <nuxt-link to="/privacy">Privacy</nuxt-link>
+      <span class="text-gray-700 mx-2">|</span>
+      <nuxt-link to="/brand">Brand</nuxt-link>
     </div>
     <div class="flex flex-row">
       <div class="text-center content-center justify-center">
@@ -49,6 +51,13 @@
             target="_blank"
           >
             <Icon name="fa6-brands:linkedin" class="p-2 text-white" />
+          </a>
+          <a
+            class="block rounded-lg mr-2 lg:inline-block text-4xl focus:outline-none cursor-pointer"
+            href="https://securityonion.net/youtube"
+            target="_blank"
+          >
+            <Icon name="fa6-brands:youtube" class="p-2 text-white" />
           </a>
           <div
             class="block rounded-lg lg:inline-block text-4xl focus:outline-none cursor-pointer"

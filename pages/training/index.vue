@@ -53,7 +53,7 @@
         <feature-left class="my-12">
           <template #header>
             <div class="text-center xs:text-left">
-              Security Onion 2
+              Security Onion 2.3 (2.4 is coming soon!)
             </div>
           </template>
           <template #graphic>
@@ -198,6 +198,7 @@
 <script>
 import { sos } from '~/lib/sos.js'
 
+import ActionCallout from '~/components/action_callouts/ActionCallout'  
 import DetailPara from '~/components/features/DetailPara'
 import FeatureLeft from '~/components/features/FeatureLeft'
 import FeatureRight from '~/components/features/FeatureRight'
@@ -210,6 +211,7 @@ import domains from '~/content/cert_domains.json'
 export default {
   scrollToTop: true,
   components: {
+    ActionCallout,
     DetailPara,
     FeatureRight,
     FeatureLeft,

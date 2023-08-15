@@ -129,12 +129,14 @@
 <script>
 import { sos } from '~/lib/sos.js'
 
+import ActionCallout from '~/components/action_callouts/ActionCallout'  
 import SubHero from '~/components/hero/SubHero'
 import TwoPanelDetail from '~/components/features/TwoPanelDetail'
 
 export default {
   scrollToTop: true,
   components: {
+    ActionCallout,
     SubHero,
     TwoPanelDetail
   },

@@ -102,6 +102,7 @@
 <script>
 import { sos } from '~/lib/sos.js'
 
+import ActionCallout from '~/components/action_callouts/ActionCallout'  
 import FeatureRight from '~/components/features/FeatureRight'
 import FourPanelDetail from '~/components/features/FourPanelDetail'
 import SubHero from '~/components/hero/SubHero'
@@ -109,6 +110,7 @@ import SubHero from '~/components/hero/SubHero'
 export default {
   scrollToTop: true,
   components: {
+    ActionCallout,
     FeatureRight,
     FourPanelDetail,
     SubHero,

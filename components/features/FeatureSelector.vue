@@ -63,7 +63,7 @@ export default {
     },
     screenshot (index) {
       const fileName = this.featureArr[index].image
-      return `/img/${fileName}`
+      return `/img/graphics/${fileName}`
     },
     description (index) {
       const text = this.featureArr[index].body

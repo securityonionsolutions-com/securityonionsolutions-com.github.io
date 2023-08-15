@@ -73,25 +73,16 @@
       <div class="block text-red-500 text-sm font-bold mb-4 mt-1 ml-auto">
         * Required
       </div>
-      <VueRecaptcha
-        :sitekey="sitekey"
-        class="mb-4"
-        @verify="captchaPassed = true"
-        @error="captchaPassed = false"
-        @expired="captchaPassed = false"
-      />
       <select id="lead_source" v-model="lead_source" class="hidden" name="lead_source">
         <option value="Website">
           Website
         </option>
       </select>
+      <div class="g-recaptcha" :data-sitekey="sitekey" data-callback="recordSubmit"></div>
       <button
         id="form_submit"
         :class="[buttonEnabled() ? 'enabled' : 'disabled']"
-        :disabled="!buttonEnabled()"
-        type="submit"
-        @click="recordSubmit()"
-      >
+        :disabled="!buttonEnabled()">
         Send Message
       </button>
     </form>
@@ -99,7 +90,6 @@
 </template>
 
 <script>
-const config = useRuntimeConfig();
 export default {
   props: {
     text: { type: String, default: '' },
@@ -114,8 +104,7 @@ export default {
       email: '',
       company: '',
       description: this.text,
-      captchaPassed: false,
-      sitekey: config.sitekey,
+      sitekey: useRuntimeConfig().public.sitekey,
       t: '',
       captchaSettings: ''
     }
@@ -130,28 +119,33 @@ export default {
   },
   beforeMount () {
     this.captchaSettings = { keyname: 'reCAPTCHA', fallback: 'true', orgId: '00D1U000000DI9i', ts: '' }
+    var script = document.createElement("script");
+    script.src = "https://www.google.com/recaptcha/api.js";
+    document.head.appendChild(script);
   },
   mounted () {
     this.t = setInterval(this.timestamp, 500)
+    window.recordSubmit = this.recordSubmit;
   },
   beforeDestroy () {
     clearInterval(this.t)
   },
   methods: {
     buttonEnabled () {
-      var result = this.captchaPassed &&
+      var result = 
         this.first_name !== '' &&
         this.last_name !== '' &&
         this.company !== '' &&
         this.email !== '' &&
         this.description !== ''
       return result;
-    },
+    },    
     recordSubmit () {
       this.$gtag('event', 'contact_form_submit', {
         event_category: 'engagement',
         event_label: window.location.pathname + ', ' + this.source,
-      })
+      });
+      document.getElementById("contact_form").submit();
     },
     timestamp () {
       const response = document.getElementById('g-recaptcha-response')

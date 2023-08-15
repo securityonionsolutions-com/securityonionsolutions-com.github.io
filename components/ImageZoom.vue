@@ -16,9 +16,9 @@ export default {
   computed: {
     sizeVar () {
       if (window.innerHeight >= 800) {
-        return { '--size': `${this.wide ? 65 : 40}rem` }
+        return { '--size': `${this.wide ? 75 : 50}rem` }
       } else {
-        return { '--size': `${this.wide ? 55 : 35}rem` }
+        return { '--size': `${this.wide ? 65 : 45}rem` }
       }
     }
   },
@@ -40,7 +40,7 @@ export default {
         folder = 'graphics'
       } else if (this.imageType === 'screenshot') {
         fileName = this.name
-        folder = 'screenshots'
+        folder = 'graphics'
       } else {
         fileName = this.name
         folder = 'graphics'

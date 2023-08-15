@@ -4,13 +4,13 @@
       "name": "Agent",
       "icon": "fa-regular:window-maximize",
       "desc": "Information gathered from agent software",
-      "tools": "Beats, Wazuh, osquery"
+      "tools": "Elastic Agent"
     },
     {
       "name": "Alert",
       "icon": "fa-regular:bell",
       "desc": "Judgment made by a product about an event",
-      "tools": "Suricata, Wazuh"
+      "tools": "Suricata"
     },
     {
       "name": "Asset",

@@ -50,7 +50,8 @@ export default {
       { year: '2019', event: 'Team continues to grow!', important: true },
       { year: '2020', event: 'Security Onion 2', important: true },
       { year: '2021', event: 'Over 2 million downloads!', important: false },
-      { year: '2022', event: 'Significant software features introduced' }
+      { year: '2022', event: 'Significant software features introduced', important: true },
+      { year: '2023', event: 'Security Onion 2.4 released' }
     ],
     focusedEventIndex: 0
   }),

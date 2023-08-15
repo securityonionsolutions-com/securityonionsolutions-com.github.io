@@ -8,7 +8,7 @@
       <template #body>
         <div class="flex justify-center text-center">
           <div class="text-2xl">
-            Check out the <a href="/hardware/search_nodes/SOS_SNNV">SOS SNNV</a>!
+            Check out the <a href="/hardware/SNNV">SOS SNNV</a>!
             <br>
             SOS SNNV uses extremely fast Non-volatile Memory (NVMe) for data storage.
           </div>
@@ -94,7 +94,7 @@
           <template #body>
             <div class="flex flex-col text-left">
               <div>
-                Now offering our new Response-Ready appliances:
+                Our Response-Ready appliance provide rapidly deployable options for:
               </div>
               <ul class="list-disc list-inside pl-1 -mr-1">
                 <li>
