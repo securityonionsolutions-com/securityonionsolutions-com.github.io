@@ -13,18 +13,24 @@
               <span class="font-light">{{ soVersion }}</span>
             </div>
           </div>
-          <so-button class="mt-1 xl:mt-4" link="https://github.com/Security-Onion-Solutions/securityonion/blob/2.4/main/DOWNLOAD_AND_VERIFY_ISO.md">
-            Download Now
-          </so-button>
+          <br/>
           <div class="flex flex-col items-center lg:flex-row space-y-1 lg:space-x-3 lg:space-y-0 mt-1 xl:mt-2">
-            <so-button link="https://securityonion.net/aws/?ref=_ptnr_web_sos">
-              Use in AWS
-            </so-button>
-            <so-button link="https://securityonion.net/azure/?ref=_ptnr_web_sos">
-              Use in Azure
-            </so-button>
+            <use-button link="https://github.com/Security-Onion-Solutions/securityonion/blob/2.4/main/DOWNLOAD_AND_VERIFY_ISO.md">
+              Download
+            </use-button>
+            <use-button link="https://securityonion.net/aws/?ref=_ptnr_web_sos">
+              Amazon Cloud
+            </use-button>
           </div>
-          <so-button class="mt-1 xl:mt-2" link="https://docs.securityonion.net/">
+          <div class="flex flex-col items-center lg:flex-row space-y-1 lg:space-x-3 lg:space-y-0 mt-1 xl:mt-2">
+            <use-button link="https://securityonion.net/azure/?ref=_ptnr_web_sos">
+              Azure Cloud
+            </use-button>
+            <use-button link="https://securityonion.net/google/?ref=_ptnr_web_sos">
+              Google Cloud
+            </use-button>
+          </div>
+          <so-button class="mt-4 xl:mt-8" link="https://docs.securityonion.net/">
             Documentation
           </so-button>
         </div>
