@@ -152,18 +152,25 @@
           </template>
         </feature-right>
         <feature-left class="xs:mb-12" :text-margin="true">
+          <template #graphic>
+            <Graphic
+              file-name="bryant.jpg"
+              :size="20"
+              :padding="false"
+            />
+          </template>
           <template #body>
             <div class="text-center xs:text-left">
               <div class="my-2">
-                Why choose Security Onion Solutions for your Security Onion training?
+                Why choose Security Onion Solutions for training?
               </div>
               <ul class="list-disc list-inside pl-1 -mr-1">
-                <li>We created and maintain Security Onion, so we know it better than anybody else.</li>
-                <li>We are the only official authorized training provider for Security Onion.</li>
-                <li>Our instructors are the only Security Onion Certified Instructors in the world.</li>
-                <li>Our course material is the only authorized training material for Security Onion.</li>
-                <li>We've been teaching Security Onion classes and providing Professional Services since 2014.</li>
-                <li>Security Onion has over 2 million downloads! When you purchase products and services from us, you are helping to fund development of the platform.</li>
+                <li>Learn directly from the creators of Security Onion.</li>
+                <li>We are the only official authorized training provider.</li>
+                <li>Our instructors are the only Security Onion Certified Instructors.</li>
+                <li>Official, authorized training material included.</li>
+                <li>We've been teaching Security Onion classes since 2014.</li>
+                <li>Your purchase helps to fund development of the platform.</li>
               </ul>
             </div>
           </template>
@@ -256,7 +263,7 @@ export default {
   height: 100%;
 }
 .hero-training {
-  background: right bottom no-repeat url('/img/graphics/training.jpg');
+  background: right bottom no-repeat url('/img/graphics/training_bg.png');
 }
 .hero-cert {
   background: right bottom no-repeat url('/img/graphics/squares.jpg');
