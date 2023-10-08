@@ -3,9 +3,10 @@
     "year": 2023,
     "date": "October 6, 2023",
     "location": "Augusta, GA",
-    "caption.disabled": "Save the date for our next annual conference in 2023!",
-    "caption": "Register today! We look forward to seeing you there!",
-    "link": "https://socaugusta2023.eventbrite.com/",
+    "caption": "Thank you to all who attended the 2023 conference! We look forward to seeing everyone at our next conference!",
+    "caption.savethedate": "Save the date for our next annual conference in 2023!",
+    "caption.register": "Register today! We look forward to seeing you there!",
+    "link.disabled": "https://socaugusta2023.eventbrite.com/",
     "schedule": [
       {
         "time": "8:00 AM",
