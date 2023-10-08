@@ -3,12 +3,14 @@
     <PageNav page-name="Home" :links="links" />
     <SubHero class="hero text-center">
       <template #header>
-        10th Annual Security Onion Conference
+        Announcing
+        <br/>
+        Security Onion 2.4
       </template>
       <template #body>
-        This year's conference will be here soon. Get your tickets now and reserve your spot to engage with a stellar line-up of speakers!
+        Our latest version focuses on simplifying grid installation and configuration. 
         <div class="flex justify-center">
-          <SoButton class="mt-4" link="/conference">
+          <SoButton class="mt-4" link="/software">
             Learn More
           </SoButton>
         </div>
