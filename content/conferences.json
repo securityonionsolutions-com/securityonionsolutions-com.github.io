@@ -7,7 +7,7 @@
     "caption.savethedate": "Save the date for our next annual conference in 2023!",
     "caption.register": "Register today! We look forward to seeing you there!",
     "link.disabled": "https://socaugusta2023.eventbrite.com/",
-    "schedule": [
+    "schedule.disabled": [
       {
         "time": "8:00 AM",
         "presenters": [],
@@ -138,6 +138,64 @@
     ]
   },
   "past": [
+    {
+      "year": 2023,
+      "date": "October 6, 2023",
+      "location":"Augusta, GA",
+      "pictures.disabled": "",
+      "playlist": "https://www.youtube.com/embed/videoseries?list=PLljFlTO9rB168zCHTwjrxUJPvc-o8RtwO",
+      "events": [
+        {
+          "speakers": ["Dave Kennedy"],
+          "pres_name": "[Keynote] Having an Impact: Focusing on making a difference in defense",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=xiJP-0F-0ZQ&list=PLljFlTO9rB168zCHTwjrxUJPvc-o8RtwO&index=1"
+          }
+        },
+        {
+          "speakers": ["Wes Lambert", "Josh Kamdjou"],
+          "pres_name": "Phish Fights and Not So Long Nights with Security Onion and Sublime Platform",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=76-cbbDqm94&list=PLljFlTO9rB168zCHTwjrxUJPvc-o8RtwO&index=2"
+          }
+        },
+        {
+          "speakers": ["Scott Hall"],
+          "pres_name": "They're digging in the wrong place: Diagnosing and dealing with one-sided traffic",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=wOJQux8_jQc&list=PLljFlTO9rB168zCHTwjrxUJPvc-o8RtwO&index=3"
+          }
+        },
+        {
+          "speakers": ["Pete Di Giorgio"],
+          "pres_name": "Enrich Your Data and Your Life",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=4TwstDJBiVw&list=PLljFlTO9rB168zCHTwjrxUJPvc-o8RtwO&index=4"
+          }
+        },
+        {
+          "speakers": ["Josh Brower"],
+          "pres_name": "Defensive Intel with Security Onion",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=9d6QA24xops&list=PLljFlTO9rB168zCHTwjrxUJPvc-o8RtwO&index=5"
+          }
+        },
+        {
+          "speakers": ["David Bianco"],
+          "pres_name": "Achieving PEAK Performance: Introducing the PEAK Threat Hunting Framework",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=GX2FKM18oxk&list=PLljFlTO9rB168zCHTwjrxUJPvc-o8RtwO&index=6"
+          }
+        },
+        {
+          "speakers": ["Doug Burks"],
+          "pres_name": "State of the Onion",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=aUshk9lLuA4&list=PLljFlTO9rB168zCHTwjrxUJPvc-o8RtwO&index=7"
+          }
+        }
+      ]
+    },
     {
       "year": 2022,
       "date": "September 30, 2022",
