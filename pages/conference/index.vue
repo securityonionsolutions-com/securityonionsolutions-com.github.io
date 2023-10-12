@@ -115,10 +115,10 @@
           Past Conferences
         </div>
       </SectionHeader>
-      <div class="lg:flex lg:flex-row justify-center mb-4">
-        <so-button v-for="(conference, i) in conferences" :key="i" class="flex flex-col w-1/2 lg:w-auto mx-auto lg:mx-2 my-2" :link="'#' + conference.year">
+      <div class="lg:flex lg:flex-row justify-center mb-8">
+        <a v-for="(conference, i) in conferences" :key="i" class="flex flex-col w-1/2 lg:w-auto mx-auto lg:mx-3 my-2" :href="'#' + conference.year">
           {{ conference.year }}
-        </so-button>
+        </a>
       </div>
       <div v-for="(conference, i) in conferences" :id="conference.year" :key="i" class="shadow-xl rounded-md overflow-hidden m-4" :class="[ i % 2 == 0 ? 'bg-gray-200' : 'bg-so-blue text-white']">
         <div class="h-20" />
