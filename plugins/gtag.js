@@ -8,6 +8,9 @@ export default defineNuxtPlugin((nuxtApp) => {
       linker: {
         domains: ['securityonionsolutions.com']
       }
-    }
+    },
+    includes: [
+      { id: useRuntimeConfig().public.adtag }
+    ]
   }, nuxtApp.$router)
 })
