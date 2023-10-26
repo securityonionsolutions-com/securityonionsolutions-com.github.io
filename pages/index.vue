@@ -161,9 +161,8 @@ import ActionCallout from '~/components/action_callouts/ActionCallout'
 import FeatureRight from '~/components/features/FeatureRight'
 import FeatureLeft from '~/components/features/FeatureLeft'
 
-import credence_logo from '~/assets/img/partners/credence-logo.jpg'
 import elastic_logo from '~/assets/img/partners/elastic-logo.png'
-import fireeye_logo from '~/assets/img/partners/fireeye-logo.png'
+import garland_logo from '~/assets/img/partners/garlandtechnology-logo.png'
 import gigamon_logo from '~/assets/img/partners/gigamon-logo.png'
 import intelligenesis_logo from '~/assets/img/partners/intelligenesis-logo.png'
 import profitap_logo from '~/assets/img/partners/profitap-logo.png'
@@ -172,9 +171,8 @@ import team from '~/content/team.json'
 import history from '~/content/history.json'
 
 const logos = [
-  credence_logo,
   elastic_logo,
-  fireeye_logo,
+  garland_logo,
   gigamon_logo,
   intelligenesis_logo,
   profitap_logo
