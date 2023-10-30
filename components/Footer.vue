@@ -4,7 +4,7 @@
     <div class="flex flex-row flex-wrap w-full items-center justify-center text-center mt-6 text-gray-400 text-lg">
       <a href="/">Home</a>
       <span class="text-gray-700 mx-2">|</span>
-      <a href="https://github.com/Security-Onion-Solutions/securityonion/blob/master/VERIFY_ISO.md">Download</a>
+      <a href="https://github.com/Security-Onion-Solutions/securityonion/blob/2.4/main/DOWNLOAD_AND_VERIFY_ISO.md">Download</a>
       <span class="text-gray-700 mx-2">|</span>
       <a href="https://docs.securityonion.net/">Documentation</a>
       <span class="text-gray-700 mx-2">|</span>
