@@ -52,9 +52,6 @@
         </div>
         <feature-left class="my-12">
           <template #header>
-            <div class="text-center xs:text-left">
-              Security Onion 2.3 (2.4 is coming soon!)
-            </div>
           </template>
           <template #graphic>
             <Graphic
@@ -65,11 +62,34 @@
             />
           </template>
           <template #body>
+            <div class="font-bold text-xl pb-3 text-center xs:text-left">
+              Security Onion 2.4
+            </div>
             <div class="text-left">
               Courses include:
               <ul class="list-disc ml-6 mb-6">
                 <li class="my-2">
-                  Security Onion 2 in Production <span class="bg-gray-200  text-sm text-blue-500 font-semibold py-1 px-2 rounded-md whitespace-no-wrap">
+                  Security Onion 2.4 in Production <span class="bg-gray-200  text-sm text-blue-500 font-semibold py-1 px-2 rounded-md whitespace-no-wrap">
+                    <a target="enroll" href="https://onlinetraining.securityonionsolutions.com/p/security-onion-in-production1/">
+                      Enroll
+                      <icon name="fa-solid:external-link-alt" />
+                    </a>
+                  </span>
+                </li>
+                <li class="my-2">
+                  Coming soon!
+                </li>
+              </ul>
+            </div>
+
+            <div class="font-bold text-xl py-3 text-center xs:text-left">
+              Security Onion 2.3
+            </div>
+            <div class="text-left">
+              Courses include:
+              <ul class="list-disc ml-6 mb-6">
+                <li class="my-2">
+                  Security Onion 2.3 in Production <span class="bg-gray-200  text-sm text-blue-500 font-semibold py-1 px-2 rounded-md whitespace-no-wrap">
                     <a target="enroll" href="https://onlinetraining.securityonionsolutions.com/p/security-onion-in-production/">
                       Enroll
                       <icon name="fa-solid:external-link-alt" />
