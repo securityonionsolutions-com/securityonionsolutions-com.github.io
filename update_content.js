@@ -52,8 +52,8 @@ const morgrifyEvents = async () => {
     eventArr.push({
       name: event.name.text,
       summary: event.summary,
-      start: event.start.local,
-      end: event.end.local,
+      start: event.start.utc,
+      end: event.end.utc,
       location,
       register_link: event.url
     })
