@@ -27,7 +27,7 @@
     <content-section id="domain-list">
       <div class="flex flex-col px-6 xs:px-0">
         <div class="text-xl md:text-2xl font-semibold text-center mb-6">
-          This exam tests your knowledge in the following six domains:
+          This exam tests your knowledge in the following five domains:
         </div>
         <div class="flex flex-row flex-wrap justify-center mt-4">
           <div v-for="(domain, i) in domainArr" :key="i" class="w-full md:w-1/3 bg-gray-200 rounded-md m-2 md:px-4 px-2 py-4 h-72 transition duration-75 ease-linear transform xs:hover:scale-105 focus: cursor-pointer" @click="sos.showDomainDetails({ domainDetailText: domain.details, domainName: domain.name, domainTestPercent: domain.percent })">
@@ -77,7 +77,7 @@
               </div>
             </div>
             <div class="flex flex-col items-center gap-y-6 lg:mt-4">
-              <so-button link="/files/socp-v1-exam-blueprint.pdf">
+              <so-button link="/files/socp-v430-exam-blueprint.pdf">
                 Exam details
               </so-button>
               <so-button link="https://www.prometric.com/sos">
