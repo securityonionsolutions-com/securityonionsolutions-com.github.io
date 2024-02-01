@@ -68,7 +68,7 @@
                     <span class="font-bold">Certification validity:</span> 3 years
                   </li>
                   <li>
-                    <span class="font-bold">Length:</span> 45 questions<br class="md:hidden"><span class="hidden md:inline-block">,</span> 125 minutes
+                    <span class="font-bold">Length:</span> 50 questions<br class="md:hidden"><span class="hidden md:inline-block">,</span> 120 minutes
                   </li>
                   <li>
                     <span class="font-bold">Retake wait time:</span> None
