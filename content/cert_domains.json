@@ -4,43 +4,55 @@
             "name": "Design and Architecture",
             "icon": "hard-hat",
             "desc": "Strategies for properly designing and installing a Security Onion 2 grid.",
-            "details": "Topics for this section include but are not limited to: understanding the purpose and functionality of the different node types, recommended minimum hardware requirements for each node type, the applications and services each node type utilizes, and the different deployment modes.",
-            "percent": 15
+            "details": "This domain has been designed to assess the proficiency of administrators tasked with designing and
+            installing a Security Onion 2.4 grid. It focuses on their ability to select the most appropriate Security Onion
+            node(s) and deployment mode(s) based on different scenarios. The topics also include comprehending the
+            purpose and functionality of different node types, recommended minimum hardware requirements, and
+            the applications and services each node type employs.",
+            "percent": 24
         },
         {
             "name": "Grid Management",
             "icon": "server",
             "desc": "Procedures required in administering and maintaining a Security Onion 2 grid.",
-            "details": "Topics for this section include but are not limited to: user management, firewall management, understanding the key components of Saltstack, executing tasks using Salt commands, Salt State (SLS) files, yaml formatting, docker, log pipelines, alert management, and managing and configuring the different applications contained in the various Security Onion nodes.",
-            "percent": 20
+            "details": "This domain is designed to evaluate the proficiency of administrators in managing and maintaining a
+            Security Onion 2.4 grid. The topics covered in this section include but are not limited to user management,
+            firewall management, and key components of SaltStack, as well as configuring several core components of
+            the Security Onion nodes.",
+            "percent": 16
         },
         {
-            "name": "Grid Monitoring",
+            "name": "Grid Monitoring and Troubleshooting",
             "icon": "chart-bar",
-            "desc": "Knowledge on how to identify potential issues in a Security Onion 2 grid.",
-            "details": "Topics for this section include but are not limited to: navigating the Grid and related interfaces, the purpose and functionality of tools such as Telegraf and InfluxDB, building notification channels, and configuring alerts.",
-            "percent": 10
+            "desc": "Knowledge on how to properly monitor and identify potential issues in a Security Onion 2 grid.",
+            "details": "This domain assesses the proficiency of the candidates in identifying potential issues in a Security Onion
+            2.4 grid. The assessment covers various topics such as navigating the Grid and InfluxDB interfaces,
+            explaining the purpose and functionality of tools such as Telegraph and InfluxDB, building a custom
+            dashboard, configuring notification endpoints and rules, and configuring check/alerts within InfluxDB. The
+            assessment comprehensively evaluates the candidates' knowledge and skills in these subject areas.",
+            "percent": 20
         },
         {
             "name": "Grid Tuning",
             "icon": "tools",
             "desc": "Tactics to ensure a Security Onion 2 sensor grid is running efficiently.",
-            "details": "Topics for this section include but are not limited to: Berkeley Packet Filters (BPF), adding additional CPU cores or workers, pinning application to specific CPU cores, adding additional disks to LVM, tuning af_packet ring size, Elasticsearch shard management, Redis memory tuning, and Logstash pipeline batch size tuning. ",
+            "details": "This domain is designed to evaluate the proficiency of the candidates in undertaking essential tasks
+            necessary for the efficient functioning of the Security Onion 2.4 sensor grid. The topics covered in this
+            section include, but are not limited to, Berkeley Packet Filters, addition of CPU cores or workers, allocation
+            of applications to specific CPU cores, adjustment of Redis memory allotment, fine-tuning of Logstash
+            pipeline batch size and workers, and refinement of Network Intrusion Detection System (NIDS) rules",
             "percent": 20
-        },
-        {
-            "name": "Troubleshooting",
-            "icon": "list",
-            "desc": "Tasks required to perform basic grid troubleshooting in Security Onion 2.",
-            "details": "Topics for this section include but are not limited to: understanding the purpose of the different so-* scripts, using Salt to assist in troubleshooting, locating the correct log files on the correct node, and using standard Linux command-line tools like grep, tail, and cat.",
-            "percent": 10
         },
         {
             "name": "Analyst Tools",
             "icon": "crosshairs",
             "desc": "Tools and techniques needed to properly investigate alerts and hunt for adversaries using Security Onion 2.",
-            "details": "Topics for this section include but are not limited to: the use of applications or tools available on Security Onion 2, to include the Security Onion Analyst node.",
-            "percent": 25
+            "details": "This domain is centered around assessing the proficiency of candidates in the tools and techniques
+            necessary to effectively investigate alerts and track down potential adversaries using Security Onion 2.4.
+            The section encompasses a variety of topics, including but not limited to the effective use of the available
+            applications and tools on Security Onion 2.4, as well as the appropriate process of acknowledging and
+            escalating events in the Alerts interface.",
+            "percent": 20
         }
     ]
 }
