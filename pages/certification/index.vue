@@ -77,7 +77,7 @@
               </div>
             </div>
             <div class="flex flex-col items-center gap-y-6 lg:mt-4">
-              <so-button link="/files/socp-v1-exam-blueprint.pdf">
+              <so-button link="/files/socp-v430-exam-blueprint.pdf">
                 Exam details
               </so-button>
               <so-button link="https://www.prometric.com/sos">
