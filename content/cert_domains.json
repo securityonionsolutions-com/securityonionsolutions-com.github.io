@@ -4,54 +4,35 @@
             "name": "Design and Architecture",
             "icon": "hard-hat",
             "desc": "Strategies for properly designing and installing a Security Onion 2 grid.",
-            "details": "This domain has been designed to assess the proficiency of administrators tasked with designing and
-            installing a Security Onion 2.4 grid. It focuses on their ability to select the most appropriate Security Onion
-            node(s) and deployment mode(s) based on different scenarios. The topics also include comprehending the
-            purpose and functionality of different node types, recommended minimum hardware requirements, and
-            the applications and services each node type employs.",
+            "details": "This domain has been designed to assess the proficiency of administrators tasked with designing and installing a Security Onion 2.4 grid. It focuses on their ability to select the most appropriate Security Onion node(s) and deployment mode(s) based on different scenarios. The topics also include comprehending the purpose and functionality of different node types, recommended minimum hardware requirements, and the applications and services each node type employs.",
             "percent": 24
         },
         {
             "name": "Grid Management",
             "icon": "server",
             "desc": "Procedures required in administering and maintaining a Security Onion 2 grid.",
-            "details": "This domain is designed to evaluate the proficiency of administrators in managing and maintaining a
-            Security Onion 2.4 grid. The topics covered in this section include but are not limited to user management,
-            firewall management, and key components of SaltStack, as well as configuring several core components of
-            the Security Onion nodes.",
+            "details": "This domain is designed to evaluate the proficiency of administrators in managing and maintaining a Security Onion 2.4 grid. The topics covered in this section include but are not limited to user management, firewall management, and key components of SaltStack, as well as configuring several core components of the Security Onion nodes.",
             "percent": 16
         },
         {
             "name": "Grid Monitoring and Troubleshooting",
             "icon": "chart-bar",
             "desc": "Knowledge on how to properly monitor and identify potential issues in a Security Onion 2 grid.",
-            "details": "This domain assesses the proficiency of the candidates in identifying potential issues in a Security Onion
-            2.4 grid. The assessment covers various topics such as navigating the Grid and InfluxDB interfaces,
-            explaining the purpose and functionality of tools such as Telegraph and InfluxDB, building a custom
-            dashboard, configuring notification endpoints and rules, and configuring check/alerts within InfluxDB. The
-            assessment comprehensively evaluates the candidates' knowledge and skills in these subject areas.",
+            "details": "This domain assesses the proficiency of the candidates in identifying potential issues in a Security Onion 2.4 grid. The assessment covers various topics such as navigating the Grid and InfluxDB interfaces,explaining the purpose and functionality of tools such as Telegraph and InfluxDB, building a custom dashboard, configuring notification endpoints and rules, and configuring check/alerts within InfluxDB. The assessment comprehensively evaluates the candidates' knowledge and skills in these subject areas.",
             "percent": 20
         },
         {
             "name": "Grid Tuning",
             "icon": "tools",
             "desc": "Tactics to ensure a Security Onion 2 sensor grid is running efficiently.",
-            "details": "This domain is designed to evaluate the proficiency of the candidates in undertaking essential tasks
-            necessary for the efficient functioning of the Security Onion 2.4 sensor grid. The topics covered in this
-            section include, but are not limited to, Berkeley Packet Filters, addition of CPU cores or workers, allocation
-            of applications to specific CPU cores, adjustment of Redis memory allotment, fine-tuning of Logstash
-            pipeline batch size and workers, and refinement of Network Intrusion Detection System (NIDS) rules",
+            "details": "This domain is designed to evaluate the proficiency of the candidates in undertaking essential tasks necessary for the efficient functioning of the Security Onion 2.4 sensor grid. The topics covered in this section include, but are not limited to, Berkeley Packet Filters, addition of CPU cores or workers, allocation of applications to specific CPU cores,adjustment of Redis memory allotment, fine-tuning of Logstash pipeline batch size and workers, and refinement of Network Intrusion Detection System (NIDS) rules",
             "percent": 20
         },
         {
             "name": "Analyst Tools",
             "icon": "crosshairs",
             "desc": "Tools and techniques needed to properly investigate alerts and hunt for adversaries using Security Onion 2.",
-            "details": "This domain is centered around assessing the proficiency of candidates in the tools and techniques
-            necessary to effectively investigate alerts and track down potential adversaries using Security Onion 2.4.
-            The section encompasses a variety of topics, including but not limited to the effective use of the available
-            applications and tools on Security Onion 2.4, as well as the appropriate process of acknowledging and
-            escalating events in the Alerts interface.",
+            "details": "This domain is centered around assessing the proficiency of candidates in the tools and techniques necessary to effectively investigate alerts and track down potential adversaries using Security Onion 2.4. The section encompasses a variety of topics, including but not limited to the effective use of the available applications and tools on Security Onion 2.4, as well as the appropriate process of acknowledging and escalating events in the Alerts interface.",
             "percent": 20
         }
     ]
