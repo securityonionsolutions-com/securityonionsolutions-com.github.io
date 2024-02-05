@@ -57,7 +57,7 @@
                 <div class="text-left">
                   YouTube: <a href="https://securityonion.net/youtube" class="text-so-blue cursor-pointer hover:underline">securityonion.net/youtube</a>
                   <br>
-                  Official Training: <nuxt-link to="/training" class="text-so-blue cursor-pointer hover:underline">securityonionsolutions.com/training</nuxt-link>
+                  Official Training: <a href="https://securityonionsolutions.com/training#free-training" class="text-so-blue cursor-pointer hover:underline">securityonionsolutions.com/training</nuxt-link>
                 </div>
               </div>
             </template>
