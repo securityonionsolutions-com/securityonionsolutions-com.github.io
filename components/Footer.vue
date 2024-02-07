@@ -10,7 +10,7 @@
       <span class="text-gray-700 mx-2">|</span>
       <a href="https://blog.securityonion.net/">Blog</a>
       <span class="text-gray-700 mx-2">|</span>
-      <nuxt-link to="/education">Education</nuxt-link>
+      <nuxt-link to="/education">Higher Education</nuxt-link>
       <span class="text-gray-700 mx-2">|</span>
       <nuxt-link to="/license">License</nuxt-link>
       <span class="text-gray-700 mx-2">|</span>

@@ -84,7 +84,7 @@
                 Schedule exam
               </so-button>
               <div class="text-sm -mt-4 mb-3 hover:underline">
-                <a href="/files/socp-registration-guide.pdf">
+                <a href="/files/socp-registration-guide-v430.pdf">
                   <div class="flex flex-row justify-center content-center">
                     <div>
                       Registration Guide
