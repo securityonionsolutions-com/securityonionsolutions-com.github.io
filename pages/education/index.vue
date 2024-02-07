@@ -75,7 +75,7 @@
               <div class="flex flex-row space-x-2 ml-2">
                 <div>A:</div>
                 <div class="text-left">
-                  Our Essentials course is <a href="https://securityonion.com/training#free-training" class="text-so-blue cursor-pointer hover:underline"><span class="font-bold">FREE</span></a>! For those looking to further their understanding of the Security Onion platform
+                  Our Essentials course is <nuxt-link :to="{ path: '/training',hash:'#free-training'}" class="text-so-blue cursor-pointer hover:underline"><span class="font-bold">FREE</span></nuxt-link>! For those looking to further their understanding of the Security Onion platform
                   we do offer academic discounts<span class="font-bold">*</span> on our on-demand training. <span class="link text-so-blue hover:underline cursor-pointer" @click="handleContactClick('discount', $event)">Contact us</span> for more information.
                 </div>
               </div>
