@@ -77,6 +77,14 @@
                   </span>
                 </li>
                 <li class="my-2">
+                  Security Onion 2.4 Practical Analysis <span class="bg-gray-200  text-sm text-blue-500 font-semibold py-1 px-2 rounded-md whitespace-no-wrap">
+                    <a target="enroll" href="https://onlinetraining.securityonionsolutions.com/p/practical-analysis-with-security-onion1/">
+                      Enroll
+                      <icon name="fa-solid:external-link-alt" />
+                    </a>
+                  </span>
+                </li>
+                <li class="my-2">
                   Coming soon!
                 </li>
               </ul>
