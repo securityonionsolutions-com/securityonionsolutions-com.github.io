@@ -31,7 +31,7 @@ export default {
       if (this.link.startsWith('http') || this.link.startsWith('https')) {
         return '_blank'
       }
-      return false
+      return '_self'
     }
   },
   methods: {
