@@ -63,6 +63,7 @@
         >
         <label for="description" class="block text-gray-800 text-sm font-bold mb-2">Description<span class="text-red-500"> *</span></label>
         <textarea
+          id="description"
           v-model="description"
           name="description"
           placeholder="..."
@@ -79,6 +80,11 @@
         </option>
       </select>
       <div class="g-recaptcha" :data-sitekey="sitekey" data-callback="recordSubmit"></div>
+      <input id="00NJx000001kPE9" maxlength="255" name="00NJx000001kPE9" size="20" type="hidden" />
+      <input id="00NJx000001kPFl" maxlength="255" name="00NJx000001kPFl" size="20" type="hidden" />
+      <input id="00NJx000001kPIz" maxlength="255" name="00NJx000001kPIz" size="20" type="hidden" />
+      <input id="00NJx000001kOTO" maxlength="255" name="00NJx000001kOTO" size="20" type="hidden" />
+      <input id="00NJx000001kPKb" maxlength="255" name="00NJx000001kPKb" size="20" type="hidden" />
       <button
         id="form_submit"
         :class="[buttonEnabled() ? 'enabled' : 'disabled']"

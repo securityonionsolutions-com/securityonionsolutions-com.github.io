@@ -12,11 +12,11 @@
     "@nuxtjs/tailwindcss": "^6.10.0",
     "axios": "^1.6.5",
     "nuxt": "^3.10.1",
+    "nuxt-gtag": "^2.0.5",
     "nuxt-icon": "^0.6.8",
     "tailwindcss": "^3.4.1"
   },
   "dependencies": {
-    "@egjs/vue3-view360": "^3.0.4",
-    "vue-gtag": "^2.0.1"
+    "@egjs/vue3-view360": "^3.0.4"
   }
 }
