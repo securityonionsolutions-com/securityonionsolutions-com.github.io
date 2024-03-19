@@ -9,10 +9,10 @@
     "update_content": "node update_content.js"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^6.10.0",
-    "axios": "^1.6.5",
-    "nuxt": "^3.10.1",
-    "nuxt-icon": "^0.6.8",
+    "@nuxtjs/tailwindcss": "^6.11.4",
+    "axios": "^1.6.8",
+    "nuxt": "^3.11.1",
+    "nuxt-icon": "^0.6.9",
     "tailwindcss": "^3.4.1"
   },
   "dependencies": {
