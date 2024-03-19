@@ -63,6 +63,7 @@
         >
         <label for="description" class="block text-gray-800 text-sm font-bold mb-2">Description<span class="text-red-500"> *</span></label>
         <textarea
+          id="description"
           v-model="description"
           name="description"
           placeholder="..."
@@ -79,6 +80,11 @@
         </option>
       </select>
       <div class="g-recaptcha" :data-sitekey="sitekey" data-callback="recordSubmit"></div>
+      <input id="00NJx000001kPE9" maxlength="255" name="00NJx000001kPE9" size="20" type="hidden" />
+      <input id="00NJx000001kPFl" maxlength="255" name="00NJx000001kPFl" size="20" type="hidden" />
+      <input id="00NJx000001kPIz" maxlength="255" name="00NJx000001kPIz" size="20" type="hidden" />
+      <input id="00NJx000001kOTO" maxlength="255" name="00NJx000001kOTO" size="20" type="hidden" />
+      <input id="00NJx000001kPKb" maxlength="255" name="00NJx000001kPKb" size="20" type="hidden" />
       <button
         id="form_submit"
         :class="[buttonEnabled() ? 'enabled' : 'disabled']"
@@ -126,6 +132,11 @@ export default {
   mounted () {
     this.t = setInterval(this.timestamp, 500)
     window.recordSubmit = this.recordSubmit;
+    this.updateField('00NJx000001kPE9', 'utm_source');
+    this.updateField('00NJx000001kPIz', 'utm_medium');
+    this.updateField('00NJx000001kPFl', 'utm_campaign');
+    this.updateField('00NJx000001kOTO', 'utm_term');
+    this.updateField('00NJx000001kPKb', 'utm_content');
   },
   beforeDestroy () {
     clearInterval(this.t)
@@ -151,6 +162,23 @@ export default {
       const response = document.getElementById('g-recaptcha-response')
       if (response == null || (response !== undefined && response.value.trim() === '')) {
         this.captchaSettings.ts = JSON.stringify(new Date().getTime())
+      }
+    },
+    updateField(inputId, paramName) {
+      const field = document.getElementById(inputId);
+      if (field) {
+        const params = new URLSearchParams(window.location.search);
+        if (params && params.has(paramName)) {
+          field.value = params.get(paramName);
+        } else {
+          const search = useCookie("ads_search").value;
+          if (search) {
+            const params = new URLSearchParams(search);
+            if (params && params.has(paramName)) {
+              field.value = params.get(paramName);
+            }
+          }
+        }
       }
     }
   }

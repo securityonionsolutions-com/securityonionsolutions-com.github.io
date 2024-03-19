@@ -57,6 +57,7 @@ export default {
         darkMediaQuery.addListener(() => this.setFavicon())
       } catch (e) {}
     }
+    this.saveUtmCookies();
   },
   methods: {
     setFavicon () {
@@ -77,7 +78,14 @@ export default {
     isDomainDetailsModal () {
       return sos.modalType == 'domainDetails';
     },
-  },
+    saveUtmCookies() {
+      const search = window.location.search;
+      const params = new URLSearchParams(search);
+      if (params.has("utm_source")) {
+        useCookie("ads_search").value = search;
+      }
+    }
+  }
 }
 </script>
 
