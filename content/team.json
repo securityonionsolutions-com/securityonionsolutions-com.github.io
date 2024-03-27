@@ -119,6 +119,11 @@
       "name": "Corey Ogburn",
       "role": "Senior Software Engineer",
       "image": "corey_ogburn.jpg"
+    },
+    {
+      "name": "Reggie Harris",
+      "role": "Associate Support Engineer",
+      "image": "reggie_harris.jpg"
     }
   ]
 }
