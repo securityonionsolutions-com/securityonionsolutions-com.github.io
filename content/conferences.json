@@ -1,10 +1,10 @@
 {
   "upcoming": {
-    "year": 2023,
-    "date": "October 6, 2023",
+    "year": 2024,
+    "date": "October 4, 2024",
     "location": "Augusta, GA",
-    "caption": "Thank you to all who attended the 2023 conference! We look forward to seeing everyone at our next conference!",
-    "caption.savethedate": "Save the date for our next annual conference in 2023!",
+    "caption.thankyou": "Thank you to all who attended the 2023 conference! We look forward to seeing everyone at our next conference!",
+    "caption": "Save the date for our next annual conference in 2024! The Call For Papers runs April 29th - June 24. More details coming soon!",
     "caption.register": "Register today! We look forward to seeing you there!",
     "link.disabled": "https://socaugusta2023.eventbrite.com/",
     "schedule.disabled": [
