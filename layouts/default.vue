@@ -15,6 +15,7 @@
         </div>
         <ImageZoom v-else-if="isImageModal()" :name="sos.imageName" :image-type="sos.imageType" />
         <CertDomainDetails v-else-if="isDomainDetailsModal()" :detail-text="sos.domainDetailText" :domain-name="sos.domainName" :test-percent="sos.domainTestPercent" />
+        <CourseDetails v-else-if="isCourseDetailsModal()" :detail-text="sos.courseDetailText" :course-name="sos.courseName" :register-text="sos.registrationText" />
       </LazyFloatingModal>
     </transition>
 
@@ -77,6 +78,9 @@ export default {
     },
     isDomainDetailsModal () {
       return sos.modalType == 'domainDetails';
+    },
+    isCourseDetailsModal () {
+      return sos.modalType == 'courseDetails';
     },
     saveUtmCookies() {
       const search = window.location.search;
