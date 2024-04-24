@@ -11,7 +11,7 @@
             Security Onion Solutions is the only official training provider of the Security Onion software.
           </div>
           <div class="flex flex-row text-xl font-light justify-center mt-8">
-            Choose from On-Demand (Free and Premium) or Instructor Led training.
+            Choose from On-Demand (Free and Premium) or Instructor-Led training.
           </div>
         </div>
       </template>
@@ -21,7 +21,7 @@
         <feature-left class="xs:mb-12" :text-margin="true">
           <template #header>
             <div class="text-center xs:text-left">
-              Instructor Led Training
+              Instructor-Led Training
             </div>
           </template>
           <template #graphic>
@@ -34,8 +34,8 @@
           </template>
           <template #body>
             <div class="text-center xs:text-left">
-              We offer multi-day comprehensive training classes with hands-on labs and real-world case studies for reinforcement! Each Instructor Led course is dedicated to providing in-depth content that focuses on a hands on approach to learning. Our instructors will guide you though learning the platform. You will learn methods and techniques to sift through your data to find anomolies, malicuous traffic, and then action on the results.
-              Students receive printed course materials and a Certificate of Completion ready to make their adversaries cry!
+              In person training that is a multi-day comprehensive training class, and the only course option that includes hands-on labs designed with real-world examples and case studies for reinforcement! Each Instructor-Led course is dedicated to providing in-depth content that focuses on a hands on approach to learning. Our instructors will guide you though learning the platform. You will learn methods and techniques to sift through your data to find anomalies, malicious traffic, and then action on the results.
+              Students receive printed course materials and a Certificate of Completion to show they are ready to make their adversaries cry!
             </div>
           </template>
         </feature-left>
@@ -59,8 +59,8 @@
           </template>
           <template #body>
             <div class="text-center xs:text-left">
-              We also offer online training via on-demand training modules.
-              They are a cost-effective alternative to instructor led training, but do not include the in-depth, hands-on labs that our instructor led classes offer. The on-demand courses demonstrate techniques that you will be able to implement immediately.
+              We also offer online training via On-Demand training modules.
+              They are a cost-effective alternative to Instructor-Led training, but do not include the hands-on labs that our Instructor-Led classes offer. The On-Demand courses demonstrate techniques that you will be able to implement immediately. The On-Demand content allows you to learn at your own pace and repeat sections as often as you would like. You will have six months of access to each course, you can start, stop, and repeat these courses as often as you would like in that timeframe.
             </div>
           </template>
         </feature-right>
@@ -128,7 +128,7 @@
     <ContentSection id="public-training">
       <div class="xs:-mx-12 px-6 xs:px-12 lg:px-32">
         <section-header class="mb-6">
-          Upcoming Instructor Led Training Events
+          Upcoming Instructor-Led Training Events
         </section-header>
         <div class="flex justify-center">
           <training-table v-if="scheduleList.length !== 0" class="mx-2 xs:mx-12 lg:mx-24 xl:mx-32 w-full" :schedule-list="scheduleList" />

@@ -1,13 +1,13 @@
 <template>
   <div class="mx-8 my-0">
     <div class="mb-2">
-      * Courses indicate that there is a prerequisite.
+      * The Security Onion Essentials course is a prerequisite for all courses.
     </div>
     <div class="mb-2">
-      † Course access is limited (6 months), based on start date.
+      † Course access is limited (180 days), based on start date.
     </div>
     <div class="mb-2">
-      ‡ The Security Onion Grid will be provided via physical computer or cloud environment. Each student will also receive training materials to complete the course that will be theirs to take home at the completion of the course.
+      ‡ Security Onion Solutions provides one class computer for an in-person course or online lab environment for a virtual course.
     </div>
   </div>
 </template>

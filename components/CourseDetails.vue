@@ -6,6 +6,9 @@
     <div class="text-lg mb-1">
       {{ detailText }}
     </div>
+    <div class="text-lg mb-1">
+      {{ courseTime }}
+    </div>
   </div>
 </template>
 
@@ -15,7 +18,8 @@ export default {
   props: {
     courseName: { type: String, default: '' },
     detailText: { type: String, default: '' },
-    registerText: {type: String, default: ''}
+    registerText: { type: String, default: '' },
+    courseTime: { type: String, default: '' }
   }
 }
 </script>

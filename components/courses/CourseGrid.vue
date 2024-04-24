@@ -23,19 +23,23 @@
             <div>Delivery</div>
             <div>Method</div>
           </th>
+          <th class="hidden md:table-cell text-center px-2 truncate">
+            <div>Course</div>
+            <div>Length</div>
+          </th>
         </tr>
       </thead>
       <tbody>
         <tr
           v-for="(item, index) in course"
           :key="index"
-          @click="sos.showCourseDetails({ courseDetailText: item.info, courseName: item.name, registerText: item.registration_link })"
+          @click="sos.showCourseDetails({ courseDetailText: item.info, courseName: item.name, registerText: item.registration_link, })"
         >
           <td v-if="item['category'] == 'Beginner'" class="hidden md:table-cell border-t border-blue-400 text-white bg-blue-400 pl-1 pr-1 pt-2 truncate vert-header" v-text="item['category']" />
           <td v-if="item['category'] == 'Intermediate'" class="hidden md:table-cell border-t border-blue-400 text-white bg-blue-400 pl-1 pr-1 pt-2 truncate vert-header" v-text="item['category']" />
           <td v-if="item['category'] == 'Fundamentals'" class="hidden md:table-cell border-t border-blue-400 text-white bg-blue-400 pl-1 pr-1 pt-2 truncate vert-header" v-text="item['category']" />
           <td v-if="item['category'] == 'Advanced'" class="hidden md:table-cell border-t border-blue-400 text-white bg-blue-400 pl-1 pr-1 pt-2 truncate vert-header" v-text="item['category']" />
-          <td class="hidden md:table-cell border-t border-blue-400 truncate w-1/4 pl-2">
+          <td class="hidden md:table-cell border-t border-blue-400 pl-2">
             <img :src="thumbnail(item)">
           </td>
           <td class="text-right border-t border-blue-400 px-2 truncate">
@@ -46,7 +50,7 @@
               <a v-if="item.registration_link":href="item.registration_link" @click.stop="">
                  <icon name="fa-solid:external-link-alt" class="mx-2 mt-1 text-base"/>
               </a>
-              <a v-else @click.stop="sos.showContactModal({ text: 'Please contact me to discuss an instructor led ' + item.name + ' course.' })">
+              <a v-else @click.stop="sos.showContactModal({ text: 'Please contact me to discuss an Instructor-Led ' + item.name + ' course.' })">
                  <icon name="fa-solid:external-link-alt" class="mx-2 mt-1 text-base"/>
               </a>
             </div>
@@ -55,6 +59,7 @@
             <div v-for="(summary, summaryIdx) in item.summary" :key="summaryIdx" v-text="summary" />
           </td>
           <td class="hidden md:table-cell text-right border-t border-blue-400 px-2 truncate" v-text="item['Delivery']" />
+          <td class="hidden md:table-cell text-right border-t border-blue-400 px-2 truncate" v-text="item['time']" />
         </tr>
       </tbody>
     </table>
