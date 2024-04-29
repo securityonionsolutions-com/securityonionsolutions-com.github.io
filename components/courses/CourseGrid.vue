@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col">
     <SectionHeader class="mb-8">
-      Course Comparison
+      Course List
     </SectionHeader>
 
     <table class="mx-auto table-auto rounded-md border-separate border border-blue-400 bg-blue mb-12">
@@ -11,7 +11,7 @@
             <div>&nbsp;</div>
           </th>
           <th class="hidden md:table-cell text-center px-2 truncate" />
-          <th class="truncate">
+          <th class="hidden xl:table-cell text-center px-2 truncate">
             <div>&nbsp;</div>
             <div>Course Title</div>
           </th>
@@ -33,13 +33,13 @@
         <tr
           v-for="(item, index) in course"
           :key="index"
-          @click="sos.showCourseDetails({ courseDetailText: item.info, courseName: item.name, registerText: item.registration_link, })"
+          @click="sos.showCourseDetails({ courseDetailText: item.info, courseName: item.popup_name  })"
         >
-          <td v-if="item['category'] == 'Beginner'" class="hidden md:table-cell border-t border-blue-400 text-white bg-blue-400 pl-1 pr-1 pt-2 truncate vert-header" v-text="item['category']" />
-          <td v-if="item['category'] == 'Intermediate'" class="hidden md:table-cell border-t border-blue-400 text-white bg-blue-400 pl-1 pr-1 pt-2 truncate vert-header" v-text="item['category']" />
-          <td v-if="item['category'] == 'Fundamentals'" class="hidden md:table-cell border-t border-blue-400 text-white bg-blue-400 pl-1 pr-1 pt-2 truncate vert-header" v-text="item['category']" />
-          <td v-if="item['category'] == 'Advanced'" class="hidden md:table-cell border-t border-blue-400 text-white bg-blue-400 pl-1 pr-1 pt-2 truncate vert-header" v-text="item['category']" />
-          <td class="hidden md:table-cell border-t border-blue-400 pl-2">
+          <td v-if="item['category'] == 'Beginner'" class="hidden md:table-cell border-t border-blue-400 text-white bg-blue-400 pl-1 pr-1 pt-2 truncate vert-header text-center" v-text="item['category']" />
+          <td v-if="item['category'] == 'Intermediate'" class="hidden md:table-cell border-t border-blue-400 text-white bg-blue-400 pl-1 pr-1 pt-2 truncate vert-header text-center" v-text="item['category']" />
+          <td v-if="item['category'] == 'Fundamentals'" class="hidden md:table-cell border-t border-blue-400 text-white bg-blue-400 pl-1 pr-1 pt-2 truncate vert-header text-center" v-text="item['category']" />
+          <td v-if="item['category'] == 'Advanced'" class="hidden md:table-cell border-t border-blue-400 text-white bg-blue-400 pl-1 pr-1 pt-2 truncate vert-header text-center" v-text="item['category']" />
+          <td class="hidden xl:table-cell border-t border-blue-400 pl-2 truncate">
             <img :src="thumbnail(item)">
           </td>
           <td class="text-right border-t border-blue-400 px-2 truncate">
@@ -58,8 +58,8 @@
           <td class="hidden xl:table-cell border-t border-blue-400 px-2 truncate">
             <div v-for="(summary, summaryIdx) in item.summary" :key="summaryIdx" v-text="summary" />
           </td>
-          <td class="hidden md:table-cell text-right border-t border-blue-400 px-2 truncate" v-text="item['Delivery']" />
-          <td class="hidden md:table-cell text-right border-t border-blue-400 px-2 truncate" v-text="item['time']" />
+          <td class="hidden md:table-cell border-t border-blue-400 px-2 truncate text-center" v-text="item['Delivery']" />
+          <td class="hidden md:table-cell border-t border-blue-400 px-2 truncate text-center" v-text="item['time']" />
         </tr>
       </tbody>
     </table>

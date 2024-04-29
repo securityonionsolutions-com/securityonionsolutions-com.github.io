@@ -176,7 +176,6 @@ import CourseGrid from '~/components/courses/CourseGrid'
 import FeatureLeftAction from '~/components/features/FeatureLeftAction.vue'
 
 import events from '~/content/training_schedule.json'
-import course from '~/content/courses.json'
 import FeatureRightAction from '~/components/features/FeatureRightAction.vue'
 
 export default {
@@ -192,7 +191,6 @@ export default {
 },
   data: () => ({
     sos,
-    courseArr: course.course,
     scheduleList: events.events,
     links: [{ name: 'Free', id: 'free-training' }, { name: 'Training Info', id: 'training-info' }, { name: 'Course Details', id: 'courses' }, { name: 'Public Courses', id: 'public-training'}],
   }),
