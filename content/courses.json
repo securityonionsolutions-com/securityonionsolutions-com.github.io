@@ -1,0 +1,145 @@
+{
+  "course": [
+    {
+      "name": "Security Onion Essentials",
+      "popup_name": "Security Onion Essentials",
+      "category": "Beginner",
+      "Delivery": "On-Demand",
+      "time": "1h 45min",
+      "tagline": "Designed for beginners to get started",
+      "img_course_title": "Essentials_2.4_REV1.png",
+      "summary": [
+        "Get started by taking the FREE Security Onion 2",
+        "Essentials training. This course is a prerequisite",
+        "to other courses listed."
+      ],
+      "info": "This is the start of your Security Onion education journey. You will learn the basics of the Security Onion platform and the essential details that will enable you for success when installing and configuring Security Onion.",
+      "registration_link": "#free-training"
+    },
+    {
+      "name": "Security Onion in Production",
+      "popup_name": "Security Onion in Production",
+      "category": "Intermediate",
+      "Delivery": "On-Demand * †",
+      "time": "2h 30min",
+      "tagline": "Designed for performance and value",
+      "img_course_title": "SO_Prod.png",
+      "summary": [
+        "This course is geared for administrators of",
+        "Security Onion 2.4. Students will gain a",
+        "foundational understanding of the platform -",
+        "how to architect, deploy, manage and tune",
+        "their Security Onion 2.4 grid."  
+      ],
+      "info": "Administrators will build on basic concepts of standalone and distributed grid architecture, ensuring it will meet your needs. Students will learn important concepts required to manage and tune the grid to improve performance.",
+      "registration_link": "https://onlinetraining.securityonionsolutions.com/p/security-onion-in-production1/"
+    },
+    {
+      "name": "Practical Analysis",
+      "popup_name": "Security Onion Practical Analysis",
+      "category": "Intermediate",
+      "hide-category": true,
+      "Delivery": "On-Demand * †",
+      "time": "1h 30min",
+      "tagline": "Designed for performance and value on fiber infrastructure",
+      "img_course_title": "Practical.png",
+      "summary": [
+        "This course is geared for those interested in",
+        "seeing how Security Onion is used practically",
+        "to triage alerts, hunt for threats, as well as",
+        "build new detections."
+      ],
+      "info": "Practical analysis is a start to finish course that begins by building on alert triage concepts, investigation, threat hunting, and detection engineering. This course will build a common workflow that any analyst can adopt to progress through various real-world scenarios.",
+      "registration_link": "https://onlinetraining.securityonionsolutions.com/p/practical-analysis-with-security-onion1/"
+    },
+    {
+      "name": "Detection Engineering",
+      "popup_name": "Detection Engineering with Security Onion",
+      "category": "Intermediate",
+      "hide-category": true,
+      "Delivery": "On-Demand * †",
+      "time": "2h 30min",
+      "tagline": "Designed for high throughput observation with full packet capture",
+      "img_course_title": "detection_engineering.png",
+      "summary": [
+        "This course is geared for those wanting",
+        "to understand how to build a Detection",
+        "Playbook with Security Onion 2.4. Students",
+        "will gain both a theoretical and practical",
+        "understanding of building detections in",
+        "Security Onion, reinforced with real-life",
+        "examples from network and host datasources."
+      ],
+      "info": "Detection engineering will help analyst detect anomalies, malicious, or suspicious traffic with automated content matching. Once this traffic is identified, and no alerts were generated, the analyst may want to be alerted if the traffic is seen in the future. This course will explain the concepts of identifying significant datasets in real-world examples and then building detections that will alert analysts based on specific content matching.",
+      "registration_link": "https://onlinetraining.securityonionsolutions.com/p/detection-engineering-with-security-onion-2-41"
+    },
+    {
+      "name": "Three-Course Bundle",
+      "popup_name": "Security Onion Three Course Bundle",
+      "category": "Intermediate",
+      "hide-category": true,
+      "Delivery": "On-Demand * †",
+      "time": "6h 30min",
+      "tagline": "Designed for extreme performance with alerts and packet metadata",
+      "img_course_title": "training.jpg",
+      "summary": [
+        "This course bundle contains everything",
+        " you need to get up and running with",
+        "Security Onion 2.4!"
+      ],
+      "info": "Training included in this bundle will consist of the content contained in the following courses: Security Onion 2.4 in Production, Practical Analysis with Security Onion 2.4, and Detection Engineering with Security Onion 2.4. This bundle is an excellent way to improve your skills beyond beginner level.",
+      "registration_link": "https://onlinetraining.securityonionsolutions.com/p/security-onion-2-4-three-course-bundle"
+    },
+    {
+     "name": "Fundamentals for Analyst & Admins",
+     "popup_name": "Security Onion 2: Fundamentals for Analysts & Admins",
+     "category": "Intermediate",
+     "hide-category": true,
+     "Delivery": "Instructor-Led * ‡",
+     "time": "32 Hours",
+     "tagline": "Fundamentals for Analyst and Administrators",
+     "img_course_title": "fundamentals_for_analyst_and_admins.png",
+     "summary": [
+       "Analysts and administrators will gain ",
+       "fundamental knowledge of the Security",
+       "Onion platform. Students will complete",
+       "case studies and labs to reinforce",
+       "techniques that will allow them to navigate",
+       "through various data types in order to",
+       "find evil."
+     ],
+     "info": "This course is geared for analyst and administrators of Security Onion. Students will gain a foundational understanding of this exciting platform - how to architect, deploy, and manage their Security Onion grid. The course covers major analyst workflows, reinforced through real-world case studies."
+    },
+    {
+      "name": "Fundamentals for Analyst & Threat Hunters",
+      "popup_name": "Security Onion 2: Fundamentals for Analyst & Threat Hunters",
+      "category": "Intermediate",
+      "hide-category": true,
+      "Delivery": "Instructor Led * ‡",
+      "time": "32 Hours",
+      "tagline": "High volume, resilient storage with fast search performance",
+      "img_course_title": "fundamentals_threat_hunters.png",
+      "summary": [
+        "Analysts and threat hunters will gain hands-on",
+        "experience finding evil in host, network, and",
+        "alert traffic."
+      ],
+      "info": "This hands-on course is geared for security analysts and threat hunters using the Security Onion platform, with very light coverage of administration. Students will learn core analyst techniques and how to apply them using real-world case studies covering major analyst workflows."
+    },
+    {
+      "name": "Detection Engineering and Analysis In-Depth",
+      "popup_name": "Security Onion 2: Detection Engineering and Analysis In-Depth",
+      "category": "Advanced",
+      "Delivery": "Instructor-Led * ‡",
+      "time": "32 Hours",
+      "tagline": "Advanced detection engineering techniques to remove gaps in security detection.",
+      "img_course_title": "detection_engineering_in_depth.png",
+      "summary": [
+        "Analyst and Security Engineers will employ",
+        "detection techniques to close detection",
+        "gaps in your Security Onion grids."
+      ],
+      "info": "This class uses a scenario-based approach to equip analysts, administrators, and security engineers with the skills to identify detection gaps and develop technical solutions which cover those gaps. The course is for graduates of the Security Onion Fundamentals class and existing Security Onion practitioners who want to get more out of their Security Onion deployment."
+    }
+  ]
+}

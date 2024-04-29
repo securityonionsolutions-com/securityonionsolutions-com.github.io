@@ -18,7 +18,7 @@
             {{ upcoming.caption }}
           </div>
           <so-button v-if="upcoming.link" class="mt-1 xl:mt-4" :link="upcoming.link">
-            Register Now
+            {{ upcoming.button }}
           </so-button>
         </div>
       </template>
