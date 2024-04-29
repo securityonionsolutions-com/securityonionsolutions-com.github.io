@@ -3,14 +3,14 @@
     <PageNav page-name="Home" :links="links" />
     <SubHero class="hero text-center">
       <template #header>
-        Announcing
+        2024 Security Onion
         <br/>
-        Security Onion 2.4
+        CFP is Now Running!
       </template>
       <template #body>
-        Our latest version focuses on simplifying grid installation and configuration. 
+        Learn more about attending and optionally presenting at our 10th annual Security Onion Conference.
         <div class="flex justify-center">
-          <SoButton class="mt-4" link="/software">
+          <SoButton class="mt-4" link="/conference">
             Learn More
           </SoButton>
         </div>
