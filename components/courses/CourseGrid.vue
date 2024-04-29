@@ -35,11 +35,10 @@
           :key="index"
           @click="sos.showCourseDetails({ courseDetailText: item.info, courseName: item.popup_name  })"
         >
-          <td v-if="item['category'] == 'Beginner'" class="hidden md:table-cell border-t border-blue-400 text-white bg-blue-400 pl-1 pr-1 pt-2 truncate vert-header text-center" v-text="item['category']" />
-          <td v-if="item['category'] == 'Intermediate'" class="hidden md:table-cell border-t border-blue-400 text-white bg-blue-400 pl-1 pr-1 pt-2 truncate vert-header text-center" v-text="item['category']" />
-          <td v-if="item['category'] == 'Fundamentals'" class="hidden md:table-cell border-t border-blue-400 text-white bg-blue-400 pl-1 pr-1 pt-2 truncate vert-header text-center" v-text="item['category']" />
-          <td v-if="item['category'] == 'Advanced'" class="hidden md:table-cell border-t border-blue-400 text-white bg-blue-400 pl-1 pr-1 pt-2 truncate vert-header text-center" v-text="item['category']" />
-          <td class="hidden xl:table-cell border-t border-blue-400 pl-2 truncate">
+          <td v-if="item['category'] == 'Beginner'" class="hidden md:table-cell border-t border-blue-500 text-white bg-blue-500 pl-1 pr-1 py-4 truncate vert-header" v-text="item['hide-category'] ? '' : item['category']" />
+          <td v-if="item['category'] == 'Intermediate'" class="hidden md:table-cell border-t border-blue-700 text-white bg-blue-700 pl-1 pr-1 py-4 truncate vert-header" v-text="item['hide-category'] ? '' : item['category']" />
+          <td v-if="item['category'] == 'Advanced'" class="hidden md:table-cell border-t border-blue-900 text-white bg-blue-900 pl-1 pr-1 py-4 truncate vert-header" v-text="item['hide-category'] ? '' : item['category']" />
+          <td class="hidden md:table-cell border-t border-blue-400 pl-2">
             <img :src="thumbnail(item)">
           </td>
           <td class="text-right border-t border-blue-400 px-2 truncate">
