@@ -34,6 +34,7 @@
     {
       "name": "Practical Analysis",
       "category": "Intermediate",
+      "hide-category": true,
       "Delivery": "On-Demand * †",
       "time": "1h 30min",
       "tagline": "Designed for performance and value on fiber infrastructure",
@@ -49,6 +50,7 @@
     {
       "name": "Detection Engineering",
       "category": "Intermediate",
+      "hide-category": true,
       "Delivery": "On-Demand * †",
       "time": "2h 30min",
       "tagline": "Designed for high throughput observation with full packet capture",
@@ -68,6 +70,7 @@
     {
       "name": "Three-Course Bundle",
       "category": "Intermediate",
+      "hide-category": true,
       "Delivery": "On-Demand * †",
       "time": "6h 30min",
       "tagline": "Designed for extreme performance with alerts and packet metadata",
@@ -82,6 +85,7 @@
     {
      "name": "Fundamentals for Analyst & Admins",
       "category": "Intermediate",
+      "hide-category": true,
       "Delivery": "Instructor Led * ‡",
       "time": "32 Hours",
       "tagline": "Fundamentals for Analyst and Administrators",
@@ -98,6 +102,7 @@
     {
       "name": "Analyst & Threat Hunters",
       "category": "Intermediate",
+      "hide-category": true,
       "Delivery": "Instructor Led * ‡",
       "time": "32 Hours",
       "tagline": "High volume, resilient storage with fast search performance",
