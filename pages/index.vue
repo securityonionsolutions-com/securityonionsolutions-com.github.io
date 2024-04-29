@@ -8,7 +8,7 @@
         CFP is Now Running!
       </template>
       <template #body>
-        Learn more about attending and optionally presenting at our 10th annual Security Onion Conference.
+        Learn more about attending and optionally presenting at our 11th annual Security Onion Conference.
         <div class="flex justify-center">
           <SoButton class="mt-4" link="/conference">
             Learn More
