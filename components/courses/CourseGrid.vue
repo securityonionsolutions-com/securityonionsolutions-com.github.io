@@ -11,7 +11,7 @@
             <div>&nbsp;</div>
           </th>
           <th class="hidden md:table-cell text-center px-2 truncate" />
-          <th class="hidden xl:table-cell text-center px-2 truncate">
+          <th class="table-cell text-center px-2 truncate">
             <div>&nbsp;</div>
             <div>Course Title</div>
           </th>
@@ -39,9 +39,9 @@
           <td v-if="item['category'] == 'Intermediate'" class="hidden md:table-cell border-t border-blue-700 text-white bg-blue-700 pl-1 pr-1 py-4 truncate vert-header" v-text="item['hide-category'] ? '' : item['category']" />
           <td v-if="item['category'] == 'Advanced'" class="hidden md:table-cell border-t border-blue-900 text-white bg-blue-900 pl-1 pr-1 py-4 truncate vert-header" v-text="item['hide-category'] ? '' : item['category']" />
           <td class="hidden md:table-cell border-t border-blue-400 pl-2">
-            <img :src="thumbnail(item)">
+            <img width="105" :src="thumbnail(item)">
           </td>
-          <td class="text-right border-t border-blue-400 px-2 truncate">
+          <td class="text-left border-t border-blue-400 px-2">
             <div class="flex flex-row">
               <span class="pt-1 pl-1 pr-1">{{ item['name'] }}</span>
               <span><icon name="fa6-solid:circle-info" class="mx-2 mt-1 text-base"/></span>
