@@ -34,7 +34,7 @@
           </template>
           <template #body>
             <div class="text-center xs:text-left">
-              In person training that is a multi-day comprehensive training class, and the only course option that includes hands-on labs designed with real-world examples and case studies for reinforcement! Each Instructor-Led course is dedicated to providing in-depth content that focuses on a hands on approach to learning. Our instructors will guide you though learning the platform. You will learn methods and techniques to sift through your data to find anomalies, malicious traffic, and then action on the results.
+              In person training is a multi-day comprehensive training class, and the only course option, that includes hands-on labs. Each course is designed with real-world examples and case studies that reinforce analysts and administrators workrole tasks! Each Instructor-Led course is dedicated to providing in-depth content that focuses on a hands on approach to learning. Our instructors will guide you though learning the platform. You will learn methods and techniques to sift through your data to find anomalies, malicious traffic, and then action on the results.
               Students receive printed course materials and a Certificate of Completion to show they are ready to make their adversaries cry!
             </div>
           </template>
@@ -67,7 +67,7 @@
         <feature-left>
           <template #header>
             <div class="text-3xl mb-6 text-center">
-              F.A.Q
+              F.A.Q.
             </div>
           </template>
           <template #body>
@@ -79,7 +79,7 @@
                 A: In-person courses are taught using Security Onion procured computers and virtual courses utilize a cloud environment.<br><br>
                 Q: What materials will I need for the course?<br>
                 A: Official, authorized material will be included with Instructor-Led courses.<br><br>
-                Q: How long do I have access to the course?<br>
+                Q: How long do I have access to the On-Demand course?<br>
                 A: You will have full access for 6 months after purchase.<br><br>
               </div>
               <action-callout :alternate="true" @button-click="sos.showContactModal({ text: 'Please contact me to discuss Security Onion training opportunities.' })">
