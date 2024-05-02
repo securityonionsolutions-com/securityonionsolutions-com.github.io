@@ -60,7 +60,7 @@
           <template #body>
             <div class="text-center xs:text-left">
               We also offer online training via On-Demand training modules.
-              They are a cost-effective alternative to instructor-led training, but do not include the hands-on labs that our Instructor-Led classes offer. The On-Demand courses demonstrate techniques that you will be able to implement immediately. The On-Demand content allows you to learn at your own pace and repeat sections as often as you would like. Students have six months access to each course to take at their own pace.
+              They are a cost-effective alternative to instructor-led training, but do not include the hands-on labs that our instructor-led classes offer. The On-Demand courses demonstrate techniques that you will be able to implement immediately. The On-Demand content allows you to learn at your own pace and repeat sections as often as you would like. Students have six months access to each course to take at their own pace.
             </div>
           </template>
         </feature-right>
@@ -78,7 +78,7 @@
                 Q: Do I need a computer to attend training in person?<br>
                 A: Security Onion Solutions provides student computers for in-person classes and a cloud lab environment for virtual classes.<br><br>
                 Q: What materials will I need for the course?<br>
-                A: Official, authorized material will be included with Instructor-Led courses.<br><br>
+                A: All students in instructor-led courses receive official course material on the first day of class.<br><br>
                 Q: How long do I have access to the On-Demand courses?<br>
                 A: You will have full access for 6 months after purchase.<br><br>
               </div>
