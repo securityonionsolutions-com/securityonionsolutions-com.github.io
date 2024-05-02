@@ -34,7 +34,7 @@
           </template>
           <template #body>
             <div class="text-center xs:text-left">
-              In person training is a multi-day comprehensive training class, and the only course option, that includes hands-on labs. Each course is designed with real-world examples and case studies that reinforce analysts and administrators workrole tasks! Each Instructor-Led course is dedicated to providing in-depth content that focuses on a hands on approach to learning. Our instructors will guide you though learning the platform. You will learn methods and techniques to sift through your data to find anomalies, malicious traffic, and then action on the results.
+              In-person classes are multi-day comprehensive training courses which include many hands-on labs. Each course is designed with real-world examples and case studies that reinforce Security Onion work role tasks. Each instructor-led course provides in-depth content with a hands-on approach to learning. You will learn methods and techniques to sift through your data to find anomalies, malicious traffic, and then action on the results.
               Students receive printed course materials and a Certificate of Completion to show they are ready to make their adversaries cry!
             </div>
           </template>
@@ -60,7 +60,7 @@
           <template #body>
             <div class="text-center xs:text-left">
               We also offer online training via On-Demand training modules.
-              They are a cost-effective alternative to Instructor-Led training, but do not include the hands-on labs that our Instructor-Led classes offer. The On-Demand courses demonstrate techniques that you will be able to implement immediately. The On-Demand content allows you to learn at your own pace and repeat sections as often as you would like. You will have six months of access to each course, you can start, stop, and repeat these courses as often as you would like in that timeframe.
+              They are a cost-effective alternative to instructor-led training, but do not include the hands-on labs that our Instructor-Led classes offer. The On-Demand courses demonstrate techniques that you will be able to implement immediately. The On-Demand content allows you to learn at your own pace and repeat sections as often as you would like. Students have six months access to each course to take at their own pace.
             </div>
           </template>
         </feature-right>
@@ -76,10 +76,10 @@
                 Q: Who teaches the On-Demand and Instructor-Led courses?<br>
                 A: Courses are taught by Security Onion Certified Instructors.<br><br>
                 Q: Do I need a computer to attend training in person?<br>
-                A: In-person courses are taught using Security Onion procured computers and virtual courses utilize a cloud environment.<br><br>
+                A: Security Onion Solutions provides student computers for in-person classes and a cloud lab environment for virtual classes.<br><br>
                 Q: What materials will I need for the course?<br>
                 A: Official, authorized material will be included with Instructor-Led courses.<br><br>
-                Q: How long do I have access to the On-Demand course?<br>
+                Q: How long do I have access to the On-Demand courses?<br>
                 A: You will have full access for 6 months after purchase.<br><br>
               </div>
               <action-callout :alternate="true" @button-click="sos.showContactModal({ text: 'Please contact me to discuss Security Onion training opportunities.' })">
