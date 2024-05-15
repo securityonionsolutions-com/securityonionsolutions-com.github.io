@@ -20,6 +20,7 @@
       "name": "Security Onion in Production",
       "popup_name": "Security Onion in Production",
       "category": "Intermediate",
+      "hide-category": true,
       "Delivery": "On-Demand * †",
       "time": "2h 30min",
       "tagline": "Designed for performance and value",
@@ -56,7 +57,7 @@
       "name": "Detection Engineering",
       "popup_name": "Detection Engineering with Security Onion",
       "category": "Intermediate",
-      "hide-category": true,
+      "hide-category": false,
       "Delivery": "On-Demand * †",
       "time": "2h 30min",
       "tagline": "Designed for high throughput observation with full packet capture",
@@ -70,7 +71,7 @@
         "Security Onion, reinforced with real-life",
         "examples from network and host datasources."
       ],
-      "info": "Detection engineering will help analyst detect anomalies, malicious, or suspicious traffic with automated content matching. Once this traffic is identified, and no alerts were generated, the analyst may want to be alerted if the traffic is seen in the future. This course will explain the concepts of identifying significant datasets in real-world examples and then building detections that will alert analysts based on specific content matching.",
+      "info": "Detection engineering will help an analyst detect anomalies, malicious, or suspicious traffic with automated content matching. Once this traffic is identified, and no alerts were generated, the analyst may want to be alerted if the traffic is seen in the future. This course will explain the concepts of identifying significant datasets in real-world examples and then building detections that will alert analysts based on specific content matching.",
       "registration_link": "https://onlinetraining.securityonionsolutions.com/p/detection-engineering-with-security-onion-2-41"
     },
     {
@@ -91,28 +92,30 @@
       "registration_link": "https://onlinetraining.securityonionsolutions.com/p/security-onion-2-4-three-course-bundle"
     },
     {
-     "name": "Fundamentals for Analyst & Admins",
+     "name": "Fundamentals for Analysts & Admins",
      "popup_name": "Security Onion 2: Fundamentals for Analysts & Admins",
      "category": "Intermediate",
      "hide-category": true,
      "Delivery": "Instructor-Led * ‡",
      "time": "32 Hours",
-     "tagline": "Fundamentals for Analyst and Administrators",
+     "tagline": "Fundamentals for Analysts and Administrators",
      "img_course_title": "fundamentals_for_analyst_and_admins.png",
      "summary": [
-       "Analysts and administrators will gain ",
+       "Analysts and administrators will gain",
        "fundamental knowledge of the Security",
        "Onion platform. Students will complete",
        "case studies and labs to reinforce",
        "techniques that will allow them to navigate",
        "through various data types in order to",
-       "find evil."
+       "find evil. This course also prepares students",
+       "to pass the Security Onion Certified",
+       "Professional (SOCP) exam."
      ],
-     "info": "This course is geared for analyst and administrators of Security Onion. Students will gain a foundational understanding of this exciting platform - how to architect, deploy, and manage their Security Onion grid. The course covers major analyst workflows, reinforced through real-world case studies."
+     "info": "This course is geared for analysts and administrators of Security Onion. Students will gain a foundational understanding of this exciting platform - how to architect, deploy, and manage their Security Onion grid. The course covers major analyst workflows, reinforced through real-world case studies."
     },
     {
-      "name": "Fundamentals for Analyst & Threat Hunters",
-      "popup_name": "Security Onion 2: Fundamentals for Analyst & Threat Hunters",
+      "name": "Fundamentals for Analysts & Threat Hunters",
+      "popup_name": "Security Onion 2: Fundamentals for Analysts & Threat Hunters",
       "category": "Intermediate",
       "hide-category": true,
       "Delivery": "Instructor Led * ‡",
@@ -135,9 +138,9 @@
       "tagline": "Advanced detection engineering techniques to remove gaps in security detection.",
       "img_course_title": "detection_engineering_in_depth.png",
       "summary": [
-        "Analyst and Security Engineers will employ",
-        "detection techniques to close detection",
-        "gaps in your Security Onion grids."
+        "Analysts and Security Engineers will employ",
+        "detection techniques to close detection gaps",
+        "in your Security Onion grids."
       ],
       "info": "This class uses a scenario-based approach to equip analysts, administrators, and security engineers with the skills to identify detection gaps and develop technical solutions which cover those gaps. The course is for graduates of the Security Onion Fundamentals class and existing Security Onion practitioners who want to get more out of their Security Onion deployment."
     }
