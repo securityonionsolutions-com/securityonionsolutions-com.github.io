@@ -10,6 +10,11 @@
 		"body": "Our Hunt interface is purpose built to let you investigate events quickly and easily."
 	},
 	{
+		"image": "detections.jpg",
+		"header": "Detections",
+		"body": "Manage all detection rules (Suricata, YARA, and Sigma) in a single interface. Import publically-available community rules or create custom rules. Quickly pivot from the Alerts interface to the detection that triggered the alert; then disable the detection, or add suppression, threshold, and other overrides to fine tune the detection. Includes an audit trail of all rule changes."
+	},
+	{
 		"image": "pcap.jpg",
 		"header": "PCAP",
 		"body": "Pull packet captures from network events and analyze them within SOC, CyberChef, or your favorite external tool."
