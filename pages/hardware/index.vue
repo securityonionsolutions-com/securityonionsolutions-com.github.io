@@ -3,20 +3,23 @@
     <PageNav page-name="Appliances" :links="links" />
     <SubHero id="download-before" class="hero-hardware">
       <template #header>
-        Have a need for speed?
+        Next Gen Is Here!
       </template>
       <template #body>
         <div class="flex justify-center text-center">
           <div class="text-2xl">
-            Check out the <a href="/hardware/SNNV">SOS SNNV</a>!
-            <br>
-            SOS SNNV uses extremely fast Non-volatile Memory (NVMe) for data storage.
+            Introducing the newest generation of Security Onion appliances. 
+            With upgraded storage, network, processing, and memory these new 
+            appliances will make it even easier to make your adversaries cry!
+            <p class="my-3">
+              <i>Available as of July, 2024</i>
+            </p>
           </div>
         </div>
         <div class="flex justify-center">
-          <ActionCallout class="mt-4" @button-click="sos.showContactModal({ text: 'Please contact me with more information about the SOS SNNV.', source: 'hw_purchase' })">
+          <ActionCallout class="mt-4" @button-click="navigateTo('#comparison')">
             <template #button-text>
-              Purchase
+              Compare
             </template>
           </ActionCallout>
         </div>
