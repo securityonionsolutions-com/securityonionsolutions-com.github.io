@@ -3,14 +3,13 @@
     <PageNav page-name="Home" :links="links" />
     <SubHero class="hero text-center">
       <template #header>
-        2024 Security Onion
+        New Hardware Appliances
         <br/>
-        CFP is Now Running!
+        Our newest generation of hardware appliances has arrived.
       </template>
       <template #body>
-        Learn more about attending and optionally presenting at our 11th annual Security Onion Conference.
         <div class="flex justify-center">
-          <SoButton class="mt-4" link="/conference">
+          <SoButton class="mt-4" link="/hardware">
             Learn More
           </SoButton>
         </div>
