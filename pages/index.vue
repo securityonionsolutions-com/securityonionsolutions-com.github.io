@@ -3,11 +3,10 @@
     <PageNav page-name="Home" :links="links" />
     <SubHero class="hero text-center">
       <template #header>
-        New Hardware Appliances
-        <br/>
-        Our newest generation of hardware appliances has arrived.
+        New Hardware Appliances are Here!
       </template>
       <template #body>
+        Our newest generation of hardware appliances has arrived.
         <div class="flex justify-center">
           <SoButton class="mt-4" link="/hardware">
             Learn More
