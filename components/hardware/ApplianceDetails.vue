@@ -40,7 +40,7 @@
             >
               <img :src="`/img/appliances/${appliance.img_back_thumb}`">
             </div>
-            <div class="justify-items-start mt-10 mx-4">
+            <div class="justify-items-start mt-10">
               <h3 class="font-bold">Includes:</h3>
               <li>Applicances integrate with Security Onion</li>
               <li>AMD EPYC 4th Generation Processors</li>
@@ -48,33 +48,35 @@
               <li>iDRAC Enterprise license included</li>
               <li>Supported software and hardware for 1-year or multi-year terms.</li>
             </div>
-            <div class="p-24 justify-items-center justify-center text-center">
-              <div class="text-3xl xs:text-4xl xl:mr-6 mb-5 text-center">
-                Ready to purchase or need more information?
-              </div>
-              <div class="flex justify-center">
-                <so-button class="justify-center" :alternate="false" :link="link" @click.native="sos.showContactModal({text: `Please contact me with more information about the SOS ${appliance.name}.`, source: `${appliance.name.toLowerCase().replace(' ', '_')}_purchasing_info`})">
-                  Contact Us
-                </so-button>
-              </div>
-            </div>
           </div>
           <div
-            class="px-4"
+            class="md:px-4"
             :class="[appliance.img_front_thumb == undefined && appliance.img_back_thumb == undefined ? 'pt-12' : 'pt-12 md:pt-0']"
           >
-            <div class="py-2">
+            <div class="p-2">
               <span class="font-bold" v-text="'Use Case(s)'" />
-              <li v-for="role in appliance.roles" v-text="role" />
+              <li v-for="role in appliance.roles" v-html="role" />
             </div>
-            <div v-for="specName in Object.keys(appliance.specs)" :key="specName" class="py-2">
+            <div v-for="specName in Object.keys(appliance.specs)" :key="specName" class="p-2">
               <span class="font-bold" v-text="specName" />
-              <li v-text="specSplit(appliance.specs[specName])" />
+              <pre class="font-sans" v-text="specSplit(appliance.specs[specName])" />
             </div>
           </div>
         </div>
         <Footnotes />
       </div>
+      <ActionCallout class="m-6 xs:pb-6" @button-click="sos.showContactModal({text: `Please contact me with more information about the SOS ${appliance.name}.`, source: `${appliance.name.toLowerCase().replace(' ', '_')}_purchasing_info`})">
+        <template #info>
+          <div class="text-3xl">
+            Ready to purchase or need more information?
+          </div>
+        </template>
+        <template #button-text>
+          <div class="text-base">
+            Contact Us
+          </div>
+        </template>
+      </ActionCallout>
     </div>
   </div>
 </template>
@@ -82,12 +84,10 @@
 <script>
 import { sos } from '~/lib/sos.js'
 
-import ActionCallout from '~/components/action_callouts/ActionCallout'
 import Footnotes from '~/components/hardware/Footnotes'
 
 export default {
   components: {
-    ActionCallout,
     Footnotes,
   },
   data: () => ({
