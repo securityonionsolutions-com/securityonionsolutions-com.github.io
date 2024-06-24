@@ -3,14 +3,12 @@
     <PageNav page-name="Home" :links="links" />
     <SubHero class="hero text-center">
       <template #header>
-        2024 Security Onion
-        <br/>
-        CFP is Now Running!
+        Detections Module<br>Now Available
       </template>
       <template #body>
-        Learn more about attending and optionally presenting at our 11th annual Security Onion Conference.
+        Upgrade or download Security Onion to take advantage of this new, <i>free</i> feature for managing all rule types in a single, consolidated interface!
         <div class="flex justify-center">
-          <SoButton class="mt-4" link="/conference">
+          <SoButton class="mt-4" link="/software#features">
             Learn More
           </SoButton>
         </div>
