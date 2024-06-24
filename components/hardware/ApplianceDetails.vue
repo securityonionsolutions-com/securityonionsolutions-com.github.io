@@ -42,7 +42,7 @@
             </div>
             <div class="justify-items-start mt-10 mx-4">
               <h3 class="font-bold">Includes:</h3>
-              <li>Appliances integrate with Security Onion</li>
+              <li>Applicances integrate with Security Onion</li>
               <li>AMD EPYC 4th Generation Processors</li>
               <li>5600 MT/s RDIMM RAM</li>
               <li>iDRAC Enterprise license included</li>
