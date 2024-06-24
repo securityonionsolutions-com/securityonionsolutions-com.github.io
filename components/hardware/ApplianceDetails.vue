@@ -27,7 +27,7 @@
           </span>
         </div>
         <div class="flex flex-col md:flex-row  border-b border-t border-gray-400 pb-6 xs:mx-12 mt-4 pt-4">
-          <div v-if="appliance.img_front_thumb" class="justify-items-center w-full lg:w-1/2">
+          <div v-if="appliance.img_front_thumb" class="justify-items-center mx-auto">
             <div
               class="w-full transform hover:scale-105 transition duration-200 ease-in-out cursor-pointer"
               @click="handleImageClick('front')"
@@ -48,37 +48,28 @@
               <li>iDRAC Enterprise license included</li>
               <li>Supported software and hardware for 1-year or multi-year terms.</li>
             </div>
-            <div class="p-4 my-10 justify-items-center justify-center text-center hidden lg:block">
-              <div class="text-2xl mb-5 text-center">
+            <div class="p-24 justify-items-center justify-center text-center">
+              <div class="text-3xl xs:text-4xl xl:mr-6 mb-5 text-center">
                 Ready to purchase or need more information?
               </div>
               <div class="flex justify-center">
-                <so-button class="justify-center" :alternate="false" @click.native="sos.showContactModal({text: `Please contact me with more information about the SOS ${appliance.name}.`, source: `${appliance.name.toLowerCase().replace(' ', '_')}_purchasing_info`})">
+                <so-button class="justify-center" :alternate="false" :link="link" @click.native="sos.showContactModal({text: `Please contact me with more information about the SOS ${appliance.name}.`, source: `${appliance.name.toLowerCase().replace(' ', '_')}_purchasing_info`})">
                   Contact Us
                 </so-button>
               </div>
             </div>
           </div>
-          <div class="flex flex-col p-4 lg:pl-24 w-full lg:w-1/2 justify-items-center">
-            <div>
-              <div class="py-2">
-                <span class="font-bold" v-text="'Use Case(s)'" />
-                <li v-for="role in appliance.roles" v-text="role" />
-              </div>
-              <div v-for="specName in Object.keys(appliance.specs)" :key="specName" class="py-2">
-                <span class="font-bold" v-text="specName" />
-                <li v-text="specSplit(appliance.specs[specName])" />
-              </div>
+          <div
+            class="px-4"
+            :class="[appliance.img_front_thumb == undefined && appliance.img_back_thumb == undefined ? 'pt-12' : 'pt-12 md:pt-0']"
+          >
+            <div class="py-2">
+              <span class="font-bold" v-text="'Use Case(s)'" />
+              <li v-for="role in appliance.roles" v-text="role" />
             </div>
-            <div class="p-4 my-10 justify-items-center justify-center text-center block lg:hidden">
-              <div class="text-2xl mb-5 text-center">
-                Ready to purchase or need more information?
-              </div>
-              <div class="flex justify-center">
-                <so-button class="justify-center" :alternate="false" @click.native="sos.showContactModal({text: `Please contact me with more information about the SOS ${appliance.name}.`, source: `${appliance.name.toLowerCase().replace(' ', '_')}_purchasing_info`})">
-                  Contact Us
-                </so-button>
-              </div>
+            <div v-for="specName in Object.keys(appliance.specs)" :key="specName" class="py-2">
+              <span class="font-bold" v-text="specName" />
+              <li v-text="specSplit(appliance.specs[specName])" />
             </div>
           </div>
         </div>
