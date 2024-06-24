@@ -3,12 +3,12 @@
     <PageNav page-name="Home" :links="links" />
     <SubHero class="hero text-center">
       <template #header>
-        New Hardware Appliances are Here!
+        Detections Module<br>Now Available
       </template>
       <template #body>
-        Our newest generation of hardware appliances has arrived.
+        Upgrade or download Security Onion to take advantage of this new, <i>free</i> feature for managing all rule types in a single, consolidated interface!
         <div class="flex justify-center">
-          <SoButton class="mt-4" link="/hardware">
+          <SoButton class="mt-4" link="/software#features">
             Learn More
           </SoButton>
         </div>
