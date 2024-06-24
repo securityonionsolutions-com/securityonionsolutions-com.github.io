@@ -10,7 +10,7 @@
         </div>
         <client-only>
           <div class="flex justify-center">
-            <div v-if="spinners" v-for="(spinner, idx) in spinners" class="pb-6">
+            <div v-for="(spinner, idx) in spinners" class="pb-6">
               <SpinViewer id="spinner" ref="spinner" v-if="idx == this.spinnerIdx"
                 :imageUrl="threesixtyDetails.imagePath"
                 :rowCount="threesixtyDetails.numPics"
@@ -19,34 +19,26 @@
             </div>
           </div>
         </client-only>
-        <div v-if="spinners && spinners.length > 1" class="flex flex-col w-full justify-center text-center cursor-pointer">
+        <div v-if="spinners.length > 1" class="flex flex-col w-full justify-center text-center cursor-pointer">
           <span v-for="(spinner, idx) in spinners" @click="showSpinner(idx)">
             <Icon name="fa-solid:camera" class="text-black" />
             &nbsp;
             {{ spinner.name }}
           </span>
         </div>
-        <div class="flex flex-col md:flex-row  border-b border-t border-gray-400 pb-6 xs:mx-12 mt-4 pt-4">
-          <div v-if="appliance.img_front_thumb" class="justify-items-center mx-auto">
+        <div class="flex flex-col md:flex-row justify-center items-center text-center border-b border-t border-gray-400 pb-6 xs:mx-12 mt-4">
+          <div v-if="appliance.img_front_thumb" class="justify-items-center">
             <div
               class="w-full transform hover:scale-105 transition duration-200 ease-in-out cursor-pointer"
               @click="handleImageClick('front')"
             >
               <img :src="`/img/appliances/${appliance.img_front_thumb}`">
             </div>
-            <div v-if="appliance.img_back_thumb" 
+            <div
               class="w-full transform hover:scale-105 transition duration-200 ease-in-out cursor-pointer"
               @click="handleImageClick('back')"
             >
               <img :src="`/img/appliances/${appliance.img_back_thumb}`">
-            </div>
-            <div class="justify-items-start mt-10">
-              <h3 class="font-bold">Includes:</h3>
-              <li>Applicances integrate with Security Onion</li>
-              <li>AMD EPYC 4th Generation Processors</li>
-              <li>5600 MT/s RDIMM RAM</li>
-              <li>iDRAC Enterprise license included</li>
-              <li>Supported software and hardware for 1-year or multi-year terms.</li>
             </div>
           </div>
           <div
@@ -55,7 +47,7 @@
           >
             <div class="p-2">
               <span class="font-bold" v-text="'Use Case(s)'" />
-              <li v-for="role in appliance.roles" v-html="role" />
+              <pre class="font-sans" v-text="appliance.roles.join('\n')" />
             </div>
             <div v-for="specName in Object.keys(appliance.specs)" :key="specName" class="p-2">
               <span class="font-bold" v-text="specName" />

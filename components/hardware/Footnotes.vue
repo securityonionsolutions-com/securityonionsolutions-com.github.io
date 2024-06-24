@@ -7,10 +7,7 @@
       † Actual performance depends on network traffic. Stated specifications represent the fastest configuration available for the appliance, however, other configurations are also available for specific use cases. Forward node estimates assume a separate Manager Node is used.
     </div>
     <div class="mb-2">
-      ‡ The SOS 10000 Forward Node Throughput rating and SOS SNNV Standalone rating are achieved without full packet capture.
-    </div>
-    <div class="mb-2">
-      § Network transceivers sold separately.
+      ‡ The SOS 10000 Forward Node Throughput rating is achieved without full packet capture.
     </div>
   </div>
 </template>
