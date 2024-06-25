@@ -1,0 +1,403 @@
+<template>
+  <div class="xs:px-12">
+    <PageNav page-name="Security Onion Pro" :links="links" />
+    <SubHero class="hero-support text-center">
+      <template #header>
+        Security Onion Pro
+      </template>
+      <template #body>
+        If you're looking to get the most out of Security Onion in your enterprise, you should consider Security Onion Pro.
+        The Pro license not only adds additional enterprise features, but also adds many additional benefits as well!
+        <div class="flex flex-col flex-grow items-center">
+          <ActionCallout :showInfo=false class="mt-1 xl:mt-4" @button-click="sos.showContactModal({ text: 'Please contact me with more information about purchasing Security Onion Pro.', source: 'support_purchasing_info' })">
+            <template #button-text>
+              Purchase Pro
+            </template>
+          </ActionCallout>
+        </div>
+        <div class="flex flex-col flex-grow items-center">
+          <so-button class="mt-1 xl:mt-4" link="https://docs.securityonion.net/en/2.4/pro.html">
+            Pro Documentation
+          </so-button>
+        </div>
+      </template>
+    </SubHero>
+    <ContentSection id="premium-support" :alternate="true">
+      <div class="px-6 xs:px-12 lg:px-32">
+        <SectionHeader class="mb-6">
+          Enterprise Features
+        </SectionHeader>
+        <feature-right class="xs:mb-20" :text-margin="true">
+          <template #body>
+            <div class="text-center xs:text-left">
+              Our customers have been asking for enterprise features so
+              we've spent the last few years building them! We first mentioned this back in 2022, in 
+              <a href="https://blog.securityonion.net/2022/08/security-onion-enterprise-features-and.html"
+                class="underline">
+                this blog post.
+              </a>
+              Here are some enterprise features available with a Security Onion Pro license as of today:
+            </div>
+          </template>
+        </feature-right>
+        
+        <feature-right class="xs:mb-20" :text-margin="true">
+          <template #header>
+            <div class="text-center xs:text-left">
+              Open ID Connect (OIDC)
+            </div>
+          </template>
+          <template #graphic>
+            <div>
+              <Graphic
+                file-name="appliance.jpg"
+                :size="20"
+              />
+            </div>
+          </template>
+          <template #body>
+            <div class="text-center xs:text-left">
+              SOC supports single sign-on (SSO) authentication via OpenID Connect (OIDC) to one of several OIDC-compatible identity providers. For example, users can login to Security Onion using an Active Directory user, a GitHub user, a Google account, an Auth0 account, etc. Only one OIDC provider can be active at a time.
+            </div>
+          </template>
+        </feature-right>
+        
+        <feature-left class="my-12">
+          <template #header>
+            <div class="text-center xs:text-left">
+              Data at Rest Encryption
+            </div>
+          </template>
+          <template #graphic>
+            <div>
+              <Graphic
+                file-name="appliance.jpg"
+                :size="20"
+              />
+            </div>
+          </template>
+          <template #body>
+            <div class="text-left">
+              Storage-level encryption for data residing in your Grid.
+            </div>
+          </template>
+        </feature-left>
+        
+        <feature-right class="xs:mb-20" :text-margin="true">
+          <template #header>
+            <div class="text-center xs:text-left">
+              Federal Information Processing Standards (FIPS) Compliance for the OS
+            </div>
+          </template>
+          <template #graphic>
+            <div>
+              <Graphic
+                file-name="appliance.jpg"
+                :size="20"
+              />
+            </div>
+          </template>
+          <template #body>
+            <div class="text-center xs:text-left">
+              TODO
+            </div>
+          </template>
+        </feature-right>
+        
+        <feature-left class="my-12">
+          <template #header>
+            <div class="text-center xs:text-left">
+              DoD Security Technical Implementation Guide (STIG) Compliance for the OS
+            </div>
+          </template>
+          <template #graphic>
+            <div>
+              <Graphic
+                file-name="appliance.jpg"
+                :size="20"
+              />
+            </div>
+          </template>
+          <template #body>
+            <div class="text-left">
+              TODO
+            </div>
+          </template>
+        </feature-left>
+        
+        <feature-right class="xs:mb-20" :text-margin="true">
+          <template #header>
+            <div class="text-center xs:text-left">
+              External Notifications in SOC
+            </div>
+          </template>
+          <template #graphic>
+            <div>
+              <Graphic
+                file-name="appliance.jpg"
+                :size="20"
+              />
+            </div>
+          </template>
+          <template #body>
+            <div class="text-center xs:text-left">
+              The Detections module, specifically Sigma rules, can be enabled to send outbound notifications upon an alert being created. By default, no outbound notifications are enabled in a Security Onion installation. However, with the Pro license applied to a grid, notifications can be quickly configured via the Configuration screen.
+            </div>
+          </template>
+        </feature-right>
+        
+        <feature-left class="my-12">
+          <template #header>
+            <div class="text-center xs:text-left">
+              Time Tracking inside of Cases
+            </div>
+          </template>
+          <template #graphic>
+            <div>
+              <Graphic
+                file-name="appliance.jpg"
+                :size="20"
+              />
+            </div>
+          </template>
+          <template #body>
+            <div class="text-left">
+              When adding a comment to a Case, you can also specify how many hours you spent working on that activity. You can then see the total time spent by all analysts in the Summary in the upper-right corner of the Case.
+            </div>
+          </template>
+        </feature-left>
+
+        <feature-right class="xs:mb-20" :text-margin="true">
+          <template #header>
+            <div class="text-center xs:text-left">
+              Guaranteed Message Delivery
+            </div>
+          </template>
+          <template #graphic>
+            <div>
+              <Graphic
+                file-name="appliance.jpg"
+                :size="20"
+              />
+            </div>
+          </template>
+          <template #body>
+            <div class="text-center xs:text-left">
+              If you need guaranteed message delivery, then you can enable Kafka which replaces Redis and Logstash on the Security Onion Manager node and Receiver nodes.
+            </div>
+          </template>
+        </feature-right>
+        
+        <feature-left class="my-12">
+          <template #header>
+            <div class="text-center xs:text-left">
+              Higher Priority Service Level Agreements (SLAs)
+            </div>
+          </template>
+          <template #graphic>
+            <div>
+              <Graphic
+                file-name="appliance.jpg"
+                :size="20"
+              />
+            </div>
+          </template>
+          <template #body>
+            <div class="text-left">
+              Receive faster service with the one business day initial response SLA included with Security Onion Pro. A four-business-hour initial response SLA is also available.
+            </div>
+          </template>
+        </feature-left>
+        
+        <feature-right class="xs:mb-12" :text-margin="true">
+          <template #header>
+            <div class="text-center xs:text-left">
+              Health Checks
+            </div>
+          </template>
+          <template #graphic>
+            <div>
+              <Graphic
+                file-name="appliance.jpg"
+                :size="20"
+              />
+            </div>
+          </template>
+          <template #body>
+            <div class="text-center xs:text-left">
+              Security Onion Pro includes two free 1-hour Health Checks per year.
+            </div>
+          </template>
+        </feature-right>
+        
+        <feature-left class="my-12">
+          <template #header>
+            <div class="text-center xs:text-left">
+              Offline Update Service Shipments
+            </div>
+          </template>
+          <template #graphic>
+            <div>
+              <Graphic
+                file-name="appliance.jpg"
+                :size="20"
+              />
+            </div>
+          </template>
+          <template #body>
+            <div class="text-left">
+              If you have an airgap deployment, we can ship two free offline updates per year when requested.
+            </div>
+          </template>
+        </feature-left>
+        
+        <feature-right class="xs:mb-20" :text-margin="true">
+          <template #header>
+            <div class="text-center xs:text-left">
+              Professional Services and Support
+            </div>
+          </template>
+          <template #graphic>
+            <div>
+              <Graphic
+                file-name="appliance.jpg"
+                :size="20"
+              />
+            </div>
+          </template>
+          <template #body>
+            <div class="text-center xs:text-left">
+              For customers running Security Onion on their hardware or smaller SOS appliances, Security Onion Pro includes twenty hours of professional services and support time. Services include architecture planning, deployment, tuning, break/fix support, parsing, and other services around Security Onion. Additional hours packages are available.
+            </div>
+          </template>
+        </feature-right>
+        
+        <feature-left class="my-12">
+          <template #header>
+            <div class="text-center xs:text-left">
+              Included with larger hardware appliances
+            </div>
+          </template>
+          <template #graphic>
+            <div>
+              <Graphic
+                file-name="appliance.jpg"
+                :size="20"
+              />
+            </div>
+          </template>
+          <template #body>
+            <div class="text-left">
+              Security Onion Pro is included with many of our larger hardware appliance models, such as the SOS SN7200, SOS SNNV, and SOS GoFast, at no additional charge. See our full appliance list at
+              <a href="https://securityonion.com/hardware" class="underline">
+                https://securityonion.com/hardware.
+              </a>
+            </div>
+          </template>
+        </feature-left>
+        
+        <feature-right class="xs:mb-20" :text-margin="true">
+          <template #header>
+            <div class="text-center xs:text-left">
+              Coverage for all the nodes in your Grid
+            </div>
+          </template>
+          <template #graphic>
+            <div>
+              <Graphic
+                file-name="appliance.jpg"
+                :size="20"
+              />
+            </div>
+          </template>
+          <template #body>
+            <div class="text-center xs:text-left">
+              The base license includes licensing for up to ten nodes, with additional node packs available for purchase.
+            </div>
+          </template>
+        </feature-right>
+      </div>
+    </ContentSection>
+    <ContentSection id="premium-vs-community" :bottom-margin="false">
+      <div class="flex flex-col items-center justify-center mx-1 xs:-mx-10 sm:mx-0">
+        <SectionHeader class="mb-8">
+          Benefits of Purchasing Support
+        </SectionHeader>
+        <FreeVsPremiumTable />
+      </div>
+    </ContentSection>
+    <ContentSection id="community-support" :alternate="true">
+      <div class="px-6 xs:px-12 lg:px-32">
+        <div class="xs:pb-6">
+          <feature-right :text-margin="true">
+            <template #header>
+              <div class="text-center xs:text-left">
+                Community Support
+              </div>
+            </template>
+            <template #graphic>
+              <icon name="fa-solid:comment" size="10em" />
+            </template>
+            <template #body>
+              <div class="text-center xs:text-left">
+                The Security Onion user base is large, and often times others have run into similar problems or have asked questions that might help you with your own Security Onion installation or troubleshooting.
+              </div>
+              <div class="text-center xs:text-left mt-4">
+                Browse the Security Onion official discussion forums to find support on common issues. Ask for help from other community members, or return the favor by offering your own solutions to other users' discussions.
+              </div>
+            </template>
+          </feature-right>
+        </div>
+        <action-callout :alternate="true" class="mt-16 mb-12 md:mt-24 md:mb-2" link="https://securityonion.net/discuss">
+          <template #info>
+            <div class="text-2xl flex justify-center text-center md:text-left">
+              <div>
+                Not ready for premium support? Take a look at the Security Onion community support content and discussions.
+              </div>
+            </div>
+          </template>
+          <template #button-text>
+            <div class="text-lg my-1">
+              Community Support
+            </div>
+          </template>
+        </action-callout>
+      </div>
+    </ContentSection>
+  </div>
+</template>
+  
+  <script>
+  import { sos } from '~/lib/sos.js'
+  
+  import ActionCallout from '~/components/action_callouts/ActionCallout'  
+  import FeatureRight from '~/components/features/FeatureRight'
+  import FeatureLeft from '~/components/features/FeatureLeft.vue'
+  import FeatureLeftAction from '~/components/features/FeatureLeftAction.vue'
+  import FourPanelDetail from '~/components/features/FourPanelDetail'
+  import SubHero from '~/components/hero/SubHero'
+  
+  export default {
+    scrollToTop: true,
+    components: {
+      ActionCallout,
+      FeatureRight,
+      FeatureLeft,
+      FeatureLeftAction,
+      FourPanelDetail,
+      SubHero,
+    },
+    data: () => ({
+      sos,
+      showModal: false,
+      links: [{ name: 'Premium', id: 'premium-support' }, { name: 'Community', id: 'community-support' }]
+    })
+  }
+  </script>
+  
+  <style scoped>
+  .hero-support {
+    background: right bottom no-repeat url('/img/graphics/world.jpg');
+  }
+  </style>
+  
