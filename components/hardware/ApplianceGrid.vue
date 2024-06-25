@@ -23,15 +23,15 @@
             <div>Forward Node</div>
             <div>Throughput †</div>
           </th>
-          <th class="text-center px-2 truncate">
+          <th class="hidden sm:table-cell text-center px-2 truncate">
             <div>Standalone</div>
             <div>Throughput †</div>
           </th>
-          <th class="text-center px-2 truncate">
+          <th class="hidden md:table-cell text-center px-2 truncate">
             <div>Max</div>
             <div>Storage *</div>
           </th>
-          <th class="hidden sm:table-cell text-center px-2 truncate">
+          <th class="hidden md:table-cell text-center px-2 truncate">
             <div>Form</div>
             <div>Factor</div>
           </th>
@@ -59,9 +59,9 @@
             <div v-for="(role, roleIdx) in item.roles" :key="roleIdx" v-text="role" />
           </td>
           <td class="text-right border-t border-blue-400 px-2 truncate" v-text="item.specs['Forward Node Throughput †']" />
-          <td class="text-right border-t border-blue-400 px-2 truncate" v-text="item.specs['Standalone Throughput †']" />
-          <td class="text-right border-t border-blue-400 px-2 truncate" v-text="item.specs['Data Storage *']" />
-          <td class="hidden sm:table-cell text-right border-t border-blue-400 px-2 truncate" v-text="item.specs['Form Factor']" />
+          <td class="hidden sm:table-cell text-right border-t border-blue-400 px-2 truncate" v-text="item.specs['Standalone Throughput †']" />
+          <td class="hidden md:table-cell text-right border-t border-blue-400 px-2 truncate" v-text="item.specs['Data Storage *']" />
+          <td class="hidden md:table-cell text-right border-t border-blue-400 px-2 truncate" v-text="item.specs['Form Factor']" />
         </tr>
       </tbody>
     </table>
