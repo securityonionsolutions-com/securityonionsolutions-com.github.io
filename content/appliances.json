@@ -173,7 +173,7 @@
     "tagline": "Designed for extreme performance with alerts and packet metadata",
     "roles": [
       "Forward node in a large data center",
-      "(alerts and metadata)"
+      "Network monitoring limited to alerts and metadata"
     ],
     "sensor": true,
     "performance": {
@@ -343,7 +343,7 @@
     "roles": [
       "Rapidly deployable incident response",
       "High mobility for commercial transportation",
-      "(all node types supported)"
+      "All node types supported"
     ],
     "includes_pro_license": true,
     "sensor": true,
