@@ -290,7 +290,7 @@
           <template #graphic>
             <div>
               <Graphic
-                file-name="appliance.jpg"
+                file-name="sos-gf-front.jpg"
                 :size="20"
               />
             </div>
