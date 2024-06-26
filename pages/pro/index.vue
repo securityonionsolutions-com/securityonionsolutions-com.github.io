@@ -9,7 +9,7 @@
         If you're looking to get the most out of Security Onion in your enterprise, you should consider Security Onion Pro.
         The Pro license not only adds additional enterprise features, but also adds many additional benefits as well!
         <div class="flex flex-col flex-grow items-center">
-          <ActionCallout :showInfo=false class="mt-1 xl:mt-4" @button-click="sos.showContactModal({ text: 'Please contact me with more information about purchasing Security Onion Pro.', source: 'support_purchasing_info' })">
+          <ActionCallout :showInfo=false class="mt-1 xl:mt-4" @button-click="sos.showContactModal({ text: 'Please contact me with more information about purchasing Security Onion Pro.', source: 'pro_purchasing_info' })">
             <template #button-text>
               Purchase Pro
             </template>
@@ -22,7 +22,7 @@
         </div>
       </template>
     </SubHero>
-    <ContentSection id="premium-support" :alternate="true">
+    <ContentSection id="pro-features" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32">
         <SectionHeader class="mb-6">
           Enterprise Features
@@ -50,8 +50,11 @@
           <template #graphic>
             <div>
               <Graphic
-                file-name="appliance.jpg"
+                class="shadow-xl rounded-md overflow-hidden"
+                :padding="false"
+                file-name="oidc-thumb.jpg"
                 :size="20"
+                :clickable="true"
               />
             </div>
           </template>
@@ -134,8 +137,11 @@
           <template #graphic>
             <div>
               <Graphic
-                file-name="appliance.jpg"
+                class="shadow-xl rounded-md overflow-hidden"
+                :padding="false"
+                file-name="notify-pro-thumb.jpg"
                 :size="20"
+                :clickable="true"
               />
             </div>
           </template>
@@ -176,8 +182,11 @@
           <template #graphic>
             <div>
               <Graphic
-                file-name="appliance.jpg"
+                class="shadow-xl rounded-md overflow-hidden"
+                :padding="false"
+                file-name="kafka-pro-thumb.jpg"
                 :size="20"
+                :clickable="true"
               />
             </div>
           </template>
@@ -318,47 +327,27 @@
         </feature-right>
       </div>
     </ContentSection>
-    <ContentSection id="premium-vs-community" :bottom-margin="false">
+    <ContentSection id="free-vs-pro" :bottom-margin="false">
       <div class="flex flex-col items-center justify-center mx-1 xs:-mx-10 sm:mx-0">
         <SectionHeader class="mb-8">
-          Benefits of Purchasing Support
+          Benefits of Purchasing Pro
         </SectionHeader>
-        <FreeVsPremiumTable />
+        <FreeVsProTable />
       </div>
     </ContentSection>
-    <ContentSection id="community-support" :alternate="true">
-      <div class="px-6 xs:px-12 lg:px-32">
-        <div class="xs:pb-6">
-          <feature-right :text-margin="true">
-            <template #header>
-              <div class="text-center xs:text-left">
-                Community Support
-              </div>
-            </template>
-            <template #graphic>
-              <icon name="fa-solid:comment" size="10em" />
-            </template>
-            <template #body>
-              <div class="text-center xs:text-left">
-                The Security Onion user base is large, and often times others have run into similar problems or have asked questions that might help you with your own Security Onion installation or troubleshooting.
-              </div>
-              <div class="text-center xs:text-left mt-4">
-                Browse the Security Onion official discussion forums to find support on common issues. Ask for help from other community members, or return the favor by offering your own solutions to other users' discussions.
-              </div>
-            </template>
-          </feature-right>
-        </div>
-        <action-callout :alternate="true" class="mt-16 mb-12 md:mt-24 md:mb-2" link="https://securityonion.net/discuss">
+    <ContentSection id="hardwarehelp" :alternate="true">
+      <div class="px-6 xs:px-12 lg:px-32 -my-8">
+        <action-callout :alternate="true" class="my-12" @button-click="sos.showContactModal({ text: 'Please contact me with more information about Security Onion Pro.', source: 'pro_purchasing_info' })">
           <template #info>
-            <div class="text-2xl flex justify-center text-center md:text-left">
+            <div class="text-3xl flex justify-center text-center md:text-left">
               <div>
-                Not ready for premium support? Take a look at the Security Onion community support content and discussions.
+                Ready to purchase or need more information?
               </div>
             </div>
           </template>
           <template #button-text>
             <div class="text-lg my-1">
-              Community Support
+              Contact Us
             </div>
           </template>
         </action-callout>
@@ -390,7 +379,7 @@
     data: () => ({
       sos,
       showModal: false,
-      links: [{ name: 'Premium', id: 'premium-support' }, { name: 'Community', id: 'community-support' }]
+      links: [{ name: 'Features', id: 'pro-features' }, { name: 'Comparison', id: 'free-vs-pro' }]
     })
   }
   </script>
