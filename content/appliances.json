@@ -23,12 +23,16 @@
       "Standalone Throughput †": "N/A",
       "Forward Node Throughput †": "500 Mbps",
       "Data Storage *": "20 TB",
-      "Data Storage Class": "7K RPM",
+      "Data Storage Class": "SAS",
+      "Data Storage Details": "SATA SAS 7K RPM",
       "Data Storage RAID": "Single Disk",
       "OS Storage *": "960 GB",
       "OS Storage Class": "NVMe",
       "OS Storage RAID": "RAID 1",
-      "Interfaces §": "6 x 1GbE RJ45, 2 x 10/25GbE SFP28",
+      "Interfaces §": [
+        "6 x 1GbE RJ45",
+        "2 x 10/25GbE SFP28"
+       ],
       "Form Factor": "1U"
     },
     "caveats": {
@@ -61,12 +65,16 @@
       "Standalone Throughput †": "500 Mbps",
       "Forward Node Throughput †": "1 Gbps",
       "Data Storage *": "40 TB",
-      "Data Storage Class": "7K RPM",
+      "Data Storage Class": "SAS",
+      "Data Storage Details": "SATA SAS 7K RPM",
       "Data Storage RAID": "RAID 10",
       "OS Storage *": "960 GB",
       "OS Storage Class": "NVMe",
       "OS Storage RAID": "RAID 1",
-      "Interfaces §": "6 x 1GbE RJ45, 4 x 10/25GbE SFP28",
+      "Interfaces §": [
+        "6 x 1GbE RJ45",
+        "4 x 10/25GbE SFP28"
+       ], 
       "Form Factor": "1U"
     },
     "caveats": {
@@ -104,7 +112,10 @@
       "OS Storage *": "960 GB",
       "OS Storage Class": "NVMe",
       "OS Storage RAID": "RAID 1",
-      "Interfaces §": "2 x 1GbE RJ45, 4 x 10/25GbE SFP28",
+      "Interfaces §": [
+        "2 x 1GbE RJ45",
+        "4 x 10/25GbE SFP28"
+       ], 
       "Form Factor": "1U"
     },
     "caveats": {
@@ -139,12 +150,16 @@
       "Standalone Throughput †": "N/A",
       "Forward Node Throughput †": "5 Gbps",
       "Data Storage *": "200 TB",
-      "Data Storage Class": "7K RPM",
+      "Data Storage Class": "SAS",
+      "Data Storage Details": "SATA SAS 7K RPM",
       "Data Storage RAID": "RAID 6",
       "OS Storage *": "960 GB",
       "OS Storage Class": "NVMe",
       "OS Storage RAID": "RAID 1",
-      "Interfaces §": "6 x 1GbE RJ45, 6 x 10/25GbE SFP28",
+      "Interfaces §": [
+        "6 x 1GbE RJ45",
+        "6 x 10/25GbE SFP28"
+       ], 
       "Form Factor": "2U"
     },
     "caveats": {
@@ -158,7 +173,7 @@
     "tagline": "Designed for extreme performance with alerts and packet metadata",
     "roles": [
       "Forward node in a large data center",
-      "(alerts and metadata)"
+      "Network monitoring limited to alerts and metadata"
     ],
     "sensor": true,
     "performance": {
@@ -182,7 +197,10 @@
       "OS Storage *": "960 GB",
       "OS Storage Class": "NVMe",
       "OS Storage RAID": "RAID 1",
-      "Interfaces §": "2 x 1GbE RJ45, 6 x 10/25GbE SFP28",
+      "Interfaces §": [
+        "2 x 1GbE RJ45",
+        "6 x 10/25GbE SFP28"
+       ], 
       "Form Factor": "1U"
     },
     "caveats": {
@@ -221,7 +239,10 @@
       "OS Storage *": "960 GB",
       "OS Storage Class": "NVMe",
       "OS Storage RAID": "RAID 1",
-      "Interfaces §": "6 x 1GbE RJ45, 4 x 10/25GbE SFP28",
+      "Interfaces §": [
+        "6 x 1GbE RJ45",
+        "4 x 10/25GbE SFP28"
+       ], 
       "Form Factor": "1U"
     },
     "caveats": {
@@ -239,6 +260,7 @@
       "Standalone node in a medium to large office"
     ],
     "sensor": false,
+    "includes_pro_license": true,
     "performance": {
       "Performance": 50,
       "Retention": 100
@@ -255,12 +277,16 @@
       "Standalone Throughput †": "3 Gbps",
       "Forward Node Throughput †": "N/A",
       "Data Storage *": "120 TB",
-      "Data Storage Class": "7K RPM",
+      "Data Storage Class": "SAS",
+      "Data Storage Details": "SATA SAS 7K RPM",
       "Data Storage RAID": "RAID 10",
       "OS Storage *": "960 GB",
       "OS Storage Class": "NVMe",
       "OS Storage RAID": "RAID 1",
-      "Interfaces §": "6 x 1GbE RJ45, 6 x 10/25GbE SFP28",
+      "Interfaces §": [
+        "6 x 1GbE RJ45",
+        "6 x 10/25GbE SFP28"
+       ],
       "Form Factor": "2U"
     },
     "caveats": {
@@ -277,6 +303,7 @@
       "Hot Search node in a large distributed architecture",
       "Standalone node in a medium to large office or data center"
     ],
+    "includes_pro_license": true,
     "performance": {
       "Performance": 100,
       "Retention": 75
@@ -290,7 +317,7 @@
       "count": 38
     }],
     "specs": {
-      "Standalone Throughput †": "5 Gbps",
+      "Standalone Throughput †": "5 Gbps ‡",
       "Forward Node Throughput †": "N/A",
       "Data Storage *": "45 TB",
       "Data Storage Class": "NVMe",
@@ -298,7 +325,10 @@
       "OS Storage *": "960 GB",
       "OS Storage Class": "NVMe",
       "OS Storage RAID": "RAID 1",
-      "Interfaces §": " 2 x 1GbE RJ45, 6 x 10/25GbE SFP28",
+      "Interfaces §": [
+       "2 x 1GbE RJ45",
+       "6 x 10/25GbE SFP28"
+      ],
       "Form Factor": "1U"
     },
     "caveats": {
@@ -313,8 +343,9 @@
     "roles": [
       "Rapidly deployable incident response",
       "High mobility for commercial transportation",
-      "(all node types supported)"
+      "All node types supported"
     ],
+    "includes_pro_license": true,
     "sensor": true,
     "performance": {
       "Speed": 25,
@@ -346,7 +377,10 @@
       "OS Storage *": "480 GB",
       "OS Storage Class": "SSD",
       "OS Storage RAID": "RAID 1",
-      "Interfaces §": "6 x 1GbE RJ45, 2-4 x 10/25GbE SFP28\nQSFP28 also available",
+      "Interfaces §": [
+        "6 x 1GbE RJ45",
+        "2-4 x 10/25GbE SFP28 (QSFP28 also available)"
+       ], 
       "Form Factor": "ATA"
     },
     "caveats": {

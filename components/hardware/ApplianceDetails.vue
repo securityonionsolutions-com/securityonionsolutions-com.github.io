@@ -46,7 +46,8 @@
               <li>AMD EPYC 4th Generation Processors</li>
               <li>5600 MT/s RDIMM RAM</li>
               <li>iDRAC Enterprise license included</li>
-              <li>Supported software and hardware for 1-year or multi-year terms.</li>
+              <li>Supported software and hardware for 1-year or multi-year terms</li>
+              <li v-if="appliance.includes_pro_license" class="font-semibold">Security Onion Pro license included with purchase!</li>
             </div>
             <div class="p-4 my-10 justify-items-center justify-center text-center hidden lg:block">
               <div class="text-2xl mb-5 text-center">
@@ -67,7 +68,8 @@
               </div>
               <div v-for="specName in Object.keys(appliance.specs)" :key="specName" class="py-2">
                 <span class="font-bold" v-text="specName" />
-                <li v-text="specSplit(appliance.specs[specName])" />
+                <li v-if="Array.isArray(appliance.specs[specName])" v-for="value in appliance.specs[specName]" v-text="value" />
+                <li v-else v-text="appliance.specs[specName]" />
               </div>
             </div>
             <div class="p-4 my-10 justify-items-center justify-center text-center block lg:hidden">
