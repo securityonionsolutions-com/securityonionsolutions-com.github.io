@@ -89,7 +89,7 @@
         <feature-right class="xs:mb-20" :text-margin="true">
           <template #header>
             <div class="text-center xs:text-left">
-              Federal Information Processing Standards (FIPS) Compliance for the OS
+              Federal Information Processing Standards (FIPS)
             </div>
           </template>
           <template #graphic>
@@ -102,7 +102,10 @@
           </template>
           <template #body>
             <div class="text-center xs:text-left">
-              TODO
+              Support for enabling FIPS during OS installation. For more information about FIPS, please see
+              <a href="https://en.wikipedia.org/wiki/Federal_Information_Processing_Standards" class="underline">
+                https://en.wikipedia.org/wiki/Federal_Information_Processing_Standards.
+              </a>
             </div>
           </template>
         </feature-right>
@@ -123,7 +126,10 @@
           </template>
           <template #body>
             <div class="text-left">
-              TODO
+              Automatically apply STIGs to your Grid using OpenSCAP. For more information about STIGs, please see
+              <a href="https://public.cyber.mil/stigs/" class="underline">
+                https://public.cyber.mil/stigs/.
+              </a>
             </div>
           </template>
         </feature-left>
