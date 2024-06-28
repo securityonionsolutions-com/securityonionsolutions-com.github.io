@@ -6,8 +6,7 @@
         Security Onion Pro
       </template>
       <template #body>
-        If you're looking to get the most out of Security Onion in your enterprise, you should consider Security Onion Pro.
-        The Pro license not only adds additional enterprise features, but also adds many additional benefits as well!
+        Powerful features and personalized support offered for enterprise customers!
         <div class="flex flex-col flex-grow items-center">
           <ActionCallout :showInfo=false class="mt-1 xl:mt-4" @button-click="sos.showContactModal({ text: 'Please contact me with more information about purchasing Security Onion Pro.', source: 'pro_purchasing_info' })">
             <template #button-text>
@@ -31,11 +30,7 @@
           <template #body>
             <div class="text-center xs:text-left">
               Our customers have been asking for enterprise features so
-              we've spent the last few years building them! We first mentioned this back in 2022, in 
-              <a href="https://blog.securityonion.net/2022/08/security-onion-enterprise-features-and.html"
-                class="underline">
-                this blog post.
-              </a>
+              we've spent the last few years building them!
               Here are some enterprise features available with a Security Onion Pro license as of today:
             </div>
           </template>

@@ -1,0 +1,168 @@
+{ "features": [
+    {
+      "feature": "Network-Based Installation",
+      "free": true,
+      "premium": true
+    },
+    {
+      "feature": "ISO-Based Installation",
+      "free": true,
+      "premium": true
+    },
+    {
+      "feature": "Airgap",
+      "free": true,
+      "premium": true
+    },
+    {
+      "feature": "Alerting",
+      "free": true,
+      "premium": true
+    },
+    {
+      "feature": "Threat Hunting",
+      "free": true,
+      "premium": true
+    },
+    {
+      "feature": "Dashboards with Visualizations",
+      "free": true,
+      "premium": true,
+      "caption": "Charts and graphs"
+    },
+    {
+      "feature": "Case Management",
+      "free": true,
+      "premium": true
+    },
+    {
+      "feature": "Analyzers",
+      "free": true,
+      "premium": true
+    },
+    {
+      "feature": "Detections",
+      "free": true,
+      "premium": true
+    },
+    {
+      "feature": "Audit Trail",
+      "free": true,
+      "premium": true
+    },
+    {
+      "feature": "User Management",
+      "free": true,
+      "premium": true,
+      "caption": "Role-Based Access Control (RBAC)"
+    },
+    {
+      "feature": "Web-Based UI Configuration",
+      "free": true,
+      "premium": true
+    },
+    {
+      "feature": "Grid Management",
+      "free": true,
+      "premium": true
+    },
+    {
+      "feature": "Grid Monitoring",
+      "free": true,
+      "premium": true
+    },
+    {
+      "feature": "Cyberchef Integration",
+      "free": true,
+      "premium": true
+    },
+    {
+      "feature": "Packet Metadata",
+      "free": true,
+      "premium": true,
+      "caption": "Suricata and Zeek"
+    },
+    {
+      "feature": "PCAP",
+      "free": true,
+      "premium": true,
+      "caption": "Suricata and Stenographer"
+    },
+    {
+      "feature": "Endpoint Monitoring",
+      "free": true,
+      "premium": true
+    },
+    {
+      "feature": "Fleet Integration",
+      "free": true,
+      "premium": true
+    },
+    {
+      "feature": "Open ID Connect (OIDC)",
+      "free": false,
+      "premium": true,
+      "caption": "SSO authentication"
+    },
+    {
+      "feature": "Data at Rest Encryption",
+      "free": false,
+      "premium": true,
+      "caption": "Storage-level encryption"
+    },
+    {
+      "feature": "Federal Information Processing Standards (FIPS)",
+      "free": false,
+      "premium": true,
+      "caption": "Enable during OS installation"
+    },
+    {
+      "feature": "STIG Compliance for the OS",
+      "free": false,
+      "premium": true,
+      "caption": "Apply to the grid using OpenSCAP"
+    },
+    {
+      "feature": "External Notifications in SOC",
+      "free": false,
+      "premium": true,
+      "caption": "Send outbound notifications upon alert creation"
+    },
+    {
+      "feature": "Time Tracking",
+      "free": false,
+      "premium": true,
+      "caption": "Track time spent by all analysts"
+    },
+    {
+      "feature": "Guaranteed Message Delivery",
+      "free": false,
+      "premium": true,
+      "caption": "Enable Kafka on Manager and Receiver nodes"
+    },
+    {
+      "feature": "Manager of Managers",
+      "free": false,
+      "premium": true,
+      "coming_soon": true
+    },
+    {
+      "feature": "API Access with Service Accounts",
+      "free": false,
+      "premium": true,
+      "coming_soon": true
+    },
+    {
+      "feature": "Reporting and Analytics",
+      "free": false,
+      "premium": true,
+      "coming_soon": true
+    },
+    {
+      "feature": "Additional Notification Enhancements",
+      "free": false,
+      "premium": true,
+      "coming_soon": true
+    }
+  ]
+}                        
