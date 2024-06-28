@@ -8,7 +8,7 @@
         <slot name="body" />
       </div>
     </div>
-    <div class="md:flex md:flex-col md:w-1/4 md:h-full md:bg-gradient-to-r md:from-white md:to-transparent" />
+    <div class="md:flex md:flex-col md:w-1/12 md:h-full md:bg-gradient-to-r md:from-white md:to-transparent" />
   </div>
 </template>
 
