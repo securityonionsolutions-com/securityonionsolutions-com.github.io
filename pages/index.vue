@@ -226,6 +226,6 @@ export default {
 
 <style scoped>
 .hero {
-  background: right no-repeat url('/img/graphics/graph.jpg');
+  background: right no-repeat url('/img/graphics/detections.gif');
 }
 </style>
