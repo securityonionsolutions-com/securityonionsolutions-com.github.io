@@ -1,28 +1,21 @@
 { "features": [
     {
-      "feature": "Network-Based Installation",
+      "feature": "Multiple Installation Options",
       "free": true,
-      "premium": true
-    },
-    {
-      "feature": "ISO-Based Installation",
-      "free": true,
-      "premium": true
-    },
-    {
-      "feature": "Airgap",
-      "free": true,
-      "premium": true
+      "premium": true,
+      "caption": "Network-based, ISO-based, and airgap"
     },
     {
       "feature": "Alerting",
       "free": true,
-      "premium": true
+      "premium": true,
+      "caption": "Alerts interface with drilldown"
     },
     {
       "feature": "Threat Hunting",
       "free": true,
-      "premium": true
+      "premium": true,
+      "caption": "Focused Hunt interface"
     },
     {
       "feature": "Dashboards with Visualizations",
@@ -33,22 +26,26 @@
     {
       "feature": "Case Management",
       "free": true,
-      "premium": true
+      "premium": true,
+      "caption": "Escalate logs and track observables"
     },
     {
       "feature": "Analyzers",
       "free": true,
-      "premium": true
+      "premium": true,
+      "caption": "Gather context of observables"
     },
     {
       "feature": "Detections",
       "free": true,
-      "premium": true
+      "premium": true,
+      "caption": "Create and manage rules"
     },
     {
       "feature": "Audit Trail",
       "free": true,
-      "premium": true
+      "premium": true,
+      "caption": "Record detection history"
     },
     {
       "feature": "User Management",
@@ -59,22 +56,26 @@
     {
       "feature": "Web-Based UI Configuration",
       "free": true,
-      "premium": true
+      "premium": true,
+      "caption": "Easily configure preferences"
     },
     {
       "feature": "Grid Management",
       "free": true,
-      "premium": true
+      "premium": true,
+      "caption": "Administer grid members"
     },
     {
       "feature": "Grid Monitoring",
       "free": true,
-      "premium": true
+      "premium": true,
+      "caption": "Monitor grid status and health"
     },
     {
       "feature": "Cyberchef Integration",
       "free": true,
-      "premium": true
+      "premium": true,
+      "caption": "Console access"
     },
     {
       "feature": "Packet Metadata",
@@ -91,12 +92,14 @@
     {
       "feature": "Endpoint Monitoring",
       "free": true,
-      "premium": true
+      "premium": true,
+      "caption": "Query endpoint logs"
     },
     {
       "feature": "Fleet Integration",
       "free": true,
-      "premium": true
+      "premium": true,
+      "caption": "Elastic Fleet access"
     },
     {
       "feature": "Open ID Connect (OIDC)",

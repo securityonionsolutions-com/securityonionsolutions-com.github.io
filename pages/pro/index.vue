@@ -21,7 +21,7 @@
         </div>
       </template>
     </SubHero>
-    <ContentSection id="pro-features" :alternate="true">
+    <ContentSection id="features" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32">
         <SectionHeader class="mb-6">
           Enterprise Features
@@ -31,312 +31,111 @@
             <div class="text-center xs:text-left">
               Our customers have been asking for enterprise features so
               we've spent the last few years building them!
-              Here are some enterprise features available with a Security Onion Pro license as of today:
+              Here are some of the enterprise features available with a Security Onion Pro license as of today:
             </div>
           </template>
         </feature-right>
-        
-        <feature-right class="xs:mb-20" :text-margin="true">
-          <template #header>
-            <div class="text-center xs:text-left">
-              Open ID Connect (OIDC)
-            </div>
+        <four-panel-detail class="">
+          <template #header-top-left>
+            Notifications
           </template>
-          <template #graphic>
-            <div>
-              <Graphic
-                class="shadow-xl rounded-md overflow-hidden"
-                :padding="false"
-                file-name="oidc-thumb.jpg"
-                :size="20"
-                :clickable="true"
-              />
-            </div>
+          <template #body-top-left>
+            By default, no outbound notifications are enabled in a Security Onion installation. However, With the Pro license applied to a grid, notifications can be quickly configured via the Configuration screen.
           </template>
-          <template #body>
-            <div class="text-center xs:text-left">
-              SOC supports single sign-on (SSO) authentication via OpenID Connect (OIDC) to one of several OIDC-compatible identity providers. For example, users can login to Security Onion using an Active Directory user, a GitHub user, a Google account, an Auth0 account, etc. Only one OIDC provider can be active at a time.
-            </div>
+          <template #header-top-right>
+            Open ID Connect (OIDC)
           </template>
-        </feature-right>
-        
-        <feature-left class="my-12">
-          <template #header>
-            <div class="text-center xs:text-left">
-              Data at Rest Encryption
-            </div>
+          <template #body-top-right>
+            SOC supports single sign-on (SSO) authentication via OpenID Connect (OIDC) to one of several OIDC-compatible identity providers. For example, users can login to Security Onion using an Active Directory user, a GitHub user, a Google account, an Auth0 account, etc.
           </template>
-          <template #graphic>
-            <div>
-              <Graphic
-                file-name="appliance.jpg"
-                :size="20"
-              />
-            </div>
+          <template #header-bottom-left>
+            Military-Grade Protections
           </template>
-          <template #body>
-            <div class="text-left">
-              Storage-level encryption for data residing in your Grid.
-            </div>
+          <template #body-bottom-left>
+            The Pro license offers DoD Security Technical Implementation Guide (STIG) compliance for the OS. STIGs can be automically applied to the grid using OpenSCAP.
           </template>
-        </feature-left>
-        
-        <feature-right class="xs:mb-20" :text-margin="true">
-          <template #header>
-            <div class="text-center xs:text-left">
-              Federal Information Processing Standards (FIPS)
-            </div>
+          <template #header-bottom-right>
+            And Much More!
           </template>
-          <template #graphic>
-            <div>
-              <Graphic
-                file-name="appliance.jpg"
-                :size="20"
-              />
-            </div>
+          <template #body-bottom-right>
+            There are a number of other useful features included with Security Onion Pro. Refer to the comparison chart below to see all the amazing features the Pro license has to offer!
           </template>
-          <template #body>
-            <div class="text-center xs:text-left">
-              Support for enabling FIPS during OS installation. For more information about FIPS, please see
-              <a href="https://en.wikipedia.org/wiki/Federal_Information_Processing_Standards" class="underline">
-                https://en.wikipedia.org/wiki/Federal_Information_Processing_Standards.
-              </a>
-            </div>
-          </template>
-        </feature-right>
-        
-        <feature-left class="my-12">
-          <template #header>
-            <div class="text-center xs:text-left">
-              DoD Security Technical Implementation Guide (STIG) Compliance for the OS
-            </div>
-          </template>
-          <template #graphic>
-            <div>
-              <Graphic
-                file-name="appliance.jpg"
-                :size="20"
-              />
-            </div>
-          </template>
-          <template #body>
-            <div class="text-left">
-              Automatically apply STIGs to your Grid using OpenSCAP. For more information about STIGs, please see
-              <a href="https://public.cyber.mil/stigs/" class="underline">
-                https://public.cyber.mil/stigs/.
-              </a>
-            </div>
-          </template>
-        </feature-left>
-        
-        <feature-right class="xs:mb-20" :text-margin="true">
-          <template #header>
-            <div class="text-center xs:text-left">
-              External Notifications in SOC
-            </div>
-          </template>
-          <template #graphic>
-            <div>
-              <Graphic
-                class="shadow-xl rounded-md overflow-hidden"
-                :padding="false"
-                file-name="notify-pro-thumb.jpg"
-                :size="20"
-                :clickable="true"
-              />
-            </div>
-          </template>
-          <template #body>
-            <div class="text-center xs:text-left">
-              The Detections module, specifically Sigma rules, can be enabled to send outbound notifications upon an alert being created. By default, no outbound notifications are enabled in a Security Onion installation. However, with the Pro license applied to a grid, notifications can be quickly configured via the Configuration screen.
-            </div>
-          </template>
-        </feature-right>
-        
-        <feature-left class="my-12">
-          <template #header>
-            <div class="text-center xs:text-left">
-              Time Tracking inside of Cases
-            </div>
-          </template>
-          <template #graphic>
-            <div>
-              <Graphic
-                file-name="appliance.jpg"
-                :size="20"
-              />
-            </div>
-          </template>
-          <template #body>
-            <div class="text-left">
-              When adding a comment to a Case, you can also specify how many hours you spent working on that activity. You can then see the total time spent by all analysts in the Summary in the upper-right corner of the Case.
-            </div>
-          </template>
-        </feature-left>
-
-        <feature-right class="xs:mb-20" :text-margin="true">
-          <template #header>
-            <div class="text-center xs:text-left">
-              Guaranteed Message Delivery
-            </div>
-          </template>
-          <template #graphic>
-            <div>
-              <Graphic
-                class="shadow-xl rounded-md overflow-hidden"
-                :padding="false"
-                file-name="kafka-pro-thumb.jpg"
-                :size="20"
-                :clickable="true"
-              />
-            </div>
-          </template>
-          <template #body>
-            <div class="text-center xs:text-left">
-              If you need guaranteed message delivery, then you can enable Kafka which replaces Redis and Logstash on the Security Onion Manager node and Receiver nodes.
-            </div>
-          </template>
-        </feature-right>
-        
-        <feature-left class="my-12">
-          <template #header>
-            <div class="text-center xs:text-left">
-              Higher Priority Service Level Agreements (SLAs)
-            </div>
-          </template>
-          <template #graphic>
-            <div>
-              <Graphic
-                file-name="appliance.jpg"
-                :size="20"
-              />
-            </div>
-          </template>
-          <template #body>
-            <div class="text-left">
-              Receive faster service with the one business day initial response SLA included with Security Onion Pro. A four-business-hour initial response SLA is also available.
-            </div>
-          </template>
-        </feature-left>
-        
-        <feature-right class="xs:mb-12" :text-margin="true">
-          <template #header>
-            <div class="text-center xs:text-left">
-              Health Checks
-            </div>
-          </template>
-          <template #graphic>
-            <div>
-              <Graphic
-                file-name="appliance.jpg"
-                :size="20"
-              />
-            </div>
-          </template>
-          <template #body>
-            <div class="text-center xs:text-left">
-              Security Onion Pro includes two free 1-hour Health Checks per year.
-            </div>
-          </template>
-        </feature-right>
-        
-        <feature-left class="my-12">
-          <template #header>
-            <div class="text-center xs:text-left">
-              Offline Update Service Shipments
-            </div>
-          </template>
-          <template #graphic>
-            <div>
-              <Graphic
-                file-name="appliance.jpg"
-                :size="20"
-              />
-            </div>
-          </template>
-          <template #body>
-            <div class="text-left">
-              If you have an airgap deployment, we can ship two free offline updates per year when requested.
-            </div>
-          </template>
-        </feature-left>
-        
-        <feature-right class="xs:mb-20" :text-margin="true">
-          <template #header>
-            <div class="text-center xs:text-left">
-              Professional Services and Support
-            </div>
-          </template>
-          <template #graphic>
-            <div>
-              <Graphic
-                file-name="appliance.jpg"
-                :size="20"
-              />
-            </div>
-          </template>
-          <template #body>
-            <div class="text-center xs:text-left">
-              For customers running Security Onion on their hardware or smaller SOS appliances, Security Onion Pro includes twenty hours of professional services and support time. Services include architecture planning, deployment, tuning, break/fix support, parsing, and other services around Security Onion. Additional hours packages are available.
-            </div>
-          </template>
-        </feature-right>
-        
-        <feature-left class="my-12">
-          <template #header>
-            <div class="text-center xs:text-left">
-              Included with larger hardware appliances
-            </div>
-          </template>
-          <template #graphic>
-            <div>
-              <Graphic
-                file-name="sos-gf-front.jpg"
-                :size="20"
-              />
-            </div>
-          </template>
-          <template #body>
-            <div class="text-left">
-              Security Onion Pro is included with many of our larger hardware appliance models, such as the SOS SN7200, SOS SNNV, and SOS GoFast, at no additional charge. See our full appliance list at
-              <a href="https://securityonion.com/hardware" class="underline">
-                https://securityonion.com/hardware.
-              </a>
-            </div>
-          </template>
-        </feature-left>
-        
-        <feature-right class="xs:mb-20" :text-margin="true">
-          <template #header>
-            <div class="text-center xs:text-left">
-              Coverage for all the nodes in your Grid
-            </div>
-          </template>
-          <template #graphic>
-            <div>
-              <Graphic
-                file-name="appliance.jpg"
-                :size="20"
-              />
-            </div>
-          </template>
-          <template #body>
-            <div class="text-center xs:text-left">
-              The base license includes licensing for up to ten nodes, with additional node packs available for purchase.
-            </div>
-          </template>
-        </feature-right>
+        </four-panel-detail>
       </div>
     </ContentSection>
-    <ContentSection id="free-vs-pro" :bottom-margin="false">
+    <ContentSection id="comparison" :bottom-margin="false">
       <div class="flex flex-col items-center justify-center mx-1 xs:-mx-10 sm:mx-0">
         <SectionHeader class="mb-8">
-          Benefits of Purchasing Pro
+          Feature Comparison
         </SectionHeader>
         <FreeVsProTable />
       </div>
     </ContentSection>
-    <ContentSection id="hardwarehelp" :alternate="true">
+    <ContentSection id="services" :alternate="true">
+      <div class="px-6 xs:px-12 lg:px-32">
+        <SectionHeader class="mb-6">
+          Pro Support and Services
+        </SectionHeader>
+        <feature-right class="xs:mb-20" :text-margin="true">
+          <template #body>
+            <div class="text-center xs:text-left">
+              In addition to its many powerful features, the Pro license also includes a number of support and service perks for enterprise customers!
+            </div>
+          </template>
+        </feature-right>
+        <four-panel-detail class="">
+          <template #header-top-left>
+            Higher Priority Service Level Agreements (SLAs)
+          </template>
+          <template #body-top-left>
+            Receive faster service with the one business day initial response SLA included with Security Onion Pro. A four-business-hour initial response SLA is also available.
+          </template>
+          <template #header-top-right>
+            Support Hours
+          </template>
+          <template #body-top-right>
+            For customers running Security Onion on their hardware or smaller SOS appliances, Security Onion Pro includes twenty hours of professional services and support time. Services include architecture planning, deployment, tuning, break/fix support, parsing, and other services around Security Onion. Additional hours packages are available.
+          </template>
+          <template #header-bottom-left>
+            Offline Update Service Shipments
+          </template>
+          <template #body-bottom-left>
+            If you have an airgap deployment, we can ship two free offline updates per year when requested.
+          </template>
+          <template #header-bottom-right>
+            Health Checks
+          </template>
+          <template #body-bottom-right>
+            Security Onion Pro includes two free 1-hour Health Checks per year.
+          </template>
+        </four-panel-detail>
+      </div>
+    </ContentSection>
+    <ContentSection id="coverage" :alternate="false">
+      <div class="px-6 xs:px-12 lg:px-32">
+        <SectionHeader class="mb-6">
+          Pro Hardware and Coverage
+        </SectionHeader>
+        <two-panel-detail class="">
+          <template #header-left>
+            Included with Larger Hardware Appliances
+          </template>
+          <template #body-left>
+            Security Onion Pro is included with many of our larger hardware appliance models, such as the SOS SN7200, SOS SNNV, and SOS GoFast, at no additional charge. See our full appliance list at
+              <a href="https://securityonion.com/hardware" class="underline">
+                https://securityonion.com/hardware.
+              </a>
+          </template>
+          <template #header-right>
+            Broad Grid Coverage
+          </template>
+          <template #body-right>
+            The base license includes licensing for up to ten nodes, with additional node packs available for purchase.
+          </template>
+        </two-panel-detail>
+      </div>
+    </ContentSection>
+    <ContentSection id="pro-help" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32 -my-8">
         <action-callout :alternate="true" class="my-12" @button-click="sos.showContactModal({ text: 'Please contact me with more information about Security Onion Pro.', source: 'pro_purchasing_info' })">
           <template #info>
@@ -366,6 +165,7 @@
   import FeatureLeftAction from '~/components/features/FeatureLeftAction.vue'
   import FourPanelDetail from '~/components/features/FourPanelDetail'
   import SubHero from '~/components/hero/SubHero'
+  import TwoPanelDetail from '~/components/features/TwoPanelDetail.vue'
   
   export default {
     scrollToTop: true,
@@ -376,11 +176,12 @@
       FeatureLeftAction,
       FourPanelDetail,
       SubHero,
+      TwoPanelDetail,
     },
     data: () => ({
       sos,
       showModal: false,
-      links: [{ name: 'Features', id: 'pro-features' }, { name: 'Comparison', id: 'free-vs-pro' }]
+      links: [{ name: 'Features', id: 'features' }, { name: 'Comparison', id: 'comparison' }, { name: 'Services', id: 'services' }, { name: 'Coverage', id: 'coverage' }]
     })
   }
   </script>
