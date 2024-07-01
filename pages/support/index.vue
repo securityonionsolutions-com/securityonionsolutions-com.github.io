@@ -9,7 +9,7 @@
         Security Onion Solutions is the only official support provider.
         We've been helping catch the bad guys since 2014!
         <div class="flex justify-center">
-          <ActionCallout class="mt-1 xl:mt-4" @button-click="sos.showContactModal({ text: 'Please contact me with more information about purchasing support.', source: 'support_purchasing_info' })">
+          <ActionCallout :showInfo=false class="mt-1 xl:mt-4" @button-click="sos.showContactModal({ text: 'Please contact me with more information about purchasing support.', source: 'support_purchasing_info' })">
             <template #button-text>
               Purchase Support
             </template>
