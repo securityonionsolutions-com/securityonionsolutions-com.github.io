@@ -187,7 +187,7 @@
   
   <style scoped>
   .hero-support {
-    background: right bottom no-repeat url('/img/graphics/world.jpg');
+    background: right bottom no-repeat url('/img/graphics/dots.jpg');
   }
   </style>
   
