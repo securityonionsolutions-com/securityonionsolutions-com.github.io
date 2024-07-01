@@ -62,7 +62,7 @@
           </tr>
           <tr v-if="item.coming_soon" :key="'coming-soon-' + index" class="coming-soon-row">
             <td colspan="3" class="py-2 px-4 cltext-md lg:text-lg text-orange-600" :class="{ 'bg-gray-200': index % 2 == 0 }">
-              Coming Soon!
+              Coming soon!
             </td>
           </tr>
         </template>

@@ -29,9 +29,8 @@
         <feature-right class="xs:mb-20" :text-margin="true">
           <template #body>
             <div class="text-center xs:text-left">
-              Our customers have been asking for enterprise features so
-              we've spent the last few years building them!
-              Here are some of the enterprise features available with a Security Onion Pro license as of today:
+              Security Onion Pro includes enterprise-grade features commonly used by medium to large enterprises and government organizations.
+              Below are a few of these powerful features described in more detail.
             </div>
           </template>
         </feature-right>
@@ -40,19 +39,19 @@
             Notifications
           </template>
           <template #body-top-left>
-            By default, no outbound notifications are enabled in a Security Onion installation. However, With the Pro license applied to a grid, notifications can be quickly configured via the Configuration screen.
+            By default, no outbound notifications are enabled in a Security Onion installation. However, with the Pro license applied to a grid, outbound notifications, such as emails, Slack messages, and much more, can be quickly configured via the Configuration screen.
           </template>
           <template #header-top-right>
             Open ID Connect (OIDC)
           </template>
           <template #body-top-right>
-            SOC supports single sign-on (SSO) authentication via OpenID Connect (OIDC) to one of several OIDC-compatible identity providers. For example, users can login to Security Onion using an Active Directory user, a GitHub user, a Google account, an Auth0 account, etc.
+            Security Onion Console (SOC) supports single sign-on (SSO) authentication via OpenID Connect (OIDC) to one of several OIDC-compatible identity providers. For example, users can login to Security Onion using an Active Directory user, a GitHub user, a Google account, an Auth0 account, etc.
           </template>
           <template #header-bottom-left>
             Military-Grade Protections
           </template>
           <template #body-bottom-left>
-            The Pro license offers DoD Security Technical Implementation Guide (STIG) compliance for the OS. STIGs can be automically applied to the grid using OpenSCAP.
+            The Pro license offers DoD Security Technical Implementation Guide (STIG) compliance for the OS. STIGs can be automatically applied to the grid using OpenSCAP.
           </template>
           <template #header-bottom-right>
             And Much More!
@@ -88,25 +87,25 @@
             Higher Priority Service Level Agreements (SLAs)
           </template>
           <template #body-top-left>
-            Receive faster service with the one business day initial response SLA included with Security Onion Pro. A four-business-hour initial response SLA is also available.
+            Security Onion Pro includes a one-business-day initial response SLA. A four-business-hour initial response SLA is also available.
           </template>
           <template #header-top-right>
             Support Hours
           </template>
           <template #body-top-right>
-            For customers running Security Onion on their hardware or smaller SOS appliances, Security Onion Pro includes twenty hours of professional services and support time. Services include architecture planning, deployment, tuning, break/fix support, parsing, and other services around Security Onion. Additional hours packages are available.
+            For customers running Security Onion on their hardware or smaller SOS appliances, purchasing Security Onion Pro includes twenty hours of professional services and support time. Services include architecture planning, deployment, tuning, break/fix support, parsing, and more. Additional hours packages are available.
           </template>
           <template #header-bottom-left>
             Offline Update Service Shipments
           </template>
           <template #body-bottom-left>
-            If you have an airgap deployment, we can ship two free offline updates per year when requested.
+            For airgap deployments, Security Onion Pro includes shipments of up to two free offline updates per year, when requested.
           </template>
           <template #header-bottom-right>
             Health Checks
           </template>
           <template #body-bottom-right>
-            Security Onion Pro includes two free 1-hour Health Checks per year.
+            Security Onion Pro includes two free one-hour health checks per year. Our Security Onion experts will assist in reviewing the health and state of your grid.
           </template>
         </four-panel-detail>
       </div>

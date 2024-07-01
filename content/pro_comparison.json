@@ -9,7 +9,7 @@
       "feature": "Alerting",
       "free": true,
       "premium": true,
-      "caption": "Alerts interface with drilldown"
+      "caption": "Alerts interface with drilldown, acknowledgement, and escalation"
     },
     {
       "feature": "Threat Hunting",
@@ -21,13 +21,13 @@
       "feature": "Dashboards with Visualizations",
       "free": true,
       "premium": true,
-      "caption": "Charts and graphs"
+      "caption": "Includes prebuilt and supports custom dashboards"
     },
     {
       "feature": "Case Management",
       "free": true,
       "premium": true,
-      "caption": "Escalate logs and track observables"
+      "caption": "Escalate events and track observables"
     },
     {
       "feature": "Analyzers",
@@ -39,31 +39,31 @@
       "feature": "Detections",
       "free": true,
       "premium": true,
-      "caption": "Create and manage rules"
+      "caption": "Import and manage Sigma, Suricata, and YARA rules"
     },
     {
       "feature": "Audit Trail",
       "free": true,
       "premium": true,
-      "caption": "Record detection history"
+      "caption": "Automatically capture case and detection change history"
     },
     {
       "feature": "User Management",
       "free": true,
       "premium": true,
-      "caption": "Role-Based Access Control (RBAC)"
+      "caption": "Includes Role-Based Access Control (RBAC)"
     },
     {
       "feature": "Web-Based UI Configuration",
       "free": true,
       "premium": true,
-      "caption": "Easily configure preferences"
+      "caption": "Easily modify and customize grid configuration"
     },
     {
       "feature": "Grid Management",
       "free": true,
       "premium": true,
-      "caption": "Administer grid members"
+      "caption": "Manage grid node membership within the console UI"
     },
     {
       "feature": "Grid Monitoring",
@@ -72,76 +72,106 @@
       "caption": "Monitor grid status and health"
     },
     {
+      "feature": "Grid Remote Control",
+      "free": true,
+      "premium": true,
+      "caption": "Reboot nodes, import events, and more"
+    },
+    {
       "feature": "Cyberchef Integration",
       "free": true,
       "premium": true,
-      "caption": "Console access"
+      "caption": "Translate unusual data on the fly"
     },
     {
       "feature": "Packet Metadata",
       "free": true,
       "premium": true,
-      "caption": "Suricata and Zeek"
+      "caption": "Parse and classify network traffic using Suricata or Zeek"
     },
     {
-      "feature": "PCAP",
+      "feature": "Packet Capture (PCAP)",
       "free": true,
       "premium": true,
-      "caption": "Suricata and Stenographer"
+      "caption": "View and download raw packet data using Suricata or Stenographer"
     },
     {
       "feature": "Endpoint Monitoring",
       "free": true,
       "premium": true,
-      "caption": "Query endpoint logs"
+      "caption": "Monitor organization's entire digital footprint for software changes and much more"
     },
     {
       "feature": "Fleet Integration",
       "free": true,
       "premium": true,
-      "caption": "Elastic Fleet access"
+      "caption": "Monitor status of endpoints"
     },
     {
       "feature": "Open ID Connect (OIDC)",
       "free": false,
       "premium": true,
-      "caption": "SSO authentication"
+      "caption": "SSO authentication via popular OIDC providers"
     },
     {
       "feature": "Data at Rest Encryption",
       "free": false,
       "premium": true,
-      "caption": "Storage-level encryption"
+      "caption": "Storage-level encryption (LUKS)"
     },
     {
       "feature": "Federal Information Processing Standards (FIPS)",
       "free": false,
       "premium": true,
-      "caption": "Enable during OS installation"
+      "caption": "Strict organizational policy compliance"
     },
     {
       "feature": "STIG Compliance for the OS",
       "free": false,
       "premium": true,
-      "caption": "Apply to the grid using OpenSCAP"
+      "caption": "Strict organizational policy compliance"
     },
     {
-      "feature": "External Notifications in SOC",
+      "feature": "External Notifications",
       "free": false,
       "premium": true,
-      "caption": "Send outbound notifications upon alert creation"
+      "caption": "Quickly configure outbound notifications upon alert creation"
     },
     {
       "feature": "Time Tracking",
       "free": false,
       "premium": true,
-      "caption": "Track time spent by all analysts"
+      "caption": "Track time spent resolving cases"
     },
     {
       "feature": "Guaranteed Message Delivery",
       "free": false,
       "premium": true,
-      "caption": "Enable Kafka on Manager and Receiver nodes"
+      "caption": "Ensure all events and logs are recorded"
+    },
+    {
+      "feature": "Enhanced SLA Options",
+      "free": false,
+      "premium": true,
+      "caption": "Additional Service Level Agreements (SLAs) available"
+    },
+    {
+      "feature": "Professional Support",
+      "free": false,
+      "premium": true,
+      "caption": "Professional services and email/phone/screenshare support hours included"
+    },
+    {
+      "feature": "Airgap Update Assistance",
+      "free": false,
+      "premium": true,
+      "caption": "Physical media provided"
+    },
+    {
+      "feature": "Health Checks",
+      "free": false,
+      "premium": true,
+      "caption": "Includes health checks with Security Onion support"
     },
     {
       "feature": "Manager of Managers",
@@ -157,12 +187,6 @@
     },
     {
       "feature": "Reporting and Analytics",
-      "free": false,
-      "premium": true,
-      "coming_soon": true
-    },
-    {
-      "feature": "Additional Notification Enhancements",
       "free": false,
       "premium": true,
       "coming_soon": true
