@@ -55,15 +55,17 @@
               <icon v-if="!item.premium" name="fa-solid:times-circle" />
             </td>
           </tr>
-          <tr v-if="item.caption" :key="'caption-' + index" class="caption-row">
-            <td colspan="3" class="py-2 px-4 cltext-md lg:text-lg text-gray-700" :class="{ 'bg-gray-200': index % 2 == 0 }">
+          <tr v-if="item.caption" :key="'caption-' + index" class="caption-row" :class="{ 'bg-gray-200': index % 2 == 0 }">
+            <td colspan="1" class="py-2 px-4 cltext-md lg:text-lg text-gray-700">
               {{ item.caption }}
             </td>
+            <td colspan="2" class="py-2 px-4 cltext-md lg:text-lg text-gray-700" />
           </tr>
-          <tr v-if="item.coming_soon" :key="'coming-soon-' + index" class="coming-soon-row">
-            <td colspan="3" class="py-2 px-4 cltext-md lg:text-lg text-orange-600" :class="{ 'bg-gray-200': index % 2 == 0 }">
+          <tr v-if="item.coming_soon" :key="'coming-soon-' + index" class="coming-soon-row" :class="{ 'bg-gray-200': index % 2 == 0 }">
+            <td colspan="1" class="py-2 px-4 cltext-md lg:text-lg text-orange-600">
               Coming soon!
             </td>
+            <td colspan="2" class="py-2 px-4 cltext-md lg:text-lg text-gray-700" />
           </tr>
         </template>
       </tbody>
@@ -97,6 +99,8 @@ table {
   font-style: italic;
   padding-top: 0rem;
   padding-bottom: 0.5rem;
+  white-space: normal;
+  word-wrap: break-word;
 }
 .coming-soon-row td {
   text-align: left;

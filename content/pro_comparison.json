@@ -1,9 +1,9 @@
 { "features": [
     {
-      "feature": "Multiple Installation Options",
+      "feature": "Flexible Installation Options",
       "free": true,
       "premium": true,
-      "caption": "Network-based, ISO-based, and airgap"
+      "caption": "Internet-connected and airgap"
     },
     {
       "feature": "Alerting",
@@ -172,24 +172,6 @@
       "free": false,
       "premium": true,
       "caption": "Includes health checks with Security Onion support"
-    },
-    {
-      "feature": "Manager of Managers",
-      "free": false,
-      "premium": true,
-      "coming_soon": true
-    },
-    {
-      "feature": "API Access with Service Accounts",
-      "free": false,
-      "premium": true,
-      "coming_soon": true
-    },
-    {
-      "feature": "Reporting and Analytics",
-      "free": false,
-      "premium": true,
-      "coming_soon": true
     }
   ]
 }                        

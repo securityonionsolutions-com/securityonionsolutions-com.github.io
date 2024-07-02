@@ -62,15 +62,7 @@
         </four-panel-detail>
       </div>
     </ContentSection>
-    <ContentSection id="comparison" :bottom-margin="false">
-      <div class="flex flex-col items-center justify-center mx-1 xs:-mx-10 sm:mx-0">
-        <SectionHeader class="mb-8">
-          Feature Comparison
-        </SectionHeader>
-        <FreeVsProTable />
-      </div>
-    </ContentSection>
-    <ContentSection id="services" :alternate="true">
+    <ContentSection id="services" :alternate="false">
       <div class="px-6 xs:px-12 lg:px-32">
         <SectionHeader class="mb-6">
           Pro Support and Services
@@ -110,7 +102,7 @@
         </four-panel-detail>
       </div>
     </ContentSection>
-    <ContentSection id="coverage" :alternate="false">
+    <ContentSection id="coverage" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32">
         <SectionHeader class="mb-6">
           Pro Hardware and Coverage
@@ -120,9 +112,9 @@
             Included with Larger Hardware Appliances
           </template>
           <template #body-left>
-            Security Onion Pro is included with many of our larger hardware appliance models, such as the SOS SN7200, SOS SNNV, and SOS GoFast, at no additional charge. See our full appliance list at
+            Security Onion Pro is included with many of our larger hardware appliance models, such as the SOS SN7200, SOS SNNV, and SOS GoFast, at no additional charge. See our full appliance list
               <a href="https://securityonion.com/hardware" class="underline">
-                https://securityonion.com/hardware.
+                here.
               </a>
           </template>
           <template #header-right>
@@ -132,6 +124,14 @@
             The base license includes licensing for up to ten nodes, with additional node packs available for purchase.
           </template>
         </two-panel-detail>
+      </div>
+    </ContentSection>
+    <ContentSection id="comparison" :bottom-margin="false">
+      <div class="flex flex-col items-center justify-center mx-1 xs:-mx-10 sm:mx-0">
+        <SectionHeader class="mb-8">
+          Community vs Pro Comparison
+        </SectionHeader>
+        <FreeVsProTable />
       </div>
     </ContentSection>
     <ContentSection id="pro-help" :alternate="true">
@@ -180,7 +180,7 @@
     data: () => ({
       sos,
       showModal: false,
-      links: [{ name: 'Features', id: 'features' }, { name: 'Comparison', id: 'comparison' }, { name: 'Services', id: 'services' }, { name: 'Coverage', id: 'coverage' }]
+      links: [{ name: 'Features', id: 'features' }, { name: 'Services', id: 'services' }, { name: 'Coverage', id: 'coverage' }, { name: 'Comparison', id: 'comparison' }]
     })
   }
   </script>
