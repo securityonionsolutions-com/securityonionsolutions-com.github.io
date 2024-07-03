@@ -1,15 +1,15 @@
 { "features": [
     {
-      "feature": "Multiple Installation Options",
+      "feature": "Flexible Installation Options",
       "free": true,
       "premium": true,
-      "caption": "Network-based, ISO-based, and airgap"
+      "caption": "Internet-connected and airgap"
     },
     {
       "feature": "Alerting",
       "free": true,
       "premium": true,
-      "caption": "Alerts interface with drilldown, acknowledgement, and escalation"
+      "caption": "Triggers host and network (NIDS) alerts and provides user interface with drilldown, acknowledgement, and escalation"
     },
     {
       "feature": "Threat Hunting",
@@ -90,7 +90,7 @@
       "caption": "Parse and classify network traffic using Suricata or Zeek"
     },
     {
-      "feature": "Packet Capture (PCAP)",
+      "feature": "Packet Capture (PCAP) Storage and Retrieval",
       "free": true,
       "premium": true,
       "caption": "View and download raw packet data using Suricata or Stenographer"
@@ -106,6 +106,24 @@
       "free": true,
       "premium": true,
       "caption": "Monitor status of endpoints"
+    },
+    {
+      "feature": "Fully Scalable Deployments",
+      "free": true,
+      "premium": true,
+      "caption": "Add new sensor and search nodes as your enterprise grows"
+    },
+    {
+      "feature": "Intrusion Detection Honeypots (IDH)",
+      "free": true,
+      "premium": true,
+      "caption": "IDH nodes are supported as a Security Onion grid member"
+    },
+    {
+      "feature": "Mitre ATT&CK Navigator",
+      "free": true,
+      "premium": true,
+      "caption": "Use the Navigator to visualize defensive coverage"
     },
     {
       "feature": "Open ID Connect (OIDC)",
@@ -172,24 +190,6 @@
       "free": false,
       "premium": true,
       "caption": "Includes health checks with Security Onion support"
-    },
-    {
-      "feature": "Manager of Managers",
-      "free": false,
-      "premium": true,
-      "coming_soon": true
-    },
-    {
-      "feature": "API Access with Service Accounts",
-      "free": false,
-      "premium": true,
-      "coming_soon": true
-    },
-    {
-      "feature": "Reporting and Analytics",
-      "free": false,
-      "premium": true,
-      "coming_soon": true
     }
   ]
 }                        
