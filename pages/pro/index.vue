@@ -133,6 +133,23 @@
         <FreeVsProTable />
       </div>
     </ContentSection>
+    <ContentSection id="faq" :alternate="true">
+      <div class="px-6 xs:px-12 lg:px-32">
+        <SectionHeader class="mb-6">
+          F.A.Q.
+        </SectionHeader>
+        <feature-right>
+          <template #body>
+            <div class="text-center xs:text-left">
+              <b>If I purchase Security Onion Pro, do I have to rebuild my existing deployment?</b><br><br>
+              In most cases, you can simply add the Security Onion Pro license key to your existing deployment to enable the enterprise features. An exception would be things like disk encryption that must be enabled during installation.<br><br>
+              <b>If I am a free user and won't be purchasing Security Onion Pro, will there be any changes?</b><br><br>
+              No, you can continue using the existing Security Onion features that you use today.
+            </div>
+          </template>
+        </feature-right>
+      </div>
+    </ContentSection>
     <ContentSection id="pro-help" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32 -my-8">
         <action-callout :alternate="true" class="my-12" @button-click="sos.showContactModal({ text: 'Please contact me with more information about Security Onion Pro.', source: 'pro_purchasing_info' })">
@@ -179,7 +196,7 @@
     data: () => ({
       sos,
       showModal: false,
-      links: [{ name: 'Features', id: 'features' }, { name: 'Services', id: 'services' }, { name: 'Coverage', id: 'coverage' }, { name: 'Comparison', id: 'comparison' }]
+      links: [{ name: 'Features', id: 'features' }, { name: 'Services', id: 'services' }, { name: 'Coverage', id: 'coverage' }, { name: 'Comparison', id: 'comparison' }, { name: 'FAQ', id: 'faq' }]
     })
   }
   </script>
