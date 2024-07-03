@@ -48,10 +48,10 @@
             Security Onion Console (SOC) supports single sign-on (SSO) authentication via OpenID Connect (OIDC) to one of several OIDC-compatible identity providers. For example, users can login to Security Onion using an Active Directory user, a GitHub user, a Google account, an Auth0 account, etc.
           </template>
           <template #header-bottom-left>
-            Military-Grade Protections
+            DoD-Compliant Protections
           </template>
           <template #body-bottom-left>
-            The Pro license offers DoD Security Technical Implementation Guide (STIG) compliance for the OS. STIGs can be automatically applied to the grid using OpenSCAP.
+            The Pro license offers DoD Security Technical Implementation Guide (STIG) compliance for the OS. Federal Information Processing Standards (FIPS) and storage-level encryption (LUKS) are included.
           </template>
           <template #header-bottom-right>
             And Much More!
@@ -112,10 +112,9 @@
             Included with Larger Hardware Appliances
           </template>
           <template #body-left>
-            Security Onion Pro is included with many of our larger hardware appliance models, such as the SOS SN7200, SOS SNNV, and SOS GoFast, at no additional charge. See our full appliance list
-              <a href="https://securityonion.com/hardware" class="underline">
-                here.
-              </a>
+            Security Onion Pro is included with many of our larger hardware appliance models, such as the SOS SN7200, SOS SNNV, and SOS GoFast, at no additional charge. See our full appliance list on the
+            <a href="https://securityonion.com/hardware" class="underline">Hardware</a>
+            page.
           </template>
           <template #header-right>
             Broad Grid Coverage
