@@ -45,13 +45,13 @@
             Open ID Connect (OIDC)
           </template>
           <template #body-top-right>
-            Security Onion Console (SOC) supports single sign-on (SSO) authentication via OpenID Connect (OIDC) to one of several OIDC-compatible identity providers. For example, users can login to Security Onion using an Active Directory user, a GitHub user, a Google account, an Auth0 account, etc.
+            Security Onion Console (SOC) supports single sign-on (SSO) authentication via OpenID Connect (OIDC) to one of several OIDC-compatible identity providers. For example, users can log in to Security Onion using an Active Directory user, a GitHub user, a Google account, an Auth0 account, etc.
           </template>
           <template #header-bottom-left>
             DoD-Compliant Protections
           </template>
           <template #body-bottom-left>
-            The Pro license offers DoD Security Technical Implementation Guide (STIG) compliance for the OS. Federal Information Processing Standards (FIPS) and storage-level encryption (LUKS) are included.
+            The Pro license offers DoD Security Technical Implementation Guide (STIG) compliance for CAT 1 issues of the OS. Federal Information Processing Standards (FIPS) and storage-level AES 256 encryption (LUKS) are included.
           </template>
           <template #header-bottom-right>
             And Much More!
@@ -120,7 +120,8 @@
             Broad Grid Coverage
           </template>
           <template #body-right>
-            The base license includes licensing for up to ten nodes, with additional node packs available for purchase.
+            The base license includes licensing for up to ten Security Onion
+            <a href="https://docs.securityonion.net/en/2.4/architecture.html#node-types" class="underline">nodes</a>, with additional node packs available for purchase.
           </template>
         </two-panel-detail>
       </div>
@@ -140,12 +141,7 @@
         </SectionHeader>
         <feature-right>
           <template #body>
-            <div class="text-center xs:text-left">
-              <b>If I purchase Security Onion Pro, do I have to rebuild my existing deployment?</b><br><br>
-              In most cases, you can simply add the Security Onion Pro license key to your existing deployment to enable the enterprise features. An exception would be things like disk encryption that must be enabled during installation.<br><br>
-              <b>If I am a free user and won't be purchasing Security Onion Pro, will there be any changes?</b><br><br>
-              No, you can continue using the existing Security Onion features that you use today.
-            </div>
+            <ProFAQ />
           </template>
         </feature-right>
       </div>

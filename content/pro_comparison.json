@@ -63,7 +63,7 @@
       "feature": "Grid Management",
       "free": true,
       "premium": true,
-      "caption": "Manage grid node membership within the console UI"
+      "caption": "Manage grid node membership within the SOC UI"
     },
     {
       "feature": "Grid Monitoring",
@@ -81,19 +81,19 @@
       "feature": "Cyberchef Integration",
       "free": true,
       "premium": true,
-      "caption": "Translate unusual data on the fly"
+      "caption": "Perform simple and complex data manipulation tasks quickly in a web browser"
     },
     {
       "feature": "Packet Metadata",
       "free": true,
       "premium": true,
-      "caption": "Parse and classify network traffic using Suricata or Zeek"
+      "caption": "Parse and classify network traffic at OSI layers 3, 4, and 7 using Zeek or Suricata"
     },
     {
       "feature": "Packet Capture (PCAP) Storage and Retrieval",
       "free": true,
       "premium": true,
-      "caption": "View and download raw packet data using Suricata or Stenographer"
+      "caption": "View and download raw packet data using Stenographer or Suricata"
     },
     {
       "feature": "Endpoint Monitoring",
@@ -117,13 +117,19 @@
       "feature": "Intrusion Detection Honeypots (IDH)",
       "free": true,
       "premium": true,
-      "caption": "IDH nodes are supported as a Security Onion grid member"
+      "caption": "Build IDH nodes which mimic services and connect these nodes to your Security Onion grid"
     },
     {
       "feature": "Mitre ATT&CK Navigator",
       "free": true,
       "premium": true,
       "caption": "Use the Navigator to visualize defensive coverage"
+    },
+    {
+      "feature": "Limited Live Response",
+      "free": true,
+      "premium": true,
+      "caption": "Use osquery to collect data on the fly or on a schedule from your endpoints and servers"
     },
     {
       "feature": "Open ID Connect (OIDC)",
@@ -135,25 +141,25 @@
       "feature": "Data at Rest Encryption",
       "free": false,
       "premium": true,
-      "caption": "Storage-level encryption (LUKS)"
+      "caption": "Storage-level AES 256 encryption (LUKS)"
     },
     {
       "feature": "Federal Information Processing Standards (FIPS)",
       "free": false,
       "premium": true,
-      "caption": "Strict organizational policy compliance"
+      "caption": "Standardized security policy compliance for your enterprise"
     },
     {
       "feature": "STIG Compliance for the OS",
       "free": false,
       "premium": true,
-      "caption": "Strict organizational policy compliance"
+      "caption": "Strict organizational policy compliance for CAT 1 issues of the OS"
     },
     {
       "feature": "External Notifications",
       "free": false,
       "premium": true,
-      "caption": "Quickly configure outbound notifications upon alert creation"
+      "caption": "Quickly configure outbound notifications when alerts are generated"
     },
     {
       "feature": "Time Tracking",
@@ -165,7 +171,7 @@
       "feature": "Guaranteed Message Delivery",
       "free": false,
       "premium": true,
-      "caption": "Ensure all events and logs are recorded"
+      "caption": "Ensure all events and logs are recorded using Kafka"
     },
     {
       "feature": "Enhanced SLA Options",
@@ -183,13 +189,13 @@
       "feature": "Airgap Update Assistance",
       "free": false,
       "premium": true,
-      "caption": "Physical media provided"
+      "caption": "Physical media provided up to twice per year"
     },
     {
       "feature": "Health Checks",
       "free": false,
       "premium": true,
-      "caption": "Includes health checks with Security Onion support"
+      "caption": "Includes two health checks of your Security Onion grid per year"
     }
   ]
 }                        
