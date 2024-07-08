@@ -1,0 +1,51 @@
+{ "faq": [
+    {
+      "question": "If I purchase Security Onion Pro, do I have to rebuild my existing deployment?",
+      "answer": "In most cases, you can simply add the Security Onion Pro license key to your existing deployment to enable the enterprise features. An exception would be things like disk encryption that must be enabled during installation."
+    },
+    {
+      "question": "If I am a free user and won't be purchasing Security Onion Pro, will there be any changes?",
+      "answer": "No, you can continue using the existing Security Onion features that you use today."
+    },
+    {
+      "question": "The base license includes licensing for up to ten Security Onion nodes. Do firewalls, endpoints, and other external data sources count as nodes?",
+      "answer": "No. The license is based on the number of nodes running Security Onion which are joined to the Security Onion Pro grid. Examples include Manager Node, Receiver Nodes, Search Nodes, Forward Nodes, Heavy Nodes, IDH Nodes, Fleet Nodes, etc. Pricing is not tied to the number of data sources."
+    },
+    {
+      "question": "I am an existing paid customer of Security Onion Solutions. Do I need to purchase Pro to access its capabilities?",
+      "answer": "You may qualify for Security Onion Pro at little or no additional cost. Contact your account manager for details."
+    },
+    {
+      "question": "How long are licenses valid?",
+      "answer": "You can purchase Security Onion Pro for 1-5 year terms."
+    },
+    {
+      "question": "Does Security Onion Pro automatically renew?",
+      "answer": "No. Security Onion Solutions will contact you in advance of your renewal date to start the renewal process."
+    },
+    {
+      "question": "Is Security Onion Pro supported in my hybrid grid?",
+      "answer": "Yes! You can run Security Onion in hybrid grids of cloud images, customer hardware, and Security Onion appliances. Contact us for additional details."
+    },
+    {
+      "question": "What if my grid exceeds the number of nodes in my license?",
+      "answer": "You can acquire additional node packs and receive a new license key to use without impacting the data in your current grid."
+    },
+    {
+      "question": "What happens when the license expires?",
+      "answer": "The Security Onion Console (SOC) will remind users starting 45 days before license expiration. If the license expires, Security Onion will revert to community Security Onion until the license key is updated. If you intend to let your license expire, you should notify the Security Onion Solutions Support Team in advance."
+    },
+    {
+      "question": "Does the license include higher tier licensing for Elastic or other products within Security Onion?",
+      "answer": "At this time, no other paid licenses are included with Security Onion Pro."
+    },
+    {
+      "question": "Can I buy the license through a reseller?",
+      "answer": "Yes. Contact us for more details."
+    },
+    {
+      "question": "Is an evaluation license available?",
+      "answer": "Your organization may be eligible for an evaluation license. Contact us for more details."
+    }
+  ]
+}

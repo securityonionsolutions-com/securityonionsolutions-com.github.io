@@ -1,0 +1,201 @@
+{ "features": [
+    {
+      "feature": "Flexible Installation Options",
+      "free": true,
+      "premium": true,
+      "caption": "Internet-connected and airgap"
+    },
+    {
+      "feature": "Alerting",
+      "free": true,
+      "premium": true,
+      "caption": "Triggers host and network (NIDS) alerts and provides user interface with drilldown, acknowledgement, and escalation"
+    },
+    {
+      "feature": "Threat Hunting",
+      "free": true,
+      "premium": true,
+      "caption": "Focused Hunt interface"
+    },
+    {
+      "feature": "Dashboards with Visualizations",
+      "free": true,
+      "premium": true,
+      "caption": "Includes prebuilt and supports custom dashboards"
+    },
+    {
+      "feature": "Case Management",
+      "free": true,
+      "premium": true,
+      "caption": "Escalate events and track observables"
+    },
+    {
+      "feature": "Analyzers",
+      "free": true,
+      "premium": true,
+      "caption": "Gather context of observables"
+    },
+    {
+      "feature": "Detections",
+      "free": true,
+      "premium": true,
+      "caption": "Import and manage Sigma, Suricata, and YARA rules"
+    },
+    {
+      "feature": "Audit Trail",
+      "free": true,
+      "premium": true,
+      "caption": "Automatically capture case and detection change history"
+    },
+    {
+      "feature": "User Management",
+      "free": true,
+      "premium": true,
+      "caption": "Includes Role-Based Access Control (RBAC)"
+    },
+    {
+      "feature": "Web-Based UI Configuration",
+      "free": true,
+      "premium": true,
+      "caption": "Easily modify and customize grid configuration"
+    },
+    {
+      "feature": "Grid Management",
+      "free": true,
+      "premium": true,
+      "caption": "Manage grid node membership within the SOC UI"
+    },
+    {
+      "feature": "Grid Monitoring",
+      "free": true,
+      "premium": true,
+      "caption": "Monitor grid status and health"
+    },
+    {
+      "feature": "Grid Remote Control",
+      "free": true,
+      "premium": true,
+      "caption": "Reboot nodes, import events, and more"
+    },
+    {
+      "feature": "Cyberchef Integration",
+      "free": true,
+      "premium": true,
+      "caption": "Perform simple and complex data manipulation tasks quickly in a web browser"
+    },
+    {
+      "feature": "Packet Metadata",
+      "free": true,
+      "premium": true,
+      "caption": "Parse and classify network traffic at OSI layers 3, 4, and 7 using Zeek or Suricata"
+    },
+    {
+      "feature": "Packet Capture (PCAP) Storage and Retrieval",
+      "free": true,
+      "premium": true,
+      "caption": "View and download raw packet data using Stenographer or Suricata"
+    },
+    {
+      "feature": "Endpoint Monitoring",
+      "free": true,
+      "premium": true,
+      "caption": "Monitor organization's entire digital footprint for software changes and much more"
+    },
+    {
+      "feature": "Fleet Integration",
+      "free": true,
+      "premium": true,
+      "caption": "Monitor status of endpoints"
+    },
+    {
+      "feature": "Fully Scalable Deployments",
+      "free": true,
+      "premium": true,
+      "caption": "Add new sensor and search nodes as your enterprise grows"
+    },
+    {
+      "feature": "Intrusion Detection Honeypots (IDH)",
+      "free": true,
+      "premium": true,
+      "caption": "Build IDH nodes which mimic services and connect these nodes to your Security Onion grid"
+    },
+    {
+      "feature": "Mitre ATT&CK Navigator",
+      "free": true,
+      "premium": true,
+      "caption": "Use the Navigator to visualize defensive coverage"
+    },
+    {
+      "feature": "Limited Live Response",
+      "free": true,
+      "premium": true,
+      "caption": "Use osquery to collect data on the fly or on a schedule from your endpoints and servers"
+    },
+    {
+      "feature": "Open ID Connect (OIDC)",
+      "free": false,
+      "premium": true,
+      "caption": "SSO authentication via popular OIDC providers"
+    },
+    {
+      "feature": "Data at Rest Encryption",
+      "free": false,
+      "premium": true,
+      "caption": "Storage-level AES 256 encryption (LUKS)"
+    },
+    {
+      "feature": "Federal Information Processing Standards (FIPS)",
+      "free": false,
+      "premium": true,
+      "caption": "Standardized security policy compliance for your enterprise"
+    },
+    {
+      "feature": "STIG Compliance for the OS",
+      "free": false,
+      "premium": true,
+      "caption": "Strict organizational policy compliance for CAT 1 issues of the OS"
+    },
+    {
+      "feature": "External Notifications",
+      "free": false,
+      "premium": true,
+      "caption": "Quickly configure outbound notifications when alerts are generated"
+    },
+    {
+      "feature": "Time Tracking",
+      "free": false,
+      "premium": true,
+      "caption": "Track time spent resolving cases"
+    },
+    {
+      "feature": "Guaranteed Message Delivery",
+      "free": false,
+      "premium": true,
+      "caption": "Ensure all events and logs are recorded using Kafka"
+    },
+    {
+      "feature": "Enhanced SLA Options",
+      "free": false,
+      "premium": true,
+      "caption": "Additional Service Level Agreements (SLAs) available"
+    },
+    {
+      "feature": "Professional Support",
+      "free": false,
+      "premium": true,
+      "caption": "Professional services and email/phone/screenshare support hours included"
+    },
+    {
+      "feature": "Airgap Update Assistance",
+      "free": false,
+      "premium": true,
+      "caption": "Physical media provided up to twice per year"
+    },
+    {
+      "feature": "Health Checks",
+      "free": false,
+      "premium": true,
+      "caption": "Includes two health checks of your Security Onion grid per year"
+    }
+  ]
+}                        
