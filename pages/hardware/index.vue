@@ -11,9 +11,6 @@
             Introducing the newest generation of Security Onion appliances. 
             With upgraded storage, network, processing, and memory these new 
             appliances will make it even easier to make your adversaries cry!
-            <p class="my-3">
-              <i>Available July 1, 2024</i>
-            </p>
           </div>
         </div>
         <div class="flex justify-center">
