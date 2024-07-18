@@ -3,12 +3,12 @@
     <PageNav page-name="Home" :links="links" />
     <SubHero class="hero text-center">
       <template #header>
-        Detections Module<br>Now Available
+        Security Onion Conference 2024
       </template>
       <template #body>
-        Upgrade or download Security Onion to take advantage of this new, <i>free</i> feature for managing all rule types in a single, consolidated interface!
+        Come join us this fall in beautiful Augusta, Georgia, for our 11th annual Security Onion conference.
         <div class="flex justify-center">
-          <SoButton class="mt-4" link="/software#features">
+          <SoButton class="mt-4" link="/conference">
             Learn More
           </SoButton>
         </div>
@@ -226,6 +226,6 @@ export default {
 
 <style scoped>
 .hero {
-  background: right no-repeat url('/img/graphics/detections.gif');
+  background: right no-repeat url('/img/graphics/augusta_map.png');
 }
 </style>
