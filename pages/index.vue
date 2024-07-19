@@ -115,14 +115,15 @@
           Our History
         </section-header>
         <div class="flex flex-row flex-wrap justify-center content-center mb-4">
-          <div class="flex flex-col justify-center items-center md:w-1/2 lg:w-2/3 lg:pr-8 xl:pl-4 pb-12 lg:pb-0">
-            <img class="object-contain mb-8 overflow-hidden rounded-md w-5/6" :class="[currentEvent!=0 ? 'shadow-xl' : '']" :src="eventObj().img">
+          <div class="md:w-1/2 lg:w-1/3 pr-12">
+            <Timeline @timeline-click="setEventGraphic($event)" />
+          </div>
+          <div class="flex flex-col items-center md:w-1/2 lg:w-2/3 lg:pr-8 xl:pl-4 pb-12 lg:pb-0">
+            <div class="text-lg mb-20 hidden lg:block">Click on a timeline event, on the left, to learn more.</div>
+            <img class="object-contain my-10 overflow-hidden rounded-md w-5/6" :class="[currentEvent!=0 ? 'shadow-xl' : '']" :src="eventObj().img">
             <div class="text-xl text-center w-4/5">
               {{ eventObj().text }}
             </div>
-          </div>
-          <div class="md:w-1/2 lg:w-1/3 pr-12">
-            <Timeline @timeline-click="setEventGraphic($event)" />
           </div>
         </div>
       </div>
