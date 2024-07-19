@@ -11,13 +11,13 @@
       "Speed": 25,
       "Retention": 25
     },
-    "img_front_thumb": "sos-1u-front-thumb.jpg",
-    "img_front": "sos-1u-front.jpg",
-    "img_back_thumb.disabled": "sos-1u-ethernet-back-thumb.jpg",
-    "img_back": "sos-1u-ethernet-back.jpg",
-    "threesixty.disabled": [{
-      "imagePath": "/img/appliances/sos-1u-ethernet-strip.jpg",
-      "count": 36
+    "img_front_thumb": "500v2_front_thumb.jpg",
+    "img_front": "500v2_front.jpg",
+    "img_back_thumb": "500v2_back_thumb.jpg",
+    "img_back": "500v2_back.jpg",
+    "threesixty": [{
+      "imagePath": "/img/appliances/500v2.jpg",
+      "count": 34
     }],
     "specs": {
       "Standalone Throughput †": "N/A",
@@ -53,13 +53,13 @@
       "Speed": 50,
       "Retention": 50
     },
-    "img_front_thumb": "sos-1u-front-thumb.jpg",
-    "img_front": "sos-1u-front.jpg",
-    "img_back_thumb.disabled": "sos-1u-ethernet-back-thumb.jpg",
-    "img_back": "sos-1u-ethernet-back.jpg",
-    "threesixty.disabled": [{
-      "imagePath": "/img/appliances/sos-1u-ethernet-strip.jpg",
-      "count": 36
+    "img_front_thumb": "MNv2_front_thumb.jpg",
+    "img_front": "MNv2_front.jpg",
+    "img_back_thumb": "MNv2_back_thumb.jpg",
+    "img_back": "MNv2_back.jpg",
+    "threesixty": [{
+      "imagePath": "/img/appliances/MNv2.jpg",
+      "count": 34
     }],
     "specs": {
       "Standalone Throughput †": "500 Mbps",
@@ -95,13 +95,13 @@
       "Speed": 50,
       "Retention": 50
     },
-    "img_front_thumb": "sos-1u-front-thumb.jpg",
-    "img_front": "sos-1u-front.jpg",
-    "img_back_thumb.disabled": "sos-1u-ethernet-back-thumb.jpg",
-    "img_back": "sos-1u-ethernet-back.jpg",
-    "threesixty.disabled": [{
-      "imagePath": "/img/appliances/sos-1u-ethernet-strip.jpg",
-      "count": 36
+    "img_front_thumb": "MNv2_front_thumb.jpg",
+    "img_front": "MNv2_front.jpg",
+    "img_back_thumb": "MNv2_back_thumb.jpg",
+    "img_back": "MNv2_back.jpg",
+    "threesixty": [{
+      "imagePath": "/img/appliances/MNv2.jpg",
+      "count": 34
     }],
     "specs": {
       "Standalone Throughput †": "1 Gbps",
@@ -138,13 +138,13 @@
       "Speed": 75,
       "Retention": 50
     },
-    "img_front_thumb": "sos-2u-front-thumb.jpg",
-    "img_front": "sos-2u-front.jpg",
-    "img_back_thumb.disabled": "sos-2u-back-thumb.jpg",
-    "img_back": "sos-2u-back.jpg",
-    "threesixty.disabled": [{
-      "imagePath": "/img/appliances/sos-2u-strip.jpg",
-      "count": 42
+    "img_front_thumb": "5000v2_front_thumb.jpg",
+    "img_front": "5000v2_front.jpg",
+    "img_back_thumb": "5000v2_back_thumb.jpg",
+    "img_back": "5000v2_back.jpg",
+    "threesixty": [{
+      "imagePath": "/img/appliances/5000v2.jpg",
+      "count": 35
     }],
     "specs": {
       "Standalone Throughput †": "N/A",
@@ -180,13 +180,13 @@
       "Speed": 100,
       "Retention": 25
     },
-    "img_front_thumb": "sos-1u-front-thumb.jpg",
-    "img_front": "sos-1u-front.jpg",
-    "img_back_thumb.disabled": "sos-1u-sfp-back-thumb.jpg",
-    "img_back": "sos-1u-sfp-back.jpg",
-    "threesixty.disabled": [{
-      "imagePath": "/img/appliances/sos-1u-sfp-strip.jpg",
-      "count": 38
+    "img_front_thumb": "NVv2_front_thumb.jpg",
+    "img_front": "NVv2_front.jpg",
+    "img_back_thumb": "NVv2_back_thumb.jpg",
+    "img_back": "NVv2_back.jpg",
+    "threesixty": [{
+      "imagePath": "/img/appliances/NVv2.jpg",
+      "count": 34
     }],
     "specs": {
       "Standalone Throughput †": "N/A",
@@ -222,13 +222,13 @@
       "Performance": 100,
       "Retention": 50
     },
-    "img_front_thumb": "sos-1u-front-thumb.jpg",
-    "img_front": "sos-1u-front.jpg",
-    "img_back_thumb.disabled": "sos-1u-ethernet-back-thumb.jpg",
-    "img_back": "sos-1u-ethernet-back.jpg",
-    "threesixty.disabled": [{
-      "imagePath": "/img/appliances/sos-1u-ethernet-strip.jpg",
-      "count": 36
+    "img_front_thumb": "MNv2_front_thumb.jpg",
+    "img_front": "MNv2_front.jpg",
+    "img_back_thumb": "MNv2_back_thumb.jpg",
+    "img_back": "MNv2_back.jpg",
+    "threesixty": [{
+      "imagePath": "/img/appliances/MNv2.jpg",
+      "count": 34
     }],
     "specs": {
       "Standalone Throughput †": "N/A",
@@ -265,13 +265,13 @@
       "Performance": 50,
       "Retention": 100
     },
-    "img_front_thumb": "sos-2u-front-thumb.jpg",
-    "img_front": "sos-2u-front.jpg",
-    "img_back_thumb.disabled": "sos-2u-back-thumb.jpg",
-    "img_back": "sos-2u-back.jpg",
-    "threesixty.disabled": [{
-      "imagePath": "/img/appliances/sos-2u-strip.jpg",
-      "count": 42
+    "img_front_thumb": "5000v2_front_thumb.jpg",
+    "img_front": "5000v2_front.jpg",
+    "img_back_thumb": "5000v2_back_thumb.jpg",
+    "img_back": "5000v2_back.jpg",
+    "threesixty": [{
+      "imagePath": "/img/appliances/5000v2.jpg",
+      "count": 35
     }],
     "specs": {
       "Standalone Throughput †": "3 Gbps",
@@ -308,13 +308,13 @@
       "Performance": 100,
       "Retention": 75
     },
-    "img_front_thumb": "sos-1u-front-thumb.jpg",
-    "img_front": "sos-1u-front.jpg",
-    "img_back_thumb.disabled": "sos-1u-sfp-back-thumb.jpg",
-    "img_back": "sos-1u-sfp-back.jpg",
-    "threesixty.disabled": [{
-      "imagePath": "/img/appliances/sos-1u-sfp-strip.jpg",
-      "count": 38
+    "img_front_thumb": "NVv2_front_thumb.jpg",
+    "img_front": "NVv2_front.jpg",
+    "img_back_thumb": "NVv2_back_thumb.jpg",
+    "img_back": "NVv2_back.jpg",
+    "threesixty": [{
+      "imagePath": "/img/appliances/NVv2.jpg",
+      "count": 34
     }],
     "specs": {
       "Standalone Throughput †": "5 Gbps ‡",

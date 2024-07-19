@@ -131,9 +131,9 @@ export default {
     handleImageClick (side) {
       let fileName
       if (side === 'front') {
-        fileName = this.appliance.img_front_thumb
+        fileName = this.appliance.img_front
       } else {
-        fileName = this.appliance.img_back_thumb
+        fileName = this.appliance.img_back
       }
       sos.showImageZoom({ imageType: 'appliance', imageName: fileName })
     },
