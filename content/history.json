@@ -34,6 +34,10 @@
               {
                 "text": "New base operating system, simplified setup process, new user administration interface, new configuration interface, and many more new features. Also consolidation of third-party dependencies and additional security enhancements.",
                 "img": "config.jpg"
+              },
+              {
+                "text": "Security Onion Solutions celebrates its 10th anniversary by announcing the new Detections module and Security Onion Pro: a licensed offering for businesses and government organizations.",
+                "img": "detections.jpg"
               }
             ]
 }
