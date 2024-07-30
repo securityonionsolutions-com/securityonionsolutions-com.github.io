@@ -29,7 +29,7 @@
         "presenters": [
           {
             "name": "Dr. Kelley Misata ⓘ",
-            "image": "",
+            "image": "/img/speakers/kelley_misata.jpg",
             "bio": "Dr. Kelley Misata, founder of Sightline Security, has carved a distinctive niche in the cybersecurity landscape. As the Senior Director of Open Source at Corelight and President of OISF (Suricata), she seamlessly bridges the technical with the strategic in vital cybersecurity dialogues. Articulate and insightful, Dr. Misata brings to the forefront pressing issues like the cybersecurity imperatives of nonprofits, the significance of open-source development, and the nuanced challenges of cyberstalking and privacy. Her expertise is enriched by her pioneering research on nonprofit cybersecurity and her personal experiences as a cyberstalking survivor. Armed with a Ph.D. in Information Security from Purdue University, Dr. Misata pairs holistic security acumen with strategic business understanding."
           }
         ],
@@ -91,7 +91,7 @@
         "presenters": [
           {
             "name": "Peter Manev ⓘ",
-            "image": "",
+            "image": "/img/speakers/peter_manev.jpg",
             "bio": "Peter Manev is a member of the executive team at Open Network Security Foundation (OISF) and the co-founder and chief strategy officer (CSO) of Stamus Networks. Peter has over 20 years of experience in the IT industry, including enterprise-level IT security practice. He is a passionate user, developer, and explorer of innovative open-source security software.<p class='my-2'>Peter has been involved with Suricata IDS/IPS/NSM from its very early days in 2009 as QA and training lead.<p class=\"my-2\">A frequent contributor to and user of innovative open source security software, Peter maintains several online repositories for Suricata-related information:<li class=\"my-1 list-outside\">https://github.com/pevma</li><li class=\"my-1 list-outside\">https://github.com/orgs/StamusNetworks/repositories</li><li class=\"my-1 list-outside\">https://twitter.com/pevma</li><p class=\"my-2\">Peter Manev is a co-author of the free and open source book - The Security Analyst’s Guide to Suricata (https://www.stamus-networks.com/suricata-4-analysts)  written with Eric Leblond.<p class=\"my-2\">Additionally, Peter is one of the founders of Stamus Networks, a company providing commercial and open-source network detection and response solutions based on Suricata. Peter often engages in private or public training events in the area of advanced deployment and threat hunting at conferences, workshops or live-fire cyber exercises such as Crossed Swords, Locked Shields, DeepSec, Troopers, DefCon, Suricon, SharkFest, RSA, Flocon, MIT Lincoln Lab and others"
           }
         ],
