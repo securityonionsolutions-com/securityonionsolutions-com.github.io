@@ -351,22 +351,14 @@
       "Speed": 25,
       "Retention": 25
     },
-    "img_front_thumb": "sos-gf-front-thumb.jpg",
-    "img_front": "sos-gf-front.jpg",
-    "img_back_thumb": "sos-gf-back-thumb.jpg",
-    "img_back": "sos-gf-back.jpg",
+    "img_front_thumb": "GOFASTv2-front-thumb.jpg",
+    "img_front": "GOFASTv2-front.jpg",
+    "img_back_thumb": "GOFASTv2-back-thumb.jpg",
+    "img_back": "GOFASTv2-back.jpg",
     "threesixty": [{
-      "name": "View without case",
-      "imagePath": "/img/appliances/sos-gofast-strip.jpg",
-      "count": 16
-    },{
-      "name": "View with case handle up",
-      "imagePath": "/img/appliances/sos-gofast-strip-handleup.jpg",
-      "count": 8
-    },{
-      "name": "View with case handle down",
-      "imagePath": "/img/appliances/sos-gofast-strip-handledown.jpg",
-      "count": 8
+      "name": "Drive Bay",
+      "imagePath": "/img/appliances/GOFASTv2-drives-thumb.jpg",
+      "count": 1
     }],
     "specs": {
       "Standalone Throughput †": "5 Gbps",
