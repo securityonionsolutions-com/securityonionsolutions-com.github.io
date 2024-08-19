@@ -356,9 +356,17 @@
     "img_back_thumb": "GOFASTv2-back-thumb.jpg",
     "img_back": "GOFASTv2-back.jpg",
     "threesixty": [{
-      "name": "Drive Bay",
-      "imagePath": "/img/appliances/GOFASTv2-drives-thumb.jpg",
-      "count": 1
+      "name": "Server (without case)",
+      "imagePath": "/img/appliances/GOFASTv2-server-strip.jpg",
+      "count": 8
+    },{
+      "name": "Mobile (packed, ready for transport)",
+      "imagePath": "/img/appliances/GOFASTv2-mobile-strip.jpg",
+      "count": 16
+    },{
+      "name": "Unpacked (additional, unpacked views)",
+      "imagePath": "/img/appliances/GOFASTv2-unpacked-strip.jpg",
+      "count": 6
     }],
     "specs": {
       "Standalone Throughput †": "5 Gbps",
