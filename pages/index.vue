@@ -3,12 +3,12 @@
     <PageNav page-name="Home" :links="links" />
     <SubHero class="hero text-center">
       <template #header>
-        Security Onion Conference 2024
+        Introducing<br>Security Onion Pro
       </template>
       <template #body>
-        Come join us this fall in beautiful Augusta, Georgia, for our 11th annual Security Onion conference.
+        Our newest licensed feature set includes additional features designed to help organizations maintain policy compliance and improve cybersecurity team efficiency.
         <div class="flex justify-center">
-          <SoButton class="mt-4" link="/conference">
+          <SoButton class="mt-4" link="/pro">
             Learn More
           </SoButton>
         </div>

@@ -1,17 +1,21 @@
 {
   "upcoming": {
     "year": 2024,
-    "date": "October 4, 2024",
+    "date": "CANCELLED",
+    "date.normal": "October 4, 2024",
     "location": "Augusta, GA",
     "caption.thankyou": "Thank you to all who attended the 2023 conference! We look forward to seeing everyone at our next conference!",
     "caption.cfp": "Save the date for our next annual conference in 2024! The Call For Papers runs April 29th - June 24.",
     "caption.cfp_closed": "Save the date for our next annual conference in 2024! The Call For Papers is now closed.",
-    "caption": "Register today! We look forward to seeing you there!",
-    "link": "https://socaugusta2024.eventbrite.com/",
+    "caption.register_today": "Register today! We look forward to seeing you there!",
+    "caption": "The 2024 Security Onion conference has been cancelled due to impacts from Hurricane Helene.",
+    "link": "https://blog.securityonion.net/2024/09/security-onion-conference-cancelled-due.html",
+    "link.register": "https://socaugusta2024.eventbrite.com/",
     "link.pics": "https://blog.securityonion.net/2024/04/security-onion-conference-2024-save.html",
-    "button": "Register Now",
+    "button": "More Information",
+    "button.register_now": "Register Now",
     "button.cfp": "Submit Paper",
-    "schedule": [
+    "schedule.disabled": [
       {
         "time": "8:00 AM",
         "presenters": [],
