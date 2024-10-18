@@ -227,6 +227,6 @@ export default {
 
 <style scoped>
 .hero {
-  background: right no-repeat url('/img/graphics/augusta_map.png');
+  background: right no-repeat url('/img/icons/so-onion.png');
 }
 </style>
