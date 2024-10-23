@@ -27,7 +27,7 @@
             Logos
           </template>
           <template #body-right>
-            The Security Onion and Security Onion Solutions Logos are trademarks of Security Onion Solutions, LLC and may only be used when written consent is provided by an officer of Security Onion Solutions, LLC. Usage must adhere to the guidelines posted on this page.
+            The Security Onion and Security Onion Solutions Logos are registered &reg; trademarks of Security Onion Solutions, LLC and may only be used when written consent is provided by an officer of Security Onion Solutions, LLC. Usage must adhere to the guidelines posted on this page.
           </template>
         </two-panel-detail>
       </div>
@@ -61,7 +61,22 @@
           <div class="w-1/2 mx-auto mt-12">
             <hr>
             <div class="text-2xl mt-8">
-              Security Onion Logo
+              Security Onion Logo (Abbreviated)
+            </div>
+            <div class="p-12 bg-white text-black">
+              <img src="/logo/logo-so-onion-light.svg" class="m-8">
+              Light (<a href="/logo/logo-so-onion-light.png">.png</a> | <a href="/logo/logo-so-onion-light.svg">.svg</a>)
+            </div>
+            <div class="p-12 bg-black text-white">
+              <img src="/logo/logo-so-onion-dark.svg" class="m-8">
+              Dark (<a href="/logo/logo-so-onion-dark.png">.png</a> | <a href="/logo/logo-so-onion-dark.svg">.svg</a>)
+            </div>
+          </div>
+
+          <div class="w-1/2 mx-auto mt-12">
+            <hr>
+            <div class="text-2xl mt-8">
+              Security Onion Logo (Extended)
             </div>
             <div class="p-12 bg-white text-black">
               <img src="/logo/logo-so-light.svg" class="m-8">
