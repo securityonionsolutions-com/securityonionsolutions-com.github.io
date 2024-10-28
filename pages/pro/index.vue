@@ -120,8 +120,9 @@
             Broad Grid Coverage
           </template>
           <template #body-right>
-            The base license includes licensing for up to ten Security Onion
+            The standard Pro license includes licensing for up to ten Security Onion
             <a href="https://docs.securityonion.net/en/2.4/architecture.html#node-types" class="underline">nodes</a>, with additional node packs available for purchase.
+            Additionally, we offer a standalone Pro license for single node grids.
           </template>
         </two-panel-detail>
       </div>
