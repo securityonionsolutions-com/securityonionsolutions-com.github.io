@@ -30,6 +30,12 @@
         <button v-if="dropdownOpen" tabIndex="-1" class="fixed h-full w-full inset-0 bg-black opacity-25 cursor-default" @click="dropdownOpen = false" />
         <div v-if="dropdownOpen" class="absolute right-0 mt-1 shadow-xl bg-white rounded-lg py-2 w-48" @click="dropdownOpen = !dropdownOpen">
           <nuxt-link
+            to="/" id="overview"
+            class="dropdown block px-4 p-2 hover:bg-so-blue hover:text-white focus:outline-none focus:bg-so-blue focus:text-white"
+          >
+            Overview
+          </nuxt-link>
+          <nuxt-link
             to="/pro"
             class="dropdown block px-4 p-2 hover:bg-so-blue hover:text-white focus:outline-none focus:bg-so-blue focus:text-white"
           >
@@ -118,6 +124,12 @@
           </div>
         </div>
         <div class="flex flex-row mt-4 lg:mt-0">
+          <nuxt-link
+            to="/" id="overview"
+            class="block lg:inline-block text-gray-400 hover:text-blue-500 mr-5 text-lg font-light focus:outline-none focus:text-blue-500"
+          >
+            Overview
+          </nuxt-link>
           <nuxt-link
             to="/pro"
             class="block lg:inline-block text-gray-400 hover:text-blue-500 mr-5 text-lg font-light focus:outline-none focus:text-blue-500"

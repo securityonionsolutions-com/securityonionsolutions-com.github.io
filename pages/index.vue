@@ -1,19 +1,7 @@
 <template>
   <div class="xs:px-12">
     <PageNav page-name="Home" :links="links" />
-    <SubHero class="hero text-center">
-      <template #header>
-        Introducing<br>Security Onion Pro
-      </template>
-      <template #body>
-        Our newest licensed feature set includes additional features designed to help organizations maintain policy compliance and improve cybersecurity team efficiency.
-        <div class="flex justify-center">
-          <SoButton class="mt-4" link="/pro">
-            Learn More
-          </SoButton>
-        </div>
-      </template>
-    </SubHero>
+    <CarouselHero :entries="heroReasons" class="xs:-mx-12"/>
     <ContentSection id="portfolio" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32">
         <feature-left class="my-12">
@@ -25,7 +13,7 @@
           <template #graphic>
             <Graphic
               class="shadow-xl rounded-md overflow-hidden"
-              file-name="soc.jpg"
+              file-name="soc.png"
               :padding="false"
               :size="20"
             />
@@ -152,7 +140,7 @@
 <script>
 import { sos } from '~/lib/sos.js'
 
-import SubHero from '~/components/hero/SubHero'
+import CarouselHero from '~/components/hero/CarouselHero'
 import Timeline from '~/components/timeline/Timeline'
 import TeamCard from '~/components/TeamCard'
 import SectionHeader from '~/components/SectionHeader'
@@ -166,6 +154,7 @@ import gigamon_logo from '~/assets/img/partners/gigamon-logo.png'
 import intelligenesis_logo from '~/assets/img/partners/intelligenesis-logo.png'
 import profitap_logo from '~/assets/img/partners/profitap-logo.png'
 
+import reasons from '~/content/reasons.json'
 import team from '~/content/team.json'
 import history from '~/content/history.json'
 
@@ -177,9 +166,24 @@ const logos = [
   profitap_logo
 ]
 
+function shuffle(arr) {
+  return arr
+    .map(value => ({ value, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({ value }) => value)
+}
+
+function prepareReasons(reasons) {
+  var quoteItem = reasons.find(item => item.quotes) 
+  if (quoteItem) {
+    quoteItem.quotes = shuffle(quoteItem.quotes);
+  }
+  return reasons;
+}
+
 export default {
   components: {
-    SubHero,
+    CarouselHero,
     Timeline,
     TeamCard,
     SectionHeader,
@@ -194,7 +198,8 @@ export default {
     teamArr: team.team,
     eventList: history.events,
     currentEvent: 1,
-    logos
+    logos,
+    heroReasons: prepareReasons(reasons),
   }),
   methods: {
     setEventGraphic (index) {
