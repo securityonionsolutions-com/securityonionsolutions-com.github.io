@@ -88,6 +88,9 @@
         <option value="Website">
           Website
         </option>
+        <option value="Website Feedback">
+          Website Feedback
+        </option>
       </select>
       <div class="g-recaptcha" :data-sitekey="sitekey" data-callback="recordSubmit"></div>
       <input id="00NJx000001kPE9" maxlength="255" name="00NJx000001kPE9" size="20" type="hidden" />
@@ -115,7 +118,7 @@ export default {
   data () {
     return {
       oid: '00D1U000000DI9i',
-      lead_source: 'Website',
+      lead_source: mode == 'contact_us' ? 'Website' : 'Website Feedback',
       first_name: '',
       last_name: '',
       email: '',
