@@ -54,7 +54,7 @@
     },
     {
         "title": "Who uses Security Onion?",
-        "subtitle": "We don't disclose our customer names. However, we love receiving positive <a class='text-blue-800' href='/feedback'>feedback</a> which encourages us to continue improving Security Onion!",
+        "subtitle": "We don't disclose our customer names. However, we look forward to receiving user <a class='text-blue-800' href='/feedback'>feedback</a> which helps us improve Security Onion!",
         "highlight_interval": 6000,
         "loop": true,
         "quotes": [
