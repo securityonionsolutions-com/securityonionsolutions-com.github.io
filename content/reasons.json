@@ -45,10 +45,10 @@
         "subtitle": "Security Onion is free, the source code is open, and it is created and maintained by cybersecurity professionals who use it every day.",
         "highlight_interval": 2000,
         "metrics": {
-            "Total Downloads": 2000000,
+            "Total Downloads": 2400000,
             "Included Detection Rules": 60000,
             "Estimated Agents Globally": 40000,
-            "Agents on Single Grid": 5000,
+            "Deployed in Countries": 125,
             "Security Onion Team Size": 20
         }
     },
