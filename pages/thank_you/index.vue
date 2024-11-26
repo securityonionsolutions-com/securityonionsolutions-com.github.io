@@ -2,7 +2,7 @@
   <div class="xs:px-12">
     <div class="xs:-mx-12 mb-2">
       <nuxt-link to="/" class="text-md xs:text-xl font-light w-full px-4 py-1 flex items-center nav-style bg-gray-100">
-        &lt; Back to home
+        &lt; Back to Overview
       </nuxt-link>
     </div>
     <div class="flex flex-col justify-center items-center flex-grow xs:h-auto height-xs">
@@ -16,7 +16,6 @@
         <template #body>
           <div class="flex flex-col items-center">
             <div class="text-sm xs:text-lg">
-              We'll get back to you shortly.
             </div>
           </div>
           <!-- <nuxt-link to="/" class="text-so-blue hover:text-black">
