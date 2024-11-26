@@ -16,7 +16,6 @@
         <template #body>
           <div class="flex flex-col items-center">
             <div class="text-sm xs:text-lg">
-              We'll get back to you shortly.
             </div>
           </div>
           <!-- <nuxt-link to="/" class="text-so-blue hover:text-black">
