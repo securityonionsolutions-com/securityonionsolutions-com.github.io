@@ -1,6 +1,6 @@
 <template>
   <div class="xs:px-12">
-    <PageNav page-name="Home" :links="links" />
+    <PageNav page-name="Overview" :links="links" />
     <CarouselHero :entries="heroReasons" class="xs:-mx-12"/>
     <ContentSection id="portfolio" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32">
