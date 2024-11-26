@@ -1,12 +1,22 @@
 <template>
-  <div id="contact_form" class="bg-white rounded-lg pt-2 form-wrapper flex flex-col items-center">
+  <div id="contact_form" class="mx-auto bg-white rounded-lg pt-2 form-wrapper flex flex-col items-center">
     <div class="text-2xl xs:text-3xl ">
-      Contact Us
+      <span v-if="mode == 'contact_us'">Contact Us</span>
+      <span v-if="mode == 'feedback'">Send Feedback</span>
     </div>
-    <div class="flex text-center px-2 xs:px-0 xs:w-2/3 justify-center my-4">
-      <p>
+    <div class="flex text-center px-2 xs:px-0 xs:mx-12 justify-center my-4">
+      <p v-if="mode == 'contact_us'">
         Looking for free support of Security Onion or reporting an issue?
         <span class="text-so-blue cursor-pointer"><a href="https://securityonion.net/discuss">Click here</a></span>.
+      </p>
+      <p v-if="mode == 'feedback'">
+        Please tell us what you think of Security Onion and our team. 
+        <div class="mt-4">
+          We may share this feedback outside of the team, but will keep your contact information confidential unless we've been given permission to publically disclose it by an authorized representative of your organization.
+        </div>
+        <div class="mt-4 text-blue-800">
+          We are looking for case studies! If you're interested in assisting with a case study to help us grow, please let us know below!
+        </div>
       </p>
     </div>
     <form id="contact_form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="flex flex-col items-center px-2 xs:px-10 pt-3 xs:pt-2 pb-5 mb-4 w-full">
@@ -98,6 +108,7 @@
 <script>
 export default {
   props: {
+    mode: { type: String, default: 'contact_us' },
     text: { type: String, default: '' },
     source: { type: String, default: '' }
   },

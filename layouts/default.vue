@@ -11,7 +11,7 @@
     <transition name="modal">
       <LazyFloatingModal v-if="shouldShowModal()" :index="1" @close="handleModalClose()">
         <div v-if="isFormModal()" class="form-wrapper">
-          <LazyContactForm :text="sos.contactText" :source="sos.eventSource" @close="handleModalClose()" />
+          <LazyContactForm :text="sos.contactText" :source="sos.eventSource" @close="handleModalClose()" :mode="sos.contactMode" />
         </div>
         <ImageZoom v-else-if="isImageModal()" :name="sos.imageName" :image-type="sos.imageType" />
         <CertDomainDetails v-else-if="isDomainDetailsModal()" :detail-text="sos.domainDetailText" :domain-name="sos.domainName" :test-percent="sos.domainTestPercent" />

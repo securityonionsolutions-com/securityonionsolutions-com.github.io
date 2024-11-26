@@ -1,0 +1,123 @@
+[
+    {
+        "title": "Is Security Onion for me?",
+        "subtitle": "Security Onion is deployed within all major industry verticals, in home offices, governments, and Fortune 500 enterprises.",
+        "highlight_interval": 1000,
+        "list": [
+            "Federal Gov",
+            "State Gov",
+            "Municipal Gov",
+            "Dept of Defense",
+            "Dept of Energy",
+            "Defense Industry",
+            "National Guard",
+            "Finance",
+            "Universities",
+            "Classrooms",
+            "Utilities",
+            "Entertainment",
+            "Technology",
+            "Medical",
+            "Manufacturing",
+            "Legal"
+        ]
+    },
+    {
+        "title": "Where is Security Onion installed?",
+        "subtitle": "Security Onion is installed in nearly every country on the planet.",
+        "background_right": "/img/graphics/world_map.png",
+        "highlight_interval": 1200,
+        "bars": {
+            "USA": 150,
+            "Germany": 16,
+            "Canada": 13.5,
+            "United Kingdom": 12.5,
+            "France": 8,
+            "Netherlands": 5.1,
+            "China": 5.25,
+            "Poland": 5,
+            "Italy": 4.5,
+            "Australia": 4.2
+        }
+    },
+    {
+        "title": "Why Security Onion?",
+        "subtitle": "Security Onion is free, the source code is open, and it is created and maintained by cybersecurity professionals who use it every day.",
+        "highlight_interval": 2000,
+        "metrics": {
+            "Total Downloads": 2400000,
+            "Included Detection Rules": 60000,
+            "Estimated Agents Globally": 40000,
+            "Deployed in Countries": 125,
+            "Security Onion Team Size": 20
+        }
+    },
+    {
+        "title": "Who uses Security Onion?",
+        "subtitle": "We don't disclose our customer names. However, we look forward to receiving user <a class='text-blue-800' href='/feedback'>feedback</a> which helps us improve Security Onion!",
+        "highlight_interval": 6000,
+        "loop": true,
+        "quotes": [
+            {
+                "text": "We immediately wipe all new security appliances and install Security Onion.",
+                "source": "Booth visitor at security conference"
+            },
+            {
+                "text": "I’m loving this product by the way. It’s incredible, I finally feel like I have useful visibility into what’s happening on my endpoints/ network.",
+                "source": "Municipal customer"
+            },
+            {
+                "text": "I absolutely loved how in-depth the development labs [were]... It showed me how I could better employ Security Onion on our enterprise and more efficiently automate and detect potential intrusions.",
+                "source": "Detection Engineering and Analysis In-Depth student"
+            },
+            {
+                "text": "I loved the class. The instructors were great. Security Onion is an awesome tool.",
+                "source": "Fundamentals for Analysts & Admins student"
+            },
+            {
+                "text": "I enjoyed every moment of it [the class]. It is very useful to know what's under the hood and how it works.",
+                "source": "Fundamentals for Analysts & Admins student"
+            },
+            {
+                "text": "Instructor is one of the best ever. Knows everything about the product and teaches it passionately. Not only great learning experience but highly enjoyable.",
+                "source": "Fundamentals for Analysts & Threat Hunters student"
+            },
+            {
+                "text": "I liked it all. I'm usually not a fan of training, but this was excellent. I was engaged the entire time and really learned a lot.",
+                "source": "Fundamentals for Analysts & Admins student"
+            },
+            {
+                "text": "From the first email I received from you, this has been an awesome experience. Thank you very much. Your lab and its performance was the best I've seen.",
+                "source": "Fundamentals for Analysts & Admins student"
+            },
+            {
+                "text": "You are awesome, thank you for taking the time to engineer this solution.",
+                "source": "Military customer"
+            },
+            {
+                "text": "I'm learning to love SOC and Hunt specifically more and more. It's just so much faster and more efficient to use.",
+                "source": "Defense Industry customer"
+            },
+            {
+                "text": "Awesome course! Really built my confidence as an analyst.",
+                "source": "Fundamentals for Analysts & Threat Hunters student"
+            },
+            {
+                "text": "A fantastic class and an amazing tool.",
+                "source": "Fundamentals for Analysts & Threat Hunters student"
+            },
+            {
+                "text": "I learned a lot from the course and it was definitely worth it....",
+                "source": "Detection Engineering and Analysis In-Depth student"
+            },
+            {
+                "text": "I really liked the demos ... and how thorough the instructors [were] while showing us the demos.",
+                "source": "Detection Engineering and Analysis In-Depth student"
+            },
+            {
+                "text": "Both instructors were very good. Quality instruction, and both very knowledgeable on the subject matter. Each of them brought their experience to the table which remained relevant to the material being taught. Very professional.",
+                "source": "Detection Engineering and Analysis In-Depth student"
+            }
+        ]
+    }
+]
