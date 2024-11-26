@@ -118,7 +118,7 @@ export default {
   data () {
     return {
       oid: '00D1U000000DI9i',
-      lead_source: mode == 'contact_us' ? 'Website' : 'Website Feedback',
+      lead_source: this.mode == 'contact_us' ? 'Website' : 'Website Feedback',
       first_name: '',
       last_name: '',
       email: '',
