@@ -77,6 +77,12 @@
           >
             Conference
           </nuxt-link>
+          <nuxt-link
+            to="https://blog.securityonion.net"
+            class="dropdown block px-4 p-2 hover:bg-so-blue hover:text-white focus:outline-none focus:bg-so-blue focus:text-white"
+          >
+            Blog
+          </nuxt-link>
         </div>
       </div>
       <div class="cursor-default hidden lg:flex flex-col mr-2">
@@ -168,9 +174,15 @@
           </nuxt-link>
           <nuxt-link
             to="/conference"
-            class="block lg:inline-block text-gray-400 hover:text-blue-500 text-lg font-light focus:outline-none focus:text-blue-500"
+            class="block lg:inline-block text-gray-400 hover:text-blue-500 mr-5 text-lg font-light focus:outline-none focus:text-blue-500"
           >
             Conference
+          </nuxt-link>
+          <nuxt-link
+            to="https://blog.securityonion.net"
+            class="block lg:inline-block text-gray-400 hover:text-blue-500 text-lg font-light focus:outline-none focus:text-blue-500"
+          >
+            Blog
           </nuxt-link>
         </div>
       </div>
