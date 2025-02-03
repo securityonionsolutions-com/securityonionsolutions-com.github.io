@@ -85,7 +85,7 @@
             Support Hours
           </template>
           <template #body-top-right>
-            For customers running Security Onion on their hardware or smaller SOS appliances, purchasing Security Onion Pro includes twenty hours of professional services and support time. Services include architecture planning, deployment, tuning, break/fix support, parsing, and more. Additional hours packages are available.
+            For customers running Security Onion on their hardware or smaller SOS appliances, purchasing Security Onion Pro includes professional services and support time. Services include architecture planning, deployment, tuning, break/fix support, parsing, and more. Additional hours packages are available.
           </template>
           <template #header-bottom-left>
             Offline Update Service Shipments
@@ -122,7 +122,7 @@
           <template #body-right>
             The standard Pro license includes licensing for up to ten Security Onion
             <a href="https://docs.securityonion.net/en/2.4/architecture.html#node-types" class="underline">nodes</a>, with additional node packs available for purchase.
-            Additionally, we offer a standalone Pro license for single node grids.
+            Additionally, we offer licenses for smaller grids, such as a single standalone node.
           </template>
         </two-panel-detail>
       </div>
