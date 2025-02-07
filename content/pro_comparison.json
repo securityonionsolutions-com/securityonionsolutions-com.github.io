@@ -135,7 +135,7 @@
       "feature": "Open ID Connect (OIDC)",
       "free": false,
       "premium": true,
-      "caption": "SSO authentication via popular OIDC providers"
+      "caption": "SSO authentication to Security Onion Console (SOC) via popular OIDC providers"
     },
     {
       "feature": "Data at Rest Encryption",
