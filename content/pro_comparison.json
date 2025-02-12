@@ -156,6 +156,12 @@
       "caption": "Strict organizational policy compliance for CAT 1 issues of the OS"
     },
     {
+      "feature": "Connect API",
+      "free": false,
+      "premium": true,
+      "caption": "Integrate Security Onion with external systems for automating security processes"
+    },
+    {
       "feature": "External Notifications",
       "free": false,
       "premium": true,
