@@ -112,6 +112,12 @@
       "name": "Reggie Harris",
       "role": "Associate Support Engineer",
       "image": "reggie_harris.jpg"
+    },
+    {
+      "name": "David Inglett",
+      "org": "Decisive Insights",
+      "role": "Sales Director",
+      "image": "david_inglett.jpg"
     }
   ]
 }

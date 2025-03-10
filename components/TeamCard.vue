@@ -17,6 +17,9 @@
           </a>
         </div>
       </div>
+      <div v-if="org !== ''" class="text-md mx-4">
+        {{ org }}
+      </div>
       <div class="text-md mx-4">
         {{ role }}
       </div>
@@ -35,6 +38,10 @@ export default {
       type: String,
       default: ''
     },
+    org: {
+      type: String,
+      default: ''
+    },
     role: {
       type: String,
       default: ''
@@ -46,11 +53,6 @@ export default {
     twitter: {
       type: String,
       default: ''
-    }
-  },
-  computed: {
-    showSocialLinks () {
-      return this.linkedin !== '' || this.twitter !== ''
     }
   }
 }
