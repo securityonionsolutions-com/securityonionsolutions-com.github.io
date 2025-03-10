@@ -125,6 +125,7 @@
           <div v-for="(member, index) in teamArr" :key="index" class="px-4 py-4">
             <team-card
               :name="member.name"
+              :org="member.org"
               :role="member.role"
               :image="member.image"
               :linkedin="member.linkedin"
