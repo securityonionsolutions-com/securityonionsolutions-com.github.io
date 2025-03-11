@@ -180,6 +180,12 @@
       "caption": "Ensure all events and logs are recorded using Kafka"
     },
     {
+      "feature": "Active Query Management",
+      "free": false,
+      "premium": true,
+      "caption": "View and manage long-running Elastic queries"
+    },
+    {
       "feature": "Enhanced SLA Options",
       "free": false,
       "premium": true,
