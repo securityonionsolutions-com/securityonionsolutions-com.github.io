@@ -183,7 +183,7 @@
       "feature": "Active Query Management",
       "free": false,
       "premium": true,
-      "caption": "View and manage long-running Elastic queries"
+      "caption": "View and cancel long-running Elastic queries"
     },
     {
       "feature": "Enhanced SLA Options",
