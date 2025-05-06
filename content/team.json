@@ -117,6 +117,11 @@
       "name": "Elaine Tolley",
       "role": "Sales and Training Support",
       "image": "elaine_tolley.jpg"
+    },
+    {
+      "name": "Michael Stokes",
+      "role": "Federal Account Executive",
+      "image": "mike_stokes.jpg"
     }
   ]
 }
