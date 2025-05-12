@@ -186,6 +186,12 @@
       "caption": "View and cancel long-running Elastic queries"
     },
     {
+      "feature": "Manager of Managers (MoM)",
+      "free": false,
+      "premium": true,
+      "caption": "Manage multiple grids from a single SOC login"
+    },
+    {
       "feature": "Enhanced SLA Options",
       "free": false,
       "premium": true,
