@@ -11,9 +11,9 @@
     "link.blog": "https://blog.securityonion.net/2024/09/security-onion-conference-cancelled-due.html",
     "link.register": "https://socaugusta2024.eventbrite.com/",
     "link.pics": "https://blog.securityonion.net/2024/04/security-onion-conference-2024-save.html",
-    "button.moreinfo": "More Information",
+    "link": "https://blog.securityonion.net/2025/05/security-onion-conference-2025-save.html",
+    "button": "More Information",
     "button.register_now": "Register Now",
-    "button.cfp": "Submit Paper",
     "schedule.disabled": [
       {
         "time": "8:00 AM",
