@@ -335,57 +335,5 @@
       "storageApproximated": true,
       "withoutPcap": true
     }
-  },
-  {
-    "name": "GoFast",
-    "category": "Response Ready",
-    "tagline": "High performance packed into an ATA compliant form factor",
-    "roles": [
-      "Rapidly deployable incident response",
-      "High mobility for commercial transportation",
-      "All node types supported"
-    ],
-    "includes_pro_license": true,
-    "sensor": true,
-    "performance": {
-      "Speed": 25,
-      "Retention": 25
-    },
-    "img_front_thumb": "GOFASTv2-front-thumb.jpg",
-    "img_front": "GOFASTv2-front.jpg",
-    "img_back_thumb": "GOFASTv2-back-thumb.jpg",
-    "img_back": "GOFASTv2-back.jpg",
-    "threesixty": [{
-      "name": "Server (without case)",
-      "imagePath": "/img/appliances/GOFASTv2-server-strip.jpg",
-      "count": 8
-    },{
-      "name": "Mobile (packed, ready for transport)",
-      "imagePath": "/img/appliances/GOFASTv2-mobile-strip.jpg",
-      "count": 16
-    },{
-      "name": "Unpacked (additional, unpacked views)",
-      "imagePath": "/img/appliances/GOFASTv2-unpacked-strip.jpg",
-      "count": 6
-    }],
-    "specs": {
-      "Standalone Throughput †": "5 Gbps",
-      "Forward Node Throughput †": "10 Gbps",
-      "Data Storage *": "Up to 120 TB",
-      "Data Storage Class": "NVMe",
-      "Data Storage RAID": "RAID 0 or 10",
-      "OS Storage *": "480 GB",
-      "OS Storage Class": "SSD",
-      "OS Storage RAID": "RAID 1",
-      "Interfaces §": [
-        "6 x 1GbE RJ45",
-        "2-4 x 10/25GbE SFP28 (QSFP28 also available)"
-       ], 
-      "Form Factor": "ATA"
-    },
-    "caveats": {
-      "storageApproximated": true,
-      "performanceDependsOnTraffic": true
-    }
   }
 ]

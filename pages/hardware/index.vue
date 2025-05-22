@@ -82,46 +82,6 @@
             </div>
           </template>
         </feature-right>
-        <feature-left-action
-          :alternate="true"
-          @button-click="sos.showContactModal({ text: 'Please contact me with more information about Response-Ready appliances.', source: 'hw_r2_purchasing_info' })"
-        >
-          <template #header>
-            <div class="text-3xl mb-6 text-left">
-              Response-Ready Appliances
-            </div>
-          </template>
-          <template #body>
-            <div class="flex flex-col text-left">
-              <div>
-                Our Response-Ready appliance provide rapidly deployable options for:
-              </div>
-              <ul class="list-disc list-inside pl-1 -mr-1">
-                <li>
-                  Government, Military, or Commercial Applications
-                </li>
-                <li>
-                  Tactical Edge Enterprise Security Monitoring
-                </li>
-                <li>
-                  Deployable, Small Form Factor, and ATA-Compliant
-                </li>
-              </ul>
-            </div>
-          </template>
-          <template #graphic>
-            <div class="lg:-ml-4">
-              <Graphic
-                class="shadow-xl rounded-xl overflow-hidden"
-                :size="20"
-                file-name="so-onion-camo.jpg"
-              />
-            </div>
-          </template>
-          <template #button-text>
-            Get More Info
-          </template>
-        </feature-left-action>
       </div>
     </ContentSection>
     <ContentSection id="comparison">
