@@ -1,11 +1,11 @@
 <template>
   <Carousel v-bind="config" @init="handleSlideStart" @slide-start="handleSlideStart" :style="'background-image: url(img/graphics/digital_space.png)'" class="logobg" height="400px">
     <Slide v-for="item in entries" :key="item">
-      <div id="summary" class="logobg flex flex-col w-full md:w-1/2 h-full items-center justify-center py-10 px-2 xs:px-8" :style="'background-image: url(' + item.background_left + ')'">
+      <div id="summary" class="logobg flex flex-col w-full lg:w-1/2 h-full items-center justify-center py-10 px-2 xs:px-8" :style="'background-image: url(' + item.background_left + ')'">
         <header class="text-3xl xl:text-4xl font-bold text-center pb-4" v-text="item.title"/>
         <div class="text-lg xl:text-2xl" v-html="item.subtitle"/>
       </div>
-      <div id="content" class="logobg hidden md:block md:flex md:flex-col md:w-1/2 h-full py-4" :style="'background-image: url(' + item.background_right + ')'">
+      <div id="content" class="logobg hidden lg:block lg:flex lg:flex-col lg:w-1/2 h-full py-4" :style="'background-image: url(' + item.background_right + ')'">
         <div v-if="item.text" class="italic text-2xl mt-4 mb-4" v-text="item.text"/>
         <div v-if="item.list" class="my-auto pr-4 w-full grid grid-rows-4 grid-cols-4 gap-1">
           <div v-for="(list_item, idx) in item.list" :key="idx" class="bg-blue-100 rounded-md py-3 whitespace-nowrap" :class="idx == highlight_idx ? 'list_fader' : ''" v-text="list_item"/>
@@ -35,7 +35,7 @@
               </div>
             </client-only>
           </div>
-          <so-button class="whitespace-nowrap absolute w-full bottom-24 ml-48" @click.native="sos.showContactModal({ mode: 'feedback', source: 'main_quote_carousel' })">
+          <so-button class="hidden xl:block whitespace-nowrap absolute w-full bottom-24 ml-48" @click.native="sos.showContactModal({ mode: 'feedback', source: 'main_quote_carousel' })">
             <div class="text-lg my-1">
               Send Feedback
             </div>
