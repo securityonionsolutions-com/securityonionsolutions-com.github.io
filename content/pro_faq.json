@@ -8,10 +8,6 @@
       "answer": "No, you can continue using the existing Security Onion features that you use today."
     },
     {
-      "question": "The base license includes licensing for up to ten Security Onion nodes. Do firewalls, endpoints, and other external data sources count as nodes?",
-      "answer": "No. The license is based on the number of nodes running Security Onion which are joined to the Security Onion Pro grid. Examples include Manager Node, Receiver Nodes, Search Nodes, Forward Nodes, Heavy Nodes, IDH Nodes, Fleet Nodes, etc. Pricing is not tied to the number of data sources."
-    },
-    {
       "question": "I am an existing paid customer of Security Onion Solutions. Do I need to purchase Pro to access its capabilities?",
       "answer": "You may qualify for Security Onion Pro at little or no additional cost. Contact your account manager for details."
     },
