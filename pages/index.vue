@@ -24,10 +24,15 @@
             </div>
           </template>
           <template #body>
-            <div class="text-2xl flex justify-center">
-              <so-button class="mt-4 xl:mt-8" link="/pro" alternate="true">
-                Learn more about Pro
-              </so-button>
+            <div class="text-2xl d-flex-column">
+              <div class="text-xl mt-8">
+                Peel back the layers of your network and make your adversaries cry!
+              </div>
+              <div class="w-full flex justify-center">
+                <so-button class="mt-4 xl:mt-8" link="/pro" alternate="true">
+                  Learn more about Pro
+                </so-button>
+              </div>
             </div>
           </template>
         </VerticalFeature>
