@@ -9,7 +9,7 @@
         </SectionHeader>
         <VerticalFeature>
           <template #graphic>
-            <video class="v-player__video" controls autoplay="true"
+            <video class="v-player__video w-full" controls autoplay="true"
                   loop="true"
                   muted="false"
                   poster=""
