@@ -2,62 +2,35 @@
   <div class="xs:px-12">
     <PageNav page-name="Overview" :links="links" />
     <CarouselHero :entries="heroReasons" class="xs:-mx-12"/>
-    <ContentSection id="portfolio" :alternate="true">
-      <div class="px-6 xs:px-12 lg:px-32">
-        <feature-left class="my-12">
-          <template #header>
-            <div class="text-center xs:text-left">
-              Products
-            </div>
-          </template>
+    <ContentSection id="preview" :alternate="true">
+      <div class="px-1 md:px-6">
+        <SectionHeader class="mt-6 xs:mb-8">
+          Latest Developments
+        </SectionHeader>
+        <VerticalFeature>
           <template #graphic>
-            <Graphic
-              class="shadow-xl rounded-md overflow-hidden"
-              file-name="soc.png"
-              :padding="false"
-              :size="20"
-            />
+            <video class="v-player__video" controls autoplay="true"
+                  loop="true"
+                  muted="false"
+                  poster=""
+                  preload="auto"
+                  name="media">
+                <source src="/public/videos/mcp-demo.mp4">
+            </video>
+          </template>
+          <template #title>
+            <div class="text-2xl">
+              Are you down with MCP? Introducing the new MCP Server for Security Onion Pro users.
+            </div>
           </template>
           <template #body>
-            <div class="text-left">
-              Our products include both the Security Onion software and specialized hardware appliances that are built and tested to run Security Onion. Our appliances will save you and your team time and resources, allowing you to focus on keeping your organization secure.
-            </div>
-          </template>
-        </feature-left>
-        <feature-right class="my-12">
-          <template #header>
-            <div class="text-center xs:text-left">
-              Services
-            </div>
-          </template>
-          <template #graphic>
-            <Graphic
-              class="shadow-xl rounded-md overflow-hidden"
-              file-name="course.jpg"
-              :padding="false"
-              :size="20"
-            />
-          </template>
-          <template #body>
-            <div class="text-left">
-              We offer both training and support for Security Onion. Our instructors are the only Security Onion Certified Instructors in the world and our course material is the only authorized training material for Security Onion. We've been teaching Security Onion classes and providing Professional Services since 2014.
-            </div>
-          </template>
-        </feature-right>
-        <action-callout :alternate="true" class="my-12" @button-click="sos.showContactModal({ text: 'Please contact me with more information about Security Onion Solutions\' offerings.', source: 'main_general_contact_us' })">
-          <template #info>
             <div class="text-2xl flex justify-center">
-              <div>
-                Interested in discussing how our products and services can help your organization?
-              </div>
+              <so-button class="mt-4 xl:mt-8" link="/pro" alternate="true">
+                Learn more about Pro
+              </so-button>
             </div>
           </template>
-          <template #button-text>
-            <div class="text-lg my-1">
-              Contact Us
-            </div>
-          </template>
-        </action-callout>
+        </VerticalFeature>
       </div>
     </ContentSection>
     <ContentSection id="partners">
@@ -148,6 +121,7 @@ import SectionHeader from '~/components/SectionHeader'
 import ActionCallout from '~/components/action_callouts/ActionCallout'
 import FeatureRight from '~/components/features/FeatureRight'
 import FeatureLeft from '~/components/features/FeatureLeft'
+import VerticalFeature from '~/components/features/VerticalFeature'
 
 import elastic_logo from '~/assets/img/partners/elastic-logo.png'
 import garland_logo from '~/assets/img/partners/garlandtechnology-logo.png'
@@ -190,7 +164,8 @@ export default {
     SectionHeader,
     ActionCallout,
     FeatureRight,
-    FeatureLeft
+    FeatureLeft,
+    VerticalFeature,
   },
   data: () => ({
     sos,

@@ -10,7 +10,7 @@
       <slot name="graphic">
         <graphic class="w-full h-48" />
       </slot>
-      <div class="flex items-center text-m w-5/6 flex-grow">
+      <div class="flex items-center text-m">
         <slot name="body" />
       </div>
     </div>
