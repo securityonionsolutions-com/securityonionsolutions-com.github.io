@@ -192,6 +192,12 @@
       "caption": "Manage multiple grids from a single SOC login (additional licensing requirements may apply)"
     },
     {
+      "feature": "MCP Server",
+      "free": false,
+      "premium": true,
+      "caption": "Bridge your AI/LLM platform to your Security Onion grid, allowing AI to query alerts, playbooks, and more."
+    },
+    {
       "feature": "Enhanced SLA Options",
       "free": false,
       "premium": true,
