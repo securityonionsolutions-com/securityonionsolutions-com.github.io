@@ -201,7 +201,7 @@
       "feature": "Splunk App",
       "free": false,
       "premium": true,
-      "caption": "Automated, periodic ingest of Security Onion alerts into Splunk via the Security Onion Connect API. Available, but not officially supported."
+      "caption": "Automated, periodic ingest of Security Onion alerts into Splunk via the Security Onion Connect API. Security Onion Solutions does not provide support for this feature."
     },
     {
       "feature": "Enhanced SLA Options",
