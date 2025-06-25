@@ -195,7 +195,13 @@
       "feature": "MCP Server",
       "free": false,
       "premium": true,
-      "caption": "Bridge your AI/LLM platform to your Security Onion grid, allowing AI to query alerts, playbooks, and more."
+      "caption": "Interface your AI/LLM platform to your Security Onion grid, allowing AI to query alerts, playbooks, and more."
+    },
+    {
+      "feature": "Splunk App",
+      "free": false,
+      "premium": true,
+      "caption": "Automated, periodic ingest of Security Onion alerts into Splunk via the Security Onion Connect API. Available, but not officially supported."
     },
     {
       "feature": "Enhanced SLA Options",
