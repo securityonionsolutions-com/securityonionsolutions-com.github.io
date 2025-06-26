@@ -132,6 +132,12 @@
       "caption": "Use osquery to collect data on the fly or on a schedule from your endpoints and servers"
     },
     {
+      "feature": "Playbooks and Guided Analysis",
+      "free": true,
+      "premium": true,
+      "caption": "Guided Analysis leverages Playbooks to help you investigate alerts"
+    },
+    {
       "feature": "Open ID Connect (OIDC)",
       "free": false,
       "premium": true,
