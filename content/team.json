@@ -122,6 +122,11 @@
       "name": "Michael Stokes",
       "role": "Federal Account Executive",
       "image": "mike_stokes.jpg"
+    },
+    {
+      "name": "Matthew Wright",
+      "role": "Associate Software Engineer",
+      "image": "matthew_wright.jpg"
     }
   ]
 }
