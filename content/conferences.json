@@ -82,7 +82,7 @@
         "presenters": [
           {
             "name": "Dr. Chris Sanders ⓘ",
-            "image.disabled": "/img/speakers/chris_sanders.jpg",
+            "image": "/img/speakers/chris_sanders.png",
             "bio": "Dr. Chris Sanders is an information security instructor, author, and researcher focused on the intersection of cyber security,  education, and cognitive psychology where he studies security analyst cognition and performance. He is the founder of Applied Network Defense, a cyber security training company, and Executive Director of the Rural Technology Fund, a non-profit that provides technology education resources to rural public schools and libraries. In previous roles, Chris worked with the US Department of Defense, InGuardians, and Mandiant. He is the author of several information security books, including Intrusion Detection Honeypots, Applied Network Security Monitoring, and Practical Packet Analysis. Chris received his doctorate in education from Baylor University. He spends his free time building things from wood and studying space rocks."
           },
           {
