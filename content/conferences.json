@@ -14,7 +14,7 @@
     "link": "https://blog.securityonion.net/2025/05/security-onion-conference-2025-save.html",
     "button": "More Information",
     "button.register_now": "Register Now",
-    "schedule.disabled": [
+    "schedule": [
       {
         "time": "8:00 AM",
         "presenters": [],
@@ -33,23 +33,23 @@
           {
             "name": "Dr. Kelley Misata ⓘ",
             "image": "/img/speakers/kelley_misata.jpg",
-            "bio": "Dr. Kelley Misata, founder of Sightline Security, has carved a distinctive niche in the cybersecurity landscape. As the Senior Director of Open Source at Corelight and President of OISF (Suricata), she seamlessly bridges the technical with the strategic in vital cybersecurity dialogues. Articulate and insightful, Dr. Misata brings to the forefront pressing issues like the cybersecurity imperatives of nonprofits, the significance of open-source development, and the nuanced challenges of cyberstalking and privacy. Her expertise is enriched by her pioneering research on nonprofit cybersecurity and her personal experiences as a cyberstalking survivor. Armed with a Ph.D. in Information Security from Purdue University, Dr. Misata pairs holistic security acumen with strategic business understanding."
+            "bio": "Dr. Kelley Misata is the President and Executive Director of the Open Information Security Foundation (OISF), the nonprofit behind Suricata, the widely used open-source network threat detection engine. With over 15 years of experience in cybersecurity strategy, open-source sustainability, and community building, she has guided Suricata’s growth from a research initiative to a trusted global solution. Known for bridging the gap between technical teams and real-world impact, Dr. Misata brings a strategic, people-first approach to sustaining open-source tools in modern security ecosystems."
           }
         ],
-        "topic": "A Decade (plus) in Open Source: Evolution, Challenges, and Sustaining Success ⓘ",
-        "description": "Join me as I share insights and experiences from over a decade in the open-source, where I have had the privilege of leading and contributing to pivotal projects such as Suricata as President of the Open Information Security Foundation (OISF), being an active member of the Tor Project, and serving as the Senior Director of Open Source at Corelight.<p class=\"my-2\">In this talk, we will explore:<p class=\"my-2\"><li class=\"my-1 list-outside\">Evaluation of Open Source Projects: A look at how open-source projects, like Suricata, have evolved, the impact on the cybersecurity landscape, and the metrics and methodologies used to evaluate their success and relevance over time.</li><li class=\"my-1 list-outside\">Challenges in Open Source: A candid discussion about the unique challenges faced by open-source projects, from community engagement and contribution dynamics to maintaining security and performance standards in an ever-evolving digital world.</li><li class=\"my-1 list-outside\">What Has Changed and What Remains: A comparative analysis of the open-source ecosystem then and now, identifying significant shifts in technology, community, and industry expectations, as well as the enduring principles that continue to guide successful open-source projects.</li><li class=\"my-1 list-outside\">Sustaining Open Source Projects: My perspective on the often overlooked yet critical aspect of 'selling' open source—strategies for securing funding, fostering partnerships, and ensuring long-term sustainability without compromising the core values of openness and collaboration.<p class=\"my-2\">Drawing from first hand experience, this talk will offer valuable lessons for both new and seasoned open-source contributors, project leaders, and anyone interested in the future of open-source software.<p class=\"my-2\">Join me to explore the past, present, and future of open source through the lens of someone who has lived it."
+        "topic": "Beyond Code Commits: Sustaining Open Source for Security at Scale ⓘ",
+        "description": "Security teams around the world depend on open source tools like Suricata and Security Onion—but few understand what it takes to keep them going. In this talk, Dr. Kelley Misata, President of OISF, shares the behind-the-scenes reality of sustaining one of the most widely used open source engines in network security. It’s not just about code—it’s about people, governance, funding, trust, and long-term vision.<p class=\"my-2\">From balancing commercial interests with community needs to navigating funding gaps and project sprawl, this talk delivers real stories and practical lessons from over a decade of open source leadership. Whether you’re a maintainer, contributor, or user, you’ll walk away with a deeper appreciation of what “supporting open source” really means—and why it matters more than ever."
       },
       {
-        "time": "10:10 AM",
+        "time": "10:30 AM",
         "presenters": [
           {
             "name": "Matt Gracie ⓘ",
             "image": "/img/team/matt_gracie.jpg",
-            "bio": "Matthew Gracie is a defensive security specialist with fifteen years of Blue Team experience in higher education, manufacturing, financial services, and healthcare. He is currently a Senior Engineer on the professional services team at Security Onion Solutions, as well as an adjunct professor of Cybersecurity in the graduate school at Canisius University. Matt is also the lead organizer of Infosec 716, a monthly meetup for security enthusiasts in Western New York, and the BSides Buffalo technology conference. He enjoys good beer, mountain bikes, open source security tools, and college hockey, and can be found on Twitter as @InfosecGoon."
+            "bio": "Matthew Gracie is a defensive security specialist with fifteen years of Blue Team experience in higher education, manufacturing, financial services, and healthcare. He is currently a Senior Engineer at Security Onion Solutions, as well as an adjunct professor of Cybersecurity in the graduate school at Canisius University. Matt is also the lead organizer of Infosec 716, a monthly meetup for security enthusiasts in Western New York, and the BSides Buffalo technology conference. He enjoys good beer, mountain bikes, open source security tools, and college hockey, and can be found on Bluesky as @InfosecGoon."
           }
         ],
         "topic": "Security Onion as a Teaching Platform ⓘ",
-        "description": "When Canisius University asked me to design and teach a graduate course in blue team fundamentals, my top priority was presenting the material in an engaging, hands-on way that would give the students real experience to build on after they finish the program. To that end, I deployed Security Onion in our Cybersecurity lab and built the course around practical lab exercises that could inform and enlighten students with a wide spectrum of technical backgrounds. In this talk I will discuss how we built our lab environment, how I structure my course, and how other professors might be able to adapt this curriculum to their own classrooms."
+        "description": "In the Fall semester of 2023, I began teaching a new Cybersecurity Operations course in the graduate program at Canisius University. My goal was simple - to give students exposure to both the high-level concepts and hands-on skills that they would need to be successful blue teamers after they graduate. This talk is about how I integrated Security Onion into the class as a teaching platform to provide that experience in detection engineering, alert investigation, threat hunting, and more."
       },
       {
         "time": "10:55 AM",
@@ -58,19 +58,19 @@
         "description": ""
       },
       {
-        "time": "11:15 AM",
+        "time": "11:30 AM",
         "presenters": [
           {
             "name": "Wes Lambert ⓘ",
-            "image": "/img/team/wes_lambert.jpg",
-            "bio": "Wes Lambert is a Principal Engineer at Security Onion Solutions, where he helps companies to implement enterprise security monitoring solutions and better understand their computer networks. He is a huge fan of open source software projects, and loves to solve problems and enhance organizational security using completely free and easily deployable tools."
+            "image.disabled": "/img/team/wes_lambert.jpg",
+            "bio": "Wes Lambert is a lead engineer at Target, where he focuses on network security monitoring at scale. He spends his time designing and tuning network-based detection architecture and helps the organization achieve visibility across the enterprise."
           }
         ],
-        "topic": "From Bytes to Insights: Furnishing Context from Files within Security Onion ⓘ",
-        "description": "Files - they can fly across the network within traffic between hosts, or they can be collected from hosts in a targeted fashion during an investigation. Either way, this talk will explore ways in which we can derive context from files within our network to provide a greater understanding of events that have transpired on endpoints and within our environments. Armed with this knowledge, practitioners can paint a better picture of security incidents and be better prepared to protect their organization."
+        "topic": "AI2Tune - Auto-tuning NSM for Optimal Operation ⓘ",
+        "description": "Tuning NSM sensors is often tedious, reactive, and error-prone. Teams spend many hours manually tuning Zeek and Suricata configurations to balance detection fidelity with packet loss and operational overhead. Static tuning approaches often fall short in dynamic environments, leading to degraded performance and operational frustration.<p class=\"my-2\">AI2Tune is an open framework designed to auto-tune network sensors for optimal operation. By combining machine learning and adaptive heuristics, AI2Tune continuously analyzes performance telemetry, such as packet drops, queue stats and system utilization, recommending or applying configuration changes in real time.<p class=\"my-2\">This presentation will demonstrate how AI2Tune learns baseline behavior, predicts emerging bottlenecks, and dynamically adjusts sensor configuration to maintain reliable coverage. While AI2Tune is platform-agnostic, examples will focus on integrating with Security Onion deployments, including strategies for safely applying tuning changes via SaltStack and maintaining compatibility with managed configurations.<p class=\"my-2\">AI2Tune can ingest metrics from ElasticSearch, InfluxDB, Prometheus, and local logs, detect deteriorating performance patterns, and trigger adjustments through Salt, Ansible, or API workflows. The system supports fully automated or recommendation-only modes, giving operators flexibility and visibility into each tuning decision.<p class=\"my-2\">Attendees will see practical examples of how AI2Tune can improve sensor performance, enhance operational resilience, and will become familiar with lessons learned from deploying adaptive tuning."
       },
       {
-        "time": "12:00 PM",
+        "time": "12:30 PM",
         "presenters": [],
         "topic": "Southern BBQ Lunch",
         "bio": "",
@@ -78,60 +78,41 @@
         "description": ""
       },
       {
-        "time": "1:00 PM",
+        "time": "1:30 PM",
         "presenters": [
           {
-            "name": "Pete Di Giorgio ⓘ",
-            "image": "/img/team/pete_di_giorgio.jpg",
-            "bio": "Peter Di Giorgio is a retired Army Cyber Officer and the Vice President, Federal for Security Onion Solutions, LLC.  In addition to his extensive experience as military leader, Pete holds eight cybersecurity focused industry certifications and a graduate degree in information security engineering.  Pete is passionate about organizational leadership, operational approaches to security in cyberspace, and building cybersecurity platforms that give defenders the advantage."
-          }
-        ],
-        "topic": "Going Interplanetary with Jupyter Notebooks ⓘ",
-        "description": "Jupyter Notebooks is an easy and fun way to interact with code and data in a web-based interface. Let's take an interplanetary journey with Security Onion with Jupyter Notebooks. This journey will take us through the setup, data ingestion, and analytic potential of Jupyter Notebooks integrated with Security Onion."
-      },
-      {
-        "time": "1:55 PM",
-        "presenters": [
+            "name": "Dr. Chris Sanders ⓘ",
+            "image": "/img/speakers/chris_sanders.png",
+            "bio": "Dr. Chris Sanders is an information security instructor, author, and researcher focused on the intersection of cyber security,  education, and cognitive psychology where he studies security analyst cognition and performance. He is the founder of Applied Network Defense, a cyber security training company, and Executive Director of the Rural Technology Fund, a non-profit that provides technology education resources to rural public schools and libraries. In previous roles, Chris worked with the US Department of Defense, InGuardians, and Mandiant. He is the author of several information security books, including Intrusion Detection Honeypots, Applied Network Security Monitoring, and Practical Packet Analysis. Chris received his doctorate in education from Baylor University. He spends his free time building things from wood and studying space rocks."
+          },
           {
-            "name": "Peter Manev ⓘ",
-            "image": "/img/speakers/peter_manev.jpg",
-            "bio": "Peter Manev is a member of the executive team at Open Network Security Foundation (OISF) and the co-founder and chief strategy officer (CSO) of Stamus Networks. Peter has over 20 years of experience in the IT industry, including enterprise-level IT security practice. He is a passionate user, developer, and explorer of innovative open-source security software.<p class='my-2'>Peter has been involved with Suricata IDS/IPS/NSM from its very early days in 2009 as QA and training lead.<p class=\"my-2\">A frequent contributor to and user of innovative open source security software, Peter maintains several online repositories for Suricata-related information:<li class=\"my-1 list-outside\">https://github.com/pevma</li><li class=\"my-1 list-outside\">https://github.com/orgs/StamusNetworks/repositories</li><li class=\"my-1 list-outside\">https://twitter.com/pevma</li><p class=\"my-2\">Peter Manev is a co-author of the free and open source book - The Security Analyst’s Guide to Suricata (https://www.stamus-networks.com/suricata-4-analysts)  written with Eric Leblond.<p class=\"my-2\">Additionally, Peter is one of the founders of Stamus Networks, a company providing commercial and open-source network detection and response solutions based on Suricata. Peter often engages in private or public training events in the area of advanced deployment and threat hunting at conferences, workshops or live-fire cyber exercises such as Crossed Swords, Locked Shields, DeepSec, Troopers, DefCon, Suricon, SharkFest, RSA, Flocon, MIT Lincoln Lab and others"
+            "name": "Josh Brower ⓘ",
+            "image": "/img/team/josh_brower.jpg",
+            "bio": "Josh Brower has been crashing computers since his teens, and now he's fortunate enough to do it professionally as a Principal Engineer at Security Onion Solutions. With 17 years in Information Security, he focuses primarily on network and endpoint detection, helping defenders stay one step ahead of attackers. He's also passionate about making security more accessible, especially for non-technical audiences. Whether it's explaining how digital actions have real-world consequences or sharing practical ways to reduce risk, Josh enjoys helping others navigate the digital world more safely."
           }
         ],
-        "topic": "Meerkat - En Garde! Previously unseen communications! ⓘ",
-        "description": "Suricata is a well known high performance, open source network analysis and threat detection software used by most private and public organizations, and embedded by major vendors to protect their assets. The engine itself has many features that offer defenders many detection capabilities. Everything from alerts, rules, lua scripts, flow and network protocol logs, file extraction and pcap. One of the lesser known but yet very potent features is datasets. Datasets is a new feature in Suricata 7 that allows for fast matching of millions of values against over 100 different inspection/detection (sticky) buffers in Suricata. Besides performance, this feature can be used to highlight interesting types of communications that were previously unseen before. In this talk we will explain and demo the feature and the cases it can be used."
+        "topic": "Investigation Playbooks for Humans ⓘ",
+        "description": "Investigation playbooks should never be used to replace or restrict human analysts completely, but they can augment analysts by helping them overcome the limitations of their memory, generate new ideas for specific investigation scenarios, minimize the limitations of their intuition, and consolidate individual knowledge.<p class=\"my-2\">In this talk, we'll introduce a new framework and standard for creating Human-Centered Investigation Playbooks. The goal for these playbooks is simple: provide a structure for documenting investigative playbooks that is flexible, intuitive, and genuinely helpful to human analysts during incident investigation and response.<p class=\"my-2\">Chris Sanders will begin by unpacking the theory behind this human-centered approach, grounded in cognitive science and investigative reasoning. You'll learn how traditional playbooks fall short, and how cognitive playbooks can improve decision-making, reduce analyst fatigue, and enable consistent, high-quality outcomes.<p class=\"my-2\">After that, Josh Brower will demonstrate how this model has been integrated into Security Onion, showing off the new Guided Analysis feature that was recently released. He'll walk through a real-world example of a detection scenario using a playbook built into the platform, highlighting how the tool empowers analysts to make informed choices.<p class=\"my-2\">Finally, we'll wrap up by describing some best practices for creating playbooks as an educational exercise with a practical outcome. Analysts, SOC leaders, and tool builders should walk away from this talk with a better understanding of how to effectively use investigative playbooks, and a few tools for helping them along that path."
       },
       {
-        "time": "2:40 PM",
+        "time": "2:30 PM",
         "presenters": [],
         "topic": "Afternoon Break",
         "description": ""
       },
       {
-        "time": "3:00 PM",
+        "time": "2:45 PM",
         "presenters": [],
-        "topic": "Tricky Tray Raffle",
+        "topic": "Announce Raffle Winners",
         "description": ""
       },
       {
-        "time": "3:10 PM",
-        "presenters": [
-          {
-            "name": "Josh Brower ⓘ",
-            "image": "/img/team/josh_brower.jpg",
-            "bio": "Josh Brower has been crashing computers since his teens, and now feels fortunate to be doing it professionally. He has spent the last 15+ years focusing on InfoSec, particularly network and endpoint detection. He also enjoys teaching around InfoSec issues, especially to non-technical learners - helping them to understand how their actions in the digital world have real-world consequences, as well as how to proactively reduce the risk.<p class=\"my-2\">You can catch him on Twitter @DefensiveDepth."
-          }
-        ],
-        "topic": "Paring the Onion: Importing Sysmon Configs to Filter Endpoint Logs",
-        "description": "Ingesting process, disk and network events from endpoints has given us unprecedented visibility - but also unprecedented volumes of logs to sift through.  Filtering out known-good events is possible, but identifying the criteria for a baseline filter can be challenging.<p class=\"my-2\">In this presentation, we will walk through a practical option to handle these problems using Security Onion’s Elastic Agent integration. Specifically, we will use a Sysmon configuration as a source filter and convert it into a format that can be used by Security Onion to filter out known-good events, so that we can more easily slice and dice our data to find the bad guys."
-      },
-      {
-        "time": "4:05 PM",
+        "time": "3:00 PM",
         "presenters": [
           {
             "name": "Doug Burks ⓘ",
             "image": "/img/team/doug_burks.jpg",
-            "bio": "Doug Burks started Security Onion in 2008 to provide a comprehensive platform to help folks peel back the layers of their enterprise and make their adversaries cry.  Today, Security Onion has over 2,000,000 downloads and is being used by organizations around the world for threat hunting, enterprise security monitoring, and log management.  In 2014, Doug started Security Onion Solutions LLC to help those organizations by providing training, professional services, and hardware appliances.  Doug is a CEO, public speaker, teacher, former president of the Greater Augusta ISSA, and co-founder of BSides Augusta, but what he really likes the most is catching bad guys."
+            "bio": "Doug Burks started Security Onion in 2008 to provide a comprehensive platform to help folks peel back the layers of their enterprise and make their adversaries cry. Today, Security Onion has over 2,000,000 downloads and is being used by organizations around the world for threat hunting, enterprise security monitoring, and log management. In 2014, Doug started Security Onion Solutions LLC to help those organizations by providing training, professional services, and hardware appliances. Doug is a CEO, public speaker, teacher, former president of the Greater Augusta ISSA, and co-founder of BSides Augusta, but what he really likes the most is catching bad guys."
           }
         ],
         "topic": "State of the Onion",
