@@ -23,41 +23,12 @@
         </div>
       </template>
     </SubHero>
-    <ContentSection id="about" :alternate="true">
-      <div class="px-6 xs:px-12 lg:px-32">
-        <feature-right class="xs:mb-12" :text-margin="true">
-          <template #header>
-            <div class="text-center xs:text-left">
-              Who Should Attend
-            </div>
-          </template>
-          <template #graphic>
-            <div class="shadow-xl rounded-full overflow-hidden">
-              <Graphic
-                :padding="false"
-                file-name="instructor.jpg"
-                :size="20"
-              />
-            </div>
-          </template>
-          <template #body>
-            <div class="text-center xs:text-left">
-              If you use, or are considering using Security Onion, then you should attend Security Onion Conference! Find out what's new with Security Onion, learn best practices and exchange ideas with other users.
-            </div>
-            <div class="text-center xs:text-left mt-4">
-              If you're generally interested in things like intrusion detection, network security monitoring, enterprise security monitoring, log management, hunting, and blue teaming, then you should consider attending Security Onion Conference!
-            </div>
-          </template>
-        </feature-right>
-      </div>
-    </ContentSection>
-
     <div v-if="upcoming.schedule != null">
-      <ContentSection id="schedule">
+      <ContentSection id="schedule" :alternate="false">
         <div class="xs:-mx-12 px-6 xs:px-12 lg:px-32">
           <SectionHeader class="mb-6 lg:mb-10">
             <div>
-              Security Onion Conference Schedule
+              Conference Schedule*
             </div>
             <div class="text-2xl xl:text-3xl font-medium">
               {{ upcoming.date }}
@@ -103,11 +74,40 @@
               </tr>
             </tbody>
           </table>
+          * Schedule is subject to change.
         </div>
       </ContentSection>
-
-      <ContentSection :alternate="true" />
     </div>
+
+    <ContentSection id="about" :alternate="true">
+      <div class="px-6 xs:px-12 lg:px-32">
+        <feature-right class="xs:mb-12" :text-margin="true">
+          <template #header>
+            <div class="text-center xs:text-left">
+              Who Should Attend
+            </div>
+          </template>
+          <template #graphic>
+            <div class="shadow-xl rounded-full overflow-hidden">
+              <Graphic
+                :padding="false"
+                file-name="instructor.jpg"
+                :size="20"
+              />
+            </div>
+          </template>
+          <template #body>
+            <div class="text-center xs:text-left">
+              If you use, or are considering using Security Onion, then you should attend Security Onion Conference! Find out what's new with Security Onion, learn best practices and exchange ideas with other users.
+            </div>
+            <div class="text-center xs:text-left mt-4">
+              If you're generally interested in things like intrusion detection, network security monitoring, enterprise security monitoring, log management, hunting, and blue teaming, then you should consider attending Security Onion Conference!
+            </div>
+          </template>
+        </feature-right>
+      </div>
+    </ContentSection>
+
 
     <ContentSection id="past">
       <SectionHeader class="mb-10">
