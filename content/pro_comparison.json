@@ -210,6 +210,12 @@
       "caption": "Automated, periodic ingest of Security Onion alerts into Splunk via the Security Onion Connect API. Security Onion Solutions does not provide support for this feature."
     },
     {
+      "feature": "Hardware Virtualization",
+      "free": false,
+      "premium": true,
+      "caption": "This feature is especially helpful if you want to optimize your hardware's potential and expand your Elastic performance and retention. Available on select hardware."
+    },
+    {
       "feature": "Enhanced SLA Options",
       "free": false,
       "premium": true,
