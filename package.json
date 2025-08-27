@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@egjs/vue3-view360": "^3.0.4",
-    "vue-gtag": "2.0.1"
+    "vue-gtag": "2.0.1",
+    "devalue": "^5.3.2"
   }
 }
