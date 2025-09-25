@@ -216,6 +216,12 @@
       "caption": "This feature is especially helpful if you want to optimize your hardware's potential and expand your Elastic performance and retention. Available on select hardware."
     },
     {
+      "feature": "Reporting",
+      "free": false,
+      "premium": true,
+      "caption": "Run built-in case or productivity reports, export SOC data to CSV files, and even create your own custom reports, or customize our built-in reports."
+    },
+    {
       "feature": "Enhanced SLA Options",
       "free": false,
       "premium": true,
