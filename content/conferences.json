@@ -23,6 +23,18 @@
         "description": ""
       },
       {
+        "time": "8:15 AM",
+        "presenters": [
+          {
+            "name": "Matt Gracie ⓘ",
+            "image": "/img/team/matt_gracie.jpg",
+            "bio": "Matthew Gracie is a defensive security specialist with fifteen years of Blue Team experience in higher education, manufacturing, financial services, and healthcare. He is currently a Senior Engineer at Security Onion Solutions, as well as an adjunct professor of Cybersecurity in the graduate school at Canisius University. Matt is also the lead organizer of Infosec 716, a monthly meetup for security enthusiasts in Western New York, and the BSides Buffalo technology conference. He enjoys good beer, mountain bikes, open source security tools, and college hockey, and can be found on Bluesky as @InfosecGoon."
+          }
+        ],
+        "topic": "Breakfast Session - Security Onion: What's New?",
+        "description": "An informal review of recent developments in Security Onion since the last conference in 2023."
+      },
+      {
         "time": "9:00 AM",
         "presenters": [],
         "topic": "Opening Remarks",
