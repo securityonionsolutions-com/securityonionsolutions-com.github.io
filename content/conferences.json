@@ -75,7 +75,7 @@
         "presenters": [
           {
             "name": "Wes Lambert ⓘ",
-            "image.disabled": "/img/team/wes_lambert.jpg",
+            "image": "/img/speakers/wes_lambert.jpg",
             "bio": "Wes Lambert is a lead engineer at Target, where he focuses on network security monitoring at scale. He spends his time designing and tuning network-based detection architecture and helps the organization achieve visibility across the enterprise."
           }
         ],
