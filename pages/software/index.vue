@@ -147,8 +147,9 @@
     <ContentSection id="features" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32">
         <section-header class="mb-6">
-          Included Features
+          Feature Highlights
         </section-header>
+        <div class="text-center text-lg">For a full list of features see the Security Onion Pro <a href="/pro#comparison" class="my-1 text-white-200 hover:text-gray-300 font-semibold">feature comparison</a> matrix</div>
         <div class="flex flex-col lg:flex-row lg:flex-wrap justify-center content-center md:-mx-2 mt-4">
           <feature-selector :feature-arr="featureArr" />
         </div>

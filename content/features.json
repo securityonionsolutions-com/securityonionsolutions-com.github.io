@@ -15,6 +15,11 @@
 		"body": "Manage all detection rules (Suricata, YARA, and Sigma) in a single interface. Import publically-available community rules or create custom rules. Quickly pivot from the Alerts interface to the detection that triggered the alert; then disable the detection, or add suppression, threshold, and other overrides to fine tune the detection. Includes an audit trail of all rule changes."
 	},
 	{
+		"image": "playbooks.png",
+		"header": "Playbooks",
+		"body": "Follow our included playbooks, covering thousands of popular detection rules, to quickly investigate alerts and determine if they are true or false positives."
+	},
+	{
 		"image": "pcap.jpg",
 		"header": "PCAP",
 		"body": "Pull packet captures from network events and analyze them within SOC, CyberChef, or your favorite external tool."
@@ -33,6 +38,16 @@
 		"image": "analyzers.jpg",
 		"header": "Analyzers",
 		"body": "Run Analyzers against your case observables, to extract summarized information from local or remote analysis services, such as VirusTotal, SpamHaus, and more!"
+	},
+	{
+		"video": "onionai-demo.mp4",
+		"header": "Onion AI",
+		"body": "Cut your investigation times into fractions of what they used to be by using the built-in security analyst assistant powered by a highly intelligent AI LLM. Security Onion Pro license required."
+	},
+	{
+		"video": "mcp-demo.mp4",
+		"header": "MCP",
+		"body": "Connect your own Machine Learning models to Security Onion using our Model Context Protocol (MCP) server. Security Onion Pro license required."
 	}
 ]
 }

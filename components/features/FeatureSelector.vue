@@ -1,10 +1,10 @@
 <template>
   <div class="flex flex-col items-center justify-center">
-    <div class="flex flex-col lg:flex-row items-center lg:mx-4 mt-3">
+    <div class="grid grid-cols-2 lg:grid-cols-5 gap-4 mt-3 items-center">
       <button
         v-for="(feat, index) in featureArr"
         :key="index"
-        class="flex justify-center items-center my-1 focus:outline-none w-4/5 xs:w-full h-full"
+        class="flex justify-center items-center focus:outline-none w-full h-full"
         :class="[ activeFeat===index ? 'bg-gray-200 bg-opacity-25 shadow-lg rounded-lg' : '']"
         @click="setActiveFeat(index)"
         @focus="setActiveFeat(index)"
@@ -18,7 +18,6 @@
     </div>
     <div
       class="w-full
-        lg:w-4/5
         rounded-md
         overflow-hidden
         m-8
@@ -33,7 +32,15 @@
         cursor-pointer"
       @click="handleImageClick(activeFeat)"
     >
-      <img :src="screenshot(activeFeat)">
+      <img v-if="isImage(activeFeat)" :src="screenshot(activeFeat)"/>
+      <video v-else-if="isVideo(activeFeat)" :key="activeFeat" class="v-player__video w-full" controls autoplay="true"
+          loop="true"
+          muted="false"
+          poster=""
+          preload="auto"
+          name="media">
+        <source :src="videoPath(activeFeat)"/>
+      </video>
     </div>
     <div v-text="description(activeFeat)" />
   </div>
@@ -65,13 +72,26 @@ export default {
       const fileName = this.featureArr[index].image
       return `/img/graphics/${fileName}`
     },
+    videoPath(index) {
+      const filename = this.featureArr[index].video;
+      return `/videos/${filename}`;
+    },
     description (index) {
       const text = this.featureArr[index].body
       return text
     },
+    isImage(index) {
+      return !!this.featureArr[index].image;
+    },
+    isVideo(index) {
+      return !!this.featureArr[index].video;
+    },
     handleImageClick (index) {
-      const fileName = this.featureArr[index].image.replace('screenshots/', '')
-      sos.showImageZoom({ imageName: fileName, imageType: 'screenshot' })
+      const imageFilename = this.featureArr[index].image;
+      if (imageFilename) {
+        const fileName = this.featureArr[index].image.replace('screenshots/', '')
+        sos.showImageZoom({ imageName: fileName, imageType: 'screenshot' })
+      }
     }
   }
 }
