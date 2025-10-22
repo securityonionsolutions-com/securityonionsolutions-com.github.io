@@ -20,7 +20,7 @@
           </template>
           <template #title>
             <div class="text-2xl">
-              Pro users, try our latest version of Security Onion and experience the new Onion AI, built directly into the Security Onion console. Your existing Pro key has already been pre-loaded with 10,000,000 credits!
+              Our latest version of Security Onion includes the all-new Onion AI, an LLM-based security analyst assistant, built directly into the Security Onion console. Security Onion Pro customers have access to this time-saving feature today!
             </div>
           </template>
           <template #body>
