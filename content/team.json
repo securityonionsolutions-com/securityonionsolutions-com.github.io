@@ -122,6 +122,16 @@
       "name": "Matthew Wright",
       "role": "Associate Software Engineer",
       "image": "matthew_wright.jpg"
+    },
+    {
+      "name": "Scott Lynch",
+      "role": "Senior Engineer",
+      "image": "scott_lynch.jpg"
+    },
+    {
+      "name": "Shane Hoenke",
+      "role": "Senior Engineer",
+      "image": "shane_hoenke.jpg"
     }
   ]
 }
