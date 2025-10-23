@@ -26,7 +26,7 @@
           <template #body>
             <div class="text-2xl d-flex-column">
               <div class="text-xl mt-8">
-                Security Onion Pro customers with Internet-connected grids have access to this time-saving feature today!
+                Existing Security Onion Pro customers with Internet-connected grids have access to this time-saving feature today! No additional license changes are necessary. Interested in using Onion AI with a local model? Contact us to learn more.
               </div>
               <div class="w-full flex justify-center">
                 <so-button class="mt-4 xl:mt-8" link="/pro" :alternate="true">
