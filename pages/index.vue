@@ -20,13 +20,13 @@
           </template>
           <template #title>
             <div class="text-2xl">
-              Our latest version of Security Onion includes the all-new Onion AI, an LLM-based security analyst assistant, built directly into the Security Onion console. Security Onion Pro customers have access to this time-saving feature today!
+              Introducing the all-new <i>Onion AI</i>, an advanced LLM-based security analyst assistant, built directly into the Security Onion console.
             </div>
           </template>
           <template #body>
             <div class="text-2xl d-flex-column">
               <div class="text-xl mt-8">
-                Peel back the layers of your network and make your adversaries cry!
+                Security Onion Pro customers with Internet-connected grids have access to this time-saving feature today!
               </div>
               <div class="w-full flex justify-center">
                 <so-button class="mt-4 xl:mt-8" link="/pro" :alternate="true">
