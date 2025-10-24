@@ -204,6 +204,12 @@
       "caption": "Interface your AI/LLM platform to your Security Onion grid, allowing AI to query alerts, playbooks, and more."
     },
     {
+      "feature": "Onion AI Security Assistant",
+      "free": false,
+      "premium": true,
+      "caption": "AI-powered security assistant for enhanced threat analysis and response"
+    },
+    {
       "feature": "Splunk App",
       "free": false,
       "premium": true,

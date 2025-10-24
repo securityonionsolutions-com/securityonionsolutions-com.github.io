@@ -15,18 +15,18 @@
                   poster=""
                   preload="auto"
                   name="media">
-                <source src="/public/videos/mcp-demo.mp4">
+                <source src="/public/videos/onionai-demo.mp4">
             </video>
           </template>
           <template #title>
             <div class="text-2xl">
-              Are you down with MCP? Introducing the new MCP Server for Security Onion Pro users.
+              Introducing the all-new <i>Onion AI</i>, an advanced LLM-based security analyst assistant, built directly into the Security Onion console.
             </div>
           </template>
           <template #body>
             <div class="text-2xl d-flex-column">
               <div class="text-xl mt-8">
-                Peel back the layers of your network and make your adversaries cry!
+                Existing Security Onion Pro customers with Internet-connected grids have access to this time-saving feature today! No additional license changes are necessary. Interested in using Onion AI with a local model? Contact us to learn more.
               </div>
               <div class="w-full flex justify-center">
                 <so-button class="mt-4 xl:mt-8" link="/pro" :alternate="true">
