@@ -3,19 +3,19 @@
     "year": 2025,
     "date": "October 24, 2025",
     "location": "Augusta, GA",
-    "caption.thankyou": "Thank you to all who attended the 2023 conference! We look forward to seeing everyone at our next conference!",
+    "caption": "Thank you to all who attended the 2025 conference! We look forward to seeing everyone at our next conference!",
     "caption.cfp_open": "Save the date for our next annual conference in 2025! The Call For Papers runs May 19 through July 14.",
     "caption.savedate": "Save the date for our next annual conference in 2025! The Call For Papers is now closed.",
-    "caption": "Register today! We look forward to seeing you there!",
+    "caption.register": "Register today! We look forward to seeing you there!",
     "caption.comingsoon": "Tickets will be available for puchase starting on August 7th, 2025.",
     "caption.cancelled": "The 2024 Security Onion conference has been cancelled due to impacts from Hurricane Helene.",
     "link.blog": "https://blog.securityonion.net/2024/09/security-onion-conference-cancelled-due.html",
-    "link": "https://socaugusta2025.eventbrite.com/",
+    "link.register": "https://socaugusta2025.eventbrite.com/",
     "link.pics": "https://blog.securityonion.net/2024/04/security-onion-conference-2024-save.html",
     "link.moreinfo": "https://blog.securityonion.net/2025/05/security-onion-conference-2025-save.html",
     "button.moreinfo": "More Information",
     "button": "Register Now",
-    "schedule": [
+    "schedule.disabled": [
       {
         "time": "8:00 AM",
         "presenters": [],
@@ -134,6 +134,56 @@
     ]
   },
   "past": [
+    {
+      "year": 2025,
+      "date": "October 24, 2025",
+      "location":"Augusta, GA",
+      "pictures.disabled": "",
+      "playlist": "https://www.youtube.com/embed/videoseries?list=PLljFlTO9rB16ak98fBZrL6X_w8K2astB0",
+      "events": [
+        {
+          "speakers": ["Matt Gracie"],
+          "pres_name": "Breakfast Session - Security Onion: What's New?",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=QA0xOuYIFIg&list=PLljFlTO9rB16ak98fBZrL6X_w8K2astB0&index=1"
+          }
+        },
+        {
+          "speakers": ["Dr. Kelley Misata"],
+          "pres_name": "Beyond Code Commits: Sustaining Open Source for Security at Scale",
+          "links": {
+          }
+        },
+        {
+          "speakers": ["Matt Gracie"],
+          "pres_name": "Security Onion as a Teaching Platform",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=1frIQFlmcjE&list=PLljFlTO9rB16ak98fBZrL6X_w8K2astB0&index=2"
+          }
+        },
+        {
+          "speakers": ["Dr. Chris Sanders", "Josh Brower"],
+          "pres_name": "Investigation Playbooks for Humans",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=ktFw6dJSd74&list=PLljFlTO9rB16ak98fBZrL6X_w8K2astB0&index=3"
+          }
+        },
+        {
+          "speakers": ["Jeff Lucovsky"],
+          "pres_name": "Suricata 8",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=1Bv1I5N2_DQ&list=PLljFlTO9rB16ak98fBZrL6X_w8K2astB0&index=4"
+          }
+        },
+        {
+          "speakers": ["Doug Burks"],
+          "pres_name": "State of the Onion",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=i2tM_WmDF54&list=PLljFlTO9rB16ak98fBZrL6X_w8K2astB0&index=5"
+          }
+        }
+      ]
+    },
     {
       "year": 2023,
       "date": "October 6, 2023",
