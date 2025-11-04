@@ -112,7 +112,7 @@
             Included with Larger Hardware Appliances
           </template>
           <template #body-left>
-            Security Onion Pro is included with many of our larger hardware appliance models, such as the SOS SN7200, SOS SNNV, and SOS GoFast, at no additional charge. See our full appliance list on the
+            A single node Security Onion Pro license is included with many of our larger hardware appliance models, such as the SOS SN7200, SOS SNNV, and SOS GoFast, at no additional charge. See our full appliance list on the
             <a href="https://securityonion.com/hardware" class="underline">Hardware</a>
             page.
           </template>
@@ -120,11 +120,14 @@
             Broad Grid Coverage
           </template>
           <template #body-right>
-            The standard Pro license includes licensing for up to ten Security Onion
+            The standard Pro license includes licensing for up to ten* Security Onion
             <a href="https://docs.securityonion.net/en/2.4/architecture.html#node-types" class="underline">nodes</a>, with additional node packs available for purchase.
             Additionally, we offer licenses for smaller grids, such as a single standalone node.
           </template>
         </two-panel-detail>
+        <div class="mt-4">
+          * Hardware appliances include a single node license to cover that appliance node only.
+        </div>
       </div>
     </ContentSection>
     <ContentSection id="comparison" :bottom-margin="false">
