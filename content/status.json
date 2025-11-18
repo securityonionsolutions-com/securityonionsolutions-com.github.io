@@ -7,6 +7,11 @@
     "affectedSystems": ["Onion AI"],
     "updates": [
       {
+        "state": "Investigating",
+        "details": "Balance inquiries and related Onion AI requests may still be intermittently unavailable. We continue to monitor our DNS provider's progress on resolving the issue.",
+        "date": "2025-11-18T14:31:00Z"
+      },
+      {
         "state": "Recovering",
         "details": "Onion AI is available again but we continue to monitor the situation and updates from our DNS provider.",
         "date": "2025-11-18T14:08:00Z"
