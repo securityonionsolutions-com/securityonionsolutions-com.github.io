@@ -96,7 +96,8 @@ export default {
   },
   methods: {
     formatDate(dateStr) {
-      return new Date(dateStr).toLocaleString()
+      const date = new Date(dateStr)
+      return date.toISOString().replace('T', ' ').replace(/\.\d{3}Z$/, ' UTC')
     },
     toggleExpanded(incident) {
       incident.expanded = !incident.expanded

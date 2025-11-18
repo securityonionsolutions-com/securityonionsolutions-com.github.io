@@ -1,11 +1,16 @@
 [
   {
     "summary": "Onion AI",
-    "open": true,
+    "open": false,
     "outage": false,
     "affectedRegions": ["Global"],
     "affectedSystems": ["Onion AI"],
     "updates": [
+      {
+        "state": "Resolved",
+        "details": "No further reports of Onion AI service problems have been reported over the past hour. The system remains stable at this point.",
+        "date": "2025-11-18T19:38:00Z"
+      },
       {
         "state": "Recovering",
         "details": "The DNS provider has resolved the outage affecting Onion AI. All systems are now operational. We will continue monitoring to verify stability.",
