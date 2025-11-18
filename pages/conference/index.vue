@@ -133,9 +133,12 @@
               {{ conference.location }}
             </div>
             <div class="mt-5">
-              <a v-if="conference.pictures" :href="conference.pictures" target="_blank" class="mx-4">
+              <a v-if="conference.pictures && typeof conference.pictures === 'string' && conference.pictures.startsWith('http')" :href="conference.pictures" target="_blank" class="mx-4">
                 <icon name="fa-solid:camera" size="2em" />
               </a>
+              <button v-else-if="conference.pictures" @click="showPicturesModal(conference.pictures)" class="mx-4 bg-transparent border-none cursor-pointer">
+                <icon name="fa-solid:camera" size="2em" />
+              </button>
             </div>
           </div>
           <div class="flex flex-col items-center content-center">
@@ -176,6 +179,11 @@
         </div>
       </div>
     </ContentSection>
+    <FloatingModal v-if="showModal" @close="showModal = false">
+      <div class="bg-white p-8 rounded max-w-6xl">
+        <ImageCarousel :images="modalImages" />
+      </div>
+    </FloatingModal>
   </div>
 </template>
 
@@ -183,6 +191,8 @@
 import SoButton from '~/components/SoButton.vue'
 import FeatureRight from '~/components/features/FeatureRight'
 import SubHero from '~/components/hero/SubHero'
+import FloatingModal from '~/components/FloatingModal.vue'
+import ImageCarousel from '~/components/ImageCarousel.vue'
 
 import conferences from '~/content/conferences.json'
 
@@ -191,12 +201,16 @@ export default {
     FeatureRight,
     SoButton,
     SubHero,
+    FloatingModal,
+    ImageCarousel,
   },
   data: () => ({
     links: [{ name: 'Upcoming Schedule', id: 'schedule' }, { name: 'About', id: 'about' }, { name: 'Past Conferences', id: 'past' }],
     conferences: conferences.past,
     upcoming: conferences.upcoming,
     pictures: {},
+    showModal: false,
+    modalImages: [],
     hooperSettings: {
       itemsToShow: 1,
       centerMode: true,
@@ -233,7 +247,22 @@ export default {
     toggleDetails(entry) {
       entry.expanded = !entry.expanded && (entry.description || entry.presenters.length) ? true : false
     },
-  }
+    showPicturesModal(picturePaths) {
+      this.modalImages = picturePaths
+      this.showModal = true
+    },
+    handleKeydown(e) {
+      if (e.key === 'Escape' && this.showModal) {
+        this.showModal = false
+      }
+    },
+  },
+  mounted() {
+    window.addEventListener('keydown', this.handleKeydown)
+  },
+  beforeDestroy() {
+    window.removeEventListener('keydown', this.handleKeydown)
+  },
 }
 </script>
 

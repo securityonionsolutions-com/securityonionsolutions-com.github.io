@@ -1,0 +1,21 @@
+[
+  {
+    "summary": "Onion AI",
+    "open": true,
+    "outage": false,
+    "affectedRegions": ["Global"],
+    "affectedSystems": ["Onion AI"],
+    "updates": [
+      {
+        "state": "Recovering",
+        "details": "Onion AI is available again but we continue to monitor the situation and updates from our DNS provider.",
+        "date": "2025-11-18T14:08:00Z"
+      },
+      {
+        "state": "Investigating",
+        "details": "Began investigating reports of Onion AI service being unavailable. Relates to DNS outage from third-party provider.",
+        "date": "2025-11-18T13:50:00Z"
+      }
+    ]
+  }
+]

@@ -17,6 +17,8 @@
       <nuxt-link to="/privacy">Privacy</nuxt-link>
       <span class="text-gray-700 mx-2">|</span>
       <nuxt-link to="/brand">Brand</nuxt-link>
+      <span class="text-gray-700 mx-2">|</span>
+      <nuxt-link to="/status">Status</nuxt-link>
     </div>
     <div class="flex flex-row">
       <div class="text-center content-center justify-center">
