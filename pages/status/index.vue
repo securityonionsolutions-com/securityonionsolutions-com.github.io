@@ -25,11 +25,11 @@
         </div>
         <div v-else v-for="incident in openIncidents" :key="incident.summary" class="bg-blue-100 rounded mb-4">
           <h3 class="text-xl font-bold p-4 bg-blue-800 flex justify-between items-center">{{ incident.summary }} <span class="px-2 py-1 rounded text-white text-sm font-normal" :class="incident.outage ? 'bg-red-500' : 'bg-yellow-500'">{{ incident.outage ? 'Unavailable' : 'Degraded' }}</span></h3>
-          <div class="p-2 mb-2 text-gray-600">
+          <div class="p-2 mb-2 text-gray-800">
             <p><strong>Affected Regions:</strong> {{ incident.affectedRegions.join(', ') }}</p>
             <p><strong>Affected Systems:</strong> {{ incident.affectedSystems.join(', ') }}</p>
           </div>
-          <div class="space-y-2 p-3 text-gray-600">
+          <div class="space-y-2 p-3 text-gray-800">
             <div v-for="update in incident.updates" :key="update.date" class="border-l-4 border-blue-500 pl-4">
               <strong>{{ update.state }}</strong> - {{ update.details }}
               <small class="text-gray-500 block">{{ formatDate(update.date) }}</small>
