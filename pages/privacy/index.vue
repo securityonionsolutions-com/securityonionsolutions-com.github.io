@@ -7,7 +7,7 @@
       </template>
       <template #body>
         <div class="text-center">
-          Updated on 05/02/2024
+          Updated on 11/25/2025
         </div>
       </template>
     </SubHero>
@@ -34,7 +34,7 @@
           It does not apply to information collected by:
         </p>
         <ul class="privacy-list">
-          <li>Us offline or through any other means, including on any other website operated by Company or any third party; or </li>
+          <li>Us offline or through any other means, including on any other website operated by us or any third party; or</li>
           <li>Any third party, including through any application or content (including advertising) that may link to or be accessible from or through the Website.</li>
         </ul>
         <p class="mt-4">
@@ -52,7 +52,7 @@
           Collected Information
         </div>
         <p class="mt-4">
-          When using our Website or our Products, some information may be automatically collected. Information that is automatically collected includes the internet address from which you are connecting, the type and version of the operating system and web browser you are using, and information about your visit to the Website, including length of visit and pages you visit. Such information does not automatically identify you personally, although if combined with other personally identifiable information it may be used to identify you personally. 
+          When using our Website or our Products, some information may be automatically collected. Information that is automatically collected includes the internet address from which you are connecting, the type and version of the operating system and web browser you are using, and information about your visit to the Website, including length of visit and pages you visit. Automatically collected information may also include product versions, operating systems, hardware configurations, product license information, and other deployment-related information. Additionally, we may collect product feature usage information, including which features are being used and metrics quantifying usage.Such information does not automatically identify you personally, although if combined with other personally identifiable information it may be used to identify you personally. 
         </p>
         <p class="mt-4">
           When using our Website or our Products, we may also collect personally identifiable information that you provide to us, including your name and email address.
@@ -71,10 +71,23 @@
           We use the automatically collected information to improve our products and websites and to help us provide a better user experience. This information, when combined with the information of our other users, in the aggregate, will allow us to analyze product and service usage patterns.
         </p>
         <p class="mt-4">
+          We may use automatically collected information, such as Product deployment and usage information, for billing purposes and related account management.
+        </p>
+        <p class="mt-4">
           We may use the information you provide us to contact you. This could occur for many reasons, such as when we respond to your Product or Website inquiry. This could also occur when we need to notify you about Product changes, system outages, or security-related events that we believe may be of interest to you.
         </p>
         <p class="mt-4">
           We may share your information with our service providers who support our business, solely for the purpose of supporting our business.
+        </p>
+
+        <div class="text-3xl mt-8">
+          Private System Information
+        </div>
+        <p class="mt-4">
+          Our Products may include optional cloud-hosted services, including AI-related chat services. You may choose to enable and use these optional services. When submitting requests to these services, additional private system information may be transmitted to our Product services hosted in the cloud. Examples of this private system information include event and log data, alert data, and any other data that is accessible by our Product and which may be helpful for the online cloud-hosted services to provide the requested service.
+        </p>
+        <p class="mt-4">
+          This private system information is sent to our third party cloud hosting provider to provide the requested service. It is not used for training AI models nor is it stored or logged in the cloud.  Historic chat information is stored locally in your environment. This private system information is collected only if you have opted in to the chat service.
         </p>
 
         <div class="text-3xl mt-8">
@@ -116,7 +129,7 @@
           Data Security
         </div>
         <p class="mt-4">
-          We have implemented measures designed to secure your personal information from accidental loss and from unauthorized access, use, alteration, and disclosure. Information you provide to us is stored at Amazon Web Services (“AWS”) or in Google Analytics. You may read about the AWS security measures at <a href="https://aws.amazon.com/privacy/">https://aws.amazon.com/privacy/</a>. You may read about Google Analytics’ security measures at <a href="https://policies.google.com/privacy?hl=en">https://policies.google.com/privacy?hl=en</a>.
+          We have implemented measures designed to secure your personal information from accidental loss and from unauthorized access, use, alteration, and disclosure. Information you provide to us (other than private system information) is stored at Amazon Web Services (“AWS”) or in Google Analytics. You may read about the AWS security measures at <a href="https://aws.amazon.com/privacy/">https://aws.amazon.com/privacy/</a>. You may read about Google Analytics’ security measures at <a href="https://policies.google.com/privacy?hl=en">https://policies.google.com/privacy?hl=en</a>.
         </p>
         <p class="mt-4">
           Unfortunately, the transmission of information via the internet is not completely secure. Although we do our best to protect your personal information, we cannot guarantee the security of your personal information transmitted to our Website. Any transmission of personal information is at your own risk. We are not responsible for circumvention of any privacy settings or security measures contained on the Website. 
