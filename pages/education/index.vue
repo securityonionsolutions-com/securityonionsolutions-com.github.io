@@ -95,7 +95,7 @@
                 <div>A:</div>
                 <div class="text-left">
                   We have excellent documentation available <a href="https://docs.securityonion.net/" class="text-so-blue cursor-pointer hover:underline">here</a>,
-                  with its own FAQ <a href="https://docs.securityonion.net/en/2.3/faq.html" class="text-so-blue cursor-pointer hover:underline">here</a>.
+                  with its own FAQ <a href="https://docs.securityonion.net/faq" class="text-so-blue cursor-pointer hover:underline">here</a>.
                   For more information about support options, <nuxt-link to="/support" class="text-so-blue cursor-pointer hover:underline">click here</nuxt-link>.
                 </div>
               </div>
@@ -115,7 +115,7 @@
                 <div>A:</div>
                 <div class="text-left">
                   You are free to reference our documentation while teaching your course, but please check the
-                  <a href="https://docs.securityonion.net/en/2.3/about.html#license" class="text-so-blue cursor-pointer hover:underline">documentation's license</a>
+                  <a href="https://docs.securityonion.net/about#license" class="text-so-blue cursor-pointer hover:underline">documentation's license</a>
                   for further details.
                 </div>
               </div>
