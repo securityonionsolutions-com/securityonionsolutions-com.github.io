@@ -20,7 +20,7 @@
           </template>
           <template #title>
             <div class="text-2xl">
-              Introducing the all-new <i>Onion AI</i>, an advanced LLM-based security analyst assistant, built directly into the Security Onion console.
+              Our popular <i>Onion AI</i>, an advanced LLM-based security analyst assistant built directly into the Security Onion console, has just received a significant upgrade! Check out the video below to see how Onion AI can help your team eliminate the tedious process of detection tuning.
             </div>
           </template>
           <template #body>
