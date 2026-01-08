@@ -77,14 +77,14 @@
               </div>
             </div>
             <div class="flex flex-col items-center gap-y-6 lg:mt-4">
-              <so-button link="/files/socp-v24170-exam-blueprint.pdf">
+              <so-button link="/files/socp-v24200-exam-blueprint.pdf">
                 Exam details
               </so-button>
               <so-button link="https://www.prometric.com/sos">
                 Schedule exam
               </so-button>
               <div class="text-sm -mt-4 mb-3 hover:underline">
-                <a href="/files/socp-registration-guide-v24170.pdf">
+                <a href="/files/socp-registration-guide-v24200.pdf">
                   <div class="flex flex-row justify-center content-center">
                     <div>
                       Registration Guide
