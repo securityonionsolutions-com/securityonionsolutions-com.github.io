@@ -32,9 +32,6 @@
             <p class="text-gray-600 mb-6 text-lg">
               We apologize for the inconvenience. The public demo environment is currently undergoing daily maintenance.
             </p>
-            <p class="mb-6 text-lg">
-              ::CLOUDFLARE_ERROR_500S_BOX::
-            </p>
             <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8 text-left">
               <div class="flex">
                 <div class="flex-shrink-0">
@@ -47,11 +44,9 @@
                 </div>
               </div>
             </div>
-            <div class="flex justify-center">
-              <SoButton link="https://demo.securityonion.net">
-                Try Again
-              </SoButton>
-            </div>
+            <p class="text-gray-600 text-lg">
+              The demo will <a onclick="window.location.reload()" class="cursor-pointer text-blue-500 hover:text-blue-700 hover:underline">reload</a> once maintenance completes.
+            </p>
             <p class="text-gray-600 mt-6 text-lg">
               Alternatively, contact us for a live demo!
             </p>
