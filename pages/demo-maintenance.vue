@@ -16,7 +16,7 @@
         </div>
       </template>
     </SubHero>  
-    <ContentSection id="maintenance" :alternate="false">
+    <ContentSection id="maintenance" :alternate="true">
       <div class="flex-grow flex flex-col justify-center py-12 sm:px-6 lg:px-8">
         <div class="sm:mx-auto sm:w-full sm:max-w-md">
           <div class="flex justify-center">
