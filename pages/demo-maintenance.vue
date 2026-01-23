@@ -6,7 +6,7 @@
         Security Onion Demo
       </template>
       <template #body>
-        Try out Security Onion today using our online demo. Live demos are also available by request!
+        Try out Security Onion today using our online demo, accessible below with no registration required. Live demos are also available by request!
         <div class="flex flex-col flex-grow items-center">
           <ActionCallout :showInfo=false class="mt-1 xl:mt-4" @button-click="sos.showContactModal({ text: 'Please contact me about a live demo of Security Onion.', source: 'demo_maintenance_hero_contact' })">
             <template #button-text>
@@ -15,7 +15,7 @@
           </ActionCallout>
         </div>
       </template>
-    </SubHero>
+    </SubHero>  
     <ContentSection id="maintenance" :alternate="false">
       <div class="flex-grow flex flex-col justify-center py-12 sm:px-6 lg:px-8">
         <div class="sm:mx-auto sm:w-full sm:max-w-md">
@@ -28,12 +28,9 @@
         </div>
 
         <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-          <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10 text-center">
+          <div class="bg-gray-50 py-8 px-4 shadow sm:rounded-lg sm:px-10 text-center">
             <p class="text-gray-600 mb-6 text-lg">
               We apologize for the inconvenience. The public demo environment is currently undergoing daily maintenance.
-            </p>
-            <p class="text-gray-600 mb-6 text-lg">
-              Alternatively, contact us for a live demo!
             </p>
             <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8 text-left">
               <div class="flex">
@@ -52,6 +49,9 @@
                 Try Again
               </SoButton>
             </div>
+            <p class="text-gray-600 mt-6 text-lg">
+              Alternatively, contact us for a live demo!
+            </p>
           </div>
         </div>
       </div>
