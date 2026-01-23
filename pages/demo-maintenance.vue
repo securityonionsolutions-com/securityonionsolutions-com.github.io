@@ -32,6 +32,7 @@
             <p class="text-gray-600 mb-6 text-lg">
               We apologize for the inconvenience. The public demo environment is currently undergoing daily maintenance.
             </p>
+            ::CLOUDFLARE_ERROR_500S_BOX::
             <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8 text-left">
               <div class="flex">
                 <div class="flex-shrink-0">
