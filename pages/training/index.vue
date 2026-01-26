@@ -153,7 +153,7 @@
         </div>
         <div class="flex justify-center video-container">
           <iframe
-            src="https://www.youtube.com/playlist?list=PLljFlTO9rB17JFrBQmnqX17y4rxrgUDzO"
+            src="https://www.youtube.com/embed/watch?list=PLljFlTO9rB17JFrBQmnqX17y4rxrgUDzO"
             frameborder="0"
             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
