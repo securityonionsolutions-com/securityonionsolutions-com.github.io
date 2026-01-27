@@ -44,9 +44,11 @@
                 </div>
               </div>
             </div>
-            <p class="text-gray-600 text-lg">
-              The demo will <a onclick="window.location.reload()" class="cursor-pointer text-blue-500 hover:text-blue-700 hover:underline">reload</a> once maintenance completes.
-            </p>
+            <div class="mt-6 flex justify-center">
+              <SoButton @click="reloadPage">
+                Try Again
+              </SoButton>
+            </div>
             <p class="text-gray-600 mt-6 text-lg">
               Alternatively, contact us for a live demo!
             </p>
@@ -132,7 +134,12 @@ export default {
   data: () => ({
     sos,
     links: [{ name: 'Live Demo', id: 'live-demo' }]
-  })
+  }),
+  methods: {
+    reloadPage () {
+      window.location.reload()
+    }
+  }
 }
 </script>
 
