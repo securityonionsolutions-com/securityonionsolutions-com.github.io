@@ -39,7 +39,7 @@
                 </div>
                 <div class="ml-3">
                   <p class="text-sm text-yellow-700">
-                    Maintenance typically lasts less than 30 minutes.
+                    Maintenance typically lasts less than one hour.
                   </p>
                 </div>
               </div>
