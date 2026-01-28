@@ -45,7 +45,7 @@
               </div>
             </div>
             <div class="mt-6 flex justify-center">
-              <SoButton @click="reloadPage">
+              <SoButton @click="navigateToDemo">
                 Try Again
               </SoButton>
             </div>
@@ -136,8 +136,8 @@ export default {
     links: [{ name: 'Live Demo', id: 'live-demo' }]
   }),
   methods: {
-    reloadPage () {
-      window.location.reload()
+    navigateToDemo () {
+      window.location.href = 'https://demo.securityonion.net'
     }
   }
 }
