@@ -141,7 +141,7 @@
     <ContentSection id="faq" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32">
         <SectionHeader class="mb-6">
-          F.A.Q.
+          Frequently Asked Questions
         </SectionHeader>
         <feature-right>
           <template #body>

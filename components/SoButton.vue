@@ -1,7 +1,7 @@
 <template>
   <component :is="baseType()" :href="link" :target="external" @click="$emit('click')">
     <button
-      class="shadow-lg font-bold py-2 px-2 xs:px-4 rounded-full focus:outline-none block"
+      class="shadow-lg font-bold py-2 px-2 xs:px-4 rounded-full focus:outline-none block cursor-pointer"
       type="button"
       :class="[alternate ? 'bg-white text-black hover:bg-gray-100' : 'bg-so-blue text-white hover:bg-blue-700']"
     >

@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../../tailwind.config.js";
 
 @font-face {
   font-family: 'Inter';
@@ -16,10 +15,8 @@
   /* height: 250px; */
 }
 
-@layer utilities {
-  .shadow-outline { 
-    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); 
-  }
+@utility shadow-outline { 
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); 
 }
 
 header {

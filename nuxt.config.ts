@@ -9,9 +9,20 @@ export default defineNuxtConfig({
   },
 
   modules: [
-        'nuxt-icon',
-        '@nuxtjs/tailwindcss'
+        '@nuxt/icon'
   ],
+
+  css: ['~/assets/css/tailwind.css'],
+
+  postcss: {
+    plugins: {
+      '@tailwindcss/postcss': {},
+    },
+  },
+
+  build: {
+    transpile: ['vue-gtag'],
+  },
 
   compatibilityDate: '2024-11-22'
 })

@@ -59,6 +59,7 @@ export default {
 </script>
 
 <style scoped lang="postcss">
+@reference "../assets/css/tailwind.css";
 .card {
   height: 21.5rem;
   max-width: 16rem;

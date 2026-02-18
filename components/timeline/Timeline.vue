@@ -80,6 +80,7 @@ export default {
 </script>
 
 <style lang="postcss">
+@reference "../../assets/css/tailwind.css";
 .grow .grow-child { transition: all .1s linear; }
 .grow:hover { cursor: pointer;}
 .grow:hover .grow-child, .focus {

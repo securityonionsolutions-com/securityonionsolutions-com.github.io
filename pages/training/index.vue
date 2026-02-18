@@ -67,7 +67,7 @@
         <feature-left>
           <template #header>
             <div class="text-3xl mb-6 text-center">
-              F.A.Q.
+              Frequently Asked Questions
             </div>
           </template>
           <template #body>

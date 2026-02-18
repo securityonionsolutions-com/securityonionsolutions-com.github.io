@@ -30,6 +30,7 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+  @reference "../../assets/css/tailwind.css";
   .circle {
     @apply rounded-full border-4 border-gray-900;
     position: absolute;

@@ -200,6 +200,7 @@ export default {
 </script>
 
 <style scoped lang="postcss">
+@reference "../assets/css/tailwind.css";
 .form-wrapper {
   width: 20rem;
 }
@@ -217,7 +218,7 @@ export default {
   @apply shadow-lg border font-bold mt-1 py-2 px-4 rounded-full -ml-1
 }
 .enabled {
-  @apply bg-so-blue text-white
+  @apply cursor-pointer bg-so-blue text-white
 }
 .enabled:hover {
   @apply bg-blue-700

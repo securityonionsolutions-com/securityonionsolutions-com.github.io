@@ -93,7 +93,7 @@
       "feature": "Packet Capture (PCAP) Storage and Retrieval",
       "free": true,
       "premium": true,
-      "caption": "View and download raw packet data using Stenographer or Suricata"
+      "caption": "View and download raw packet data using Suricata PCAP"
     },
     {
       "feature": "Endpoint Monitoring",

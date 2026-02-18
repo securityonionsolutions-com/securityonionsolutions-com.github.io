@@ -267,6 +267,7 @@ export default {
 </script>
 
 <style lang="postcss">
+@reference "../../assets/css/tailwind.css";
 @media (min-width: 480px) {
   .alternate {
     @apply -mx-12;

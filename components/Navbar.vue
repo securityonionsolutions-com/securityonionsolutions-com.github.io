@@ -7,7 +7,7 @@
         </router-link>
       </div>
       <div class="block lg:hidden relative">
-        <button class="relative z-10 block bg-none hover:bg-gray-900 border-2 border-gray-900 text-gray-300 focus:text-white hover:text-white py-2 px-2 mr-4 rounded-lg focus:outline-none" @click="dropdownOpen=!dropdownOpen">
+        <button class="relative z-10 block bg-none hover:bg-gray-900 border-2 border-gray-900 text-gray-300 focus:text-white hover:text-white py-2 px-2 mr-4 rounded-lg focus:outline-none cursor-pointer" @click="dropdownOpen=!dropdownOpen">
           <svg
             id="Layer_1"
             class="h-4 w-4 fill-current"
@@ -199,15 +199,14 @@ export default {
     dropdownOpen: false
   }),
   mounted () {
-    const handleEscape = (e) => {
+    this.handleEscape = (e) => {
       if (e.key === 'Esc' || e.key === 'Escape') { this.dropdownOpen = false }
     }
 
-    document.addEventListener('keydown', handleEscape)
-return;
-    this.$once('hook:beforeDestroy', () => {
-      document.removeEventListener('keydown', handleEscape)
-    })
+    document.addEventListener('keydown', this.handleEscape)
+  },
+  beforeUnmount () {
+    document.removeEventListener('keydown', this.handleEscape)
   },
   methods: {
   }

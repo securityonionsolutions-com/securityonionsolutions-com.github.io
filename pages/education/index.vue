@@ -7,7 +7,7 @@
           Security Onion
         </div>
         <div>
-          For Education
+          for Higher Education
         </div>
       </template>
       <template #body>
@@ -17,28 +17,54 @@
       </template>
     </SubHero>
     <ContentSection id="overview" :alternate="true">
-      <div class="flex flex-col items-center  px-6 xs:px-12 lg:px-32 pb-4">
+      <div class="flex flex-col items-center px-6 xs:px-12 lg:px-32 pb-4">
         <SectionHeader class="mb-6">
           Using Security Onion in the Classroom
         </SectionHeader>
-        <div class="text-lg text-center w-2/3">
-          <p class="mb-4">
+        <div class="text-lg text-center md:w-2/3 mb-12">
+          <p>
             Join the ranks of universities and institutions for higher education around the world
             that use Security Onion to educate the next generation of cybersecurity professionals!
           </p>
-          <p>
-            The Security Onion free and open license is perfectly suited for classroom use.
-            No need to purchase or apply for special educational licenses for educators or students.
-            The version of Security Onion used in the classroom is the same one used to defend enterprise networks around the world!
-          </p>
         </div>
+        <TwoPanelDetail class="mt-12">
+          <template #header-left>
+            Community Edition
+          </template>
+          <template #body-left>
+            <p>
+              Use the community edition in the classroom with no need for additional licensing. This version is perfect for introductory courses or scenarios where students are primarily focused on the core open-source toolset.
+            </p>
+            <p class="mt-4 mb-6">
+              Since it's the exact same code used in the field, students get hands-on experience with the industry-standard platform with zero budget requirements or licensing overhead.
+            </p>
+            <div class="flex justify-center">
+              <so-button alternate link="https://github.com/Security-Onion-Solutions/securityonion/blob/2.4/main/DOWNLOAD_AND_VERIFY_ISO.md">
+                Download
+              </so-button>
+            </div>
+          </template>
+          <template #header-right>
+            Security Onion Pro
+          </template>
+          <template #body-right>
+            <p class="mb-6">
+              Student and Instructor Licenses are available at a discount<span class="font-bold">*</span> from the retail price. With the rapid advances in AI students need to be trained on how to make use of this technology to find and stop bad actors quickly. Contact us to purchase academic licenses and provide your students access to cutting-edge Cyber Security features, including OnionAI, Connect API, and more. 
+            </p>
+            <div class="flex justify-center">
+              <so-button alternate @click="handleContactClick('academic-pro', $event)">
+                Contact Us
+              </so-button>
+            </div>
+          </template>
+        </TwoPanelDetail>
       </div>
     </ContentSection>
     <ContentSection>
       <div>
         <SectionHeader class="mb-6">
           <div class="text-5xl">
-            FAQ
+            Frequently Asked Questions
           </div>
         </SectionHeader>
         <div class="flex flex-col items-center">
@@ -139,7 +165,7 @@
               </div>
             </template>
           </DetailPara>
-          <DetailPara class="md:w-2/3 lg:w-1/2">
+          <DetailPara class="md:w-2/3 lg:w-1/2 mb-6">
             <template #header>
               <div class="flex flex-row space-x-2">
                 <div>Q:</div>
@@ -153,6 +179,107 @@
                 <div>A:</div>
                 <div class="text-left">
                   <span class="link text-so-blue hover:underline cursor-pointer" @click="handleContactClick('talk', $event)">Contact us</span> for more details.
+                </div>
+              </div>
+            </template>
+          </DetailPara>
+
+          <SectionHeader class="mt-16 mb-6">
+            <div class="text-3xl">
+              Security Onion Pro licensing
+            </div>
+          </SectionHeader>
+
+          <DetailPara class="md:w-2/3 lg:w-1/2 mb-6">
+            <template #header>
+              <div class="flex flex-row space-x-2">
+                <div>Q:</div>
+                <div class="text-left">
+                  Will my students share a single license across their Security Onion installations?
+                </div>
+              </div>
+            </template>
+            <template #body>
+              <div class="flex flex-row space-x-2 ml-2">
+                <div>A:</div>
+                <div class="text-left">
+                  No, your sales representative will provide a license pack, containing the desired number of licenses needed for your classroom.
+                </div>
+              </div>
+            </template>
+          </DetailPara>
+
+          <DetailPara class="md:w-2/3 lg:w-1/2 mb-6">
+            <template #header>
+              <div class="flex flex-row space-x-2">
+                <div>Q:</div>
+                <div class="text-left">
+                  Are OnionAI credits included?
+                </div>
+              </div>
+            </template>
+            <template #body>
+              <div class="flex flex-row space-x-2 ml-2">
+                <div>A:</div>
+                <div class="text-left">
+                  Yes, the instructor will have a separate set of credits, while the students will all share a set of credits.
+                </div>
+              </div>
+            </template>
+          </DetailPara>
+
+          <DetailPara class="md:w-2/3 lg:w-1/2 mb-6">
+            <template #header>
+              <div class="flex flex-row space-x-2">
+                <div>Q:</div>
+                <div class="text-left">
+                  Can I request additional credits during the course?
+                </div>
+              </div>
+            </template>
+            <template #body>
+              <div class="flex flex-row space-x-2 ml-2">
+                <div>A:</div>
+                <div class="text-left">
+                  Yes, if you or your students use all the credits, contact us and we'll work with you to understand the expected credit needs for the remainder of the term.
+                </div>
+              </div>
+            </template>
+          </DetailPara>
+
+          <DetailPara class="md:w-2/3 lg:w-1/2 mb-6">
+            <template #header>
+              <div class="flex flex-row space-x-2">
+                <div>Q:</div>
+                <div class="text-left">
+                  When will the licenses expire?
+                </div>
+              </div>
+            </template>
+            <template #body>
+              <div class="flex flex-row space-x-2 ml-2">
+                <div>A:</div>
+                <div class="text-left">
+                  Typically, the instructor license will remain valid for a year, while the student licenses will remain valid for the length of the semester. Our sales representatives will work with you if your course duration is not a typical semester in length.
+                </div>
+              </div>
+            </template>
+          </DetailPara>
+
+          <DetailPara class="md:w-2/3 lg:w-1/2">
+            <template #header>
+              <div class="flex flex-row space-x-2">
+                <div>Q:</div>
+                <div class="text-left">
+                  How much will this cost?
+                </div>
+              </div>
+            </template>
+            <template #body>
+              <div class="flex flex-row space-x-2 ml-2">
+                <div>A:</div>
+                <div class="text-left">
+                  We want to ensure that the next generation of cyber security professionals are well-trained! We discount<span class="font-bold">*</span> academic licenses accordingly, to make this possible. <span class="link text-so-blue hover:underline cursor-pointer" @click="handleContactClick('academic-pro', $event)">Contact us</span> today to learn more.
                 </div>
               </div>
             </template>
@@ -195,6 +322,8 @@ import { sos } from '~/lib/sos.js'
 import ActionCallout from '~/components/action_callouts/ActionCallout'  
 import DetailPara from '~/components/features/DetailPara'
 import SubHero from '~/components/hero/SubHero'
+import SoButton from '~/components/SoButton'
+import TwoPanelDetail from '~/components/features/TwoPanelDetail'
 
 export default {
   data: () => ({
@@ -204,6 +333,8 @@ export default {
     ActionCallout,
     DetailPara,
     SubHero,
+    SoButton,
+    TwoPanelDetail,
   },
   methods: {
     handleContactClick (messageType, event) {
@@ -212,6 +343,8 @@ export default {
         sos.showContactModal({ text: 'Please contact me with more information about academic discounts on official Security Onion training.', source: 'education_discount_contact_us' })
       } else if (messageType === 'talk') {
         sos.showContactModal({ text: 'Please contact me with more information about Security Onion Solutions speaking to my classroom.', source: 'education_speaking_contact_us' })
+      } else if (messageType === 'academic-pro') {
+        sos.showContactModal({ text: 'Please contact me with more information about Security Onion Pro licensing for higher education.', source: 'education_academic_pro_contact_us' })
       }
     }
   }
@@ -220,6 +353,7 @@ export default {
 
 <style scoped>
 .hero {
-  background: right bottom no-repeat url('/img/graphics/squares.jpg');
+  background: right center no-repeat url('/img/graphics/education_hero.png');
+  background-size: cover;
 }
 </style>

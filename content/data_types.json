@@ -28,7 +28,7 @@
       "name": "Full Content",
       "icon": "fa-solid:stream",
       "desc": "All packets on the network",
-      "tools": "Stenographer"
+      "tools": "Suricata PCAP"
     },
     {
       "name": "Session",
