@@ -12,7 +12,7 @@
       </template>
       <template #body>
         <div class="text-center">
-          Use the leading free and open threat hunting tool in your classroom
+          Prepare the next generation of threat hunters with the leading threat hunting platform
         </div>
       </template>
     </SubHero>
