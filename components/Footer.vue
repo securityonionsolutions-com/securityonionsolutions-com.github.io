@@ -26,10 +26,18 @@
           <a
             rel="me"
             class="block rounded-lg mr-2 lg:inline-block text-4xl focus:outline-none cursor-pointer"
-            href="https://twitter.com/securityonion"
+            href="https://x.com/securityonion"
             target="_blank"
           >
-            <Icon name="fa6-brands:twitter" class="p-2 text-white" />
+            <Icon name="fa6-brands:x-twitter" class="p-2 text-white" />
+          </a>
+          <a
+            rel="me"
+            class="block rounded-lg mr-2 lg:inline-block text-4xl focus:outline-none cursor-pointer"
+            href="https://bsky.app/profile/securityonion.bsky.social"
+            target="_blank"
+          >
+            <Icon name="fa6-brands:bluesky" class="p-2 text-white" />
           </a>
           <a
             rel="me"

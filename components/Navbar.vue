@@ -89,10 +89,17 @@
         <div class="flex flex-row items-center justify-end mb-1 mt-4 lg:mt-0 text-white">
           <a
             class="block rounded-lg mr-3 lg:inline-block text-lg focus:outline-none cursor-pointer hover:text-so-blue"
-            href="https://twitter.com/securityonion"
+            href="https://x.com/securityonion"
             target="_blank"
           >
-            <Icon name="fa6-brands:twitter" />
+            <Icon name="fa6-brands:x-twitter" />
+          </a>
+          <a
+            class="block rounded-lg mr-3 lg:inline-block text-lg focus:outline-none cursor-pointer hover:text-so-blue"
+            href="https://bsky.app/profile/securityonion.bsky.social"
+            target="_blank"
+          >
+            <Icon name="fa6-brands:bluesky" />
           </a>
           <a
             class="block rounded-lg mr-3 lg:inline-block text-lg focus:outline-none cursor-pointer hover:text-so-blue"
