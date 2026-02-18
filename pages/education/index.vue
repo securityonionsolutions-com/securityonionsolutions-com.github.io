@@ -222,7 +222,7 @@
               <div class="flex flex-row space-x-2 ml-2">
                 <div>A:</div>
                 <div class="text-left">
-                  Yes, the instructor will have a separate set of credits, while the students will all share a set of credits.
+                  Yes, the students will all share a set of credits, while the instructor will have a separate set of credits.
                 </div>
               </div>
             </template>
