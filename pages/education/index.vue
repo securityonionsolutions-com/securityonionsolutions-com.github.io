@@ -122,7 +122,7 @@
                 <div class="text-left">
                   We have excellent documentation available <a href="https://docs.securityonion.net/" class="text-so-blue cursor-pointer hover:underline">here</a>,
                   with its own FAQ <a href="https://docs.securityonion.net/faq" class="text-so-blue cursor-pointer hover:underline">here</a>.
-                  For more information about support options, <nuxt-link to="/support" class="text-so-blue cursor-pointer hover:underline">click here</nuxt-link>.
+                  For more information about support options, <nuxt-link to="/support" class="text-so-blue cursor-pointer hover:underline">click here</nuxt-link>. Alternatively, consider purchasing an academic Security Onion Pro license to have access to our support team as well as provide cutting edge Cyber Security features to your students.
                 </div>
               </div>
             </template>
