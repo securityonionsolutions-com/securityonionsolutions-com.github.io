@@ -20,7 +20,7 @@
       </thead>
       <tbody>
         <template v-for="(item, index) in featureList" :key="index">
-          <tr v-reveal.once :class="[{ 'bg-gray-200': index % 2 == 0 }, index % 2 === 0 ? 'reveal-left' : 'reveal-right', 'stagger-' + ((index % 8) + 1)]" class="text-left">
+          <tr :class="{ 'bg-gray-200': index % 2 == 0 }" class="text-left">
             <td
               class="p-1 lg:p-4 table-item-title text-md lg:text-xl"
               :class="{
@@ -55,13 +55,13 @@
               <icon v-if="!item.premium" name="fa-solid:times-circle" />
             </td>
           </tr>
-          <tr v-if="item.caption" v-reveal.once :key="'caption-' + index" :class="[{ 'bg-gray-200': index % 2 == 0 }, index % 2 === 0 ? 'reveal-left' : 'reveal-right', 'stagger-' + ((index % 8) + 1)]" class="caption-row">
+          <tr v-if="item.caption" :key="'caption-' + index" :class="{ 'bg-gray-200': index % 2 == 0 }" class="caption-row">
             <td colspan="1" class="py-2 px-4 cltext-md lg:text-lg text-gray-700">
               {{ item.caption }}
             </td>
             <td colspan="2" class="py-2 px-4 cltext-md lg:text-lg text-gray-700" />
           </tr>
-          <tr v-if="item.coming_soon" v-reveal.once :key="'coming-soon-' + index" :class="[{ 'bg-gray-200': index % 2 == 0 }, index % 2 === 0 ? 'reveal-left' : 'reveal-right', 'stagger-' + ((index % 8) + 1)]" class="coming-soon-row">
+          <tr v-if="item.coming_soon" :key="'coming-soon-' + index" :class="{ 'bg-gray-200': index % 2 == 0 }" class="coming-soon-row">
             <td colspan="1" class="py-2 px-4 cltext-md lg:text-lg text-orange-600">
               Coming soon!
             </td>

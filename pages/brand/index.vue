@@ -58,7 +58,7 @@
           </ol>
         </div>
         <div class="flex flex-col justify-center w-full">
-          <div v-reveal.once class="w-1/2 mx-auto mt-12 reveal-left stagger-1">
+          <div v-reveal.once class="w-full md:w-1/2 mx-auto mt-12 reveal-left stagger-1">
             <hr>
             <div class="text-2xl mt-8">
               Security Onion Logo (Abbreviated)
@@ -73,7 +73,7 @@
             </div>
           </div>
 
-          <div v-reveal.once class="w-1/2 mx-auto mt-12 reveal-right stagger-2">
+          <div v-reveal.once class="w-full md:w-1/2 mx-auto mt-12 reveal-right stagger-2">
             <hr>
             <div class="text-2xl mt-8">
               Security Onion Logo (Extended)
@@ -88,7 +88,7 @@
             </div>
           </div>
 
-          <div v-reveal.once class="w-1/2 mx-auto mt-12 reveal-left stagger-3">
+          <div v-reveal.once class="w-full md:w-1/2 mx-auto mt-12 reveal-left stagger-3">
             <hr>
             <div class="text-2xl mt-8">
               Security Onion Solutions Logo (Abbreviated)
@@ -103,7 +103,7 @@
             </div>
           </div>
 
-          <div v-reveal.once class="w-1/2 mx-auto mt-12 reveal-right stagger-4">
+          <div v-reveal.once class="w-full md:w-1/2 mx-auto mt-12 reveal-right stagger-4">
             <hr>
             <div class="text-2xl mt-8">
               Security Onion Solutions Logo (Extended)

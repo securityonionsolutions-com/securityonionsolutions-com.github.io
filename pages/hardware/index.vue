@@ -8,8 +8,7 @@
       <template #body>
         <div class="flex justify-center text-center">
           <div class="text-2xl">
-            Introducing the newest generation of Security Onion appliances. 
-            With upgraded storage, network, processing, and memory these new 
+            With upgraded storage, network, processing, and memory our latest
             appliances will make it even easier to make your adversaries cry!
           </div>
         </div>
