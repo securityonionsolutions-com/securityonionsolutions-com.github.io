@@ -222,7 +222,7 @@
               <div class="flex flex-row space-x-2 ml-2">
                 <div>A:</div>
                 <div class="text-left">
-                  Yes, the students will all share a set of credits, while the instructor will have a separate set of credits.
+                  Yes, each student license will receive a set of credits, and the instructor license will receive its own separate set of credits.
                 </div>
               </div>
             </template>
