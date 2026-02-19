@@ -100,6 +100,7 @@ body, html {
 }
 .content {
   margin-top: 70px;
+  overflow-x: hidden;
 }
 .nav-bleed {
   height: 150px;

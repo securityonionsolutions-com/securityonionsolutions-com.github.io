@@ -1,19 +1,14 @@
 <template>
   <div class="flex flex-col items-center justify-center">
-    <div class="grid grid-cols-2 lg:grid-cols-5 gap-4 mt-3 items-center">
+    <div class="pill-track mt-3">
       <button
         v-for="(feat, index) in featureArr"
         :key="index"
-        class="flex justify-center items-center focus:outline-none w-full h-full cursor-pointer"
-        :class="[ activeFeat===index ? 'bg-gray-200 shadow-lg rounded-lg text-black' : '']"
-        @click="setActiveFeat(index)"
-        @focus="setActiveFeat(index)"
+        class="pill"
+        :class="{ 'pill-active': activeFeat === index }"
+        @click="activeFeat = index"
       >
-        <detail-para class="px-6 w-full mt-4 mb-4">
-          <template #header>
-            {{ feat.header }}
-          </template>
-        </detail-para>
+        {{ feat.header }}
       </button>
     </div>
     <div
@@ -48,12 +43,8 @@
 
 <script>
 import { sos } from '~/lib/sos.js'
-import DetailPara from '~/components/features/DetailPara'
 
 export default {
-  components: {
-    DetailPara
-  },
   props: {
     featureArr: {
       type: Array,
@@ -65,9 +56,6 @@ export default {
     activeFeat: 0
   }),
   methods: {
-    setActiveFeat (num) {
-      this.activeFeat = num
-    },
     screenshot (index) {
       const fileName = this.featureArr[index].image
       return `/img/graphics/${fileName}`
@@ -98,8 +86,36 @@ export default {
 </script>
 
 <style scoped>
-.graphic {
-  height: 400px;
-  width: 300px;
+.pill-track {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.pill {
+  padding: 0.375rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pill:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.pill-active {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.08);
 }
 </style>

@@ -41,20 +41,22 @@
           <td v-if="item['category'] == 'Beginner'" class="hidden md:table-cell border-t border-blue-500 text-white bg-blue-500 pl-1 pr-1 py-4 truncate vert-header" v-text="item['hide-category'] ? '' : item['category']" />
           <td v-if="item['category'] == 'Intermediate'" class="hidden md:table-cell border-t border-blue-700 text-white text-right bg-blue-700 pl-1 pr-1 py-4 truncate vert-header" v-text="item['hide-category'] ? '' : item['category']" />
           <td v-if="item['category'] == 'Advanced'" class="hidden md:table-cell border-t border-blue-900 text-white bg-blue-900 pl-1 pr-1 py-4 truncate vert-header" v-text="item['hide-category'] ? '' : item['category']" />
-          <td class="hidden md:table-cell border-t border-blue-400 pl-2">
-            <img width="105" :src="thumbnail(item)">
-          </td>
           <td class="text-left border-t border-blue-400 px-2">
-            <div class="flex flex-row">
-              <span class="pt-1 pl-1 pr-1">{{ item['name'] }}</span>
-              <span><icon name="fa6-solid:circle-info" class="mx-2 mt-1 text-base"/></span>
+            <div class="flex flex-row items-center">
+              <img class="md:hidden mr-2" width="60" :src="thumbnail(item)" alt="Course thumbnail">
+              <div class="flex flex-col">
+                <span class="pt-1 pl-1 pr-1 text-lg font-bold">{{ item['name'] }}</span>
+                <div class="flex flex-row md:hidden">
+                  <span><icon name="fa6-solid:circle-info" class="mx-2 mt-1 text-base"/></span>
 
-              <a v-if="item.registration_link":href="item.registration_link" @click.stop="">
-                 <icon name="fa-solid:external-link-alt" class="mx-2 mt-1 text-base"/>
-              </a>
-              <a v-else @click.stop="sos.showContactModal({ text: 'Please contact me to discuss an Instructor-Led ' + item.name + ' course.' })">
-                 <icon name="fa-solid:external-link-alt" class="mx-2 mt-1 text-base"/>
-              </a>
+                  <a v-if="item.registration_link":href="item.registration_link" @click.stop="">
+                     <icon name="fa-solid:external-link-alt" class="mx-2 mt-1 text-base"/>
+                  </a>
+                  <a v-else @click.stop="sos.showContactModal({ text: 'Please contact me to discuss an Instructor-Led ' + item.name + ' course.' })">
+                     <icon name="fa-solid:external-link-alt" class="mx-2 mt-1 text-base"/>
+                  </a>
+                </div>
+              </div>
             </div>
           </td>
           <td class="hidden xl:table-cell border-t border-blue-400 px-2 truncate">
