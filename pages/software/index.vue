@@ -161,7 +161,7 @@
           Data Types
         </SectionHeader>
         <div class="flex flex-row flex-wrap justify-center mt-4">
-          <div v-for="(type, i) in typeArray" :key="i" v-reveal.once :class="['stagger-' + ((i % 8) + 1), 'reveal-scale']" class="w-full md:w-1/3 xl:w-1/4 bg-gray-200 rounded-md m-3 p-2 h-64">
+          <div v-for="(type, i) in typeArray" :key="i" v-reveal.once :class="['stagger-' + ((i % 8) + 1), 'reveal-scale']" class="w-full md:w-1/3 xl:w-1/4 bg-gray-200 rounded-md m-3 p-2 h-64 transition duration-75 ease-linear transform xs:hover:scale-105 cursor-pointer">
             <VerticalFeature>
               <template #graphic>
                 <Icon :name="type.icon" class="mb-2" size="4em" />
