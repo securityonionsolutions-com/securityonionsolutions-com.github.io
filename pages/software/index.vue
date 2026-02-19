@@ -1,7 +1,7 @@
 <template>
   <div class="xs:px-12">
     <PageNav page-name="Security Onion" :links="links" />
-    <SubHero id="download-before" class="hero-software">
+    <SubHero id="download-before" v-reveal.once class="hero-software reveal-scale">
       <template #header>
         Security Onion 2
       </template>
@@ -38,7 +38,7 @@
     </SubHero>
     <ContentSection id="overview" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32">
-        <feature-right class="xs:mb-12" :text-margin="true">
+        <feature-right v-reveal class="xs:mb-12 reveal-right" :text-margin="true">
           <template #header>
             <div class="text-center xs:text-left">
               Overview
@@ -66,7 +66,7 @@
             </div>
           </template>
         </feature-right>
-        <feature-left class="my-12">
+        <feature-left v-reveal class="my-12 reveal-left">
           <template #header>
             <div class="text-center xs:text-left">
               Highly Scalable
@@ -113,7 +113,7 @@
     </ContentSection>
     <ContentSection id="use-cases">
       <div id="use_cases" class="xs:-mx-12">
-        <four-panel-detail class="mx-3 xs:mx-24">
+        <four-panel-detail v-reveal class="mx-3 xs:mx-24 reveal-scale">
           <template #section-heading>
             Use Cases
           </template>
@@ -146,7 +146,7 @@
     </ContentSection>
     <ContentSection id="features" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32">
-        <section-header class="mb-6">
+        <section-header v-reveal class="mb-6">
           Feature Highlights
         </section-header>
         <div class="text-center text-lg">For a full list of features see the Security Onion Pro <a href="/pro#comparison" class="my-1 text-white-200 hover:text-gray-300 font-semibold">feature comparison</a> matrix</div>
@@ -157,11 +157,11 @@
     </ContentSection>
     <ContentSection id="data_types">
       <div class="xs:-mx-12 px-4">
-        <SectionHeader class="mt-6 xs:mb-8">
+        <SectionHeader v-reveal class="mt-6 xs:mb-8">
           Data Types
         </SectionHeader>
         <div class="flex flex-row flex-wrap justify-center mt-4">
-          <div v-for="(type, i) in typeArray" :key="i" class="w-full md:w-1/3 xl:w-1/4 bg-gray-200 rounded-md m-3 p-2 h-64">
+          <div v-for="(type, i) in typeArray" :key="i" v-reveal.once :class="['stagger-' + ((i % 8) + 1), 'reveal-scale']" class="w-full md:w-1/3 xl:w-1/4 bg-gray-200 rounded-md m-3 p-2 h-64">
             <VerticalFeature>
               <template #graphic>
                 <Icon :name="type.icon" class="mb-2" size="4em" />

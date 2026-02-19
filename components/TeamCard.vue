@@ -63,10 +63,21 @@ export default {
 .card {
   height: 21.5rem;
   max-width: 16rem;
-  @apply bg-white text-black overflow-hidden shadow-md;
+  @apply bg-white/80 backdrop-blur-md text-black overflow-hidden shadow-lg border border-white/20 rounded-2xl transition-all duration-300 ease-in-out;
+}
+.card:hover {
+  @apply shadow-2xl scale-105;
+  border-color: var(--color-so-blue);
 }
 .img {
   height: 16rem;
   width: 16rem;
+  @apply overflow-hidden;
+}
+.img img {
+  @apply transition-transform duration-500 ease-in-out;
+}
+.card:hover .img img {
+  @apply scale-110;
 }
 </style>

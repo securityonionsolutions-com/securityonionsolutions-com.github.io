@@ -1,7 +1,7 @@
 <template>
   <div class="xs:px-12">
     <PageNav page-name="Training" :links="links" />
-    <SubHero class="hero-training text-center">
+    <SubHero v-reveal.once class="hero-training text-center reveal-scale">
       <template #header>
         Official Training
       </template>
@@ -18,7 +18,7 @@
     </SubHero>
     <ContentSection id="training-info" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32">
-        <feature-left class="xs:mb-12" :text-margin="true">
+        <feature-left v-reveal class="xs:mb-12 reveal-left" :text-margin="true">
           <template #header>
             <div class="text-center xs:text-left">
               Instructor-Led Training
@@ -40,7 +40,7 @@
           </template>
         </feature-left>
         
-        <feature-right class="xs:mb-20" :text-margin="true">
+        <feature-right v-reveal class="xs:mb-20 reveal-right" :text-margin="true">
           <template #header>
             <div class="text-center xs:text-left">
               Premium On-Demand
@@ -64,7 +64,7 @@
             </div>
           </template>
         </feature-right>
-        <feature-left>
+        <feature-left v-reveal class="reveal-left">
           <template #header>
             <div class="text-3xl mb-6 text-center">
               Frequently Asked Questions
@@ -127,7 +127,7 @@
     </ContentSection>
     <ContentSection id="public-training">
       <div class="xs:-mx-12 px-6 xs:px-12 lg:px-32">
-        <section-header class="mb-6">
+        <section-header v-reveal class="mb-6">
           Upcoming Instructor-Led Training Events
         </section-header>
         <div class="flex justify-center">
@@ -151,7 +151,7 @@
             This course is a prerequisite to the premium on-demand courses.
           </p>
         </div>
-        <div class="flex justify-center video-container">
+        <div v-reveal class="flex justify-center video-container reveal-scale">
           <iframe
             src="https://www.youtube.com/embed/watch?list=PLljFlTO9rB17JFrBQmnqX17y4rxrgUDzO"
             frameborder="0"

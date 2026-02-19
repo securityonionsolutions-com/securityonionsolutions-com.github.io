@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-for="(event, index) in timelineEvents" :key="index">
+    <div v-for="(event, index) in timelineEvents" :key="index" v-reveal.once :class="['stagger-' + ((index % 8) + 1), (index % 2 === 0 ? 'reveal-left' : 'reveal-right')]">
       <component
         :is="timelineComponent(event)"
         :index="index"

@@ -33,6 +33,9 @@
         <tr
           v-for="(item, index) in course"
           :key="index"
+          v-reveal.once
+          :class="[index % 2 === 0 ? 'reveal-left' : 'reveal-right', 'stagger-' + ((index % 8) + 1)]"
+          class="cursor-pointer"
           @click="sos.showCourseDetails({ courseDetailText: item.info, courseName: item.popup_name  })"
         >
           <td v-if="item['category'] == 'Beginner'" class="hidden md:table-cell border-t border-blue-500 text-white bg-blue-500 pl-1 pr-1 py-4 truncate vert-header" v-text="item['hide-category'] ? '' : item['category']" />

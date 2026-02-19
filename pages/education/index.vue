@@ -1,7 +1,7 @@
 <template>
   <!-- eslint-disable vue/singleline-html-element-content-newline -->
   <div class="xs:px-12">
-    <SubHero id="education" class="hero">
+    <SubHero id="education" v-reveal.once class="hero reveal-scale">
       <template #header>
         <div>
           Security Onion
@@ -18,7 +18,7 @@
     </SubHero>
     <ContentSection id="overview" :alternate="true">
       <div class="flex flex-col items-center px-6 xs:px-12 lg:px-32 pb-4">
-        <SectionHeader class="mb-6">
+        <SectionHeader v-reveal class="mb-6">
           Using Security Onion in the Classroom
         </SectionHeader>
         <div class="text-lg text-center md:w-2/3 mb-12">
@@ -27,7 +27,7 @@
             that use Security Onion to educate the next generation of cybersecurity professionals!
           </p>
         </div>
-        <TwoPanelDetail class="mt-12">
+        <TwoPanelDetail v-reveal class="mt-12 reveal-scale">
           <template #header-left>
             Community Edition
           </template>
@@ -62,13 +62,13 @@
     </ContentSection>
     <ContentSection>
       <div>
-        <SectionHeader class="mb-6">
+        <SectionHeader v-reveal class="mb-6">
           <div class="text-5xl">
             Frequently Asked Questions
           </div>
         </SectionHeader>
         <div class="flex flex-col items-center">
-          <DetailPara class="md:w-2/3 lg:w-1/2 mb-6">
+          <DetailPara v-reveal.once class="md:w-2/3 lg:w-1/2 mb-6 reveal-left stagger-1">
             <template #header>
               <div class="flex flex-row space-x-2">
                 <div>Q:</div>
@@ -88,7 +88,7 @@
               </div>
             </template>
           </DetailPara>
-          <DetailPara class="md:w-2/3 lg:w-1/2 mb-6">
+          <DetailPara v-reveal.once class="md:w-2/3 lg:w-1/2 mb-6 reveal-right stagger-2">
             <template #header>
               <div class="flex flex-row space-x-2">
                 <div>Q:</div>
@@ -107,7 +107,7 @@
               </div>
             </template>
           </DetailPara>
-          <DetailPara class="md:w-2/3 lg:w-1/2 mb-6">
+          <DetailPara v-reveal.once class="md:w-2/3 lg:w-1/2 mb-6 reveal-left stagger-3">
             <template #header>
               <div class="flex flex-row space-x-2">
                 <div>Q:</div>
@@ -127,7 +127,7 @@
               </div>
             </template>
           </DetailPara>
-          <DetailPara class="md:w-2/3 lg:w-1/2 mb-6">
+          <DetailPara v-reveal.once class="md:w-2/3 lg:w-1/2 mb-6 reveal-right stagger-4">
             <template #header>
               <div class="flex flex-row space-x-2">
                 <div>Q:</div>
@@ -147,7 +147,7 @@
               </div>
             </template>
           </DetailPara>
-          <DetailPara class="md:w-2/3 lg:w-1/2 mb-6">
+          <DetailPara v-reveal.once class="md:w-2/3 lg:w-1/2 mb-6 reveal-left stagger-5">
             <template #header>
               <div class="flex flex-row space-x-2">
                 <div>Q:</div>
@@ -165,7 +165,7 @@
               </div>
             </template>
           </DetailPara>
-          <DetailPara class="md:w-2/3 lg:w-1/2 mb-6">
+          <DetailPara v-reveal.once class="md:w-2/3 lg:w-1/2 mb-6 reveal-right stagger-6">
             <template #header>
               <div class="flex flex-row space-x-2">
                 <div>Q:</div>
@@ -184,13 +184,13 @@
             </template>
           </DetailPara>
 
-          <SectionHeader class="mt-16 mb-6">
+          <SectionHeader v-reveal class="mt-16 mb-6">
             <div class="text-3xl">
               Security Onion Pro licensing
             </div>
           </SectionHeader>
 
-          <DetailPara class="md:w-2/3 lg:w-1/2 mb-6">
+          <DetailPara v-reveal.once class="md:w-2/3 lg:w-1/2 mb-6 reveal-left stagger-1">
             <template #header>
               <div class="flex flex-row space-x-2">
                 <div>Q:</div>
@@ -209,7 +209,7 @@
             </template>
           </DetailPara>
 
-          <DetailPara class="md:w-2/3 lg:w-1/2 mb-6">
+          <DetailPara v-reveal.once class="md:w-2/3 lg:w-1/2 mb-6 reveal-right stagger-2">
             <template #header>
               <div class="flex flex-row space-x-2">
                 <div>Q:</div>
@@ -228,7 +228,7 @@
             </template>
           </DetailPara>
 
-          <DetailPara class="md:w-2/3 lg:w-1/2 mb-6">
+          <DetailPara v-reveal.once class="md:w-2/3 lg:w-1/2 mb-6 reveal-left stagger-3">
             <template #header>
               <div class="flex flex-row space-x-2">
                 <div>Q:</div>
@@ -247,7 +247,7 @@
             </template>
           </DetailPara>
 
-          <DetailPara class="md:w-2/3 lg:w-1/2 mb-6">
+          <DetailPara v-reveal.once class="md:w-2/3 lg:w-1/2 mb-6 reveal-right stagger-4">
             <template #header>
               <div class="flex flex-row space-x-2">
                 <div>Q:</div>
@@ -266,7 +266,7 @@
             </template>
           </DetailPara>
 
-          <DetailPara class="md:w-2/3 lg:w-1/2">
+          <DetailPara v-reveal.once class="md:w-2/3 lg:w-1/2 reveal-left stagger-5">
             <template #header>
               <div class="flex flex-row space-x-2">
                 <div>Q:</div>

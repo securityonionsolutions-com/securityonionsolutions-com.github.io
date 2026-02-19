@@ -1,7 +1,7 @@
 <template>
   <div class="xs:px-12">
     <PageNav page-name="Security Onion" :links="links" />
-    <SubHero id="download-before" class="hero-software">
+    <SubHero id="download-before" v-reveal.once class="hero-software reveal-scale">
       <template #header>
         Brand Guidelines
       </template>
@@ -13,7 +13,7 @@
     </SubHero>
     <ContentSection id="overview" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32">
-        <two-panel-detail class="mx-3 xs:mx-24">
+        <two-panel-detail v-reveal class="mx-3 xs:mx-24 reveal-scale">
           <template #section-heading>
             Overview
           </template>
@@ -34,7 +34,7 @@
     </ContentSection>
     <ContentSection id="guidelines">
       <div class="xs:-mx-12 px-4">
-        <section-header class="mb-6">
+        <section-header v-reveal class="mb-6">
           Logos
         </section-header>
         <div class="w-2/3 text-left text-base xs:text-lg mx-auto">
@@ -58,7 +58,7 @@
           </ol>
         </div>
         <div class="flex flex-col justify-center w-full">
-          <div class="w-1/2 mx-auto mt-12">
+          <div v-reveal.once class="w-1/2 mx-auto mt-12 reveal-left stagger-1">
             <hr>
             <div class="text-2xl mt-8">
               Security Onion Logo (Abbreviated)
@@ -73,7 +73,7 @@
             </div>
           </div>
 
-          <div class="w-1/2 mx-auto mt-12">
+          <div v-reveal.once class="w-1/2 mx-auto mt-12 reveal-right stagger-2">
             <hr>
             <div class="text-2xl mt-8">
               Security Onion Logo (Extended)
@@ -88,7 +88,7 @@
             </div>
           </div>
 
-          <div class="w-1/2 mx-auto mt-12">
+          <div v-reveal.once class="w-1/2 mx-auto mt-12 reveal-left stagger-3">
             <hr>
             <div class="text-2xl mt-8">
               Security Onion Solutions Logo (Abbreviated)
@@ -103,7 +103,7 @@
             </div>
           </div>
 
-          <div class="w-1/2 mx-auto mt-12">
+          <div v-reveal.once class="w-1/2 mx-auto mt-12 reveal-right stagger-4">
             <hr>
             <div class="text-2xl mt-8">
               Security Onion Solutions Logo (Extended)
