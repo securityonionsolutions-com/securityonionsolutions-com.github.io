@@ -4,10 +4,10 @@
     <CarouselHero :entries="heroReasons" class="xs:-mx-12"/>
     <ContentSection id="preview" :alternate="true">
       <div class="px-1 md:px-6">
-        <SectionHeader class="mt-6 xs:mb-8">
+        <SectionHeader v-reveal class="mt-6 xs:mb-8">
           Latest Developments
         </SectionHeader>
-        <VerticalFeature>
+        <VerticalFeature v-reveal class="reveal-scale">
           <template #graphic>
             <video class="v-player__video w-full" controls autoplay="true"
                   loop="true"
@@ -43,17 +43,24 @@
         <section-header class="mb-6">
           Our Partners
         </section-header>
-        <div class="flex flex-col lg:flex-row lg:flex-wrap justify-center content-center md:-mx-2 mt-4">
-          <img v-for="(image, index) in logos" :key="index" class="partner-logo m-auto lg:px-6 py-10 lg:py-2 w-1/2 lg:w-1/6" :src="image">
+        <div class="overflow-hidden py-8">
+          <div class="animate-marquee flex flex-row items-center gap-12 md:gap-24">
+            <!-- First set of logos -->
+            <img v-for="(image, index) in logos" :key="'p1-'+index" class="h-10 md:h-12 w-auto object-contain grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500" :src="image">
+            <!-- Second set of logos for seamless loop -->
+            <img v-for="(image, index) in logos" :key="'p2-'+index" class="h-10 md:h-12 w-auto object-contain grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500" :src="image">
+            <!-- Third set of logos to ensure full coverage on wide screens -->
+            <img v-for="(image, index) in logos" :key="'p3-'+index" class="h-10 md:h-12 w-auto object-contain grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500" :src="image">
+          </div>
         </div>
       </div>
     </ContentSection>
     <ContentSection id="about" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32">
-        <section-header class="mb-6">
+        <section-header v-reveal class="mb-6">
           About Us
         </section-header>
-        <feature-right class="xs:mb-12" :text-margin="true">
+        <feature-right v-reveal class="xs:mb-12 reveal-right" :text-margin="true">
           <template #graphic>
             <div class="rounded-full shadow-lg overflow-hidden">
               <Graphic
@@ -77,30 +84,33 @@
     </ContentSection>
     <ContentSection id="timeline">
       <div class="xs:-mx-12">
-        <section-header class="sm:mx-40 mb-8">
+        <section-header v-reveal class="sm:mx-40 mb-8">
           Our History
         </section-header>
         <div class="flex flex-row flex-wrap justify-center content-center mb-4">
           <div class="md:w-1/2 lg:w-1/3 pr-12">
             <Timeline @timeline-click="setEventGraphic($event)" />
           </div>
-          <div class="flex flex-col items-center md:w-1/2 lg:w-2/3 lg:pr-8 xl:pl-4 pb-12 lg:pb-0">
-            <div class="text-lg mb-20 hidden lg:block">Click on a timeline event, on the left, to learn more.</div>
-            <img class="object-contain my-10 overflow-hidden rounded-md w-5/6" :class="[currentEvent!=0 ? 'shadow-xl' : '']" :src="eventObj().img">
-            <div class="text-xl text-center w-4/5">
-              {{ eventObj().text }}
-            </div>
+          <div class="md:w-1/2 lg:w-2/3 lg:pr-8 xl:pl-4 pb-12 lg:pb-0 min-h-[500px]">
+            <Transition name="fade" mode="out-in">
+              <div :key="currentEvent" class="flex flex-col items-center">
+                <img class="object-contain my-10 overflow-hidden rounded-md w-5/6" :class="[currentEvent!=0 ? 'shadow-xl' : '']" :src="eventObj().img">
+                <div class="text-xl text-center w-4/5">
+                  {{ eventObj().text }}
+                </div>
+              </div>
+            </Transition>
           </div>
         </div>
       </div>
     </ContentSection>
     <ContentSection id="members" :alternate="true">
       <div>
-        <section-header class="sm:mx-40 mb-8">
+        <section-header v-reveal class="sm:mx-40 mb-8">
           Our Team
         </section-header>
         <div class="flex flex-row flex-wrap justify-center content-center mb-4 md:mx-24">
-          <div v-for="(member, index) in teamArr" :key="index" class="px-4 py-4">
+          <div v-for="(member, index) in teamArr" :key="index" v-reveal.once :class="[index % 2 === 0 ? 'reveal-left' : 'reveal-right']" class="px-4 py-4">
             <team-card
               :name="member.name"
               :org="member.org"

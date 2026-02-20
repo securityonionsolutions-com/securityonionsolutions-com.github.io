@@ -53,10 +53,15 @@
           <td class="hidden md:table-cell border-t border-blue-400 truncate w-1/4">
             <img :src="thumbnail(item)">
           </td>
-          <td class="text-right border-t border-blue-400 px-2 truncate">
-            <div class="flex flex-row">
-              {{ item['name'] }}
-              <icon name="fa6-solid:circle-info" class="mx-2 mt-1 text-base" />
+          <td class="md:text-right border-t border-blue-400 px-2 truncate">
+            <div class="md:flex md:flex-row md:justify-end md:items-center flex flex-col mb-1 items-center">
+              <div class="md:hidden">
+                <img :src="thumbnail(item)" class="max-w-full h-auto" />
+              </div>
+              <div class="flex items-center">
+                {{ item['name'] }}
+                <icon name="fa6-solid:circle-info" class="ml-2 text-base" />
+              </div>
             </div>
           </td>
           <td class="hidden xl:table-cell border-t border-blue-400 px-2 truncate">

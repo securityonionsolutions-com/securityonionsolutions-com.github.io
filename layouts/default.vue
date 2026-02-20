@@ -19,7 +19,7 @@
       </LazyFloatingModal>
     </transition>
 
-    <div class="flex flex-col leading-normal tracking-normal min-h-screen bg-gradient-to-r from-so-blue-dark via-so-blue to-so-blue-dark">
+    <div class="flex flex-col leading-normal tracking-normal min-h-screen bg-gradient-to-r from-slate-900 via-so-blue to-slate-900">
       <Navbar class="fixed z-50" />
       <div class="fixed nav-bleed w-full bg-black z-0" />
       <div class="flex-grow content container mx-auto flex flex-col bg-white shadow-xl z-10" >
@@ -100,6 +100,7 @@ body, html {
 }
 .content {
   margin-top: 70px;
+  overflow-x: hidden;
 }
 .nav-bleed {
   height: 150px;

@@ -1,6 +1,6 @@
 <template>
   <div class="xs:px-12">
-    <SubHero class="hero">
+    <SubHero v-reveal.once class="hero reveal-scale">
       <template #header>
         <div>
           Security Onion
@@ -18,7 +18,7 @@
     </SubHero>
     <content-section :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32">
-        <div class="text-2xl md:text-4xl text-center font-semibold">
+        <div v-reveal class="text-2xl md:text-4xl text-center font-semibold reveal-scale">
           The SOCP exam validates that you have the knowledge and skills to properly investigate alerts, hunt for adversaries,
           and manage your Security Onion 2 grid.
         </div>
@@ -26,11 +26,11 @@
     </content-section>
     <content-section id="domain-list">
       <div class="flex flex-col px-6 xs:px-0">
-        <div class="text-xl md:text-2xl font-semibold text-center mb-6">
+        <div v-reveal class="text-xl md:text-2xl font-semibold text-center mb-6 reveal-scale">
           This exam tests your knowledge in the following five domains:
         </div>
         <div class="flex flex-row flex-wrap justify-center mt-4">
-          <div v-for="(domain, i) in domainArr" :key="i" class="w-full md:w-1/3 bg-gray-200 rounded-md m-2 md:px-4 px-2 py-4 h-72 transition duration-75 ease-linear transform xs:hover:scale-105 focus: cursor-pointer" @click="sos.showDomainDetails({ domainDetailText: domain.details, domainName: domain.name, domainTestPercent: domain.percent })">
+          <div v-for="(domain, i) in domainArr" :key="i" v-reveal.once :class="['stagger-' + ((i % 8) + 1), 'reveal-scale']" class="w-full md:w-1/3 bg-gray-200 rounded-md m-2 md:px-4 px-2 py-4 h-72 transition duration-75 ease-linear transform xs:hover:scale-105 focus: cursor-pointer" @click="sos.showDomainDetails({ domainDetailText: domain.details, domainName: domain.name, domainTestPercent: domain.percent })">
             <div class="-mt-3 mr-2 absolute right-0 font-bold text-xs text-gray-700">
               <icon name="fa6-solid:circle-info" />
             </div>
@@ -53,7 +53,7 @@
     </content-section>
     <content-section :alternate="true">
       <div class="flex justify-center items-center mx-3 sm:mx-16">
-        <div class="flex flex-col justify-center items-center w-full lg:w-4/5 xl:w-3/5 py-6 mx-1 md:mx-0 lg:mx-32 xl:mx-0 px-2 md:px-4 mb-1 rounded-lg border-solid border-4 justify-between border-gray-700 bg-white text-black">
+        <div v-reveal class="flex flex-col justify-center items-center w-full lg:w-4/5 xl:w-3/5 py-6 mx-1 md:mx-0 lg:mx-32 xl:mx-0 px-2 md:px-4 mb-1 rounded-lg border-solid border-4 justify-between border-gray-700 bg-white text-black reveal-scale">
           <div class="text-5xl font-bold text-center lg:text-left mb-4">
             SOCP Exam
           </div>

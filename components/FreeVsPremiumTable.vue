@@ -27,7 +27,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(item, index) in featureList" :key="index" class="text-left" :class="[index % 2 == 0 ? 'bg-gray-200' : '']">
+        <tr v-for="(item, index) in featureList" :key="index" v-reveal.once :class="[index % 2 == 0 ? 'bg-gray-200' : '', index % 2 === 0 ? 'reveal-left' : 'reveal-right', 'stagger-' + ((index % 8) + 1)]" class="text-left">
           <td
             class="p-1 lg:p-4 table-item-title text-md lg:text-xl"
             :class="[

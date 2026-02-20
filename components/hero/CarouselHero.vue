@@ -35,7 +35,7 @@
               </div>
             </client-only>
           </div>
-          <so-button class="hidden xl:block whitespace-nowrap absolute w-full bottom-24 ml-48" @click.native="sos.showContactModal({ mode: 'feedback', source: 'main_quote_carousel' })">
+          <so-button class="hidden xl:block whitespace-nowrap absolute w-full bottom-24 ml-48" @click="sos.showContactModal({ mode: 'feedback', source: 'main_quote_carousel' })">
             <div class="text-lg my-1">
               Send Feedback
             </div>

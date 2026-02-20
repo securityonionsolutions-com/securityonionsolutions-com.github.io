@@ -1,7 +1,7 @@
 <template>
-  <div class="mb-12">
-    <ul>
-      <li v-for="(item, index) in scheduleList" :key="index" class="mb-6 hover:shadow-lg">
+  <div class="mb-12 max-w-5xl mx-auto">
+    <ul class="w-full">
+      <li v-for="(item, index) in scheduleList" :key="index" v-reveal.once :class="[index % 2 === 0 ? 'reveal-left' : 'reveal-right', 'stagger-' + ((index % 8) + 1)]" class="mb-6 hover:shadow-lg transition-transform duration-300 hover:scale-[1.02]">
         <a :href="item.register_link" target="_blank" @click="recordRegisterClick(item)">
           <div class="bg-gray-200 bg-opacity-50 border rounded-md overflow-hidden">
             <div class="flex h-auto p-2 bg-gray-400 bg-opacity-25">

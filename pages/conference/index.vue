@@ -1,7 +1,7 @@
 <template>
   <div class="xs:px-12">
     <PageNav page-name="Conference" :links="links" />
-    <SubHero class="hero-conference text-center">
+    <SubHero v-reveal.once class="hero-conference text-center reveal-scale">
       <template #header>
         Security Onion Conference {{ upcoming.year }}
       </template>
@@ -26,7 +26,7 @@
     <div v-if="upcoming.schedule != null">
       <ContentSection id="schedule" :alternate="false">
         <div class="xs:-mx-12 px-6 xs:px-12 lg:px-32">
-          <SectionHeader class="mb-6 lg:mb-10">
+          <SectionHeader v-reveal class="mb-6 lg:mb-10">
             <div>
               Conference Schedule*
             </div>
@@ -35,7 +35,7 @@
             </div>
           </SectionHeader>
 
-          <table class="mx-auto table-auto rounded-md border-separate border border-blue-400 bg-blue mb-12 w-full">
+          <table v-reveal class="mx-auto table-auto rounded-md border-separate border border-blue-400 bg-blue mb-12 w-full reveal-scale">
             <thead>
               <tr class="bg-blue-400 text-white">
                 <th class="text-right p-3 truncate w-24">
@@ -81,7 +81,7 @@
 
     <ContentSection id="about" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32">
-        <feature-right class="xs:mb-12" :text-margin="true">
+        <feature-right v-reveal class="xs:mb-12 reveal-right" :text-margin="true">
           <template #header>
             <div class="text-center xs:text-left">
               Who Should Attend
@@ -110,7 +110,7 @@
 
 
     <ContentSection id="past">
-      <SectionHeader class="mb-10">
+      <SectionHeader v-reveal class="mb-10">
         <div class="text-3xl xs:text-5xl">
           Past Conferences
         </div>
@@ -120,7 +120,7 @@
           {{ conference.year }}
         </a>
       </div>
-      <div v-for="(conference, i) in conferences" :id="conference.year" :key="i" class="shadow-xl rounded-md overflow-hidden m-4" :class="[ i % 2 == 0 ? 'bg-gray-200' : 'bg-so-blue text-white']">
+      <div v-for="(conference, i) in conferences" :id="conference.year" :key="i" v-reveal.once :class="[ i % 2 == 0 ? 'bg-gray-200 reveal-left' : 'bg-so-blue text-white reveal-right']" class="shadow-xl rounded-md overflow-hidden m-4">
         <div class="h-20" />
         <div class="pb-10 text-center">
           <div class="mb-10">
@@ -267,6 +267,7 @@ export default {
 </script>
 
 <style lang="postcss">
+@reference "../../assets/css/tailwind.css";
 @media (min-width: 480px) {
   .alternate {
     @apply -mx-12;
