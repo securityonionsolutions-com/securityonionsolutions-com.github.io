@@ -36,16 +36,33 @@
           v-reveal.once
           :class="[index % 2 === 0 ? 'reveal-left' : 'reveal-right', 'stagger-' + ((index % 8) + 1)]"
           class="cursor-pointer"
-          @click="sos.showCourseDetails({ courseDetailText: item.info, courseName: item.popup_name  })"
+          @click="sos.showCourseDetails({ courseDetailText: item.info, courseName: item.popup_name, registrationText: item.registration_link })"
         >
           <td v-if="item['category'] == 'Beginner'" class="hidden md:table-cell border-t border-blue-500 text-white bg-blue-500 pl-1 pr-1 py-4 truncate vert-header" v-text="item['hide-category'] ? '' : item['category']" />
           <td v-if="item['category'] == 'Intermediate'" class="hidden md:table-cell border-t border-blue-700 text-white text-right bg-blue-700 pl-1 pr-1 py-4 truncate vert-header" v-text="item['hide-category'] ? '' : item['category']" />
           <td v-if="item['category'] == 'Advanced'" class="hidden md:table-cell border-t border-blue-900 text-white bg-blue-900 pl-1 pr-1 py-4 truncate vert-header" v-text="item['hide-category'] ? '' : item['category']" />
+          <td class="hidden md:table-cell border-t border-blue-400 px-2 py-4 text-center">
+            <div class="flex justify-center">
+              <img width="100" :src="thumbnail(item)" alt="Course thumbnail" class="rounded-md shadow-sm">
+            </div>
+          </td>
           <td class="text-left border-t border-blue-400 px-2">
-            <div class="flex flex-row items-center">
-              <img class="md:hidden mr-2" width="60" :src="thumbnail(item)" alt="Course thumbnail">
+
+            <div class="flex flex-row items-center py-2">
+              <img class="md:hidden mr-4 rounded-md shadow-sm" width="100" :src="thumbnail(item)" alt="Course thumbnail">
               <div class="flex flex-col">
-                <span class="pt-1 pl-1 pr-1 text-lg font-bold">{{ item['name'] }}</span>
+                <div class="flex flex-row items-center">
+                  <span class="pt-1 pl-1 pr-1 text-lg font-bold">{{ item['name'] }}</span>
+                  <div class="hidden md:flex flex-row ml-2">
+                    <span><icon name="fa6-solid:circle-info" class="mx-2 text-base" /></span>
+                    <a v-if="item.registration_link" :href="item.registration_link" @click.stop="">
+                        <icon name="fa-solid:external-link-alt" class="mx-2 text-base"/>
+                    </a>
+                    <a v-else @click.stop="sos.showContactModal({ text: 'Please contact me to discuss an Instructor-Led ' + item.name + ' course.' })">
+                        <icon name="fa-solid:external-link-alt" class="mx-2 text-base"/>
+                    </a>
+                  </div>
+                </div>
                 <div class="flex flex-row md:hidden">
                   <span><icon name="fa6-solid:circle-info" class="mx-2 mt-1 text-base"/></span>
 
