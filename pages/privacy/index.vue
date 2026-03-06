@@ -7,7 +7,7 @@
       </template>
       <template #body>
         <div class="text-center">
-          Updated on 11/25/2025
+          Updated on 3/5/2026
         </div>
       </template>
     </SubHero>
@@ -87,7 +87,7 @@
           Our Products may include optional cloud-hosted services, including AI-related chat services. You may choose to enable and use these optional services. When submitting requests to these services, additional private system information may be transmitted to our Product services hosted in the cloud. Examples of this private system information include event and log data, alert data, and any other data that is accessible by our Product and which may be helpful for the online cloud-hosted services to provide the requested service.
         </p>
         <p class="mt-4">
-          This private system information is sent to our third party cloud hosting provider to provide the requested service. It is not used for training AI models nor is it stored or logged in the cloud.  Historic chat information is stored locally in your environment. This private system information is collected only if you have opted in to the chat service.
+          This private system information is sent to our third party cloud hosting provider to provide the requested service. It is not used for training AI models nor is it stored or logged in the cloud. This private system information is collected only if you have opted in to the chat service hosted by Security Onion Solutions, LLC. Utilizing the AI-related chat service provided by other vendors, or provided internally within your organization, is outside the scope of this privacy policy. Historic chat information is stored locally in your environment.
         </p>
 
         <div class="text-3xl mt-8">
