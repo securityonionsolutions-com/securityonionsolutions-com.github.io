@@ -15,7 +15,7 @@
           </div>
           <br/>
           <div class="flex flex-col items-center lg:flex-row space-y-1 lg:space-x-3 lg:space-y-0 mt-1 xl:mt-2">
-            <use-button link="https://github.com/Security-Onion-Solutions/securityonion/blob/2.4/main/DOWNLOAD_AND_VERIFY_ISO.md">
+            <use-button link="https://github.com/Security-Onion-Solutions/securityonion/blob/3/main/DOWNLOAD_AND_VERIFY_ISO.md">
               Download
             </use-button>
             <use-button link="https://securityonion.net/aws/?ref=_ptnr_web_sos">

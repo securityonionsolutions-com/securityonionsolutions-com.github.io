@@ -39,7 +39,7 @@
               Since it's the exact same code used in the field, students get hands-on experience with the industry-standard platform with zero budget requirements or licensing overhead.
             </p>
             <div class="flex justify-center">
-              <so-button alternate link="https://github.com/Security-Onion-Solutions/securityonion/blob/2.4/main/DOWNLOAD_AND_VERIFY_ISO.md">
+              <so-button alternate link="https://github.com/Security-Onion-Solutions/securityonion/blob/3/main/DOWNLOAD_AND_VERIFY_ISO.md">
                 Download
               </so-button>
             </div>
