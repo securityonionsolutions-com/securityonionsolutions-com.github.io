@@ -20,7 +20,7 @@
       <div class="px-6 xs:px-12 lg:px-32">
         <div v-reveal class="text-2xl md:text-4xl text-center font-semibold reveal-scale">
           The SOCP exam validates that you have the knowledge and skills to properly investigate alerts, hunt for adversaries,
-          and manage your Security Onion 2 grid.
+          and manage your Security Onion grid.
         </div>
       </div>
     </content-section>

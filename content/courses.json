@@ -9,7 +9,7 @@
       "tagline": "Designed for beginners to get started",
       "img_course_title": "Essentials_2.4_REV1.png",
       "summary": [
-        "Get started by taking the FREE Security Onion 2",
+        "Get started by taking the FREE Security Onion",
         "Essentials training. This course is a prerequisite",
         "to other courses listed."
       ],
@@ -27,10 +27,10 @@
       "img_course_title": "SO_Prod.png",
       "summary": [
         "This course is geared for administrators of",
-        "Security Onion 2.4. Students will gain a",
+        "Security Onion. Students will gain a",
         "foundational understanding of the platform -",
         "how to architect, deploy, manage and tune",
-        "their Security Onion 2.4 grid."  
+        "their Security Onion grid."  
       ],
       "info": "Administrators will build on basic concepts of standalone and distributed grid architecture, ensuring it will meet your needs. Students will learn important concepts required to manage and tune the grid to improve performance.",
       "registration_link": "https://onlinetraining.securityonionsolutions.com/p/security-onion-in-production1/"
@@ -41,7 +41,7 @@
       "category": "Intermediate",
       "hide-category": true,
       "Delivery": "On-Demand * †",
-      "time": "1h 30min",
+      "time": "1h 45min",
       "tagline": "Designed for performance and value on fiber infrastructure",
       "img_course_title": "Practical.png",
       "summary": [
@@ -65,7 +65,7 @@
       "summary": [
         "This course is geared for those wanting",
         "to understand how to build a Detection",
-        "Playbook with Security Onion 2.4. Students",
+        "Playbook with Security Onion. Students",
         "will gain both a theoretical and practical",
         "understanding of building detections in",
         "Security Onion, reinforced with real-life",
@@ -86,14 +86,14 @@
       "summary": [
         "This course bundle contains everything",
         " you need to get up and running with",
-        "Security Onion 2.4!"
+        "Security Onion!"
       ],
-      "info": "Training included in this bundle will consist of the content contained in the following courses: Security Onion 2.4 in Production, Practical Analysis with Security Onion 2.4, and Detection Engineering with Security Onion 2.4. This bundle is an excellent way to improve your skills beyond beginner level.",
+      "info": "Training included in this bundle will consist of the content contained in the following courses: Security Onion in Production, Practical Analysis with Security Onion, and Detection Engineering with Security Onion. This bundle is an excellent way to improve your skills beyond beginner level.",
       "registration_link": "https://onlinetraining.securityonionsolutions.com/p/security-onion-2-4-three-course-bundle"
     },
     {
      "name": "Fundamentals for Analysts & Admins",
-     "popup_name": "Security Onion 2: Fundamentals for Analysts & Admins",
+     "popup_name": "Security Onion: Fundamentals for Analysts & Admins",
      "category": "Intermediate",
      "hide-category": true,
      "Delivery": "Instructor-Led * ‡",
@@ -115,7 +115,7 @@
     },
     {
       "name": "Fundamentals for Analysts & Threat Hunters",
-      "popup_name": "Security Onion 2: Fundamentals for Analysts & Threat Hunters",
+      "popup_name": "Security Onion: Fundamentals for Analysts & Threat Hunters",
       "category": "Intermediate",
       "hide-category": true,
       "Delivery": "Instructor Led * ‡",
@@ -131,7 +131,7 @@
     },
     {
       "name": "Detection Engineering and Analysis In-Depth",
-      "popup_name": "Security Onion 2: Detection Engineering and Analysis In-Depth",
+      "popup_name": "Security Onion: Detection Engineering and Analysis In-Depth",
       "category": "Advanced",
       "Delivery": "Instructor-Led * ‡",
       "time": "32 Hours",

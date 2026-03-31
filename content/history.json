@@ -8,19 +8,13 @@
                 "img": "sos-site-header-2-square.jpg"
               },
               {},
-              {},
               {
                 "text": "As the worldwide Security Onion community grew, Doug Burks began receiving more and more requests for training and professional services. In 2014, Doug started Security Onion Solutions LLC to help Security Onion users peel back the layers of their networks.",
                 "img": "security_onion_solutions_rings.jpg"
               },
-              {},
               {
                 "text": "In 2018 we celebrated 10 years of Security Onion by announcing custom hardware appliances!",
                 "img": "old-server-mockup.jpg"
-              },
-              {
-                "text": "Security Onion Solutions continued to grow in 2019, adding several new team members.",
-                "img": "new-team.jpg"
               },
               {
                 "text": "2020 marked the year that Security Onion 2 was introduced, with a complete overhaul of the product, and a brand new native web interface.",
@@ -28,16 +22,16 @@
               },
               {},
               {
-                "text": "New base operating system, simplified setup process, new user administration interface, new configuration interface, and many more new features. Also consolidation of third-party dependencies and additional security enhancements.",
-                "img": "config.jpg"
-              },
-              {
                 "text": "Security Onion Solutions celebrates its 10th anniversary by announcing the new Detections module and Security Onion Pro: a licensed offering for businesses and government organizations.",
                 "img": "detections.jpg"
               },
               {
                 "text": "Onion AI is a new AI-powered security analyst assistant that boosts the efficiency and effectiveness of security analysts by automating routine tasks and providing actionable insights.",
                 "img": "onion-ai.png"
+              },
+              {
+                "text": "Security Onion 3 is released with a refreshed user interface and other significant changes.",
+                "img": "so3.png"
               }
             ]
 }
