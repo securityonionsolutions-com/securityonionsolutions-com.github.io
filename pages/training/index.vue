@@ -145,7 +145,7 @@
         </section-header>
         <div class="text-center text-base xs:text-lg mb-16">
           <p>
-            Get started by taking the <span class="italic">free</span> <span class="font-semibold">Security Onion 2 Essentials</span> training.
+            Get started by taking the <span class="italic">free</span> <span class="font-semibold">Security Onion Essentials</span> training.
           </p>
           <p>
             This course is a prerequisite to the premium on-demand courses.
