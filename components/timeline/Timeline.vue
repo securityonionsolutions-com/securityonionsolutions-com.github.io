@@ -44,7 +44,6 @@ export default {
       { year: '2008', event: 'Our humble beginnings' },
       { year: '2009', event: 'First release', important: false },
       { year: '2014', event: 'Security Onion Solutions, LLC', important: true },
-      { year: '2016', event: 'Company expansion', important: false },
       { year: '2018', event: 'Appliance Offering', important: true },
       { year: '2020', event: 'Security Onion 2', important: false },
       { year: '2021', event: '2+ million downloads!', important: false },
