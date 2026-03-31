@@ -26,7 +26,7 @@ const getLocation = async (venueId) => {
 const getSoVersion = async () => {
   const config = {
     method: 'get',
-    url: 'https://raw.githubusercontent.com/Security-Onion-Solutions/securityonion/2.4/main/VERSION'
+    url: 'https://raw.githubusercontent.com/Security-Onion-Solutions/securityonion/3/main/VERSION'
   }
   return await axios(config).catch((error) => { console.log(error) })
 }
