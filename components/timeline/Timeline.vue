@@ -53,7 +53,7 @@ export default {
       { year: '2023', event: 'Security Onion 2.4', important: true },
       { year: '2024', event: 'Security Onion Pro', important: true },
       { year: '2025', event: 'Onion AI Assistant', important: true },
-      { year: '2026', event: 'Security Onion 3', important: false }
+      { year: '2026', event: 'Security Onion 3', important: true }
     ],
     focusedEventIndex: 0
   }),
