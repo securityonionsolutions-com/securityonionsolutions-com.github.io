@@ -88,7 +88,7 @@
         " you need to get up and running with",
         "Security Onion!"
       ],
-      "info": "Training included in this bundle will consist of the content contained in the following courses: Security Onion 2.4 in Production, Practical Analysis with Security Onion 2.4, and Detection Engineering with Security Onion 2.4. This bundle is an excellent way to improve your skills beyond beginner level.",
+      "info": "Training included in this bundle will consist of the content contained in the following courses: Security Onion in Production, Practical Analysis with Security Onion, and Detection Engineering with Security Onion. This bundle is an excellent way to improve your skills beyond beginner level.",
       "registration_link": "https://onlinetraining.securityonionsolutions.com/p/security-onion-2-4-three-course-bundle"
     },
     {
@@ -115,7 +115,7 @@
     },
     {
       "name": "Fundamentals for Analysts & Threat Hunters",
-      "popup_name": "Security Onion 2: Fundamentals for Analysts & Threat Hunters",
+      "popup_name": "Security Onion: Fundamentals for Analysts & Threat Hunters",
       "category": "Intermediate",
       "hide-category": true,
       "Delivery": "Instructor Led * ‡",
@@ -131,7 +131,7 @@
     },
     {
       "name": "Detection Engineering and Analysis In-Depth",
-      "popup_name": "Security Onion 2: Detection Engineering and Analysis In-Depth",
+      "popup_name": "Security Onion: Detection Engineering and Analysis In-Depth",
       "category": "Advanced",
       "Delivery": "Instructor-Led * ‡",
       "time": "32 Hours",

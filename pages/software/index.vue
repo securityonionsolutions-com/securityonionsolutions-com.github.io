@@ -3,7 +3,7 @@
     <PageNav page-name="Security Onion" :links="links" />
     <SubHero id="download-before" v-reveal.once class="hero-software reveal-scale">
       <template #header>
-        Security Onion 2
+        Security Onion
       </template>
       <template #body>
         <div class="flex flex-col flex-grow items-center">
