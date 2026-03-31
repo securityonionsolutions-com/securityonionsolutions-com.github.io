@@ -43,14 +43,11 @@ export default {
     timelineEvents: [
       { year: '2008', event: 'Our humble beginnings' },
       { year: '2009', event: 'First release', important: false },
-      { year: '2012', event: 'Big Distro Rebuild (BDR)', important: false },
       { year: '2014', event: 'Security Onion Solutions, LLC', important: true },
       { year: '2016', event: 'Company expansion', important: false },
       { year: '2018', event: 'Appliance Offering', important: true },
-      { year: '2019', event: 'Team growth!', important: true },
-      { year: '2020', event: 'Security Onion 2.3', important: false },
+      { year: '2020', event: 'Security Onion 2', important: false },
       { year: '2021', event: '2+ million downloads!', important: false },
-      { year: '2023', event: 'Security Onion 2.4', important: true },
       { year: '2024', event: 'Security Onion Pro', important: true },
       { year: '2025', event: 'Onion AI Assistant', important: true },
       { year: '2026', event: 'Security Onion 3', important: true }
