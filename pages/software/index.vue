@@ -30,7 +30,7 @@
               Google Cloud
             </use-button>
           </div>
-          <so-button class="mt-4 xl:mt-8" link="https://docs.securityonion.net/">
+          <so-button class="mt-4 xl:mt-8" link="https://securityonion.net/docs">
             Documentation
           </so-button>
         </div>
