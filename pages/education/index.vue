@@ -120,8 +120,8 @@
               <div class="flex flex-row space-x-2 ml-2">
                 <div>A:</div>
                 <div class="text-left">
-                  We have excellent documentation available <a href="https://docs.securityonion.net/" class="text-so-blue cursor-pointer hover:underline">here</a>,
-                  with its own FAQ <a href="https://docs.securityonion.net/faq" class="text-so-blue cursor-pointer hover:underline">here</a>.
+                  We have excellent documentation available <a href="https://securityonion.net/docs" class="text-so-blue cursor-pointer hover:underline">here</a>,
+                  with its own FAQ <a href="https://securityonion.net/docs/faq" class="text-so-blue cursor-pointer hover:underline">here</a>.
                   For more information about support options, <nuxt-link to="/support" class="text-so-blue cursor-pointer hover:underline">click here</nuxt-link>. Alternatively, consider purchasing an academic Security Onion Pro license to have access to our support team as well as provide cutting edge Cyber Security features to your students.
                 </div>
               </div>
@@ -141,7 +141,7 @@
                 <div>A:</div>
                 <div class="text-left">
                   You are free to reference our documentation while teaching your course, but please check the
-                  <a href="https://docs.securityonion.net/about#license" class="text-so-blue cursor-pointer hover:underline">documentation's license</a>
+                  <a href="https://securityonion.net/docs/about#license" class="text-so-blue cursor-pointer hover:underline">documentation's license</a>
                   for further details.
                 </div>
               </div>

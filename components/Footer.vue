@@ -6,7 +6,7 @@
       <span class="text-gray-700 mx-2">|</span>
       <a href="https://github.com/Security-Onion-Solutions/securityonion/blob/3/main/DOWNLOAD_AND_VERIFY_ISO.md">Download</a>
       <span class="text-gray-700 mx-2">|</span>
-      <a href="https://docs.securityonion.net/">Documentation</a>
+      <a href="https://securityonion.net/docs">Documentation</a>
       <span class="text-gray-700 mx-2">|</span>
       <a href="https://blog.securityonion.net/">Blog</a>
       <span class="text-gray-700 mx-2">|</span>

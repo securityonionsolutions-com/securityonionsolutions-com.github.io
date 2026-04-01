@@ -15,7 +15,7 @@
           </ActionCallout>
         </div>
         <div class="flex flex-col flex-grow items-center">
-          <so-button class="mt-1 xl:mt-4" link="https://docs.securityonion.net/en/2.4/pro.html">
+          <so-button class="mt-1 xl:mt-4" link="https://securityonion.net/docs/security-onion-pro">
             Pro Documentation
           </so-button>
         </div>
@@ -121,7 +121,7 @@
           </template>
           <template #body-right>
             The standard Pro license includes licensing for up to ten* Security Onion
-            <a href="https://docs.securityonion.net/en/2.4/architecture.html#node-types" class="underline">nodes</a>, with additional node packs available for purchase.
+            <a href="https://securityonion.net/docs/architecture#node-types" class="underline">nodes</a>, with additional node packs available for purchase.
             Additionally, we offer licenses for smaller grids, such as a single standalone node.
           </template>
         </two-panel-detail>
