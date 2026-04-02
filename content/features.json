@@ -15,7 +15,7 @@
 		"body": "Manage all detection rules (Suricata, YARA, and Sigma) in a single interface. Import publically-available community rules or create custom rules. Quickly pivot from the Alerts interface to the detection that triggered the alert; then disable the detection, or add suppression, threshold, and other overrides to fine tune the detection. Includes an audit trail of all rule changes."
 	},
 	{
-		"image": "playbooks.png",
+		"image": "playbooks.jpg",
 		"header": "Playbooks",
 		"body": "Follow our included playbooks, covering thousands of popular detection rules, to quickly investigate alerts and determine if they are true or false positives."
 	},
