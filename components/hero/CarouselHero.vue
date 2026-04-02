@@ -8,7 +8,7 @@
       <div id="content" class="logobg hidden lg:block lg:flex lg:flex-col lg:w-1/2 h-full py-4" :style="styleRight(item)">
         <div v-if="item.text" class="italic text-2xl mt-4 mb-4" v-text="item.text"/>
         <div v-if="item.list" class="my-auto pr-4 w-full grid grid-rows-4 grid-cols-4 gap-1">
-          <div v-for="(list_item, idx) in item.list" :key="idx" class="bg-blue-100 rounded-md py-3 whitespace-nowrap" :class="idx == highlight_idx ? 'list_fader' : ''" v-text="list_item"/>
+          <div v-for="(list_item, idx) in item.list" :key="idx" class="bg-blue-100 rounded-md py-3 whitespace-nowrap text-center" :class="idx == highlight_idx ? 'list_fader' : ''" v-text="list_item"/>
         </div>
         <div v-if="item.metrics" class="my-auto">
           <div v-for="(value, key, idx) in item.metrics" class="flex flex-row my-2 text-xl bg-blue-100 rounded-lg mx-12 py-1">
