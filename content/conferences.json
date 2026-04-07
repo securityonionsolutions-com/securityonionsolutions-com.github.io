@@ -1,11 +1,11 @@
 {
   "upcoming": {
-    "year": 2025,
-    "date": "October 24, 2025",
+    "year": 2026,
+    "date": "October 23, 2026",
     "location": "Augusta, GA",
-    "caption": "Thank you to all who attended the 2025 conference! We look forward to seeing everyone at our next conference!",
+    "caption.thanks": "Thank you to all who attended the 2025 conference! We look forward to seeing everyone at our next conference!",
     "caption.cfp_open": "Save the date for our next annual conference in 2025! The Call For Papers runs May 19 through July 14.",
-    "caption.savedate": "Save the date for our next annual conference in 2025! The Call For Papers is now closed.",
+    "caption": "Save the date for our next annual conference in 2026!",
     "caption.register": "Register today! We look forward to seeing you there!",
     "caption.comingsoon": "Tickets will be available for puchase starting on August 7th, 2025.",
     "caption.cancelled": "The 2024 Security Onion conference has been cancelled due to impacts from Hurricane Helene.",
