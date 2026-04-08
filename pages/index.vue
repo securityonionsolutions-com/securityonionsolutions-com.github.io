@@ -15,7 +15,7 @@
                   poster=""
                   preload="auto"
                   name="media">
-                <source src="/public/videos/onionai_3.mp4">
+                <source src="/videos/onionai_3.mp4">
             </video>
           </template>
           <template #title>
