@@ -15,18 +15,18 @@
                   poster=""
                   preload="auto"
                   name="media">
-                <source src="/public/videos/onionai-demo.mp4">
+                <source src="/videos/onionai_3.mp4">
             </video>
           </template>
           <template #title>
             <div class="text-2xl">
-              Our popular <i>Onion AI</i>, an advanced LLM-based security analyst assistant built directly into the Security Onion console, has just received a significant upgrade! Check out the video below to see how Onion AI can help your team improve the tedious process of detection tuning.
+              <i>Onion AI</i> offers several time-saving capabilities, including alert analysis, detection tuning, and more.
             </div>
           </template>
           <template #body>
             <div class="text-2xl d-flex-column">
               <div class="text-xl mt-8">
-                Existing Security Onion Pro customers with Internet-connected grids have access to this time-saving feature today! No additional license changes are necessary. Interested in using Onion AI with a local model? Contact us to learn more.
+                Local model support is now available. Contact your sales representative for details.
               </div>
               <div class="w-full flex justify-center">
                 <so-button class="mt-4 xl:mt-8" link="/pro" :alternate="true">
