@@ -26,7 +26,7 @@
           <template #body>
             <div class="text-2xl d-flex-column">
               <div class="text-xl mt-8">
-                Local model support is now available. Contact your sales representative for integration requirements.
+                Local model support is now available. Contact your sales representative for details.
               </div>
               <div class="w-full flex justify-center">
                 <so-button class="mt-4 xl:mt-8" link="/pro" :alternate="true">
