@@ -13,8 +13,10 @@
     "link.register": "https://socaugusta2025.eventbrite.com/",
     "link.pics": "https://blog.securityonion.net/2024/04/security-onion-conference-2024-save.html",
     "link.moreinfo": "https://blog.securityonion.net/2025/05/security-onion-conference-2025-save.html",
+    "link": "https://securityonion.net/cfp",
+    "button": "Submit a Talk",
     "button.moreinfo": "More Information",
-    "button": "Register Now",
+    "button.register": "Register Now",
     "schedule.disabled": [
       {
         "time": "8:00 AM",
