@@ -49,7 +49,7 @@
           </template>
           <template #body-right>
             <p class="mb-6">
-              Student and Instructor Licenses are available at a discount<span class="font-bold">*</span> from the retail price. With the rapid advances in AI students need to be trained on how to make use of this technology to find and stop bad actors quickly. Contact us to purchase academic licenses and provide your students access to cutting-edge Cyber Security features, including Onion AI, Connect API, and more. 
+              Student and Instructor Licenses are available at a discount<span class="font-bold">*</span> from the retail price. With the rapid advances in AI students need to be trained on how to make use of this technology to find and stop bad actors quickly. Contact us to purchase academic licenses and provide your students access to cutting-edge Cyber Security features, including Onion AI, Security Onion API, and more. 
             </p>
             <div class="flex justify-center">
               <so-button alternate @click="handleContactClick('academic-pro', $event)">
