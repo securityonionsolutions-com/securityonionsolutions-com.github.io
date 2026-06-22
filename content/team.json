@@ -138,6 +138,11 @@
       "role": "Customer Success Manager",
       "image": "scott_hall.jpg",
       "linkedin": "https://www.linkedin.com/in/scotthall/"
+    },
+    {
+      "name": "Dan Marr",
+      "role": "Principal Engineer",
+      "image": "dan_marr.jpg"
     }
   ]
 }
