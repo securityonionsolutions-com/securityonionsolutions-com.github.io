@@ -4,6 +4,15 @@
       <title>Security Onion Solutions</title>
       <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
       <meta name="description" content="Security Onion Solutions, LLC" />
+      <meta property="og:title" content="Security Onion Solutions" />
+      <meta property="og:description" content="Security Onion Solutions, LLC" />
+      <meta property="og:image" content="https://securityonion.com/logo/so-logo-on-white.png" />
+      <meta property="og:url" content="https://securityonion.com" />
+      <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:title" content="Security Onion Solutions" />
+      <meta name="twitter:description" content="Security Onion Solutions, LLC" />
+      <meta name="twitter:image" content="https://securityonion.com/logo/so-logo-on-white.png" />
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <link rel="icon" type="image/svg+xml" :href="`/favicon/onion${colorSchemeString}.svg`" />
       <link rel="alt icon" type="image/png" :href="`/favicon/onion${colorSchemeString}.png`" />
