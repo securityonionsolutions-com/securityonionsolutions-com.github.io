@@ -10,7 +10,7 @@
           <div class="text-2xl flex xs:block flex-col items-center">
             <div class="font-light text-2xl flex xs:block flex-col items-center">
               {{ upcoming.date }}
-              <icon name="fa6-solid:circle" size="0.3em" />
+              <icon name="fa6-solid:circle" size="0.3em" class="align-middle" />
               {{ upcoming.location }}
             </div>
           </div>
@@ -129,7 +129,7 @@
             </div>
             <div class="text-2xl flex xs:block flex-col items-center text-center">
               {{ conference.date }}
-              <icon name="fa6-solid:circle" size="0.3em" />
+              <icon name="fa6-solid:circle" size="0.3em" class="align-middle" />
               {{ conference.location }}
             </div>
             <div class="mt-5">
