@@ -10,7 +10,7 @@
       <DetailPara :align-center="true">
         <template #header>
           <div class="text-lg xs:text-3xl">
-            Thank you for your message!
+            Thank you for your interest in Security Onion!
           </div>
         </template>
         <template #body>
