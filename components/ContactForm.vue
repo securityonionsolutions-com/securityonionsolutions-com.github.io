@@ -3,20 +3,26 @@
     <div class="text-2xl xs:text-3xl ">
       <span v-if="mode == 'contact_us'">Contact Us</span>
       <span v-if="mode == 'feedback'">Send Feedback</span>
+      <span v-if="mode == 'newsletter'">Subscribe to Newsletter</span>
     </div>
     <div class="flex text-center px-2 xs:px-0 xs:mx-12 justify-center my-4">
       <p v-if="mode == 'contact_us'">
         Looking for free support of Security Onion or reporting an issue?
         <span class="text-so-blue cursor-pointer"><a href="https://securityonion.net/discuss">Click here</a></span>.
       </p>
-      <p v-if="mode == 'feedback'">
-        Please tell us what you think of Security Onion and our team. 
+      <div v-if="mode == 'feedback'">
+        <p>
+          Please tell us what you think of Security Onion and our team.
+        </p>
         <div class="mt-4">
           We may share this feedback outside of the team, but will keep your contact information confidential unless we've been given permission to publically disclose it by an authorized representative of your organization.
         </div>
         <div class="mt-4 text-blue-800">
           We are looking for case studies! If you're interested in assisting with a case study to help us grow, please let us know below!
         </div>
+      </div>
+      <p v-if="mode == 'newsletter'">
+        Stay up to date with the latest news and updates from Security Onion Solutions.
       </p>
     </div>
     <form id="contact_form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="flex flex-col items-center px-2 xs:px-10 pt-3 xs:pt-2 pb-5 mb-4 w-full">
@@ -25,7 +31,7 @@
         <input type="hidden" name="captcha_settings" :value="JSON.stringify(captchaSettings)">
         <input type="hidden" name="oid" value="00D1U000000DI9i">
         <input v-model="retUrl" type="hidden" name="retURL">
-        <div class="flex flex-row">
+        <div v-if="mode != 'newsletter'" class="flex flex-row">
           <div class="w-1/2 block mr-3">
             <label for="first_name" class="block text-gray-800 text-sm font-bold mb-2">First Name<span class="text-red-500"> *</span></label>
             <input
@@ -51,6 +57,8 @@
             >
           </div>
         </div>
+        <input v-else id="first_name" v-model="first_name" type="hidden" name="first_name">
+        <input v-if="mode == 'newsletter'" id="last_name" v-model="last_name" type="hidden" name="last_name">
         <label for="email" class="block text-gray-800 text-sm font-bold mb-2">Email<span class="text-red-500"> *</span></label>
         <input
           id="email"
@@ -61,27 +69,33 @@
           size="20"
           type="text"
         >
-        <label for="company" class="block text-gray-800 text-sm font-bold mb-2">Company<span class="text-red-500"> *</span></label>
-        <input
-          id="company"
-          v-model="company"
-          class="shadow appearance-none border rounded w-full py-2 px-3 font-sans leading-tight focus:outline-none focus:shadow-outline text-sm xs:text-base mb-2"
-          maxlength="40"
-          name="company"
-          size="20"
-          type="text"
-        >
-        <label for="description" class="block text-gray-800 text-sm font-bold mb-2">Description<span class="text-red-500"> *</span></label>
-        <textarea
-          id="description"
-          v-model="description"
-          name="description"
-          placeholder="..."
-          rows="5"
-          class="shadow appearance-none border rounded w-full py-2 px-3 font-sans leading-tight focus:outline-none focus:shadow-outline text-sm xs:text-base"
-        />
+        <template v-if="mode != 'newsletter'">
+          <label for="company" class="block text-gray-800 text-sm font-bold mb-2">Company<span class="text-red-500"> *</span></label>
+          <input
+            id="company"
+            v-model="company"
+            class="shadow appearance-none border rounded w-full py-2 px-3 font-sans leading-tight focus:outline-none focus:shadow-outline text-sm xs:text-base mb-2"
+            maxlength="40"
+            name="company"
+            size="20"
+            type="text"
+          >
+          <label for="description" class="block text-gray-800 text-sm font-bold mb-2">Description<span class="text-red-500"> *</span></label>
+          <textarea
+            id="description"
+            v-model="description"
+            name="description"
+            placeholder="..."
+            rows="5"
+            class="shadow appearance-none border rounded w-full py-2 px-3 font-sans leading-tight focus:outline-none focus:shadow-outline text-sm xs:text-base"
+          />
+        </template>
+        <template v-else>
+          <input id="company" v-model="company" type="hidden" name="company">
+          <input id="description" v-model="description" type="hidden" name="description">
+        </template>
       </div>
-      <div class="block text-red-500 text-sm font-bold mb-4 mt-1 ml-auto">
+      <div v-if="mode != 'newsletter'" class="block text-red-500 text-sm font-bold mb-4 mt-1 ml-auto">
         * Required
       </div>
       <select id="lead_source" v-model="lead_source" class="hidden" name="lead_source">
@@ -91,6 +105,9 @@
         <option value="Website Feedback">
           Website Feedback
         </option>
+        <option value="Newsletter Subscription">
+          Newsletter Subscription
+        </option>
       </select>
       <div class="g-recaptcha" :data-sitekey="sitekey" data-callback="recordSubmit"></div>
       <input id="00NJx000001kPE9" maxlength="255" name="00NJx000001kPE9" size="20" type="hidden" />
@@ -98,12 +115,12 @@
       <input id="00NJx000001kPIz" maxlength="255" name="00NJx000001kPIz" size="20" type="hidden" />
       <input id="00NJx000001kOTO" maxlength="255" name="00NJx000001kOTO" size="20" type="hidden" />
       <input id="00NJx000001kPKb" maxlength="255" name="00NJx000001kPKb" size="20" type="hidden" />
-      <button
-        id="form_submit"
-        :class="[buttonEnabled() ? 'enabled' : 'disabled']"
-        :disabled="!buttonEnabled()">
-        Send Message
-      </button>
+        <button
+          id="form_submit"
+          :class="[buttonEnabled() ? 'enabled' : 'disabled']"
+          :disabled="!buttonEnabled()">
+          {{ mode == 'newsletter' ? 'Subscribe' : 'Send Message' }}
+        </button>
     </form>
   </div>
 </template>
@@ -116,14 +133,26 @@ export default {
     source: { type: String, default: '' }
   },
   data () {
+    let leadSource = 'Website'
+    if (this.mode === 'feedback') {
+      leadSource = 'Website Feedback'
+    } else if (this.mode === 'newsletter') {
+      leadSource = 'Newsletter Subscription'
+    }
+
+    let defaultDescription = this.text
+    if (this.mode === 'newsletter' && !defaultDescription) {
+      defaultDescription = "Please add me to the Security Onion Solutions mailing list."
+    }
+
     return {
       oid: '00D1U000000DI9i',
-      lead_source: this.mode == 'contact_us' ? 'Website' : 'Website Feedback',
-      first_name: '',
-      last_name: '',
+      lead_source: leadSource,
+      first_name: this.mode === 'newsletter' ? 'Subscriber' : '',
+      last_name: this.mode === 'newsletter' ? 'Subscriber' : '',
       email: '',
-      company: '',
-      description: this.text,
+      company: this.mode === 'newsletter' ? 'N/A' : '',
+      description: defaultDescription,
       sitekey: useRuntimeConfig().public.sitekey,
       t: '',
       captchaSettings: ''
@@ -157,6 +186,9 @@ export default {
   },
   methods: {
     buttonEnabled () {
+      if (this.mode === 'newsletter') {
+        return this.email !== ''
+      }
       var result = 
         this.first_name !== '' &&
         this.last_name !== '' &&
