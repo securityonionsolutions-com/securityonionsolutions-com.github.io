@@ -1,6 +1,6 @@
 <template>
   <!-- eslint-disable vue/singleline-html-element-content-newline -->
-  <footer class="w-full flex flex-col items-center justify-center flex-wrap pb-8">
+  <footer class="container mx-auto w-full flex flex-col items-center justify-center flex-wrap pb-8">
     <div class="flex flex-row flex-wrap w-full items-center justify-center text-center mt-6 text-gray-400 text-sm lg:text-lg">
       <a href="/">Home</a>
       <span class="text-gray-700 mx-2">|</span>
@@ -20,7 +20,15 @@
       <span class="text-gray-700 mx-2">|</span>
       <nuxt-link to="/status">Status</nuxt-link>
     </div>
-    <div class="flex flex-row">
+    <div class="flex flex-row w-full relative justify-center items-center">
+      <div class="absolute left-4">
+        <button
+          class="bg-so-blue hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full text-xs lg:text-sm shadow focus:outline-none"
+          @click="sos.showContactModal({ mode: 'newsletter', source: 'footer_newsletter' })"
+        >
+          Subscribe to Newsletter
+        </button>
+      </div>
       <div class="text-center content-center justify-center">
         <div class="flex flex-row justify-center mt-2">
           <a
