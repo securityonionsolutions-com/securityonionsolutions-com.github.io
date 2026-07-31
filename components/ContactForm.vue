@@ -142,7 +142,7 @@ export default {
 
     let defaultDescription = this.text
     if (this.mode === 'newsletter' && !defaultDescription) {
-      defaultDescription = "I'd like to receive periodic product information updates. Please add me to your mailing list."
+      defaultDescription = "Please add me to the Security Onion Solutions mailing list."
     }
 
     return {
