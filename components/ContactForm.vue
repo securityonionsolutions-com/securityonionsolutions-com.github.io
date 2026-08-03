@@ -31,9 +31,11 @@
         <input type="hidden" name="captcha_settings" :value="JSON.stringify(captchaSettings)">
         <input type="hidden" name="oid" value="00D1U000000DI9i">
         <input v-model="retUrl" type="hidden" name="retURL">
-        <div v-if="mode != 'newsletter'" class="flex flex-row">
+        <div class="flex flex-row">
           <div class="w-1/2 block mr-3">
-            <label for="first_name" class="block text-gray-800 text-sm font-bold mb-2">First Name<span class="text-red-500"> *</span></label>
+            <label for="first_name" class="block text-gray-800 text-sm font-bold mb-2">
+              First Name<span v-if="mode != 'newsletter'" class="text-red-500"> *</span>
+            </label>
             <input
               id="first_name"
               v-model="first_name"
@@ -45,7 +47,9 @@
             >
           </div>
           <div class="w-1/2 block">
-            <label for="last_name" class="block text-gray-800 text-sm font-bold mb-2">Last Name<span class="text-red-500"> *</span></label>
+            <label for="last_name" class="block text-gray-800 text-sm font-bold mb-2">
+              Last Name<span v-if="mode != 'newsletter'" class="text-red-500"> *</span>
+            </label>
             <input
               id="last_name"
               v-model="last_name"
@@ -57,8 +61,6 @@
             >
           </div>
         </div>
-        <input v-else id="first_name" v-model="first_name" type="hidden" name="first_name">
-        <input v-if="mode == 'newsletter'" id="last_name" v-model="last_name" type="hidden" name="last_name">
         <label for="email" class="block text-gray-800 text-sm font-bold mb-2">Email<span class="text-red-500"> *</span></label>
         <input
           id="email"
@@ -148,8 +150,8 @@ export default {
     return {
       oid: '00D1U000000DI9i',
       lead_source: leadSource,
-      first_name: this.mode === 'newsletter' ? 'Subscriber' : '',
-      last_name: this.mode === 'newsletter' ? 'Subscriber' : '',
+      first_name: '',
+      last_name: '',
       email: '',
       company: this.mode === 'newsletter' ? 'N/A' : '',
       description: defaultDescription,
@@ -198,6 +200,14 @@ export default {
       return result;
     },    
     recordSubmit () {
+      if (this.mode === 'newsletter') {
+        if (!this.first_name || this.first_name.trim() === '') {
+          this.first_name = 'Subscriber'
+        }
+        if (!this.last_name || this.last_name.trim() === '') {
+          this.last_name = 'Subscriber'
+        }
+      }
       this.$gtag('event', 'contact_form_submit', {
         event_category: 'engagement',
         event_label: window.location.pathname + ', ' + this.source,
