@@ -1,6 +1,24 @@
 [
   {
     "summary": "Onion AI",
+    "open": true,
+    "outage": true,
+    "affectedRegions": [
+      "Global"
+    ],
+    "affectedSystems": [
+      "Onion AI"
+    ],
+    "updates": [
+      {
+        "state": "Investigating",
+        "details": "Onion AI is currently unavailable.",
+        "date": "2026-08-04T09:00:00Z"
+      }
+    ]
+  },
+  {
+    "summary": "Onion AI",
     "open": false,
     "outage": false,
     "affectedRegions": ["Global"],
