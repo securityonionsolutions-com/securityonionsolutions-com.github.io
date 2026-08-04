@@ -1,7 +1,7 @@
 [
   {
     "summary": "Onion AI",
-    "open": true,
+    "open": false,
     "outage": false,
     "affectedRegions": [
       "Global"
@@ -10,6 +10,11 @@
       "Onion AI"
     ],
     "updates": [
+      {
+        "state": "Resolved",
+        "details": "The Onion AI service issue has been resolved and all systems are operational.",
+        "date": "2026-08-04T12:50:00Z"
+      },
       {
         "state": "Recovering",
         "details": "Onion AI service is back online.",
