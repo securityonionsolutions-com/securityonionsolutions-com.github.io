@@ -65,6 +65,7 @@
         "presenters": [
           {
             "name": "Lennart Koopman ⓘ",
+            "image": "/img/speakers/lennart_koopmann.jpg",
             "bio": "Lennart is the founder of Nzyme, an open source WiFi and Ethernet intrusion detection system (IDS). He previously created the Graylog open source project. A software developer by trade and an active member of the cybersecurity community, Lennart was born and raised in Germany and now lives in Texas."
           },
           {
