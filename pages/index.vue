@@ -1,6 +1,23 @@
 <template>
   <div class="xs:px-12">
     <PageNav page-name="Overview" :links="links" />
+    <nuxt-link to="/conference" class="block xs:-mx-12 bg-gradient-to-r from-so-blue via-indigo-900 to-so-blue text-white py-3.5 px-4 shadow-lg hover:brightness-110 transition-all duration-300 relative overflow-hidden group border-y border-so-blue/30">
+      <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-pulse pointer-events-none"></div>
+      <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center text-center gap-2 sm:gap-4 text-sm md:text-base font-semibold relative z-10">
+        <span class="inline-flex items-center gap-2 text-yellow-300 tracking-wide">
+          <span class="inline-flex items-center justify-center bg-yellow-400 text-gray-900 text-xs font-extrabold uppercase px-2 py-0.5 rounded shadow-sm">Annual Event</span>
+          Join us for the 12th Annual Security Onion Conference!
+        </span>
+        <span class="hidden md:inline text-blue-300/80">&bull;</span>
+        <span class="text-gray-100">Augusta, GA &bull; October 23rd, 2026</span>
+        <span class="inline-flex items-center text-xs font-bold uppercase tracking-wider bg-yellow-400 text-gray-900 group-hover:bg-yellow-300 px-3 py-1 rounded-full shadow transition-all transform group-hover:scale-105 ml-1">
+          Learn More
+          <svg class="w-3.5 h-3.5 ml-1 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </span>
+      </div>
+    </nuxt-link>
     <CarouselHero :entries="heroReasons" class="xs:-mx-12"/>
     <ContentSection id="preview" :alternate="true">
       <div class="px-1 md:px-6">
