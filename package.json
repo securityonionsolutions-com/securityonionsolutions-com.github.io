@@ -9,11 +9,12 @@
     "update_content": "node update_content.js"
   },
   "devDependencies": {
+    "@nuxt/icon": "^2",
+    "@tailwindcss/postcss": "^4",
+    "@tailwindcss/vite": "^4.3.3",
     "axios": "^1",
     "nuxt": "^4",
-    "@nuxt/icon": "^2",
     "tailwindcss": "^4",
-    "@tailwindcss/postcss": "^4",
     "vue3-carousel": "^0"
   },
   "dependencies": {
