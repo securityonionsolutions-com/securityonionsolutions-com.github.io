@@ -1,3 +1,5 @@
+import tailwindcss from '@tailwindcss/vite'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   runtimeConfig: {
@@ -18,6 +20,12 @@ export default defineNuxtConfig({
     plugins: {
       '@tailwindcss/postcss': {},
     },
+  },
+
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ],
   },
 
   build: {
