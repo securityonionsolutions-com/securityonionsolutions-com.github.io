@@ -1,0 +1,1 @@
+import{u as e}from"./CXRl-omN.js";import{t}from"./BDNMzG2s.js";var n={mounted(){e(`/license`)}};function r(e,t,n,r,i,a){return null}var i=t(n,[[`render`,r]]);export{i as default};
