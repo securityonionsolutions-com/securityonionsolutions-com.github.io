@@ -37,7 +37,7 @@
         },
         {
             "name": "Security Onion Pro",
-            "icon": "star",
+            "icon": "user",
             "desc": "Techniques needed to properly implement Pro features in the Security Onion Pro feature set.",
             "details": "This domain is centered around assessing the proficiency of candidates to implement Pro features and techniques necessary to effectively manage a Security Onion grid. The section encompasses a variety of topics, including but not limited to the effective use of OpenID Connect, Kafka, and the Security Onion API.",
             "percent": 8
