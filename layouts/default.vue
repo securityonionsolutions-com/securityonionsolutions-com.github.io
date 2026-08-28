@@ -4,6 +4,15 @@
       <title>Security Onion Solutions</title>
       <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
       <meta name="description" content="Security Onion Solutions, LLC" />
+      <meta property="og:title" content="Security Onion Solutions" />
+      <meta property="og:description" content="Security Onion Solutions, LLC" />
+      <meta property="og:image" content="https://securityonion.com/logo/so-logo-on-white.png" />
+      <meta property="og:url" content="https://securityonion.com" />
+      <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:title" content="Security Onion Solutions" />
+      <meta name="twitter:description" content="Security Onion Solutions, LLC" />
+      <meta name="twitter:image" content="https://securityonion.com/logo/so-logo-on-white.png" />
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <link rel="icon" type="image/svg+xml" :href="`/favicon/onion${colorSchemeString}.svg`" />
       <link rel="alt icon" type="image/png" :href="`/favicon/onion${colorSchemeString}.png`" />
@@ -19,7 +28,7 @@
       </LazyFloatingModal>
     </transition>
 
-    <div class="flex flex-col leading-normal tracking-normal min-h-screen bg-gradient-to-r from-so-blue-dark via-so-blue to-so-blue-dark">
+    <div class="flex flex-col leading-normal tracking-normal min-h-screen bg-gradient-to-r from-slate-900 via-so-blue to-slate-900">
       <Navbar class="fixed z-50" />
       <div class="fixed nav-bleed w-full bg-black z-0" />
       <div class="flex-grow content container mx-auto flex flex-col bg-white shadow-xl z-10" >
@@ -100,6 +109,7 @@ body, html {
 }
 .content {
   margin-top: 70px;
+  overflow-x: hidden;
 }
 .nav-bleed {
   height: 150px;

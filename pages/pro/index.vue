@@ -1,7 +1,7 @@
 <template>
   <div class="xs:px-12">
     <PageNav page-name="Security Onion Pro" :links="links" />
-    <SubHero class="hero-support text-center">
+    <SubHero v-reveal.once class="hero-support text-center reveal-scale">
       <template #header>
         Security Onion Pro
       </template>
@@ -15,7 +15,7 @@
           </ActionCallout>
         </div>
         <div class="flex flex-col flex-grow items-center">
-          <so-button class="mt-1 xl:mt-4" link="https://docs.securityonion.net/en/2.4/pro.html">
+          <so-button class="mt-1 xl:mt-4" link="https://securityonion.net/docs/security-onion-pro">
             Pro Documentation
           </so-button>
         </div>
@@ -23,10 +23,10 @@
     </SubHero>
     <ContentSection id="features" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32">
-        <SectionHeader class="mb-6">
+        <SectionHeader v-reveal class="mb-6">
           Enterprise Features
         </SectionHeader>
-        <feature-right class="xs:mb-20" :text-margin="true">
+        <feature-right v-reveal class="xs:mb-20 reveal-left" :text-margin="true">
           <template #body>
             <div class="text-center xs:text-left">
               Security Onion Pro includes enterprise-grade features commonly used by medium to large enterprises and government organizations.
@@ -64,10 +64,10 @@
     </ContentSection>
     <ContentSection id="services" :alternate="false">
       <div class="px-6 xs:px-12 lg:px-32">
-        <SectionHeader class="mb-6">
+        <SectionHeader v-reveal class="mb-6">
           Pro Support and Services
         </SectionHeader>
-        <feature-right class="xs:mb-20" :text-margin="true">
+        <feature-right v-reveal class="xs:mb-20 reveal-right" :text-margin="true">
           <template #body>
             <div class="text-center xs:text-left">
               In addition to its many powerful features, the Pro license also includes a number of support and service perks for enterprise customers!
@@ -104,15 +104,15 @@
     </ContentSection>
     <ContentSection id="coverage" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32">
-        <SectionHeader class="mb-6">
+        <SectionHeader v-reveal class="mb-6">
           Pro Hardware and Coverage
         </SectionHeader>
-        <two-panel-detail class="">
+        <two-panel-detail v-reveal class="reveal-left">
           <template #header-left>
             Included with Larger Hardware Appliances
           </template>
           <template #body-left>
-            Security Onion Pro is included with many of our larger hardware appliance models, such as the SOS SN7200, SOS SNNV, and SOS GoFast, at no additional charge. See our full appliance list on the
+            A single node Security Onion Pro license is included with many of our larger hardware appliance models, such as the SOS SN7200, SOS SNNV, and SOS GoFast, at no additional charge. See our full appliance list on the
             <a href="https://securityonion.com/hardware" class="underline">Hardware</a>
             page.
           </template>
@@ -120,16 +120,19 @@
             Broad Grid Coverage
           </template>
           <template #body-right>
-            The standard Pro license includes licensing for up to ten Security Onion
-            <a href="https://docs.securityonion.net/en/2.4/architecture.html#node-types" class="underline">nodes</a>, with additional node packs available for purchase.
+            The standard Pro license includes licensing for up to ten* Security Onion
+            <a href="https://securityonion.net/docs/architecture#node-types" class="underline">nodes</a>, with additional node packs available for purchase.
             Additionally, we offer licenses for smaller grids, such as a single standalone node.
           </template>
         </two-panel-detail>
+        <div class="mt-4">
+          * Hardware appliances include a single node license to cover that appliance node only.
+        </div>
       </div>
     </ContentSection>
     <ContentSection id="comparison" :bottom-margin="false">
       <div class="flex flex-col items-center justify-center mx-1 xs:-mx-10 sm:mx-0">
-        <SectionHeader class="mb-8">
+        <SectionHeader v-reveal class="mb-8">
           Community vs Pro Comparison
         </SectionHeader>
         <FreeVsProTable />
@@ -137,10 +140,10 @@
     </ContentSection>
     <ContentSection id="faq" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32">
-        <SectionHeader class="mb-6">
-          F.A.Q.
+        <SectionHeader v-reveal class="mb-6">
+          Frequently Asked Questions
         </SectionHeader>
-        <feature-right>
+        <feature-right v-reveal class="reveal-right">
           <template #body>
             <ProFAQ />
           </template>

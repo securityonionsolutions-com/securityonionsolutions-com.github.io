@@ -1,18 +1,20 @@
 {
   "upcoming": {
-    "year": 2025,
-    "date": "October 24, 2025",
+    "year": 2026,
+    "date": "October 23, 2026",
     "location": "Augusta, GA",
-    "caption.thankyou": "Thank you to all who attended the 2023 conference! We look forward to seeing everyone at our next conference!",
-    "caption.cfp_open": "Save the date for our next annual conference in 2025! The Call For Papers runs May 19 through July 14.",
-    "caption.savedate": "Save the date for our next annual conference in 2025! The Call For Papers is now closed.",
-    "caption": "Register today! We look forward to seeing you there!",
-    "caption.comingsoon": "Tickets will be available for puchase starting on August 7th, 2025.",
+    "caption.thanks": "Thank you to all who attended the 2025 conference! We look forward to seeing everyone at our next conference!",
+    "caption.std": "Save the date for our next annual conference in 2026! The Call For Papers runs May 18 through July 13.",
+    "caption.closed": "Save the date for our next annual conference in 2026! The Call for Papers is now closed.",
+    "caption.register": "Register today! We look forward to seeing you there!",
+    "caption": "Tickets will be available for purchase starting at noon on August 6th, 2026.",
     "caption.cancelled": "The 2024 Security Onion conference has been cancelled due to impacts from Hurricane Helene.",
     "link.blog": "https://blog.securityonion.net/2024/09/security-onion-conference-cancelled-due.html",
-    "link": "https://socaugusta2025.eventbrite.com/",
+    "link": "https://socaugusta2026.eventbrite.com/",
     "link.pics": "https://blog.securityonion.net/2024/04/security-onion-conference-2024-save.html",
     "link.moreinfo": "https://blog.securityonion.net/2025/05/security-onion-conference-2025-save.html",
+    "link.cfp": "https://securityonion.net/cfp",
+    "button.cfp": "Submit a Talk",
     "button.moreinfo": "More Information",
     "button": "Register Now",
     "schedule": [
@@ -21,6 +23,18 @@
         "presenters": [],
         "topic": "Doors open; Chick-fil-A breakfast",
         "description": ""
+      },
+      {
+        "time": "8:15 AM",
+        "presenters": [
+          {
+            "name": "Matt Gracie ⓘ",
+            "image": "/img/team/matt_gracie.jpg",
+            "bio": "Matthew Gracie is a defensive security specialist with fifteen years of Blue Team experience in higher education, manufacturing, financial services, and healthcare. He is currently a Senior Engineer at Security Onion Solutions, as well as an adjunct professor of Cybersecurity in the graduate school at Canisius University. Matt is also the lead organizer of Infosec 716, a monthly meetup for security enthusiasts in Western New York, and the BSides Buffalo technology conference. He enjoys microcontrollers, mountain bikes, open source security tools, and college hockey, and can be found on Bluesky as @InfosecGoon."
+          }
+        ],
+        "topic": "Breakfast Session - Security Onion: What's New? ⓘ",
+        "description": "We've made a lot of changes to Security Onion since our last conference - join me for a recap of what's new and some tips and tricks that you can use in your own environment!"
       },
       {
         "time": "9:00 AM",
@@ -32,13 +46,13 @@
         "time": "9:15 AM",
         "presenters": [
           {
-            "name": "Dr. Kelley Misata ⓘ",
-            "image": "/img/speakers/kelley_misata.jpg",
-            "bio": "Dr. Kelley Misata is the President and Executive Director of the Open Information Security Foundation (OISF), the nonprofit behind Suricata, the widely used open-source network threat detection engine. With over 15 years of experience in cybersecurity strategy, open-source sustainability, and community building, she has guided Suricata’s growth from a research initiative to a trusted global solution. Known for bridging the gap between technical teams and real-world impact, Dr. Misata brings a strategic, people-first approach to sustaining open-source tools in modern security ecosystems."
+            "name": "Scott Lynch ⓘ",
+            "image": "/img/team/scott_lynch.jpg",
+            "bio": "Scott Lynch is a Senior Engineer at Security Onion Solutions, where he helps commercial and government clients deploy, maintain, and optimize Security Onion for threat detection and security monitoring. He is also a SANS Certified Instructor and course author specializing in SIEM engineering and tactical analytics, teaching detection and response to security professionals worldwide. Scott spent more than two decades in satellite communications and IT security before joining Security Onion Solutions. His career began in the U.S. Navy as an Electronic Warfare specialist aboard a Nimitz class aircraft carrier. He later joined Universal Space Network, founded by Apollo 12 astronaut Charles 'Pete' Conrad, supporting global satellite ground station engineering, operations and mission integration."
           }
         ],
-        "topic": "Beyond Code Commits: Sustaining Open Source for Security at Scale ⓘ",
-        "description": "Security teams around the world depend on open source tools like Suricata and Security Onion—but few understand what it takes to keep them going. In this talk, Dr. Kelley Misata, President of OISF, shares the behind-the-scenes reality of sustaining one of the most widely used open source engines in network security. It’s not just about code—it’s about people, governance, funding, trust, and long-term vision.<p class=\"my-2\">From balancing commercial interests with community needs to navigating funding gaps and project sprawl, this talk delivers real stories and practical lessons from over a decade of open source leadership. Whether you’re a maintainer, contributor, or user, you’ll walk away with a deeper appreciation of what “supporting open source” really means—and why it matters more than ever."
+        "topic": "How Can You Hunt If You Don't Know What's on Your Network? ⓘ",
+        "description": "Whether you're an attacker or a defender, your first challenge is the same: understand the environment. Before an attacker can compromise a network, they have to figure out where they landed. Reconnaissance against systems, users, services, and trust relationships builds them a map. Defenders need that same map before they can monitor, hunt, or detect anything: what's on the network, how those systems talk to each other, and what 'normal' actually looks like. Too often, security teams investigate alerts referencing systems that appear in no inventory and match no baseline. Analysts burn hours establishing whether a host is even supposed to be there, false positives pile up, and real adversary activity slips past while everyone is busy chasing ghosts. If you don't know what's on your network, how can you recognize what doesn't belong? In this talk, we'll examine network visibility from both perspectives, highlighting how attackers and defenders approach the same unfamiliar environment with very different objectives. We'll cover practical techniques for building and maintaining meaningful baselines by correlating what you already have: DHCP and DNS logs, network telemetry from Zeek and Suricata, as well as active discovery with Nmap, and existing vulnerability scan data, stitched together in a Jupyter notebook so the gaps between sources become visible. Those gaps are where both your blind spots and your findings live. Every technique here works for teams with limited budgets and no formal asset management platform. Attendees will learn to turn the 'living off the land' approach attackers use daily into a defensive one: continuously discovering assets, identifying changes, enriching detection engineering, and building the context that separates normal operations from malicious behavior. All code and slides will be published on GitHub, so you can run the same workflow against your own environment. Whether you're defending a small business or a large enterprise, you'll leave with strategies for answering one of the most important questions in security: who understands your network better, you or your adversary?"
       },
       {
         "time": "10:15 AM",
@@ -50,25 +64,30 @@
         "time": "10:30 AM",
         "presenters": [
           {
+            "name": "Lennart Koopman ⓘ",
+            "image": "/img/speakers/lennart_koopmann.jpg",
+            "bio": "Lennart is the founder of Nzyme, an open source WiFi and Ethernet intrusion detection system (IDS). He previously created the Graylog open source project. A software developer by trade and an active member of the cybersecurity community, Lennart was born and raised in Germany and now lives in Texas."
+          },
+          {
             "name": "Matt Gracie ⓘ",
-            "image": "/img/team/matt_gracie.jpg",
-            "bio": "Matthew Gracie is a defensive security specialist with fifteen years of Blue Team experience in higher education, manufacturing, financial services, and healthcare. He is currently a Senior Engineer at Security Onion Solutions, as well as an adjunct professor of Cybersecurity in the graduate school at Canisius University. Matt is also the lead organizer of Infosec 716, a monthly meetup for security enthusiasts in Western New York, and the BSides Buffalo technology conference. He enjoys good beer, mountain bikes, open source security tools, and college hockey, and can be found on Bluesky as @InfosecGoon."
+            "image": "/img/speakers/mattcat_gracie.png",
+            "bio": "Matthew Gracie is a defensive security specialist with fifteen years of Blue Team experience in higher education, manufacturing, financial services, and healthcare. He is currently a Senior Engineer at Security Onion Solutions, as well as an adjunct professor of Cybersecurity in the graduate school at Canisius University. Matt is also the lead organizer of Infosec 716, a monthly meetup for security enthusiasts in Western New York, and the BSides Buffalo technology conference. He enjoys microcontrollers, mountain bikes, open source security tools, and college hockey, and can be found on Bluesky as @InfosecGoon."
           }
         ],
-        "topic": "Security Onion as a Teaching Platform ⓘ",
-        "description": "In the Fall semester of 2023, I began teaching a new Cybersecurity Operations course in the graduate program at Canisius University. My goal was simple - to give students exposure to both the high-level concepts and hands-on skills that they would need to be successful blue teamers after they graduate. This talk is about how I integrated Security Onion into the class as a teaching platform to provide that experience in detection engineering, alert investigation, threat hunting, and more."
+        "topic": "Integrating Nzyme and Security Onion ⓘ",
+        "description": "Nzyme is a free and open platform for detecting physical, close-proximity attempts to compromise your network infrastructure. In this talk we will explore the Nzyme platform, how it leverages Wi-Fi, Bluetooth, and Ethernet traffic to detect these events, and how its findings can be tied into Security Onion to alert on threats like rogue access points or hidden Bluetooth trackers as soon as they appear."
       },
       {
         "time": "11:30 AM",
         "presenters": [
           {
-            "name": "Wes Lambert ⓘ",
-            "image.disabled": "/img/team/wes_lambert.jpg",
-            "bio": "Wes Lambert is a lead engineer at Target, where he focuses on network security monitoring at scale. He spends his time designing and tuning network-based detection architecture and helps the organization achieve visibility across the enterprise."
+            "name": "Josh Brower ⓘ",
+            "image": "/img/team/josh_brower.jpg",
+            "bio": "Josh Brower has been crashing computers since his teens, and now feels fortunate to be doing it professionally. He has spent most of his career focusing on InfoSec, particularly network and endpoint detection. As a Principal Engineer at Security Onion Solutions, he works on the platform's continual development."
           }
         ],
-        "topic": "AI2Tune - Auto-tuning NSM for Optimal Operation ⓘ",
-        "description": "Tuning NSM sensors is often tedious, reactive, and error-prone. Teams spend many hours manually tuning Zeek and Suricata configurations to balance detection fidelity with packet loss and operational overhead. Static tuning approaches often fall short in dynamic environments, leading to degraded performance and operational frustration.<p class=\"my-2\">AI2Tune is an open framework designed to auto-tune network sensors for optimal operation. By combining machine learning and adaptive heuristics, AI2Tune continuously analyzes performance telemetry, such as packet drops, queue stats and system utilization, recommending or applying configuration changes in real time.<p class=\"my-2\">This presentation will demonstrate how AI2Tune learns baseline behavior, predicts emerging bottlenecks, and dynamically adjusts sensor configuration to maintain reliable coverage. While AI2Tune is platform-agnostic, examples will focus on integrating with Security Onion deployments, including strategies for safely applying tuning changes via SaltStack and maintaining compatibility with managed configurations.<p class=\"my-2\">AI2Tune can ingest metrics from ElasticSearch, InfluxDB, Prometheus, and local logs, detect deteriorating performance patterns, and trigger adjustments through Salt, Ansible, or API workflows. The system supports fully automated or recommendation-only modes, giving operators flexibility and visibility into each tuning decision.<p class=\"my-2\">Attendees will see practical examples of how AI2Tune can improve sensor performance, enhance operational resilience, and will become familiar with lessons learned from deploying adaptive tuning."
+        "topic": "Sigma Correlations: Everything, Everywhere, All Within 5 Minutes ⓘ",
+        "description": "A single failed logon is noise. Twenty failed logons against twenty accounts from one source, followed by one success, needs to be escalated. Standard Sigma rules can only see the first. The new Correlation rules change that: count, threshold, and sequence across multiple events. In this session we will walk through each correlation type and build real detections with them drawing on network, host, authentication, and application logs."
       },
       {
         "time": "12:30 PM",
@@ -82,18 +101,13 @@
         "time": "1:30 PM",
         "presenters": [
           {
-            "name": "Dr. Chris Sanders ⓘ",
-            "image": "/img/speakers/chris_sanders.png",
-            "bio": "Dr. Chris Sanders is an information security instructor, author, and researcher focused on the intersection of cyber security,  education, and cognitive psychology where he studies security analyst cognition and performance. He is the founder of Applied Network Defense, a cyber security training company, and Executive Director of the Rural Technology Fund, a non-profit that provides technology education resources to rural public schools and libraries. In previous roles, Chris worked with the US Department of Defense, InGuardians, and Mandiant. He is the author of several information security books, including Intrusion Detection Honeypots, Applied Network Security Monitoring, and Practical Packet Analysis. Chris received his doctorate in education from Baylor University. He spends his free time building things from wood and studying space rocks."
-          },
-          {
-            "name": "Josh Brower ⓘ",
-            "image": "/img/team/josh_brower.jpg",
-            "bio": "Josh Brower has been crashing computers since his teens, and now he's fortunate enough to do it professionally as a Principal Engineer at Security Onion Solutions. With 17 years in Information Security, he focuses primarily on network and endpoint detection, helping defenders stay one step ahead of attackers. He's also passionate about making security more accessible, especially for non-technical audiences. Whether it's explaining how digital actions have real-world consequences or sharing practical ways to reduce risk, Josh enjoys helping others navigate the digital world more safely."
+            "name": "Bryant Treacle ⓘ",
+            "image": "/img/team/bryant_treacle.jpg",
+            "bio": "Bryant Treacle has over 25 years of experience in cybersecurity and IT networking across both Department of Defense and commercial environments. He currently serves as a Senior Engineer and Training Manager at Security Onion Solutions LLC, where he focuses on detection engineering, network security monitoring, and endpoint visibility. His work focuses on building practical, real-world detection capabilities for SOC analysts, with an emphasis on enterprise and ICS/OT environments."
           }
         ],
-        "topic": "Investigation Playbooks for Humans ⓘ",
-        "description": "Investigation playbooks should never be used to replace or restrict human analysts completely, but they can augment analysts by helping them overcome the limitations of their memory, generate new ideas for specific investigation scenarios, minimize the limitations of their intuition, and consolidate individual knowledge.<p class=\"my-2\">In this talk, we'll introduce a new framework and standard for creating Human-Centered Investigation Playbooks. The goal for these playbooks is simple: provide a structure for documenting investigative playbooks that is flexible, intuitive, and genuinely helpful to human analysts during incident investigation and response.<p class=\"my-2\">Chris Sanders will begin by unpacking the theory behind this human-centered approach, grounded in cognitive science and investigative reasoning. You'll learn how traditional playbooks fall short, and how cognitive playbooks can improve decision-making, reduce analyst fatigue, and enable consistent, high-quality outcomes.<p class=\"my-2\">After that, Josh Brower will demonstrate how this model has been integrated into Security Onion, showing off the new Guided Analysis feature that was recently released. He'll walk through a real-world example of a detection scenario using a playbook built into the platform, highlighting how the tool empowers analysts to make informed choices.<p class=\"my-2\">Finally, we'll wrap up by describing some best practices for creating playbooks as an educational exercise with a practical outcome. Analysts, SOC leaders, and tool builders should walk away from this talk with a better understanding of how to effectively use investigative playbooks, and a few tools for helping them along that path."
+        "topic": "Defending OT/ICS Environments with Security Onion ⓘ",
+        "description": "Grounding in the real-world 2021 Oldsmar water treatment attack, where an intruder remotely attempted to spike sodium hydroxide to dangerous levels, this talk breaks down the Modbus/TCP protocol in accessible terms (no prior expertise needed) and walks attendees through a practical defense strategy: gaining network visibility, baselining normal industrial activity, and implementing Suricata rules to detect rogue devices, deviations, and targeted attacks. The session briefly covers adding custom Zeek scripts built to close a gap in native Zeek Modbus parsing and wraps with a live demo. "
       },
       {
         "time": "2:30 PM",
@@ -104,7 +118,7 @@
       {
         "time": "2:45 PM",
         "presenters": [],
-        "topic": "Announce Raffle Winners",
+        "topic": "Raffle Winners Announced",
         "description": ""
       },
       {
@@ -113,7 +127,7 @@
           {
             "name": "Doug Burks ⓘ",
             "image": "/img/team/doug_burks.jpg",
-            "bio": "Doug Burks started Security Onion in 2008 to provide a comprehensive platform to help folks peel back the layers of their enterprise and make their adversaries cry. Today, Security Onion has over 2,000,000 downloads and is being used by organizations around the world for threat hunting, enterprise security monitoring, and log management. In 2014, Doug started Security Onion Solutions LLC to help those organizations by providing training, professional services, and hardware appliances. Doug is a CEO, public speaker, teacher, former president of the Greater Augusta ISSA, and co-founder of BSides Augusta, but what he really likes the most is catching bad guys."
+            "bio": "Doug Burks started Security Onion in 2008 to provide a comprehensive platform to help folks peel back the layers of their enterprise and make their adversaries cry. Today, Security Onion has over 2,500,000 downloads and is being used by organizations around the world for threat hunting, enterprise security monitoring, and log management. In 2014, Doug started Security Onion Solutions LLC to help those organizations by providing training, professional services, and hardware appliances. Doug is a CEO, public speaker, teacher, former president of the Greater Augusta ISSA, and co-founder of BSides Augusta, but what he really likes the most is catching bad guys."
           }
         ],
         "topic": "State of the Onion",
@@ -122,6 +136,103 @@
     ]
   },
   "past": [
+    {
+      "year": 2025,
+      "date": "October 24, 2025",
+      "location":"Augusta, GA",
+      "pictures": [
+        "/img/conf/2025/scaled_DSC04934 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC04950 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC04958 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC04963 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC04966 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC04967 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC04993 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC04996 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05021 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05025 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05027 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05041 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05057 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05069 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05076 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05108 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05133 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05150 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05153 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05157 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05160 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05180 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05186 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05187 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05195 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05203 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05208 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05211 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05217 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05239 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05253 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05255 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05258 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05281 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05283 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05287 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05290 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05295 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05302 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05304 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05311 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05312 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05320 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05403 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05457 10-24-25.jpg",
+        "/img/conf/2025/scaled_DSC05465 10-24-25.jpg"
+      ],
+      "playlist": "https://www.youtube.com/embed/videoseries?list=PLljFlTO9rB16ak98fBZrL6X_w8K2astB0",
+      "events": [
+        {
+          "speakers": ["Matt Gracie"],
+          "pres_name": "Breakfast Session - Security Onion: What's New?",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=QA0xOuYIFIg&list=PLljFlTO9rB16ak98fBZrL6X_w8K2astB0&index=1"
+          }
+        },
+        {
+          "speakers": ["Dr. Kelley Misata"],
+          "pres_name": "Beyond Code Commits: Sustaining Open Source for Security at Scale",
+          "links": {
+          }
+        },
+        {
+          "speakers": ["Matt Gracie"],
+          "pres_name": "Security Onion as a Teaching Platform",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=1frIQFlmcjE&list=PLljFlTO9rB16ak98fBZrL6X_w8K2astB0&index=2"
+          }
+        },
+        {
+          "speakers": ["Dr. Chris Sanders", "Josh Brower"],
+          "pres_name": "Investigation Playbooks for Humans",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=ktFw6dJSd74&list=PLljFlTO9rB16ak98fBZrL6X_w8K2astB0&index=3"
+          }
+        },
+        {
+          "speakers": ["Jeff Lucovsky"],
+          "pres_name": "Suricata 8",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=1Bv1I5N2_DQ&list=PLljFlTO9rB16ak98fBZrL6X_w8K2astB0&index=4"
+          }
+        },
+        {
+          "speakers": ["Doug Burks"],
+          "pres_name": "State of the Onion",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=i2tM_WmDF54&list=PLljFlTO9rB16ak98fBZrL6X_w8K2astB0&index=5"
+          }
+        }
+      ]
+    },
     {
       "year": 2023,
       "date": "October 6, 2023",

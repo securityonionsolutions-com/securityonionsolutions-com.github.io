@@ -9,7 +9,7 @@
     },
     {
       "question": "Do firewalls, endpoints, and other external data sources count as nodes?",
-      "answer": "No. The license is based on the number of nodes running Security Onion which are joined to the Security Onion Pro grid. Examples include Manager Node, Receiver Nodes, Search Nodes, Forward Nodes, Heavy Nodes, IDH Nodes, Fleet Nodes, etc. Pricing is not tied to the number of data sources."
+      "answer": "No. The license is based on the number of nodes running Security Onion which are joined to the Security Onion Pro grid. Examples include Manager Node, Receiver Nodes, Search Nodes, Sensor Nodes, Heavy Nodes, IDH Nodes, Fleet Nodes, etc. Pricing is not tied to the number of data sources."
     },
     {
       "question": "I am an existing paid customer of Security Onion Solutions. Do I need to purchase Pro to access its capabilities?",

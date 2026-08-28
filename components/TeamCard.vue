@@ -10,7 +10,7 @@
         </div>
         <div class="flex flex-row justify-left items-center">
           <a v-if="twitter !== ''" :href="twitter" target="_blank" class="hover:text-so-blue">
-            <Icon name="fa6-brands:twitter" :class="[linkedin !== '' ? 'mr-3' : '']" />
+            <Icon name="fa6-brands:x-twitter" :class="[linkedin !== '' ? 'mr-3' : '']" />
           </a>
           <a v-if="linkedin !== ''" :href="linkedin" target="_blank" class="hover:text-so-blue">
             <Icon name="fa6-brands:linkedin" />
@@ -59,13 +59,25 @@ export default {
 </script>
 
 <style scoped lang="postcss">
+@reference "../assets/css/tailwind.css";
 .card {
   height: 21.5rem;
   max-width: 16rem;
-  @apply bg-white text-black overflow-hidden shadow-md;
+  @apply bg-white/80 backdrop-blur-md text-black overflow-hidden shadow-lg border border-white/20 rounded-2xl transition-all duration-300 ease-in-out;
+}
+.card:hover {
+  @apply shadow-2xl scale-105;
+  border-color: var(--color-so-blue);
 }
 .img {
   height: 16rem;
   width: 16rem;
+  @apply overflow-hidden;
+}
+.img img {
+  @apply transition-transform duration-500 ease-in-out;
+}
+.card:hover .img img {
+  @apply scale-110;
 }
 </style>

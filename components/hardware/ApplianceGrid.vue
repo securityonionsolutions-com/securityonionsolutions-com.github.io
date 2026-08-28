@@ -20,7 +20,7 @@
             <div>Use Case(s)</div>
           </th>
           <th class="text-center px-2 truncate">
-            <div>Forward Node</div>
+            <div>Sensor Node</div>
             <div>Throughput †</div>
           </th>
           <th class="text-center px-2 truncate">
@@ -53,16 +53,21 @@
           <td class="hidden md:table-cell border-t border-blue-400 truncate w-1/4">
             <img :src="thumbnail(item)">
           </td>
-          <td class="text-right border-t border-blue-400 px-2 truncate">
-            <div class="flex flex-row">
-              {{ item['name'] }}
-              <icon name="fa6-solid:circle-info" class="mx-2 mt-1 text-base" />
+          <td class="md:text-right border-t border-blue-400 px-2 truncate">
+            <div class="md:flex md:flex-row md:justify-end md:items-center flex flex-col mb-1 items-center">
+              <div class="md:hidden">
+                <img :src="thumbnail(item)" class="max-w-full h-auto" />
+              </div>
+              <div class="flex items-center">
+                {{ item['name'] }}
+                <icon name="fa6-solid:circle-info" class="ml-2 text-base" />
+              </div>
             </div>
           </td>
           <td class="hidden xl:table-cell border-t border-blue-400 px-2 truncate">
             <div v-for="(role, roleIdx) in item.roles" :key="roleIdx" v-text="role" />
           </td>
-          <td class="text-right border-t border-blue-400 px-2 truncate" v-text="item.specs['Forward Node Throughput †']" />
+          <td class="text-right border-t border-blue-400 px-2 truncate" v-text="item.specs['Sensor Node Throughput †']" />
           <td class="text-right border-t border-blue-400 px-2 truncate" v-text="item.specs['Standalone Throughput †']" />
           <td class="hidden md:table-cell text-right border-t border-blue-400 px-2 truncate" v-text="item.specs['Data Storage *']" />
           <td class="hidden md:table-cell text-left border-t border-blue-400 px-2 truncate" v-text="item.specs['Data Storage Class']" />

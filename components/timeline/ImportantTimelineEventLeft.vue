@@ -4,7 +4,7 @@
       <slot name="event" />
     </div>
     <div class="flex-none">
-      <div class="vertical-line h-24">
+      <div class="vertical-line h-16">
         <div class="rounded-full h-4 w-4 -ml-1 mt-10 border-4 border-gray-900 grow-child" :class="[focused ? 'bg-so-blue' : 'bg-white']" />
       </div>
     </div>

@@ -6,8 +6,18 @@
     <div class="text-lg mb-1">
       {{ detailText }}
     </div>
+    <div class="mt-8 flex justify-center">
+      <a v-if="registerText && !isInternal(registerText)" :href="registerText" target="_blank" class="bg-so-blue text-white px-6 py-2 rounded font-semibold hover:bg-blue-600 transition-colors flex items-center">
+        <span class="mr-2">Register Now</span>
+        <icon name="fa-solid:external-link-alt" />
+      </a>
+      <a v-else-if="registerText && isInternal(registerText)" :href="registerText" class="bg-so-blue text-white px-6 py-2 rounded font-semibold hover:bg-blue-600 transition-colors flex items-center">
+        <span class="mr-2">View Training</span>
+      </a>
+    </div>
   </div>
 </template>
+
 
 <script>
 
@@ -15,6 +25,12 @@ export default {
   props: {
     courseName: { type: String, default: '' },
     detailText: { type: String, default: '' },
+    registerText: { type: String, default: '' },
+  },
+  methods: {
+    isInternal(link) {
+      return link.startsWith('#');
+    }
   }
 }
 </script>
@@ -34,3 +50,4 @@ export default {
   }
 }
 </style>
+

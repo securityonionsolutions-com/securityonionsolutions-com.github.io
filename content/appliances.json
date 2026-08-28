@@ -4,7 +4,7 @@
     "category": "Enterprise",
     "tagline": "Designed for performance and value",
     "roles": [
-      "Forward node in a branch office"
+      "Sensor node in a branch office"
     ],
     "sensor": true,
     "performance": {
@@ -21,7 +21,7 @@
     }],
     "specs": {
       "Standalone Throughput †": "N/A",
-      "Forward Node Throughput †": "500 Mbps",
+      "Sensor Node Throughput †": "500 Mbps",
       "Data Storage *": "20 TB",
       "Data Storage Class": "SAS",
       "Data Storage Details": "SATA SAS 7K RPM",
@@ -46,7 +46,7 @@
     "tagline": "Designed for performance and value",
     "roles": [
       "Standalone node in a small organization",
-      "Forward node in a medium office"
+      "Sensor node in a medium office"
     ],
     "sensor": true,
     "performance": {
@@ -63,7 +63,7 @@
     }],
     "specs": {
       "Standalone Throughput †": "500 Mbps",
-      "Forward Node Throughput †": "1 Gbps",
+      "Sensor Node Throughput †": "1 Gbps",
       "Data Storage *": "40 TB",
       "Data Storage Class": "SAS",
       "Data Storage Details": "SATA SAS 7K RPM",
@@ -88,7 +88,7 @@
     "tagline": "Designed for performance and value",
     "roles": [
       "Standalone node in a small organization",
-      "Forward node in a medium office"
+      "Sensor node in a medium office"
     ],
     "sensor": true,
     "performance": {
@@ -105,7 +105,7 @@
     }],
     "specs": {
       "Standalone Throughput †": "1 Gbps",
-      "Forward Node Throughput †": "2 Gbps",
+      "Sensor Node Throughput †": "2 Gbps",
       "Data Storage *": "45 TB",
       "Data Storage Class": "NVMe",
       "Data Storage RAID": "RAID 5",
@@ -128,7 +128,7 @@
     "category": "Enterprise",
     "tagline": "Designed for high throughput observation with full packet capture",
     "roles": [
-      "Forward node in a data center"
+      "Sensor node in a data center"
     ],
     "uses": [
       "Large Office"
@@ -148,7 +148,7 @@
     }],
     "specs": {
       "Standalone Throughput †": "N/A",
-      "Forward Node Throughput †": "5 Gbps",
+      "Sensor Node Throughput †": "5 Gbps",
       "Data Storage *": "200 TB",
       "Data Storage Class": "SAS",
       "Data Storage Details": "SATA SAS 7K RPM",
@@ -172,7 +172,7 @@
     "category": "Enterprise",
     "tagline": "Designed for extreme performance with alerts and packet metadata",
     "roles": [
-      "Forward node in a large data center",
+      "Sensor node in a large data center",
       "Network monitoring limited to alerts and metadata"
     ],
     "sensor": true,
@@ -190,7 +190,7 @@
     }],
     "specs": {
       "Standalone Throughput †": "N/A",
-      "Forward Node Throughput †": "10 Gbps ‡",
+      "Sensor Node Throughput †": "10 Gbps ‡",
       "Data Storage *": "15 TB",
       "Data Storage Class": "NVMe",
       "Data Storage RAID": "RAID 1",
@@ -232,7 +232,7 @@
     }],
     "specs": {
       "Standalone Throughput †": "N/A",
-      "Forward Node Throughput †": "N/A",
+      "Sensor Node Throughput †": "N/A",
       "Data Storage *": "15 TB",
       "Data Storage Class": "NVMe",
       "Data Storage RAID": "RAID 1",
@@ -275,7 +275,7 @@
     }],
     "specs": {
       "Standalone Throughput †": "3 Gbps",
-      "Forward Node Throughput †": "N/A",
+      "Sensor Node Throughput †": "N/A",
       "Data Storage *": "120 TB",
       "Data Storage Class": "SAS",
       "Data Storage Details": "SATA SAS 7K RPM",
@@ -318,7 +318,7 @@
     }],
     "specs": {
       "Standalone Throughput †": "5 Gbps ‡",
-      "Forward Node Throughput †": "N/A",
+      "Sensor Node Throughput †": "N/A",
       "Data Storage *": "45 TB",
       "Data Storage Class": "NVMe",
       "Data Storage RAID": "RAID 10",

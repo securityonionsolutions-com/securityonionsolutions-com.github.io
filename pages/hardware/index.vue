@@ -1,15 +1,14 @@
 <template>
   <div class="xs:px-12">
     <PageNav page-name="Appliances" :links="links" />
-    <SubHero id="download-before" class="hero-hardware">
+    <SubHero id="download-before" v-reveal.once class="hero-hardware reveal-scale">
       <template #header>
         Next Gen Is Here!
       </template>
       <template #body>
         <div class="flex justify-center text-center">
           <div class="text-2xl">
-            Introducing the newest generation of Security Onion appliances. 
-            With upgraded storage, network, processing, and memory these new 
+            With upgraded storage, network, processing, and memory our latest
             appliances will make it even easier to make your adversaries cry!
           </div>
         </div>
@@ -24,7 +23,7 @@
     </SubHero>
     <ContentSection id="overview" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32">
-        <feature-right class="xs:mb-12" :text-margin="true">
+        <feature-right v-reveal class="xs:mb-12 reveal-right" :text-margin="true">
           <template #header>
             <div class="text-center xs:text-left">
               Official Hardware Appliances for Security Onion
@@ -44,7 +43,7 @@
             </div>
           </template>
         </feature-right>
-        <feature-left class="my-12">
+        <feature-left v-reveal class="my-12 reveal-left">
           <template #header>
             <div class="text-center xs:text-left">
               Integration with Security Onion
@@ -67,7 +66,7 @@
             </div>
           </template>
         </feature-left>
-        <feature-right class="xs:mb-20" :text-margin="true">
+        <feature-right v-reveal class="xs:mb-20 reveal-right" :text-margin="true">
           <template #header>
             <div class="text-center xs:text-left">
               Support Security Onion
@@ -86,7 +85,7 @@
     </ContentSection>
     <ContentSection id="comparison">
       <div class="flex flex-col items-center justify-center mx-1 xs:-mx-10 sm:mx-0">
-        <ApplianceGrid />
+        <ApplianceGrid v-reveal class="reveal-scale" />
       </div>
     </ContentSection>
     <ContentSection id="hardwarehelp" :alternate="true">

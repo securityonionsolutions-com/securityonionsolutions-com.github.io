@@ -1,13 +1,30 @@
 <template>
   <div class="xs:px-12">
     <PageNav page-name="Overview" :links="links" />
+    <nuxt-link to="/conference" class="block xs:-mx-12 bg-gradient-to-r from-so-blue via-indigo-900 to-so-blue text-white py-3.5 px-4 shadow-lg hover:brightness-110 transition-all duration-300 relative overflow-hidden group border-y border-so-blue/30">
+      <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-pulse pointer-events-none"></div>
+      <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center text-center gap-2 sm:gap-4 text-sm md:text-base font-semibold relative z-10">
+        <span class="inline-flex items-center gap-2 text-yellow-300 tracking-wide">
+          <span class="inline-flex items-center justify-center bg-yellow-400 text-gray-900 text-xs font-extrabold uppercase px-2 py-0.5 rounded shadow-sm">Annual Event</span>
+          Join us for the 12th Annual Security Onion Conference!
+        </span>
+        <span class="hidden md:inline text-blue-300/80">&bull;</span>
+        <span class="text-gray-100">Augusta, GA &bull; October 23rd, 2026</span>
+        <span class="inline-flex items-center text-xs font-bold uppercase tracking-wider bg-yellow-400 text-gray-900 group-hover:bg-yellow-300 px-3 py-1 rounded-full shadow transition-all transform group-hover:scale-105 ml-1">
+          Learn More
+          <svg class="w-3.5 h-3.5 ml-1 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </span>
+      </div>
+    </nuxt-link>
     <CarouselHero :entries="heroReasons" class="xs:-mx-12"/>
     <ContentSection id="preview" :alternate="true">
       <div class="px-1 md:px-6">
-        <SectionHeader class="mt-6 xs:mb-8">
+        <SectionHeader v-reveal class="mt-6 xs:mb-8">
           Latest Developments
         </SectionHeader>
-        <VerticalFeature>
+        <VerticalFeature v-reveal class="reveal-scale">
           <template #graphic>
             <video class="v-player__video w-full" controls autoplay="true"
                   loop="true"
@@ -15,18 +32,18 @@
                   poster=""
                   preload="auto"
                   name="media">
-                <source src="/public/videos/mcp-demo.mp4">
+                <source src="/videos/onionai_3.mp4">
             </video>
           </template>
           <template #title>
             <div class="text-2xl">
-              Are you down with MCP? Introducing the new MCP Server for Security Onion Pro users.
+              <i>Onion AI</i> offers several time-saving capabilities, including alert analysis, detection tuning, and more.
             </div>
           </template>
           <template #body>
             <div class="text-2xl d-flex-column">
               <div class="text-xl mt-8">
-                Peel back the layers of your network and make your adversaries cry!
+                Local model support is now available. Contact your sales representative for details.
               </div>
               <div class="w-full flex justify-center">
                 <so-button class="mt-4 xl:mt-8" link="/pro" :alternate="true">
@@ -43,17 +60,24 @@
         <section-header class="mb-6">
           Our Partners
         </section-header>
-        <div class="flex flex-col lg:flex-row lg:flex-wrap justify-center content-center md:-mx-2 mt-4">
-          <img v-for="(image, index) in logos" :key="index" class="partner-logo m-auto lg:px-6 py-10 lg:py-2 w-1/2 lg:w-1/6" :src="image">
+        <div class="overflow-hidden py-8">
+          <div class="animate-marquee flex flex-row items-center gap-12 md:gap-24">
+            <!-- First set of logos -->
+            <img v-for="(image, index) in logos" :key="'p1-'+index" class="h-10 md:h-12 w-auto object-contain grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500" :src="image">
+            <!-- Second set of logos for seamless loop -->
+            <img v-for="(image, index) in logos" :key="'p2-'+index" class="h-10 md:h-12 w-auto object-contain grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500" :src="image">
+            <!-- Third set of logos to ensure full coverage on wide screens -->
+            <img v-for="(image, index) in logos" :key="'p3-'+index" class="h-10 md:h-12 w-auto object-contain grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500" :src="image">
+          </div>
         </div>
       </div>
     </ContentSection>
     <ContentSection id="about" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32">
-        <section-header class="mb-6">
+        <section-header v-reveal class="mb-6">
           About Us
         </section-header>
-        <feature-right class="xs:mb-12" :text-margin="true">
+        <feature-right v-reveal class="xs:mb-12 reveal-right" :text-margin="true">
           <template #graphic>
             <div class="rounded-full shadow-lg overflow-hidden">
               <Graphic
@@ -77,30 +101,33 @@
     </ContentSection>
     <ContentSection id="timeline">
       <div class="xs:-mx-12">
-        <section-header class="sm:mx-40 mb-8">
+        <section-header v-reveal class="sm:mx-40 mb-8">
           Our History
         </section-header>
         <div class="flex flex-row flex-wrap justify-center content-center mb-4">
           <div class="md:w-1/2 lg:w-1/3 pr-12">
             <Timeline @timeline-click="setEventGraphic($event)" />
           </div>
-          <div class="flex flex-col items-center md:w-1/2 lg:w-2/3 lg:pr-8 xl:pl-4 pb-12 lg:pb-0">
-            <div class="text-lg mb-20 hidden lg:block">Click on a timeline event, on the left, to learn more.</div>
-            <img class="object-contain my-10 overflow-hidden rounded-md w-5/6" :class="[currentEvent!=0 ? 'shadow-xl' : '']" :src="eventObj().img">
-            <div class="text-xl text-center w-4/5">
-              {{ eventObj().text }}
-            </div>
+          <div class="md:w-1/2 lg:w-2/3 lg:pr-8 xl:pl-4 pb-12 lg:pb-0 min-h-[500px]">
+            <Transition name="fade" mode="out-in">
+              <div :key="currentEvent" class="flex flex-col items-center">
+                <img class="object-contain my-10 overflow-hidden rounded-md w-5/6" :class="[currentEvent!=0 ? 'shadow-xl' : '']" :src="eventObj().img">
+                <div class="text-xl text-center w-4/5">
+                  {{ eventObj().text }}
+                </div>
+              </div>
+            </Transition>
           </div>
         </div>
       </div>
     </ContentSection>
     <ContentSection id="members" :alternate="true">
       <div>
-        <section-header class="sm:mx-40 mb-8">
+        <section-header v-reveal class="sm:mx-40 mb-8">
           Our Team
         </section-header>
         <div class="flex flex-row flex-wrap justify-center content-center mb-4 md:mx-24">
-          <div v-for="(member, index) in teamArr" :key="index" class="px-4 py-4">
+          <div v-for="(member, index) in teamArr" :key="index" v-reveal.once :class="[index % 2 === 0 ? 'reveal-left' : 'reveal-right']" class="px-4 py-4">
             <team-card
               :name="member.name"
               :org="member.org"

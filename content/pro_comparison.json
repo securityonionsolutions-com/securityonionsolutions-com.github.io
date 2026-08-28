@@ -93,7 +93,7 @@
       "feature": "Packet Capture (PCAP) Storage and Retrieval",
       "free": true,
       "premium": true,
-      "caption": "View and download raw packet data using Stenographer or Suricata"
+      "caption": "View and download raw packet data using Suricata PCAP"
     },
     {
       "feature": "Endpoint Monitoring",
@@ -162,7 +162,7 @@
       "caption": "Strict organizational policy compliance for CAT 1 issues of the OS"
     },
     {
-      "feature": "Connect API",
+      "feature": "Security Onion API",
       "free": false,
       "premium": true,
       "caption": "Integrate Security Onion with external systems for automating security processes"
@@ -204,16 +204,28 @@
       "caption": "Interface your AI/LLM platform to your Security Onion grid, allowing AI to query alerts, playbooks, and more."
     },
     {
+      "feature": "Onion AI Security Assistant",
+      "free": false,
+      "premium": true,
+      "caption": "AI-powered security assistant for enhanced threat analysis and response"
+    },
+    {
       "feature": "Splunk App",
       "free": false,
       "premium": true,
-      "caption": "Automated, periodic ingest of Security Onion alerts into Splunk via the Security Onion Connect API. Security Onion Solutions does not provide support for this feature."
+      "caption": "Automated, periodic ingest of Security Onion alerts into Splunk via the Security Onion API. Security Onion Solutions does not provide support for this feature."
     },
     {
       "feature": "Hardware Virtualization",
       "free": false,
       "premium": true,
       "caption": "This feature is especially helpful if you want to optimize your hardware's potential and expand your Elastic performance and retention. Available on select hardware."
+    },
+    {
+      "feature": "Reporting",
+      "free": false,
+      "premium": true,
+      "caption": "Run built-in case or productivity reports, export SOC data to CSV files, and even create your own custom reports, or customize our built-in reports."
     },
     {
       "feature": "Enhanced SLA Options",
