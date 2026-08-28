@@ -19,6 +19,7 @@
       </template>
     </SubHero>
     <content-section :alternate="true">
+    
       <div class="px-6 xs:px-12 lg:px-32">
         <div v-reveal class="text-2xl md:text-4xl text-center font-semibold reveal-scale">
           The SOCP exam validates that you have the knowledge and skills to properly investigate alerts, hunt for adversaries,
@@ -86,7 +87,7 @@
                 Schedule exam
               </so-button>
               <div class="text-sm -mt-4 mb-3 hover:underline">
-                <a href="/files/socp-registration-guide-v32.pdf">
+                <a href="/files/socp-registration-guide-v3_2.pdf">
                   <div class="flex flex-row justify-center content-center">
                     <div>
                       Registration Guide
