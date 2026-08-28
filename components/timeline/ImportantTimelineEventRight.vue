@@ -4,7 +4,7 @@
       <slot name="year" />
     </div>
     <div class="flex-none">
-      <div class="vertical-line h-32 relative">
+      <div class="vertical-line h-16 relative">
         <div class="circle grow-child" :class="[focused ? 'bg-so-blue' : 'bg-white']" />
       </div>
     </div>
@@ -30,6 +30,7 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+  @reference "../../assets/css/tailwind.css";
   .circle {
     @apply rounded-full border-4 border-gray-900;
     position: absolute;

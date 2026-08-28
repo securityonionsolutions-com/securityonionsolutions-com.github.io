@@ -1,6 +1,7 @@
-import VueGtag from 'vue-gtag'
+import { createGtag } from 'vue-gtag'
+
 export default defineNuxtPlugin((nuxtApp) => {
-  nuxtApp.vueApp.use(VueGtag, {
+  nuxtApp.vueApp.use(createGtag({
     config: {
       id: useRuntimeConfig().public.gtag,
       anonymize_ip: true,
@@ -11,5 +12,5 @@ export default defineNuxtPlugin((nuxtApp) => {
     includes: [
       { id: useRuntimeConfig().public.adtag }
     ]
-  }, nuxtApp.$router)
+  }, nuxtApp.$router))
 })

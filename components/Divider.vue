@@ -13,6 +13,7 @@ export default {
 </script>
 
 <style scoped lang="postcss">
+@reference "../assets/css/tailwind.css";
 .circle {
   position: absolute;
   top: 50%;

@@ -1,7 +1,7 @@
 <template>
   <div class="xs:px-12">
     <PageNav page-name="Support &amp; Professional Services" :links="links" />
-    <SubHero class="hero-support text-center">
+    <SubHero v-reveal.once class="hero-support text-center reveal-scale">
       <template #header>
         Premium Support
       </template>
@@ -19,10 +19,10 @@
     </SubHero>
     <ContentSection id="premium-support" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32">
-        <SectionHeader class="mb-6">
+        <SectionHeader v-reveal class="mb-6">
           Support and Professional Services
         </SectionHeader>
-        <four-panel-detail class="">
+        <four-panel-detail v-reveal class="reveal-scale">
           <template #header-top-left>
             Enterprise Deployments
           </template>
@@ -52,7 +52,7 @@
     </ContentSection>
     <ContentSection id="premium-vs-community" :bottom-margin="false">
       <div class="flex flex-col items-center justify-center mx-1 xs:-mx-10 sm:mx-0">
-        <SectionHeader class="mb-8">
+        <SectionHeader v-reveal class="mb-8">
           Benefits of Purchasing Support
         </SectionHeader>
         <FreeVsPremiumTable />
@@ -61,9 +61,9 @@
     <ContentSection id="community-support" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32">
         <div class="xs:pb-6">
-          <feature-right :text-margin="true">
+          <feature-right v-reveal :text-margin="true" class="reveal-right">
             <template #header>
-              <div class="text-center xs:text-left">
+              <div v-reveal class="text-center xs:text-left reveal-right">
                 Community Support
               </div>
             </template>

@@ -1,9 +1,9 @@
 <template>
   <div class="xs:px-12">
     <PageNav page-name="Security Onion" :links="links" />
-    <SubHero id="download-before" class="hero-software">
+    <SubHero id="download-before" v-reveal.once class="hero-software reveal-scale">
       <template #header>
-        Security Onion 2
+        Security Onion
       </template>
       <template #body>
         <div class="flex flex-col flex-grow items-center">
@@ -15,7 +15,7 @@
           </div>
           <br/>
           <div class="flex flex-col items-center lg:flex-row space-y-1 lg:space-x-3 lg:space-y-0 mt-1 xl:mt-2">
-            <use-button link="https://github.com/Security-Onion-Solutions/securityonion/blob/2.4/main/DOWNLOAD_AND_VERIFY_ISO.md">
+            <use-button link="https://github.com/Security-Onion-Solutions/securityonion/blob/3/main/DOWNLOAD_AND_VERIFY_ISO.md">
               Download
             </use-button>
             <use-button link="https://securityonion.net/aws/?ref=_ptnr_web_sos">
@@ -30,7 +30,7 @@
               Google Cloud
             </use-button>
           </div>
-          <so-button class="mt-4 xl:mt-8" link="https://docs.securityonion.net/">
+          <so-button class="mt-4 xl:mt-8" link="https://securityonion.net/docs">
             Documentation
           </so-button>
         </div>
@@ -38,7 +38,7 @@
     </SubHero>
     <ContentSection id="overview" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32">
-        <feature-right class="xs:mb-12" :text-margin="true">
+        <feature-right v-reveal class="xs:mb-12 reveal-right" :text-margin="true">
           <template #header>
             <div class="text-center xs:text-left">
               Overview
@@ -59,14 +59,14 @@
               Security Onion is a free and open platform built by defenders for defenders. It includes network visibility, host visibility, intrusion detection honeypots, log management, and case management.
             </div>
             <div class="text-center xs:text-left mt-4">
-              For network visibility, we offer signature based detection via Suricata, rich protocol metadata and file extraction using your choice of either Zeek or Suricata, full packet capture via Stenographer, and file analysis via Strelka. For host visibility, we offer the Elastic Agent which provides data collection, live queries via osquery, and centralized management using Elastic Fleet. Intrusion detection honeypots based on OpenCanary can be added to your deployment for even more enterprise visibility. All of these logs flow into the Elastic stack and we've built our own user interfaces for alerting, hunting, dashboards, case management, and grid management. 
+              For network visibility, we offer signature based detection via Suricata, rich protocol metadata and file extraction using your choice of either Zeek or Suricata, full packet capture via Suricata PCAP, and file analysis via Strelka. For host visibility, we offer the Elastic Agent which provides data collection, live queries via osquery, and centralized management using Elastic Fleet. Intrusion detection honeypots based on OpenCanary can be added to your deployment for even more enterprise visibility. All of these logs flow into the Elastic stack and we've built our own user interfaces for alerting, hunting, dashboards, case management, and grid management. 
             </div>
             <div class="text-center xs:text-left mt-4">
               Security Onion has been downloaded over 2 million times and is being used by security teams around the world to monitor and defend their enterprises. Our easy-to-use Setup wizard allows you to build a distributed grid for your enterprise in minutes!
             </div>
           </template>
         </feature-right>
-        <feature-left class="my-12">
+        <feature-left v-reveal class="my-12 reveal-left">
           <template #header>
             <div class="text-center xs:text-left">
               Highly Scalable
@@ -113,7 +113,7 @@
     </ContentSection>
     <ContentSection id="use-cases">
       <div id="use_cases" class="xs:-mx-12">
-        <four-panel-detail class="mx-3 xs:mx-24">
+        <four-panel-detail v-reveal class="mx-3 xs:mx-24 reveal-scale">
           <template #section-heading>
             Use Cases
           </template>
@@ -146,9 +146,10 @@
     </ContentSection>
     <ContentSection id="features" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32">
-        <section-header class="mb-6">
-          Included Features
+        <section-header v-reveal class="mb-6">
+          Feature Highlights
         </section-header>
+        <div class="text-center text-lg">For a full list of features see the Security Onion Pro <a href="/pro#comparison" class="my-1 text-white-200 hover:text-gray-300 font-semibold">feature comparison</a> matrix</div>
         <div class="flex flex-col lg:flex-row lg:flex-wrap justify-center content-center md:-mx-2 mt-4">
           <feature-selector :feature-arr="featureArr" />
         </div>
@@ -156,11 +157,11 @@
     </ContentSection>
     <ContentSection id="data_types">
       <div class="xs:-mx-12 px-4">
-        <SectionHeader class="mt-6 xs:mb-8">
+        <SectionHeader v-reveal class="mt-6 xs:mb-8">
           Data Types
         </SectionHeader>
         <div class="flex flex-row flex-wrap justify-center mt-4">
-          <div v-for="(type, i) in typeArray" :key="i" class="w-full md:w-1/3 xl:w-1/4 bg-gray-200 rounded-md m-3 p-2 h-64">
+          <div v-for="(type, i) in typeArray" :key="i" v-reveal.once :class="['stagger-' + ((i % 8) + 1), 'reveal-scale']" class="w-full md:w-1/3 xl:w-1/4 bg-gray-200 rounded-md m-3 p-2 h-64 transition duration-75 ease-linear transform xs:hover:scale-105 cursor-pointer">
             <VerticalFeature>
               <template #graphic>
                 <Icon :name="type.icon" class="mb-2" size="4em" />

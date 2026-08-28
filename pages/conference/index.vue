@@ -1,7 +1,7 @@
 <template>
   <div class="xs:px-12">
     <PageNav page-name="Conference" :links="links" />
-    <SubHero class="hero-conference text-center">
+    <SubHero v-reveal.once class="hero-conference text-center reveal-scale">
       <template #header>
         Security Onion Conference {{ upcoming.year }}
       </template>
@@ -10,7 +10,7 @@
           <div class="text-2xl flex xs:block flex-col items-center">
             <div class="font-light text-2xl flex xs:block flex-col items-center">
               {{ upcoming.date }}
-              <icon name="fa6-solid:circle" size="0.3em" />
+              <icon name="fa6-solid:circle" size="0.3em" class="align-middle" />
               {{ upcoming.location }}
             </div>
           </div>
@@ -26,7 +26,7 @@
     <div v-if="upcoming.schedule != null">
       <ContentSection id="schedule" :alternate="false">
         <div class="xs:-mx-12 px-6 xs:px-12 lg:px-32">
-          <SectionHeader class="mb-6 lg:mb-10">
+          <SectionHeader v-reveal class="mb-6 lg:mb-10">
             <div>
               Conference Schedule*
             </div>
@@ -35,7 +35,7 @@
             </div>
           </SectionHeader>
 
-          <table class="mx-auto table-auto rounded-md border-separate border border-blue-400 bg-blue mb-12 w-full">
+          <table v-reveal class="mx-auto table-auto rounded-md border-separate border border-blue-400 bg-blue mb-12 w-full reveal-scale">
             <thead>
               <tr class="bg-blue-400 text-white">
                 <th class="text-right p-3 truncate w-24">
@@ -81,7 +81,7 @@
 
     <ContentSection id="about" :alternate="true">
       <div class="px-6 xs:px-12 lg:px-32">
-        <feature-right class="xs:mb-12" :text-margin="true">
+        <feature-right v-reveal class="xs:mb-12 reveal-right" :text-margin="true">
           <template #header>
             <div class="text-center xs:text-left">
               Who Should Attend
@@ -110,7 +110,7 @@
 
 
     <ContentSection id="past">
-      <SectionHeader class="mb-10">
+      <SectionHeader v-reveal class="mb-10">
         <div class="text-3xl xs:text-5xl">
           Past Conferences
         </div>
@@ -120,7 +120,7 @@
           {{ conference.year }}
         </a>
       </div>
-      <div v-for="(conference, i) in conferences" :id="conference.year" :key="i" class="shadow-xl rounded-md overflow-hidden m-4" :class="[ i % 2 == 0 ? 'bg-gray-200' : 'bg-so-blue text-white']">
+      <div v-for="(conference, i) in conferences" :id="conference.year" :key="i" v-reveal.once :class="[ i % 2 == 0 ? 'bg-gray-200 reveal-left' : 'bg-so-blue text-white reveal-right']" class="shadow-xl rounded-md overflow-hidden m-4">
         <div class="h-20" />
         <div class="pb-10 text-center">
           <div class="mb-10">
@@ -129,13 +129,16 @@
             </div>
             <div class="text-2xl flex xs:block flex-col items-center text-center">
               {{ conference.date }}
-              <icon name="fa6-solid:circle" size="0.3em" />
+              <icon name="fa6-solid:circle" size="0.3em" class="align-middle" />
               {{ conference.location }}
             </div>
             <div class="mt-5">
-              <a v-if="conference.pictures" :href="conference.pictures" target="_blank" class="mx-4">
+              <a v-if="conference.pictures && typeof conference.pictures === 'string' && conference.pictures.startsWith('http')" :href="conference.pictures" target="_blank" class="mx-4">
                 <icon name="fa-solid:camera" size="2em" />
               </a>
+              <button v-else-if="conference.pictures" @click="showPicturesModal(conference.pictures)" class="mx-4 bg-transparent border-none cursor-pointer">
+                <icon name="fa-solid:camera" size="2em" />
+              </button>
             </div>
           </div>
           <div class="flex flex-col items-center content-center">
@@ -176,6 +179,11 @@
         </div>
       </div>
     </ContentSection>
+    <FloatingModal v-if="showModal" @close="showModal = false">
+      <div class="bg-white p-8 rounded max-w-6xl">
+        <ImageCarousel :images="modalImages" />
+      </div>
+    </FloatingModal>
   </div>
 </template>
 
@@ -183,6 +191,8 @@
 import SoButton from '~/components/SoButton.vue'
 import FeatureRight from '~/components/features/FeatureRight'
 import SubHero from '~/components/hero/SubHero'
+import FloatingModal from '~/components/FloatingModal.vue'
+import ImageCarousel from '~/components/ImageCarousel.vue'
 
 import conferences from '~/content/conferences.json'
 
@@ -191,12 +201,16 @@ export default {
     FeatureRight,
     SoButton,
     SubHero,
+    FloatingModal,
+    ImageCarousel,
   },
   data: () => ({
     links: [{ name: 'Upcoming Schedule', id: 'schedule' }, { name: 'About', id: 'about' }, { name: 'Past Conferences', id: 'past' }],
     conferences: conferences.past,
     upcoming: conferences.upcoming,
     pictures: {},
+    showModal: false,
+    modalImages: [],
     hooperSettings: {
       itemsToShow: 1,
       centerMode: true,
@@ -233,11 +247,27 @@ export default {
     toggleDetails(entry) {
       entry.expanded = !entry.expanded && (entry.description || entry.presenters.length) ? true : false
     },
-  }
+    showPicturesModal(picturePaths) {
+      this.modalImages = picturePaths
+      this.showModal = true
+    },
+    handleKeydown(e) {
+      if (e.key === 'Escape' && this.showModal) {
+        this.showModal = false
+      }
+    },
+  },
+  mounted() {
+    window.addEventListener('keydown', this.handleKeydown)
+  },
+  beforeDestroy() {
+    window.removeEventListener('keydown', this.handleKeydown)
+  },
 }
 </script>
 
 <style lang="postcss">
+@reference "../../assets/css/tailwind.css";
 @media (min-width: 480px) {
   .alternate {
     @apply -mx-12;

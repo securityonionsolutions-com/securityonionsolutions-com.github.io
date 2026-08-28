@@ -1,0 +1,64 @@
+[
+  {
+    "summary": "Onion AI",
+    "open": false,
+    "outage": false,
+    "affectedRegions": [
+      "Global"
+    ],
+    "affectedSystems": [
+      "Onion AI"
+    ],
+    "updates": [
+      {
+        "state": "Resolved",
+        "details": "The Onion AI service issue has been resolved and all systems are operational.",
+        "date": "2026-08-04T12:50:00Z"
+      },
+      {
+        "state": "Recovering",
+        "details": "Onion AI service is back online.",
+        "date": "2026-08-04T12:42:00Z"
+      },
+      {
+        "state": "Investigating",
+        "details": "Onion AI is currently unavailable.",
+        "date": "2026-08-04T09:00:00Z"
+      }
+    ]
+  },
+  {
+    "summary": "Onion AI",
+    "open": false,
+    "outage": false,
+    "affectedRegions": ["Global"],
+    "affectedSystems": ["Onion AI"],
+    "updates": [
+      {
+        "state": "Resolved",
+        "details": "No further reports of Onion AI service problems have been reported over the past hour. The system remains stable at this point.",
+        "date": "2025-11-18T19:38:00Z"
+      },
+      {
+        "state": "Recovering",
+        "details": "The DNS provider has resolved the outage affecting Onion AI. All systems are now operational. We will continue monitoring to verify stability.",
+        "date": "2025-11-18T18:31:00Z"
+      },
+      {
+        "state": "Investigating",
+        "details": "Balance inquiries and related Onion AI requests may still be intermittently unavailable. We continue to monitor our DNS provider's progress on resolving the issue.",
+        "date": "2025-11-18T14:31:00Z"
+      },
+      {
+        "state": "Recovering",
+        "details": "Onion AI is available again but we continue to monitor the situation and updates from our DNS provider.",
+        "date": "2025-11-18T14:08:00Z"
+      },
+      {
+        "state": "Investigating",
+        "details": "Began investigating reports of Onion AI service being unavailable. Relates to DNS outage from third-party provider.",
+        "date": "2025-11-18T13:50:00Z"
+      }
+    ]
+  }
+]
