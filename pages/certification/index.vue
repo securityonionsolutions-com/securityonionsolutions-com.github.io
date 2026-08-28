@@ -8,13 +8,11 @@
           Certified Professional
           <br>
           (SOCP)
-          <br>
-          Current Version 3.2
         </div>
       </template>
       <template #body>
         <div class="mt-6">
-          Available Now!
+          Current Version: 3.2
         </div>
       </template>
     </SubHero>
