@@ -32,7 +32,7 @@
             "name": "Analyst Tools",
             "icon": "crosshairs",
             "desc": "Tools and techniques needed to properly investigate alerts and hunt for adversaries using Security Onion.",
-            "details": "This domain is centered around assessing the proficiency of candidates in the tools and techniques necessary to effectively investigate alerts and track down potential adversaries using Security Onion. The section encompasses a variety of topics, including but not limited to the effective use of the available applications and tools on Security Onionss, as well as the appropriate process of acknowledging and escalating events in the Alerts interface.",
+            "details": "This domain is centered around assessing the proficiency of candidates in the tools and techniques necessary to effectively investigate alerts and track down potential adversaries using Security Onion. The section encompasses a variety of topics, including but not limited to the effective use of the available applications and tools on Security Onions, as well as the appropriate process of acknowledging and escalating events in the Alerts interface.",
             "percent": 14
         },
         {
