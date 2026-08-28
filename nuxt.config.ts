@@ -1,3 +1,5 @@
+import tailwindcss from '@tailwindcss/vite'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   runtimeConfig: {
@@ -9,9 +11,26 @@ export default defineNuxtConfig({
   },
 
   modules: [
-        'nuxt-icon',
-        '@nuxtjs/tailwindcss'
+        '@nuxt/icon'
   ],
+
+  css: ['~/assets/css/tailwind.css'],
+
+  postcss: {
+    plugins: {
+      '@tailwindcss/postcss': {},
+    },
+  },
+
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ],
+  },
+
+  build: {
+    transpile: ['vue-gtag'],
+  },
 
   compatibilityDate: '2024-11-22'
 })
