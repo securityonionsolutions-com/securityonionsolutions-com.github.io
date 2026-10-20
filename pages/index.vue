@@ -32,18 +32,18 @@
                   poster=""
                   preload="auto"
                   name="media">
-                <source src="/videos/onionai_3.mp4">
+                <source src="/videos/onionai_agentic.mp4">
             </video>
           </template>
           <template #title>
             <div class="text-2xl">
-              <i>Onion AI</i> offers several time-saving capabilities, including alert analysis, detection tuning, and more.
+              Security Onion's new <i>Agentic Automations</i> works with the new Notifications module, performing fully autonomous investigations in the background, notifies when it finds alerts requiring your attention. Security Onion Pro license required
             </div>
           </template>
           <template #body>
             <div class="text-2xl d-flex-column">
               <div class="text-xl mt-8">
-                Local model support is now available. Contact your sales representative for details.
+                Choose the Security Onion cloud-based AI, or bring your own LLM models. Contact your sales representative for details.
               </div>
               <div class="w-full flex justify-center">
                 <so-button class="mt-4 xl:mt-8" link="/pro" :alternate="true">
