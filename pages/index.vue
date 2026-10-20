@@ -37,7 +37,7 @@
           </template>
           <template #title>
             <div class="text-2xl">
-              Security Onion's new <i>Agentic Automations</i> works with the new Notifications module, performing fully autonomous investigations in the background, notifies when it finds alerts requiring your attention. Security Onion Pro license required
+              Security Onion's new <i>Agentic Automations</i> works with the new Notifications module, performing fully autonomous investigations in the background, and notifies when it finds alerts requiring your attention. Security Onion Pro license required
             </div>
           </template>
           <template #body>
