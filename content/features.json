@@ -40,9 +40,9 @@
 		"body": "Run Analyzers against your case observables, to extract summarized information from local or remote analysis services, such as VirusTotal, SpamHaus, and more!"
 	},
 	{
-		"video": "onionai_3.mp4",
-		"header": "Onion AI",
-		"body": "Cut your investigation times into fractions of what they used to be by using the built-in security analyst assistant powered by a highly intelligent AI LLM. Security Onion Pro license required."
+		"video": "onionai_agentic.mp4",
+		"header": "Agentic Automations",
+		"body": "With the new Notifications and Agentic Automations, Security Onion performs the investigation in the background and notifies when it finds alerts requiring your attention. Security Onion Pro license required."
 	},
 	{
 		"video": "mcp-demo.mp4",

@@ -1,6 +1,7 @@
 <template>
   <div class="xs:px-12">
     <PageNav page-name="Overview" :links="links" />
+<!--
     <nuxt-link to="/conference" class="block xs:-mx-12 bg-gradient-to-r from-so-blue via-indigo-900 to-so-blue text-white py-3.5 px-4 shadow-lg hover:brightness-110 transition-all duration-300 relative overflow-hidden group border-y border-so-blue/30">
       <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-pulse pointer-events-none"></div>
       <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center text-center gap-2 sm:gap-4 text-sm md:text-base font-semibold relative z-10">
@@ -18,10 +19,11 @@
         </span>
       </div>
     </nuxt-link>
+-->
     <CarouselHero :entries="heroReasons" class="xs:-mx-12"/>
     <ContentSection id="preview" :alternate="true">
       <div class="px-1 md:px-6">
-        <SectionHeader v-reveal class="mt-6 xs:mb-8">
+        <SectionHeader v-reveal class="xs:mb-8">
           Latest Developments
         </SectionHeader>
         <VerticalFeature v-reveal class="reveal-scale">
@@ -32,18 +34,18 @@
                   poster=""
                   preload="auto"
                   name="media">
-                <source src="/videos/onionai_3.mp4">
+                <source src="/videos/onionai_agentic.mp4">
             </video>
           </template>
           <template #title>
-            <div class="text-2xl">
-              <i>Onion AI</i> offers several time-saving capabilities, including alert analysis, detection tuning, and more.
+            <div class="text-xl mb-3">
+              Security Onion's new <i>Agentic Automations</i> works with the new Notifications module, performing fully autonomous investigations in the background, and notifies when it finds alerts requiring your attention.
             </div>
           </template>
           <template #body>
             <div class="text-2xl d-flex-column">
               <div class="text-xl mt-8">
-                Local model support is now available. Contact your sales representative for details.
+                Choose the Security Onion cloud-based AI, or bring your own LLM models. Contact your sales representative for details.
               </div>
               <div class="w-full flex justify-center">
                 <so-button class="mt-4 xl:mt-8" link="/pro" :alternate="true">
