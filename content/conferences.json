@@ -17,7 +17,7 @@
     "button.cfp": "Submit a Talk",
     "button.moreinfo": "More Information",
     "button.register": "Register Now",
-    "schedule": [
+    "schedule.disabled": [
       {
         "time": "8:00 AM",
         "presenters": [],
@@ -136,6 +136,88 @@
     ]
   },
   "past": [
+    {
+      "year": 2026,
+      "date": "October 23, 2026",
+      "location":"Augusta, GA",
+      "pictures": [
+        "/img/conf/2026/scaled_Security Onion CMP_2675.jpg",
+        "/img/conf/2026/scaled_Security Onion CMP_2683.jpg",
+        "/img/conf/2026/scaled_Security Onion CMP_2686.jpg",
+        "/img/conf/2026/scaled_Security Onion CMP_2690.jpg",
+        "/img/conf/2026/scaled_Security Onion CMP_2696.jpg",
+        "/img/conf/2026/scaled_Security Onion CMP_2703.jpg",
+        "/img/conf/2026/scaled_Security Onion CMP_2714.jpg",
+        "/img/conf/2026/scaled_Security Onion CMP_2721.jpg",
+        "/img/conf/2026/scaled_Security Onion CMP_2731.jpg",
+        "/img/conf/2026/scaled_Security Onion CMP_2744.jpg",
+        "/img/conf/2026/scaled_Security Onion CMP_2747.jpg",
+        "/img/conf/2026/scaled_Security Onion CMP_2778.jpg",
+        "/img/conf/2026/scaled_Security Onion CMP_2781.jpg",
+        "/img/conf/2026/scaled_Security Onion CMP_2794.jpg",
+        "/img/conf/2026/scaled_Security Onion CMP_2831.jpg",
+        "/img/conf/2026/scaled_Security Onion CMP_2840.jpg",
+        "/img/conf/2026/scaled_Security Onion CMP_2856.jpg",
+        "/img/conf/2026/scaled_Security Onion CMP_2861.jpg",
+        "/img/conf/2026/scaled_Security Onion CMP_2870.jpg",
+        "/img/conf/2026/scaled_Security Onion CMP_2878.jpg",
+        "/img/conf/2026/scaled_Security Onion CMP_2886.jpg",
+        "/img/conf/2026/scaled_Security Onion CMP_2947.jpg",
+        "/img/conf/2026/scaled_Security Onion CMP_2957.jpg",
+        "/img/conf/2026/scaled_Security Onion CMP_2977.jpg",
+        "/img/conf/2026/scaled_20261023_141434.jpg",
+        "/img/conf/2026/scaled_20261023_141459.jpg",
+        "/img/conf/2026/scaled_20261024_114910.jpg",
+        "/img/conf/2026/scaled_5949.jpg",
+        "/img/conf/2026/scaled_5950.jpg",
+        "/img/conf/2026/scaled_IMG_5946.jpg"
+      ],
+      "playlist": "https://www.youtube.com/embed/videoseries?list=PLL8jfBRLQdaE",
+      "events": [
+        {
+          "speakers": ["Matt Gracie"],
+          "pres_name": "Breakfast Session - Security Onion: What's New?",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=zEf92ktHw9o&list=PLL8jfBRLQdaE&index=1"
+          }
+        },
+        {
+          "speakers": ["Scott Lynch"],
+          "pres_name": "How Can You Hunt If You Don't Know What's on Your Network?",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=r7yMgax0Fgw&list=PLL8jfBRLQdaE&index=2"
+          }
+        },
+        {
+          "speakers": ["Lennart Koopman", "Matt Gracie"],
+          "pres_name": "Integrating Nzyme and Security Onion",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=W_CAdkCNkmk&list=PLL8jfBRLQdaE&index=3"
+          }
+        },
+        {
+          "speakers": ["Josh Brower"],
+          "pres_name": "Sigma Correlations: Everything, Everywhere, All Within 5 Minutes",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=HS7fMiencps&list=PLL8jfBRLQdaE&index=4"
+          }
+        },
+        {
+          "speakers": ["Bryant Treacle"],
+          "pres_name": "Defending OT/ICS Environments with Security Onion",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=LTPI1_K9RPI&list=PLL8jfBRLQdaE&index=5"
+          }
+        },
+        {
+          "speakers": ["Doug Burks"],
+          "pres_name": "State of the Onion",
+          "links": {
+            "video": "https://www.youtube.com/watch?v=lK6XsgRrTG4&list=PLL8jfBRLQdaE&index=6"
+          }
+        }
+      ]
+    },
     {
       "year": 2025,
       "date": "October 24, 2025",
