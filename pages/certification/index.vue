@@ -8,11 +8,13 @@
           Certified Professional
           <br>
           (SOCP)
+          <br>
+          Current Version 3.4
         </div>
       </template>
       <template #body>
         <div class="mt-6">
-          Current Version: 3.2
+          Available Now!
         </div>
       </template>
     </SubHero>
@@ -78,14 +80,14 @@
               </div>
             </div>
             <div class="flex flex-col items-center gap-y-6 lg:mt-4">
-              <so-button link="/files/socp-v32-exam-blueprint.pdf">
+              <so-button link="/files/socp-exam-blueprint-v3_4.pdf">
                 Exam details
               </so-button>
               <so-button link="https://www.prometric.com/sos">
                 Schedule exam
               </so-button>
               <div class="text-sm -mt-4 mb-3 hover:underline">
-                <a href="/files/socp-registration-guide-v3_2.pdf">
+                <a href="/files/socp-registration-guide-v3_4.pdf">
                   <div class="flex flex-row justify-center content-center">
                     <div>
                       Registration Guide
