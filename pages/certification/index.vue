@@ -14,7 +14,7 @@
       </template>
       <template #body>
         <div class="mt-6">
-          Available Now!!!
+          Available Now!
         </div>
       </template>
     </SubHero>
