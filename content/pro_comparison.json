@@ -168,10 +168,10 @@
       "caption": "Integrate Security Onion with external systems for automating security processes"
     },
     {
-      "feature": "External Notifications",
+      "feature": "Notifications",
       "free": false,
       "premium": true,
-      "caption": "Quickly configure outbound notifications when alerts are generated"
+      "caption": "Quickly configure outbound notifications when alerts are generated and for other SOC events and alarms"
     },
     {
       "feature": "Time Tracking",
@@ -208,6 +208,18 @@
       "free": false,
       "premium": true,
       "caption": "AI-powered security assistant for enhanced threat analysis and response"
+    },
+    {
+      "feature": "Agent Studio",
+      "free": false,
+      "premium": true,
+      "caption": "Build custom AI agents and skills to assist with security workflows."
+    },
+    {
+      "feature": "Agentic Automations",
+      "free": false,
+      "premium": true,
+      "caption": "AI-powered automations to offload repetitive tasks from SOC analysts."
     },
     {
       "feature": "Splunk App",
